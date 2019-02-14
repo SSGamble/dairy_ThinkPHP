@@ -1,0 +1,2140 @@
+---------------------------------------------------------------
+[ 2018-07-25T08:06:56+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ info ] qingrang.top/daily/ [运行时间：0.140751s][吞吐率：7.10req/s] [内存消耗：3,286.66kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/notelst.html [ array (
+  0 => 'autoSave',
+  1 => 'phoneSave',
+  2 => 'hide',
+  3 => 'list',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+  10 => 'default_num',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001366s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.002348s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.006266s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001232s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000457s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000966s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000326s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000818s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001300s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.001172s ]
+---------------------------------------------------------------
+[ 2018-07-25T08:32:39+08:00 ] 74.120.168.12 218.76.8.17 GET /daily/
+[ info ] qingrang.top/daily/ [运行时间：0.126612s][吞吐率：7.90req/s] [内存消耗：3,286.79kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/notelst.html [ array (
+  0 => 'autoSave',
+  1 => 'phoneSave',
+  2 => 'hide',
+  3 => 'list',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+  10 => 'default_num',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001269s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.002385s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.004161s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001104s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000833s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000510s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000648s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000240s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001049s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000657s ]
+---------------------------------------------------------------
+[ 2018-07-25T08:32:57+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/193.html
+[ info ] qingrang.top/daily/admin/note/shownote/id/193.html [运行时间：0.048929s][吞吐率：20.44req/s] [内存消耗：1,983.08kb] [文件加载：54]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '193',
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000567s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001318s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 193 LIMIT 1 [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000794s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000289s ]
+---------------------------------------------------------------
+[ 2018-07-25T09:31:13+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ info ] qingrang.top/daily/ [运行时间：0.132235s][吞吐率：7.56req/s] [内存消耗：3,286.67kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/notelst.html [ array (
+  0 => 'autoSave',
+  1 => 'phoneSave',
+  2 => 'hide',
+  3 => 'list',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+  10 => 'default_num',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000591s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001377s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.003335s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001193s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000877s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000412s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000712s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000234s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001078s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000656s ]
+---------------------------------------------------------------
+[ 2018-07-25T09:31:48+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/ashownote1.html
+[ info ] qingrang.top/daily/admin/note/ashownote1.html [运行时间：0.048514s][吞吐率：20.61req/s] [内存消耗：2,146.31kb] [文件加载：52]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'ashownote1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '10',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'groupsID' => '0',
+)
+[ info ] [ RUN ] app\admin\controller\Note->aShowNote1[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000495s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.002147s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `p_id` = 0  AND `id` > 2 ORDER BY id desc [ RunTime:0.000820s ]
+---------------------------------------------------------------
+[ 2018-07-25T09:31:51+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/login/passdaily.html
+[ info ] qingrang.top/daily/admin/login/passdaily.html [运行时间：0.053250s][吞吐率：18.78req/s] [内存消耗：1,898.89kb] [文件加载：52]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'passdaily',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '13',
+  'accept' => 'text/plain, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'password' => 'shao',
+)
+[ info ] [ RUN ] app\admin\controller\Login->passDaily[ /var/www/html/daily/application/admin/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000520s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.001121s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000368s ]
+---------------------------------------------------------------
+[ 2018-07-25T09:31:51+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/dailylist/dailylist.html
+[ info ] qingrang.top/daily/admin/dailylist/dailylist.html [运行时间：0.084934s][吞吐率：11.77req/s] [内存消耗：2,399.34kb] [文件加载：57]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'dailylist',
+    2 => 'dailylist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Dailylist->dailylist[ /var/www/html/daily/application/admin/controller/Dailylist.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/dailylist/dailylist.html [ array (
+  0 => 'list',
+  1 => 'count',
+  2 => 'hide',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000551s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001303s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dailylist` [ RunTime:0.000928s ]
+[ sql ] [ SQL ] SELECT * FROM `dailylist` ORDER BY id desc [ RunTime:0.001146s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `dailylist` LIMIT 1 [ RunTime:0.000296s ]
+---------------------------------------------------------------
+[ 2018-07-25T09:32:00+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/dailylist/editdaily/id/104.html
+[ info ] qingrang.top/daily/admin/dailylist/editdaily/id/104.html [运行时间：0.062245s][吞吐率：16.07req/s] [内存消耗：2,287.42kb] [文件加载：57]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'dailylist',
+    2 => 'editdaily',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/dailylist/dailylist.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '104',
+)
+[ info ] [ RUN ] app\admin\controller\Dailylist->editDaily[ /var/www/html/daily/application/admin/controller/Dailylist.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/dailylist/editdaily.html [ array (
+  0 => 'dailycon',
+  1 => 'daily',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000667s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dailylist` [ RunTime:0.001224s ]
+[ sql ] [ SQL ] SELECT * FROM `dailylist` WHERE  `id` = 104 LIMIT 1 [ RunTime:0.000413s ]
+---------------------------------------------------------------
+[ 2018-07-25T09:32:52+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/dailylist/updatedaily/id/104.html
+[ info ] qingrang.top/daily/admin/dailylist/updatedaily/id/104.html [运行时间：0.058000s][吞吐率：17.24req/s] [内存消耗：2,016.93kb] [文件加载：57]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'dailylist',
+    2 => 'updatedaily',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '1388',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/dailylist/editdaily/id/104.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'content' => '# 怎么会有这种人的存在 ？？？
+>临近考试，邓钰楠无意中给我看了这张照片，她问我这照片中的人是不是我的同学，emmmmm，刺激，真的是刺激。说好的回家耍呢，说好的没有希望不想考了，已经找到工作了呢。 666 ，简直 6 。哇，真的差点要去撕逼了 ...
+
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180725/e5aHkDBaCl.png)
+
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180619/C5k4DmbGlk.jpg)
+
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180619/ihDd0BB5l5.png)
+
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180619/4g5kF1CH5B.jpg)',
+  'id' => '104',
+)
+[ info ] [ RUN ] app\admin\controller\Dailylist->updateDaily[ /var/www/html/daily/application/admin/controller/Dailylist.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000590s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dailylist` [ RunTime:0.001431s ]
+[ sql ] [ SQL ] SELECT * FROM `dailylist` WHERE  `id` = 104 LIMIT 1 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] UPDATE `dailylist`  SET `id`=104,`title`='怎么会有这种人的存在',`content`='# 怎么会有这种人的存在 ？？？\r\n>临近考试，邓钰楠无意中给我看了这张照片，她问我这照片中的人是不是我的同学，emmmmm，刺激，真的是刺激。说好的回家耍呢，说好的没有希望不想考了，已经找到工作了呢。 666 ，简直 6 。哇，真的差点要去撕逼了 ...\r\n\r\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180725/e5aHkDBaCl.png)\r\n\r\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180619/C5k4DmbGlk.jpg)\r\n\r\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180619/ihDd0BB5l5.png)\r\n\r\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180619/4g5kF1CH5B.jpg)'  WHERE  `id` = 104 [ RunTime:0.000525s ]
+---------------------------------------------------------------
+[ 2018-07-25T09:32:52+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/dailylist/dailylist.html
+[ info ] qingrang.top/daily/admin/dailylist/dailylist.html [运行时间：0.067572s][吞吐率：14.80req/s] [内存消耗：2,196.82kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'dailylist',
+    2 => 'dailylist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/dailylist/editdaily/id/104.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Dailylist->dailylist[ /var/www/html/daily/application/admin/controller/Dailylist.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/dailylist/dailylist.html [ array (
+  0 => 'list',
+  1 => 'count',
+  2 => 'hide',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000431s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001270s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dailylist` [ RunTime:0.000915s ]
+[ sql ] [ SQL ] SELECT * FROM `dailylist` ORDER BY id desc [ RunTime:0.000970s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `dailylist` LIMIT 1 [ RunTime:0.000245s ]
+---------------------------------------------------------------
+[ 2018-07-25T09:32:56+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/notelst.html
+[ info ] qingrang.top/daily/admin/note/notelst.html [运行时间：0.120435s][吞吐率：8.30req/s] [内存消耗：3,289.45kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'notelst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/dailylist/dailylist.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/notelst.html [ array (
+  0 => 'autoSave',
+  1 => 'phoneSave',
+  2 => 'hide',
+  3 => 'list',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+  10 => 'default_num',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000552s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001215s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.003334s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001092s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000902s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000515s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000773s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000245s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001027s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000626s ]
+---------------------------------------------------------------
+[ 2018-07-25T09:40:03+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/notelst.html
+[ info ] qingrang.top/daily/admin/note/notelst.html [运行时间：0.132142s][吞吐率：7.57req/s] [内存消耗：3,289.77kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'notelst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/dailylist/dailylist.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/notelst.html [ array (
+  0 => 'autoSave',
+  1 => 'phoneSave',
+  2 => 'hide',
+  3 => 'list',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+  10 => 'default_num',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000642s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001634s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.003694s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001271s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001038s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000483s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000623s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000263s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001018s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000603s ]
+---------------------------------------------------------------
+[ 2018-07-25T09:41:24+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/ashownote1.html
+[ info ] qingrang.top/daily/admin/note/ashownote1.html [运行时间：0.056346s][吞吐率：17.75req/s] [内存消耗：2,202.54kb] [文件加载：52]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'ashownote1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '10',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://qingrang.top/daily/admin/note/notelst.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'groupsID' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Note->aShowNote1[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000593s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001246s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `p_id` = 1  AND `id` > 2 ORDER BY id desc [ RunTime:0.000975s ]
+---------------------------------------------------------------
+[ 2018-07-25T09:41:30+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/admin/note/editNote/id/32
+[ info ] qingrang.top/daily/admin/note/admin/note/editNote/id/32 [运行时间：0.041637s][吞吐率：24.02req/s] [内存消耗：1,401.08kb] [文件加载：48]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/notelst.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'note' => 'editNote',
+  'id' => '32',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-25T09:41:43+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/ashownote1.html
+[ info ] qingrang.top/daily/admin/note/ashownote1.html [运行时间：0.049056s][吞吐率：20.38req/s] [内存消耗：2,202.54kb] [文件加载：52]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'ashownote1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '10',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://qingrang.top/daily/admin/note/notelst.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'groupsID' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Note->aShowNote1[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000499s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001280s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `p_id` = 1  AND `id` > 2 ORDER BY id desc [ RunTime:0.000922s ]
+---------------------------------------------------------------
+[ 2018-07-25T09:41:47+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/admin/note/shownote/id/32
+[ info ] qingrang.top/daily/admin/note/admin/note/shownote/id/32 [运行时间：0.039373s][吞吐率：25.40req/s] [内存消耗：1,401.18kb] [文件加载：48]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/notelst.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'note' => 'shownote',
+  'id' => '32',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-25T09:42:02+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/admin/note/editNote/id/32
+[ info ] qingrang.top/daily/admin/note/admin/note/editNote/id/32 [运行时间：0.037677s][吞吐率：26.54req/s] [内存消耗：1,401.18kb] [文件加载：48]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'admin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/notelst.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'note' => 'editNote',
+  'id' => '32',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-25T09:42:13+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/editNote/id/32
+[ info ] qingrang.top/daily/admin/note/editNote/id/32 [运行时间：0.053494s][吞吐率：18.69req/s] [内存消耗：2,084.16kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'editNote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '32',
+)
+[ info ] [ RUN ] app\admin\controller\Note->editNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/editnote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000592s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001285s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 32 LIMIT 1 [ RunTime:0.001158s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000907s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000274s ]
+---------------------------------------------------------------
+[ 2018-07-25T09:52:53+08:00 ] 74.120.168.12 61.129.6.73 GET /daily/
+[ info ] qingrang.top/daily/ [运行时间：0.118345s][吞吐率：8.45req/s] [内存消耗：3,287.11kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,image/sharpp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'connection' => 'close',
+  'host' => 'qingrang.top',
+  'referer' => 'http://qingrang.top/',
+  'user-agent' => 'Mozilla/5.0 (Linux; U; Android 7.1.1; zh-cn; Mi Note 3 Build/NMF26X) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/8.5 Mobile Safari/537.36',
+  'x-forwarded-for' => '117.136.75.214',
+  'x-forwarded-for-pound' => '117.136.75.214',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/notelst.html [ array (
+  0 => 'autoSave',
+  1 => 'phoneSave',
+  2 => 'hide',
+  3 => 'list',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+  10 => 'default_num',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000652s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001486s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.003414s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001035s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000928s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000667s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001053s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000705s ]
+---------------------------------------------------------------
+[ 2018-07-25T09:52:59+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/savenote.html
+[ info ] qingrang.top/daily/admin/note/savenote.html [运行时间：0.061195s][吞吐率：16.34req/s] [内存消耗：2,317.19kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'savenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '98967',
+  'accept' => 'text/plain, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editNote/id/32',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'ogroup' => 'Mess',
+  'context' => '# 写出这些话的人，我估计一辈子都追不上了
+1. 如果发出声音是危险的，那就保持沉默；如果自觉无力发光，那就别去照亮别人。但是，不要习惯了黑暗就为黑暗辩护不要为自己的苟且而得意洋洋；不要嘲讽那些比自己更勇敢，更有热量的人们。可以卑微如尘土，不可扭曲如蛆虫。
+2. 你多学一样本事，就少说一句求人的话。
+3. 我38岁那年，琢磨着要不要去读两年的放射线照相术大专学位。然后我跟我朋友说了这事，我觉得自己太老了，等拿到学位是，我都40岁了。
+--朋友说，如果你不读，你还是会40岁，一个没有学位的40岁。
+4.	这些年来我一直提醒自己一件事情，千万不要自己感动自己。大部分人看似的努力，不过是愚蠢导致的。什么熬夜看书到天亮，连续几天只睡几小时，多久没有放假了，如果这些东西也值得夸耀，那么富士康流水线上任何一个人都比你努力多了。人难免天生有自怜的情绪，唯有时刻保持清醒，才能看清真正的价值在哪里。
+5.	孩子，我要求你读书用功，不是因为我要你跟别人比成绩，而是，我希望你将来会拥有选择的权利，选择有意义，有时间的工作，而不是被迫谋生。当你的工作在你心中有意义，你就有成就感。当你的工作给你时间，不剥夺你的生活，你就有尊严。成就感和尊严，给你快乐。
+6.	最终我们都将学会，与他人交往，最重要的不是甜言蜜语，不是容貌金钱，而是你和他对于这个世界的看法，对人生的态度是否一致。
+7.	我们一路奋战，不是为了改变世界，而是为了世界不再改变我们。
+8.	不要欺骗别人，因为你能骗到的人，都是相信你的人。
+9.	熟练的运用"关我屁事"和"关你屁事"可以省下人生80％的时间。
+10.	我怎么敢倒下。我身后空无一人。
+11.	"痛苦是财富，这话是扯淡。姑娘，痛苦就是痛苦，对痛苦的思考才是财富。"
+12.	永远不要相信苦难是值得的，苦难就是苦难，苦难不会带来成功。苦难不值得追求，磨练意志是因为苦难无法躲开。
+13.	如果我不曾见过太阳，我本可以忍受黑暗。
+14.	社交之所以累，是因为每个人都试图展现出自己其实并不具备的品质。
+15.	读书：之前觉得自己是一个人，现在觉得自己可以是一个世界。
+16.	希望你今天白费的努力，早晚有一天变成值得。
+17.	历史：遗忘，对倒下的人不公平。
+18.	南京大屠杀：
+安培说：现在日本的年轻人没有义务为过去的日本人像现在的中国人道歉。
+那现在的中国人也没有权利为过去的中国人原谅现在的日本人。
+19.	明明别人轻轻松松可以做到的事，我却做不了。满满的无力感，无力到没有力气。
+20.	人的一切痛苦，本质上都是对自己无能的愤怒。
+21.	不要试图同情你自己。
+22.	你配得上你自己想要的生活吗？
+23.	什么叫成熟？
+了解自己，了解自己的欲望，了解自己的局限。理解别人，理解别人的欲望，理解别人的局限。
+24.	我们会看到要寻找的东西，错失不去寻找的东西，虽然它在那里。我们的阅历被我们的关注点深深地影响了。
+25.	做你害怕做的事，然后你会发现，不过如此。
+26.	一直认为，所谓新鲜感，不是和未知的人一起去做同样的事，而是和已知的人一起去体验未知的人生。
+27.	如果不能随时有限的反击，所有的宽容都是懦弱。
+28.	群众的眼睛不是雪亮的，群众的眼睛是盲目的。
+29.	不是所有的人都能功成名就，我们中有些人注定要在日常的点滴中寻找生命的意义。
+30.	带人友善是修养，独来独往是性格。
+31.	几年前踏上火车那一刻还没有意识到，从此故乡只有冬夏，再无春秋。
+32.	十年饮水，难凉热血。
+33.	德，律己为德，律人无异于私刑。
+34.	信仰，他可以与宗教无关，代表自己的精神追求。
+35.	人最重要的能力有两个，适应环境，不忘初心。适应环境可以安身，不忘初心可以立命。
+36.	维护不在场的人，所言不多于所知。
+37.	只有你愿意为之而死的东西，你才可以藉之而生。
+38.	你见过树，却没见过森林。
+39.	那些杀不死你的最终都会使你更强壮。
+40.	是你把你的秘密告诉了风，那就别怪风把他带给树。
+41.	似乎大家都这样。自命不凡，却无足轻重。
+42.	保安笑着问我："你那么小个子，开那么大个车？"的时候。我傻笑着回答："你是当保安，我是当司机的。"
+43.	猪会飞，是因为他站在了风口上，成功的飞起来以后他可以总结起飞技巧，但重要的，是风。
+44.	你现在做的每一件事看来并没有什么意义，但他们也许会在未来助你 一臂之力。
+45.	唱出本身就是最要不得的态度。当你做某件事的时候，一旦想要求快，就表示你再也不关心他，而是想去做别的事。
+46.	命运啊，说是注定，不如说是你在何时做了选择。
+47.	在一群出色的人中间，常常误以为自己也是其中一员，然后忘了努力。
+48.	只有经历过地狱磨难的人，才有建造天堂的力量。
+49.	一个伟大的人往往受到排挤，压抑，甚至被人斥为哗众取宠而陷于孤独中。
+50.	与怪物战斗的人，应当小心自己不要成为怪物。当你远远凝视深渊时，深渊也在凝视你。
+51.	一个人知道自己为什么而活，就可以忍受任何一种生活。
+52.	假如我们不去打仗，敌人用刺刀杀死了我们，还要指着我们的骨头说：看，这是奴隶。
+53.	我有一事，生死与之。
+54.	我的体内啊，有个器官比心脏还重要，他虽然看不见，但却是在我的体内从脑袋一直贯穿到胯间。就因为他，我才能站着直，坐着正，就算脚步摇晃也能笔直地向前行，在这里退缩的话，那东西就会折断。
+55.	不可能这三个字，你说的太多了。
+56.	世界上没遇上帝，如果有的话，我无法容忍我不是。－－尼采
+57.	剑在英雄手，登台傲王侯。－－比莫干《九州缥缈录》
+58.	武士的一生，只相信自己手中可以握住的东西。－－赢无翳《九州缥缈录》
+59.	为天地立心，为生民立命，为往圣继绝学，为万世开太平。－－北宋时期张载
+60.	为不能作战的人而战。
+61.	你的成功标准： 能做自己喜欢做的事，能只做自己喜欢做的事。
+62.	如何不招人厌的展现自己的学识：别人问了，你再答。
+63.	无论现实如何操蛋，你都能在心里有一个更诗意的世界，那个世界便是情怀。
+64.	情怀就是以心灵的满足而不是功利的得失作为自己的行为标准的一种品质。一件没有什么用的事，还是要去做，也许只是因为我喜欢，也许只是因为它看起来很美。
+65.	跟优秀的人相处是怎样一种体验：他从不刻意优秀，却总是无意中卓越。
+66.	不要跟眼界不一样的人争辩。
+67.	人穷尽一生追求另一个人的事，我一直无法理解，或许是因为我自己太有意思，无需他人陪伴，所以我祝你们在对方身上得到的快乐与我给自己的一样多。
+68.	一个人需要控制的事情越少，他心理上就越自由。当你企图控制一件事情的时候，你同时也就被这件事情所控制，这永远是个相互的过程。
+69.	我们痛恨限制的同时，也依赖限制。
+70.	一个能够安住于不确定和不可控制中的人最自由。
+71.	大部分的教育工作者都在教人找到工作，而不是寻找人生。
+72.	漫画提供给我们的，也许就是这个早以被我们遗忘的世界。但将它看做一个逃避现实，发泄情绪的渠道，还是从中寻找勇气和激励，在现实生活中做一个真正的英雄，决定权在你。
+73.	社会衡量一个人的价值，在于他能向外产出什么，至于他吸收了什么，没人在乎。
+74.	我发现没有任何一个煤矿工人靠挖煤多又快当上了煤老板。
+75.	有的人努力的时候是真的在努力，有的人努力的时候只是为了感动自己，这决定了一个人究竟能变成什么样。
+76.	在这残酷的现实面前，除了吃人与被吃，我还有第三种选择，就是努力活下去，并且让这个社会再好一点。知大恶才知大善。知暗夜才知光明。不要低估人性的丑恶，也不要低估人性的光辉。
+77.	群众的眼光到底是不是雪亮的？                                                                                  1）群众的智商，呈现非周期性的上升或者下降。                                                        2）其实群众的眼睛就是灯泡，而开关掌控在领导手中，需要时就是雪亮的，不需要时就是不明真相的。 
+3）如果让群众挑错，那群众的眼睛无疑是雪亮的，他们最擅长干这个了，但要是问群众什么是对的，那就瞎了。
+78.	我一向不太相信离别时的情真意切，我觉得那只是一种情绪渲染。
+79.	为什么孩子喜欢看有关恐龙的书？                                                                                恐龙代表过去，宇宙飞船代表未来，我就是不喜欢现在。－－询问一7岁男孩得知
+80.	纠正一个错误的方法有很多，而解决一个错误的终极方法就是不给他任何发生的机会。
+81.	为什么父母一吵架，小孩就特别懂事？                                                                         小孩的沉默，隐忍，恐惧，以及讨好，在麻木的大人眼中，便是：懂事。
+82.	凡我中华之寸土皆洒满我中华儿女之血泪，永世不忘倭寇侵占与残杀之历史。
+83.	我相信再有一个妖精大闹天宫，悟空会是去镇压的那个人。
+骑士杀死恶龙后，望着满地的财宝，身上长出了鳞片。
+84.	只有写鸡汤的人才能从鸡汤中受益。
+85.	没有中枪的觉悟，就没有开枪的资格。
+86.	什么是人渣？   
+浑身都是铠甲，没有一处软肋。
+87.	一种人，天天都笑嘻嘻的，好似和谁都合得来，但是从不主动联系朋友，脾气也出奇的好，好像世上没有什么事情能让他们愤怒和悲伤。心中怀着宏伟的梦想，却不愿与现实中的人分担，只是默默的做，以为能用沙砾和泥土堆出山川。
+88.	为什么我们愿意把钱捐给身边的乞丐，而不顾那些生活在水深火热之中的欠发达国家的人民呢？                                                                                                                         人类的所有善意都遵循邻避原则。坏的事可以发生，只要别发生在我家后院就行了。－－善意有效辐射范围
+89.	后来许多人问我一个人夜晚踟蹰路上的心情，我想起的却不是孤单和路长，而是波澜壮阔的海和天空中闪耀的星光。－－张小砚
+90.	当很重要的人寻求更大的世界，却因此不得不离开你的时候，支持还是阻止好？            
+他走是因为他想走，他不走是因为他不想走，不要试图去背负别人的人生。
+91.	一个人在对另一个人的内心世界做出评判时，最好怀有一定程度的谦逊和宽容。－－《群山回响》
+92.	楼下的一个男人病的要死，那间壁的一家唱着留声机，对面是弄孩子，楼上两个人狂笑，还有打鼾声，还有打牌声，河中的船上有女人哭着她失去的母亲。 人类的悲欢并不相通，我只觉得他们吵闹。－－鲁迅
+93.	什么样的状态最恐怖？ 
+忙碌的学习，上班，以为忙碌了，就是充实了。一般还很满足，自以为比别人过得有意义。其实说到底，都是急于活得明白，反倒搞不清楚。
+94.	未知的危险性是最恐怖的，而未知来自于你感官能力的丧失。比如说漆黑一片的屋子里你丧失的是视觉，比如说一片静谧的丛林里你丧失的是听觉。当你失去这些采集环境信息的渠道后，你会无法用经验体系构建一个稳定可预测的环境状况。人本能的就希望远离这种不稳定，这就是恐惧的作用了。
+95.	我们千山万水来到这，为的也不过是说一声再见。
+96.	遇见你所爱的人，时间就会停止。
+97.	在遇到她之前，我不怕死，不惧远行，也不曾忧虑悠长岁月，现在却从未如此真切地思虑起将来。－－《平如美棠》
+98.	从今往后，咱们只有死别，再无生离。－－《我们仨》
+99.	别人的痛苦才是你艺术的源泉，而你去受苦只会成为别人艺术的源泉。
+100.	我们大部分人根本谈不上独立的审美，而且美也是随着时代和环境在变化。
+101.	无论我告诉你什么道理，当你的心智没有达到这个境界或接近的水平时或经历过一些事情的时候，你是不会理解这个道理的。或者你以为你知道这个道理，其实你不知道。
+102.	除了自身的病患或亲友离去的痛苦是真实的，其他的痛苦都是你自己的价值观带给你的。
+103.	别人指责你的事情或批评的你的理由，往往最能伤害你的，是那些你也这样认为的事情。
+104.	其实人跟人之间差别其实不大，所以不要与别人去比较，人生就是一场长跑，你可能不会是第一名，但也不不太会是最后一名，和前面比你会有动力，和后面比你会有幸福。但重要的是享受过程。
+105.	永远不要与人去辩论，你也很难把别人辩服，因为立场不同，因为没有对错，只有规则，只有利益。人生就是一场游戏，懂得你在玩的游戏的游戏规则，然后玩好它。
+106.	生活其实是一种运营，时间是你最宝贵的资源，还有钱，关系，都是你的一种投入，自己重视什么，事业，友谊，家庭上，就多投入些，种瓜得瓜，好好平衡各个关系是你要做好的。
+107.	人不会死在绝境。却往往栽在十字路口。
+108.	编剧是你，我怎么知道结局。
+109.	一只船孤独的航行在海上，它既不寻求幸福，也不逃避幸福，它只是向前航行，底下是沉静碧蓝的大海，而头顶是金色的太阳。   --莱蒙托夫
+110.	历史学——孤证不成立
+111.	新闻无需撒谎，它只需要给出“部分的真相”，就可以达到操纵民意的目的
+112.	你所关注的东西，永远都是媒体想让你关注的
+113.	很多时候舆论一边倒的声音，未必是大多数人所赞同的，只是不赞同的人以为自己是少数，不愿意发声而已
+114.	除非你准备射击，否则不要把枪口对准人或物
+115.	把自己不能理解的行为定义为「装」实在是非常不好的习惯，要改。
+116.	画家不识渔家苦，好作寒江钓雪图。
+117.	我们坚持一件事情，并不是因为这样做了会有效果，而是坚信，这样做是对的。——哈维尔
+118.	人这一生为什么要努力？
+是一种想去体验一个更大的世界的欲望。
+119.	子路有闻，未能行之，唯恐有（又）闻。
+120.	信任就像一张纸，皱了，即使抚平，也恢复不了原样了。。。 
+用水胶带，喷水，绷木板上干后比原先还平。---做不到只是知识不够用。
+121.	我第一次感受到时间是一种物质的存在。它就像是一条蠕动的虫子，拖着臃肿皱皮的身躯，从我的血管里缓缓缓缓地爬过，并且留下了一条粘乎乎的痕迹。
+122.	原来死亡就是一种消失。不但是肉体，精神和思想的消失，更重要的是在人们的记忆中慢慢成为了空白，就像这个人从没在这个世界上来过一样。
+123.	张浩站在他办公室高大的落地窗玻璃前，看着下面的芸芸众生。他说，林岚，你觉得他们生活得辛苦吗？我觉得很辛苦。每个人都很辛苦。这个世界不会符合你所有的想象，甚至连一个你的想象也不符合，可是我们还是得生存下去。
+124.	人是为活着本身而活着，而不是为了活着之外的任何事物所活着。
+125.	人生的意义是什么？
+意义这个词太单薄，太卑微，低落到尘埃里，配不上生命，也承载不起人生。
+126.	人生逆旅，一蓑烟雨。
+127.	外行看热闹，都不知道别人家的事情，一群吃瓜群众指指点点，哈哈哈哈。。。被媒体玩的像猪一样。
+128.	底线之上才有资格说各展所长。
+129.	“我寄给你的信，总要送往邮局，不喜欢放在街边的绿色邮筒中，我总疑心那里会慢一点。”	--鲁迅《致许广平》
+130.	我不要儿子，我要一个女儿--只要一个，像你的。--钱钟书
+131.	孩子不是图画练习册，不要光顾着涂上自己喜欢的颜色。	--《追风筝的人》
+132.	生活其实也很简单，喜欢的就争取，得到的就珍惜，失去了就忘记。
+133.	有什么事情是游戏从业者不愿意告诉玩家的?
+免费玩家也是我们提供给付费玩家的功能之一。
+134.	哪有什么岁月静好，不过是有人为你付中负重前行，生活从来都不容易，当你觉得挺容易的时候，一点是有人再替你负重前行。
+//好像现在是我人生中最轻松容易的时候了，那么到底有哪些人在为我负重前行呢？
+135.	有枪但你没盾，你挡不住别人的子弹。
+136.	没有人有义务了解你所尽力的艰辛。
+137.	我从来没有想过一个节目会以无解来结尾，一直到明白真实的世界就是如此。 --柴静《双城的创伤》
+138.	能够让你后悔的，从来不是你做过的事，而是你想做却没有做过的事。
+139.	很多时候，你愿意讲给别人听的，大概是那些很想，却再也没有机会告诉以前的自己的话吧。--《肖申克的救赎》
+140.	从童年起，我便独自一人。照顾着历代的星辰。--《孤独》白鹤林
+141.	与这世界交手多年，你是否光彩依旧，兴致盎然。
+142.	为什么你不让别人看到你善良的一面？因为如果他们看见了，就会期望我一直是善良的。
+143. 周围认识的许多情侣，最后都步入了婚姻殿堂，但其中不少人在爱情长跑中都曾不忠。有些故事大家心照不宣，甚至帮他们遮掩。每次婚礼，我看着新人们热泪盈眶地念誓言，从没怀疑过他们在那一刻的真诚，可人性是如此幽深复杂，千帆过尽，我变得什么都能理解，也什么都无法相信。
+144. 人生有5%的幸福，5%的痛苦，还有90%的平淡。人们往往被那5%的幸福诱惑着，幻想未来或怀念过去，忍受着5%的痛苦，在90%的平淡中慢慢度过漫长的一生。
+145. 记得一个电影里面的女主说过”我不是喜欢钱，但是钱可以带来自由和尊严。我喜欢的是自由和尊严。”
+146. 90次的反复下载上传，最后变成了这样，可见你认为最可靠的数据也是会在传播中失去原来的样子，更何况是你从被人嘴里听到的别人。
+147. 无论你做的事情多正义，都不能强制我和你一个步调。
+148. 既无法忍受现在的状态，又没能力改变这一切，可以像只猪一样懒，却无法像只猪一样心安理得。
+149. 我们的祖先是被吃了无数回才走上了食物链的顶端。
+150. 尊重粉丝维护偶像，但也请尊重一个人从内心深处鄙视另一个人的自由。
+151. 皇帝为什么不多生孩子，最后选择优秀的孩子即位？”长幼”是常量，”优秀”是变量，政治稳定不能有太多的变量。
+152. 我们看到的都是别人让我们看到的。
+153. 没打出来的牌才是王牌。
+154. 市场不一定是去迎合的，而是可以引导和培养的。
+155. 后代子孙永远也不会知晓当初战争中零星冲突的悲惨情况；事实上，一无所知反而最好。真正的战争永远会隐没于历史的黑暗面。 ---沃尔特•惠特曼
+156. 只有你才知道对你而言什么才是糟糕的生活，什么才是真正的一塌糊涂，这与旁人的教说，旁人的经验并无关系。
+1. 这世上真话本就不多，一位女子的脸红胜过一大段对白。-- 老舍
+1. 如果说有谁在看到流星的瞬时就能许下愿望，那一定是非常纯熟且迫切的愿望。
+1. “我可以尽管向你们这个组合宣泄负面情绪，因为你们是被主流唾弃的，所以无论我说什么都没错，毕竟我是站在道德制高点上的。” --momo的老公
+1. 不是返璞归真，转了个圈回到的却不是原处。两个放羊最大的区别，一个是满足物质生活，一个是满足精神生活。曾经的种地放羊是生活的根基，被迫接受的事没有什么美感，结束一天的工作后裹着一身臭汗上炕睡觉第二天周而复始，这种放羊与“舒适的生活”是没有挂钩的。而现在那种有情怀的种地放羊则是一种有钱人的主动选择，把过去的苦事中的精华提取，与其他美好的事相连接，在放羊的生活中也能享受惬意的生活。他们有能力选择和组合生活，这不该被批判。
+1. 我看到的多数家庭的教育是颠倒混乱的。生下来到学龄前应当树立家长权威（要有敬畏），他们却去溺爱；小学应当严格培养学习习惯和基础，他们却宽松；青春期个性萌芽，父母应当从权威退到民主，让孩子学会理性和责任时，他们却开始各种着急焦虑和专制严管；到大学应该是退居二线，最多给于建议的时候他们开始对孩子人生规划指手画脚；工作了，父母应当放手让孩子完全独立对自己负责时，他们却最终升级到强迫相亲这种直接干涉。
+1. 不愿费心力和别人交流。然而总是被指诘在躲避。内心不坦然，才是孤独者的坟墓。
+1. 人生如逆旅，我亦是行人。
+1. 你一直耿耿于怀的事事实上相关人物根本早就忘记了 耿耿于怀的果然只有你自己“
+1. 当前的环境也许只是一个暂态，也许只是世界的一小面；如果你想要见见更大的世界，那就不要太急着让自己为了适应当前的环境而彻底改变。
+1. 当你老了，回顾一生，就会发觉：什么时候出国读书，什么时候决定做第一份职业、何时选定了对象而恋爱、什么时候结婚，其实都是命运的巨变。只是当时站在三岔路口，眼见风云千樯，你作出选择的那一日，在日记上，相当沉闷和平凡，当时还以为是生命中普通的一天。——陶杰 《杀鹌鹑的少女》
+1. 那一天我二十一岁，在我一生的黄金时代，我有好多奢望。我想爱，想吃，还想在一瞬间变成天上半明半暗的云，后来我才知道，生活就是个缓慢受锤的过程，人一天天老下去，奢望也一天天消逝，最后变得像挨了锤的牛一样。可是我过二十一岁生日时没有预见到这一点。我觉得自己会永远生猛下去，什么也锤不了我。 — —王小波
+1. 想要追求自由随性的生活，就一定要先从自律开始。
+1. 别人口中越是容易让人得出倾向性结论的问题描述，往往代表他刻意隐瞒了越多关键的细节。
+1. 走不进去的世界就不要硬挤了，为难了别人，也作贱了自己。
+1. 古龙《多情剑客无情剑》里，提过一个例子：一对厨子，饭馆打烊后，他们在后厨，自己给自己炒了盘菜，找点小酒，很惬意的饮食一番，舒服那一两个时辰。
+--古龙还说：他们还活着，就是因为一天还有那么一两个时辰。
+1. 从来如此，便对么？——鲁迅《狂人日记》
+1. 那……学校不好，难道知识也不好么?
+1. 高三毕业的欢送会上，复读班上的五个男生合唱了这首歌，我知道他们都不是第一年参加高考，我也知道那一年他们仍然成绩平平，我们那一届复读班整体都考的很差，但这首歌我记到现在。好像长这么大，见过的最多的无功而返，苦苦挣扎都是在学习的道路上。可苦涩中的温暖最能长存。路漫漫，且行且珍重！
+1. 我一直记得刘瑜写给女儿的一段话：愿你被很多人爱，如果没有，愿你在寂寞里学会宽容。
+1. 开始并完成一件事，比做好它更重要，因为只要开始了，你就有机会把它做的更好———-一件看上去繁难的事，只要开始做了，就会变得越来越容易。”
+1. 张一鸣有一句说的特别对：所谓成功，就是延迟满足。
+1. 成长是件残酷的事情，也许久而久之我们活成了别人想要的模样。但世俗跟成熟是两码事：在熙熙攘攘之外学会“我愿意”，不愿将就的你也可以不那么讲究。
+1. “秘密的暴力比公开的暴力更令人恐怖，它会使人失去思考能力、道德意识和抵抗意志，因此退化到最低等原始动物保命本能中去。为了保命求生、避免肉体折磨，人会变得全无廉耻、奴性十足、无所不为。秘密统治对政府权力的正当行使和合道德性同样有着严重的腐蚀作用。” ---《布达佩斯往事》
+1. 一个成熟的人，他的标准来自他的内心，而大多数的人，却受环境左右。对自己的标准会不由自主的降低以适应这个环境，减少自身与环境的冲突，在一个低标准下，自觉“满意”的度过每一天。 ——《精进》
+1. 梦想不一定要马上实现，如果身边的人反对，那就走慢一点，只要你每天确定自己在往那里走就行。
+1. 他没有勇气，也没有兴趣使渴望的行动得以一气呵成，因此自己在半途中就会怀疑行动的意义。---夏目漱石
+1. 我来不及认真地年轻，待明白过来时，只能选择认真地老去。 —— 三毛
+1. 我会以我的标准与方式看待世界，但我并不会以他来要求他人。--清让
+1. 时间，只是一个自称能治百病的庸医。
+1. 当你能从你认可的人或者事物身上吸取经验与知识，这是大部分人能做到的，但是如果你能从你不认可的人或者事物身上吸取营养，学到东西，那就真的太难得
+了。
+1. 你想成为什么样的人，那就尽量去向他们靠近。
+1. 真正幽默的人，是把快乐给了别人。
+1. 人这一生有很多重要的决定，每个决定其实都决定了我未来的人生，是否被动接受做一个幼师、是否转专业、是否升本等等等，做这些所有的选择与决定前，想想自身的优势，结合趋势与实力，看一下自己做这件事的把握有多少，但凡重大的决定，不要想着在尝试中去找答案，对于小事情这样是可以的，但是一些人生的重大决定是没有尝试的机会的，想尽一切办法想把仗打赢的，是最难的，我最该做的，是在一开始选择前，确定这场仗能打赢，再去打。
+1. 面试造飞机，工作扭螺丝。
+1. “让忙于务实的人务实，让乐于做梦的人做梦”。
+1. 生命是一场华丽的冒险，只是我们永远都跨不过时间的深渊。
+1. 曾经的你，以为只要带着那把长剑和赤子之心就可以说服自己不出卖理想的灵魂。在最艰难和不得不流泪的晚上，即使连自己都在笑自己傻，但仍然用长剑刺痛自己，提醒自己，勇往直前，直到将来。
+1. 过往不恋，未来不迎，当下不负。
+1. 忠言逆耳，良药苦口，可不都是这样吗。但我觉得最重要的是要培养自己的判断力，在兼容并包的基础上一定要有自己的主心骨。善听百家之言，思想上的言论抒发不分对错，要客观结合自己的情况，别人的经验也不全是对的，就算是对的，也不全适合自己，不同的人有不同的性格，脾气，要自己汲取自己认可的观点看法，适合自己才是最好的。
+1. 世上最难的事之一，把自己的思想装进别人的脑袋。
+1. 这短短的一生，我们最终都会失去。你不妨大胆一些，爱一个人，攀一座山，追一个梦。 ——《大鱼海棠》
+1. 有时候遇到瓶颈了，你应该停下来好好想想，是有四年工作经验，还是一个经验用了四年。
+1. 这世上唯有病痛和亲人去世是真切的痛楚，其他都是不必要的伤感，是忽略了当下拥有的一切的贪婪。
+1. 许多人所谓的成熟， 不过是被习俗磨去了棱角，变得世故而实际了。那不是成熟，而是精神的早衰和个性的消亡。真正的成熟，应当是独特个性的形成，真实自我的发现，精神上的结果和丰收。
+1. 别嫌读书苦，你现在的气质里，藏着你走过的路，读书不是为了雄辩和驳斥，也不是为了轻信和盲从，而是为了思考和权衡。
+1. 真的不要小看父母，不要觉得自己很厉害。以前笑父母遥控器还要套个手机套，其实和现在我们用手机还要贴膜戴手机套是一样的。以前笑父母为了一毛钱还和人家讨价还价，其实和我们现在用着手机在群里抢红包是一样的。以前父母无聊时磕着瓜子看着小说，其实和我们现在拿着手机刷着朋友圈是一样的。以前父母拉几个好友打麻将谈天说地，其实和我们现在拉几个网友王者农药开黑是一样的。以前父母在厂里上班踩着缝纫机，其实和我们现在写字楼里对着电脑写 PPT word 文档是一样的。所有的都没有变，只是时代在变，生活方式升级，换一种方式活着而已。很多年以后，可能会有10后笑着：瞧，我爸以前是在格子间苦逼写代码的工程师，我现在一家未来公司看着机器人帮我干活，公司只有我一个人呢。
+1. 有勇气去改变那些可以改变的事，
+有肚量去容忍那些无法改变的事，
+有智慧去区分上述的事。
+1. 识人不必探尽，探尽则多疑。
+知人不必言尽，言尽则无友。
+责人不必苛尽，苛尽则众远。
+敬人不必卑尽，卑尽则少骨。
+让人不必退尽，退尽则路寡。
+1. 安全感在很多时候是束缚人的枷锁，过度追求会让人生少了很多可能性。
+1. 大部分的恐惧，只有在你把它当回事儿的时候才是。
+1. 很多时候，没有兴趣并不真的是没有兴趣，而是怕自己做不好。
+1. 最好的兴趣就是永远达不到但可以不断精进的那些。
+1. 很多时候，成功者是自证的，失败者也是。
+1. 阻止大脑用思维定式进行自动加工，夺回大脑的控制权。
+1. 努力不是盲目的，是定向的。
+1. 要超越心智，首先要能辨别更好的心智与现有心智的区别。
+1. 世俗的成功不是人人都可以达成的，按概率也就只有一小部分。
+1. 盲目听信成功学故事并模仿，将离成功越来越远。
+1. 不管是恋爱还是职场，要选得好就得先小范围尝试和观察，对所谓的“好坏”有个大体了解后，然后再选择，最后全情投入。
+1. 完美的职业规划不存在，避免因为规划得太细而失去更多的可能性。
+1. 过去的付出只代表过去，沉没成本不是成本。
+1. 常认为自己是受害者的人往往真的会成为受害者。
+1. 绝对公平并不存在，追求绝对公平只是追求自利。
+1. 活在父母的世界跟活在子女的世界一样，都是人格尚未独立出来的婴儿。
+1. 在事情没有快速变化的前提下，等待仅仅是无谓的消耗。
+1. 要撕掉自己的短处，不要试图掩盖，用更强的标签去替代它。
+1. 陷入指定的成功，你就基本不太可能成功了。
+1. 握不住的沙，不如扬了它。
+1. 优于别人并不高贵，真正的高贵因该是优于过去的自己。-- 海明威《真实的高贵》
+1. 顶级组织至情至性，
+ 一流组织共同信仰，
+二流组织共同利益，
+三流组织共同规则。
+1. 像老大寻求意见时，自己先思考出几套解决方案也就是“香蕉”，让你的老板去做选择而不是让他出想法。如果因为你的”香蕉”没熟透，放心你的老大会给你更好的解决方法，先养成动脑思考的好习惯。 --香蕉法则
+1. 善良不是要求别人做什么，而是要求自己做什么。
+1. 自己是既得利益者，说这不公平叫「觉悟高」，值得钦佩，自己不是既得利益者，就别眼里只看到不公平，因为这太正常了，如果不理解，或者心生抱怨，该想想自己的问题。
+1. 文字传达观点，文字也能误传观点。
+1. “检验一流智力的标准，就是看你能不能在头脑中同时存在两种相反的想法，还维持正常行事的能力。”
+1. 有时候，鸡汤可能比所谓的干货更有用，很多道理其实大家都懂，我们做出改变缺乏的只是一个推动力。
+1. 不自律，无自由：
+曾经以为自由就是想做啥做啥，后来才发现自律者才会自由。当一个人缺乏自由的时候，他做的事情总是在受习惯和即时诱惑的影响，要么就是被他人的思想观念所扰，几乎永远不可能去做内心真正渴望的事。
+1. 《海上钢琴师》中，1900 为什么最后没有下船？
+我们的陆地就是他的海洋。无人愿意一生漂泊。
+1. 永生是否是一种酷刑？
+凡是能被适应的惩罚都不能算是酷刑。
+1. 当有人做一件事并没有伤害到任何人的事情，你却要指手画脚的时候，你才是那个傻逼。
+1. 这世上只有一种成功，就是能用自己喜欢的方式度过自己的一生。
+',
+)
+[ info ] [ RUN ] app\admin\controller\Note->saveNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000590s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001224s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `title`='写出这些话的人，我估计一辈子都追不上了',`content`='# 写出这些话的人，我估计一辈子都追不上了\n1. 如果发出声音是危险的，那就保持沉默；如果自觉无力发光，那就别去照亮别人。但是，不要习惯了黑暗就为黑暗辩护不要为自己的苟且而得意洋洋；不要嘲讽那些比自己更勇敢，更有热量的人们。可以卑微如尘土，不可扭曲如蛆虫。\n2. 你多学一样本事，就少说一句求人的话。\n3. 我38岁那年，琢磨着要不要去读两年的放射线照相术大专学位。然后我跟我朋友说了这事，我觉得自己太老了，等拿到学位是，我都40岁了。\n--朋友说，如果你不读，你还是会40岁，一个没有学位的40岁。\n4.	这些年来我一直提醒自己一件事情，千万不要自己感动自己。大部分人看似的努力，不过是愚蠢导致的。什么熬夜看书到天亮，连续几天只睡几小时，多久没有放假了，如果这些东西也值得夸耀，那么富士康流水线上任何一个人都比你努力多了。人难免天生有自怜的情绪，唯有时刻保持清醒，才能看清真正的价值在哪里。\n5.	孩子，我要求你读书用功，不是因为我要你跟别人比成绩，而是，我希望你将来会拥有选择的权利，选择有意义，有时间的工作，而不是被迫谋生。当你的工作在你心中有意义，你就有成就感。当你的工作给你时间，不剥夺你的生活，你就有尊严。成就感和尊严，给你快乐。\n6.	最终我们都将学会，与他人交往，最重要的不是甜言蜜语，不是容貌金钱，而是你和他对于这个世界的看法，对人生的态度是否一致。\n7.	我们一路奋战，不是为了改变世界，而是为了世界不再改变我们。\n8.	不要欺骗别人，因为你能骗到的人，都是相信你的人。\n9.	熟练的运用\"关我屁事\"和\"关你屁事\"可以省下人生80％的时间。\n10.	我怎么敢倒下。我身后空无一人。\n11.	\"痛苦是财富，这话是扯淡。姑娘，痛苦就是痛苦，对痛苦的思考才是财富。\"\n12.	永远不要相信苦难是值得的，苦难就是苦难，苦难不会带来成功。苦难不值得追求，磨练意志是因为苦难无法躲开。\n13.	如果我不曾见过太阳，我本可以忍受黑暗。\n14.	社交之所以累，是因为每个人都试图展现出自己其实并不具备的品质。\n15.	读书：之前觉得自己是一个人，现在觉得自己可以是一个世界。\n16.	希望你今天白费的努力，早晚有一天变成值得。\n17.	历史：遗忘，对倒下的人不公平。\n18.	南京大屠杀：\n安培说：现在日本的年轻人没有义务为过去的日本人像现在的中国人道歉。\n那现在的中国人也没有权利为过去的中国人原谅现在的日本人。\n19.	明明别人轻轻松松可以做到的事，我却做不了。满满的无力感，无力到没有力气。\n20.	人的一切痛苦，本质上都是对自己无能的愤怒。\n21.	不要试图同情你自己。\n22.	你配得上你自己想要的生活吗？\n23.	什么叫成熟？\n了解自己，了解自己的欲望，了解自己的局限。理解别人，理解别人的欲望，理解别人的局限。\n24.	我们会看到要寻找的东西，错失不去寻找的东西，虽然它在那里。我们的阅历被我们的关注点深深地影响了。\n25.	做你害怕做的事，然后你会发现，不过如此。\n26.	一直认为，所谓新鲜感，不是和未知的人一起去做同样的事，而是和已知的人一起去体验未知的人生。\n27.	如果不能随时有限的反击，所有的宽容都是懦弱。\n28.	群众的眼睛不是雪亮的，群众的眼睛是盲目的。\n29.	不是所有的人都能功成名就，我们中有些人注定要在日常的点滴中寻找生命的意义。\n30.	带人友善是修养，独来独往是性格。\n31.	几年前踏上火车那一刻还没有意识到，从此故乡只有冬夏，再无春秋。\n32.	十年饮水，难凉热血。\n33.	德，律己为德，律人无异于私刑。\n34.	信仰，他可以与宗教无关，代表自己的精神追求。\n35.	人最重要的能力有两个，适应环境，不忘初心。适应环境可以安身，不忘初心可以立命。\n36.	维护不在场的人，所言不多于所知。\n37.	只有你愿意为之而死的东西，你才可以藉之而生。\n38.	你见过树，却没见过森林。\n39.	那些杀不死你的最终都会使你更强壮。\n40.	是你把你的秘密告诉了风，那就别怪风把他带给树。\n41.	似乎大家都这样。自命不凡，却无足轻重。\n42.	保安笑着问我：\"你那么小个子，开那么大个车？\"的时候。我傻笑着回答：\"你是当保安，我是当司机的。\"\n43.	猪会飞，是因为他站在了风口上，成功的飞起来以后他可以总结起飞技巧，但重要的，是风。\n44.	你现在做的每一件事看来并没有什么意义，但他们也许会在未来助你 一臂之力。\n45.	唱出本身就是最要不得的态度。当你做某件事的时候，一旦想要求快，就表示你再也不关心他，而是想去做别的事。\n46.	命运啊，说是注定，不如说是你在何时做了选择。\n47.	在一群出色的人中间，常常误以为自己也是其中一员，然后忘了努力。\n48.	只有经历过地狱磨难的人，才有建造天堂的力量。\n49.	一个伟大的人往往受到排挤，压抑，甚至被人斥为哗众取宠而陷于孤独中。\n50.	与怪物战斗的人，应当小心自己不要成为怪物。当你远远凝视深渊时，深渊也在凝视你。\n51.	一个人知道自己为什么而活，就可以忍受任何一种生活。\n52.	假如我们不去打仗，敌人用刺刀杀死了我们，还要指着我们的骨头说：看，这是奴隶。\n53.	我有一事，生死与之。\n54.	我的体内啊，有个器官比心脏还重要，他虽然看不见，但却是在我的体内从脑袋一直贯穿到胯间。就因为他，我才能站着直，坐着正，就算脚步摇晃也能笔直地向前行，在这里退缩的话，那东西就会折断。\n55.	不可能这三个字，你说的太多了。\n56.	世界上没遇上帝，如果有的话，我无法容忍我不是。－－尼采\n57.	剑在英雄手，登台傲王侯。－－比莫干《九州缥缈录》\n58.	武士的一生，只相信自己手中可以握住的东西。－－赢无翳《九州缥缈录》\n59.	为天地立心，为生民立命，为往圣继绝学，为万世开太平。－－北宋时期张载\n60.	为不能作战的人而战。\n61.	你的成功标准： 能做自己喜欢做的事，能只做自己喜欢做的事。\n62.	如何不招人厌的展现自己的学识：别人问了，你再答。\n63.	无论现实如何操蛋，你都能在心里有一个更诗意的世界，那个世界便是情怀。\n64.	情怀就是以心灵的满足而不是功利的得失作为自己的行为标准的一种品质。一件没有什么用的事，还是要去做，也许只是因为我喜欢，也许只是因为它看起来很美。\n65.	跟优秀的人相处是怎样一种体验：他从不刻意优秀，却总是无意中卓越。\n66.	不要跟眼界不一样的人争辩。\n67.	人穷尽一生追求另一个人的事，我一直无法理解，或许是因为我自己太有意思，无需他人陪伴，所以我祝你们在对方身上得到的快乐与我给自己的一样多。\n68.	一个人需要控制的事情越少，他心理上就越自由。当你企图控制一件事情的时候，你同时也就被这件事情所控制，这永远是个相互的过程。\n69.	我们痛恨限制的同时，也依赖限制。\n70.	一个能够安住于不确定和不可控制中的人最自由。\n71.	大部分的教育工作者都在教人找到工作，而不是寻找人生。\n72.	漫画提供给我们的，也许就是这个早以被我们遗忘的世界。但将它看做一个逃避现实，发泄情绪的渠道，还是从中寻找勇气和激励，在现实生活中做一个真正的英雄，决定权在你。\n73.	社会衡量一个人的价值，在于他能向外产出什么，至于他吸收了什么，没人在乎。\n74.	我发现没有任何一个煤矿工人靠挖煤多又快当上了煤老板。\n75.	有的人努力的时候是真的在努力，有的人努力的时候只是为了感动自己，这决定了一个人究竟能变成什么样。\n76.	在这残酷的现实面前，除了吃人与被吃，我还有第三种选择，就是努力活下去，并且让这个社会再好一点。知大恶才知大善。知暗夜才知光明。不要低估人性的丑恶，也不要低估人性的光辉。\n77.	群众的眼光到底是不是雪亮的？                                                                                  1）群众的智商，呈现非周期性的上升或者下降。                                                        2）其实群众的眼睛就是灯泡，而开关掌控在领导手中，需要时就是雪亮的，不需要时就是不明真相的。 \n3）如果让群众挑错，那群众的眼睛无疑是雪亮的，他们最擅长干这个了，但要是问群众什么是对的，那就瞎了。\n78.	我一向不太相信离别时的情真意切，我觉得那只是一种情绪渲染。\n79.	为什么孩子喜欢看有关恐龙的书？                                                                                恐龙代表过去，宇宙飞船代表未来，我就是不喜欢现在。－－询问一7岁男孩得知\n80.	纠正一个错误的方法有很多，而解决一个错误的终极方法就是不给他任何发生的机会。\n81.	为什么父母一吵架，小孩就特别懂事？                                                                         小孩的沉默，隐忍，恐惧，以及讨好，在麻木的大人眼中，便是：懂事。\n82.	凡我中华之寸土皆洒满我中华儿女之血泪，永世不忘倭寇侵占与残杀之历史。\n83.	我相信再有一个妖精大闹天宫，悟空会是去镇压的那个人。\n骑士杀死恶龙后，望着满地的财宝，身上长出了鳞片。\n84.	只有写鸡汤的人才能从鸡汤中受益。\n85.	没有中枪的觉悟，就没有开枪的资格。\n86.	什么是人渣？   \n浑身都是铠甲，没有一处软肋。\n87.	一种人，天天都笑嘻嘻的，好似和谁都合得来，但是从不主动联系朋友，脾气也出奇的好，好像世上没有什么事情能让他们愤怒和悲伤。心中怀着宏伟的梦想，却不愿与现实中的人分担，只是默默的做，以为能用沙砾和泥土堆出山川。\n88.	为什么我们愿意把钱捐给身边的乞丐，而不顾那些生活在水深火热之中的欠发达国家的人民呢？                                                                                                                         人类的所有善意都遵循邻避原则。坏的事可以发生，只要别发生在我家后院就行了。－－善意有效辐射范围\n89.	后来许多人问我一个人夜晚踟蹰路上的心情，我想起的却不是孤单和路长，而是波澜壮阔的海和天空中闪耀的星光。－－张小砚\n90.	当很重要的人寻求更大的世界，却因此不得不离开你的时候，支持还是阻止好？            \n他走是因为他想走，他不走是因为他不想走，不要试图去背负别人的人生。\n91.	一个人在对另一个人的内心世界做出评判时，最好怀有一定程度的谦逊和宽容。－－《群山回响》\n92.	楼下的一个男人病的要死，那间壁的一家唱着留声机，对面是弄孩子，楼上两个人狂笑，还有打鼾声，还有打牌声，河中的船上有女人哭着她失去的母亲。 人类的悲欢并不相通，我只觉得他们吵闹。－－鲁迅\n93.	什么样的状态最恐怖？ \n忙碌的学习，上班，以为忙碌了，就是充实了。一般还很满足，自以为比别人过得有意义。其实说到底，都是急于活得明白，反倒搞不清楚。\n94.	未知的危险性是最恐怖的，而未知来自于你感官能力的丧失。比如说漆黑一片的屋子里你丧失的是视觉，比如说一片静谧的丛林里你丧失的是听觉。当你失去这些采集环境信息的渠道后，你会无法用经验体系构建一个稳定可预测的环境状况。人本能的就希望远离这种不稳定，这就是恐惧的作用了。\n95.	我们千山万水来到这，为的也不过是说一声再见。\n96.	遇见你所爱的人，时间就会停止。\n97.	在遇到她之前，我不怕死，不惧远行，也不曾忧虑悠长岁月，现在却从未如此真切地思虑起将来。－－《平如美棠》\n98.	从今往后，咱们只有死别，再无生离。－－《我们仨》\n99.	别人的痛苦才是你艺术的源泉，而你去受苦只会成为别人艺术的源泉。\n100.	我们大部分人根本谈不上独立的审美，而且美也是随着时代和环境在变化。\n101.	无论我告诉你什么道理，当你的心智没有达到这个境界或接近的水平时或经历过一些事情的时候，你是不会理解这个道理的。或者你以为你知道这个道理，其实你不知道。\n102.	除了自身的病患或亲友离去的痛苦是真实的，其他的痛苦都是你自己的价值观带给你的。\n103.	别人指责你的事情或批评的你的理由，往往最能伤害你的，是那些你也这样认为的事情。\n104.	其实人跟人之间差别其实不大，所以不要与别人去比较，人生就是一场长跑，你可能不会是第一名，但也不不太会是最后一名，和前面比你会有动力，和后面比你会有幸福。但重要的是享受过程。\n105.	永远不要与人去辩论，你也很难把别人辩服，因为立场不同，因为没有对错，只有规则，只有利益。人生就是一场游戏，懂得你在玩的游戏的游戏规则，然后玩好它。\n106.	生活其实是一种运营，时间是你最宝贵的资源，还有钱，关系，都是你的一种投入，自己重视什么，事业，友谊，家庭上，就多投入些，种瓜得瓜，好好平衡各个关系是你要做好的。\n107.	人不会死在绝境。却往往栽在十字路口。\n108.	编剧是你，我怎么知道结局。\n109.	一只船孤独的航行在海上，它既不寻求幸福，也不逃避幸福，它只是向前航行，底下是沉静碧蓝的大海，而头顶是金色的太阳。   --莱蒙托夫\n110.	历史学——孤证不成立\n111.	新闻无需撒谎，它只需要给出“部分的真相”，就可以达到操纵民意的目的\n112.	你所关注的东西，永远都是媒体想让你关注的\n113.	很多时候舆论一边倒的声音，未必是大多数人所赞同的，只是不赞同的人以为自己是少数，不愿意发声而已\n114.	除非你准备射击，否则不要把枪口对准人或物\n115.	把自己不能理解的行为定义为「装」实在是非常不好的习惯，要改。\n116.	画家不识渔家苦，好作寒江钓雪图。\n117.	我们坚持一件事情，并不是因为这样做了会有效果，而是坚信，这样做是对的。——哈维尔\n118.	人这一生为什么要努力？\n是一种想去体验一个更大的世界的欲望。\n119.	子路有闻，未能行之，唯恐有（又）闻。\n120.	信任就像一张纸，皱了，即使抚平，也恢复不了原样了。。。 \n用水胶带，喷水，绷木板上干后比原先还平。---做不到只是知识不够用。\n121.	我第一次感受到时间是一种物质的存在。它就像是一条蠕动的虫子，拖着臃肿皱皮的身躯，从我的血管里缓缓缓缓地爬过，并且留下了一条粘乎乎的痕迹。\n122.	原来死亡就是一种消失。不但是肉体，精神和思想的消失，更重要的是在人们的记忆中慢慢成为了空白，就像这个人从没在这个世界上来过一样。\n123.	张浩站在他办公室高大的落地窗玻璃前，看着下面的芸芸众生。他说，林岚，你觉得他们生活得辛苦吗？我觉得很辛苦。每个人都很辛苦。这个世界不会符合你所有的想象，甚至连一个你的想象也不符合，可是我们还是得生存下去。\n124.	人是为活着本身而活着，而不是为了活着之外的任何事物所活着。\n125.	人生的意义是什么？\n意义这个词太单薄，太卑微，低落到尘埃里，配不上生命，也承载不起人生。\n126.	人生逆旅，一蓑烟雨。\n127.	外行看热闹，都不知道别人家的事情，一群吃瓜群众指指点点，哈哈哈哈。。。被媒体玩的像猪一样。\n128.	底线之上才有资格说各展所长。\n129.	“我寄给你的信，总要送往邮局，不喜欢放在街边的绿色邮筒中，我总疑心那里会慢一点。”	--鲁迅《致许广平》\n130.	我不要儿子，我要一个女儿--只要一个，像你的。--钱钟书\n131.	孩子不是图画练习册，不要光顾着涂上自己喜欢的颜色。	--《追风筝的人》\n132.	生活其实也很简单，喜欢的就争取，得到的就珍惜，失去了就忘记。\n133.	有什么事情是游戏从业者不愿意告诉玩家的?\n免费玩家也是我们提供给付费玩家的功能之一。\n134.	哪有什么岁月静好，不过是有人为你付中负重前行，生活从来都不容易，当你觉得挺容易的时候，一点是有人再替你负重前行。\n//好像现在是我人生中最轻松容易的时候了，那么到底有哪些人在为我负重前行呢？\n135.	有枪但你没盾，你挡不住别人的子弹。\n136.	没有人有义务了解你所尽力的艰辛。\n137.	我从来没有想过一个节目会以无解来结尾，一直到明白真实的世界就是如此。 --柴静《双城的创伤》\n138.	能够让你后悔的，从来不是你做过的事，而是你想做却没有做过的事。\n139.	很多时候，你愿意讲给别人听的，大概是那些很想，却再也没有机会告诉以前的自己的话吧。--《肖申克的救赎》\n140.	从童年起，我便独自一人。照顾着历代的星辰。--《孤独》白鹤林\n141.	与这世界交手多年，你是否光彩依旧，兴致盎然。\n142.	为什么你不让别人看到你善良的一面？因为如果他们看见了，就会期望我一直是善良的。\n143. 周围认识的许多情侣，最后都步入了婚姻殿堂，但其中不少人在爱情长跑中都曾不忠。有些故事大家心照不宣，甚至帮他们遮掩。每次婚礼，我看着新人们热泪盈眶地念誓言，从没怀疑过他们在那一刻的真诚，可人性是如此幽深复杂，千帆过尽，我变得什么都能理解，也什么都无法相信。\n144. 人生有5%的幸福，5%的痛苦，还有90%的平淡。人们往往被那5%的幸福诱惑着，幻想未来或怀念过去，忍受着5%的痛苦，在90%的平淡中慢慢度过漫长的一生。\n145. 记得一个电影里面的女主说过”我不是喜欢钱，但是钱可以带来自由和尊严。我喜欢的是自由和尊严。”\n146. 90次的反复下载上传，最后变成了这样，可见你认为最可靠的数据也是会在传播中失去原来的样子，更何况是你从被人嘴里听到的别人。\n147. 无论你做的事情多正义，都不能强制我和你一个步调。\n148. 既无法忍受现在的状态，又没能力改变这一切，可以像只猪一样懒，却无法像只猪一样心安理得。\n149. 我们的祖先是被吃了无数回才走上了食物链的顶端。\n150. 尊重粉丝维护偶像，但也请尊重一个人从内心深处鄙视另一个人的自由。\n151. 皇帝为什么不多生孩子，最后选择优秀的孩子即位？”长幼”是常量，”优秀”是变量，政治稳定不能有太多的变量。\n152. 我们看到的都是别人让我们看到的。\n153. 没打出来的牌才是王牌。\n154. 市场不一定是去迎合的，而是可以引导和培养的。\n155. 后代子孙永远也不会知晓当初战争中零星冲突的悲惨情况；事实上，一无所知反而最好。真正的战争永远会隐没于历史的黑暗面。 ---沃尔特•惠特曼\n156. 只有你才知道对你而言什么才是糟糕的生活，什么才是真正的一塌糊涂，这与旁人的教说，旁人的经验并无关系。\n1. 这世上真话本就不多，一位女子的脸红胜过一大段对白。-- 老舍\n1. 如果说有谁在看到流星的瞬时就能许下愿望，那一定是非常纯熟且迫切的愿望。\n1. “我可以尽管向你们这个组合宣泄负面情绪，因为你们是被主流唾弃的，所以无论我说什么都没错，毕竟我是站在道德制高点上的。” --momo的老公\n1. 不是返璞归真，转了个圈回到的却不是原处。两个放羊最大的区别，一个是满足物质生活，一个是满足精神生活。曾经的种地放羊是生活的根基，被迫接受的事没有什么美感，结束一天的工作后裹着一身臭汗上炕睡觉第二天周而复始，这种放羊与“舒适的生活”是没有挂钩的。而现在那种有情怀的种地放羊则是一种有钱人的主动选择，把过去的苦事中的精华提取，与其他美好的事相连接，在放羊的生活中也能享受惬意的生活。他们有能力选择和组合生活，这不该被批判。\n1. 我看到的多数家庭的教育是颠倒混乱的。生下来到学龄前应当树立家长权威（要有敬畏），他们却去溺爱；小学应当严格培养学习习惯和基础，他们却宽松；青春期个性萌芽，父母应当从权威退到民主，让孩子学会理性和责任时，他们却开始各种着急焦虑和专制严管；到大学应该是退居二线，最多给于建议的时候他们开始对孩子人生规划指手画脚；工作了，父母应当放手让孩子完全独立对自己负责时，他们却最终升级到强迫相亲这种直接干涉。\n1. 不愿费心力和别人交流。然而总是被指诘在躲避。内心不坦然，才是孤独者的坟墓。\n1. 人生如逆旅，我亦是行人。\n1. 你一直耿耿于怀的事事实上相关人物根本早就忘记了 耿耿于怀的果然只有你自己“\n1. 当前的环境也许只是一个暂态，也许只是世界的一小面；如果你想要见见更大的世界，那就不要太急着让自己为了适应当前的环境而彻底改变。\n1. 当你老了，回顾一生，就会发觉：什么时候出国读书，什么时候决定做第一份职业、何时选定了对象而恋爱、什么时候结婚，其实都是命运的巨变。只是当时站在三岔路口，眼见风云千樯，你作出选择的那一日，在日记上，相当沉闷和平凡，当时还以为是生命中普通的一天。——陶杰 《杀鹌鹑的少女》\n1. 那一天我二十一岁，在我一生的黄金时代，我有好多奢望。我想爱，想吃，还想在一瞬间变成天上半明半暗的云，后来我才知道，生活就是个缓慢受锤的过程，人一天天老下去，奢望也一天天消逝，最后变得像挨了锤的牛一样。可是我过二十一岁生日时没有预见到这一点。我觉得自己会永远生猛下去，什么也锤不了我。 — —王小波\n1. 想要追求自由随性的生活，就一定要先从自律开始。\n1. 别人口中越是容易让人得出倾向性结论的问题描述，往往代表他刻意隐瞒了越多关键的细节。\n1. 走不进去的世界就不要硬挤了，为难了别人，也作贱了自己。\n1. 古龙《多情剑客无情剑》里，提过一个例子：一对厨子，饭馆打烊后，他们在后厨，自己给自己炒了盘菜，找点小酒，很惬意的饮食一番，舒服那一两个时辰。\n--古龙还说：他们还活着，就是因为一天还有那么一两个时辰。\n1. 从来如此，便对么？——鲁迅《狂人日记》\n1. 那……学校不好，难道知识也不好么?\n1. 高三毕业的欢送会上，复读班上的五个男生合唱了这首歌，我知道他们都不是第一年参加高考，我也知道那一年他们仍然成绩平平，我们那一届复读班整体都考的很差，但这首歌我记到现在。好像长这么大，见过的最多的无功而返，苦苦挣扎都是在学习的道路上。可苦涩中的温暖最能长存。路漫漫，且行且珍重！\n1. 我一直记得刘瑜写给女儿的一段话：愿你被很多人爱，如果没有，愿你在寂寞里学会宽容。\n1. 开始并完成一件事，比做好它更重要，因为只要开始了，你就有机会把它做的更好———-一件看上去繁难的事，只要开始做了，就会变得越来越容易。”\n1. 张一鸣有一句说的特别对：所谓成功，就是延迟满足。\n1. 成长是件残酷的事情，也许久而久之我们活成了别人想要的模样。但世俗跟成熟是两码事：在熙熙攘攘之外学会“我愿意”，不愿将就的你也可以不那么讲究。\n1. “秘密的暴力比公开的暴力更令人恐怖，它会使人失去思考能力、道德意识和抵抗意志，因此退化到最低等原始动物保命本能中去。为了保命求生、避免肉体折磨，人会变得全无廉耻、奴性十足、无所不为。秘密统治对政府权力的正当行使和合道德性同样有着严重的腐蚀作用。” ---《布达佩斯往事》\n1. 一个成熟的人，他的标准来自他的内心，而大多数的人，却受环境左右。对自己的标准会不由自主的降低以适应这个环境，减少自身与环境的冲突，在一个低标准下，自觉“满意”的度过每一天。 ——《精进》\n1. 梦想不一定要马上实现，如果身边的人反对，那就走慢一点，只要你每天确定自己在往那里走就行。\n1. 他没有勇气，也没有兴趣使渴望的行动得以一气呵成，因此自己在半途中就会怀疑行动的意义。---夏目漱石\n1. 我来不及认真地年轻，待明白过来时，只能选择认真地老去。 —— 三毛\n1. 我会以我的标准与方式看待世界，但我并不会以他来要求他人。--清让\n1. 时间，只是一个自称能治百病的庸医。\n1. 当你能从你认可的人或者事物身上吸取经验与知识，这是大部分人能做到的，但是如果你能从你不认可的人或者事物身上吸取营养，学到东西，那就真的太难得\n了。\n1. 你想成为什么样的人，那就尽量去向他们靠近。\n1. 真正幽默的人，是把快乐给了别人。\n1. 人这一生有很多重要的决定，每个决定其实都决定了我未来的人生，是否被动接受做一个幼师、是否转专业、是否升本等等等，做这些所有的选择与决定前，想想自身的优势，结合趋势与实力，看一下自己做这件事的把握有多少，但凡重大的决定，不要想着在尝试中去找答案，对于小事情这样是可以的，但是一些人生的重大决定是没有尝试的机会的，想尽一切办法想把仗打赢的，是最难的，我最该做的，是在一开始选择前，确定这场仗能打赢，再去打。\n1. 面试造飞机，工作扭螺丝。\n1. “让忙于务实的人务实，让乐于做梦的人做梦”。\n1. 生命是一场华丽的冒险，只是我们永远都跨不过时间的深渊。\n1. 曾经的你，以为只要带着那把长剑和赤子之心就可以说服自己不出卖理想的灵魂。在最艰难和不得不流泪的晚上，即使连自己都在笑自己傻，但仍然用长剑刺痛自己，提醒自己，勇往直前，直到将来。\n1. 过往不恋，未来不迎，当下不负。\n1. 忠言逆耳，良药苦口，可不都是这样吗。但我觉得最重要的是要培养自己的判断力，在兼容并包的基础上一定要有自己的主心骨。善听百家之言，思想上的言论抒发不分对错，要客观结合自己的情况，别人的经验也不全是对的，就算是对的，也不全适合自己，不同的人有不同的性格，脾气，要自己汲取自己认可的观点看法，适合自己才是最好的。\n1. 世上最难的事之一，把自己的思想装进别人的脑袋。\n1. 这短短的一生，我们最终都会失去。你不妨大胆一些，爱一个人，攀一座山，追一个梦。 ——《大鱼海棠》\n1. 有时候遇到瓶颈了，你应该停下来好好想想，是有四年工作经验，还是一个经验用了四年。\n1. 这世上唯有病痛和亲人去世是真切的痛楚，其他都是不必要的伤感，是忽略了当下拥有的一切的贪婪。\n1. 许多人所谓的成熟， 不过是被习俗磨去了棱角，变得世故而实际了。那不是成熟，而是精神的早衰和个性的消亡。真正的成熟，应当是独特个性的形成，真实自我的发现，精神上的结果和丰收。\n1. 别嫌读书苦，你现在的气质里，藏着你走过的路，读书不是为了雄辩和驳斥，也不是为了轻信和盲从，而是为了思考和权衡。\n1. 真的不要小看父母，不要觉得自己很厉害。以前笑父母遥控器还要套个手机套，其实和现在我们用手机还要贴膜戴手机套是一样的。以前笑父母为了一毛钱还和人家讨价还价，其实和我们现在用着手机在群里抢红包是一样的。以前父母无聊时磕着瓜子看着小说，其实和我们现在拿着手机刷着朋友圈是一样的。以前父母拉几个好友打麻将谈天说地，其实和我们现在拉几个网友王者农药开黑是一样的。以前父母在厂里上班踩着缝纫机，其实和我们现在写字楼里对着电脑写 PPT word 文档是一样的。所有的都没有变，只是时代在变，生活方式升级，换一种方式活着而已。很多年以后，可能会有10后笑着：瞧，我爸以前是在格子间苦逼写代码的工程师，我现在一家未来公司看着机器人帮我干活，公司只有我一个人呢。\n1. 有勇气去改变那些可以改变的事，\n有肚量去容忍那些无法改变的事，\n有智慧去区分上述的事。\n1. 识人不必探尽，探尽则多疑。\n知人不必言尽，言尽则无友。\n责人不必苛尽，苛尽则众远。\n敬人不必卑尽，卑尽则少骨。\n让人不必退尽，退尽则路寡。\n1. 安全感在很多时候是束缚人的枷锁，过度追求会让人生少了很多可能性。\n1. 大部分的恐惧，只有在你把它当回事儿的时候才是。\n1. 很多时候，没有兴趣并不真的是没有兴趣，而是怕自己做不好。\n1. 最好的兴趣就是永远达不到但可以不断精进的那些。\n1. 很多时候，成功者是自证的，失败者也是。\n1. 阻止大脑用思维定式进行自动加工，夺回大脑的控制权。\n1. 努力不是盲目的，是定向的。\n1. 要超越心智，首先要能辨别更好的心智与现有心智的区别。\n1. 世俗的成功不是人人都可以达成的，按概率也就只有一小部分。\n1. 盲目听信成功学故事并模仿，将离成功越来越远。\n1. 不管是恋爱还是职场，要选得好就得先小范围尝试和观察，对所谓的“好坏”有个大体了解后，然后再选择，最后全情投入。\n1. 完美的职业规划不存在，避免因为规划得太细而失去更多的可能性。\n1. 过去的付出只代表过去，沉没成本不是成本。\n1. 常认为自己是受害者的人往往真的会成为受害者。\n1. 绝对公平并不存在，追求绝对公平只是追求自利。\n1. 活在父母的世界跟活在子女的世界一样，都是人格尚未独立出来的婴儿。\n1. 在事情没有快速变化的前提下，等待仅仅是无谓的消耗。\n1. 要撕掉自己的短处，不要试图掩盖，用更强的标签去替代它。\n1. 陷入指定的成功，你就基本不太可能成功了。\n1. 握不住的沙，不如扬了它。\n1. 优于别人并不高贵，真正的高贵因该是优于过去的自己。-- 海明威《真实的高贵》\n1. 顶级组织至情至性，\n 一流组织共同信仰，\n二流组织共同利益，\n三流组织共同规则。\n1. 像老大寻求意见时，自己先思考出几套解决方案也就是“香蕉”，让你的老板去做选择而不是让他出想法。如果因为你的”香蕉”没熟透，放心你的老大会给你更好的解决方法，先养成动脑思考的好习惯。 --香蕉法则\n1. 善良不是要求别人做什么，而是要求自己做什么。\n1. 自己是既得利益者，说这不公平叫「觉悟高」，值得钦佩，自己不是既得利益者，就别眼里只看到不公平，因为这太正常了，如果不理解，或者心生抱怨，该想想自己的问题。\n1. 文字传达观点，文字也能误传观点。\n1. “检验一流智力的标准，就是看你能不能在头脑中同时存在两种相反的想法，还维持正常行事的能力。”\n1. 有时候，鸡汤可能比所谓的干货更有用，很多道理其实大家都懂，我们做出改变缺乏的只是一个推动力。\n1. 不自律，无自由：\n曾经以为自由就是想做啥做啥，后来才发现自律者才会自由。当一个人缺乏自由的时候，他做的事情总是在受习惯和即时诱惑的影响，要么就是被他人的思想观念所扰，几乎永远不可能去做内心真正渴望的事。\n1. 《海上钢琴师》中，1900 为什么最后没有下船？\n我们的陆地就是他的海洋。无人愿意一生漂泊。\n1. 永生是否是一种酷刑？\n凡是能被适应的惩罚都不能算是酷刑。\n1. 当有人做一件事并没有伤害到任何人的事情，你却要指手画脚的时候，你才是那个傻逼。\n1. 这世上只有一种成功，就是能用自己喜欢的方式度过自己的一生。\n',`groups`='Default',`p_id`=1  WHERE  `id` = 1 [ RunTime:0.001161s ]
+---------------------------------------------------------------
+[ 2018-07-25T09:53:54+08:00 ] 74.120.168.12 120.204.17.72 GET /daily/
+[ info ] qingrang.top/daily/ [运行时间：0.110218s][吞吐率：9.07req/s] [内存消耗：3,351.92kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 5.1.1; SM801 Build/LMY47V) AppleWebKit/537.36 (KHTML, like Gecko)     		Chrome/46.0.2490.11 Mobile Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://qingrang.top/daily',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'host' => 'qingrang.top',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/notelst.html [ array (
+  0 => 'autoSave',
+  1 => 'phoneSave',
+  2 => 'hide',
+  3 => 'list',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+  10 => 'default_num',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000472s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001141s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.002927s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.000861s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000866s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000289s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000760s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001120s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000592s ]
+---------------------------------------------------------------
+[ 2018-07-25T09:54:05+08:00 ] 74.120.168.12 61.151.178.165 GET /daily/
+[ info ] qingrang.top/daily/ [运行时间：0.152034s][吞吐率：6.58req/s] [内存消耗：3,352.20kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'referer' => '',
+  'user-agent' => 'Mozilla/5.0 (Linux; U; Android 4.4.4; zh-cn; MX4 Pro Build/KTU84P) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en,*',
+  'host' => 'qingrang.top',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/notelst.html [ array (
+  0 => 'autoSave',
+  1 => 'phoneSave',
+  2 => 'hide',
+  3 => 'list',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+  10 => 'default_num',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000633s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001769s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.005331s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001481s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000405s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001367s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000426s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000635s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000946s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001604s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000951s ]
+---------------------------------------------------------------
+[ 2018-07-25T09:55:12+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/newedit.html
+[ info ] qingrang.top/daily/admin/note/newedit.html [运行时间：0.052436s][吞吐率：19.07req/s] [内存消耗：2,022.07kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'newedit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/notelst.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Note->newEdit[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/newedit.html [ array (
+  0 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000575s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001206s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000300s ]
+---------------------------------------------------------------
+[ 2018-07-25T10:00:25+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/updatenote/id/32.html
+[ info ] qingrang.top/daily/admin/note/updatenote/id/32.html [运行时间：0.069053s][吞吐率：14.48req/s] [内存消耗：2,275.28kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'updatenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '100311',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editNote/id/32',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'content' => '# 写出这些话的人，我估计一辈子都追不上了
+1. 如果发出声音是危险的，那就保持沉默；如果自觉无力发光，那就别去照亮别人。但是，不要习惯了黑暗就为黑暗辩护不要为自己的苟且而得意洋洋；不要嘲讽那些比自己更勇敢，更有热量的人们。可以卑微如尘土，不可扭曲如蛆虫。
+2. 你多学一样本事，就少说一句求人的话。
+3. 我38岁那年，琢磨着要不要去读两年的放射线照相术大专学位。然后我跟我朋友说了这事，我觉得自己太老了，等拿到学位是，我都40岁了。
+--朋友说，如果你不读，你还是会40岁，一个没有学位的40岁。
+4.	这些年来我一直提醒自己一件事情，千万不要自己感动自己。大部分人看似的努力，不过是愚蠢导致的。什么熬夜看书到天亮，连续几天只睡几小时，多久没有放假了，如果这些东西也值得夸耀，那么富士康流水线上任何一个人都比你努力多了。人难免天生有自怜的情绪，唯有时刻保持清醒，才能看清真正的价值在哪里。
+5.	孩子，我要求你读书用功，不是因为我要你跟别人比成绩，而是，我希望你将来会拥有选择的权利，选择有意义，有时间的工作，而不是被迫谋生。当你的工作在你心中有意义，你就有成就感。当你的工作给你时间，不剥夺你的生活，你就有尊严。成就感和尊严，给你快乐。
+6.	最终我们都将学会，与他人交往，最重要的不是甜言蜜语，不是容貌金钱，而是你和他对于这个世界的看法，对人生的态度是否一致。
+7.	我们一路奋战，不是为了改变世界，而是为了世界不再改变我们。
+8.	不要欺骗别人，因为你能骗到的人，都是相信你的人。
+9.	熟练的运用"关我屁事"和"关你屁事"可以省下人生80％的时间。
+10.	我怎么敢倒下。我身后空无一人。
+11.	"痛苦是财富，这话是扯淡。姑娘，痛苦就是痛苦，对痛苦的思考才是财富。"
+12.	永远不要相信苦难是值得的，苦难就是苦难，苦难不会带来成功。苦难不值得追求，磨练意志是因为苦难无法躲开。
+13.	如果我不曾见过太阳，我本可以忍受黑暗。
+14.	社交之所以累，是因为每个人都试图展现出自己其实并不具备的品质。
+15.	读书：之前觉得自己是一个人，现在觉得自己可以是一个世界。
+16.	希望你今天白费的努力，早晚有一天变成值得。
+17.	历史：遗忘，对倒下的人不公平。
+18.	南京大屠杀：
+安培说：现在日本的年轻人没有义务为过去的日本人像现在的中国人道歉。
+那现在的中国人也没有权利为过去的中国人原谅现在的日本人。
+19.	明明别人轻轻松松可以做到的事，我却做不了。满满的无力感，无力到没有力气。
+20.	人的一切痛苦，本质上都是对自己无能的愤怒。
+21.	不要试图同情你自己。
+22.	你配得上你自己想要的生活吗？
+23.	什么叫成熟？
+了解自己，了解自己的欲望，了解自己的局限。理解别人，理解别人的欲望，理解别人的局限。
+24.	我们会看到要寻找的东西，错失不去寻找的东西，虽然它在那里。我们的阅历被我们的关注点深深地影响了。
+25.	做你害怕做的事，然后你会发现，不过如此。
+26.	一直认为，所谓新鲜感，不是和未知的人一起去做同样的事，而是和已知的人一起去体验未知的人生。
+27.	如果不能随时有限的反击，所有的宽容都是懦弱。
+28.	群众的眼睛不是雪亮的，群众的眼睛是盲目的。
+29.	不是所有的人都能功成名就，我们中有些人注定要在日常的点滴中寻找生命的意义。
+30.	带人友善是修养，独来独往是性格。
+31.	几年前踏上火车那一刻还没有意识到，从此故乡只有冬夏，再无春秋。
+32.	十年饮水，难凉热血。
+33.	德，律己为德，律人无异于私刑。
+34.	信仰，他可以与宗教无关，代表自己的精神追求。
+35.	人最重要的能力有两个，适应环境，不忘初心。适应环境可以安身，不忘初心可以立命。
+36.	维护不在场的人，所言不多于所知。
+37.	只有你愿意为之而死的东西，你才可以藉之而生。
+38.	你见过树，却没见过森林。
+39.	那些杀不死你的最终都会使你更强壮。
+40.	是你把你的秘密告诉了风，那就别怪风把他带给树。
+41.	似乎大家都这样。自命不凡，却无足轻重。
+42.	保安笑着问我："你那么小个子，开那么大个车？"的时候。我傻笑着回答："你是当保安，我是当司机的。"
+43.	猪会飞，是因为他站在了风口上，成功的飞起来以后他可以总结起飞技巧，但重要的，是风。
+44.	你现在做的每一件事看来并没有什么意义，但他们也许会在未来助你 一臂之力。
+45.	唱出本身就是最要不得的态度。当你做某件事的时候，一旦想要求快，就表示你再也不关心他，而是想去做别的事。
+46.	命运啊，说是注定，不如说是你在何时做了选择。
+47.	在一群出色的人中间，常常误以为自己也是其中一员，然后忘了努力。
+48.	只有经历过地狱磨难的人，才有建造天堂的力量。
+49.	一个伟大的人往往受到排挤，压抑，甚至被人斥为哗众取宠而陷于孤独中。
+50.	与怪物战斗的人，应当小心自己不要成为怪物。当你远远凝视深渊时，深渊也在凝视你。
+51.	一个人知道自己为什么而活，就可以忍受任何一种生活。
+52.	假如我们不去打仗，敌人用刺刀杀死了我们，还要指着我们的骨头说：看，这是奴隶。
+53.	我有一事，生死与之。
+54.	我的体内啊，有个器官比心脏还重要，他虽然看不见，但却是在我的体内从脑袋一直贯穿到胯间。就因为他，我才能站着直，坐着正，就算脚步摇晃也能笔直地向前行，在这里退缩的话，那东西就会折断。
+55.	不可能这三个字，你说的太多了。
+56.	世界上没遇上帝，如果有的话，我无法容忍我不是。－－尼采
+57.	剑在英雄手，登台傲王侯。－－比莫干《九州缥缈录》
+58.	武士的一生，只相信自己手中可以握住的东西。－－赢无翳《九州缥缈录》
+59.	为天地立心，为生民立命，为往圣继绝学，为万世开太平。－－北宋时期张载
+60.	为不能作战的人而战。
+61.	你的成功标准： 能做自己喜欢做的事，能只做自己喜欢做的事。
+62.	如何不招人厌的展现自己的学识：别人问了，你再答。
+63.	无论现实如何操蛋，你都能在心里有一个更诗意的世界，那个世界便是情怀。
+64.	情怀就是以心灵的满足而不是功利的得失作为自己的行为标准的一种品质。一件没有什么用的事，还是要去做，也许只是因为我喜欢，也许只是因为它看起来很美。
+65.	跟优秀的人相处是怎样一种体验：他从不刻意优秀，却总是无意中卓越。
+66.	不要跟眼界不一样的人争辩。
+67.	人穷尽一生追求另一个人的事，我一直无法理解，或许是因为我自己太有意思，无需他人陪伴，所以我祝你们在对方身上得到的快乐与我给自己的一样多。
+68.	一个人需要控制的事情越少，他心理上就越自由。当你企图控制一件事情的时候，你同时也就被这件事情所控制，这永远是个相互的过程。
+69.	我们痛恨限制的同时，也依赖限制。
+70.	一个能够安住于不确定和不可控制中的人最自由。
+71.	大部分的教育工作者都在教人找到工作，而不是寻找人生。
+72.	漫画提供给我们的，也许就是这个早以被我们遗忘的世界。但将它看做一个逃避现实，发泄情绪的渠道，还是从中寻找勇气和激励，在现实生活中做一个真正的英雄，决定权在你。
+73.	社会衡量一个人的价值，在于他能向外产出什么，至于他吸收了什么，没人在乎。
+74.	我发现没有任何一个煤矿工人靠挖煤多又快当上了煤老板。
+75.	有的人努力的时候是真的在努力，有的人努力的时候只是为了感动自己，这决定了一个人究竟能变成什么样。
+76.	在这残酷的现实面前，除了吃人与被吃，我还有第三种选择，就是努力活下去，并且让这个社会再好一点。知大恶才知大善。知暗夜才知光明。不要低估人性的丑恶，也不要低估人性的光辉。
+77.	群众的眼光到底是不是雪亮的？                                                                                  1）群众的智商，呈现非周期性的上升或者下降。                                                        2）其实群众的眼睛就是灯泡，而开关掌控在领导手中，需要时就是雪亮的，不需要时就是不明真相的。 
+3）如果让群众挑错，那群众的眼睛无疑是雪亮的，他们最擅长干这个了，但要是问群众什么是对的，那就瞎了。
+78.	我一向不太相信离别时的情真意切，我觉得那只是一种情绪渲染。
+79.	为什么孩子喜欢看有关恐龙的书？                                                                                恐龙代表过去，宇宙飞船代表未来，我就是不喜欢现在。－－询问一7岁男孩得知
+80.	纠正一个错误的方法有很多，而解决一个错误的终极方法就是不给他任何发生的机会。
+81.	为什么父母一吵架，小孩就特别懂事？                                                                         小孩的沉默，隐忍，恐惧，以及讨好，在麻木的大人眼中，便是：懂事。
+82.	凡我中华之寸土皆洒满我中华儿女之血泪，永世不忘倭寇侵占与残杀之历史。
+83.	我相信再有一个妖精大闹天宫，悟空会是去镇压的那个人。
+骑士杀死恶龙后，望着满地的财宝，身上长出了鳞片。
+84.	只有写鸡汤的人才能从鸡汤中受益。
+85.	没有中枪的觉悟，就没有开枪的资格。
+86.	什么是人渣？   
+浑身都是铠甲，没有一处软肋。
+87.	一种人，天天都笑嘻嘻的，好似和谁都合得来，但是从不主动联系朋友，脾气也出奇的好，好像世上没有什么事情能让他们愤怒和悲伤。心中怀着宏伟的梦想，却不愿与现实中的人分担，只是默默的做，以为能用沙砾和泥土堆出山川。
+88.	为什么我们愿意把钱捐给身边的乞丐，而不顾那些生活在水深火热之中的欠发达国家的人民呢？                                                                                                                         人类的所有善意都遵循邻避原则。坏的事可以发生，只要别发生在我家后院就行了。－－善意有效辐射范围
+89.	后来许多人问我一个人夜晚踟蹰路上的心情，我想起的却不是孤单和路长，而是波澜壮阔的海和天空中闪耀的星光。－－张小砚
+90.	当很重要的人寻求更大的世界，却因此不得不离开你的时候，支持还是阻止好？            
+他走是因为他想走，他不走是因为他不想走，不要试图去背负别人的人生。
+91.	一个人在对另一个人的内心世界做出评判时，最好怀有一定程度的谦逊和宽容。－－《群山回响》
+92.	楼下的一个男人病的要死，那间壁的一家唱着留声机，对面是弄孩子，楼上两个人狂笑，还有打鼾声，还有打牌声，河中的船上有女人哭着她失去的母亲。 人类的悲欢并不相通，我只觉得他们吵闹。－－鲁迅
+93.	什么样的状态最恐怖？ 
+忙碌的学习，上班，以为忙碌了，就是充实了。一般还很满足，自以为比别人过得有意义。其实说到底，都是急于活得明白，反倒搞不清楚。
+94.	未知的危险性是最恐怖的，而未知来自于你感官能力的丧失。比如说漆黑一片的屋子里你丧失的是视觉，比如说一片静谧的丛林里你丧失的是听觉。当你失去这些采集环境信息的渠道后，你会无法用经验体系构建一个稳定可预测的环境状况。人本能的就希望远离这种不稳定，这就是恐惧的作用了。
+95.	我们千山万水来到这，为的也不过是说一声再见。
+96.	遇见你所爱的人，时间就会停止。
+97.	在遇到她之前，我不怕死，不惧远行，也不曾忧虑悠长岁月，现在却从未如此真切地思虑起将来。－－《平如美棠》
+98.	从今往后，咱们只有死别，再无生离。－－《我们仨》
+99.	别人的痛苦才是你艺术的源泉，而你去受苦只会成为别人艺术的源泉。
+100.	我们大部分人根本谈不上独立的审美，而且美也是随着时代和环境在变化。
+101.	无论我告诉你什么道理，当你的心智没有达到这个境界或接近的水平时或经历过一些事情的时候，你是不会理解这个道理的。或者你以为你知道这个道理，其实你不知道。
+102.	除了自身的病患或亲友离去的痛苦是真实的，其他的痛苦都是你自己的价值观带给你的。
+103.	别人指责你的事情或批评的你的理由，往往最能伤害你的，是那些你也这样认为的事情。
+104.	其实人跟人之间差别其实不大，所以不要与别人去比较，人生就是一场长跑，你可能不会是第一名，但也不不太会是最后一名，和前面比你会有动力，和后面比你会有幸福。但重要的是享受过程。
+105.	永远不要与人去辩论，你也很难把别人辩服，因为立场不同，因为没有对错，只有规则，只有利益。人生就是一场游戏，懂得你在玩的游戏的游戏规则，然后玩好它。
+106.	生活其实是一种运营，时间是你最宝贵的资源，还有钱，关系，都是你的一种投入，自己重视什么，事业，友谊，家庭上，就多投入些，种瓜得瓜，好好平衡各个关系是你要做好的。
+107.	人不会死在绝境。却往往栽在十字路口。
+108.	编剧是你，我怎么知道结局。
+109.	一只船孤独的航行在海上，它既不寻求幸福，也不逃避幸福，它只是向前航行，底下是沉静碧蓝的大海，而头顶是金色的太阳。   --莱蒙托夫
+110.	历史学——孤证不成立
+111.	新闻无需撒谎，它只需要给出“部分的真相”，就可以达到操纵民意的目的
+112.	你所关注的东西，永远都是媒体想让你关注的
+113.	很多时候舆论一边倒的声音，未必是大多数人所赞同的，只是不赞同的人以为自己是少数，不愿意发声而已
+114.	除非你准备射击，否则不要把枪口对准人或物
+115.	把自己不能理解的行为定义为「装」实在是非常不好的习惯，要改。
+116.	画家不识渔家苦，好作寒江钓雪图。
+117.	我们坚持一件事情，并不是因为这样做了会有效果，而是坚信，这样做是对的。——哈维尔
+118.	人这一生为什么要努力？
+是一种想去体验一个更大的世界的欲望。
+119.	子路有闻，未能行之，唯恐有（又）闻。
+120.	信任就像一张纸，皱了，即使抚平，也恢复不了原样了。。。 
+用水胶带，喷水，绷木板上干后比原先还平。---做不到只是知识不够用。
+121.	我第一次感受到时间是一种物质的存在。它就像是一条蠕动的虫子，拖着臃肿皱皮的身躯，从我的血管里缓缓缓缓地爬过，并且留下了一条粘乎乎的痕迹。
+122.	原来死亡就是一种消失。不但是肉体，精神和思想的消失，更重要的是在人们的记忆中慢慢成为了空白，就像这个人从没在这个世界上来过一样。
+123.	张浩站在他办公室高大的落地窗玻璃前，看着下面的芸芸众生。他说，林岚，你觉得他们生活得辛苦吗？我觉得很辛苦。每个人都很辛苦。这个世界不会符合你所有的想象，甚至连一个你的想象也不符合，可是我们还是得生存下去。
+124.	人是为活着本身而活着，而不是为了活着之外的任何事物所活着。
+125.	人生的意义是什么？
+意义这个词太单薄，太卑微，低落到尘埃里，配不上生命，也承载不起人生。
+126.	人生逆旅，一蓑烟雨。
+127.	外行看热闹，都不知道别人家的事情，一群吃瓜群众指指点点，哈哈哈哈。。。被媒体玩的像猪一样。
+128.	底线之上才有资格说各展所长。
+129.	“我寄给你的信，总要送往邮局，不喜欢放在街边的绿色邮筒中，我总疑心那里会慢一点。”	--鲁迅《致许广平》
+130.	我不要儿子，我要一个女儿--只要一个，像你的。--钱钟书
+131.	孩子不是图画练习册，不要光顾着涂上自己喜欢的颜色。	--《追风筝的人》
+132.	生活其实也很简单，喜欢的就争取，得到的就珍惜，失去了就忘记。
+133.	有什么事情是游戏从业者不愿意告诉玩家的?
+免费玩家也是我们提供给付费玩家的功能之一。
+134.	哪有什么岁月静好，不过是有人为你付中负重前行，生活从来都不容易，当你觉得挺容易的时候，一点是有人再替你负重前行。
+//好像现在是我人生中最轻松容易的时候了，那么到底有哪些人在为我负重前行呢？
+135.	有枪但你没盾，你挡不住别人的子弹。
+136.	没有人有义务了解你所尽力的艰辛。
+137.	我从来没有想过一个节目会以无解来结尾，一直到明白真实的世界就是如此。 --柴静《双城的创伤》
+138.	能够让你后悔的，从来不是你做过的事，而是你想做却没有做过的事。
+139.	很多时候，你愿意讲给别人听的，大概是那些很想，却再也没有机会告诉以前的自己的话吧。--《肖申克的救赎》
+140.	从童年起，我便独自一人。照顾着历代的星辰。--《孤独》白鹤林
+141.	与这世界交手多年，你是否光彩依旧，兴致盎然。
+142.	为什么你不让别人看到你善良的一面？因为如果他们看见了，就会期望我一直是善良的。
+143. 周围认识的许多情侣，最后都步入了婚姻殿堂，但其中不少人在爱情长跑中都曾不忠。有些故事大家心照不宣，甚至帮他们遮掩。每次婚礼，我看着新人们热泪盈眶地念誓言，从没怀疑过他们在那一刻的真诚，可人性是如此幽深复杂，千帆过尽，我变得什么都能理解，也什么都无法相信。
+144. 人生有5%的幸福，5%的痛苦，还有90%的平淡。人们往往被那5%的幸福诱惑着，幻想未来或怀念过去，忍受着5%的痛苦，在90%的平淡中慢慢度过漫长的一生。
+145. 记得一个电影里面的女主说过”我不是喜欢钱，但是钱可以带来自由和尊严。我喜欢的是自由和尊严。”
+146. 90次的反复下载上传，最后变成了这样，可见你认为最可靠的数据也是会在传播中失去原来的样子，更何况是你从被人嘴里听到的别人。
+147. 无论你做的事情多正义，都不能强制我和你一个步调。
+148. 既无法忍受现在的状态，又没能力改变这一切，可以像只猪一样懒，却无法像只猪一样心安理得。
+149. 我们的祖先是被吃了无数回才走上了食物链的顶端。
+150. 尊重粉丝维护偶像，但也请尊重一个人从内心深处鄙视另一个人的自由。
+151. 皇帝为什么不多生孩子，最后选择优秀的孩子即位？”长幼”是常量，”优秀”是变量，政治稳定不能有太多的变量。
+152. 我们看到的都是别人让我们看到的。
+153. 没打出来的牌才是王牌。
+154. 市场不一定是去迎合的，而是可以引导和培养的。
+155. 后代子孙永远也不会知晓当初战争中零星冲突的悲惨情况；事实上，一无所知反而最好。真正的战争永远会隐没于历史的黑暗面。 ---沃尔特•惠特曼
+156. 只有你才知道对你而言什么才是糟糕的生活，什么才是真正的一塌糊涂，这与旁人的教说，旁人的经验并无关系。
+1. 这世上真话本就不多，一位女子的脸红胜过一大段对白。-- 老舍
+1. 如果说有谁在看到流星的瞬时就能许下愿望，那一定是非常纯熟且迫切的愿望。
+1. “我可以尽管向你们这个组合宣泄负面情绪，因为你们是被主流唾弃的，所以无论我说什么都没错，毕竟我是站在道德制高点上的。” --momo的老公
+1. 不是返璞归真，转了个圈回到的却不是原处。两个放羊最大的区别，一个是满足物质生活，一个是满足精神生活。曾经的种地放羊是生活的根基，被迫接受的事没有什么美感，结束一天的工作后裹着一身臭汗上炕睡觉第二天周而复始，这种放羊与“舒适的生活”是没有挂钩的。而现在那种有情怀的种地放羊则是一种有钱人的主动选择，把过去的苦事中的精华提取，与其他美好的事相连接，在放羊的生活中也能享受惬意的生活。他们有能力选择和组合生活，这不该被批判。
+1. 我看到的多数家庭的教育是颠倒混乱的。生下来到学龄前应当树立家长权威（要有敬畏），他们却去溺爱；小学应当严格培养学习习惯和基础，他们却宽松；青春期个性萌芽，父母应当从权威退到民主，让孩子学会理性和责任时，他们却开始各种着急焦虑和专制严管；到大学应该是退居二线，最多给于建议的时候他们开始对孩子人生规划指手画脚；工作了，父母应当放手让孩子完全独立对自己负责时，他们却最终升级到强迫相亲这种直接干涉。
+1. 不愿费心力和别人交流。然而总是被指诘在躲避。内心不坦然，才是孤独者的坟墓。
+1. 人生如逆旅，我亦是行人。
+1. 你一直耿耿于怀的事事实上相关人物根本早就忘记了 耿耿于怀的果然只有你自己“
+1. 当前的环境也许只是一个暂态，也许只是世界的一小面；如果你想要见见更大的世界，那就不要太急着让自己为了适应当前的环境而彻底改变。
+1. 当你老了，回顾一生，就会发觉：什么时候出国读书，什么时候决定做第一份职业、何时选定了对象而恋爱、什么时候结婚，其实都是命运的巨变。只是当时站在三岔路口，眼见风云千樯，你作出选择的那一日，在日记上，相当沉闷和平凡，当时还以为是生命中普通的一天。——陶杰 《杀鹌鹑的少女》
+1. 那一天我二十一岁，在我一生的黄金时代，我有好多奢望。我想爱，想吃，还想在一瞬间变成天上半明半暗的云，后来我才知道，生活就是个缓慢受锤的过程，人一天天老下去，奢望也一天天消逝，最后变得像挨了锤的牛一样。可是我过二十一岁生日时没有预见到这一点。我觉得自己会永远生猛下去，什么也锤不了我。 — —王小波
+1. 想要追求自由随性的生活，就一定要先从自律开始。
+1. 别人口中越是容易让人得出倾向性结论的问题描述，往往代表他刻意隐瞒了越多关键的细节。
+1. 走不进去的世界就不要硬挤了，为难了别人，也作贱了自己。
+1. 古龙《多情剑客无情剑》里，提过一个例子：一对厨子，饭馆打烊后，他们在后厨，自己给自己炒了盘菜，找点小酒，很惬意的饮食一番，舒服那一两个时辰。
+--古龙还说：他们还活着，就是因为一天还有那么一两个时辰。
+1. 从来如此，便对么？——鲁迅《狂人日记》
+1. 那……学校不好，难道知识也不好么?
+1. 高三毕业的欢送会上，复读班上的五个男生合唱了这首歌，我知道他们都不是第一年参加高考，我也知道那一年他们仍然成绩平平，我们那一届复读班整体都考的很差，但这首歌我记到现在。好像长这么大，见过的最多的无功而返，苦苦挣扎都是在学习的道路上。可苦涩中的温暖最能长存。路漫漫，且行且珍重！
+1. 我一直记得刘瑜写给女儿的一段话：愿你被很多人爱，如果没有，愿你在寂寞里学会宽容。
+1. 开始并完成一件事，比做好它更重要，因为只要开始了，你就有机会把它做的更好———-一件看上去繁难的事，只要开始做了，就会变得越来越容易。”
+1. 张一鸣有一句说的特别对：所谓成功，就是延迟满足。
+1. 成长是件残酷的事情，也许久而久之我们活成了别人想要的模样。但世俗跟成熟是两码事：在熙熙攘攘之外学会“我愿意”，不愿将就的你也可以不那么讲究。
+1. “秘密的暴力比公开的暴力更令人恐怖，它会使人失去思考能力、道德意识和抵抗意志，因此退化到最低等原始动物保命本能中去。为了保命求生、避免肉体折磨，人会变得全无廉耻、奴性十足、无所不为。秘密统治对政府权力的正当行使和合道德性同样有着严重的腐蚀作用。” ---《布达佩斯往事》
+1. 一个成熟的人，他的标准来自他的内心，而大多数的人，却受环境左右。对自己的标准会不由自主的降低以适应这个环境，减少自身与环境的冲突，在一个低标准下，自觉“满意”的度过每一天。 ——《精进》
+1. 梦想不一定要马上实现，如果身边的人反对，那就走慢一点，只要你每天确定自己在往那里走就行。
+1. 他没有勇气，也没有兴趣使渴望的行动得以一气呵成，因此自己在半途中就会怀疑行动的意义。---夏目漱石
+1. 我来不及认真地年轻，待明白过来时，只能选择认真地老去。 —— 三毛
+1. 我会以我的标准与方式看待世界，但我并不会以他来要求他人。--清让
+1. 时间，只是一个自称能治百病的庸医。
+1. 当你能从你认可的人或者事物身上吸取经验与知识，这是大部分人能做到的，但是如果你能从你不认可的人或者事物身上吸取营养，学到东西，那就真的太难得
+了。
+1. 你想成为什么样的人，那就尽量去向他们靠近。
+1. 真正幽默的人，是把快乐给了别人。
+1. 人这一生有很多重要的决定，每个决定其实都决定了我未来的人生，是否被动接受做一个幼师、是否转专业、是否升本等等等，做这些所有的选择与决定前，想想自身的优势，结合趋势与实力，看一下自己做这件事的把握有多少，但凡重大的决定，不要想着在尝试中去找答案，对于小事情这样是可以的，但是一些人生的重大决定是没有尝试的机会的，想尽一切办法想把仗打赢的，是最难的，我最该做的，是在一开始选择前，确定这场仗能打赢，再去打。
+1. 面试造飞机，工作扭螺丝。
+1. “让忙于务实的人务实，让乐于做梦的人做梦”。
+1. 生命是一场华丽的冒险，只是我们永远都跨不过时间的深渊。
+1. 曾经的你，以为只要带着那把长剑和赤子之心就可以说服自己不出卖理想的灵魂。在最艰难和不得不流泪的晚上，即使连自己都在笑自己傻，但仍然用长剑刺痛自己，提醒自己，勇往直前，直到将来。
+1. 过往不恋，未来不迎，当下不负。
+1. 忠言逆耳，良药苦口，可不都是这样吗。但我觉得最重要的是要培养自己的判断力，在兼容并包的基础上一定要有自己的主心骨。善听百家之言，思想上的言论抒发不分对错，要客观结合自己的情况，别人的经验也不全是对的，就算是对的，也不全适合自己，不同的人有不同的性格，脾气，要自己汲取自己认可的观点看法，适合自己才是最好的。
+1. 世上最难的事之一，把自己的思想装进别人的脑袋。
+1. 这短短的一生，我们最终都会失去。你不妨大胆一些，爱一个人，攀一座山，追一个梦。 ——《大鱼海棠》
+1. 有时候遇到瓶颈了，你应该停下来好好想想，是有四年工作经验，还是一个经验用了四年。
+1. 这世上唯有病痛和亲人去世是真切的痛楚，其他都是不必要的伤感，是忽略了当下拥有的一切的贪婪。
+1. 许多人所谓的成熟， 不过是被习俗磨去了棱角，变得世故而实际了。那不是成熟，而是精神的早衰和个性的消亡。真正的成熟，应当是独特个性的形成，真实自我的发现，精神上的结果和丰收。
+1. 别嫌读书苦，你现在的气质里，藏着你走过的路，读书不是为了雄辩和驳斥，也不是为了轻信和盲从，而是为了思考和权衡。
+1. 真的不要小看父母，不要觉得自己很厉害。以前笑父母遥控器还要套个手机套，其实和现在我们用手机还要贴膜戴手机套是一样的。以前笑父母为了一毛钱还和人家讨价还价，其实和我们现在用着手机在群里抢红包是一样的。以前父母无聊时磕着瓜子看着小说，其实和我们现在拿着手机刷着朋友圈是一样的。以前父母拉几个好友打麻将谈天说地，其实和我们现在拉几个网友王者农药开黑是一样的。以前父母在厂里上班踩着缝纫机，其实和我们现在写字楼里对着电脑写 PPT word 文档是一样的。所有的都没有变，只是时代在变，生活方式升级，换一种方式活着而已。很多年以后，可能会有10后笑着：瞧，我爸以前是在格子间苦逼写代码的工程师，我现在一家未来公司看着机器人帮我干活，公司只有我一个人呢。
+1. 有勇气去改变那些可以改变的事，
+有肚量去容忍那些无法改变的事，
+有智慧去区分上述的事。
+1. 识人不必探尽，探尽则多疑。
+知人不必言尽，言尽则无友。
+责人不必苛尽，苛尽则众远。
+敬人不必卑尽，卑尽则少骨。
+让人不必退尽，退尽则路寡。
+1. 安全感在很多时候是束缚人的枷锁，过度追求会让人生少了很多可能性。
+1. 大部分的恐惧，只有在你把它当回事儿的时候才是。
+1. 很多时候，没有兴趣并不真的是没有兴趣，而是怕自己做不好。
+1. 最好的兴趣就是永远达不到但可以不断精进的那些。
+1. 很多时候，成功者是自证的，失败者也是。
+1. 阻止大脑用思维定式进行自动加工，夺回大脑的控制权。
+1. 努力不是盲目的，是定向的。
+1. 要超越心智，首先要能辨别更好的心智与现有心智的区别。
+1. 世俗的成功不是人人都可以达成的，按概率也就只有一小部分。
+1. 盲目听信成功学故事并模仿，将离成功越来越远。
+1. 不管是恋爱还是职场，要选得好就得先小范围尝试和观察，对所谓的“好坏”有个大体了解后，然后再选择，最后全情投入。
+1. 完美的职业规划不存在，避免因为规划得太细而失去更多的可能性。
+1. 过去的付出只代表过去，沉没成本不是成本。
+1. 常认为自己是受害者的人往往真的会成为受害者。
+1. 绝对公平并不存在，追求绝对公平只是追求自利。
+1. 活在父母的世界跟活在子女的世界一样，都是人格尚未独立出来的婴儿。
+1. 在事情没有快速变化的前提下，等待仅仅是无谓的消耗。
+1. 要撕掉自己的短处，不要试图掩盖，用更强的标签去替代它。
+1. 陷入指定的成功，你就基本不太可能成功了。
+1. 握不住的沙，不如扬了它。
+1. 优于别人并不高贵，真正的高贵因该是优于过去的自己。-- 海明威《真实的高贵》
+1. 顶级组织至情至性，
+ 一流组织共同信仰，
+二流组织共同利益，
+三流组织共同规则。
+1. 像老大寻求意见时，自己先思考出几套解决方案也就是“香蕉”，让你的老板去做选择而不是让他出想法。如果因为你的”香蕉”没熟透，放心你的老大会给你更好的解决方法，先养成动脑思考的好习惯。 --香蕉法则
+1. 善良不是要求别人做什么，而是要求自己做什么。
+1. 自己是既得利益者，说这不公平叫「觉悟高」，值得钦佩，自己不是既得利益者，就别眼里只看到不公平，因为这太正常了，如果不理解，或者心生抱怨，该想想自己的问题。
+1. 文字传达观点，文字也能误传观点。
+1. “检验一流智力的标准，就是看你能不能在头脑中同时存在两种相反的想法，还维持正常行事的能力。”
+1. 有时候，鸡汤可能比所谓的干货更有用，很多道理其实大家都懂，我们做出改变缺乏的只是一个推动力。
+1. 不自律，无自由：
+曾经以为自由就是想做啥做啥，后来才发现自律者才会自由。当一个人缺乏自由的时候，他做的事情总是在受习惯和即时诱惑的影响，要么就是被他人的思想观念所扰，几乎永远不可能去做内心真正渴望的事。
+1. 《海上钢琴师》中，1900 为什么最后没有下船？
+我们的陆地就是他的海洋。无人愿意一生漂泊。
+1. 永生是否是一种酷刑？
+凡是能被适应的惩罚都不能算是酷刑。
+1. 当有人做一件事并没有伤害到任何人的事情，你却要指手画脚的时候，你才是那个傻逼。
+1. 这世上只有一种成功，就是能用自己喜欢的方式度过自己的一生。
+1. 只有深入一座城市的边边角角，了解城市里的一花一草一木，才能真正看懂人生百态，品味酸甜苦辣的人生。
+1. 信仰是用来约束自己的。',
+  'groups' => 'Default',
+  'id' => '32',
+)
+[ info ] [ RUN ] app\admin\controller\Note->updateNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000811s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001323s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 32 LIMIT 1 [ RunTime:0.000693s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `note` WHERE  `id` = 32 LIMIT 1 [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000889s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `groups` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000290s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000260s ]
+[ sql ] [ SQL ] SELECT `id` FROM `groups` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000264s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `id`=32,`p_id`=1,`title`='写出这些话的人，我估计一辈子都追不上了\r',`content`='# 写出这些话的人，我估计一辈子都追不上了\r\n1. 如果发出声音是危险的，那就保持沉默；如果自觉无力发光，那就别去照亮别人。但是，不要习惯了黑暗就为黑暗辩护不要为自己的苟且而得意洋洋；不要嘲讽那些比自己更勇敢，更有热量的人们。可以卑微如尘土，不可扭曲如蛆虫。\r\n2. 你多学一样本事，就少说一句求人的话。\r\n3. 我38岁那年，琢磨着要不要去读两年的放射线照相术大专学位。然后我跟我朋友说了这事，我觉得自己太老了，等拿到学位是，我都40岁了。\r\n--朋友说，如果你不读，你还是会40岁，一个没有学位的40岁。\r\n4.	这些年来我一直提醒自己一件事情，千万不要自己感动自己。大部分人看似的努力，不过是愚蠢导致的。什么熬夜看书到天亮，连续几天只睡几小时，多久没有放假了，如果这些东西也值得夸耀，那么富士康流水线上任何一个人都比你努力多了。人难免天生有自怜的情绪，唯有时刻保持清醒，才能看清真正的价值在哪里。\r\n5.	孩子，我要求你读书用功，不是因为我要你跟别人比成绩，而是，我希望你将来会拥有选择的权利，选择有意义，有时间的工作，而不是被迫谋生。当你的工作在你心中有意义，你就有成就感。当你的工作给你时间，不剥夺你的生活，你就有尊严。成就感和尊严，给你快乐。\r\n6.	最终我们都将学会，与他人交往，最重要的不是甜言蜜语，不是容貌金钱，而是你和他对于这个世界的看法，对人生的态度是否一致。\r\n7.	我们一路奋战，不是为了改变世界，而是为了世界不再改变我们。\r\n8.	不要欺骗别人，因为你能骗到的人，都是相信你的人。\r\n9.	熟练的运用\"关我屁事\"和\"关你屁事\"可以省下人生80％的时间。\r\n10.	我怎么敢倒下。我身后空无一人。\r\n11.	\"痛苦是财富，这话是扯淡。姑娘，痛苦就是痛苦，对痛苦的思考才是财富。\"\r\n12.	永远不要相信苦难是值得的，苦难就是苦难，苦难不会带来成功。苦难不值得追求，磨练意志是因为苦难无法躲开。\r\n13.	如果我不曾见过太阳，我本可以忍受黑暗。\r\n14.	社交之所以累，是因为每个人都试图展现出自己其实并不具备的品质。\r\n15.	读书：之前觉得自己是一个人，现在觉得自己可以是一个世界。\r\n16.	希望你今天白费的努力，早晚有一天变成值得。\r\n17.	历史：遗忘，对倒下的人不公平。\r\n18.	南京大屠杀：\r\n安培说：现在日本的年轻人没有义务为过去的日本人像现在的中国人道歉。\r\n那现在的中国人也没有权利为过去的中国人原谅现在的日本人。\r\n19.	明明别人轻轻松松可以做到的事，我却做不了。满满的无力感，无力到没有力气。\r\n20.	人的一切痛苦，本质上都是对自己无能的愤怒。\r\n21.	不要试图同情你自己。\r\n22.	你配得上你自己想要的生活吗？\r\n23.	什么叫成熟？\r\n了解自己，了解自己的欲望，了解自己的局限。理解别人，理解别人的欲望，理解别人的局限。\r\n24.	我们会看到要寻找的东西，错失不去寻找的东西，虽然它在那里。我们的阅历被我们的关注点深深地影响了。\r\n25.	做你害怕做的事，然后你会发现，不过如此。\r\n26.	一直认为，所谓新鲜感，不是和未知的人一起去做同样的事，而是和已知的人一起去体验未知的人生。\r\n27.	如果不能随时有限的反击，所有的宽容都是懦弱。\r\n28.	群众的眼睛不是雪亮的，群众的眼睛是盲目的。\r\n29.	不是所有的人都能功成名就，我们中有些人注定要在日常的点滴中寻找生命的意义。\r\n30.	带人友善是修养，独来独往是性格。\r\n31.	几年前踏上火车那一刻还没有意识到，从此故乡只有冬夏，再无春秋。\r\n32.	十年饮水，难凉热血。\r\n33.	德，律己为德，律人无异于私刑。\r\n34.	信仰，他可以与宗教无关，代表自己的精神追求。\r\n35.	人最重要的能力有两个，适应环境，不忘初心。适应环境可以安身，不忘初心可以立命。\r\n36.	维护不在场的人，所言不多于所知。\r\n37.	只有你愿意为之而死的东西，你才可以藉之而生。\r\n38.	你见过树，却没见过森林。\r\n39.	那些杀不死你的最终都会使你更强壮。\r\n40.	是你把你的秘密告诉了风，那就别怪风把他带给树。\r\n41.	似乎大家都这样。自命不凡，却无足轻重。\r\n42.	保安笑着问我：\"你那么小个子，开那么大个车？\"的时候。我傻笑着回答：\"你是当保安，我是当司机的。\"\r\n43.	猪会飞，是因为他站在了风口上，成功的飞起来以后他可以总结起飞技巧，但重要的，是风。\r\n44.	你现在做的每一件事看来并没有什么意义，但他们也许会在未来助你 一臂之力。\r\n45.	唱出本身就是最要不得的态度。当你做某件事的时候，一旦想要求快，就表示你再也不关心他，而是想去做别的事。\r\n46.	命运啊，说是注定，不如说是你在何时做了选择。\r\n47.	在一群出色的人中间，常常误以为自己也是其中一员，然后忘了努力。\r\n48.	只有经历过地狱磨难的人，才有建造天堂的力量。\r\n49.	一个伟大的人往往受到排挤，压抑，甚至被人斥为哗众取宠而陷于孤独中。\r\n50.	与怪物战斗的人，应当小心自己不要成为怪物。当你远远凝视深渊时，深渊也在凝视你。\r\n51.	一个人知道自己为什么而活，就可以忍受任何一种生活。\r\n52.	假如我们不去打仗，敌人用刺刀杀死了我们，还要指着我们的骨头说：看，这是奴隶。\r\n53.	我有一事，生死与之。\r\n54.	我的体内啊，有个器官比心脏还重要，他虽然看不见，但却是在我的体内从脑袋一直贯穿到胯间。就因为他，我才能站着直，坐着正，就算脚步摇晃也能笔直地向前行，在这里退缩的话，那东西就会折断。\r\n55.	不可能这三个字，你说的太多了。\r\n56.	世界上没遇上帝，如果有的话，我无法容忍我不是。－－尼采\r\n57.	剑在英雄手，登台傲王侯。－－比莫干《九州缥缈录》\r\n58.	武士的一生，只相信自己手中可以握住的东西。－－赢无翳《九州缥缈录》\r\n59.	为天地立心，为生民立命，为往圣继绝学，为万世开太平。－－北宋时期张载\r\n60.	为不能作战的人而战。\r\n61.	你的成功标准： 能做自己喜欢做的事，能只做自己喜欢做的事。\r\n62.	如何不招人厌的展现自己的学识：别人问了，你再答。\r\n63.	无论现实如何操蛋，你都能在心里有一个更诗意的世界，那个世界便是情怀。\r\n64.	情怀就是以心灵的满足而不是功利的得失作为自己的行为标准的一种品质。一件没有什么用的事，还是要去做，也许只是因为我喜欢，也许只是因为它看起来很美。\r\n65.	跟优秀的人相处是怎样一种体验：他从不刻意优秀，却总是无意中卓越。\r\n66.	不要跟眼界不一样的人争辩。\r\n67.	人穷尽一生追求另一个人的事，我一直无法理解，或许是因为我自己太有意思，无需他人陪伴，所以我祝你们在对方身上得到的快乐与我给自己的一样多。\r\n68.	一个人需要控制的事情越少，他心理上就越自由。当你企图控制一件事情的时候，你同时也就被这件事情所控制，这永远是个相互的过程。\r\n69.	我们痛恨限制的同时，也依赖限制。\r\n70.	一个能够安住于不确定和不可控制中的人最自由。\r\n71.	大部分的教育工作者都在教人找到工作，而不是寻找人生。\r\n72.	漫画提供给我们的，也许就是这个早以被我们遗忘的世界。但将它看做一个逃避现实，发泄情绪的渠道，还是从中寻找勇气和激励，在现实生活中做一个真正的英雄，决定权在你。\r\n73.	社会衡量一个人的价值，在于他能向外产出什么，至于他吸收了什么，没人在乎。\r\n74.	我发现没有任何一个煤矿工人靠挖煤多又快当上了煤老板。\r\n75.	有的人努力的时候是真的在努力，有的人努力的时候只是为了感动自己，这决定了一个人究竟能变成什么样。\r\n76.	在这残酷的现实面前，除了吃人与被吃，我还有第三种选择，就是努力活下去，并且让这个社会再好一点。知大恶才知大善。知暗夜才知光明。不要低估人性的丑恶，也不要低估人性的光辉。\r\n77.	群众的眼光到底是不是雪亮的？                                                                                  1）群众的智商，呈现非周期性的上升或者下降。                                                        2）其实群众的眼睛就是灯泡，而开关掌控在领导手中，需要时就是雪亮的，不需要时就是不明真相的。 \r\n3）如果让群众挑错，那群众的眼睛无疑是雪亮的，他们最擅长干这个了，但要是问群众什么是对的，那就瞎了。\r\n78.	我一向不太相信离别时的情真意切，我觉得那只是一种情绪渲染。\r\n79.	为什么孩子喜欢看有关恐龙的书？                                                                                恐龙代表过去，宇宙飞船代表未来，我就是不喜欢现在。－－询问一7岁男孩得知\r\n80.	纠正一个错误的方法有很多，而解决一个错误的终极方法就是不给他任何发生的机会。\r\n81.	为什么父母一吵架，小孩就特别懂事？                                                                         小孩的沉默，隐忍，恐惧，以及讨好，在麻木的大人眼中，便是：懂事。\r\n82.	凡我中华之寸土皆洒满我中华儿女之血泪，永世不忘倭寇侵占与残杀之历史。\r\n83.	我相信再有一个妖精大闹天宫，悟空会是去镇压的那个人。\r\n骑士杀死恶龙后，望着满地的财宝，身上长出了鳞片。\r\n84.	只有写鸡汤的人才能从鸡汤中受益。\r\n85.	没有中枪的觉悟，就没有开枪的资格。\r\n86.	什么是人渣？   \r\n浑身都是铠甲，没有一处软肋。\r\n87.	一种人，天天都笑嘻嘻的，好似和谁都合得来，但是从不主动联系朋友，脾气也出奇的好，好像世上没有什么事情能让他们愤怒和悲伤。心中怀着宏伟的梦想，却不愿与现实中的人分担，只是默默的做，以为能用沙砾和泥土堆出山川。\r\n88.	为什么我们愿意把钱捐给身边的乞丐，而不顾那些生活在水深火热之中的欠发达国家的人民呢？                                                                                                                         人类的所有善意都遵循邻避原则。坏的事可以发生，只要别发生在我家后院就行了。－－善意有效辐射范围\r\n89.	后来许多人问我一个人夜晚踟蹰路上的心情，我想起的却不是孤单和路长，而是波澜壮阔的海和天空中闪耀的星光。－－张小砚\r\n90.	当很重要的人寻求更大的世界，却因此不得不离开你的时候，支持还是阻止好？            \r\n他走是因为他想走，他不走是因为他不想走，不要试图去背负别人的人生。\r\n91.	一个人在对另一个人的内心世界做出评判时，最好怀有一定程度的谦逊和宽容。－－《群山回响》\r\n92.	楼下的一个男人病的要死，那间壁的一家唱着留声机，对面是弄孩子，楼上两个人狂笑，还有打鼾声，还有打牌声，河中的船上有女人哭着她失去的母亲。 人类的悲欢并不相通，我只觉得他们吵闹。－－鲁迅\r\n93.	什么样的状态最恐怖？ \r\n忙碌的学习，上班，以为忙碌了，就是充实了。一般还很满足，自以为比别人过得有意义。其实说到底，都是急于活得明白，反倒搞不清楚。\r\n94.	未知的危险性是最恐怖的，而未知来自于你感官能力的丧失。比如说漆黑一片的屋子里你丧失的是视觉，比如说一片静谧的丛林里你丧失的是听觉。当你失去这些采集环境信息的渠道后，你会无法用经验体系构建一个稳定可预测的环境状况。人本能的就希望远离这种不稳定，这就是恐惧的作用了。\r\n95.	我们千山万水来到这，为的也不过是说一声再见。\r\n96.	遇见你所爱的人，时间就会停止。\r\n97.	在遇到她之前，我不怕死，不惧远行，也不曾忧虑悠长岁月，现在却从未如此真切地思虑起将来。－－《平如美棠》\r\n98.	从今往后，咱们只有死别，再无生离。－－《我们仨》\r\n99.	别人的痛苦才是你艺术的源泉，而你去受苦只会成为别人艺术的源泉。\r\n100.	我们大部分人根本谈不上独立的审美，而且美也是随着时代和环境在变化。\r\n101.	无论我告诉你什么道理，当你的心智没有达到这个境界或接近的水平时或经历过一些事情的时候，你是不会理解这个道理的。或者你以为你知道这个道理，其实你不知道。\r\n102.	除了自身的病患或亲友离去的痛苦是真实的，其他的痛苦都是你自己的价值观带给你的。\r\n103.	别人指责你的事情或批评的你的理由，往往最能伤害你的，是那些你也这样认为的事情。\r\n104.	其实人跟人之间差别其实不大，所以不要与别人去比较，人生就是一场长跑，你可能不会是第一名，但也不不太会是最后一名，和前面比你会有动力，和后面比你会有幸福。但重要的是享受过程。\r\n105.	永远不要与人去辩论，你也很难把别人辩服，因为立场不同，因为没有对错，只有规则，只有利益。人生就是一场游戏，懂得你在玩的游戏的游戏规则，然后玩好它。\r\n106.	生活其实是一种运营，时间是你最宝贵的资源，还有钱，关系，都是你的一种投入，自己重视什么，事业，友谊，家庭上，就多投入些，种瓜得瓜，好好平衡各个关系是你要做好的。\r\n107.	人不会死在绝境。却往往栽在十字路口。\r\n108.	编剧是你，我怎么知道结局。\r\n109.	一只船孤独的航行在海上，它既不寻求幸福，也不逃避幸福，它只是向前航行，底下是沉静碧蓝的大海，而头顶是金色的太阳。   --莱蒙托夫\r\n110.	历史学——孤证不成立\r\n111.	新闻无需撒谎，它只需要给出“部分的真相”，就可以达到操纵民意的目的\r\n112.	你所关注的东西，永远都是媒体想让你关注的\r\n113.	很多时候舆论一边倒的声音，未必是大多数人所赞同的，只是不赞同的人以为自己是少数，不愿意发声而已\r\n114.	除非你准备射击，否则不要把枪口对准人或物\r\n115.	把自己不能理解的行为定义为「装」实在是非常不好的习惯，要改。\r\n116.	画家不识渔家苦，好作寒江钓雪图。\r\n117.	我们坚持一件事情，并不是因为这样做了会有效果，而是坚信，这样做是对的。——哈维尔\r\n118.	人这一生为什么要努力？\r\n是一种想去体验一个更大的世界的欲望。\r\n119.	子路有闻，未能行之，唯恐有（又）闻。\r\n120.	信任就像一张纸，皱了，即使抚平，也恢复不了原样了。。。 \r\n用水胶带，喷水，绷木板上干后比原先还平。---做不到只是知识不够用。\r\n121.	我第一次感受到时间是一种物质的存在。它就像是一条蠕动的虫子，拖着臃肿皱皮的身躯，从我的血管里缓缓缓缓地爬过，并且留下了一条粘乎乎的痕迹。\r\n122.	原来死亡就是一种消失。不但是肉体，精神和思想的消失，更重要的是在人们的记忆中慢慢成为了空白，就像这个人从没在这个世界上来过一样。\r\n123.	张浩站在他办公室高大的落地窗玻璃前，看着下面的芸芸众生。他说，林岚，你觉得他们生活得辛苦吗？我觉得很辛苦。每个人都很辛苦。这个世界不会符合你所有的想象，甚至连一个你的想象也不符合，可是我们还是得生存下去。\r\n124.	人是为活着本身而活着，而不是为了活着之外的任何事物所活着。\r\n125.	人生的意义是什么？\r\n意义这个词太单薄，太卑微，低落到尘埃里，配不上生命，也承载不起人生。\r\n126.	人生逆旅，一蓑烟雨。\r\n127.	外行看热闹，都不知道别人家的事情，一群吃瓜群众指指点点，哈哈哈哈。。。被媒体玩的像猪一样。\r\n128.	底线之上才有资格说各展所长。\r\n129.	“我寄给你的信，总要送往邮局，不喜欢放在街边的绿色邮筒中，我总疑心那里会慢一点。”	--鲁迅《致许广平》\r\n130.	我不要儿子，我要一个女儿--只要一个，像你的。--钱钟书\r\n131.	孩子不是图画练习册，不要光顾着涂上自己喜欢的颜色。	--《追风筝的人》\r\n132.	生活其实也很简单，喜欢的就争取，得到的就珍惜，失去了就忘记。\r\n133.	有什么事情是游戏从业者不愿意告诉玩家的?\r\n免费玩家也是我们提供给付费玩家的功能之一。\r\n134.	哪有什么岁月静好，不过是有人为你付中负重前行，生活从来都不容易，当你觉得挺容易的时候，一点是有人再替你负重前行。\r\n//好像现在是我人生中最轻松容易的时候了，那么到底有哪些人在为我负重前行呢？\r\n135.	有枪但你没盾，你挡不住别人的子弹。\r\n136.	没有人有义务了解你所尽力的艰辛。\r\n137.	我从来没有想过一个节目会以无解来结尾，一直到明白真实的世界就是如此。 --柴静《双城的创伤》\r\n138.	能够让你后悔的，从来不是你做过的事，而是你想做却没有做过的事。\r\n139.	很多时候，你愿意讲给别人听的，大概是那些很想，却再也没有机会告诉以前的自己的话吧。--《肖申克的救赎》\r\n140.	从童年起，我便独自一人。照顾着历代的星辰。--《孤独》白鹤林\r\n141.	与这世界交手多年，你是否光彩依旧，兴致盎然。\r\n142.	为什么你不让别人看到你善良的一面？因为如果他们看见了，就会期望我一直是善良的。\r\n143. 周围认识的许多情侣，最后都步入了婚姻殿堂，但其中不少人在爱情长跑中都曾不忠。有些故事大家心照不宣，甚至帮他们遮掩。每次婚礼，我看着新人们热泪盈眶地念誓言，从没怀疑过他们在那一刻的真诚，可人性是如此幽深复杂，千帆过尽，我变得什么都能理解，也什么都无法相信。\r\n144. 人生有5%的幸福，5%的痛苦，还有90%的平淡。人们往往被那5%的幸福诱惑着，幻想未来或怀念过去，忍受着5%的痛苦，在90%的平淡中慢慢度过漫长的一生。\r\n145. 记得一个电影里面的女主说过”我不是喜欢钱，但是钱可以带来自由和尊严。我喜欢的是自由和尊严。”\r\n146. 90次的反复下载上传，最后变成了这样，可见你认为最可靠的数据也是会在传播中失去原来的样子，更何况是你从被人嘴里听到的别人。\r\n147. 无论你做的事情多正义，都不能强制我和你一个步调。\r\n148. 既无法忍受现在的状态，又没能力改变这一切，可以像只猪一样懒，却无法像只猪一样心安理得。\r\n149. 我们的祖先是被吃了无数回才走上了食物链的顶端。\r\n150. 尊重粉丝维护偶像，但也请尊重一个人从内心深处鄙视另一个人的自由。\r\n151. 皇帝为什么不多生孩子，最后选择优秀的孩子即位？”长幼”是常量，”优秀”是变量，政治稳定不能有太多的变量。\r\n152. 我们看到的都是别人让我们看到的。\r\n153. 没打出来的牌才是王牌。\r\n154. 市场不一定是去迎合的，而是可以引导和培养的。\r\n155. 后代子孙永远也不会知晓当初战争中零星冲突的悲惨情况；事实上，一无所知反而最好。真正的战争永远会隐没于历史的黑暗面。 ---沃尔特•惠特曼\r\n156. 只有你才知道对你而言什么才是糟糕的生活，什么才是真正的一塌糊涂，这与旁人的教说，旁人的经验并无关系。\r\n1. 这世上真话本就不多，一位女子的脸红胜过一大段对白。-- 老舍\r\n1. 如果说有谁在看到流星的瞬时就能许下愿望，那一定是非常纯熟且迫切的愿望。\r\n1. “我可以尽管向你们这个组合宣泄负面情绪，因为你们是被主流唾弃的，所以无论我说什么都没错，毕竟我是站在道德制高点上的。” --momo的老公\r\n1. 不是返璞归真，转了个圈回到的却不是原处。两个放羊最大的区别，一个是满足物质生活，一个是满足精神生活。曾经的种地放羊是生活的根基，被迫接受的事没有什么美感，结束一天的工作后裹着一身臭汗上炕睡觉第二天周而复始，这种放羊与“舒适的生活”是没有挂钩的。而现在那种有情怀的种地放羊则是一种有钱人的主动选择，把过去的苦事中的精华提取，与其他美好的事相连接，在放羊的生活中也能享受惬意的生活。他们有能力选择和组合生活，这不该被批判。\r\n1. 我看到的多数家庭的教育是颠倒混乱的。生下来到学龄前应当树立家长权威（要有敬畏），他们却去溺爱；小学应当严格培养学习习惯和基础，他们却宽松；青春期个性萌芽，父母应当从权威退到民主，让孩子学会理性和责任时，他们却开始各种着急焦虑和专制严管；到大学应该是退居二线，最多给于建议的时候他们开始对孩子人生规划指手画脚；工作了，父母应当放手让孩子完全独立对自己负责时，他们却最终升级到强迫相亲这种直接干涉。\r\n1. 不愿费心力和别人交流。然而总是被指诘在躲避。内心不坦然，才是孤独者的坟墓。\r\n1. 人生如逆旅，我亦是行人。\r\n1. 你一直耿耿于怀的事事实上相关人物根本早就忘记了 耿耿于怀的果然只有你自己“\r\n1. 当前的环境也许只是一个暂态，也许只是世界的一小面；如果你想要见见更大的世界，那就不要太急着让自己为了适应当前的环境而彻底改变。\r\n1. 当你老了，回顾一生，就会发觉：什么时候出国读书，什么时候决定做第一份职业、何时选定了对象而恋爱、什么时候结婚，其实都是命运的巨变。只是当时站在三岔路口，眼见风云千樯，你作出选择的那一日，在日记上，相当沉闷和平凡，当时还以为是生命中普通的一天。——陶杰 《杀鹌鹑的少女》\r\n1. 那一天我二十一岁，在我一生的黄金时代，我有好多奢望。我想爱，想吃，还想在一瞬间变成天上半明半暗的云，后来我才知道，生活就是个缓慢受锤的过程，人一天天老下去，奢望也一天天消逝，最后变得像挨了锤的牛一样。可是我过二十一岁生日时没有预见到这一点。我觉得自己会永远生猛下去，什么也锤不了我。 — —王小波\r\n1. 想要追求自由随性的生活，就一定要先从自律开始。\r\n1. 别人口中越是容易让人得出倾向性结论的问题描述，往往代表他刻意隐瞒了越多关键的细节。\r\n1. 走不进去的世界就不要硬挤了，为难了别人，也作贱了自己。\r\n1. 古龙《多情剑客无情剑》里，提过一个例子：一对厨子，饭馆打烊后，他们在后厨，自己给自己炒了盘菜，找点小酒，很惬意的饮食一番，舒服那一两个时辰。\r\n--古龙还说：他们还活着，就是因为一天还有那么一两个时辰。\r\n1. 从来如此，便对么？——鲁迅《狂人日记》\r\n1. 那……学校不好，难道知识也不好么?\r\n1. 高三毕业的欢送会上，复读班上的五个男生合唱了这首歌，我知道他们都不是第一年参加高考，我也知道那一年他们仍然成绩平平，我们那一届复读班整体都考的很差，但这首歌我记到现在。好像长这么大，见过的最多的无功而返，苦苦挣扎都是在学习的道路上。可苦涩中的温暖最能长存。路漫漫，且行且珍重！\r\n1. 我一直记得刘瑜写给女儿的一段话：愿你被很多人爱，如果没有，愿你在寂寞里学会宽容。\r\n1. 开始并完成一件事，比做好它更重要，因为只要开始了，你就有机会把它做的更好———-一件看上去繁难的事，只要开始做了，就会变得越来越容易。”\r\n1. 张一鸣有一句说的特别对：所谓成功，就是延迟满足。\r\n1. 成长是件残酷的事情，也许久而久之我们活成了别人想要的模样。但世俗跟成熟是两码事：在熙熙攘攘之外学会“我愿意”，不愿将就的你也可以不那么讲究。\r\n1. “秘密的暴力比公开的暴力更令人恐怖，它会使人失去思考能力、道德意识和抵抗意志，因此退化到最低等原始动物保命本能中去。为了保命求生、避免肉体折磨，人会变得全无廉耻、奴性十足、无所不为。秘密统治对政府权力的正当行使和合道德性同样有着严重的腐蚀作用。” ---《布达佩斯往事》\r\n1. 一个成熟的人，他的标准来自他的内心，而大多数的人，却受环境左右。对自己的标准会不由自主的降低以适应这个环境，减少自身与环境的冲突，在一个低标准下，自觉“满意”的度过每一天。 ——《精进》\r\n1. 梦想不一定要马上实现，如果身边的人反对，那就走慢一点，只要你每天确定自己在往那里走就行。\r\n1. 他没有勇气，也没有兴趣使渴望的行动得以一气呵成，因此自己在半途中就会怀疑行动的意义。---夏目漱石\r\n1. 我来不及认真地年轻，待明白过来时，只能选择认真地老去。 —— 三毛\r\n1. 我会以我的标准与方式看待世界，但我并不会以他来要求他人。--清让\r\n1. 时间，只是一个自称能治百病的庸医。\r\n1. 当你能从你认可的人或者事物身上吸取经验与知识，这是大部分人能做到的，但是如果你能从你不认可的人或者事物身上吸取营养，学到东西，那就真的太难得\r\n了。\r\n1. 你想成为什么样的人，那就尽量去向他们靠近。\r\n1. 真正幽默的人，是把快乐给了别人。\r\n1. 人这一生有很多重要的决定，每个决定其实都决定了我未来的人生，是否被动接受做一个幼师、是否转专业、是否升本等等等，做这些所有的选择与决定前，想想自身的优势，结合趋势与实力，看一下自己做这件事的把握有多少，但凡重大的决定，不要想着在尝试中去找答案，对于小事情这样是可以的，但是一些人生的重大决定是没有尝试的机会的，想尽一切办法想把仗打赢的，是最难的，我最该做的，是在一开始选择前，确定这场仗能打赢，再去打。\r\n1. 面试造飞机，工作扭螺丝。\r\n1. “让忙于务实的人务实，让乐于做梦的人做梦”。\r\n1. 生命是一场华丽的冒险，只是我们永远都跨不过时间的深渊。\r\n1. 曾经的你，以为只要带着那把长剑和赤子之心就可以说服自己不出卖理想的灵魂。在最艰难和不得不流泪的晚上，即使连自己都在笑自己傻，但仍然用长剑刺痛自己，提醒自己，勇往直前，直到将来。\r\n1. 过往不恋，未来不迎，当下不负。\r\n1. 忠言逆耳，良药苦口，可不都是这样吗。但我觉得最重要的是要培养自己的判断力，在兼容并包的基础上一定要有自己的主心骨。善听百家之言，思想上的言论抒发不分对错，要客观结合自己的情况，别人的经验也不全是对的，就算是对的，也不全适合自己，不同的人有不同的性格，脾气，要自己汲取自己认可的观点看法，适合自己才是最好的。\r\n1. 世上最难的事之一，把自己的思想装进别人的脑袋。\r\n1. 这短短的一生，我们最终都会失去。你不妨大胆一些，爱一个人，攀一座山，追一个梦。 ——《大鱼海棠》\r\n1. 有时候遇到瓶颈了，你应该停下来好好想想，是有四年工作经验，还是一个经验用了四年。\r\n1. 这世上唯有病痛和亲人去世是真切的痛楚，其他都是不必要的伤感，是忽略了当下拥有的一切的贪婪。\r\n1. 许多人所谓的成熟， 不过是被习俗磨去了棱角，变得世故而实际了。那不是成熟，而是精神的早衰和个性的消亡。真正的成熟，应当是独特个性的形成，真实自我的发现，精神上的结果和丰收。\r\n1. 别嫌读书苦，你现在的气质里，藏着你走过的路，读书不是为了雄辩和驳斥，也不是为了轻信和盲从，而是为了思考和权衡。\r\n1. 真的不要小看父母，不要觉得自己很厉害。以前笑父母遥控器还要套个手机套，其实和现在我们用手机还要贴膜戴手机套是一样的。以前笑父母为了一毛钱还和人家讨价还价，其实和我们现在用着手机在群里抢红包是一样的。以前父母无聊时磕着瓜子看着小说，其实和我们现在拿着手机刷着朋友圈是一样的。以前父母拉几个好友打麻将谈天说地，其实和我们现在拉几个网友王者农药开黑是一样的。以前父母在厂里上班踩着缝纫机，其实和我们现在写字楼里对着电脑写 PPT word 文档是一样的。所有的都没有变，只是时代在变，生活方式升级，换一种方式活着而已。很多年以后，可能会有10后笑着：瞧，我爸以前是在格子间苦逼写代码的工程师，我现在一家未来公司看着机器人帮我干活，公司只有我一个人呢。\r\n1. 有勇气去改变那些可以改变的事，\r\n有肚量去容忍那些无法改变的事，\r\n有智慧去区分上述的事。\r\n1. 识人不必探尽，探尽则多疑。\r\n知人不必言尽，言尽则无友。\r\n责人不必苛尽，苛尽则众远。\r\n敬人不必卑尽，卑尽则少骨。\r\n让人不必退尽，退尽则路寡。\r\n1. 安全感在很多时候是束缚人的枷锁，过度追求会让人生少了很多可能性。\r\n1. 大部分的恐惧，只有在你把它当回事儿的时候才是。\r\n1. 很多时候，没有兴趣并不真的是没有兴趣，而是怕自己做不好。\r\n1. 最好的兴趣就是永远达不到但可以不断精进的那些。\r\n1. 很多时候，成功者是自证的，失败者也是。\r\n1. 阻止大脑用思维定式进行自动加工，夺回大脑的控制权。\r\n1. 努力不是盲目的，是定向的。\r\n1. 要超越心智，首先要能辨别更好的心智与现有心智的区别。\r\n1. 世俗的成功不是人人都可以达成的，按概率也就只有一小部分。\r\n1. 盲目听信成功学故事并模仿，将离成功越来越远。\r\n1. 不管是恋爱还是职场，要选得好就得先小范围尝试和观察，对所谓的“好坏”有个大体了解后，然后再选择，最后全情投入。\r\n1. 完美的职业规划不存在，避免因为规划得太细而失去更多的可能性。\r\n1. 过去的付出只代表过去，沉没成本不是成本。\r\n1. 常认为自己是受害者的人往往真的会成为受害者。\r\n1. 绝对公平并不存在，追求绝对公平只是追求自利。\r\n1. 活在父母的世界跟活在子女的世界一样，都是人格尚未独立出来的婴儿。\r\n1. 在事情没有快速变化的前提下，等待仅仅是无谓的消耗。\r\n1. 要撕掉自己的短处，不要试图掩盖，用更强的标签去替代它。\r\n1. 陷入指定的成功，你就基本不太可能成功了。\r\n1. 握不住的沙，不如扬了它。\r\n1. 优于别人并不高贵，真正的高贵因该是优于过去的自己。-- 海明威《真实的高贵》\r\n1. 顶级组织至情至性，\r\n 一流组织共同信仰，\r\n二流组织共同利益，\r\n三流组织共同规则。\r\n1. 像老大寻求意见时，自己先思考出几套解决方案也就是“香蕉”，让你的老板去做选择而不是让他出想法。如果因为你的”香蕉”没熟透，放心你的老大会给你更好的解决方法，先养成动脑思考的好习惯。 --香蕉法则\r\n1. 善良不是要求别人做什么，而是要求自己做什么。\r\n1. 自己是既得利益者，说这不公平叫「觉悟高」，值得钦佩，自己不是既得利益者，就别眼里只看到不公平，因为这太正常了，如果不理解，或者心生抱怨，该想想自己的问题。\r\n1. 文字传达观点，文字也能误传观点。\r\n1. “检验一流智力的标准，就是看你能不能在头脑中同时存在两种相反的想法，还维持正常行事的能力。”\r\n1. 有时候，鸡汤可能比所谓的干货更有用，很多道理其实大家都懂，我们做出改变缺乏的只是一个推动力。\r\n1. 不自律，无自由：\r\n曾经以为自由就是想做啥做啥，后来才发现自律者才会自由。当一个人缺乏自由的时候，他做的事情总是在受习惯和即时诱惑的影响，要么就是被他人的思想观念所扰，几乎永远不可能去做内心真正渴望的事。\r\n1. 《海上钢琴师》中，1900 为什么最后没有下船？\r\n我们的陆地就是他的海洋。无人愿意一生漂泊。\r\n1. 永生是否是一种酷刑？\r\n凡是能被适应的惩罚都不能算是酷刑。\r\n1. 当有人做一件事并没有伤害到任何人的事情，你却要指手画脚的时候，你才是那个傻逼。\r\n1. 这世上只有一种成功，就是能用自己喜欢的方式度过自己的一生。\r\n1. 只有深入一座城市的边边角角，了解城市里的一花一草一木，才能真正看懂人生百态，品味酸甜苦辣的人生。\r\n1. 信仰是用来约束自己的。',`groups`='Default'  WHERE  `id` = 32 [ RunTime:0.001041s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.001342s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=8  WHERE  `groups` = 'Default' [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000548s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=8  WHERE  `groups` = 'Default' [ RunTime:0.000308s ]
+---------------------------------------------------------------
+[ 2018-07-25T10:00:26+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/32.html
+[ info ] qingrang.top/daily/admin/note/shownote/id/32.html [运行时间：0.057724s][吞吐率：17.32req/s] [内存消耗：2,033.38kb] [文件加载：54]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editNote/id/32',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '32',
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000607s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001223s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 32 LIMIT 1 [ RunTime:0.000595s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001319s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000293s ]
+---------------------------------------------------------------
+[ 2018-07-25T10:00:37+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/addnote.html
+[ info ] qingrang.top/daily/admin/note/addnote.html [运行时间：0.060645s][吞吐率：16.49req/s] [内存消耗：1,938.85kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'addnote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '803',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/newedit.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'groups' => 'Default',
+  'content' => '# 种草
+荒川尚也溪流杯
+俞家年糕
+
+>书
+
+《最后的耍猴人》',
+  'test-editormd-html-code' => '<h1 id="h1-u79CDu8349"><a name="种草" class="reference-link"></a><span class="header-link octicon octicon-link"></span>种草</h1><p>荒川尚也溪流杯<br>俞家年糕</p>
+<blockquote>
+<p>书</p>
+</blockquote>
+<p>《最后的耍猴人》</p>
+',
+)
+[ info ] [ RUN ] app\admin\controller\Note->addNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000602s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001324s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `groups` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SELECT `id` FROM `groups` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001069s ]
+[ sql ] [ SQL ] INSERT INTO `note` (`title` , `content` , `groups` , `p_id` , `date`) VALUES ('种草\r' , '# 种草\r\n荒川尚也溪流杯\r\n俞家年糕\r\n\r\n>书\r\n\r\n《最后的耍猴人》' , 'Default' , 1 , '2018-07-25') [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.001101s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=9  WHERE  `groups` = 'Default' [ RunTime:0.000360s ]
+---------------------------------------------------------------
+[ 2018-07-25T10:00:38+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ info ] qingrang.top/daily/ [运行时间：0.146419s][吞吐率：6.83req/s] [内存消耗：3,358.78kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/newedit.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/notelst.html [ array (
+  0 => 'autoSave',
+  1 => 'phoneSave',
+  2 => 'hide',
+  3 => 'list',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+  10 => 'default_num',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000554s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001229s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.003270s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.000950s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000850s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000273s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000644s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000214s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.000962s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000630s ]
+---------------------------------------------------------------
+[ 2018-07-25T10:06:39+08:00 ] 74.120.168.12 121.34.34.48 GET /daily/
+[ info ] qingrang.top/daily/ [运行时间：0.121302s][吞吐率：8.24req/s] [内存消耗：3,358.29kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/notelst.html [ array (
+  0 => 'autoSave',
+  1 => 'phoneSave',
+  2 => 'hide',
+  3 => 'list',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+  10 => 'default_num',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000573s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001238s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.003085s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001112s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000598s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000400s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000886s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000272s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000655s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000215s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.000981s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000561s ]
+---------------------------------------------------------------
+[ 2018-07-25T10:16:09+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/noteview.html
+[ info ] qingrang.top/daily/admin/note/noteview.html [运行时间：0.053256s][吞吐率：18.78req/s] [内存消耗：2,085.88kb] [文件加载：50]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'noteview',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '10',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'noteid' => '197',
+)
+[ info ] [ RUN ] app\admin\controller\Note->noteview[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000633s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001307s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 197 LIMIT 1 [ RunTime:0.000416s ]
+---------------------------------------------------------------
+[ 2018-07-25T10:23:40+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/ashownote1.html
+[ info ] qingrang.top/daily/admin/note/ashownote1.html [运行时间：0.057098s][吞吐率：17.51req/s] [内存消耗：2,202.38kb] [文件加载：52]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'ashownote1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '10',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'groupsID' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Note->aShowNote1[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000721s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001399s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `p_id` = 1  AND `id` > 2 ORDER BY id desc [ RunTime:0.001072s ]
+---------------------------------------------------------------
+[ 2018-07-25T10:23:42+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/32
+[ info ] qingrang.top/daily/admin/note/shownote/id/32 [运行时间：0.058302s][吞吐率：17.15req/s] [内存消耗：2,033.03kb] [文件加载：54]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '32',
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000577s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001197s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 32 LIMIT 1 [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000915s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000282s ]
+---------------------------------------------------------------
+[ 2018-07-25T10:23:47+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/editNote/id/32
+[ info ] qingrang.top/daily/admin/note/editNote/id/32 [运行时间：0.055254s][吞吐率：18.10req/s] [内存消耗：2,089.36kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'editNote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '32',
+)
+[ info ] [ RUN ] app\admin\controller\Note->editNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/editnote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000532s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001279s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 32 LIMIT 1 [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000809s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000279s ]
+---------------------------------------------------------------
+[ 2018-07-25T11:23:31+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ info ] qingrang.top/daily/ [运行时间：0.134318s][吞吐率：7.45req/s] [内存消耗：3,358.78kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/newedit.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/notelst.html [ array (
+  0 => 'autoSave',
+  1 => 'phoneSave',
+  2 => 'hide',
+  3 => 'list',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+  10 => 'default_num',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000845s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.002314s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.004377s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001055s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000867s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000735s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000374s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000674s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000219s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001046s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000645s ]
+---------------------------------------------------------------
+[ 2018-07-25T11:28:04+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/ashownote1.html
+[ info ] qingrang.top/daily/admin/note/ashownote1.html [运行时间：0.054044s][吞吐率：18.50req/s] [内存消耗：2,202.38kb] [文件加载：52]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'ashownote1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '10',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'groupsID' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Note->aShowNote1[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000620s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001411s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `p_id` = 1  AND `id` > 2 ORDER BY id desc [ RunTime:0.001161s ]
+---------------------------------------------------------------
+[ 2018-07-25T11:28:10+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/editNote/id/32
+[ info ] qingrang.top/daily/admin/note/editNote/id/32 [运行时间：0.055387s][吞吐率：18.05req/s] [内存消耗：2,089.36kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'editNote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '32',
+)
+[ info ] [ RUN ] app\admin\controller\Note->editNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/editnote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000570s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.002402s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 32 LIMIT 1 [ RunTime:0.000739s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000906s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000323s ]
+---------------------------------------------------------------
+[ 2018-07-25T19:25:20+08:00 ] 74.120.168.12 121.34.35.140 GET /daily/
+[ info ] qingrang.top/daily/ [运行时间：0.134419s][吞吐率：7.44req/s] [内存消耗：3,358.04kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/notelst.html [ array (
+  0 => 'autoSave',
+  1 => 'phoneSave',
+  2 => 'hide',
+  3 => 'list',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+  10 => 'default_num',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000749s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001768s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.005305s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001225s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000428s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000469s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000484s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000730s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000235s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001128s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000664s ]

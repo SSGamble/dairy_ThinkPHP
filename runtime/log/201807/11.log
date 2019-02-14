@@ -1,0 +1,3080 @@
+---------------------------------------------------------------
+[ 2018-07-11T10:26:16+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ info ] qingrang.top/daily/ [运行时间：0.105634s][吞吐率：9.47req/s] [内存消耗：3,274.24kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/notelst.html [ array (
+  0 => 'autoSave',
+  1 => 'phoneSave',
+  2 => 'hide',
+  3 => 'list',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000840s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001631s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.004125s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.000973s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000304s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000734s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000255s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0 ORDER BY `g_order` [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000245s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `g_order` [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000214s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.000832s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000504s ]
+---------------------------------------------------------------
+[ 2018-07-11T10:26:43+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/noteview.html
+[ info ] qingrang.top/daily/admin/note/noteview.html [运行时间：0.045303s][吞吐率：22.07req/s] [内存消耗：2,085.95kb] [文件加载：50]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'noteview',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '10',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'noteid' => '159',
+)
+[ info ] [ RUN ] app\admin\controller\Note->noteview[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000584s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001081s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 159 LIMIT 1 [ RunTime:0.000427s ]
+---------------------------------------------------------------
+[ 2018-07-11T10:27:00+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/editnote/id/139.html
+[ info ] qingrang.top/daily/admin/note/editnote/id/139.html [运行时间：0.052400s][吞吐率：19.08req/s] [内存消耗：2,029.98kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'editnote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '139',
+)
+[ info ] [ RUN ] app\admin\controller\Note->editNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/editnote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000562s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001225s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 139 LIMIT 1 [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000891s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000320s ]
+---------------------------------------------------------------
+[ 2018-07-11T10:27:17+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/updatenote/id/139.html
+[ info ] qingrang.top/daily/admin/note/updatenote/id/139.html [运行时间：0.049006s][吞吐率：20.41req/s] [内存消耗：2,085.53kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'updatenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '25325',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/139.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'content' => '# 区块链(分布式数据库-比特币)
+## 一、区块链的本质
+>区块链是什么？一句话，它是一种特殊的**分布式数据库**。
+
+首先，区块链的主要作用是储存信息。任何需要保存的信息，都可以写入区块链，也可以从里面读取，所以它是数据库。
+其次，任何人都可以架设服务器，加入区块链网络，成为一个节点。区块链的世界里面，没有中心节点，每个节点都是平等的，都保存着整个数据库。你可以向任何一个节点，写入/读取数据，因为所有节点最后都会同步，保证区块链一致。
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/171229/D63Eih2jm4.png)
+##二、区块链的最大特点
+区块链没有管理员，它是彻底无中心的。其他的数据库都有管理员，但是区块链没有。如果有人想对区块链添加审核，也实现不了，因为它的设计目标就是防止出现居于中心地位的管理当局。
+
+正是因为无法管理，区块链才能做到无法被控制。否则一旦大公司大集团控制了管理权，他们就会控制整个平台，其他使用者就都必须听命于他们了。
+
+但是，没有了管理员，人人都可以往里面写入数据，怎么才能保证数据是可信的呢？被坏人改了怎么办？请接着往下读，这就是区块链奇妙的地方。
+## 三、区块
+区块链由一个个区块（block）组成。区块很像数据库的记录，**每次写入数据，就是创建一个区块**。
+
+每个区块包含两个部分。
+- 区块头（Head）：记录当前区块的元信息
+- 区块体（Body）：实际数据
+
+区块头包含了当前区块的多项元信息。
+- 生成时间
+- 实际数据（即区块体）的 Hash
+- 上一个区块的 Hash
+- ...
+
+## 四、 Hash 的不可修改性
+>Hash 简介
+
+所谓 Hash 就是计算机可以对**任意内容**，计算出一个**长度相同的特征值**。
+举例来说，字符串123的 Hash 是a8fdc205a9f19cc1c7507a60c4f01b13d11d7fd0（十六进制），转成二进制就是256位，而且只有123能得到这个 Hash。
+
+区块链的 Hash 长度是256位，这就是说，不管原始内容是什么，最后都会计算出一个256位的二进制数字。而且可以保证，只要原始内容不同，对应的 Hash 一定是不同的。
+
+因此，就有两个重要的推论。
+- 推论1：每个区块的 Hash 都是不一样的，可以通过 Hash 标识区块。
+- 推论2：如果区块的内容变了，它的 Hash 一定会改变。
+
+>不可修改性
+
+	Hash = SHA256(区块头)
+
+上面就是区块 Hash 的计算公式，Hash 由区块头唯一决定，SHA256是区块链的 Hash 算法,可知：区块与 Hash 是一一对应的。
+
+前面说过，区块头包含很多内容，其中有当前区块体的 Hash（注意是"区块体"的 Hash，而不是整个区块），还有上一个区块的 Hash。这意味着，**如果当前区块的内容变了，或者上一个区块的 Hash 变了，一定会引起当前区块的 Hash 改变**。
+
+这一点对区块链有重大意义。如果有人修改了一个区块，该区块的 Hash 就变了。为了让后面的区块还能连到它，该人必须同时修改后面所有的区块，否则被改掉的区块就脱离区块链了。由于后面要提到的原因，Hash 的计算很耗时，同时修改多个区块几乎不可能发生，除非有人掌握了全网51%以上的计算能力。
+
+正是通过这种**联动机制**，区块链保证了自身的可靠性，**数据一旦写入，就无法被篡改**。这就像历史一样，发生了就是发生了，从此再无法改变。
+
+**每个区块都连着上一个区块，这也是"区块链"这个名字的由来。**
+
+## 五、采矿
+由于必须保证节点之间的同步，所以新区块的添加速度不能太快。试想一下，你刚刚同步了一个区块，准备基于它生成下一个区块，但这时别的节点又有新区块生成，你不得不放弃做了一半的计算，再次去同步。因为每个区块的后面，只能跟着一个区块，你永远只能在最新区块的后面，生成下一个区块。所以，你别无选择，一听到信号，就必须立刻同步。
+
+所以，区块链的发明者中本聪（这是假名，真实身份至今未知）故意让添加新区块，变得很困难。他的设计是，平均每10分钟，全网才能生成一个新区块，一小时也就六个。
+
+这种产出速度不是通过命令达成的，而是故意设置了海量的计算。也就是说，**只有通过极其大量的计算，才能得到当前区块的有效 Hash，从而把新区块添加到区块链**。由于计算量太大，所以快不起来。
+
+这个过程就叫做采矿（mining），因为计算有效 Hash 的难度，好比在全世界的沙子里面，找到一粒符合条件的沙子。计算 Hash 的机器就叫做矿机，操作矿机的人就叫做矿工。
+
+## 六、难度系数
+读到这里，你可能会有一个疑问，人们都说采矿很难，可是采矿不就是用计算机算出一个 Hash 吗，这正是计算机的强项啊，怎么会变得很难，迟迟算不出来呢？
+
+原来不是任意一个 Hash 都可以，**只有满足条件的 Hash 才会被区块链接受**。这个条件特别苛刻，使得绝大部分 Hash 都不满足要求，必须重算。
+
+原来，区块头包含一个难度系数（difficulty），这个值决定了计算 Hash 的难度。举例来说，第100000个区块的难度系数是 14484.16236122。
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/171229/l078FF8e04.jpg)
+区块链协议规定，使用一个常量除以难度系数，可以得到目标值（target）。显然，**难度系数越大，目标值就越小**。
+
+Hash 的有效性跟目标值密切相关，**只有小于目标值的 Hash 才是有效的**，否则 Hash 无效，必须重算。**由于目标值非常小，Hash 小于该值的机会极其渺茫，可能计算10亿次，才算中一次。这就是采矿如此之慢的根本原因。**
+
+区块头里面还有一个 Nonce 值，记录了 Hash 重算的次数。第 100000 个区块的 Nonce 值是274148111，即计算了 2.74 亿次，才得到了一个有效的 Hash，该区块才能加入区块链。
+
+## 七、难度系数的动态调节
+就算采矿很难，但也没法保证，正好十分钟产出一个区块，有时一分钟就算出来了，有时几个小时可能也没结果。总体来看，随着硬件设备的提升，以及矿机的数量增长，计算速度一定会越来越快。
+
+为了将产出速率恒定在十分钟，中本聪还设计了难度系数的动态调节机制。他规定，难度系数每两周（2016个区块）调整一次。如果这两周里面，区块的平均生成速度是9分钟，就意味着比法定速度快了10%，因此难度系数就要调高10%；如果平均生成速度是11分钟，就意味着比法定速度慢了10%，因此难度系数就要调低10%。
+
+**难度系数越调越高（目标值越来越小），导致了采矿越来越难。**
+
+## 八、区块链的分叉
+即使区块链是可靠的，现在还有一个问题没有解决：如果两个人同时向区块链写入数据，也就是说，同时有两个区块加入，因为它们都连着前一个区块，就形成了分叉。这时应该采纳哪一个区块呢？
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/171229/c25Kf1JjcA.png)
+现在的规则是，新节点总是采用最长的那条区块链。如果区块链有分叉，将看哪个分支在分叉点后面，先达到6个新区块（称为"六次确认"）。按照10分钟一个区块计算，一小时就可以确认。
+
+由于新区块的生成速度由计算能力决定，所以这条规则就是说，拥有大多数计算能力的那条分支，就是正宗的比特链。
+
+## 九、总结
+区块链作为无人管理的分布式数据库，从2009年开始已经运行了8年，没有出现大的问题。这证明它是可行的。
+
+但是，为了保证数据的可靠性，区块链也有自己的代价。一是效率，数据写入区块链，最少要等待十分钟，所有节点都同步数据，则需要更多的时间；二是能耗，区块的生成需要矿工进行无数无意义的计算，这是非常耗费能源的。
+
+因此，区块链的适用场景，其实非常有限。
+- 不存在所有成员都信任的管理当局
+- 写入的数据不要求实时使用
+- 挖矿的收益能够弥补本身的成本
+
+如果无法满足上述的条件，那么传统的数据库是更好的解决方案。
+
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/171229/Hcjd5AAb8K.png)
+
+目前，区块链最大的应用场景（可能也是唯一的应用场景），就是**以比特币为代表的加密货币**。
+',
+  'groups' => 'Basics',
+  'id' => '139',
+)
+[ info ] [ RUN ] app\admin\controller\Note->updateNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000571s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001111s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 139 LIMIT 1 [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000691s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `groups` WHERE  `groups` = 'Basics' LIMIT 1 [ RunTime:0.000252s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000248s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `id`=139,`p_id`=2,`title`='区块链(分布式数据库-比特币)\r',`content`='# 区块链(分布式数据库-比特币)\r\n## 一、区块链的本质\r\n>区块链是什么？一句话，它是一种特殊的**分布式数据库**。\r\n\r\n首先，区块链的主要作用是储存信息。任何需要保存的信息，都可以写入区块链，也可以从里面读取，所以它是数据库。\r\n其次，任何人都可以架设服务器，加入区块链网络，成为一个节点。区块链的世界里面，没有中心节点，每个节点都是平等的，都保存着整个数据库。你可以向任何一个节点，写入/读取数据，因为所有节点最后都会同步，保证区块链一致。\r\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/171229/D63Eih2jm4.png)\r\n##二、区块链的最大特点\r\n区块链没有管理员，它是彻底无中心的。其他的数据库都有管理员，但是区块链没有。如果有人想对区块链添加审核，也实现不了，因为它的设计目标就是防止出现居于中心地位的管理当局。\r\n\r\n正是因为无法管理，区块链才能做到无法被控制。否则一旦大公司大集团控制了管理权，他们就会控制整个平台，其他使用者就都必须听命于他们了。\r\n\r\n但是，没有了管理员，人人都可以往里面写入数据，怎么才能保证数据是可信的呢？被坏人改了怎么办？请接着往下读，这就是区块链奇妙的地方。\r\n## 三、区块\r\n区块链由一个个区块（block）组成。区块很像数据库的记录，**每次写入数据，就是创建一个区块**。\r\n\r\n每个区块包含两个部分。\r\n- 区块头（Head）：记录当前区块的元信息\r\n- 区块体（Body）：实际数据\r\n\r\n区块头包含了当前区块的多项元信息。\r\n- 生成时间\r\n- 实际数据（即区块体）的 Hash\r\n- 上一个区块的 Hash\r\n- ...\r\n\r\n## 四、 Hash 的不可修改性\r\n>Hash 简介\r\n\r\n所谓 Hash 就是计算机可以对**任意内容**，计算出一个**长度相同的特征值**。\r\n举例来说，字符串123的 Hash 是a8fdc205a9f19cc1c7507a60c4f01b13d11d7fd0（十六进制），转成二进制就是256位，而且只有123能得到这个 Hash。\r\n\r\n区块链的 Hash 长度是256位，这就是说，不管原始内容是什么，最后都会计算出一个256位的二进制数字。而且可以保证，只要原始内容不同，对应的 Hash 一定是不同的。\r\n\r\n因此，就有两个重要的推论。\r\n- 推论1：每个区块的 Hash 都是不一样的，可以通过 Hash 标识区块。\r\n- 推论2：如果区块的内容变了，它的 Hash 一定会改变。\r\n\r\n>不可修改性\r\n\r\n	Hash = SHA256(区块头)\r\n\r\n上面就是区块 Hash 的计算公式，Hash 由区块头唯一决定，SHA256是区块链的 Hash 算法,可知：区块与 Hash 是一一对应的。\r\n\r\n前面说过，区块头包含很多内容，其中有当前区块体的 Hash（注意是\"区块体\"的 Hash，而不是整个区块），还有上一个区块的 Hash。这意味着，**如果当前区块的内容变了，或者上一个区块的 Hash 变了，一定会引起当前区块的 Hash 改变**。\r\n\r\n这一点对区块链有重大意义。如果有人修改了一个区块，该区块的 Hash 就变了。为了让后面的区块还能连到它，该人必须同时修改后面所有的区块，否则被改掉的区块就脱离区块链了。由于后面要提到的原因，Hash 的计算很耗时，同时修改多个区块几乎不可能发生，除非有人掌握了全网51%以上的计算能力。\r\n\r\n正是通过这种**联动机制**，区块链保证了自身的可靠性，**数据一旦写入，就无法被篡改**。这就像历史一样，发生了就是发生了，从此再无法改变。\r\n\r\n**每个区块都连着上一个区块，这也是\"区块链\"这个名字的由来。**\r\n\r\n## 五、采矿\r\n由于必须保证节点之间的同步，所以新区块的添加速度不能太快。试想一下，你刚刚同步了一个区块，准备基于它生成下一个区块，但这时别的节点又有新区块生成，你不得不放弃做了一半的计算，再次去同步。因为每个区块的后面，只能跟着一个区块，你永远只能在最新区块的后面，生成下一个区块。所以，你别无选择，一听到信号，就必须立刻同步。\r\n\r\n所以，区块链的发明者中本聪（这是假名，真实身份至今未知）故意让添加新区块，变得很困难。他的设计是，平均每10分钟，全网才能生成一个新区块，一小时也就六个。\r\n\r\n这种产出速度不是通过命令达成的，而是故意设置了海量的计算。也就是说，**只有通过极其大量的计算，才能得到当前区块的有效 Hash，从而把新区块添加到区块链**。由于计算量太大，所以快不起来。\r\n\r\n这个过程就叫做采矿（mining），因为计算有效 Hash 的难度，好比在全世界的沙子里面，找到一粒符合条件的沙子。计算 Hash 的机器就叫做矿机，操作矿机的人就叫做矿工。\r\n\r\n## 六、难度系数\r\n读到这里，你可能会有一个疑问，人们都说采矿很难，可是采矿不就是用计算机算出一个 Hash 吗，这正是计算机的强项啊，怎么会变得很难，迟迟算不出来呢？\r\n\r\n原来不是任意一个 Hash 都可以，**只有满足条件的 Hash 才会被区块链接受**。这个条件特别苛刻，使得绝大部分 Hash 都不满足要求，必须重算。\r\n\r\n原来，区块头包含一个难度系数（difficulty），这个值决定了计算 Hash 的难度。举例来说，第100000个区块的难度系数是 14484.16236122。\r\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/171229/l078FF8e04.jpg)\r\n区块链协议规定，使用一个常量除以难度系数，可以得到目标值（target）。显然，**难度系数越大，目标值就越小**。\r\n\r\nHash 的有效性跟目标值密切相关，**只有小于目标值的 Hash 才是有效的**，否则 Hash 无效，必须重算。**由于目标值非常小，Hash 小于该值的机会极其渺茫，可能计算10亿次，才算中一次。这就是采矿如此之慢的根本原因。**\r\n\r\n区块头里面还有一个 Nonce 值，记录了 Hash 重算的次数。第 100000 个区块的 Nonce 值是274148111，即计算了 2.74 亿次，才得到了一个有效的 Hash，该区块才能加入区块链。\r\n\r\n## 七、难度系数的动态调节\r\n就算采矿很难，但也没法保证，正好十分钟产出一个区块，有时一分钟就算出来了，有时几个小时可能也没结果。总体来看，随着硬件设备的提升，以及矿机的数量增长，计算速度一定会越来越快。\r\n\r\n为了将产出速率恒定在十分钟，中本聪还设计了难度系数的动态调节机制。他规定，难度系数每两周（2016个区块）调整一次。如果这两周里面，区块的平均生成速度是9分钟，就意味着比法定速度快了10%，因此难度系数就要调高10%；如果平均生成速度是11分钟，就意味着比法定速度慢了10%，因此难度系数就要调低10%。\r\n\r\n**难度系数越调越高（目标值越来越小），导致了采矿越来越难。**\r\n\r\n## 八、区块链的分叉\r\n即使区块链是可靠的，现在还有一个问题没有解决：如果两个人同时向区块链写入数据，也就是说，同时有两个区块加入，因为它们都连着前一个区块，就形成了分叉。这时应该采纳哪一个区块呢？\r\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/171229/c25Kf1JjcA.png)\r\n现在的规则是，新节点总是采用最长的那条区块链。如果区块链有分叉，将看哪个分支在分叉点后面，先达到6个新区块（称为\"六次确认\"）。按照10分钟一个区块计算，一小时就可以确认。\r\n\r\n由于新区块的生成速度由计算能力决定，所以这条规则就是说，拥有大多数计算能力的那条分支，就是正宗的比特链。\r\n\r\n## 九、总结\r\n区块链作为无人管理的分布式数据库，从2009年开始已经运行了8年，没有出现大的问题。这证明它是可行的。\r\n\r\n但是，为了保证数据的可靠性，区块链也有自己的代价。一是效率，数据写入区块链，最少要等待十分钟，所有节点都同步数据，则需要更多的时间；二是能耗，区块的生成需要矿工进行无数无意义的计算，这是非常耗费能源的。\r\n\r\n因此，区块链的适用场景，其实非常有限。\r\n- 不存在所有成员都信任的管理当局\r\n- 写入的数据不要求实时使用\r\n- 挖矿的收益能够弥补本身的成本\r\n\r\n如果无法满足上述的条件，那么传统的数据库是更好的解决方案。\r\n\r\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/171229/Hcjd5AAb8K.png)\r\n\r\n目前，区块链最大的应用场景（可能也是唯一的应用场景），就是**以比特币为代表的加密货币**。\r\n',`groups`='Basics'  WHERE  `id` = 139 [ RunTime:0.000629s ]
+---------------------------------------------------------------
+[ 2018-07-11T10:27:18+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/139.html
+[ info ] qingrang.top/daily/admin/note/shownote/id/139.html [运行时间：0.050483s][吞吐率：19.81req/s] [内存消耗：1,981.87kb] [文件加载：54]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/139.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '139',
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000540s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001186s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 139 LIMIT 1 [ RunTime:0.000464s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000856s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000237s ]
+---------------------------------------------------------------
+[ 2018-07-11T10:27:26+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ info ] qingrang.top/daily/ [运行时间：0.098820s][吞吐率：10.12req/s] [内存消耗：3,274.25kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/notelst.html [ array (
+  0 => 'autoSave',
+  1 => 'phoneSave',
+  2 => 'hide',
+  3 => 'list',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000472s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001133s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.002952s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.000885s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000306s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000805s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000305s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0 ORDER BY `g_order` [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000244s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `g_order` [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000209s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.000878s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000520s ]
+---------------------------------------------------------------
+[ 2018-07-11T10:27:30+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/ashownote1.html
+[ info ] qingrang.top/daily/admin/note/ashownote1.html [运行时间：0.043077s][吞吐率：23.21req/s] [内存消耗：2,139.57kb] [文件加载：52]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'ashownote1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '11',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'groupsID' => '24',
+)
+[ info ] [ RUN ] app\admin\controller\Note->aShowNote1[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000518s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001081s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `p_id` = 24  AND `id` > 2 ORDER BY id desc [ RunTime:0.000731s ]
+---------------------------------------------------------------
+[ 2018-07-11T10:27:34+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/ashownote1.html
+[ info ] qingrang.top/daily/admin/note/ashownote1.html [运行时间：0.044210s][吞吐率：22.62req/s] [内存消耗：2,139.57kb] [文件加载：52]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'ashownote1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '11',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'groupsID' => '24',
+)
+[ info ] [ RUN ] app\admin\controller\Note->aShowNote1[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000542s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001146s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `p_id` = 24  AND `id` > 2 ORDER BY id desc [ RunTime:0.000795s ]
+---------------------------------------------------------------
+[ 2018-07-11T10:27:46+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/noteview.html
+[ info ] qingrang.top/daily/admin/note/noteview.html [运行时间：0.042376s][吞吐率：23.60req/s] [内存消耗：2,079.22kb] [文件加载：50]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'noteview',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '9',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'noteid' => '23',
+)
+[ info ] [ RUN ] app\admin\controller\Note->noteview[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000601s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001046s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.000482s ]
+---------------------------------------------------------------
+[ 2018-07-11T10:31:08+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ info ] qingrang.top/daily/ [运行时间：0.092390s][吞吐率：10.82req/s] [内存消耗：3,274.25kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/notelst.html [ array (
+  0 => 'autoSave',
+  1 => 'phoneSave',
+  2 => 'hide',
+  3 => 'list',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000458s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001041s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.002615s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.000835s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000265s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000272s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000770s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000230s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0 ORDER BY `g_order` [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `g_order` [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000192s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.000804s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000501s ]
+---------------------------------------------------------------
+[ 2018-07-11T10:31:27+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/asearch.html
+[ info ] qingrang.top/daily/admin/note/asearch.html [运行时间：0.045941s][吞吐率：21.77req/s] [内存消耗：2,080.70kb] [文件加载：50]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'asearch',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'key' => 'atom',
+)
+[ info ] [ RUN ] app\admin\controller\Note->aSearch[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000479s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001105s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  ( `title` LIKE '%atom%' OR `content` LIKE '%atom%' ) ORDER BY id desc [ RunTime:0.005241s ]
+---------------------------------------------------------------
+[ 2018-07-11T10:31:35+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ info ] qingrang.top/daily/ [运行时间：0.099618s][吞吐率：10.04req/s] [内存消耗：3,274.25kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/notelst.html [ array (
+  0 => 'autoSave',
+  1 => 'phoneSave',
+  2 => 'hide',
+  3 => 'list',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000502s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001018s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.002601s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.000917s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000302s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000261s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000863s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000255s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0 ORDER BY `g_order` [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000246s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `g_order` [ RunTime:0.000265s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000202s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.000817s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000577s ]
+---------------------------------------------------------------
+[ 2018-07-11T10:31:42+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/23.html
+[ info ] qingrang.top/daily/admin/note/shownote/id/23.html [运行时间：0.042178s][吞吐率：23.71req/s] [内存消耗：1,972.94kb] [文件加载：54]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '23',
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000449s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001216s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.000328s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000737s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000260s ]
+---------------------------------------------------------------
+[ 2018-07-11T10:31:55+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/editnote/id/23.html
+[ info ] qingrang.top/daily/admin/note/editnote/id/23.html [运行时间：0.044358s][吞吐率：22.54req/s] [内存消耗：2,020.88kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'editnote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '23',
+)
+[ info ] [ RUN ] app\admin\controller\Note->editNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/editnote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000456s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001038s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000780s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000231s ]
+---------------------------------------------------------------
+[ 2018-07-11T10:32:06+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/updatenote/id/23.html
+[ info ] qingrang.top/daily/admin/note/updatenote/id/23.html [运行时间：0.047230s][吞吐率：21.17req/s] [内存消耗：2,001.37kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'updatenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '512',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/23.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'content' => '# 编辑器相关
+`Atom`
+## Atom去掉编辑区中间的白线
+>设置 -> Open Config Folder -> styles.less -> 添加代码
+
+````css
+atom-text-editor::shadow .wrap-guide {
+//隐藏右边的白线
+visibility: hidden;
+}
+````',
+  'groups' => 'Basics',
+  'id' => '23',
+)
+[ info ] [ RUN ] app\admin\controller\Note->updateNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000470s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001046s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000852s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `groups` WHERE  `groups` = 'Basics' LIMIT 1 [ RunTime:0.000260s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000269s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `id`=23,`p_id`=2,`title`='编辑器相关\r',`content`='# 编辑器相关\r\n`Atom`\r\n## Atom去掉编辑区中间的白线\r\n>设置 -> Open Config Folder -> styles.less -> 添加代码\r\n\r\n````css\r\natom-text-editor::shadow .wrap-guide {\r\n//隐藏右边的白线\r\nvisibility: hidden;\r\n}\r\n````',`groups`='Basics'  WHERE  `id` = 23 [ RunTime:0.000445s ]
+---------------------------------------------------------------
+[ 2018-07-11T10:32:06+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/23.html
+[ info ] qingrang.top/daily/admin/note/shownote/id/23.html [运行时间：0.043239s][吞吐率：23.13req/s] [内存消耗：1,973.32kb] [文件加载：54]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/23.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '23',
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000427s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001042s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000736s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000236s ]
+---------------------------------------------------------------
+[ 2018-07-11T11:29:08+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/editnote/id/23.html
+[ info ] qingrang.top/daily/admin/note/editnote/id/23.html [运行时间：0.044168s][吞吐率：22.64req/s] [内存消耗：2,020.92kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'editnote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '23',
+)
+[ info ] [ RUN ] app\admin\controller\Note->editNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/editnote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000468s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001089s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000703s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000234s ]
+---------------------------------------------------------------
+[ 2018-07-11T11:29:22+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/updatenote/id/23.html
+[ info ] qingrang.top/daily/admin/note/updatenote/id/23.html [运行时间：0.047769s][吞吐率：20.93req/s] [内存消耗：2,001.62kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'updatenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '609',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/23.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'content' => '# 编辑器相关
+`Atom`
+## Atom
+### 去掉编辑区中间的白线
+>设置 -> Open Config Folder -> styles.less -> 添加代码
+
+````css
+atom-text-editor::shadow .wrap-guide {
+//隐藏右边的白线
+visibility: hidden;
+}
+````
+
+### Markdown 预览
+`Ctrl + Shift + M`',
+  'groups' => 'Basics',
+  'id' => '23',
+)
+[ info ] [ RUN ] app\admin\controller\Note->updateNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000492s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001275s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.000332s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000716s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `groups` WHERE  `groups` = 'Basics' LIMIT 1 [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000249s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `id`=23,`p_id`=2,`title`='编辑器相关\r',`content`='# 编辑器相关\r\n`Atom`\r\n## Atom\r\n### 去掉编辑区中间的白线\r\n>设置 -> Open Config Folder -> styles.less -> 添加代码\r\n\r\n````css\r\natom-text-editor::shadow .wrap-guide {\r\n//隐藏右边的白线\r\nvisibility: hidden;\r\n}\r\n````\r\n\r\n### Markdown 预览\r\n`Ctrl + Shift + M`',`groups`='Basics'  WHERE  `id` = 23 [ RunTime:0.000421s ]
+---------------------------------------------------------------
+[ 2018-07-11T11:29:23+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/23.html
+[ info ] qingrang.top/daily/admin/note/shownote/id/23.html [运行时间：0.042439s][吞吐率：23.56req/s] [内存消耗：1,973.36kb] [文件加载：54]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/23.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '23',
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000409s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001015s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000737s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000250s ]
+---------------------------------------------------------------
+[ 2018-07-11T11:29:44+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/updatenote/id/23.html
+[ info ] qingrang.top/daily/admin/note/updatenote/id/23.html [运行时间：0.054180s][吞吐率：18.46req/s] [内存消耗：2,001.74kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'updatenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '636',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/23.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'content' => '# 编辑器相关
+`Atom`
+
+[TOC]
+
+## Atom
+### 去掉编辑区中间的白线
+>设置 -> Open Config Folder -> styles.less -> 添加代码
+
+````css
+atom-text-editor::shadow .wrap-guide {
+//隐藏右边的白线
+visibility: hidden;
+}
+````
+
+### Markdown 预览
+`Ctrl + Shift + M`',
+  'groups' => 'Basics',
+  'id' => '23',
+)
+[ info ] [ RUN ] app\admin\controller\Note->updateNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000482s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001682s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000762s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `groups` WHERE  `groups` = 'Basics' LIMIT 1 [ RunTime:0.000251s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000250s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `id`=23,`p_id`=2,`title`='编辑器相关\r',`content`='# 编辑器相关\r\n`Atom`\r\n\r\n[TOC]\r\n\r\n## Atom\r\n### 去掉编辑区中间的白线\r\n>设置 -> Open Config Folder -> styles.less -> 添加代码\r\n\r\n````css\r\natom-text-editor::shadow .wrap-guide {\r\n//隐藏右边的白线\r\nvisibility: hidden;\r\n}\r\n````\r\n\r\n### Markdown 预览\r\n`Ctrl + Shift + M`',`groups`='Basics'  WHERE  `id` = 23 [ RunTime:0.000354s ]
+---------------------------------------------------------------
+[ 2018-07-11T11:29:44+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/23.html
+[ info ] qingrang.top/daily/admin/note/shownote/id/23.html [运行时间：0.041172s][吞吐率：24.29req/s] [内存消耗：1,973.38kb] [文件加载：54]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/23.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '23',
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000423s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001056s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 23 LIMIT 1 [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000701s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000236s ]
+---------------------------------------------------------------
+[ 2018-07-11T11:31:08+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/192.html
+[ info ] qingrang.top/daily/admin/note/shownote/id/192.html [运行时间：0.060357s][吞吐率：16.57req/s] [内存消耗：1,980.94kb] [文件加载：54]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '192',
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000443s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001048s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 192 LIMIT 1 [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000708s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000286s ]
+---------------------------------------------------------------
+[ 2018-07-11T15:24:19+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ info ] qingrang.top/daily/ [运行时间：0.100039s][吞吐率：10.00req/s] [内存消耗：3,274.15kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/notelst.html [ array (
+  0 => 'autoSave',
+  1 => 'phoneSave',
+  2 => 'hide',
+  3 => 'list',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000593s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001216s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.003218s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001023s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000251s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000828s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0 ORDER BY `g_order` [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000248s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `g_order` [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000212s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.000855s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000504s ]
+---------------------------------------------------------------
+[ 2018-07-11T18:10:01+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/ashownote1.html
+[ info ] qingrang.top/daily/admin/note/ashownote1.html [运行时间：0.050668s][吞吐率：19.74req/s] [内存消耗：2,355.61kb] [文件加载：52]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'ashownote1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '11',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'groupsID' => '21',
+)
+[ info ] [ RUN ] app\admin\controller\Note->aShowNote1[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000625s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001372s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `p_id` = 21  AND `id` > 2 ORDER BY id desc [ RunTime:0.001299s ]
+---------------------------------------------------------------
+[ 2018-07-11T18:10:17+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/asearch.html
+[ info ] qingrang.top/daily/admin/note/asearch.html [运行时间：0.048411s][吞吐率：20.66req/s] [内存消耗：2,084.68kb] [文件加载：50]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'asearch',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '31',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'key' => '腾讯传',
+)
+[ info ] [ RUN ] app\admin\controller\Note->aSearch[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000567s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001092s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  ( `title` LIKE '%腾讯传%' OR `content` LIKE '%腾讯传%' ) ORDER BY id desc [ RunTime:0.004955s ]
+---------------------------------------------------------------
+[ 2018-07-11T18:10:19+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/57
+[ info ] qingrang.top/daily/admin/note/shownote/id/57 [运行时间：0.047130s][吞吐率：21.22req/s] [内存消耗：1,977.00kb] [文件加载：54]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '57',
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000492s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001085s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 57 LIMIT 1 [ RunTime:0.000427s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000794s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000270s ]
+---------------------------------------------------------------
+[ 2018-07-11T18:19:53+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/asearch.html
+[ info ] qingrang.top/daily/admin/note/asearch.html [运行时间：0.050640s][吞吐率：19.75req/s] [内存消耗：2,079.93kb] [文件加载：50]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'asearch',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '47',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'key' => 'shuzihu数字货币',
+)
+[ info ] [ RUN ] app\admin\controller\Note->aSearch[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000580s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001052s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  ( `title` LIKE '%shuzihu数字货币%' OR `content` LIKE '%shuzihu数字货币%' ) ORDER BY id desc [ RunTime:0.005422s ]
+---------------------------------------------------------------
+[ 2018-07-11T18:19:57+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/asearch.html
+[ info ] qingrang.top/daily/admin/note/asearch.html [运行时间：0.052485s][吞吐率：19.05req/s] [内存消耗：2,079.79kb] [文件加载：50]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'asearch',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '40',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'key' => '数字货币',
+)
+[ info ] [ RUN ] app\admin\controller\Note->aSearch[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000489s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001064s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  ( `title` LIKE '%数字货币%' OR `content` LIKE '%数字货币%' ) ORDER BY id desc [ RunTime:0.004652s ]
+---------------------------------------------------------------
+[ 2018-07-11T18:20:01+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/asearch.html
+[ info ] qingrang.top/daily/admin/note/asearch.html [运行时间：0.046779s][吞吐率：21.38req/s] [内存消耗：2,105.14kb] [文件加载：50]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'asearch',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '31',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'key' => '区块链',
+)
+[ info ] [ RUN ] app\admin\controller\Note->aSearch[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000487s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001079s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  ( `title` LIKE '%区块链%' OR `content` LIKE '%区块链%' ) ORDER BY id desc [ RunTime:0.004870s ]
+---------------------------------------------------------------
+[ 2018-07-11T18:20:06+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/139
+[ info ] qingrang.top/daily/admin/note/shownote/id/139 [运行时间：0.041864s][吞吐率：23.89req/s] [内存消耗：1,981.47kb] [文件加载：54]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '139',
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000430s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 139 LIMIT 1 [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000721s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000232s ]
+---------------------------------------------------------------
+[ 2018-07-11T18:20:25+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/editnote/id/139
+[ info ] qingrang.top/daily/admin/note/editnote/id/139 [运行时间：0.050467s][吞吐率：19.81req/s] [内存消耗：2,029.46kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'editnote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '139',
+)
+[ info ] [ RUN ] app\admin\controller\Note->editNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/editnote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000576s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001167s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 139 LIMIT 1 [ RunTime:0.000464s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000786s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000257s ]
+---------------------------------------------------------------
+[ 2018-07-11T18:20:52+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/updatenote/id/139.html
+[ info ] qingrang.top/daily/admin/note/updatenote/id/139.html [运行时间：0.048820s][吞吐率：20.48req/s] [内存消耗：2,085.46kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'updatenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '25340',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/139',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'content' => '# 区块链(分布式数据库-比特币)
+[TOC]
+## 一、区块链的本质
+>区块链是什么？一句话，它是一种特殊的**分布式数据库**。
+
+首先，区块链的主要作用是储存信息。任何需要保存的信息，都可以写入区块链，也可以从里面读取，所以它是数据库。
+其次，任何人都可以架设服务器，加入区块链网络，成为一个节点。区块链的世界里面，没有中心节点，每个节点都是平等的，都保存着整个数据库。你可以向任何一个节点，写入/读取数据，因为所有节点最后都会同步，保证区块链一致。
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/171229/D63Eih2jm4.png)
+##二、区块链的最大特点
+区块链没有管理员，它是彻底无中心的。其他的数据库都有管理员，但是区块链没有。如果有人想对区块链添加审核，也实现不了，因为它的设计目标就是防止出现居于中心地位的管理当局。
+
+正是因为无法管理，区块链才能做到无法被控制。否则一旦大公司大集团控制了管理权，他们就会控制整个平台，其他使用者就都必须听命于他们了。
+
+但是，没有了管理员，人人都可以往里面写入数据，怎么才能保证数据是可信的呢？被坏人改了怎么办？请接着往下读，这就是区块链奇妙的地方。
+## 三、区块
+区块链由一个个区块（block）组成。区块很像数据库的记录，**每次写入数据，就是创建一个区块**。
+
+每个区块包含两个部分。
+- 区块头（Head）：记录当前区块的元信息
+- 区块体（Body）：实际数据
+
+区块头包含了当前区块的多项元信息。
+- 生成时间
+- 实际数据（即区块体）的 Hash
+- 上一个区块的 Hash
+- ...
+
+## 四、 Hash 的不可修改性
+>Hash 简介
+
+所谓 Hash 就是计算机可以对**任意内容**，计算出一个**长度相同的特征值**。
+举例来说，字符串123的 Hash 是a8fdc205a9f19cc1c7507a60c4f01b13d11d7fd0（十六进制），转成二进制就是256位，而且只有123能得到这个 Hash。
+
+区块链的 Hash 长度是256位，这就是说，不管原始内容是什么，最后都会计算出一个256位的二进制数字。而且可以保证，只要原始内容不同，对应的 Hash 一定是不同的。
+
+因此，就有两个重要的推论。
+- 推论1：每个区块的 Hash 都是不一样的，可以通过 Hash 标识区块。
+- 推论2：如果区块的内容变了，它的 Hash 一定会改变。
+
+>不可修改性
+
+	Hash = SHA256(区块头)
+
+上面就是区块 Hash 的计算公式，Hash 由区块头唯一决定，SHA256是区块链的 Hash 算法,可知：区块与 Hash 是一一对应的。
+
+前面说过，区块头包含很多内容，其中有当前区块体的 Hash（注意是"区块体"的 Hash，而不是整个区块），还有上一个区块的 Hash。这意味着，**如果当前区块的内容变了，或者上一个区块的 Hash 变了，一定会引起当前区块的 Hash 改变**。
+
+这一点对区块链有重大意义。如果有人修改了一个区块，该区块的 Hash 就变了。为了让后面的区块还能连到它，该人必须同时修改后面所有的区块，否则被改掉的区块就脱离区块链了。由于后面要提到的原因，Hash 的计算很耗时，同时修改多个区块几乎不可能发生，除非有人掌握了全网51%以上的计算能力。
+
+正是通过这种**联动机制**，区块链保证了自身的可靠性，**数据一旦写入，就无法被篡改**。这就像历史一样，发生了就是发生了，从此再无法改变。
+
+**每个区块都连着上一个区块，这也是"区块链"这个名字的由来。**
+
+## 五、采矿
+由于必须保证节点之间的同步，所以新区块的添加速度不能太快。试想一下，你刚刚同步了一个区块，准备基于它生成下一个区块，但这时别的节点又有新区块生成，你不得不放弃做了一半的计算，再次去同步。因为每个区块的后面，只能跟着一个区块，你永远只能在最新区块的后面，生成下一个区块。所以，你别无选择，一听到信号，就必须立刻同步。
+
+所以，区块链的发明者中本聪（这是假名，真实身份至今未知）故意让添加新区块，变得很困难。他的设计是，平均每10分钟，全网才能生成一个新区块，一小时也就六个。
+
+这种产出速度不是通过命令达成的，而是故意设置了海量的计算。也就是说，**只有通过极其大量的计算，才能得到当前区块的有效 Hash，从而把新区块添加到区块链**。由于计算量太大，所以快不起来。
+
+这个过程就叫做采矿（mining），因为计算有效 Hash 的难度，好比在全世界的沙子里面，找到一粒符合条件的沙子。计算 Hash 的机器就叫做矿机，操作矿机的人就叫做矿工。
+
+## 六、难度系数
+读到这里，你可能会有一个疑问，人们都说采矿很难，可是采矿不就是用计算机算出一个 Hash 吗，这正是计算机的强项啊，怎么会变得很难，迟迟算不出来呢？
+
+原来不是任意一个 Hash 都可以，**只有满足条件的 Hash 才会被区块链接受**。这个条件特别苛刻，使得绝大部分 Hash 都不满足要求，必须重算。
+
+原来，区块头包含一个难度系数（difficulty），这个值决定了计算 Hash 的难度。举例来说，第100000个区块的难度系数是 14484.16236122。
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/171229/l078FF8e04.jpg)
+区块链协议规定，使用一个常量除以难度系数，可以得到目标值（target）。显然，**难度系数越大，目标值就越小**。
+
+Hash 的有效性跟目标值密切相关，**只有小于目标值的 Hash 才是有效的**，否则 Hash 无效，必须重算。**由于目标值非常小，Hash 小于该值的机会极其渺茫，可能计算10亿次，才算中一次。这就是采矿如此之慢的根本原因。**
+
+区块头里面还有一个 Nonce 值，记录了 Hash 重算的次数。第 100000 个区块的 Nonce 值是274148111，即计算了 2.74 亿次，才得到了一个有效的 Hash，该区块才能加入区块链。
+
+## 七、难度系数的动态调节
+就算采矿很难，但也没法保证，正好十分钟产出一个区块，有时一分钟就算出来了，有时几个小时可能也没结果。总体来看，随着硬件设备的提升，以及矿机的数量增长，计算速度一定会越来越快。
+
+为了将产出速率恒定在十分钟，中本聪还设计了难度系数的动态调节机制。他规定，难度系数每两周（2016个区块）调整一次。如果这两周里面，区块的平均生成速度是9分钟，就意味着比法定速度快了10%，因此难度系数就要调高10%；如果平均生成速度是11分钟，就意味着比法定速度慢了10%，因此难度系数就要调低10%。
+
+**难度系数越调越高（目标值越来越小），导致了采矿越来越难。**
+
+## 八、区块链的分叉
+即使区块链是可靠的，现在还有一个问题没有解决：如果两个人同时向区块链写入数据，也就是说，同时有两个区块加入，因为它们都连着前一个区块，就形成了分叉。这时应该采纳哪一个区块呢？
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/171229/c25Kf1JjcA.png)
+现在的规则是，新节点总是采用最长的那条区块链。如果区块链有分叉，将看哪个分支在分叉点后面，先达到6个新区块（称为"六次确认"）。按照10分钟一个区块计算，一小时就可以确认。
+
+由于新区块的生成速度由计算能力决定，所以这条规则就是说，拥有大多数计算能力的那条分支，就是正宗的比特链。
+
+## 九、总结
+区块链作为无人管理的分布式数据库，从2009年开始已经运行了8年，没有出现大的问题。这证明它是可行的。
+
+但是，为了保证数据的可靠性，区块链也有自己的代价。一是效率，数据写入区块链，最少要等待十分钟，所有节点都同步数据，则需要更多的时间；二是能耗，区块的生成需要矿工进行无数无意义的计算，这是非常耗费能源的。
+
+因此，区块链的适用场景，其实非常有限。
+- 不存在所有成员都信任的管理当局
+- 写入的数据不要求实时使用
+- 挖矿的收益能够弥补本身的成本
+
+如果无法满足上述的条件，那么传统的数据库是更好的解决方案。
+
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/171229/Hcjd5AAb8K.png)
+
+目前，区块链最大的应用场景（可能也是唯一的应用场景），就是**以比特币为代表的加密货币**。
+',
+  'groups' => 'Basics',
+  'id' => '139',
+)
+[ info ] [ RUN ] app\admin\controller\Note->updateNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000464s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001177s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 139 LIMIT 1 [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000812s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `groups` WHERE  `groups` = 'Basics' LIMIT 1 [ RunTime:0.000308s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000246s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `id`=139,`p_id`=2,`title`='区块链(分布式数据库-比特币)\r',`content`='# 区块链(分布式数据库-比特币)\r\n[TOC]\r\n## 一、区块链的本质\r\n>区块链是什么？一句话，它是一种特殊的**分布式数据库**。\r\n\r\n首先，区块链的主要作用是储存信息。任何需要保存的信息，都可以写入区块链，也可以从里面读取，所以它是数据库。\r\n其次，任何人都可以架设服务器，加入区块链网络，成为一个节点。区块链的世界里面，没有中心节点，每个节点都是平等的，都保存着整个数据库。你可以向任何一个节点，写入/读取数据，因为所有节点最后都会同步，保证区块链一致。\r\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/171229/D63Eih2jm4.png)\r\n##二、区块链的最大特点\r\n区块链没有管理员，它是彻底无中心的。其他的数据库都有管理员，但是区块链没有。如果有人想对区块链添加审核，也实现不了，因为它的设计目标就是防止出现居于中心地位的管理当局。\r\n\r\n正是因为无法管理，区块链才能做到无法被控制。否则一旦大公司大集团控制了管理权，他们就会控制整个平台，其他使用者就都必须听命于他们了。\r\n\r\n但是，没有了管理员，人人都可以往里面写入数据，怎么才能保证数据是可信的呢？被坏人改了怎么办？请接着往下读，这就是区块链奇妙的地方。\r\n## 三、区块\r\n区块链由一个个区块（block）组成。区块很像数据库的记录，**每次写入数据，就是创建一个区块**。\r\n\r\n每个区块包含两个部分。\r\n- 区块头（Head）：记录当前区块的元信息\r\n- 区块体（Body）：实际数据\r\n\r\n区块头包含了当前区块的多项元信息。\r\n- 生成时间\r\n- 实际数据（即区块体）的 Hash\r\n- 上一个区块的 Hash\r\n- ...\r\n\r\n## 四、 Hash 的不可修改性\r\n>Hash 简介\r\n\r\n所谓 Hash 就是计算机可以对**任意内容**，计算出一个**长度相同的特征值**。\r\n举例来说，字符串123的 Hash 是a8fdc205a9f19cc1c7507a60c4f01b13d11d7fd0（十六进制），转成二进制就是256位，而且只有123能得到这个 Hash。\r\n\r\n区块链的 Hash 长度是256位，这就是说，不管原始内容是什么，最后都会计算出一个256位的二进制数字。而且可以保证，只要原始内容不同，对应的 Hash 一定是不同的。\r\n\r\n因此，就有两个重要的推论。\r\n- 推论1：每个区块的 Hash 都是不一样的，可以通过 Hash 标识区块。\r\n- 推论2：如果区块的内容变了，它的 Hash 一定会改变。\r\n\r\n>不可修改性\r\n\r\n	Hash = SHA256(区块头)\r\n\r\n上面就是区块 Hash 的计算公式，Hash 由区块头唯一决定，SHA256是区块链的 Hash 算法,可知：区块与 Hash 是一一对应的。\r\n\r\n前面说过，区块头包含很多内容，其中有当前区块体的 Hash（注意是\"区块体\"的 Hash，而不是整个区块），还有上一个区块的 Hash。这意味着，**如果当前区块的内容变了，或者上一个区块的 Hash 变了，一定会引起当前区块的 Hash 改变**。\r\n\r\n这一点对区块链有重大意义。如果有人修改了一个区块，该区块的 Hash 就变了。为了让后面的区块还能连到它，该人必须同时修改后面所有的区块，否则被改掉的区块就脱离区块链了。由于后面要提到的原因，Hash 的计算很耗时，同时修改多个区块几乎不可能发生，除非有人掌握了全网51%以上的计算能力。\r\n\r\n正是通过这种**联动机制**，区块链保证了自身的可靠性，**数据一旦写入，就无法被篡改**。这就像历史一样，发生了就是发生了，从此再无法改变。\r\n\r\n**每个区块都连着上一个区块，这也是\"区块链\"这个名字的由来。**\r\n\r\n## 五、采矿\r\n由于必须保证节点之间的同步，所以新区块的添加速度不能太快。试想一下，你刚刚同步了一个区块，准备基于它生成下一个区块，但这时别的节点又有新区块生成，你不得不放弃做了一半的计算，再次去同步。因为每个区块的后面，只能跟着一个区块，你永远只能在最新区块的后面，生成下一个区块。所以，你别无选择，一听到信号，就必须立刻同步。\r\n\r\n所以，区块链的发明者中本聪（这是假名，真实身份至今未知）故意让添加新区块，变得很困难。他的设计是，平均每10分钟，全网才能生成一个新区块，一小时也就六个。\r\n\r\n这种产出速度不是通过命令达成的，而是故意设置了海量的计算。也就是说，**只有通过极其大量的计算，才能得到当前区块的有效 Hash，从而把新区块添加到区块链**。由于计算量太大，所以快不起来。\r\n\r\n这个过程就叫做采矿（mining），因为计算有效 Hash 的难度，好比在全世界的沙子里面，找到一粒符合条件的沙子。计算 Hash 的机器就叫做矿机，操作矿机的人就叫做矿工。\r\n\r\n## 六、难度系数\r\n读到这里，你可能会有一个疑问，人们都说采矿很难，可是采矿不就是用计算机算出一个 Hash 吗，这正是计算机的强项啊，怎么会变得很难，迟迟算不出来呢？\r\n\r\n原来不是任意一个 Hash 都可以，**只有满足条件的 Hash 才会被区块链接受**。这个条件特别苛刻，使得绝大部分 Hash 都不满足要求，必须重算。\r\n\r\n原来，区块头包含一个难度系数（difficulty），这个值决定了计算 Hash 的难度。举例来说，第100000个区块的难度系数是 14484.16236122。\r\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/171229/l078FF8e04.jpg)\r\n区块链协议规定，使用一个常量除以难度系数，可以得到目标值（target）。显然，**难度系数越大，目标值就越小**。\r\n\r\nHash 的有效性跟目标值密切相关，**只有小于目标值的 Hash 才是有效的**，否则 Hash 无效，必须重算。**由于目标值非常小，Hash 小于该值的机会极其渺茫，可能计算10亿次，才算中一次。这就是采矿如此之慢的根本原因。**\r\n\r\n区块头里面还有一个 Nonce 值，记录了 Hash 重算的次数。第 100000 个区块的 Nonce 值是274148111，即计算了 2.74 亿次，才得到了一个有效的 Hash，该区块才能加入区块链。\r\n\r\n## 七、难度系数的动态调节\r\n就算采矿很难，但也没法保证，正好十分钟产出一个区块，有时一分钟就算出来了，有时几个小时可能也没结果。总体来看，随着硬件设备的提升，以及矿机的数量增长，计算速度一定会越来越快。\r\n\r\n为了将产出速率恒定在十分钟，中本聪还设计了难度系数的动态调节机制。他规定，难度系数每两周（2016个区块）调整一次。如果这两周里面，区块的平均生成速度是9分钟，就意味着比法定速度快了10%，因此难度系数就要调高10%；如果平均生成速度是11分钟，就意味着比法定速度慢了10%，因此难度系数就要调低10%。\r\n\r\n**难度系数越调越高（目标值越来越小），导致了采矿越来越难。**\r\n\r\n## 八、区块链的分叉\r\n即使区块链是可靠的，现在还有一个问题没有解决：如果两个人同时向区块链写入数据，也就是说，同时有两个区块加入，因为它们都连着前一个区块，就形成了分叉。这时应该采纳哪一个区块呢？\r\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/171229/c25Kf1JjcA.png)\r\n现在的规则是，新节点总是采用最长的那条区块链。如果区块链有分叉，将看哪个分支在分叉点后面，先达到6个新区块（称为\"六次确认\"）。按照10分钟一个区块计算，一小时就可以确认。\r\n\r\n由于新区块的生成速度由计算能力决定，所以这条规则就是说，拥有大多数计算能力的那条分支，就是正宗的比特链。\r\n\r\n## 九、总结\r\n区块链作为无人管理的分布式数据库，从2009年开始已经运行了8年，没有出现大的问题。这证明它是可行的。\r\n\r\n但是，为了保证数据的可靠性，区块链也有自己的代价。一是效率，数据写入区块链，最少要等待十分钟，所有节点都同步数据，则需要更多的时间；二是能耗，区块的生成需要矿工进行无数无意义的计算，这是非常耗费能源的。\r\n\r\n因此，区块链的适用场景，其实非常有限。\r\n- 不存在所有成员都信任的管理当局\r\n- 写入的数据不要求实时使用\r\n- 挖矿的收益能够弥补本身的成本\r\n\r\n如果无法满足上述的条件，那么传统的数据库是更好的解决方案。\r\n\r\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/171229/Hcjd5AAb8K.png)\r\n\r\n目前，区块链最大的应用场景（可能也是唯一的应用场景），就是**以比特币为代表的加密货币**。\r\n',`groups`='Basics'  WHERE  `id` = 139 [ RunTime:0.000609s ]
+---------------------------------------------------------------
+[ 2018-07-11T18:20:53+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/139.html
+[ info ] qingrang.top/daily/admin/note/shownote/id/139.html [运行时间：0.042545s][吞吐率：23.50req/s] [内存消耗：1,981.86kb] [文件加载：54]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/139',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '139',
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000453s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001032s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 139 LIMIT 1 [ RunTime:0.000393s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000779s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000235s ]
+---------------------------------------------------------------
+[ 2018-07-11T18:21:35+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/editnote/id/1.html
+[ info ] qingrang.top/daily/admin/note/editnote/id/1.html [运行时间：0.041636s][吞吐率：24.02req/s] [内存消耗：2,028.95kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'editnote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Note->editNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/editnote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000471s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001022s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000697s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000271s ]
+---------------------------------------------------------------
+[ 2018-07-11T18:23:24+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/savenote.html
+[ info ] qingrang.top/daily/admin/note/savenote.html [运行时间：0.046654s][吞吐率：21.43req/s] [内存消耗：2,083.22kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'savenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '21030',
+  'accept' => 'text/plain, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/1.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'context' => '# OAuth 2.0 理解
+[TOC]
+## OAuth 简介
+OAuth 是一个用于定于授权的开放标准，目前已经发展到了 2.0 的版本。它可以让用户允许第三方应用程序访问该用户存储在某一个网站或者系统上面的资源(比如照片，联系人)而不用提供密码给该第三方应用程序，并且还可以限制权限和有效期。
+OAuth 做到了一下这两点：
+- 不需要将用户名和密码提供给第三方应用而是通过令牌让第三方应用访问资源
+- 每一个令牌授权一个特定的应用在特定的时段内访问特定的资源
+
+### 应用场景
+#### 应用场景
+##### 应用场景
+OAuth 的应用场景遍布互联网应用的方方面面，最典型的就是微博。比如我们在开发一个第三方的微博客户端，需要可以登录用户并且操作用户的一系列微博信息。最简单的办法就是把微博账号密码告诉这个第三方客户端，但是这样就会存在一系列的问题：
+
+- 第三方客户端为了后续的服务，会保存用户的密码，这样不安全
+- 第三方客户端拥有了客户微博的权力，用户没法限制授权的范围和有效期
+- 用户只有修改密码，才能收回权限，但是这样会使得其他的第三方应用程序失效
+
+除了这些还会导致只要有一个第三方应用程序被破解，就会导致用户密码泄漏，以及所有被密码保护的数据泄漏。而且 OAuth 就是来解决这个问题的。
+
+## OAuth 2.0 的运行流程
+名词解释：
+
+- Client：第三方应用程序
+- Resource owner : 资源所有者，本文中称为"yonghu"。
+- Authorization server ：认证服务器，服务提供商专门用来处理认证的服务器
+- Resource server：资源服务器，服务提供商存放用户生成的资源的服务器，它和认证服务器，可以是同一台服务器，也可以是不同的服务器。
+
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180710/7GbH6Da3Ff.png)
+
+上面六个步骤之中，B是关键，即用户怎样才能给于客户端授权。有了这个授权以后，客户端就可以获取令牌，进而凭令牌获取资源。下面一一讲解客户端获取授权的四种模式。
+
+## 客户端的授权模式
+客户端必须得到用户的授权（authorization grant），才能获得令牌（access token）。OAuth 2.0 定义了四种授权方式：
+
+- 授权码模式（authorization code）
+- 简化模式（implicit）
+- 密码模式（resource owner password credentials）
+- 客户端模式（client credentials）
+
+### 授权码模式
+授权码模式（authorization code）是功能最完整、流程最严密的授权模式。它的特点就是通过客户端的后台服务器，与"服务提供商"的认证服务器进行互动。
+
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180710/Dgk3bFD1eJ.png)
+
+>以微博授权为例
+
+首先用户打开客户端应用，这时候客户端要求进行授权并且会跳转到授权页面：
+
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180710/9FG34j8aIh.png)
+
+我们可以看到跳转到的授权 URL 是这样的：
+```
+https://www.example.com/authorize?client_id=1881139527&redirect_uri=http%3A%2F%2Fwww.jianshu.com%2Fusers%2Fauth%2Fweibo%2Fcallback&response_type=code&state=f2d53629dd57f670e56b4ded85e2c8c5ad50514a66b44a4b
+```
+
+- https://api.weibo.com/oauth2/authorize ：认证服务器
+- client_id ：客户端的 client id，用于给认证服务器识别该客户端
+- redirect_uri ：获得授权码之后，认证服务器重定向用户代理（比如浏览器）的地址
+- response_type ： 表明授权类型，默认是 code，即授权码模式
+- state：表示客户端的当前状态，可以指定任意值，认证服务器会原封不动地返回这个值，用于抵御 CSRF 攻击
+
+这时候用户同意进行授权，认证服务器将用户跳转到客户端事先指定的 redirect_uri, 同时附上一个授权码
+
+`http://www.jianshu.com/users/auth/weibo/callback?code=AUTHORIZATION_CODE`
+
+客户端收到授权码，附上之前的 redirect_uri 向认证服务器申请令牌,这一步是在客户端的后台服务器上完成的，对用户不可见。比如：
+
+```
+https://www.example.com/v1/oauth/token?client_id=CLIENT_ID&client_secret=CLIENT_SECRET&grant_type=authorization_code&code=AUTHORIZATION_CODE&redirect_url=REDIRECT_URL
+```
+- https://api.weibo.com/v1/oauth2/authorize ：获取 access_token 的服务器地址
+- clientid ：clientid 用于验证应用程序。
+- clientsecret：clientsecret 用于验证应用程序。
+- grant_type ：刚刚获得的授权码
+- redirect_uri ：重定向URI，和第一步一致
+
+认证服务器确认无误后，向客户端发送访问令牌和更新令牌：
+```
+{
+	"access_token":"ACCESS_TOKEN",   
+	"token_type":"bearer",   
+	"expires_in":2592000,   
+	"refresh_token":"REFRESH_TOKEN"
+}
+```
+这个返回的包括了以下这些，有些还有包含一个权限范围 scope，这里不撰述：
+
+- access_token：访问令牌
+- token_type ：令牌类型
+- expires_in ：过期时间，单位为秒
+- refresh_token： 更新令牌，用来获取下一次的访问令牌
+
+### 简化模式
+简化模式不通过第三方应用程序的服务器，直接在浏览器中向认证服务器申请令牌，跳过了授权码这个步骤，所有步骤在浏览器中完成，令牌对访问者是可见的，且客户端不需要认证。这种模式一般是用于手机应用，桌面客户端应用程序和运行于浏览器上的 Web 应用程序, 授权令牌会交给用户代理，再由用户代理交给应用程序。如下图:
+
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180710/c83Lfk17DD.png)
+
+>例子
+
+- 首先用户访问客户端，客户端将用户导向认证服务器, 并且用户选择同意授权：
+
+`https://www.example.com/authorize?response_type=token&client_id=CLIENT_ID&redirect_uri=CALLBACK_URL`
+
+- 认证服务器将用重定向客户端事先指定的 URI，并且在 URI 的 hash 部分包含了访问令牌：
+
+`https://www.example.com/callback#token=ACCESS_TOKEN`
+
+- 浏览器向资源服务器发出请求，其中不包括上一步收到的 hash 值
+- 资源服务器返回一个网页，其中包含的代码可以获取 hash 值中的令牌
+- 浏览器执行上一步获得的脚本并且取出令牌
+- 浏览器将令牌发送给客户端
+
+### 密码模式
+用户向客户端提供自己的用户名和密码。客户端使用这些信息，向「服务商提供商」索要授权。在这种模式中，用户必须把自己的密码给客户端，但是客户端不得储存密码。这通常用在用户对客户端高度信任的情况下，比如客户端是操作系统的一部分，或者由一个著名公司出品。而认证服务器只有在其他授权模式无法执行的情况下，才能考虑使用这种模式。如下图：
+
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180710/2i2e1dLI16.png)
+
+### 客户端模式
+客户端使用自己的名义而不是用户的名义，向「服务提供商」进行认证。在这种模式下，用户直接向客户端注册，客户端以自己的名义要求服务提供商提供服务，其实并不存在授权。如下图：
+
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180710/6A3IGaEEgB.png)
+
+对于这种方式，用在访问一些和用户无关的公共接口，比如一些首页数据，这些数据和用户无关，但是又不想任何人都可以调用这个 Api，那么就可以采用这种模式。
+
+## 刷新令牌
+认证服务器颁发的令牌是有有效期限制的，所以客户端需要自行去刷新令牌。如果用户访问的时候，客户端的「访问令牌」已经过期，则需要使用「更新令牌」申请一个新的访问令牌。客户端通过一个POST 请求并且携带上参数：
+
+客户端发出更新令牌的HTTP请求，包含以下参数：
+- granttype：表示使用的授权模式，此处的值固定为"refreshtoken"，必选项。
+- refresh_token：表示早前收到的更新令牌，必选项。
+- scope：表示申请的授权范围，不可以超出上一次申请的范围，如果省略该参数，则表示与上一次一致。
+',
+)
+[ info ] [ RUN ] app\admin\controller\Note->saveNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000503s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001482s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `title`='OAuth 2.0 理解',`content`='# OAuth 2.0 理解\n[TOC]\n## OAuth 简介\nOAuth 是一个用于定于授权的开放标准，目前已经发展到了 2.0 的版本。它可以让用户允许第三方应用程序访问该用户存储在某一个网站或者系统上面的资源(比如照片，联系人)而不用提供密码给该第三方应用程序，并且还可以限制权限和有效期。\nOAuth 做到了一下这两点：\n- 不需要将用户名和密码提供给第三方应用而是通过令牌让第三方应用访问资源\n- 每一个令牌授权一个特定的应用在特定的时段内访问特定的资源\n\n### 应用场景\n#### 应用场景\n##### 应用场景\nOAuth 的应用场景遍布互联网应用的方方面面，最典型的就是微博。比如我们在开发一个第三方的微博客户端，需要可以登录用户并且操作用户的一系列微博信息。最简单的办法就是把微博账号密码告诉这个第三方客户端，但是这样就会存在一系列的问题：\n\n- 第三方客户端为了后续的服务，会保存用户的密码，这样不安全\n- 第三方客户端拥有了客户微博的权力，用户没法限制授权的范围和有效期\n- 用户只有修改密码，才能收回权限，但是这样会使得其他的第三方应用程序失效\n\n除了这些还会导致只要有一个第三方应用程序被破解，就会导致用户密码泄漏，以及所有被密码保护的数据泄漏。而且 OAuth 就是来解决这个问题的。\n\n## OAuth 2.0 的运行流程\n名词解释：\n\n- Client：第三方应用程序\n- Resource owner : 资源所有者，本文中称为\"yonghu\"。\n- Authorization server ：认证服务器，服务提供商专门用来处理认证的服务器\n- Resource server：资源服务器，服务提供商存放用户生成的资源的服务器，它和认证服务器，可以是同一台服务器，也可以是不同的服务器。\n\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180710/7GbH6Da3Ff.png)\n\n上面六个步骤之中，B是关键，即用户怎样才能给于客户端授权。有了这个授权以后，客户端就可以获取令牌，进而凭令牌获取资源。下面一一讲解客户端获取授权的四种模式。\n\n## 客户端的授权模式\n客户端必须得到用户的授权（authorization grant），才能获得令牌（access token）。OAuth 2.0 定义了四种授权方式：\n\n- 授权码模式（authorization code）\n- 简化模式（implicit）\n- 密码模式（resource owner password credentials）\n- 客户端模式（client credentials）\n\n### 授权码模式\n授权码模式（authorization code）是功能最完整、流程最严密的授权模式。它的特点就是通过客户端的后台服务器，与\"服务提供商\"的认证服务器进行互动。\n\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180710/Dgk3bFD1eJ.png)\n\n>以微博授权为例\n\n首先用户打开客户端应用，这时候客户端要求进行授权并且会跳转到授权页面：\n\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180710/9FG34j8aIh.png)\n\n我们可以看到跳转到的授权 URL 是这样的：\n```\nhttps://www.example.com/authorize?client_id=1881139527&redirect_uri=http%3A%2F%2Fwww.jianshu.com%2Fusers%2Fauth%2Fweibo%2Fcallback&response_type=code&state=f2d53629dd57f670e56b4ded85e2c8c5ad50514a66b44a4b\n```\n\n- https://api.weibo.com/oauth2/authorize ：认证服务器\n- client_id ：客户端的 client id，用于给认证服务器识别该客户端\n- redirect_uri ：获得授权码之后，认证服务器重定向用户代理（比如浏览器）的地址\n- response_type ： 表明授权类型，默认是 code，即授权码模式\n- state：表示客户端的当前状态，可以指定任意值，认证服务器会原封不动地返回这个值，用于抵御 CSRF 攻击\n\n这时候用户同意进行授权，认证服务器将用户跳转到客户端事先指定的 redirect_uri, 同时附上一个授权码\n\n`http://www.jianshu.com/users/auth/weibo/callback?code=AUTHORIZATION_CODE`\n\n客户端收到授权码，附上之前的 redirect_uri 向认证服务器申请令牌,这一步是在客户端的后台服务器上完成的，对用户不可见。比如：\n\n```\nhttps://www.example.com/v1/oauth/token?client_id=CLIENT_ID&client_secret=CLIENT_SECRET&grant_type=authorization_code&code=AUTHORIZATION_CODE&redirect_url=REDIRECT_URL\n```\n- https://api.weibo.com/v1/oauth2/authorize ：获取 access_token 的服务器地址\n- clientid ：clientid 用于验证应用程序。\n- clientsecret：clientsecret 用于验证应用程序。\n- grant_type ：刚刚获得的授权码\n- redirect_uri ：重定向URI，和第一步一致\n\n认证服务器确认无误后，向客户端发送访问令牌和更新令牌：\n```\n{\n	\"access_token\":\"ACCESS_TOKEN\",   \n	\"token_type\":\"bearer\",   \n	\"expires_in\":2592000,   \n	\"refresh_token\":\"REFRESH_TOKEN\"\n}\n```\n这个返回的包括了以下这些，有些还有包含一个权限范围 scope，这里不撰述：\n\n- access_token：访问令牌\n- token_type ：令牌类型\n- expires_in ：过期时间，单位为秒\n- refresh_token： 更新令牌，用来获取下一次的访问令牌\n\n### 简化模式\n简化模式不通过第三方应用程序的服务器，直接在浏览器中向认证服务器申请令牌，跳过了授权码这个步骤，所有步骤在浏览器中完成，令牌对访问者是可见的，且客户端不需要认证。这种模式一般是用于手机应用，桌面客户端应用程序和运行于浏览器上的 Web 应用程序, 授权令牌会交给用户代理，再由用户代理交给应用程序。如下图:\n\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180710/c83Lfk17DD.png)\n\n>例子\n\n- 首先用户访问客户端，客户端将用户导向认证服务器, 并且用户选择同意授权：\n\n`https://www.example.com/authorize?response_type=token&client_id=CLIENT_ID&redirect_uri=CALLBACK_URL`\n\n- 认证服务器将用重定向客户端事先指定的 URI，并且在 URI 的 hash 部分包含了访问令牌：\n\n`https://www.example.com/callback#token=ACCESS_TOKEN`\n\n- 浏览器向资源服务器发出请求，其中不包括上一步收到的 hash 值\n- 资源服务器返回一个网页，其中包含的代码可以获取 hash 值中的令牌\n- 浏览器执行上一步获得的脚本并且取出令牌\n- 浏览器将令牌发送给客户端\n\n### 密码模式\n用户向客户端提供自己的用户名和密码。客户端使用这些信息，向「服务商提供商」索要授权。在这种模式中，用户必须把自己的密码给客户端，但是客户端不得储存密码。这通常用在用户对客户端高度信任的情况下，比如客户端是操作系统的一部分，或者由一个著名公司出品。而认证服务器只有在其他授权模式无法执行的情况下，才能考虑使用这种模式。如下图：\n\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180710/2i2e1dLI16.png)\n\n### 客户端模式\n客户端使用自己的名义而不是用户的名义，向「服务提供商」进行认证。在这种模式下，用户直接向客户端注册，客户端以自己的名义要求服务提供商提供服务，其实并不存在授权。如下图：\n\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180710/6A3IGaEEgB.png)\n\n对于这种方式，用在访问一些和用户无关的公共接口，比如一些首页数据，这些数据和用户无关，但是又不想任何人都可以调用这个 Api，那么就可以采用这种模式。\n\n## 刷新令牌\n认证服务器颁发的令牌是有有效期限制的，所以客户端需要自行去刷新令牌。如果用户访问的时候，客户端的「访问令牌」已经过期，则需要使用「更新令牌」申请一个新的访问令牌。客户端通过一个POST 请求并且携带上参数：\n\n客户端发出更新令牌的HTTP请求，包含以下参数：\n- granttype：表示使用的授权模式，此处的值固定为\"refreshtoken\"，必选项。\n- refresh_token：表示早前收到的更新令牌，必选项。\n- scope：表示申请的授权范围，不可以超出上一次申请的范围，如果省略该参数，则表示与上一次一致。\n',`groups`='Default',`p_id`=1  WHERE  `id` = 1 [ RunTime:0.000643s ]
+---------------------------------------------------------------
+[ 2018-07-11T18:23:28+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/savenote.html
+[ info ] qingrang.top/daily/admin/note/savenote.html [运行时间：0.043075s][吞吐率：23.22req/s] [内存消耗：2,083.19kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'savenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '21030',
+  'accept' => 'text/plain, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/1.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'context' => '# OAuth 2.0 理解
+[TOC]
+## OAuth 简介
+OAuth 是一个用于定于授权的开放标准，目前已经发展到了 2.0 的版本。它可以让用户允许第三方应用程序访问该用户存储在某一个网站或者系统上面的资源(比如照片，联系人)而不用提供密码给该第三方应用程序，并且还可以限制权限和有效期。
+OAuth 做到了一下这两点：
+- 不需要将用户名和密码提供给第三方应用而是通过令牌让第三方应用访问资源
+- 每一个令牌授权一个特定的应用在特定的时段内访问特定的资源
+
+### 应用场景
+#### 应用场景
+##### 应用场景
+OAuth 的应用场景遍布互联网应用的方方面面，最典型的就是微博。比如我们在开发一个第三方的微博客户端，需要可以登录用户并且操作用户的一系列微博信息。最简单的办法就是把微博账号密码告诉这个第三方客户端，但是这样就会存在一系列的问题：
+
+- 第三方客户端为了后续的服务，会保存用户的密码，这样不安全
+- 第三方客户端拥有了客户微博的权力，用户没法限制授权的范围和有效期
+- 用户只有修改密码，才能收回权限，但是这样会使得其他的第三方应用程序失效
+
+除了这些还会导致只要有一个第三方应用程序被破解，就会导致用户密码泄漏，以及所有被密码保护的数据泄漏。而且 OAuth 就是来解决这个问题的。
+
+## OAuth 2.0 的运行流程
+名词解释：
+
+- Client：第三方应用程序
+- Resource owner : 资源所有者，本文中称为"yonghu"。
+- Authorization server ：认证服务器，服务提供商专门用来处理认证的服务器
+- Resource server：资源服务器，服务提供商存放用户生成的资源的服务器，它和认证服务器，可以是同一台服务器，也可以是不同的服务器。
+
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180710/7GbH6Da3Ff.png)
+
+上面六个步骤之中，B是关键，即用户怎样才能给于客户端授权。有了这个授权以后，客户端就可以获取令牌，进而凭令牌获取资源。下面一一讲解客户端获取授权的四种模式。
+
+## 客户端的授权模式
+客户端必须得到用户的授权（authorization grant），才能获得令牌（access token）。OAuth 2.0 定义了四种授权方式：
+
+- 授权码模式（authorization code）
+- 简化模式（implicit）
+- 密码模式（resource owner password credentials）
+- 客户端模式（client credentials）
+
+### 授权码模式
+授权码模式（authorization code）是功能最完整、流程最严密的授权模式。它的特点就是通过客户端的后台服务器，与"服务提供商"的认证服务器进行互动。
+
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180710/Dgk3bFD1eJ.png)
+
+>以微博授权为例
+
+首先用户打开客户端应用，这时候客户端要求进行授权并且会跳转到授权页面：
+
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180710/9FG34j8aIh.png)
+
+我们可以看到跳转到的授权 URL 是这样的：
+```
+https://www.example.com/authorize?client_id=1881139527&redirect_uri=http%3A%2F%2Fwww.jianshu.com%2Fusers%2Fauth%2Fweibo%2Fcallback&response_type=code&state=f2d53629dd57f670e56b4ded85e2c8c5ad50514a66b44a4b
+```
+
+- https://api.weibo.com/oauth2/authorize ：认证服务器
+- client_id ：客户端的 client id，用于给认证服务器识别该客户端
+- redirect_uri ：获得授权码之后，认证服务器重定向用户代理（比如浏览器）的地址
+- response_type ： 表明授权类型，默认是 code，即授权码模式
+- state：表示客户端的当前状态，可以指定任意值，认证服务器会原封不动地返回这个值，用于抵御 CSRF 攻击
+
+这时候用户同意进行授权，认证服务器将用户跳转到客户端事先指定的 redirect_uri, 同时附上一个授权码
+
+`http://www.jianshu.com/users/auth/weibo/callback?code=AUTHORIZATION_CODE`
+
+客户端收到授权码，附上之前的 redirect_uri 向认证服务器申请令牌,这一步是在客户端的后台服务器上完成的，对用户不可见。比如：
+
+```
+https://www.example.com/v1/oauth/token?client_id=CLIENT_ID&client_secret=CLIENT_SECRET&grant_type=authorization_code&code=AUTHORIZATION_CODE&redirect_url=REDIRECT_URL
+```
+- https://api.weibo.com/v1/oauth2/authorize ：获取 access_token 的服务器地址
+- clientid ：clientid 用于验证应用程序。
+- clientsecret：clientsecret 用于验证应用程序。
+- grant_type ：刚刚获得的授权码
+- redirect_uri ：重定向URI，和第一步一致
+
+认证服务器确认无误后，向客户端发送访问令牌和更新令牌：
+```
+{
+	"access_token":"ACCESS_TOKEN",   
+	"token_type":"bearer",   
+	"expires_in":2592000,   
+	"refresh_token":"REFRESH_TOKEN"
+}
+```
+这个返回的包括了以下这些，有些还有包含一个权限范围 scope，这里不撰述：
+
+- access_token：访问令牌
+- token_type ：令牌类型
+- expires_in ：过期时间，单位为秒
+- refresh_token： 更新令牌，用来获取下一次的访问令牌
+
+### 简化模式
+简化模式不通过第三方应用程序的服务器，直接在浏览器中向认证服务器申请令牌，跳过了授权码这个步骤，所有步骤在浏览器中完成，令牌对访问者是可见的，且客户端不需要认证。这种模式一般是用于手机应用，桌面客户端应用程序和运行于浏览器上的 Web 应用程序, 授权令牌会交给用户代理，再由用户代理交给应用程序。如下图:
+
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180710/c83Lfk17DD.png)
+
+>例子
+
+- 首先用户访问客户端，客户端将用户导向认证服务器, 并且用户选择同意授权：
+
+`https://www.example.com/authorize?response_type=token&client_id=CLIENT_ID&redirect_uri=CALLBACK_URL`
+
+- 认证服务器将用重定向客户端事先指定的 URI，并且在 URI 的 hash 部分包含了访问令牌：
+
+`https://www.example.com/callback#token=ACCESS_TOKEN`
+
+- 浏览器向资源服务器发出请求，其中不包括上一步收到的 hash 值
+- 资源服务器返回一个网页，其中包含的代码可以获取 hash 值中的令牌
+- 浏览器执行上一步获得的脚本并且取出令牌
+- 浏览器将令牌发送给客户端
+
+### 密码模式
+用户向客户端提供自己的用户名和密码。客户端使用这些信息，向「服务商提供商」索要授权。在这种模式中，用户必须把自己的密码给客户端，但是客户端不得储存密码。这通常用在用户对客户端高度信任的情况下，比如客户端是操作系统的一部分，或者由一个著名公司出品。而认证服务器只有在其他授权模式无法执行的情况下，才能考虑使用这种模式。如下图：
+
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180710/2i2e1dLI16.png)
+
+### 客户端模式
+客户端使用自己的名义而不是用户的名义，向「服务提供商」进行认证。在这种模式下，用户直接向客户端注册，客户端以自己的名义要求服务提供商提供服务，其实并不存在授权。如下图：
+
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180710/6A3IGaEEgB.png)
+
+对于这种方式，用在访问一些和用户无关的公共接口，比如一些首页数据，这些数据和用户无关，但是又不想任何人都可以调用这个 Api，那么就可以采用这种模式。
+
+## 刷新令牌
+认证服务器颁发的令牌是有有效期限制的，所以客户端需要自行去刷新令牌。如果用户访问的时候，客户端的「访问令牌」已经过期，则需要使用「更新令牌」申请一个新的访问令牌。客户端通过一个POST 请求并且携带上参数：
+
+客户端发出更新令牌的HTTP请求，包含以下参数：
+- granttype：表示使用的授权模式，此处的值固定为"refreshtoken"，必选项。
+- refresh_token：表示早前收到的更新令牌，必选项。
+- scope：表示申请的授权范围，不可以超出上一次申请的范围，如果省略该参数，则表示与上一次一致。
+',
+)
+[ info ] [ RUN ] app\admin\controller\Note->saveNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000486s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001027s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `title`='OAuth 2.0 理解',`content`='# OAuth 2.0 理解\n[TOC]\n## OAuth 简介\nOAuth 是一个用于定于授权的开放标准，目前已经发展到了 2.0 的版本。它可以让用户允许第三方应用程序访问该用户存储在某一个网站或者系统上面的资源(比如照片，联系人)而不用提供密码给该第三方应用程序，并且还可以限制权限和有效期。\nOAuth 做到了一下这两点：\n- 不需要将用户名和密码提供给第三方应用而是通过令牌让第三方应用访问资源\n- 每一个令牌授权一个特定的应用在特定的时段内访问特定的资源\n\n### 应用场景\n#### 应用场景\n##### 应用场景\nOAuth 的应用场景遍布互联网应用的方方面面，最典型的就是微博。比如我们在开发一个第三方的微博客户端，需要可以登录用户并且操作用户的一系列微博信息。最简单的办法就是把微博账号密码告诉这个第三方客户端，但是这样就会存在一系列的问题：\n\n- 第三方客户端为了后续的服务，会保存用户的密码，这样不安全\n- 第三方客户端拥有了客户微博的权力，用户没法限制授权的范围和有效期\n- 用户只有修改密码，才能收回权限，但是这样会使得其他的第三方应用程序失效\n\n除了这些还会导致只要有一个第三方应用程序被破解，就会导致用户密码泄漏，以及所有被密码保护的数据泄漏。而且 OAuth 就是来解决这个问题的。\n\n## OAuth 2.0 的运行流程\n名词解释：\n\n- Client：第三方应用程序\n- Resource owner : 资源所有者，本文中称为\"yonghu\"。\n- Authorization server ：认证服务器，服务提供商专门用来处理认证的服务器\n- Resource server：资源服务器，服务提供商存放用户生成的资源的服务器，它和认证服务器，可以是同一台服务器，也可以是不同的服务器。\n\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180710/7GbH6Da3Ff.png)\n\n上面六个步骤之中，B是关键，即用户怎样才能给于客户端授权。有了这个授权以后，客户端就可以获取令牌，进而凭令牌获取资源。下面一一讲解客户端获取授权的四种模式。\n\n## 客户端的授权模式\n客户端必须得到用户的授权（authorization grant），才能获得令牌（access token）。OAuth 2.0 定义了四种授权方式：\n\n- 授权码模式（authorization code）\n- 简化模式（implicit）\n- 密码模式（resource owner password credentials）\n- 客户端模式（client credentials）\n\n### 授权码模式\n授权码模式（authorization code）是功能最完整、流程最严密的授权模式。它的特点就是通过客户端的后台服务器，与\"服务提供商\"的认证服务器进行互动。\n\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180710/Dgk3bFD1eJ.png)\n\n>以微博授权为例\n\n首先用户打开客户端应用，这时候客户端要求进行授权并且会跳转到授权页面：\n\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180710/9FG34j8aIh.png)\n\n我们可以看到跳转到的授权 URL 是这样的：\n```\nhttps://www.example.com/authorize?client_id=1881139527&redirect_uri=http%3A%2F%2Fwww.jianshu.com%2Fusers%2Fauth%2Fweibo%2Fcallback&response_type=code&state=f2d53629dd57f670e56b4ded85e2c8c5ad50514a66b44a4b\n```\n\n- https://api.weibo.com/oauth2/authorize ：认证服务器\n- client_id ：客户端的 client id，用于给认证服务器识别该客户端\n- redirect_uri ：获得授权码之后，认证服务器重定向用户代理（比如浏览器）的地址\n- response_type ： 表明授权类型，默认是 code，即授权码模式\n- state：表示客户端的当前状态，可以指定任意值，认证服务器会原封不动地返回这个值，用于抵御 CSRF 攻击\n\n这时候用户同意进行授权，认证服务器将用户跳转到客户端事先指定的 redirect_uri, 同时附上一个授权码\n\n`http://www.jianshu.com/users/auth/weibo/callback?code=AUTHORIZATION_CODE`\n\n客户端收到授权码，附上之前的 redirect_uri 向认证服务器申请令牌,这一步是在客户端的后台服务器上完成的，对用户不可见。比如：\n\n```\nhttps://www.example.com/v1/oauth/token?client_id=CLIENT_ID&client_secret=CLIENT_SECRET&grant_type=authorization_code&code=AUTHORIZATION_CODE&redirect_url=REDIRECT_URL\n```\n- https://api.weibo.com/v1/oauth2/authorize ：获取 access_token 的服务器地址\n- clientid ：clientid 用于验证应用程序。\n- clientsecret：clientsecret 用于验证应用程序。\n- grant_type ：刚刚获得的授权码\n- redirect_uri ：重定向URI，和第一步一致\n\n认证服务器确认无误后，向客户端发送访问令牌和更新令牌：\n```\n{\n	\"access_token\":\"ACCESS_TOKEN\",   \n	\"token_type\":\"bearer\",   \n	\"expires_in\":2592000,   \n	\"refresh_token\":\"REFRESH_TOKEN\"\n}\n```\n这个返回的包括了以下这些，有些还有包含一个权限范围 scope，这里不撰述：\n\n- access_token：访问令牌\n- token_type ：令牌类型\n- expires_in ：过期时间，单位为秒\n- refresh_token： 更新令牌，用来获取下一次的访问令牌\n\n### 简化模式\n简化模式不通过第三方应用程序的服务器，直接在浏览器中向认证服务器申请令牌，跳过了授权码这个步骤，所有步骤在浏览器中完成，令牌对访问者是可见的，且客户端不需要认证。这种模式一般是用于手机应用，桌面客户端应用程序和运行于浏览器上的 Web 应用程序, 授权令牌会交给用户代理，再由用户代理交给应用程序。如下图:\n\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180710/c83Lfk17DD.png)\n\n>例子\n\n- 首先用户访问客户端，客户端将用户导向认证服务器, 并且用户选择同意授权：\n\n`https://www.example.com/authorize?response_type=token&client_id=CLIENT_ID&redirect_uri=CALLBACK_URL`\n\n- 认证服务器将用重定向客户端事先指定的 URI，并且在 URI 的 hash 部分包含了访问令牌：\n\n`https://www.example.com/callback#token=ACCESS_TOKEN`\n\n- 浏览器向资源服务器发出请求，其中不包括上一步收到的 hash 值\n- 资源服务器返回一个网页，其中包含的代码可以获取 hash 值中的令牌\n- 浏览器执行上一步获得的脚本并且取出令牌\n- 浏览器将令牌发送给客户端\n\n### 密码模式\n用户向客户端提供自己的用户名和密码。客户端使用这些信息，向「服务商提供商」索要授权。在这种模式中，用户必须把自己的密码给客户端，但是客户端不得储存密码。这通常用在用户对客户端高度信任的情况下，比如客户端是操作系统的一部分，或者由一个著名公司出品。而认证服务器只有在其他授权模式无法执行的情况下，才能考虑使用这种模式。如下图：\n\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180710/2i2e1dLI16.png)\n\n### 客户端模式\n客户端使用自己的名义而不是用户的名义，向「服务提供商」进行认证。在这种模式下，用户直接向客户端注册，客户端以自己的名义要求服务提供商提供服务，其实并不存在授权。如下图：\n\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180710/6A3IGaEEgB.png)\n\n对于这种方式，用在访问一些和用户无关的公共接口，比如一些首页数据，这些数据和用户无关，但是又不想任何人都可以调用这个 Api，那么就可以采用这种模式。\n\n## 刷新令牌\n认证服务器颁发的令牌是有有效期限制的，所以客户端需要自行去刷新令牌。如果用户访问的时候，客户端的「访问令牌」已经过期，则需要使用「更新令牌」申请一个新的访问令牌。客户端通过一个POST 请求并且携带上参数：\n\n客户端发出更新令牌的HTTP请求，包含以下参数：\n- granttype：表示使用的授权模式，此处的值固定为\"refreshtoken\"，必选项。\n- refresh_token：表示早前收到的更新令牌，必选项。\n- scope：表示申请的授权范围，不可以超出上一次申请的范围，如果省略该参数，则表示与上一次一致。\n',`groups`='Default',`p_id`=1  WHERE  `id` = 1 [ RunTime:0.000508s ]
+---------------------------------------------------------------
+[ 2018-07-11T18:37:33+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/139.html
+[ info ] qingrang.top/daily/admin/note/shownote/id/139.html [运行时间：0.043866s][吞吐率：22.80req/s] [内存消耗：1,982.07kb] [文件加载：54]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/139',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '139',
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000521s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001172s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 139 LIMIT 1 [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000783s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000348s ]
+---------------------------------------------------------------
+[ 2018-07-11T18:37:44+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/1.html
+[ info ] qingrang.top/daily/admin/note/shownote/id/1.html [运行时间：0.045017s][吞吐率：22.21req/s] [内存消耗：1,980.68kb] [文件加载：54]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000466s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001632s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000817s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000266s ]
+---------------------------------------------------------------
+[ 2018-07-11T18:38:35+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/asearch.html
+[ info ] qingrang.top/daily/admin/note/asearch.html [运行时间：0.047695s][吞吐率：20.97req/s] [内存消耗：2,109.21kb] [文件加载：50]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'asearch',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '22',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'key' => '按键',
+)
+[ info ] [ RUN ] app\admin\controller\Note->aSearch[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000790s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001547s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  ( `title` LIKE '%按键%' OR `content` LIKE '%按键%' ) ORDER BY id desc [ RunTime:0.005308s ]
+---------------------------------------------------------------
+[ 2018-07-11T18:38:39+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/30
+[ info ] qingrang.top/daily/admin/note/shownote/id/30 [运行时间：0.050716s][吞吐率：19.72req/s] [内存消耗：1,977.90kb] [文件加载：54]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '30',
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000491s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001408s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 30 LIMIT 1 [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000817s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000270s ]
+---------------------------------------------------------------
+[ 2018-07-11T18:43:19+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/editnote/id/1.html
+[ info ] qingrang.top/daily/admin/note/editnote/id/1.html [运行时间：0.051929s][吞吐率：19.26req/s] [内存消耗：2,156.73kb] [文件加载：57]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'editnote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Note->editNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/editnote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000544s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001169s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000477s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000712s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000276s ]
+---------------------------------------------------------------
+[ 2018-07-11T18:43:23+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/savenote.html
+[ info ] qingrang.top/daily/admin/note/savenote.html [运行时间：0.053523s][吞吐率：18.68req/s] [内存消耗：2,083.19kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'savenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '21030',
+  'accept' => 'text/plain, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/1.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'context' => '# OAuth 2.0 理解
+[TOC]
+## OAuth 简介
+OAuth 是一个用于定于授权的开放标准，目前已经发展到了 2.0 的版本。它可以让用户允许第三方应用程序访问该用户存储在某一个网站或者系统上面的资源(比如照片，联系人)而不用提供密码给该第三方应用程序，并且还可以限制权限和有效期。
+OAuth 做到了一下这两点：
+- 不需要将用户名和密码提供给第三方应用而是通过令牌让第三方应用访问资源
+- 每一个令牌授权一个特定的应用在特定的时段内访问特定的资源
+
+### 应用场景
+#### 应用场景
+##### 应用场景
+OAuth 的应用场景遍布互联网应用的方方面面，最典型的就是微博。比如我们在开发一个第三方的微博客户端，需要可以登录用户并且操作用户的一系列微博信息。最简单的办法就是把微博账号密码告诉这个第三方客户端，但是这样就会存在一系列的问题：
+
+- 第三方客户端为了后续的服务，会保存用户的密码，这样不安全
+- 第三方客户端拥有了客户微博的权力，用户没法限制授权的范围和有效期
+- 用户只有修改密码，才能收回权限，但是这样会使得其他的第三方应用程序失效
+
+除了这些还会导致只要有一个第三方应用程序被破解，就会导致用户密码泄漏，以及所有被密码保护的数据泄漏。而且 OAuth 就是来解决这个问题的。
+
+## OAuth 2.0 的运行流程
+名词解释：
+
+- Client：第三方应用程序
+- Resource owner : 资源所有者，本文中称为"yonghu"。
+- Authorization server ：认证服务器，服务提供商专门用来处理认证的服务器
+- Resource server：资源服务器，服务提供商存放用户生成的资源的服务器，它和认证服务器，可以是同一台服务器，也可以是不同的服务器。
+
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180710/7GbH6Da3Ff.png)
+
+上面六个步骤之中，B是关键，即用户怎样才能给于客户端授权。有了这个授权以后，客户端就可以获取令牌，进而凭令牌获取资源。下面一一讲解客户端获取授权的四种模式。
+
+## 客户端的授权模式
+客户端必须得到用户的授权（authorization grant），才能获得令牌（access token）。OAuth 2.0 定义了四种授权方式：
+
+- 授权码模式（authorization code）
+- 简化模式（implicit）
+- 密码模式（resource owner password credentials）
+- 客户端模式（client credentials）
+
+### 授权码模式
+授权码模式（authorization code）是功能最完整、流程最严密的授权模式。它的特点就是通过客户端的后台服务器，与"服务提供商"的认证服务器进行互动。
+
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180710/Dgk3bFD1eJ.png)
+
+>以微博授权为例
+
+首先用户打开客户端应用，这时候客户端要求进行授权并且会跳转到授权页面：
+
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180710/9FG34j8aIh.png)
+
+我们可以看到跳转到的授权 URL 是这样的：
+```
+https://www.example.com/authorize?client_id=1881139527&redirect_uri=http%3A%2F%2Fwww.jianshu.com%2Fusers%2Fauth%2Fweibo%2Fcallback&response_type=code&state=f2d53629dd57f670e56b4ded85e2c8c5ad50514a66b44a4b
+```
+
+- https://api.weibo.com/oauth2/authorize ：认证服务器
+- client_id ：客户端的 client id，用于给认证服务器识别该客户端
+- redirect_uri ：获得授权码之后，认证服务器重定向用户代理（比如浏览器）的地址
+- response_type ： 表明授权类型，默认是 code，即授权码模式
+- state：表示客户端的当前状态，可以指定任意值，认证服务器会原封不动地返回这个值，用于抵御 CSRF 攻击
+
+这时候用户同意进行授权，认证服务器将用户跳转到客户端事先指定的 redirect_uri, 同时附上一个授权码
+
+`http://www.jianshu.com/users/auth/weibo/callback?code=AUTHORIZATION_CODE`
+
+客户端收到授权码，附上之前的 redirect_uri 向认证服务器申请令牌,这一步是在客户端的后台服务器上完成的，对用户不可见。比如：
+
+```
+https://www.example.com/v1/oauth/token?client_id=CLIENT_ID&client_secret=CLIENT_SECRET&grant_type=authorization_code&code=AUTHORIZATION_CODE&redirect_url=REDIRECT_URL
+```
+- https://api.weibo.com/v1/oauth2/authorize ：获取 access_token 的服务器地址
+- clientid ：clientid 用于验证应用程序。
+- clientsecret：clientsecret 用于验证应用程序。
+- grant_type ：刚刚获得的授权码
+- redirect_uri ：重定向URI，和第一步一致
+
+认证服务器确认无误后，向客户端发送访问令牌和更新令牌：
+```
+{
+	"access_token":"ACCESS_TOKEN",   
+	"token_type":"bearer",   
+	"expires_in":2592000,   
+	"refresh_token":"REFRESH_TOKEN"
+}
+```
+这个返回的包括了以下这些，有些还有包含一个权限范围 scope，这里不撰述：
+
+- access_token：访问令牌
+- token_type ：令牌类型
+- expires_in ：过期时间，单位为秒
+- refresh_token： 更新令牌，用来获取下一次的访问令牌
+
+### 简化模式
+简化模式不通过第三方应用程序的服务器，直接在浏览器中向认证服务器申请令牌，跳过了授权码这个步骤，所有步骤在浏览器中完成，令牌对访问者是可见的，且客户端不需要认证。这种模式一般是用于手机应用，桌面客户端应用程序和运行于浏览器上的 Web 应用程序, 授权令牌会交给用户代理，再由用户代理交给应用程序。如下图:
+
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180710/c83Lfk17DD.png)
+
+>例子
+
+- 首先用户访问客户端，客户端将用户导向认证服务器, 并且用户选择同意授权：
+
+`https://www.example.com/authorize?response_type=token&client_id=CLIENT_ID&redirect_uri=CALLBACK_URL`
+
+- 认证服务器将用重定向客户端事先指定的 URI，并且在 URI 的 hash 部分包含了访问令牌：
+
+`https://www.example.com/callback#token=ACCESS_TOKEN`
+
+- 浏览器向资源服务器发出请求，其中不包括上一步收到的 hash 值
+- 资源服务器返回一个网页，其中包含的代码可以获取 hash 值中的令牌
+- 浏览器执行上一步获得的脚本并且取出令牌
+- 浏览器将令牌发送给客户端
+
+### 密码模式
+用户向客户端提供自己的用户名和密码。客户端使用这些信息，向「服务商提供商」索要授权。在这种模式中，用户必须把自己的密码给客户端，但是客户端不得储存密码。这通常用在用户对客户端高度信任的情况下，比如客户端是操作系统的一部分，或者由一个著名公司出品。而认证服务器只有在其他授权模式无法执行的情况下，才能考虑使用这种模式。如下图：
+
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180710/2i2e1dLI16.png)
+
+### 客户端模式
+客户端使用自己的名义而不是用户的名义，向「服务提供商」进行认证。在这种模式下，用户直接向客户端注册，客户端以自己的名义要求服务提供商提供服务，其实并不存在授权。如下图：
+
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180710/6A3IGaEEgB.png)
+
+对于这种方式，用在访问一些和用户无关的公共接口，比如一些首页数据，这些数据和用户无关，但是又不想任何人都可以调用这个 Api，那么就可以采用这种模式。
+
+## 刷新令牌
+认证服务器颁发的令牌是有有效期限制的，所以客户端需要自行去刷新令牌。如果用户访问的时候，客户端的「访问令牌」已经过期，则需要使用「更新令牌」申请一个新的访问令牌。客户端通过一个POST 请求并且携带上参数：
+
+客户端发出更新令牌的HTTP请求，包含以下参数：
+- granttype：表示使用的授权模式，此处的值固定为"refreshtoken"，必选项。
+- refresh_token：表示早前收到的更新令牌，必选项。
+- scope：表示申请的授权范围，不可以超出上一次申请的范围，如果省略该参数，则表示与上一次一致。
+',
+)
+[ info ] [ RUN ] app\admin\controller\Note->saveNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000649s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001070s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `title`='OAuth 2.0 理解',`content`='# OAuth 2.0 理解\n[TOC]\n## OAuth 简介\nOAuth 是一个用于定于授权的开放标准，目前已经发展到了 2.0 的版本。它可以让用户允许第三方应用程序访问该用户存储在某一个网站或者系统上面的资源(比如照片，联系人)而不用提供密码给该第三方应用程序，并且还可以限制权限和有效期。\nOAuth 做到了一下这两点：\n- 不需要将用户名和密码提供给第三方应用而是通过令牌让第三方应用访问资源\n- 每一个令牌授权一个特定的应用在特定的时段内访问特定的资源\n\n### 应用场景\n#### 应用场景\n##### 应用场景\nOAuth 的应用场景遍布互联网应用的方方面面，最典型的就是微博。比如我们在开发一个第三方的微博客户端，需要可以登录用户并且操作用户的一系列微博信息。最简单的办法就是把微博账号密码告诉这个第三方客户端，但是这样就会存在一系列的问题：\n\n- 第三方客户端为了后续的服务，会保存用户的密码，这样不安全\n- 第三方客户端拥有了客户微博的权力，用户没法限制授权的范围和有效期\n- 用户只有修改密码，才能收回权限，但是这样会使得其他的第三方应用程序失效\n\n除了这些还会导致只要有一个第三方应用程序被破解，就会导致用户密码泄漏，以及所有被密码保护的数据泄漏。而且 OAuth 就是来解决这个问题的。\n\n## OAuth 2.0 的运行流程\n名词解释：\n\n- Client：第三方应用程序\n- Resource owner : 资源所有者，本文中称为\"yonghu\"。\n- Authorization server ：认证服务器，服务提供商专门用来处理认证的服务器\n- Resource server：资源服务器，服务提供商存放用户生成的资源的服务器，它和认证服务器，可以是同一台服务器，也可以是不同的服务器。\n\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180710/7GbH6Da3Ff.png)\n\n上面六个步骤之中，B是关键，即用户怎样才能给于客户端授权。有了这个授权以后，客户端就可以获取令牌，进而凭令牌获取资源。下面一一讲解客户端获取授权的四种模式。\n\n## 客户端的授权模式\n客户端必须得到用户的授权（authorization grant），才能获得令牌（access token）。OAuth 2.0 定义了四种授权方式：\n\n- 授权码模式（authorization code）\n- 简化模式（implicit）\n- 密码模式（resource owner password credentials）\n- 客户端模式（client credentials）\n\n### 授权码模式\n授权码模式（authorization code）是功能最完整、流程最严密的授权模式。它的特点就是通过客户端的后台服务器，与\"服务提供商\"的认证服务器进行互动。\n\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180710/Dgk3bFD1eJ.png)\n\n>以微博授权为例\n\n首先用户打开客户端应用，这时候客户端要求进行授权并且会跳转到授权页面：\n\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180710/9FG34j8aIh.png)\n\n我们可以看到跳转到的授权 URL 是这样的：\n```\nhttps://www.example.com/authorize?client_id=1881139527&redirect_uri=http%3A%2F%2Fwww.jianshu.com%2Fusers%2Fauth%2Fweibo%2Fcallback&response_type=code&state=f2d53629dd57f670e56b4ded85e2c8c5ad50514a66b44a4b\n```\n\n- https://api.weibo.com/oauth2/authorize ：认证服务器\n- client_id ：客户端的 client id，用于给认证服务器识别该客户端\n- redirect_uri ：获得授权码之后，认证服务器重定向用户代理（比如浏览器）的地址\n- response_type ： 表明授权类型，默认是 code，即授权码模式\n- state：表示客户端的当前状态，可以指定任意值，认证服务器会原封不动地返回这个值，用于抵御 CSRF 攻击\n\n这时候用户同意进行授权，认证服务器将用户跳转到客户端事先指定的 redirect_uri, 同时附上一个授权码\n\n`http://www.jianshu.com/users/auth/weibo/callback?code=AUTHORIZATION_CODE`\n\n客户端收到授权码，附上之前的 redirect_uri 向认证服务器申请令牌,这一步是在客户端的后台服务器上完成的，对用户不可见。比如：\n\n```\nhttps://www.example.com/v1/oauth/token?client_id=CLIENT_ID&client_secret=CLIENT_SECRET&grant_type=authorization_code&code=AUTHORIZATION_CODE&redirect_url=REDIRECT_URL\n```\n- https://api.weibo.com/v1/oauth2/authorize ：获取 access_token 的服务器地址\n- clientid ：clientid 用于验证应用程序。\n- clientsecret：clientsecret 用于验证应用程序。\n- grant_type ：刚刚获得的授权码\n- redirect_uri ：重定向URI，和第一步一致\n\n认证服务器确认无误后，向客户端发送访问令牌和更新令牌：\n```\n{\n	\"access_token\":\"ACCESS_TOKEN\",   \n	\"token_type\":\"bearer\",   \n	\"expires_in\":2592000,   \n	\"refresh_token\":\"REFRESH_TOKEN\"\n}\n```\n这个返回的包括了以下这些，有些还有包含一个权限范围 scope，这里不撰述：\n\n- access_token：访问令牌\n- token_type ：令牌类型\n- expires_in ：过期时间，单位为秒\n- refresh_token： 更新令牌，用来获取下一次的访问令牌\n\n### 简化模式\n简化模式不通过第三方应用程序的服务器，直接在浏览器中向认证服务器申请令牌，跳过了授权码这个步骤，所有步骤在浏览器中完成，令牌对访问者是可见的，且客户端不需要认证。这种模式一般是用于手机应用，桌面客户端应用程序和运行于浏览器上的 Web 应用程序, 授权令牌会交给用户代理，再由用户代理交给应用程序。如下图:\n\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180710/c83Lfk17DD.png)\n\n>例子\n\n- 首先用户访问客户端，客户端将用户导向认证服务器, 并且用户选择同意授权：\n\n`https://www.example.com/authorize?response_type=token&client_id=CLIENT_ID&redirect_uri=CALLBACK_URL`\n\n- 认证服务器将用重定向客户端事先指定的 URI，并且在 URI 的 hash 部分包含了访问令牌：\n\n`https://www.example.com/callback#token=ACCESS_TOKEN`\n\n- 浏览器向资源服务器发出请求，其中不包括上一步收到的 hash 值\n- 资源服务器返回一个网页，其中包含的代码可以获取 hash 值中的令牌\n- 浏览器执行上一步获得的脚本并且取出令牌\n- 浏览器将令牌发送给客户端\n\n### 密码模式\n用户向客户端提供自己的用户名和密码。客户端使用这些信息，向「服务商提供商」索要授权。在这种模式中，用户必须把自己的密码给客户端，但是客户端不得储存密码。这通常用在用户对客户端高度信任的情况下，比如客户端是操作系统的一部分，或者由一个著名公司出品。而认证服务器只有在其他授权模式无法执行的情况下，才能考虑使用这种模式。如下图：\n\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180710/2i2e1dLI16.png)\n\n### 客户端模式\n客户端使用自己的名义而不是用户的名义，向「服务提供商」进行认证。在这种模式下，用户直接向客户端注册，客户端以自己的名义要求服务提供商提供服务，其实并不存在授权。如下图：\n\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180710/6A3IGaEEgB.png)\n\n对于这种方式，用在访问一些和用户无关的公共接口，比如一些首页数据，这些数据和用户无关，但是又不想任何人都可以调用这个 Api，那么就可以采用这种模式。\n\n## 刷新令牌\n认证服务器颁发的令牌是有有效期限制的，所以客户端需要自行去刷新令牌。如果用户访问的时候，客户端的「访问令牌」已经过期，则需要使用「更新令牌」申请一个新的访问令牌。客户端通过一个POST 请求并且携带上参数：\n\n客户端发出更新令牌的HTTP请求，包含以下参数：\n- granttype：表示使用的授权模式，此处的值固定为\"refreshtoken\"，必选项。\n- refresh_token：表示早前收到的更新令牌，必选项。\n- scope：表示申请的授权范围，不可以超出上一次申请的范围，如果省略该参数，则表示与上一次一致。\n',`groups`='Default',`p_id`=1  WHERE  `id` = 1 [ RunTime:0.000642s ]
+---------------------------------------------------------------
+[ 2018-07-11T18:43:32+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/1.html
+[ info ] qingrang.top/daily/admin/note/shownote/id/1.html [运行时间：0.050395s][吞吐率：19.84req/s] [内存消耗：1,980.94kb] [文件加载：54]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000585s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001049s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000758s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000314s ]
+---------------------------------------------------------------
+[ 2018-07-11T18:49:59+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/1.html
+[ info ] qingrang.top/daily/admin/note/shownote/id/1.html [运行时间：0.047143s][吞吐率：21.21req/s] [内存消耗：1,981.05kb] [文件加载：54]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000561s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001132s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000395s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000773s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000366s ]
+---------------------------------------------------------------
+[ 2018-07-11T18:57:37+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/asearch.html
+[ info ] qingrang.top/daily/admin/note/asearch.html [运行时间：0.052133s][吞吐率：19.18req/s] [内存消耗：2,105.14kb] [文件加载：50]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'asearch',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '31',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'key' => '区块链',
+)
+[ info ] [ RUN ] app\admin\controller\Note->aSearch[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000575s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001191s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  ( `title` LIKE '%区块链%' OR `content` LIKE '%区块链%' ) ORDER BY id desc [ RunTime:0.005221s ]
+---------------------------------------------------------------
+[ 2018-07-11T18:57:39+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/139
+[ info ] qingrang.top/daily/admin/note/shownote/id/139 [运行时间：0.041624s][吞吐率：24.02req/s] [内存消耗：1,981.46kb] [文件加载：54]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '139',
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000413s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001009s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 139 LIMIT 1 [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000701s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000307s ]
+---------------------------------------------------------------
+[ 2018-07-11T19:42:21+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/editnote/id/139
+[ info ] qingrang.top/daily/admin/note/editnote/id/139 [运行时间：0.044897s][吞吐率：22.27req/s] [内存消耗：2,029.45kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'editnote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '139',
+)
+[ info ] [ RUN ] app\admin\controller\Note->editNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/editnote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000513s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001074s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 139 LIMIT 1 [ RunTime:0.000393s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000706s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000261s ]
+---------------------------------------------------------------
+[ 2018-07-11T19:42:31+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/updatenote/id/139.html
+[ info ] qingrang.top/daily/admin/note/updatenote/id/139.html [运行时间：0.046534s][吞吐率：21.49req/s] [内存消耗：2,085.63kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'updatenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '25339',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/139',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'content' => '# 区块链(分布式数据库-比特币)
+[TOC]
+## 一、区块链的本质
+>区块链是什么？一句话，它是一种特殊的**分布式数据库**。
+
+首先，区块链的主要作用是储存信息。任何需要保存的信息，都可以写入区块链，也可以从里面读取，所以它是数据库。
+其次，任何人都可以架设服务器，加入区块链网络，成为一个节点。区块链的世界里面，没有中心节点，每个节点都是平等的，都保存着整个数据库。你可以向任何一个节点，写入/读取数据，因为所有节点最后都会同步，保证区块链一致。
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/171229/D63Eih2jm4.png)
+##二、区块链的最大特点
+区块链没有管理员，它是彻底无中心的。其他的数据库都有管理员，但是区块链没有。如果有人想对区块链添加审核，也实现不了，因为它的设计目标就是防止出现居于中心地位的管理当局。
+
+正是因为无法管理，区块链才能做到无法被控制。否则一旦大公司大集团控制了管理权，他们就会控制整个平台，其他使用者就都必须听命于他们了。
+
+但是，没有了管理员，人人都可以往里面写入数据，怎么才能保证数据是可信的呢？被坏人改了怎么办？请接着往下读，这就是区块链奇妙的地方。
+## 三、区块
+区块链由一个个区块（block）组成。区块很像数据库的记录，**每次写入数据，就是创建一个区块**。
+
+每个区块包含两个部分。
+- 区块头（Head）：记录当前区块的元信息
+- 区块体（Body）：实际数据
+
+区块头包含了当前区块的多项元信息。
+- 生成时间
+- 实际数据（即区块体）的 Hash
+- 上一个区块的 Hash
+- ...
+
+## 四、Hash 的不可修改性
+>Hash 简介
+
+所谓 Hash 就是计算机可以对**任意内容**，计算出一个**长度相同的特征值**。
+举例来说，字符串123的 Hash 是a8fdc205a9f19cc1c7507a60c4f01b13d11d7fd0（十六进制），转成二进制就是256位，而且只有123能得到这个 Hash。
+
+区块链的 Hash 长度是256位，这就是说，不管原始内容是什么，最后都会计算出一个256位的二进制数字。而且可以保证，只要原始内容不同，对应的 Hash 一定是不同的。
+
+因此，就有两个重要的推论。
+- 推论1：每个区块的 Hash 都是不一样的，可以通过 Hash 标识区块。
+- 推论2：如果区块的内容变了，它的 Hash 一定会改变。
+
+>不可修改性
+
+	Hash = SHA256(区块头)
+
+上面就是区块 Hash 的计算公式，Hash 由区块头唯一决定，SHA256是区块链的 Hash 算法,可知：区块与 Hash 是一一对应的。
+
+前面说过，区块头包含很多内容，其中有当前区块体的 Hash（注意是"区块体"的 Hash，而不是整个区块），还有上一个区块的 Hash。这意味着，**如果当前区块的内容变了，或者上一个区块的 Hash 变了，一定会引起当前区块的 Hash 改变**。
+
+这一点对区块链有重大意义。如果有人修改了一个区块，该区块的 Hash 就变了。为了让后面的区块还能连到它，该人必须同时修改后面所有的区块，否则被改掉的区块就脱离区块链了。由于后面要提到的原因，Hash 的计算很耗时，同时修改多个区块几乎不可能发生，除非有人掌握了全网51%以上的计算能力。
+
+正是通过这种**联动机制**，区块链保证了自身的可靠性，**数据一旦写入，就无法被篡改**。这就像历史一样，发生了就是发生了，从此再无法改变。
+
+**每个区块都连着上一个区块，这也是"区块链"这个名字的由来。**
+
+## 五、采矿
+由于必须保证节点之间的同步，所以新区块的添加速度不能太快。试想一下，你刚刚同步了一个区块，准备基于它生成下一个区块，但这时别的节点又有新区块生成，你不得不放弃做了一半的计算，再次去同步。因为每个区块的后面，只能跟着一个区块，你永远只能在最新区块的后面，生成下一个区块。所以，你别无选择，一听到信号，就必须立刻同步。
+
+所以，区块链的发明者中本聪（这是假名，真实身份至今未知）故意让添加新区块，变得很困难。他的设计是，平均每10分钟，全网才能生成一个新区块，一小时也就六个。
+
+这种产出速度不是通过命令达成的，而是故意设置了海量的计算。也就是说，**只有通过极其大量的计算，才能得到当前区块的有效 Hash，从而把新区块添加到区块链**。由于计算量太大，所以快不起来。
+
+这个过程就叫做采矿（mining），因为计算有效 Hash 的难度，好比在全世界的沙子里面，找到一粒符合条件的沙子。计算 Hash 的机器就叫做矿机，操作矿机的人就叫做矿工。
+
+## 六、难度系数
+读到这里，你可能会有一个疑问，人们都说采矿很难，可是采矿不就是用计算机算出一个 Hash 吗，这正是计算机的强项啊，怎么会变得很难，迟迟算不出来呢？
+
+原来不是任意一个 Hash 都可以，**只有满足条件的 Hash 才会被区块链接受**。这个条件特别苛刻，使得绝大部分 Hash 都不满足要求，必须重算。
+
+原来，区块头包含一个难度系数（difficulty），这个值决定了计算 Hash 的难度。举例来说，第100000个区块的难度系数是 14484.16236122。
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/171229/l078FF8e04.jpg)
+区块链协议规定，使用一个常量除以难度系数，可以得到目标值（target）。显然，**难度系数越大，目标值就越小**。
+
+Hash 的有效性跟目标值密切相关，**只有小于目标值的 Hash 才是有效的**，否则 Hash 无效，必须重算。**由于目标值非常小，Hash 小于该值的机会极其渺茫，可能计算10亿次，才算中一次。这就是采矿如此之慢的根本原因。**
+
+区块头里面还有一个 Nonce 值，记录了 Hash 重算的次数。第 100000 个区块的 Nonce 值是274148111，即计算了 2.74 亿次，才得到了一个有效的 Hash，该区块才能加入区块链。
+
+## 七、难度系数的动态调节
+就算采矿很难，但也没法保证，正好十分钟产出一个区块，有时一分钟就算出来了，有时几个小时可能也没结果。总体来看，随着硬件设备的提升，以及矿机的数量增长，计算速度一定会越来越快。
+
+为了将产出速率恒定在十分钟，中本聪还设计了难度系数的动态调节机制。他规定，难度系数每两周（2016个区块）调整一次。如果这两周里面，区块的平均生成速度是9分钟，就意味着比法定速度快了10%，因此难度系数就要调高10%；如果平均生成速度是11分钟，就意味着比法定速度慢了10%，因此难度系数就要调低10%。
+
+**难度系数越调越高（目标值越来越小），导致了采矿越来越难。**
+
+## 八、区块链的分叉
+即使区块链是可靠的，现在还有一个问题没有解决：如果两个人同时向区块链写入数据，也就是说，同时有两个区块加入，因为它们都连着前一个区块，就形成了分叉。这时应该采纳哪一个区块呢？
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/171229/c25Kf1JjcA.png)
+现在的规则是，新节点总是采用最长的那条区块链。如果区块链有分叉，将看哪个分支在分叉点后面，先达到6个新区块（称为"六次确认"）。按照10分钟一个区块计算，一小时就可以确认。
+
+由于新区块的生成速度由计算能力决定，所以这条规则就是说，拥有大多数计算能力的那条分支，就是正宗的比特链。
+
+## 九、总结
+区块链作为无人管理的分布式数据库，从2009年开始已经运行了8年，没有出现大的问题。这证明它是可行的。
+
+但是，为了保证数据的可靠性，区块链也有自己的代价。一是效率，数据写入区块链，最少要等待十分钟，所有节点都同步数据，则需要更多的时间；二是能耗，区块的生成需要矿工进行无数无意义的计算，这是非常耗费能源的。
+
+因此，区块链的适用场景，其实非常有限。
+- 不存在所有成员都信任的管理当局
+- 写入的数据不要求实时使用
+- 挖矿的收益能够弥补本身的成本
+
+如果无法满足上述的条件，那么传统的数据库是更好的解决方案。
+
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/171229/Hcjd5AAb8K.png)
+
+目前，区块链最大的应用场景（可能也是唯一的应用场景），就是**以比特币为代表的加密货币**。
+',
+  'groups' => 'Basics',
+  'id' => '139',
+)
+[ info ] [ RUN ] app\admin\controller\Note->updateNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001211s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 139 LIMIT 1 [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000678s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `groups` WHERE  `groups` = 'Basics' LIMIT 1 [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000275s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `id`=139,`p_id`=2,`title`='区块链(分布式数据库-比特币)\r',`content`='# 区块链(分布式数据库-比特币)\r\n[TOC]\r\n## 一、区块链的本质\r\n>区块链是什么？一句话，它是一种特殊的**分布式数据库**。\r\n\r\n首先，区块链的主要作用是储存信息。任何需要保存的信息，都可以写入区块链，也可以从里面读取，所以它是数据库。\r\n其次，任何人都可以架设服务器，加入区块链网络，成为一个节点。区块链的世界里面，没有中心节点，每个节点都是平等的，都保存着整个数据库。你可以向任何一个节点，写入/读取数据，因为所有节点最后都会同步，保证区块链一致。\r\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/171229/D63Eih2jm4.png)\r\n##二、区块链的最大特点\r\n区块链没有管理员，它是彻底无中心的。其他的数据库都有管理员，但是区块链没有。如果有人想对区块链添加审核，也实现不了，因为它的设计目标就是防止出现居于中心地位的管理当局。\r\n\r\n正是因为无法管理，区块链才能做到无法被控制。否则一旦大公司大集团控制了管理权，他们就会控制整个平台，其他使用者就都必须听命于他们了。\r\n\r\n但是，没有了管理员，人人都可以往里面写入数据，怎么才能保证数据是可信的呢？被坏人改了怎么办？请接着往下读，这就是区块链奇妙的地方。\r\n## 三、区块\r\n区块链由一个个区块（block）组成。区块很像数据库的记录，**每次写入数据，就是创建一个区块**。\r\n\r\n每个区块包含两个部分。\r\n- 区块头（Head）：记录当前区块的元信息\r\n- 区块体（Body）：实际数据\r\n\r\n区块头包含了当前区块的多项元信息。\r\n- 生成时间\r\n- 实际数据（即区块体）的 Hash\r\n- 上一个区块的 Hash\r\n- ...\r\n\r\n## 四、Hash 的不可修改性\r\n>Hash 简介\r\n\r\n所谓 Hash 就是计算机可以对**任意内容**，计算出一个**长度相同的特征值**。\r\n举例来说，字符串123的 Hash 是a8fdc205a9f19cc1c7507a60c4f01b13d11d7fd0（十六进制），转成二进制就是256位，而且只有123能得到这个 Hash。\r\n\r\n区块链的 Hash 长度是256位，这就是说，不管原始内容是什么，最后都会计算出一个256位的二进制数字。而且可以保证，只要原始内容不同，对应的 Hash 一定是不同的。\r\n\r\n因此，就有两个重要的推论。\r\n- 推论1：每个区块的 Hash 都是不一样的，可以通过 Hash 标识区块。\r\n- 推论2：如果区块的内容变了，它的 Hash 一定会改变。\r\n\r\n>不可修改性\r\n\r\n	Hash = SHA256(区块头)\r\n\r\n上面就是区块 Hash 的计算公式，Hash 由区块头唯一决定，SHA256是区块链的 Hash 算法,可知：区块与 Hash 是一一对应的。\r\n\r\n前面说过，区块头包含很多内容，其中有当前区块体的 Hash（注意是\"区块体\"的 Hash，而不是整个区块），还有上一个区块的 Hash。这意味着，**如果当前区块的内容变了，或者上一个区块的 Hash 变了，一定会引起当前区块的 Hash 改变**。\r\n\r\n这一点对区块链有重大意义。如果有人修改了一个区块，该区块的 Hash 就变了。为了让后面的区块还能连到它，该人必须同时修改后面所有的区块，否则被改掉的区块就脱离区块链了。由于后面要提到的原因，Hash 的计算很耗时，同时修改多个区块几乎不可能发生，除非有人掌握了全网51%以上的计算能力。\r\n\r\n正是通过这种**联动机制**，区块链保证了自身的可靠性，**数据一旦写入，就无法被篡改**。这就像历史一样，发生了就是发生了，从此再无法改变。\r\n\r\n**每个区块都连着上一个区块，这也是\"区块链\"这个名字的由来。**\r\n\r\n## 五、采矿\r\n由于必须保证节点之间的同步，所以新区块的添加速度不能太快。试想一下，你刚刚同步了一个区块，准备基于它生成下一个区块，但这时别的节点又有新区块生成，你不得不放弃做了一半的计算，再次去同步。因为每个区块的后面，只能跟着一个区块，你永远只能在最新区块的后面，生成下一个区块。所以，你别无选择，一听到信号，就必须立刻同步。\r\n\r\n所以，区块链的发明者中本聪（这是假名，真实身份至今未知）故意让添加新区块，变得很困难。他的设计是，平均每10分钟，全网才能生成一个新区块，一小时也就六个。\r\n\r\n这种产出速度不是通过命令达成的，而是故意设置了海量的计算。也就是说，**只有通过极其大量的计算，才能得到当前区块的有效 Hash，从而把新区块添加到区块链**。由于计算量太大，所以快不起来。\r\n\r\n这个过程就叫做采矿（mining），因为计算有效 Hash 的难度，好比在全世界的沙子里面，找到一粒符合条件的沙子。计算 Hash 的机器就叫做矿机，操作矿机的人就叫做矿工。\r\n\r\n## 六、难度系数\r\n读到这里，你可能会有一个疑问，人们都说采矿很难，可是采矿不就是用计算机算出一个 Hash 吗，这正是计算机的强项啊，怎么会变得很难，迟迟算不出来呢？\r\n\r\n原来不是任意一个 Hash 都可以，**只有满足条件的 Hash 才会被区块链接受**。这个条件特别苛刻，使得绝大部分 Hash 都不满足要求，必须重算。\r\n\r\n原来，区块头包含一个难度系数（difficulty），这个值决定了计算 Hash 的难度。举例来说，第100000个区块的难度系数是 14484.16236122。\r\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/171229/l078FF8e04.jpg)\r\n区块链协议规定，使用一个常量除以难度系数，可以得到目标值（target）。显然，**难度系数越大，目标值就越小**。\r\n\r\nHash 的有效性跟目标值密切相关，**只有小于目标值的 Hash 才是有效的**，否则 Hash 无效，必须重算。**由于目标值非常小，Hash 小于该值的机会极其渺茫，可能计算10亿次，才算中一次。这就是采矿如此之慢的根本原因。**\r\n\r\n区块头里面还有一个 Nonce 值，记录了 Hash 重算的次数。第 100000 个区块的 Nonce 值是274148111，即计算了 2.74 亿次，才得到了一个有效的 Hash，该区块才能加入区块链。\r\n\r\n## 七、难度系数的动态调节\r\n就算采矿很难，但也没法保证，正好十分钟产出一个区块，有时一分钟就算出来了，有时几个小时可能也没结果。总体来看，随着硬件设备的提升，以及矿机的数量增长，计算速度一定会越来越快。\r\n\r\n为了将产出速率恒定在十分钟，中本聪还设计了难度系数的动态调节机制。他规定，难度系数每两周（2016个区块）调整一次。如果这两周里面，区块的平均生成速度是9分钟，就意味着比法定速度快了10%，因此难度系数就要调高10%；如果平均生成速度是11分钟，就意味着比法定速度慢了10%，因此难度系数就要调低10%。\r\n\r\n**难度系数越调越高（目标值越来越小），导致了采矿越来越难。**\r\n\r\n## 八、区块链的分叉\r\n即使区块链是可靠的，现在还有一个问题没有解决：如果两个人同时向区块链写入数据，也就是说，同时有两个区块加入，因为它们都连着前一个区块，就形成了分叉。这时应该采纳哪一个区块呢？\r\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/171229/c25Kf1JjcA.png)\r\n现在的规则是，新节点总是采用最长的那条区块链。如果区块链有分叉，将看哪个分支在分叉点后面，先达到6个新区块（称为\"六次确认\"）。按照10分钟一个区块计算，一小时就可以确认。\r\n\r\n由于新区块的生成速度由计算能力决定，所以这条规则就是说，拥有大多数计算能力的那条分支，就是正宗的比特链。\r\n\r\n## 九、总结\r\n区块链作为无人管理的分布式数据库，从2009年开始已经运行了8年，没有出现大的问题。这证明它是可行的。\r\n\r\n但是，为了保证数据的可靠性，区块链也有自己的代价。一是效率，数据写入区块链，最少要等待十分钟，所有节点都同步数据，则需要更多的时间；二是能耗，区块的生成需要矿工进行无数无意义的计算，这是非常耗费能源的。\r\n\r\n因此，区块链的适用场景，其实非常有限。\r\n- 不存在所有成员都信任的管理当局\r\n- 写入的数据不要求实时使用\r\n- 挖矿的收益能够弥补本身的成本\r\n\r\n如果无法满足上述的条件，那么传统的数据库是更好的解决方案。\r\n\r\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/171229/Hcjd5AAb8K.png)\r\n\r\n目前，区块链最大的应用场景（可能也是唯一的应用场景），就是**以比特币为代表的加密货币**。\r\n',`groups`='Basics'  WHERE  `id` = 139 [ RunTime:0.000506s ]
+---------------------------------------------------------------
+[ 2018-07-11T19:42:31+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/139.html
+[ info ] qingrang.top/daily/admin/note/shownote/id/139.html [运行时间：0.046877s][吞吐率：21.33req/s] [内存消耗：1,981.86kb] [文件加载：54]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/139',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '139',
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000460s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001122s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 139 LIMIT 1 [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000705s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000235s ]
+---------------------------------------------------------------
+[ 2018-07-11T20:02:52+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/editnote/id/139.html
+[ info ] qingrang.top/daily/admin/note/editnote/id/139.html [运行时间：0.049847s][吞吐率：20.06req/s] [内存消耗：2,029.48kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'editnote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '139',
+)
+[ info ] [ RUN ] app\admin\controller\Note->editNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/editnote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000675s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001148s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 139 LIMIT 1 [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000912s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000247s ]
+---------------------------------------------------------------
+[ 2018-07-11T20:05:15+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/savenote.html
+[ info ] qingrang.top/daily/admin/note/savenote.html [运行时间：0.042971s][吞吐率：23.27req/s] [内存消耗：2,091.31kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'savenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '25125',
+  'accept' => 'text/plain, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/139.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'ogroup' => 'Default',
+  'context' => '# 数字货币与区块链
+
+`分布式数据库` `比特币`
+
+[TOC]
+## 区块链
+### 一、区块链的本质
+>区块链是什么？一句话，它是一种特殊的**分布式数据库**。
+
+首先，区块链的主要作用是储存信息。任何需要保存的信息，都可以写入区块链，也可以从里面读取，所以它是数据库。
+其次，任何人都可以架设服务器，加入区块链网络，成为一个节点。区块链的世界里面，没有中心节点，每个节点都是平等的，都保存着整个数据库。你可以向任何一个节点，写入/读取数据，因为所有节点最后都会同步，保证区块链一致。
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/171229/D63Eih2jm4.png)
+### 二、区块链的最大特点
+区块链没有管理员，它是彻底无中心的。其他的数据库都有管理员，但是区块链没有。如果有人想对区块链添加审核，也实现不了，因为它的设计目标就是防止出现居于中心地位的管理当局。
+
+正是因为无法管理，区块链才能做到无法被控制。否则一旦大公司大集团控制了管理权，他们就会控制整个平台，其他使用者就都必须听命于他们了。
+
+但是，没有了管理员，人人都可以往里面写入数据，怎么才能保证数据是可信的呢？被坏人改了怎么办？请接着往下读，这就是区块链奇妙的地方。
+### 三、区块
+区块链由一个个区块（block）组成。区块很像数据库的记录，**每次写入数据，就是创建一个区块**。
+
+每个区块包含两个部分。
+- 区块头（Head）：记录当前区块的元信息
+- 区块体（Body）：实际数据
+
+区块头包含了当前区块的多项元信息。
+- 生成时间
+- 实际数据（即区块体）的 Hash
+- 上一个区块的 Hash
+- ...
+
+### 四、Hash 的不可修改性
+>Hash 简介
+
+所谓 Hash 就是计算机可以对**任意内容**，计算出一个**长度相同的特征值**。
+举例来说，字符串123的 Hash 是a8fdc205a9f19cc1c7507a60c4f01b13d11d7fd0（十六进制），转成二进制就是256位，而且只有123能得到这个 Hash。
+
+区块链的 Hash 长度是256位，这就是说，不管原始内容是什么，最后都会计算出一个256位的二进制数字。而且可以保证，只要原始内容不同，对应的 Hash 一定是不同的。
+
+因此，就有两个重要的推论。
+- 推论1：每个区块的 Hash 都是不一样的，可以通过 Hash 标识区块。
+- 推论2：如果区块的内容变了，它的 Hash 一定会改变。
+
+>不可修改性
+
+	Hash = SHA256(区块头)
+
+上面就是区块 Hash 的计算公式，Hash 由区块头唯一决定，SHA256是区块链的 Hash 算法,可知：区块与 Hash 是一一对应的。
+
+前面说过，区块头包含很多内容，其中有当前区块体的 Hash（注意是"区块体"的 Hash，而不是整个区块），还有上一个区块的 Hash。这意味着，**如果当前区块的内容变了，或者上一个区块的 Hash 变了，一定会引起当前区块的 Hash 改变**。
+
+这一点对区块链有重大意义。如果有人修改了一个区块，该区块的 Hash 就变了。为了让后面的区块还能连到它，该人必须同时修改后面所有的区块，否则被改掉的区块就脱离区块链了。由于后面要提到的原因，Hash 的计算很耗时，同时修改多个区块几乎不可能发生，除非有人掌握了全网51%以上的计算能力。
+
+正是通过这种**联动机制**，区块链保证了自身的可靠性，**数据一旦写入，就无法被篡改**。这就像历史一样，发生了就是发生了，从此再无法改变。
+
+**每个区块都连着上一个区块，这也是"区块链"这个名字的由来。**
+
+### 五、采矿
+由于必须保证节点之间的同步，所以新区块的添加速度不能太快。试想一下，你刚刚同步了一个区块，准备基于它生成下一个区块，但这时别的节点又有新区块生成，你不得不放弃做了一半的计算，再次去同步。因为每个区块的后面，只能跟着一个区块，你永远只能在最新区块的后面，生成下一个区块。所以，你别无选择，一听到信号，就必须立刻同步。
+
+所以，区块链的发明者中本聪（这是假名，真实身份至今未知）故意让添加新区块，变得很困难。他的设计是，平均每10分钟，全网才能生成一个新区块，一小时也就六个。
+
+这种产出速度不是通过命令达成的，而是故意设置了海量的计算。也就是说，**只有通过极其大量的计算，才能得到当前区块的有效 Hash，从而把新区块添加到区块链**。由于计算量太大，所以快不起来。
+
+这个过程就叫做采矿（mining），因为计算有效 Hash 的难度，好比在全世界的沙子里面，找到一粒符合条件的沙子。计算 Hash 的机器就叫做矿机，操作矿机的人就叫做矿工。
+
+### 六、难度系数
+读到这里，你可能会有一个疑问，人们都说采矿很难，可是采矿不就是用计算机算出一个 Hash 吗，这正是计算机的强项啊，怎么会变得很难，迟迟算不出来呢？
+
+原来不是任意一个 Hash 都可以，**只有满足条件的 Hash 才会被区块链接受**。这个条件特别苛刻，使得绝大部分 Hash 都不满足要求，必须重算。
+
+原来，区块头包含一个难度系数（difficulty），这个值决定了计算 Hash 的难度。举例来说，第100000个区块的难度系数是 14484.16236122。
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/171229/l078FF8e04.jpg)
+区块链协议规定，使用一个常量除以难度系数，可以得到目标值（target）。显然，**难度系数越大，目标值就越小**。
+
+Hash 的有效性跟目标值密切相关，**只有小于目标值的 Hash 才是有效的**，否则 Hash 无效，必须重算。**由于目标值非常小，Hash 小于该值的机会极其渺茫，可能计算10亿次，才算中一次。这就是采矿如此之慢的根本原因。**
+
+区块头里面还有一个 Nonce 值，记录了 Hash 重算的次数。第 100000 个区块的 Nonce 值是274148111，即计算了 2.74 亿次，才得到了一个有效的 Hash，该区块才能加入区块链。
+
+### 七、难度系数的动态调节
+就算采矿很难，但也没法保证，正好十分钟产出一个区块，有时一分钟就算出来了，有时几个小时可能也没结果。总体来看，随着硬件设备的提升，以及矿机的数量增长，计算速度一定会越来越快。
+
+为了将产出速率恒定在十分钟，中本聪还设计了难度系数的动态调节机制。他规定，难度系数每两周（2016个区块）调整一次。如果这两周里面，区块的平均生成速度是9分钟，就意味着比法定速度快了10%，因此难度系数就要调高10%；如果平均生成速度是11分钟，就意味着比法定速度慢了10%，因此难度系数就要调低10%。
+
+**难度系数越调越高（目标值越来越小），导致了采矿越来越难。**
+
+### 八、区块链的分叉
+即使区块链是可靠的，现在还有一个问题没有解决：如果两个人同时向区块链写入数据，也就是说，同时有两个区块加入，因为它们都连着前一个区块，就形成了分叉。这时应该采纳哪一个区块呢？
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/171229/c25Kf1JjcA.png)
+现在的规则是，新节点总是采用最长的那条区块链。如果区块链有分叉，将看哪个分支在分叉点后面，先达到6个新区块（称为"六次确认"）。按照10分钟一个区块计算，一小时就可以确认。
+
+由于新区块的生成速度由计算能力决定，所以这条规则就是说，拥有大多数计算能力的那条分支，就是正宗的比特链。
+
+### 九、总结
+区块链作为无人管理的分布式数据库，从2009年开始已经运行了8年，没有出现大的问题。这证明它是可行的。
+
+但是，为了保证数据的可靠性，区块链也有自己的代价。一是效率，数据写入区块链，最少要等待十分钟，所有节点都同步数据，则需要更多的时间；二是能耗，区块的生成需要矿工进行无数无意义的计算，这是非常耗费能源的。
+
+因此，区块链的适用场景，其实非常有限。
+- 不存在所有成员都信任的管理当局
+- 写入的数据不要求实时使用
+- 挖矿的收益能够弥补本身的成本
+
+如果无法满足上述的条件，那么传统的数据库是更好的解决方案。
+
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/171229/Hcjd5AAb8K.png)
+
+目前，区块链最大的应用场景（可能也是唯一的应用场景），就是**以比特币为代表的加密货币**。
+',
+)
+[ info ] [ RUN ] app\admin\controller\Note->saveNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000486s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001135s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `title`='数字货币与区块链',`content`='# 数字货币与区块链\n\n`分布式数据库` `比特币`\n\n[TOC]\n## 区块链\n### 一、区块链的本质\n>区块链是什么？一句话，它是一种特殊的**分布式数据库**。\n\n首先，区块链的主要作用是储存信息。任何需要保存的信息，都可以写入区块链，也可以从里面读取，所以它是数据库。\n其次，任何人都可以架设服务器，加入区块链网络，成为一个节点。区块链的世界里面，没有中心节点，每个节点都是平等的，都保存着整个数据库。你可以向任何一个节点，写入/读取数据，因为所有节点最后都会同步，保证区块链一致。\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/171229/D63Eih2jm4.png)\n### 二、区块链的最大特点\n区块链没有管理员，它是彻底无中心的。其他的数据库都有管理员，但是区块链没有。如果有人想对区块链添加审核，也实现不了，因为它的设计目标就是防止出现居于中心地位的管理当局。\n\n正是因为无法管理，区块链才能做到无法被控制。否则一旦大公司大集团控制了管理权，他们就会控制整个平台，其他使用者就都必须听命于他们了。\n\n但是，没有了管理员，人人都可以往里面写入数据，怎么才能保证数据是可信的呢？被坏人改了怎么办？请接着往下读，这就是区块链奇妙的地方。\n### 三、区块\n区块链由一个个区块（block）组成。区块很像数据库的记录，**每次写入数据，就是创建一个区块**。\n\n每个区块包含两个部分。\n- 区块头（Head）：记录当前区块的元信息\n- 区块体（Body）：实际数据\n\n区块头包含了当前区块的多项元信息。\n- 生成时间\n- 实际数据（即区块体）的 Hash\n- 上一个区块的 Hash\n- ...\n\n### 四、Hash 的不可修改性\n>Hash 简介\n\n所谓 Hash 就是计算机可以对**任意内容**，计算出一个**长度相同的特征值**。\n举例来说，字符串123的 Hash 是a8fdc205a9f19cc1c7507a60c4f01b13d11d7fd0（十六进制），转成二进制就是256位，而且只有123能得到这个 Hash。\n\n区块链的 Hash 长度是256位，这就是说，不管原始内容是什么，最后都会计算出一个256位的二进制数字。而且可以保证，只要原始内容不同，对应的 Hash 一定是不同的。\n\n因此，就有两个重要的推论。\n- 推论1：每个区块的 Hash 都是不一样的，可以通过 Hash 标识区块。\n- 推论2：如果区块的内容变了，它的 Hash 一定会改变。\n\n>不可修改性\n\n	Hash = SHA256(区块头)\n\n上面就是区块 Hash 的计算公式，Hash 由区块头唯一决定，SHA256是区块链的 Hash 算法,可知：区块与 Hash 是一一对应的。\n\n前面说过，区块头包含很多内容，其中有当前区块体的 Hash（注意是\"区块体\"的 Hash，而不是整个区块），还有上一个区块的 Hash。这意味着，**如果当前区块的内容变了，或者上一个区块的 Hash 变了，一定会引起当前区块的 Hash 改变**。\n\n这一点对区块链有重大意义。如果有人修改了一个区块，该区块的 Hash 就变了。为了让后面的区块还能连到它，该人必须同时修改后面所有的区块，否则被改掉的区块就脱离区块链了。由于后面要提到的原因，Hash 的计算很耗时，同时修改多个区块几乎不可能发生，除非有人掌握了全网51%以上的计算能力。\n\n正是通过这种**联动机制**，区块链保证了自身的可靠性，**数据一旦写入，就无法被篡改**。这就像历史一样，发生了就是发生了，从此再无法改变。\n\n**每个区块都连着上一个区块，这也是\"区块链\"这个名字的由来。**\n\n### 五、采矿\n由于必须保证节点之间的同步，所以新区块的添加速度不能太快。试想一下，你刚刚同步了一个区块，准备基于它生成下一个区块，但这时别的节点又有新区块生成，你不得不放弃做了一半的计算，再次去同步。因为每个区块的后面，只能跟着一个区块，你永远只能在最新区块的后面，生成下一个区块。所以，你别无选择，一听到信号，就必须立刻同步。\n\n所以，区块链的发明者中本聪（这是假名，真实身份至今未知）故意让添加新区块，变得很困难。他的设计是，平均每10分钟，全网才能生成一个新区块，一小时也就六个。\n\n这种产出速度不是通过命令达成的，而是故意设置了海量的计算。也就是说，**只有通过极其大量的计算，才能得到当前区块的有效 Hash，从而把新区块添加到区块链**。由于计算量太大，所以快不起来。\n\n这个过程就叫做采矿（mining），因为计算有效 Hash 的难度，好比在全世界的沙子里面，找到一粒符合条件的沙子。计算 Hash 的机器就叫做矿机，操作矿机的人就叫做矿工。\n\n### 六、难度系数\n读到这里，你可能会有一个疑问，人们都说采矿很难，可是采矿不就是用计算机算出一个 Hash 吗，这正是计算机的强项啊，怎么会变得很难，迟迟算不出来呢？\n\n原来不是任意一个 Hash 都可以，**只有满足条件的 Hash 才会被区块链接受**。这个条件特别苛刻，使得绝大部分 Hash 都不满足要求，必须重算。\n\n原来，区块头包含一个难度系数（difficulty），这个值决定了计算 Hash 的难度。举例来说，第100000个区块的难度系数是 14484.16236122。\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/171229/l078FF8e04.jpg)\n区块链协议规定，使用一个常量除以难度系数，可以得到目标值（target）。显然，**难度系数越大，目标值就越小**。\n\nHash 的有效性跟目标值密切相关，**只有小于目标值的 Hash 才是有效的**，否则 Hash 无效，必须重算。**由于目标值非常小，Hash 小于该值的机会极其渺茫，可能计算10亿次，才算中一次。这就是采矿如此之慢的根本原因。**\n\n区块头里面还有一个 Nonce 值，记录了 Hash 重算的次数。第 100000 个区块的 Nonce 值是274148111，即计算了 2.74 亿次，才得到了一个有效的 Hash，该区块才能加入区块链。\n\n### 七、难度系数的动态调节\n就算采矿很难，但也没法保证，正好十分钟产出一个区块，有时一分钟就算出来了，有时几个小时可能也没结果。总体来看，随着硬件设备的提升，以及矿机的数量增长，计算速度一定会越来越快。\n\n为了将产出速率恒定在十分钟，中本聪还设计了难度系数的动态调节机制。他规定，难度系数每两周（2016个区块）调整一次。如果这两周里面，区块的平均生成速度是9分钟，就意味着比法定速度快了10%，因此难度系数就要调高10%；如果平均生成速度是11分钟，就意味着比法定速度慢了10%，因此难度系数就要调低10%。\n\n**难度系数越调越高（目标值越来越小），导致了采矿越来越难。**\n\n### 八、区块链的分叉\n即使区块链是可靠的，现在还有一个问题没有解决：如果两个人同时向区块链写入数据，也就是说，同时有两个区块加入，因为它们都连着前一个区块，就形成了分叉。这时应该采纳哪一个区块呢？\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/171229/c25Kf1JjcA.png)\n现在的规则是，新节点总是采用最长的那条区块链。如果区块链有分叉，将看哪个分支在分叉点后面，先达到6个新区块（称为\"六次确认\"）。按照10分钟一个区块计算，一小时就可以确认。\n\n由于新区块的生成速度由计算能力决定，所以这条规则就是说，拥有大多数计算能力的那条分支，就是正宗的比特链。\n\n### 九、总结\n区块链作为无人管理的分布式数据库，从2009年开始已经运行了8年，没有出现大的问题。这证明它是可行的。\n\n但是，为了保证数据的可靠性，区块链也有自己的代价。一是效率，数据写入区块链，最少要等待十分钟，所有节点都同步数据，则需要更多的时间；二是能耗，区块的生成需要矿工进行无数无意义的计算，这是非常耗费能源的。\n\n因此，区块链的适用场景，其实非常有限。\n- 不存在所有成员都信任的管理当局\n- 写入的数据不要求实时使用\n- 挖矿的收益能够弥补本身的成本\n\n如果无法满足上述的条件，那么传统的数据库是更好的解决方案。\n\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/171229/Hcjd5AAb8K.png)\n\n目前，区块链最大的应用场景（可能也是唯一的应用场景），就是**以比特币为代表的加密货币**。\n',`groups`='Default',`p_id`=1  WHERE  `id` = 1 [ RunTime:0.000584s ]
+---------------------------------------------------------------
+[ 2018-07-11T20:05:20+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/1.html
+[ info ] qingrang.top/daily/admin/note/shownote/id/1.html [运行时间：0.042907s][吞吐率：23.31req/s] [内存消耗：1,981.39kb] [文件加载：54]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000486s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.000994s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000790s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000311s ]
+---------------------------------------------------------------
+[ 2018-07-11T20:07:59+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/1.html
+[ info ] qingrang.top/daily/admin/note/shownote/id/1.html [运行时间：0.043817s][吞吐率：22.82req/s] [内存消耗：1,981.64kb] [文件加载：54]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000483s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001033s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000740s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000233s ]
+---------------------------------------------------------------
+[ 2018-07-11T20:10:29+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/1.html
+[ info ] qingrang.top/daily/admin/note/shownote/id/1.html [运行时间：0.051908s][吞吐率：19.26req/s] [内存消耗：1,981.64kb] [文件加载：54]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000463s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001218s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001091s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000332s ]
+---------------------------------------------------------------
+[ 2018-07-11T20:11:34+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/1.html
+[ info ] qingrang.top/daily/admin/note/shownote/id/1.html [运行时间：0.043968s][吞吐率：22.74req/s] [内存消耗：1,981.77kb] [文件加载：54]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000465s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001026s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000724s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000233s ]

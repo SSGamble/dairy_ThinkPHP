@@ -1,0 +1,1894 @@
+---------------------------------------------------------------
+[ 2018-11-14T18:33:21+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/login/index.html
+[ info ] qingrang.top/daily/admin/login/index.html [运行时间：0.041579s][吞吐率：24.05req/s] [内存消耗：1,339.89kb] [文件加载：47]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1541082864,1541122974,1541171416,1542098176',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /var/www/html/daily/application/admin/controller/Login.php ]
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-14T18:34:22+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/login/index.html
+[ info ] qingrang.top/daily/admin/login/index.html [运行时间：0.063724s][吞吐率：15.69req/s] [内存消耗：1,922.41kb] [文件加载：54]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '8',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1541082864,1541122974,1541171416,1542098176',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'pwd' => 'shao',
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /var/www/html/daily/application/admin/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001298s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.003013s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000675s ]
+---------------------------------------------------------------
+[ 2018-11-14T18:34:23+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note
+[ info ] qingrang.top/daily/admin/note [运行时间：0.077678s][吞吐率：12.87req/s] [内存消耗：2,319.47kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1541082864,1541122974,1541171416,1542098176; PHPSESSID=uf0vl2dk107t7poh4oul97f9e3',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/notelst.html [ array (
+  0 => 'stickList',
+  1 => 'hide',
+  2 => 'list',
+  3 => 'list_new',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+  10 => 'default_num',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000801s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001351s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.003169s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal' ORDER BY id desc LIMIT 5 [ RunTime:0.000651s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.000968s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000873s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000517s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.001151s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000250s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001078s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000753s ]
+---------------------------------------------------------------
+[ 2018-11-14T21:02:17+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/editnote/id/208.html
+[ info ] qingrang.top/daily/admin/note/editnote/id/208.html [运行时间：0.099818s][吞吐率：10.02req/s] [内存消耗：2,031.14kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'editnote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1541082864,1541122974,1541171416,1542098176; PHPSESSID=uf0vl2dk107t7poh4oul97f9e3',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '208',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->editNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/editnote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.023002s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.002635s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 208 LIMIT 1 [ RunTime:0.000700s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000890s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000419s ]
+---------------------------------------------------------------
+[ 2018-11-14T21:02:43+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/updatenote/id/208.html
+[ info ] qingrang.top/daily/admin/note/updatenote/id/208.html [运行时间：0.066799s][吞吐率：14.97req/s] [内存消耗：2,070.97kb] [文件加载：58]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'updatenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '6982',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/208.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1541082864,1541122974,1541171416,1542098176; PHPSESSID=uf0vl2dk107t7poh4oul97f9e3',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'summary' => '',
+  'content' => '# Code 自定义快捷键
+[TOC]
+## 常用
+### 删除行 `Ctrl + d`
+### 向下复制行 `Ctrl + b`
+### 移动行 `Alt + Up/Down`
+### 上开新行 `Ctrl + shift + enter`
+### 下开新行 `Ctrl + enter`
+### 行注释 `Ctrl + /`
+### 块注释 `Ctrl + Shift + /`
+### 提示 `alt + /`
+### 添加 getter、setter 方法 `alt + insert`
+### 替换文本 `Ctrl + R`
+### 格式化代码 `ctrl + alt + l`
+### 抽取局部变量 `ctrl + alt + v`
+### 用if、while、try catch来围绕选中的代码行 `Ctrl + Alt + T`
+### Generate 菜单 `alt + a`
+
+## Eclipse
+### 批量修改 ALT+SHIFT+R
+### 快速输入
+- 主方法
+1. 敲入main
+2. alt+/
+- System.out.println
+1. 敲入syso
+2. alt+/
+- 快速输入for
+1. 敲入for
+2. alt+/
+### 代码格式化 ctrl+shift+f
+### import类 ctrl+shift+o
+### 快速注释 选中一行或者多行代码 ctrl+shift+c
+### 快速解决办法提示 ctrl+1
+在出错误的行，使用ctrl+1。 比如忘记导入类了，就可以用这个解决
+### 方法的快速生成 shift+alt+s
+
+---
+
+## Sublime Text 3
+### 键盘快捷键
+https://blog.csdn.net/u010994304/article/details/50866634
+
+// Ctrl+Enter
+// 插入行后
+
+// Ctrl+Shift Enter
+// 插入行前
+
+// Shift+Tab
+// 去除缩进
+
+// Tab
+// 缩进
+
+// Ctrl+KK
+// 从光标处删除至行尾
+```
+[
+	// 删除当前行
+	{ "keys": ["ctrl+d"], "command":"run_macro_file", "args": {"file":"Packages/Default/Delete Line.sublime-macro"} },
+	
+	// 与上行互换
+	{ "keys": ["alt+up"], "command":"swap_line_up" },
+	// 与下行互换
+	{ "keys": ["alt+down"], "command":"swap_line_down" },
+
+	// 向下复制行
+	{ "keys": ["ctrl+alt+down"], "command":"duplicate_line" },
+	
+	// 自动提示、补全
+	{ "keys": ["alt+/"], "command":"auto_complete" },
+	{ "keys": ["alt+/"], "command":"replace_completion_with_auto_complete", "context":
+	[
+	{ "key": "last_command", "operator":"equal", "operand": "insert_best_completion" },
+	{ "key": "auto_complete_visible", "operator":"equal", "operand": false },
+	{ "key": "setting.tab_completion", "operator":"equal", "operand": true }
+	]
+	},
+
+	//移动光标到行首或行末
+	{ "keys": ["alt+b"], "command":"move_to", "args": {"to": "bol","extend": false} },
+	{ "keys": ["alt+e"], "command":"move_to", "args": {"to": "eol","extend": false} },
+	//移动光标到行首或行末并选择内容
+	{ "keys": ["shift+alt+b"], "command":"move_to", "args": {"to": "bol","extend": true} },
+	{ "keys": ["shift+alt+e"], "command":"move_to", "args": {"to": "eol","extend": true} },
+
+]
+```
+### 配置 ctrl + 鼠标左键 进行函数跳转
+点击 Preferences->Browse Packages 进入 Packages 目录，然后打开 User 目录，查看User目录里面有没有`Default (Windows).sublime-mousemap`文件，如果没有则创建一个。这个文件是用来配置 sublime 的鼠标操作的。在文件中输入如下内容：
+```
+[
+{
+"button": "button2",
+"count": 1,
+"modifiers": ["ctrl"],
+"command": "jump_back"
+},
+
+
+{
+"button": "button1",
+"count": 1,
+"modifiers": ["ctrl"],
+"press_command": "drag_select",
+"command": "goto_definition"
+}
+]
+```
+点击保存即可。
+
+ctrl+鼠标左键跳转到函数定义处；
+
+ctrl+鼠标右键跳回来。
+',
+  'groups' => 'Basics',
+  'showsel' => '1',
+  'showse2' => '1',
+  'id' => '208',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->updateNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000581s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001556s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 208 LIMIT 1 [ RunTime:0.000507s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `note` WHERE  `id` = 208 LIMIT 1 [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000939s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `groups` WHERE  `groups` = 'Basics' LIMIT 1 [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000314s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `id`=208,`p_id`=2,`title`='Code 自定义快捷键\r',`content`='# Code 自定义快捷键\r\n[TOC]\r\n## 常用\r\n### 删除行 `Ctrl + d`\r\n### 向下复制行 `Ctrl + b`\r\n### 移动行 `Alt + Up/Down`\r\n### 上开新行 `Ctrl + shift + enter`\r\n### 下开新行 `Ctrl + enter`\r\n### 行注释 `Ctrl + /`\r\n### 块注释 `Ctrl + Shift + /`\r\n### 提示 `alt + /`\r\n### 添加 getter、setter 方法 `alt + insert`\r\n### 替换文本 `Ctrl + R`\r\n### 格式化代码 `ctrl + alt + l`\r\n### 抽取局部变量 `ctrl + alt + v`\r\n### 用if、while、try catch来围绕选中的代码行 `Ctrl + Alt + T`\r\n### Generate 菜单 `alt + a`\r\n\r\n## Eclipse\r\n### 批量修改 ALT+SHIFT+R\r\n### 快速输入\r\n- 主方法\r\n1. 敲入main\r\n2. alt+/\r\n- System.out.println\r\n1. 敲入syso\r\n2. alt+/\r\n- 快速输入for\r\n1. 敲入for\r\n2. alt+/\r\n### 代码格式化 ctrl+shift+f\r\n### import类 ctrl+shift+o\r\n### 快速注释 选中一行或者多行代码 ctrl+shift+c\r\n### 快速解决办法提示 ctrl+1\r\n在出错误的行，使用ctrl+1。 比如忘记导入类了，就可以用这个解决\r\n### 方法的快速生成 shift+alt+s\r\n\r\n---\r\n\r\n## Sublime Text 3\r\n### 键盘快捷键\r\nhttps://blog.csdn.net/u010994304/article/details/50866634\r\n\r\n// Ctrl+Enter\r\n// 插入行后\r\n\r\n// Ctrl+Shift Enter\r\n// 插入行前\r\n\r\n// Shift+Tab\r\n// 去除缩进\r\n\r\n// Tab\r\n// 缩进\r\n\r\n// Ctrl+KK\r\n// 从光标处删除至行尾\r\n```\r\n[\r\n	// 删除当前行\r\n	{ \"keys\": [\"ctrl+d\"], \"command\":\"run_macro_file\", \"args\": {\"file\":\"Packages/Default/Delete Line.sublime-macro\"} },\r\n	\r\n	// 与上行互换\r\n	{ \"keys\": [\"alt+up\"], \"command\":\"swap_line_up\" },\r\n	// 与下行互换\r\n	{ \"keys\": [\"alt+down\"], \"command\":\"swap_line_down\" },\r\n\r\n	// 向下复制行\r\n	{ \"keys\": [\"ctrl+alt+down\"], \"command\":\"duplicate_line\" },\r\n	\r\n	// 自动提示、补全\r\n	{ \"keys\": [\"alt+/\"], \"command\":\"auto_complete\" },\r\n	{ \"keys\": [\"alt+/\"], \"command\":\"replace_completion_with_auto_complete\", \"context\":\r\n	[\r\n	{ \"key\": \"last_command\", \"operator\":\"equal\", \"operand\": \"insert_best_completion\" },\r\n	{ \"key\": \"auto_complete_visible\", \"operator\":\"equal\", \"operand\": false },\r\n	{ \"key\": \"setting.tab_completion\", \"operator\":\"equal\", \"operand\": true }\r\n	]\r\n	},\r\n\r\n	//移动光标到行首或行末\r\n	{ \"keys\": [\"alt+b\"], \"command\":\"move_to\", \"args\": {\"to\": \"bol\",\"extend\": false} },\r\n	{ \"keys\": [\"alt+e\"], \"command\":\"move_to\", \"args\": {\"to\": \"eol\",\"extend\": false} },\r\n	//移动光标到行首或行末并选择内容\r\n	{ \"keys\": [\"shift+alt+b\"], \"command\":\"move_to\", \"args\": {\"to\": \"bol\",\"extend\": true} },\r\n	{ \"keys\": [\"shift+alt+e\"], \"command\":\"move_to\", \"args\": {\"to\": \"eol\",\"extend\": true} },\r\n\r\n]\r\n```\r\n### 配置 ctrl + 鼠标左键 进行函数跳转\r\n点击 Preferences->Browse Packages 进入 Packages 目录，然后打开 User 目录，查看User目录里面有没有`Default (Windows).sublime-mousemap`文件，如果没有则创建一个。这个文件是用来配置 sublime 的鼠标操作的。在文件中输入如下内容：\r\n```\r\n[\r\n{\r\n\"button\": \"button2\",\r\n\"count\": 1,\r\n\"modifiers\": [\"ctrl\"],\r\n\"command\": \"jump_back\"\r\n},\r\n\r\n\r\n{\r\n\"button\": \"button1\",\r\n\"count\": 1,\r\n\"modifiers\": [\"ctrl\"],\r\n\"press_command\": \"drag_select\",\r\n\"command\": \"goto_definition\"\r\n}\r\n]\r\n```\r\n点击保存即可。\r\n\r\nctrl+鼠标左键跳转到函数定义处；\r\n\r\nctrl+鼠标右键跳回来。\r\n',`groups`='Basics',`is_show`=1,`publish`=1,`summary`=''  WHERE  `id` = 208 [ RunTime:0.000972s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Basics' LIMIT 1 [ RunTime:0.001927s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=19  WHERE  `groups` = 'Basics' [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Basics' LIMIT 1 [ RunTime:0.000988s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=19  WHERE  `groups` = 'Basics' [ RunTime:0.000343s ]
+---------------------------------------------------------------
+[ 2018-11-14T21:02:44+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/208.html
+[ info ] qingrang.top/daily/admin/note/shownote/id/208.html [运行时间：0.062849s][吞吐率：15.91req/s] [内存消耗：1,982.96kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/208.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1541082864,1541122974,1541171416,1542098176; PHPSESSID=uf0vl2dk107t7poh4oul97f9e3',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '208',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000560s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001568s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 208 LIMIT 1 [ RunTime:0.000469s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000983s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000286s ]
+---------------------------------------------------------------
+[ 2018-11-14T21:10:26+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/editnote/id/247.html
+[ info ] qingrang.top/daily/admin/note/editnote/id/247.html [运行时间：0.061988s][吞吐率：16.13req/s] [内存消耗：2,060.48kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'editnote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1541082864,1541122974,1541171416,1542098176; PHPSESSID=uf0vl2dk107t7poh4oul97f9e3',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '247',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->editNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/editnote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000717s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001475s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 247 LIMIT 1 [ RunTime:0.000615s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001013s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000330s ]
+---------------------------------------------------------------
+[ 2018-11-14T21:23:56+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/savenote.html
+[ info ] qingrang.top/daily/admin/note/savenote.html [运行时间：0.063036s][吞吐率：15.86req/s] [内存消耗：2,167.11kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'savenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '35536',
+  'accept' => 'text/plain, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/247.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1541082864,1541122974,1541171416,1542098176; PHPSESSID=uf0vl2dk107t7poh4oul97f9e3',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'ogroup' => 'Default',
+  'context' => '# Spring
+[TOC]
+
+Spring 是一个基于 **IOC** 和 **AOP** 的结构 J2EE 系统的框架。
+## IOC（控制反转）
+### 概念
+控制反转（IOC， Inversion of Control），是一个概念，是一种思想。指将传统上由程序代码直接操控的对象调用权交给容器，通过容器来实现对象的装配和管理。控制反转就是对对象控制权的转移，从程序代码本身反转到了外部容器。简单说就是创建对象由以前的程序员自己 new 构造方法来调用，变成了交由 Spring 创建对象。
+
+IoC 是一个概念，是一种思想，其实现方式多种多样。当前比较流行的实现方式有两种：依赖注入和依赖查找。依赖注入方式应用更为广泛。
+- 依赖查找： Dependency Lookup， DL，容器提供回调接口和上下文环境给组件，程序代
+码则需要提供具体的查找方式。比较典型的是依赖于 JNDI 系统的查找。
+- 依赖注入： Dependency Injection， DI，程序代码不做定位查询，这些工作由容器自行完成。简单地说就是拿到的对象的属性，已经被注入好相关值了，直接使用即可。
+
+依赖注入 DI 是指程序运行过程中，若需要调用另一个对象协助时，无须在代码中创建被调用者，而是依赖于外部容器，由外部容器创建后传递给程序。Spring 的依赖注入对调用者与被调用者几乎没有任何要求，完全支持 POJO 之间依赖关系的管理。
+
+依赖注入是目前最优秀的解耦方式。依赖注入让 Spring 的 Bean 之间以配置文件的方式组织在一起，而不是以硬编码的方式耦合在一起的。
+
+>以获取对象的方式来进行比较
+
+- 传统的方式
+
+通过 new 关键字主动创建一个对象
+
+相当于你自己去菜市场 new 了一只鸡，不过是生鸡，要自己拔毛，去内脏，再上花椒，酱油，烤制，经过各种工序之后，才可以食用。
+
+- IOC方式
+
+对象的生命周期由 Spring 来管理，直接从 Spring 那里去获取一个对象。IOC 是反转控制 (Inversion Of Control)的缩写，就像控制权从本来在自己手里，现在交给了 Spring。
+
+相当于去馆子(Spring)点了一只鸡，交到你手上的时候，已经五味俱全，你就只管吃就行了。
+
+
+
+### 第一个 Spring 程序
+#### 传统的面向接口编程
+经过以下例子可以看出，若接口（Service 层）变了，Test(View 层) 也的改，耦合度很高。
+
+*ISomeService.java - 接口*
+```
+public interface ISomeService {
+	void doSome();
+}
+```
+*SomeServiceImpl.java - 实现类*
+```
+public class SomeServiceImpl implements ISomeService {
+	@Override
+	public void doSome() {
+		System.out.println("执行doSome()方法");
+	}
+}
+```
+*Test.java - 测试*
+```
+@Test
+public void test01() {
+	ISomeService service = new SomeServiceImpl();
+	service.doSome();
+}
+```
+#### Spring 实现
+*applicationContext.mxl - Spring 的配置文件*
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 注册 Service，Spring 底层实际是做了 SomeServiceImpl myService = new SomeServiceImpl(); -->
+    <bean id="myService" class="top.qingrang.service.SomeServiceImpl"/>
+
+</beans>
+```
+*Test.java - 测试*
+```
+@Test
+public void test02() {
+	// 创建容器对象，加载 Spring 配置文件，会从类路径下查找配置文件
+	ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
+	ISomeService someService = (ISomeService)ac.getBean("myService");
+	someService.doSome();
+}
+```
+
+从以上代码中已经看不到 `SomeServiceImpl` 这个实现类了，就做到了解耦。
+
+>FileSystemXmlApplicationContext
+
+```
+// 创建容器对象，加载 Spring 配置文件，会从项目的根下查找配置文件
+ApplicationContext ac = new FileSystemXmlApplicationContext("applicationContext.xml");
+
+// 创建容器对象，加载 Spring 配置文件，会从当前文件系统的 D 盘根目录下查找配置文件
+ApplicationContext ac = new FileSystemXmlApplicationContext("d:/applicationContext.xml");
+```
+
+>BeanFactory 容器
+
+*Test.java*
+```
+@Test
+public void test05() {
+	// 创建 BeanFactory 容器
+	BeanFactory bf = new XmlBeanFactory(new ClassPathResource("applicationContext.xml"));
+	ISomeService service = (ISomeService) bf.getBean("myService");
+	service.doSome();
+}
+```
+
+>ApplicationContext 与 BeanFactory 容器的区别
+
+这两上容器对于其中 Bean 的创建时机不同：
+1. ApplicationContext容器在进行初始化时，会将其中的所有Bean(对象)进行创建
+ - 缺点：占用系统资源（内存、CPU等）
+ - 优点：响应速度快
+1. BeanFactory容器中的对象，在容器初始化时并不会被创建，而是在真正获取该对象时才被创建
+ - 缺点：相对来说，响应速度慢
+ - 优点：不多占用系统资源
+
+### Bean 的装配
+#### 动态工厂 Bean
+*ISomeService.java - service 接口*
+```
+public interface ISomeService {
+	void doSome();
+}
+```
+*SomeServiceImpl.java - service 实现类*
+```
+public class SomeServiceImpl implements ISomeService {
+	@Override
+	public void doSome() {
+		System.out.println("执行doSome()方法");
+	}
+}
+```
+*ServiceFactory.java - service 工厂*
+```
+public class ServiceFactory {
+	public ISomeService getSomeService() {
+		return new SomeServiceImpl();
+	}
+}
+```
+*applicationContext.mxl*
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 注册动态工厂 -->
+    <bean id="factory" class="top.qingrang.ba02.ServiceFactory"/>
+
+    <!-- 注册 Service：动态工厂 Bean -->
+    <bean id="myService" factory-bean="factory" factory-method="getSomeService"/>
+</beans>
+```
+*Test.java - 测试*
+```
+public void test02() {
+	String resource = "top/qingrang/ba02/applicationContext.xml";
+	ApplicationContext ac = new ClassPathXmlApplicationContext(resource);
+	ISomeService service = (ISomeService) ac.getBean("myService");
+	service.doSome();
+}
+```
+#### 静态工厂 Bean
+*applicationContext.mxl*
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 注册 Service：静态工厂 Bean -->
+    <bean id="myService" class="top.qingrang.ba03.ServiceFactory" factory-method="getSomeService"/>
+</beans>
+```
+#### 容器中 Bean 的作用域
+*applicationContext.mxl*
+```
+<bean id="myService" class="top.qingrang.ba04.SomeServiceImpl" scope="prototype"/>
+```
+
+当通过 Spring 容器创建一个 Bean 实例时，不仅可以完成 Bean 的实例化，还可以通过 scope 属性，为 Bean 指定特定的作用域。 Spring 支持 5 种作用域。
+1. singleton： 单例模式。即在整个 Spring 容器中，使用 singleton 定义的 Bean 将是单例的，只有一个实例。该 Bean 是在容器被创建时即被装配好了。 默认为单例的。
+1. prototype： 原型模式。即每次使用 getBean 方法获取的同一个 `<bean />` 的实例都是一个新的实例。Bean 实例是在代码中使用该 Bean 实例时才进行装配的。
+1. request：对于每次 HTTP 请求，都将会产生一个不同的 Bean 实例。
+1. session：对于每个不同的 HTTP session，都将产生一个不同的 Bean 实例。
+1. global session：每个全局的 HTTP session 对应一个 Bean 实例。典型情况下，仅在使用 portlet 集群时有效，多个 Web 应用共享一个 session。一般应用中， global-session 与 session 是等同的。
+
+对于 scope 的值 request、 session 与 global session， 只有在 Web 应用中使用 Spring 时，该作用域才有效。
+
+
+#### Bean 后处理器
+Bean 后处理器是一种特殊的 Bean，容器中所有的 Bean 在初始化时，均会自动执行该类的两个方法。由于该 Bean 是由其它 Bean 自动调用执行，不是程序员手工调用，故此 Bean 无须 id 属性。
+
+需要做的是，在 Bean 后处理器类方法中，只要对 Bean 类与 Bean 类中的方法进行判断，就可实现对指定的 Bean 的指定方法进行功能扩展与增强。方法返回的 Bean 对象，即是增强过的对象。就是设计模式中的代理模式。
+
+代码中需要自定义 Bean 后处理器类。该类就是实现了接口 BeanPostProcessor 的类。该接口中包含两个方法，分别在目标 Bean 初始化完毕之前与之后执行。它们的返回值为：功能被扩展或增强后的 Bean 对象。
+
+Bean 初始化完毕有一个标志：一个方法将被执行。即当该方法被执行时，表示该 Bean 被初始化完毕。所以 Bean 后处理器中两个方法的执行，是在这个方法之前之后执行。 这个方法在后面将会讲到。
+
+`public Object postProcessBeforeInitialization(Object bean, String beanId) throws BeansException`
+
+该方法会在目标 Bean 初始化完毕之前由容器自动调用。
+
+`public Object postProcessAfterInitialization(Object bean, String beanId) throws BeansException`
+
+该方法会在目标 Bean 初始化完毕之后由容器自动调用。它们的参数是：第一个参数是系统即将初始化的 Bean 实例，第二个参数是该 Bean 实例的 id 属性值。若 Bean 没有 id 就是 name 属性值。
+
+*ISomeService.java - service 接口*
+```
+public interface ISomeService {
+	String doSome();
+	String doOther();
+}
+```
+*SomeServiceImpl.java - service 实现类*
+```
+public class SomeServiceImpl implements ISomeService {
+	@Override
+	public String doSome() {
+		System.out.println("执行doSome()方法");
+		return "doSome() - abc";
+	}
+	
+	@Override
+	public String doOther() {
+		System.out.println("执行doOther()方法");
+		return "doOther() - def";
+	}
+}
+```
+*MyBeanPostProcessor.java - 自定义 Bean 后处理器类*
+```
+public class MyBeanPostProcessor implements BeanPostProcessor {
+
+	// bean：表示当前正在进行初始化的Bean对象
+	// beanName：表示当前正在进行初始化的Bean对象的id
+	@Override
+	public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
+		System.out.println("执行 ---- before() ---方法");
+		return bean;
+	}
+
+	@Override
+	public Object postProcessAfterInitialization(final Object bean, String beanName) throws BeansException {
+		System.out.println("执行 ---- after() ---方法");
+		//判断 SomeServiceImpl 对象
+		if ("myService".equals(beanName)) {
+			Object obj = Proxy.newProxyInstance(bean.getClass().getClassLoader(),
+					bean.getClass().getInterfaces(),
+					new InvocationHandler() {
+						@Override
+						public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+							Object invoke = method.invoke(bean, args);
+							//判断具体方法
+							if ("doSome".equals(method.getName())) {
+								return ((String) invoke).toUpperCase();
+							}
+							return invoke;
+						}
+					});
+			return obj;
+		}
+		return bean;
+	}
+}
+```
+*applicationContext.mxl*
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 注册 Service -->
+    <bean id="myService" class="top.qingrang.ba05.SomeServiceImpl"/>
+    <bean id="myService2" class="top.qingrang.ba05.SomeServiceImpl"/>
+
+    <!-- 注册 Bean 后处理器 -->
+    <bean class="top.qingrang.ba05.MyBeanPostProcessor"/>
+
+</beans>
+```
+*Test.java - 测试*
+```
+public void test01() {
+	String resource = "top/qingrang/ba05/applicationContext.xml";
+	ApplicationContext ac = new ClassPathXmlApplicationContext(resource);
+
+	ISomeService service = (ISomeService) ac.getBean("myService");
+	System.out.println(service.doSome());
+	System.out.println(service.doOther());
+
+	System.out.println("======================");
+
+	ISomeService service2 = (ISomeService) ac.getBean("myService2");
+	System.out.println(service2.doSome());
+	System.out.println(service2.doOther());
+}
+```
+
+*输出结果*
+```
+执行 ---- before() ---方法
+执行 ---- after() ---方法
+执行 ---- before() ---方法
+执行 ---- after() ---方法
+执行doSome()方法
+DOSOME() - ABC
+执行doOther()方法
+doOther() - def
+======================
+执行doSome()方法
+doSome() - abc
+执行doOther()方法
+doOther() - def
+```
+
+
+#### Bean 的生命周期
+*ISomeService.java - service 接口*
+```
+public interface ISomeService {
+	void doSome();
+}
+```
+*SomeServiceImpl.java - service 实现类*
+```
+public class SomeServiceImpl implements ISomeService, BeanNameAware, BeanFactoryAware, InitializingBean, DisposableBean {
+	private String adao;
+	private String bdao;
+
+	public void setAdao(String adao) {
+		this.adao = adao;
+		System.out.println("Step2：执行 setter");
+	}
+
+	public void setBdao(String bdao) {
+		this.bdao = bdao;
+		System.out.println("Step2：执行 setter");
+	}
+
+	public SomeServiceImpl() {
+		System.out.println("Step1：执行无参构造器");
+	}
+
+	@Override
+	public void doSome() {
+		System.out.println("Step9：执行 doSome() 方法");
+	}
+
+	public void setUp() {
+		System.out.println("Step7：初始化完毕之后");
+	}
+
+	public void tearDown() {
+		System.out.println("Step11：销毁之前");
+	}
+
+	@Override
+	public void setBeanName(String name) {
+		System.out.println("Step3：获取到 bean 的 id = " + name);
+	}
+
+	@Override
+	public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
+		System.out.println("Step4：获取到 BeanFactory 容器");
+	}
+
+	@Override
+	public void afterPropertiesSet() throws Exception {
+		System.out.println("Step6：Bean 初始化完毕了");
+	}
+
+	@Override
+	public void destroy() throws Exception {
+		System.out.println("Step10：实现接口的销毁之前");
+	}
+}
+```
+*MyBeanPostProcessor.java - Bean 后处理器*
+```
+public class MyBeanPostProcessor implements BeanPostProcessor {
+	@Override
+	public Object postProcessBeforeInitialization(Object bean, String beanName)
+			throws BeansException {
+		System.out.println("Step5：MyBeanPostProcessor - 执行 before() 方法");
+		return bean;
+	}
+
+	@Override
+	public Object postProcessAfterInitialization(final Object bean, String beanName)
+			throws BeansException {
+		System.out.println("Step8：MyBeanPostProcessor - 执行 after() 方法");
+		return bean;
+	}
+}
+```
+*applicationContext.mxl*
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 注册Service -->
+    <bean id="myService" class="top.qingrang.ba07.SomeServiceImpl"
+    		init-method="setUp" destroy-method="tearDown">
+    	<property name="adao" value="aaa"/>
+    	<property name="bdao" value="bbb"/>
+   	</bean>
+
+   	<bean class="top.qingrang.ba07.MyBeanPostProcessor"/>
+</beans>
+```
+*Test.java - 测试*
+```
+public void test01() {
+	// 创建容器对象，加载Spring配置文件
+	String resource = "top/qingrang/ba07/applicationContext.xml";
+	ApplicationContext ac = new ClassPathXmlApplicationContext(resource);
+	ISomeService service = (ISomeService) ac.getBean("myService");
+	service.doSome();
+	// 对于销毁方法的执行，有两个条件：
+	// 1)当前的Bean需要是singleton的
+	// 2)要手工关闭容器
+	((ClassPathXmlApplicationContext)ac).close();
+}
+```
+
+*输出信息*
+```
+Step1：执行无参构造器
+Step2：执行 setter
+Step2：执行 setter
+Step3：获取到 bean 的 id = myService
+Step4：获取到 BeanFactory 容器
+Step5：MyBeanPostProcessor - 执行 before() 方法
+Step6：Bean 初始化完毕了
+Step7：初始化完毕之后
+Step8：MyBeanPostProcessor - 执行 after() 方法
+Step9：执行 doSome() 方法
+Step10：实现接口的销毁之前
+Step11：销毁之前
+```
+### 基于 XML 的 DI
+#### 注入分类
+##### 设值注入
+和 `setter` 方法有关系。
+
+*School.java*
+```
+public class School {
+	private String name;
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	@Override
+	public String toString() {
+		return "School [name=" + name + "]";
+	}
+}
+```
+
+*Student.java*
+```
+public class Student {
+	private String name;
+	private int age;
+	private School school;   // 对象属性，域属性
+	
+	public void setName(String name) {
+		System.out.println("执行setName()");
+		this.name = name;
+	}
+	public void setAge(int age) {
+		System.out.println("执行setAge()");
+		this.age = age;
+	}
+	public void setSchool(School school) {
+		this.school = school;
+	}
+
+	@Override
+	public String toString() {
+		return "Student [name=" + name + ", age=" + age + ", school=" + school
+				+ "]";
+	}
+}
+```
+
+*applicationContext.mxl*
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 注册 Student -->
+    <bean id="myStudent" class="top.qingrang.di01.Student">
+    	<property name="name" value="张三"/>
+    	<property name="age" value="23"/>
+        <!-- 对于对象的注入要用 ref -->
+    	<property name="school" ref="mySchool"/>
+    </bean>
+
+    <!-- 注册 School -->
+    <bean id="mySchool" class="top.qingrang.di01.School">
+    	<property name="name" value="清华大学"/>
+    </bean>
+
+</beans>
+```
+
+*Test.java - 测试*
+```
+public void test01() {
+	// 创建容器对象，加载Spring配置文件
+	String resource = "top/qingrang/di01/applicationContext.xml";
+	ApplicationContext ac = new ClassPathXmlApplicationContext(resource);
+	Student student = (Student) ac.getBean("myStudent");
+	System.out.println(student);
+}
+```
+
+*输出信息*
+```
+执行setName()
+执行setAge()
+Student [name=张三, age=23, school=School [name=清华大学]]
+```
+##### 构造注入
+和 `setter` 方法没有关系，和构造方法有关系。
+
+
+',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->saveNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000515s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001881s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `title`='Spring',`content`='# Spring\n[TOC]\n\nSpring 是一个基于 **IOC** 和 **AOP** 的结构 J2EE 系统的框架。\n## IOC（控制反转）\n### 概念\n控制反转（IOC， Inversion of Control），是一个概念，是一种思想。指将传统上由程序代码直接操控的对象调用权交给容器，通过容器来实现对象的装配和管理。控制反转就是对对象控制权的转移，从程序代码本身反转到了外部容器。简单说就是创建对象由以前的程序员自己 new 构造方法来调用，变成了交由 Spring 创建对象。\n\nIoC 是一个概念，是一种思想，其实现方式多种多样。当前比较流行的实现方式有两种：依赖注入和依赖查找。依赖注入方式应用更为广泛。\n- 依赖查找： Dependency Lookup， DL，容器提供回调接口和上下文环境给组件，程序代\n码则需要提供具体的查找方式。比较典型的是依赖于 JNDI 系统的查找。\n- 依赖注入： Dependency Injection， DI，程序代码不做定位查询，这些工作由容器自行完成。简单地说就是拿到的对象的属性，已经被注入好相关值了，直接使用即可。\n\n依赖注入 DI 是指程序运行过程中，若需要调用另一个对象协助时，无须在代码中创建被调用者，而是依赖于外部容器，由外部容器创建后传递给程序。Spring 的依赖注入对调用者与被调用者几乎没有任何要求，完全支持 POJO 之间依赖关系的管理。\n\n依赖注入是目前最优秀的解耦方式。依赖注入让 Spring 的 Bean 之间以配置文件的方式组织在一起，而不是以硬编码的方式耦合在一起的。\n\n>以获取对象的方式来进行比较\n\n- 传统的方式\n\n通过 new 关键字主动创建一个对象\n\n相当于你自己去菜市场 new 了一只鸡，不过是生鸡，要自己拔毛，去内脏，再上花椒，酱油，烤制，经过各种工序之后，才可以食用。\n\n- IOC方式\n\n对象的生命周期由 Spring 来管理，直接从 Spring 那里去获取一个对象。IOC 是反转控制 (Inversion Of Control)的缩写，就像控制权从本来在自己手里，现在交给了 Spring。\n\n相当于去馆子(Spring)点了一只鸡，交到你手上的时候，已经五味俱全，你就只管吃就行了。\n\n\n\n### 第一个 Spring 程序\n#### 传统的面向接口编程\n经过以下例子可以看出，若接口（Service 层）变了，Test(View 层) 也的改，耦合度很高。\n\n*ISomeService.java - 接口*\n```\npublic interface ISomeService {\n	void doSome();\n}\n```\n*SomeServiceImpl.java - 实现类*\n```\npublic class SomeServiceImpl implements ISomeService {\n	@Override\n	public void doSome() {\n		System.out.println(\"执行doSome()方法\");\n	}\n}\n```\n*Test.java - 测试*\n```\n@Test\npublic void test01() {\n	ISomeService service = new SomeServiceImpl();\n	service.doSome();\n}\n```\n#### Spring 实现\n*applicationContext.mxl - Spring 的配置文件*\n```\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<beans xmlns=\"http://www.springframework.org/schema/beans\"\n    xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n    xsi:schemaLocation=\"\n        http://www.springframework.org/schema/beans \n        http://www.springframework.org/schema/beans/spring-beans.xsd\">\n\n    <!-- 注册 Service，Spring 底层实际是做了 SomeServiceImpl myService = new SomeServiceImpl(); -->\n    <bean id=\"myService\" class=\"top.qingrang.service.SomeServiceImpl\"/>\n\n</beans>\n```\n*Test.java - 测试*\n```\n@Test\npublic void test02() {\n	// 创建容器对象，加载 Spring 配置文件，会从类路径下查找配置文件\n	ApplicationContext ac = new ClassPathXmlApplicationContext(\"applicationContext.xml\");\n	ISomeService someService = (ISomeService)ac.getBean(\"myService\");\n	someService.doSome();\n}\n```\n\n从以上代码中已经看不到 `SomeServiceImpl` 这个实现类了，就做到了解耦。\n\n>FileSystemXmlApplicationContext\n\n```\n// 创建容器对象，加载 Spring 配置文件，会从项目的根下查找配置文件\nApplicationContext ac = new FileSystemXmlApplicationContext(\"applicationContext.xml\");\n\n// 创建容器对象，加载 Spring 配置文件，会从当前文件系统的 D 盘根目录下查找配置文件\nApplicationContext ac = new FileSystemXmlApplicationContext(\"d:/applicationContext.xml\");\n```\n\n>BeanFactory 容器\n\n*Test.java*\n```\n@Test\npublic void test05() {\n	// 创建 BeanFactory 容器\n	BeanFactory bf = new XmlBeanFactory(new ClassPathResource(\"applicationContext.xml\"));\n	ISomeService service = (ISomeService) bf.getBean(\"myService\");\n	service.doSome();\n}\n```\n\n>ApplicationContext 与 BeanFactory 容器的区别\n\n这两上容器对于其中 Bean 的创建时机不同：\n1. ApplicationContext容器在进行初始化时，会将其中的所有Bean(对象)进行创建\n - 缺点：占用系统资源（内存、CPU等）\n - 优点：响应速度快\n1. BeanFactory容器中的对象，在容器初始化时并不会被创建，而是在真正获取该对象时才被创建\n - 缺点：相对来说，响应速度慢\n - 优点：不多占用系统资源\n\n### Bean 的装配\n#### 动态工厂 Bean\n*ISomeService.java - service 接口*\n```\npublic interface ISomeService {\n	void doSome();\n}\n```\n*SomeServiceImpl.java - service 实现类*\n```\npublic class SomeServiceImpl implements ISomeService {\n	@Override\n	public void doSome() {\n		System.out.println(\"执行doSome()方法\");\n	}\n}\n```\n*ServiceFactory.java - service 工厂*\n```\npublic class ServiceFactory {\n	public ISomeService getSomeService() {\n		return new SomeServiceImpl();\n	}\n}\n```\n*applicationContext.mxl*\n```\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<beans xmlns=\"http://www.springframework.org/schema/beans\"\n    xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n    xsi:schemaLocation=\"\n        http://www.springframework.org/schema/beans \n        http://www.springframework.org/schema/beans/spring-beans.xsd\">\n\n    <!-- 注册动态工厂 -->\n    <bean id=\"factory\" class=\"top.qingrang.ba02.ServiceFactory\"/>\n\n    <!-- 注册 Service：动态工厂 Bean -->\n    <bean id=\"myService\" factory-bean=\"factory\" factory-method=\"getSomeService\"/>\n</beans>\n```\n*Test.java - 测试*\n```\npublic void test02() {\n	String resource = \"top/qingrang/ba02/applicationContext.xml\";\n	ApplicationContext ac = new ClassPathXmlApplicationContext(resource);\n	ISomeService service = (ISomeService) ac.getBean(\"myService\");\n	service.doSome();\n}\n```\n#### 静态工厂 Bean\n*applicationContext.mxl*\n```\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<beans xmlns=\"http://www.springframework.org/schema/beans\"\n    xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n    xsi:schemaLocation=\"\n        http://www.springframework.org/schema/beans \n        http://www.springframework.org/schema/beans/spring-beans.xsd\">\n\n    <!-- 注册 Service：静态工厂 Bean -->\n    <bean id=\"myService\" class=\"top.qingrang.ba03.ServiceFactory\" factory-method=\"getSomeService\"/>\n</beans>\n```\n#### 容器中 Bean 的作用域\n*applicationContext.mxl*\n```\n<bean id=\"myService\" class=\"top.qingrang.ba04.SomeServiceImpl\" scope=\"prototype\"/>\n```\n\n当通过 Spring 容器创建一个 Bean 实例时，不仅可以完成 Bean 的实例化，还可以通过 scope 属性，为 Bean 指定特定的作用域。 Spring 支持 5 种作用域。\n1. singleton： 单例模式。即在整个 Spring 容器中，使用 singleton 定义的 Bean 将是单例的，只有一个实例。该 Bean 是在容器被创建时即被装配好了。 默认为单例的。\n1. prototype： 原型模式。即每次使用 getBean 方法获取的同一个 `<bean />` 的实例都是一个新的实例。Bean 实例是在代码中使用该 Bean 实例时才进行装配的。\n1. request：对于每次 HTTP 请求，都将会产生一个不同的 Bean 实例。\n1. session：对于每个不同的 HTTP session，都将产生一个不同的 Bean 实例。\n1. global session：每个全局的 HTTP session 对应一个 Bean 实例。典型情况下，仅在使用 portlet 集群时有效，多个 Web 应用共享一个 session。一般应用中， global-session 与 session 是等同的。\n\n对于 scope 的值 request、 session 与 global session， 只有在 Web 应用中使用 Spring 时，该作用域才有效。\n\n\n#### Bean 后处理器\nBean 后处理器是一种特殊的 Bean，容器中所有的 Bean 在初始化时，均会自动执行该类的两个方法。由于该 Bean 是由其它 Bean 自动调用执行，不是程序员手工调用，故此 Bean 无须 id 属性。\n\n需要做的是，在 Bean 后处理器类方法中，只要对 Bean 类与 Bean 类中的方法进行判断，就可实现对指定的 Bean 的指定方法进行功能扩展与增强。方法返回的 Bean 对象，即是增强过的对象。就是设计模式中的代理模式。\n\n代码中需要自定义 Bean 后处理器类。该类就是实现了接口 BeanPostProcessor 的类。该接口中包含两个方法，分别在目标 Bean 初始化完毕之前与之后执行。它们的返回值为：功能被扩展或增强后的 Bean 对象。\n\nBean 初始化完毕有一个标志：一个方法将被执行。即当该方法被执行时，表示该 Bean 被初始化完毕。所以 Bean 后处理器中两个方法的执行，是在这个方法之前之后执行。 这个方法在后面将会讲到。\n\n`public Object postProcessBeforeInitialization(Object bean, String beanId) throws BeansException`\n\n该方法会在目标 Bean 初始化完毕之前由容器自动调用。\n\n`public Object postProcessAfterInitialization(Object bean, String beanId) throws BeansException`\n\n该方法会在目标 Bean 初始化完毕之后由容器自动调用。它们的参数是：第一个参数是系统即将初始化的 Bean 实例，第二个参数是该 Bean 实例的 id 属性值。若 Bean 没有 id 就是 name 属性值。\n\n*ISomeService.java - service 接口*\n```\npublic interface ISomeService {\n	String doSome();\n	String doOther();\n}\n```\n*SomeServiceImpl.java - service 实现类*\n```\npublic class SomeServiceImpl implements ISomeService {\n	@Override\n	public String doSome() {\n		System.out.println(\"执行doSome()方法\");\n		return \"doSome() - abc\";\n	}\n	\n	@Override\n	public String doOther() {\n		System.out.println(\"执行doOther()方法\");\n		return \"doOther() - def\";\n	}\n}\n```\n*MyBeanPostProcessor.java - 自定义 Bean 后处理器类*\n```\npublic class MyBeanPostProcessor implements BeanPostProcessor {\n\n	// bean：表示当前正在进行初始化的Bean对象\n	// beanName：表示当前正在进行初始化的Bean对象的id\n	@Override\n	public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {\n		System.out.println(\"执行 ---- before() ---方法\");\n		return bean;\n	}\n\n	@Override\n	public Object postProcessAfterInitialization(final Object bean, String beanName) throws BeansException {\n		System.out.println(\"执行 ---- after() ---方法\");\n		//判断 SomeServiceImpl 对象\n		if (\"myService\".equals(beanName)) {\n			Object obj = Proxy.newProxyInstance(bean.getClass().getClassLoader(),\n					bean.getClass().getInterfaces(),\n					new InvocationHandler() {\n						@Override\n						public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {\n							Object invoke = method.invoke(bean, args);\n							//判断具体方法\n							if (\"doSome\".equals(method.getName())) {\n								return ((String) invoke).toUpperCase();\n							}\n							return invoke;\n						}\n					});\n			return obj;\n		}\n		return bean;\n	}\n}\n```\n*applicationContext.mxl*\n```\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<beans xmlns=\"http://www.springframework.org/schema/beans\"\n    xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n    xsi:schemaLocation=\"\n        http://www.springframework.org/schema/beans \n        http://www.springframework.org/schema/beans/spring-beans.xsd\">\n\n    <!-- 注册 Service -->\n    <bean id=\"myService\" class=\"top.qingrang.ba05.SomeServiceImpl\"/>\n    <bean id=\"myService2\" class=\"top.qingrang.ba05.SomeServiceImpl\"/>\n\n    <!-- 注册 Bean 后处理器 -->\n    <bean class=\"top.qingrang.ba05.MyBeanPostProcessor\"/>\n\n</beans>\n```\n*Test.java - 测试*\n```\npublic void test01() {\n	String resource = \"top/qingrang/ba05/applicationContext.xml\";\n	ApplicationContext ac = new ClassPathXmlApplicationContext(resource);\n\n	ISomeService service = (ISomeService) ac.getBean(\"myService\");\n	System.out.println(service.doSome());\n	System.out.println(service.doOther());\n\n	System.out.println(\"======================\");\n\n	ISomeService service2 = (ISomeService) ac.getBean(\"myService2\");\n	System.out.println(service2.doSome());\n	System.out.println(service2.doOther());\n}\n```\n\n*输出结果*\n```\n执行 ---- before() ---方法\n执行 ---- after() ---方法\n执行 ---- before() ---方法\n执行 ---- after() ---方法\n执行doSome()方法\nDOSOME() - ABC\n执行doOther()方法\ndoOther() - def\n======================\n执行doSome()方法\ndoSome() - abc\n执行doOther()方法\ndoOther() - def\n```\n\n\n#### Bean 的生命周期\n*ISomeService.java - service 接口*\n```\npublic interface ISomeService {\n	void doSome();\n}\n```\n*SomeServiceImpl.java - service 实现类*\n```\npublic class SomeServiceImpl implements ISomeService, BeanNameAware, BeanFactoryAware, InitializingBean, DisposableBean {\n	private String adao;\n	private String bdao;\n\n	public void setAdao(String adao) {\n		this.adao = adao;\n		System.out.println(\"Step2：执行 setter\");\n	}\n\n	public void setBdao(String bdao) {\n		this.bdao = bdao;\n		System.out.println(\"Step2：执行 setter\");\n	}\n\n	public SomeServiceImpl() {\n		System.out.println(\"Step1：执行无参构造器\");\n	}\n\n	@Override\n	public void doSome() {\n		System.out.println(\"Step9：执行 doSome() 方法\");\n	}\n\n	public void setUp() {\n		System.out.println(\"Step7：初始化完毕之后\");\n	}\n\n	public void tearDown() {\n		System.out.println(\"Step11：销毁之前\");\n	}\n\n	@Override\n	public void setBeanName(String name) {\n		System.out.println(\"Step3：获取到 bean 的 id = \" + name);\n	}\n\n	@Override\n	public void setBeanFactory(BeanFactory beanFactory) throws BeansException {\n		System.out.println(\"Step4：获取到 BeanFactory 容器\");\n	}\n\n	@Override\n	public void afterPropertiesSet() throws Exception {\n		System.out.println(\"Step6：Bean 初始化完毕了\");\n	}\n\n	@Override\n	public void destroy() throws Exception {\n		System.out.println(\"Step10：实现接口的销毁之前\");\n	}\n}\n```\n*MyBeanPostProcessor.java - Bean 后处理器*\n```\npublic class MyBeanPostProcessor implements BeanPostProcessor {\n	@Override\n	public Object postProcessBeforeInitialization(Object bean, String beanName)\n			throws BeansException {\n		System.out.println(\"Step5：MyBeanPostProcessor - 执行 before() 方法\");\n		return bean;\n	}\n\n	@Override\n	public Object postProcessAfterInitialization(final Object bean, String beanName)\n			throws BeansException {\n		System.out.println(\"Step8：MyBeanPostProcessor - 执行 after() 方法\");\n		return bean;\n	}\n}\n```\n*applicationContext.mxl*\n```\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<beans xmlns=\"http://www.springframework.org/schema/beans\"\n    xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n    xsi:schemaLocation=\"\n        http://www.springframework.org/schema/beans \n        http://www.springframework.org/schema/beans/spring-beans.xsd\">\n\n    <!-- 注册Service -->\n    <bean id=\"myService\" class=\"top.qingrang.ba07.SomeServiceImpl\"\n    		init-method=\"setUp\" destroy-method=\"tearDown\">\n    	<property name=\"adao\" value=\"aaa\"/>\n    	<property name=\"bdao\" value=\"bbb\"/>\n   	</bean>\n\n   	<bean class=\"top.qingrang.ba07.MyBeanPostProcessor\"/>\n</beans>\n```\n*Test.java - 测试*\n```\npublic void test01() {\n	// 创建容器对象，加载Spring配置文件\n	String resource = \"top/qingrang/ba07/applicationContext.xml\";\n	ApplicationContext ac = new ClassPathXmlApplicationContext(resource);\n	ISomeService service = (ISomeService) ac.getBean(\"myService\");\n	service.doSome();\n	// 对于销毁方法的执行，有两个条件：\n	// 1)当前的Bean需要是singleton的\n	// 2)要手工关闭容器\n	((ClassPathXmlApplicationContext)ac).close();\n}\n```\n\n*输出信息*\n```\nStep1：执行无参构造器\nStep2：执行 setter\nStep2：执行 setter\nStep3：获取到 bean 的 id = myService\nStep4：获取到 BeanFactory 容器\nStep5：MyBeanPostProcessor - 执行 before() 方法\nStep6：Bean 初始化完毕了\nStep7：初始化完毕之后\nStep8：MyBeanPostProcessor - 执行 after() 方法\nStep9：执行 doSome() 方法\nStep10：实现接口的销毁之前\nStep11：销毁之前\n```\n### 基于 XML 的 DI\n#### 注入分类\n##### 设值注入\n和 `setter` 方法有关系。\n\n*School.java*\n```\npublic class School {\n	private String name;\n	public void setName(String name) {\n		this.name = name;\n	}\n\n	@Override\n	public String toString() {\n		return \"School [name=\" + name + \"]\";\n	}\n}\n```\n\n*Student.java*\n```\npublic class Student {\n	private String name;\n	private int age;\n	private School school;   // 对象属性，域属性\n	\n	public void setName(String name) {\n		System.out.println(\"执行setName()\");\n		this.name = name;\n	}\n	public void setAge(int age) {\n		System.out.println(\"执行setAge()\");\n		this.age = age;\n	}\n	public void setSchool(School school) {\n		this.school = school;\n	}\n\n	@Override\n	public String toString() {\n		return \"Student [name=\" + name + \", age=\" + age + \", school=\" + school\n				+ \"]\";\n	}\n}\n```\n\n*applicationContext.mxl*\n```\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<beans xmlns=\"http://www.springframework.org/schema/beans\"\n    xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n    xsi:schemaLocation=\"\n        http://www.springframework.org/schema/beans \n        http://www.springframework.org/schema/beans/spring-beans.xsd\">\n\n    <!-- 注册 Student -->\n    <bean id=\"myStudent\" class=\"top.qingrang.di01.Student\">\n    	<property name=\"name\" value=\"张三\"/>\n    	<property name=\"age\" value=\"23\"/>\n        <!-- 对于对象的注入要用 ref -->\n    	<property name=\"school\" ref=\"mySchool\"/>\n    </bean>\n\n    <!-- 注册 School -->\n    <bean id=\"mySchool\" class=\"top.qingrang.di01.School\">\n    	<property name=\"name\" value=\"清华大学\"/>\n    </bean>\n\n</beans>\n```\n\n*Test.java - 测试*\n```\npublic void test01() {\n	// 创建容器对象，加载Spring配置文件\n	String resource = \"top/qingrang/di01/applicationContext.xml\";\n	ApplicationContext ac = new ClassPathXmlApplicationContext(resource);\n	Student student = (Student) ac.getBean(\"myStudent\");\n	System.out.println(student);\n}\n```\n\n*输出信息*\n```\n执行setName()\n执行setAge()\nStudent [name=张三, age=23, school=School [name=清华大学]]\n```\n##### 构造注入\n和 `setter` 方法没有关系，和构造方法有关系。\n\n\n',`groups`='Default',`p_id`=1  WHERE  `id` = 1 [ RunTime:0.001239s ]
+---------------------------------------------------------------
+[ 2018-11-14T21:44:03+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/updatenote/id/247.html
+[ info ] qingrang.top/daily/admin/note/updatenote/id/247.html [运行时间：0.078344s][吞吐率：12.76req/s] [内存消耗：2,181.46kb] [文件加载：58]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'updatenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '37854',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/247.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1541082864,1541122974,1541171416,1542098176; PHPSESSID=uf0vl2dk107t7poh4oul97f9e3',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'summary' => '',
+  'content' => '# Spring
+[TOC]
+
+Spring 是一个基于 **IOC** 和 **AOP** 的结构 J2EE 系统的框架。
+## IOC（控制反转）
+### 概念
+控制反转（IOC， Inversion of Control），是一个概念，是一种思想。指将传统上由程序代码直接操控的对象调用权交给容器，通过容器来实现对象的装配和管理。控制反转就是对对象控制权的转移，从程序代码本身反转到了外部容器。简单说就是创建对象由以前的程序员自己 new 构造方法来调用，变成了交由 Spring 创建对象。
+
+IoC 是一个概念，是一种思想，其实现方式多种多样。当前比较流行的实现方式有两种：依赖注入和依赖查找。依赖注入方式应用更为广泛。
+- 依赖查找： Dependency Lookup， DL，容器提供回调接口和上下文环境给组件，程序代
+码则需要提供具体的查找方式。比较典型的是依赖于 JNDI 系统的查找。
+- 依赖注入： Dependency Injection， DI，程序代码不做定位查询，这些工作由容器自行完成。简单地说就是拿到的对象的属性，已经被注入好相关值了，直接使用即可。
+
+依赖注入 DI 是指程序运行过程中，若需要调用另一个对象协助时，无须在代码中创建被调用者，而是依赖于外部容器，由外部容器创建后传递给程序。Spring 的依赖注入对调用者与被调用者几乎没有任何要求，完全支持 POJO 之间依赖关系的管理。
+
+依赖注入是目前最优秀的解耦方式。依赖注入让 Spring 的 Bean 之间以配置文件的方式组织在一起，而不是以硬编码的方式耦合在一起的。
+
+>以获取对象的方式来进行比较
+
+- 传统的方式
+
+通过 new 关键字主动创建一个对象
+
+相当于你自己去菜市场 new 了一只鸡，不过是生鸡，要自己拔毛，去内脏，再上花椒，酱油，烤制，经过各种工序之后，才可以食用。
+
+- IOC方式
+
+对象的生命周期由 Spring 来管理，直接从 Spring 那里去获取一个对象。IOC 是反转控制 (Inversion Of Control)的缩写，就像控制权从本来在自己手里，现在交给了 Spring。
+
+相当于去馆子(Spring)点了一只鸡，交到你手上的时候，已经五味俱全，你就只管吃就行了。
+
+
+
+### 第一个 Spring 程序
+#### 传统的面向接口编程
+经过以下例子可以看出，若接口（Service 层）变了，Test(View 层) 也的改，耦合度很高。
+
+*ISomeService.java - 接口*
+```
+public interface ISomeService {
+	void doSome();
+}
+```
+*SomeServiceImpl.java - 实现类*
+```
+public class SomeServiceImpl implements ISomeService {
+	@Override
+	public void doSome() {
+		System.out.println("执行doSome()方法");
+	}
+}
+```
+*Test.java - 测试*
+```
+@Test
+public void test01() {
+	ISomeService service = new SomeServiceImpl();
+	service.doSome();
+}
+```
+#### Spring 实现
+*applicationContext.mxl - Spring 的配置文件*
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 注册 Service，Spring 底层实际是做了 SomeServiceImpl myService = new SomeServiceImpl(); -->
+    <bean id="myService" class="top.qingrang.service.SomeServiceImpl"/>
+
+</beans>
+```
+*Test.java - 测试*
+```
+@Test
+public void test02() {
+	// 创建容器对象，加载 Spring 配置文件，会从类路径下查找配置文件
+	ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
+	ISomeService someService = (ISomeService)ac.getBean("myService");
+	someService.doSome();
+}
+```
+
+从以上代码中已经看不到 `SomeServiceImpl` 这个实现类了，就做到了解耦。
+
+>FileSystemXmlApplicationContext
+
+```
+// 创建容器对象，加载 Spring 配置文件，会从项目的根下查找配置文件
+ApplicationContext ac = new FileSystemXmlApplicationContext("applicationContext.xml");
+
+// 创建容器对象，加载 Spring 配置文件，会从当前文件系统的 D 盘根目录下查找配置文件
+ApplicationContext ac = new FileSystemXmlApplicationContext("d:/applicationContext.xml");
+```
+
+>BeanFactory 容器
+
+*Test.java*
+```
+@Test
+public void test05() {
+	// 创建 BeanFactory 容器
+	BeanFactory bf = new XmlBeanFactory(new ClassPathResource("applicationContext.xml"));
+	ISomeService service = (ISomeService) bf.getBean("myService");
+	service.doSome();
+}
+```
+
+>ApplicationContext 与 BeanFactory 容器的区别
+
+这两上容器对于其中 Bean 的创建时机不同：
+1. ApplicationContext容器在进行初始化时，会将其中的所有Bean(对象)进行创建
+ - 缺点：占用系统资源（内存、CPU等）
+ - 优点：响应速度快
+1. BeanFactory容器中的对象，在容器初始化时并不会被创建，而是在真正获取该对象时才被创建
+ - 缺点：相对来说，响应速度慢
+ - 优点：不多占用系统资源
+
+### Bean 的装配
+#### 动态工厂 Bean
+*ISomeService.java - service 接口*
+```
+public interface ISomeService {
+	void doSome();
+}
+```
+*SomeServiceImpl.java - service 实现类*
+```
+public class SomeServiceImpl implements ISomeService {
+	@Override
+	public void doSome() {
+		System.out.println("执行doSome()方法");
+	}
+}
+```
+*ServiceFactory.java - service 工厂*
+```
+public class ServiceFactory {
+	public ISomeService getSomeService() {
+		return new SomeServiceImpl();
+	}
+}
+```
+*applicationContext.mxl*
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 注册动态工厂 -->
+    <bean id="factory" class="top.qingrang.ba02.ServiceFactory"/>
+
+    <!-- 注册 Service：动态工厂 Bean -->
+    <bean id="myService" factory-bean="factory" factory-method="getSomeService"/>
+</beans>
+```
+*Test.java - 测试*
+```
+public void test02() {
+	String resource = "top/qingrang/ba02/applicationContext.xml";
+	ApplicationContext ac = new ClassPathXmlApplicationContext(resource);
+	ISomeService service = (ISomeService) ac.getBean("myService");
+	service.doSome();
+}
+```
+#### 静态工厂 Bean
+*applicationContext.mxl*
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 注册 Service：静态工厂 Bean -->
+    <bean id="myService" class="top.qingrang.ba03.ServiceFactory" factory-method="getSomeService"/>
+</beans>
+```
+#### 容器中 Bean 的作用域
+*applicationContext.mxl*
+```
+<bean id="myService" class="top.qingrang.ba04.SomeServiceImpl" scope="prototype"/>
+```
+
+当通过 Spring 容器创建一个 Bean 实例时，不仅可以完成 Bean 的实例化，还可以通过 scope 属性，为 Bean 指定特定的作用域。 Spring 支持 5 种作用域。
+1. singleton： 单例模式。即在整个 Spring 容器中，使用 singleton 定义的 Bean 将是单例的，只有一个实例。该 Bean 是在容器被创建时即被装配好了。 默认为单例的。
+1. prototype： 原型模式。即每次使用 getBean 方法获取的同一个 `<bean />` 的实例都是一个新的实例。Bean 实例是在代码中使用该 Bean 实例时才进行装配的。
+1. request：对于每次 HTTP 请求，都将会产生一个不同的 Bean 实例。
+1. session：对于每个不同的 HTTP session，都将产生一个不同的 Bean 实例。
+1. global session：每个全局的 HTTP session 对应一个 Bean 实例。典型情况下，仅在使用 portlet 集群时有效，多个 Web 应用共享一个 session。一般应用中， global-session 与 session 是等同的。
+
+对于 scope 的值 request、 session 与 global session， 只有在 Web 应用中使用 Spring 时，该作用域才有效。
+
+
+#### Bean 后处理器
+Bean 后处理器是一种特殊的 Bean，容器中所有的 Bean 在初始化时，均会自动执行该类的两个方法。由于该 Bean 是由其它 Bean 自动调用执行，不是程序员手工调用，故此 Bean 无须 id 属性。
+
+需要做的是，在 Bean 后处理器类方法中，只要对 Bean 类与 Bean 类中的方法进行判断，就可实现对指定的 Bean 的指定方法进行功能扩展与增强。方法返回的 Bean 对象，即是增强过的对象。就是设计模式中的代理模式。
+
+代码中需要自定义 Bean 后处理器类。该类就是实现了接口 BeanPostProcessor 的类。该接口中包含两个方法，分别在目标 Bean 初始化完毕之前与之后执行。它们的返回值为：功能被扩展或增强后的 Bean 对象。
+
+Bean 初始化完毕有一个标志：一个方法将被执行。即当该方法被执行时，表示该 Bean 被初始化完毕。所以 Bean 后处理器中两个方法的执行，是在这个方法之前之后执行。 这个方法在后面将会讲到。
+
+`public Object postProcessBeforeInitialization(Object bean, String beanId) throws BeansException`
+
+该方法会在目标 Bean 初始化完毕之前由容器自动调用。
+
+`public Object postProcessAfterInitialization(Object bean, String beanId) throws BeansException`
+
+该方法会在目标 Bean 初始化完毕之后由容器自动调用。它们的参数是：第一个参数是系统即将初始化的 Bean 实例，第二个参数是该 Bean 实例的 id 属性值。若 Bean 没有 id 就是 name 属性值。
+
+*ISomeService.java - service 接口*
+```
+public interface ISomeService {
+	String doSome();
+	String doOther();
+}
+```
+*SomeServiceImpl.java - service 实现类*
+```
+public class SomeServiceImpl implements ISomeService {
+	@Override
+	public String doSome() {
+		System.out.println("执行doSome()方法");
+		return "doSome() - abc";
+	}
+	
+	@Override
+	public String doOther() {
+		System.out.println("执行doOther()方法");
+		return "doOther() - def";
+	}
+}
+```
+*MyBeanPostProcessor.java - 自定义 Bean 后处理器类*
+```
+public class MyBeanPostProcessor implements BeanPostProcessor {
+
+	// bean：表示当前正在进行初始化的Bean对象
+	// beanName：表示当前正在进行初始化的Bean对象的id
+	@Override
+	public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
+		System.out.println("执行 ---- before() ---方法");
+		return bean;
+	}
+
+	@Override
+	public Object postProcessAfterInitialization(final Object bean, String beanName) throws BeansException {
+		System.out.println("执行 ---- after() ---方法");
+		//判断 SomeServiceImpl 对象
+		if ("myService".equals(beanName)) {
+			Object obj = Proxy.newProxyInstance(bean.getClass().getClassLoader(),
+					bean.getClass().getInterfaces(),
+					new InvocationHandler() {
+						@Override
+						public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+							Object invoke = method.invoke(bean, args);
+							//判断具体方法
+							if ("doSome".equals(method.getName())) {
+								return ((String) invoke).toUpperCase();
+							}
+							return invoke;
+						}
+					});
+			return obj;
+		}
+		return bean;
+	}
+}
+```
+*applicationContext.mxl*
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 注册 Service -->
+    <bean id="myService" class="top.qingrang.ba05.SomeServiceImpl"/>
+    <bean id="myService2" class="top.qingrang.ba05.SomeServiceImpl"/>
+
+    <!-- 注册 Bean 后处理器 -->
+    <bean class="top.qingrang.ba05.MyBeanPostProcessor"/>
+
+</beans>
+```
+*Test.java - 测试*
+```
+public void test01() {
+	String resource = "top/qingrang/ba05/applicationContext.xml";
+	ApplicationContext ac = new ClassPathXmlApplicationContext(resource);
+
+	ISomeService service = (ISomeService) ac.getBean("myService");
+	System.out.println(service.doSome());
+	System.out.println(service.doOther());
+
+	System.out.println("======================");
+
+	ISomeService service2 = (ISomeService) ac.getBean("myService2");
+	System.out.println(service2.doSome());
+	System.out.println(service2.doOther());
+}
+```
+
+*输出结果*
+```
+执行 ---- before() ---方法
+执行 ---- after() ---方法
+执行 ---- before() ---方法
+执行 ---- after() ---方法
+执行doSome()方法
+DOSOME() - ABC
+执行doOther()方法
+doOther() - def
+======================
+执行doSome()方法
+doSome() - abc
+执行doOther()方法
+doOther() - def
+```
+
+
+#### Bean 的生命周期
+*ISomeService.java - service 接口*
+```
+public interface ISomeService {
+	void doSome();
+}
+```
+*SomeServiceImpl.java - service 实现类*
+```
+public class SomeServiceImpl implements ISomeService, BeanNameAware, BeanFactoryAware, InitializingBean, DisposableBean {
+	private String adao;
+	private String bdao;
+
+	public void setAdao(String adao) {
+		this.adao = adao;
+		System.out.println("Step2：执行 setter");
+	}
+
+	public void setBdao(String bdao) {
+		this.bdao = bdao;
+		System.out.println("Step2：执行 setter");
+	}
+
+	public SomeServiceImpl() {
+		System.out.println("Step1：执行无参构造器");
+	}
+
+	@Override
+	public void doSome() {
+		System.out.println("Step9：执行 doSome() 方法");
+	}
+
+	public void setUp() {
+		System.out.println("Step7：初始化完毕之后");
+	}
+
+	public void tearDown() {
+		System.out.println("Step11：销毁之前");
+	}
+
+	@Override
+	public void setBeanName(String name) {
+		System.out.println("Step3：获取到 bean 的 id = " + name);
+	}
+
+	@Override
+	public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
+		System.out.println("Step4：获取到 BeanFactory 容器");
+	}
+
+	@Override
+	public void afterPropertiesSet() throws Exception {
+		System.out.println("Step6：Bean 初始化完毕了");
+	}
+
+	@Override
+	public void destroy() throws Exception {
+		System.out.println("Step10：实现接口的销毁之前");
+	}
+}
+```
+*MyBeanPostProcessor.java - Bean 后处理器*
+```
+public class MyBeanPostProcessor implements BeanPostProcessor {
+	@Override
+	public Object postProcessBeforeInitialization(Object bean, String beanName)
+			throws BeansException {
+		System.out.println("Step5：MyBeanPostProcessor - 执行 before() 方法");
+		return bean;
+	}
+
+	@Override
+	public Object postProcessAfterInitialization(final Object bean, String beanName)
+			throws BeansException {
+		System.out.println("Step8：MyBeanPostProcessor - 执行 after() 方法");
+		return bean;
+	}
+}
+```
+*applicationContext.mxl*
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 注册Service -->
+    <bean id="myService" class="top.qingrang.ba07.SomeServiceImpl"
+    		init-method="setUp" destroy-method="tearDown">
+    	<property name="adao" value="aaa"/>
+    	<property name="bdao" value="bbb"/>
+   	</bean>
+
+   	<bean class="top.qingrang.ba07.MyBeanPostProcessor"/>
+</beans>
+```
+*Test.java - 测试*
+```
+public void test01() {
+	// 创建容器对象，加载Spring配置文件
+	String resource = "top/qingrang/ba07/applicationContext.xml";
+	ApplicationContext ac = new ClassPathXmlApplicationContext(resource);
+	ISomeService service = (ISomeService) ac.getBean("myService");
+	service.doSome();
+	// 对于销毁方法的执行，有两个条件：
+	// 1)当前的Bean需要是singleton的
+	// 2)要手工关闭容器
+	((ClassPathXmlApplicationContext)ac).close();
+}
+```
+
+*输出信息*
+```
+Step1：执行无参构造器
+Step2：执行 setter
+Step2：执行 setter
+Step3：获取到 bean 的 id = myService
+Step4：获取到 BeanFactory 容器
+Step5：MyBeanPostProcessor - 执行 before() 方法
+Step6：Bean 初始化完毕了
+Step7：初始化完毕之后
+Step8：MyBeanPostProcessor - 执行 after() 方法
+Step9：执行 doSome() 方法
+Step10：实现接口的销毁之前
+Step11：销毁之前
+```
+### 基于 XML 的 DI
+#### 注入分类
+##### 设值注入
+和 `setter` 方法有关系。
+
+*School.java*
+```
+public class School {
+	private String name;
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	@Override
+	public String toString() {
+		return "School [name=" + name + "]";
+	}
+}
+```
+
+*Student.java*
+```
+public class Student {
+	private String name;
+	private int age;
+	private School school;   // 对象属性，域属性
+	
+	public void setName(String name) {
+		System.out.println("执行setName()");
+		this.name = name;
+	}
+	public void setAge(int age) {
+		System.out.println("执行setAge()");
+		this.age = age;
+	}
+	public void setSchool(School school) {
+		this.school = school;
+	}
+
+	@Override
+	public String toString() {
+		return "Student [name=" + name + ", age=" + age + ", school=" + school
+				+ "]";
+	}
+}
+```
+
+*applicationContext.mxl*
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 注册 Student -->
+    <bean id="myStudent" class="top.qingrang.di01.Student">
+    	<property name="name" value="张三"/>
+    	<property name="age" value="23"/>
+        <!-- 对于对象的注入要用 ref -->
+    	<property name="school" ref="mySchool"/>
+    </bean>
+
+    <!-- 注册 School -->
+    <bean id="mySchool" class="top.qingrang.di01.School">
+    	<property name="name" value="清华大学"/>
+    </bean>
+
+</beans>
+```
+
+*Test.java - 测试*
+```
+public void test01() {
+	// 创建容器对象，加载Spring配置文件
+	String resource = "top/qingrang/di01/applicationContext.xml";
+	ApplicationContext ac = new ClassPathXmlApplicationContext(resource);
+	Student student = (Student) ac.getBean("myStudent");
+	System.out.println(student);
+}
+```
+
+*输出信息*
+```
+执行setName()
+执行setAge()
+Student [name=张三, age=23, school=School [name=清华大学]]
+```
+##### 构造注入
+和 `setter` 方法没有关系，和构造方法有关系。
+
+
+',
+  'groups' => 'Java',
+  'showsel' => '1',
+  'showse2' => '1',
+  'id' => '247',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->updateNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000590s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001431s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 247 LIMIT 1 [ RunTime:0.000573s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `note` WHERE  `id` = 247 LIMIT 1 [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001009s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `groups` WHERE  `groups` = 'Java' LIMIT 1 [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000460s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `id`=247,`p_id`=2,`title`='Spring\r',`content`='# Spring\r\n[TOC]\r\n\r\nSpring 是一个基于 **IOC** 和 **AOP** 的结构 J2EE 系统的框架。\r\n## IOC（控制反转）\r\n### 概念\r\n控制反转（IOC， Inversion of Control），是一个概念，是一种思想。指将传统上由程序代码直接操控的对象调用权交给容器，通过容器来实现对象的装配和管理。控制反转就是对对象控制权的转移，从程序代码本身反转到了外部容器。简单说就是创建对象由以前的程序员自己 new 构造方法来调用，变成了交由 Spring 创建对象。\r\n\r\nIoC 是一个概念，是一种思想，其实现方式多种多样。当前比较流行的实现方式有两种：依赖注入和依赖查找。依赖注入方式应用更为广泛。\r\n- 依赖查找： Dependency Lookup， DL，容器提供回调接口和上下文环境给组件，程序代\r\n码则需要提供具体的查找方式。比较典型的是依赖于 JNDI 系统的查找。\r\n- 依赖注入： Dependency Injection， DI，程序代码不做定位查询，这些工作由容器自行完成。简单地说就是拿到的对象的属性，已经被注入好相关值了，直接使用即可。\r\n\r\n依赖注入 DI 是指程序运行过程中，若需要调用另一个对象协助时，无须在代码中创建被调用者，而是依赖于外部容器，由外部容器创建后传递给程序。Spring 的依赖注入对调用者与被调用者几乎没有任何要求，完全支持 POJO 之间依赖关系的管理。\r\n\r\n依赖注入是目前最优秀的解耦方式。依赖注入让 Spring 的 Bean 之间以配置文件的方式组织在一起，而不是以硬编码的方式耦合在一起的。\r\n\r\n>以获取对象的方式来进行比较\r\n\r\n- 传统的方式\r\n\r\n通过 new 关键字主动创建一个对象\r\n\r\n相当于你自己去菜市场 new 了一只鸡，不过是生鸡，要自己拔毛，去内脏，再上花椒，酱油，烤制，经过各种工序之后，才可以食用。\r\n\r\n- IOC方式\r\n\r\n对象的生命周期由 Spring 来管理，直接从 Spring 那里去获取一个对象。IOC 是反转控制 (Inversion Of Control)的缩写，就像控制权从本来在自己手里，现在交给了 Spring。\r\n\r\n相当于去馆子(Spring)点了一只鸡，交到你手上的时候，已经五味俱全，你就只管吃就行了。\r\n\r\n\r\n\r\n### 第一个 Spring 程序\r\n#### 传统的面向接口编程\r\n经过以下例子可以看出，若接口（Service 层）变了，Test(View 层) 也的改，耦合度很高。\r\n\r\n*ISomeService.java - 接口*\r\n```\r\npublic interface ISomeService {\r\n	void doSome();\r\n}\r\n```\r\n*SomeServiceImpl.java - 实现类*\r\n```\r\npublic class SomeServiceImpl implements ISomeService {\r\n	@Override\r\n	public void doSome() {\r\n		System.out.println(\"执行doSome()方法\");\r\n	}\r\n}\r\n```\r\n*Test.java - 测试*\r\n```\r\n@Test\r\npublic void test01() {\r\n	ISomeService service = new SomeServiceImpl();\r\n	service.doSome();\r\n}\r\n```\r\n#### Spring 实现\r\n*applicationContext.mxl - Spring 的配置文件*\r\n```\r\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<beans xmlns=\"http://www.springframework.org/schema/beans\"\r\n    xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n    xsi:schemaLocation=\"\r\n        http://www.springframework.org/schema/beans \r\n        http://www.springframework.org/schema/beans/spring-beans.xsd\">\r\n\r\n    <!-- 注册 Service，Spring 底层实际是做了 SomeServiceImpl myService = new SomeServiceImpl(); -->\r\n    <bean id=\"myService\" class=\"top.qingrang.service.SomeServiceImpl\"/>\r\n\r\n</beans>\r\n```\r\n*Test.java - 测试*\r\n```\r\n@Test\r\npublic void test02() {\r\n	// 创建容器对象，加载 Spring 配置文件，会从类路径下查找配置文件\r\n	ApplicationContext ac = new ClassPathXmlApplicationContext(\"applicationContext.xml\");\r\n	ISomeService someService = (ISomeService)ac.getBean(\"myService\");\r\n	someService.doSome();\r\n}\r\n```\r\n\r\n从以上代码中已经看不到 `SomeServiceImpl` 这个实现类了，就做到了解耦。\r\n\r\n>FileSystemXmlApplicationContext\r\n\r\n```\r\n// 创建容器对象，加载 Spring 配置文件，会从项目的根下查找配置文件\r\nApplicationContext ac = new FileSystemXmlApplicationContext(\"applicationContext.xml\");\r\n\r\n// 创建容器对象，加载 Spring 配置文件，会从当前文件系统的 D 盘根目录下查找配置文件\r\nApplicationContext ac = new FileSystemXmlApplicationContext(\"d:/applicationContext.xml\");\r\n```\r\n\r\n>BeanFactory 容器\r\n\r\n*Test.java*\r\n```\r\n@Test\r\npublic void test05() {\r\n	// 创建 BeanFactory 容器\r\n	BeanFactory bf = new XmlBeanFactory(new ClassPathResource(\"applicationContext.xml\"));\r\n	ISomeService service = (ISomeService) bf.getBean(\"myService\");\r\n	service.doSome();\r\n}\r\n```\r\n\r\n>ApplicationContext 与 BeanFactory 容器的区别\r\n\r\n这两上容器对于其中 Bean 的创建时机不同：\r\n1. ApplicationContext容器在进行初始化时，会将其中的所有Bean(对象)进行创建\r\n - 缺点：占用系统资源（内存、CPU等）\r\n - 优点：响应速度快\r\n1. BeanFactory容器中的对象，在容器初始化时并不会被创建，而是在真正获取该对象时才被创建\r\n - 缺点：相对来说，响应速度慢\r\n - 优点：不多占用系统资源\r\n\r\n### Bean 的装配\r\n#### 动态工厂 Bean\r\n*ISomeService.java - service 接口*\r\n```\r\npublic interface ISomeService {\r\n	void doSome();\r\n}\r\n```\r\n*SomeServiceImpl.java - service 实现类*\r\n```\r\npublic class SomeServiceImpl implements ISomeService {\r\n	@Override\r\n	public void doSome() {\r\n		System.out.println(\"执行doSome()方法\");\r\n	}\r\n}\r\n```\r\n*ServiceFactory.java - service 工厂*\r\n```\r\npublic class ServiceFactory {\r\n	public ISomeService getSomeService() {\r\n		return new SomeServiceImpl();\r\n	}\r\n}\r\n```\r\n*applicationContext.mxl*\r\n```\r\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<beans xmlns=\"http://www.springframework.org/schema/beans\"\r\n    xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n    xsi:schemaLocation=\"\r\n        http://www.springframework.org/schema/beans \r\n        http://www.springframework.org/schema/beans/spring-beans.xsd\">\r\n\r\n    <!-- 注册动态工厂 -->\r\n    <bean id=\"factory\" class=\"top.qingrang.ba02.ServiceFactory\"/>\r\n\r\n    <!-- 注册 Service：动态工厂 Bean -->\r\n    <bean id=\"myService\" factory-bean=\"factory\" factory-method=\"getSomeService\"/>\r\n</beans>\r\n```\r\n*Test.java - 测试*\r\n```\r\npublic void test02() {\r\n	String resource = \"top/qingrang/ba02/applicationContext.xml\";\r\n	ApplicationContext ac = new ClassPathXmlApplicationContext(resource);\r\n	ISomeService service = (ISomeService) ac.getBean(\"myService\");\r\n	service.doSome();\r\n}\r\n```\r\n#### 静态工厂 Bean\r\n*applicationContext.mxl*\r\n```\r\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<beans xmlns=\"http://www.springframework.org/schema/beans\"\r\n    xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n    xsi:schemaLocation=\"\r\n        http://www.springframework.org/schema/beans \r\n        http://www.springframework.org/schema/beans/spring-beans.xsd\">\r\n\r\n    <!-- 注册 Service：静态工厂 Bean -->\r\n    <bean id=\"myService\" class=\"top.qingrang.ba03.ServiceFactory\" factory-method=\"getSomeService\"/>\r\n</beans>\r\n```\r\n#### 容器中 Bean 的作用域\r\n*applicationContext.mxl*\r\n```\r\n<bean id=\"myService\" class=\"top.qingrang.ba04.SomeServiceImpl\" scope=\"prototype\"/>\r\n```\r\n\r\n当通过 Spring 容器创建一个 Bean 实例时，不仅可以完成 Bean 的实例化，还可以通过 scope 属性，为 Bean 指定特定的作用域。 Spring 支持 5 种作用域。\r\n1. singleton： 单例模式。即在整个 Spring 容器中，使用 singleton 定义的 Bean 将是单例的，只有一个实例。该 Bean 是在容器被创建时即被装配好了。 默认为单例的。\r\n1. prototype： 原型模式。即每次使用 getBean 方法获取的同一个 `<bean />` 的实例都是一个新的实例。Bean 实例是在代码中使用该 Bean 实例时才进行装配的。\r\n1. request：对于每次 HTTP 请求，都将会产生一个不同的 Bean 实例。\r\n1. session：对于每个不同的 HTTP session，都将产生一个不同的 Bean 实例。\r\n1. global session：每个全局的 HTTP session 对应一个 Bean 实例。典型情况下，仅在使用 portlet 集群时有效，多个 Web 应用共享一个 session。一般应用中， global-session 与 session 是等同的。\r\n\r\n对于 scope 的值 request、 session 与 global session， 只有在 Web 应用中使用 Spring 时，该作用域才有效。\r\n\r\n\r\n#### Bean 后处理器\r\nBean 后处理器是一种特殊的 Bean，容器中所有的 Bean 在初始化时，均会自动执行该类的两个方法。由于该 Bean 是由其它 Bean 自动调用执行，不是程序员手工调用，故此 Bean 无须 id 属性。\r\n\r\n需要做的是，在 Bean 后处理器类方法中，只要对 Bean 类与 Bean 类中的方法进行判断，就可实现对指定的 Bean 的指定方法进行功能扩展与增强。方法返回的 Bean 对象，即是增强过的对象。就是设计模式中的代理模式。\r\n\r\n代码中需要自定义 Bean 后处理器类。该类就是实现了接口 BeanPostProcessor 的类。该接口中包含两个方法，分别在目标 Bean 初始化完毕之前与之后执行。它们的返回值为：功能被扩展或增强后的 Bean 对象。\r\n\r\nBean 初始化完毕有一个标志：一个方法将被执行。即当该方法被执行时，表示该 Bean 被初始化完毕。所以 Bean 后处理器中两个方法的执行，是在这个方法之前之后执行。 这个方法在后面将会讲到。\r\n\r\n`public Object postProcessBeforeInitialization(Object bean, String beanId) throws BeansException`\r\n\r\n该方法会在目标 Bean 初始化完毕之前由容器自动调用。\r\n\r\n`public Object postProcessAfterInitialization(Object bean, String beanId) throws BeansException`\r\n\r\n该方法会在目标 Bean 初始化完毕之后由容器自动调用。它们的参数是：第一个参数是系统即将初始化的 Bean 实例，第二个参数是该 Bean 实例的 id 属性值。若 Bean 没有 id 就是 name 属性值。\r\n\r\n*ISomeService.java - service 接口*\r\n```\r\npublic interface ISomeService {\r\n	String doSome();\r\n	String doOther();\r\n}\r\n```\r\n*SomeServiceImpl.java - service 实现类*\r\n```\r\npublic class SomeServiceImpl implements ISomeService {\r\n	@Override\r\n	public String doSome() {\r\n		System.out.println(\"执行doSome()方法\");\r\n		return \"doSome() - abc\";\r\n	}\r\n	\r\n	@Override\r\n	public String doOther() {\r\n		System.out.println(\"执行doOther()方法\");\r\n		return \"doOther() - def\";\r\n	}\r\n}\r\n```\r\n*MyBeanPostProcessor.java - 自定义 Bean 后处理器类*\r\n```\r\npublic class MyBeanPostProcessor implements BeanPostProcessor {\r\n\r\n	// bean：表示当前正在进行初始化的Bean对象\r\n	// beanName：表示当前正在进行初始化的Bean对象的id\r\n	@Override\r\n	public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {\r\n		System.out.println(\"执行 ---- before() ---方法\");\r\n		return bean;\r\n	}\r\n\r\n	@Override\r\n	public Object postProcessAfterInitialization(final Object bean, String beanName) throws BeansException {\r\n		System.out.println(\"执行 ---- after() ---方法\");\r\n		//判断 SomeServiceImpl 对象\r\n		if (\"myService\".equals(beanName)) {\r\n			Object obj = Proxy.newProxyInstance(bean.getClass().getClassLoader(),\r\n					bean.getClass().getInterfaces(),\r\n					new InvocationHandler() {\r\n						@Override\r\n						public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {\r\n							Object invoke = method.invoke(bean, args);\r\n							//判断具体方法\r\n							if (\"doSome\".equals(method.getName())) {\r\n								return ((String) invoke).toUpperCase();\r\n							}\r\n							return invoke;\r\n						}\r\n					});\r\n			return obj;\r\n		}\r\n		return bean;\r\n	}\r\n}\r\n```\r\n*applicationContext.mxl*\r\n```\r\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<beans xmlns=\"http://www.springframework.org/schema/beans\"\r\n    xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n    xsi:schemaLocation=\"\r\n        http://www.springframework.org/schema/beans \r\n        http://www.springframework.org/schema/beans/spring-beans.xsd\">\r\n\r\n    <!-- 注册 Service -->\r\n    <bean id=\"myService\" class=\"top.qingrang.ba05.SomeServiceImpl\"/>\r\n    <bean id=\"myService2\" class=\"top.qingrang.ba05.SomeServiceImpl\"/>\r\n\r\n    <!-- 注册 Bean 后处理器 -->\r\n    <bean class=\"top.qingrang.ba05.MyBeanPostProcessor\"/>\r\n\r\n</beans>\r\n```\r\n*Test.java - 测试*\r\n```\r\npublic void test01() {\r\n	String resource = \"top/qingrang/ba05/applicationContext.xml\";\r\n	ApplicationContext ac = new ClassPathXmlApplicationContext(resource);\r\n\r\n	ISomeService service = (ISomeService) ac.getBean(\"myService\");\r\n	System.out.println(service.doSome());\r\n	System.out.println(service.doOther());\r\n\r\n	System.out.println(\"======================\");\r\n\r\n	ISomeService service2 = (ISomeService) ac.getBean(\"myService2\");\r\n	System.out.println(service2.doSome());\r\n	System.out.println(service2.doOther());\r\n}\r\n```\r\n\r\n*输出结果*\r\n```\r\n执行 ---- before() ---方法\r\n执行 ---- after() ---方法\r\n执行 ---- before() ---方法\r\n执行 ---- after() ---方法\r\n执行doSome()方法\r\nDOSOME() - ABC\r\n执行doOther()方法\r\ndoOther() - def\r\n======================\r\n执行doSome()方法\r\ndoSome() - abc\r\n执行doOther()方法\r\ndoOther() - def\r\n```\r\n\r\n\r\n#### Bean 的生命周期\r\n*ISomeService.java - service 接口*\r\n```\r\npublic interface ISomeService {\r\n	void doSome();\r\n}\r\n```\r\n*SomeServiceImpl.java - service 实现类*\r\n```\r\npublic class SomeServiceImpl implements ISomeService, BeanNameAware, BeanFactoryAware, InitializingBean, DisposableBean {\r\n	private String adao;\r\n	private String bdao;\r\n\r\n	public void setAdao(String adao) {\r\n		this.adao = adao;\r\n		System.out.println(\"Step2：执行 setter\");\r\n	}\r\n\r\n	public void setBdao(String bdao) {\r\n		this.bdao = bdao;\r\n		System.out.println(\"Step2：执行 setter\");\r\n	}\r\n\r\n	public SomeServiceImpl() {\r\n		System.out.println(\"Step1：执行无参构造器\");\r\n	}\r\n\r\n	@Override\r\n	public void doSome() {\r\n		System.out.println(\"Step9：执行 doSome() 方法\");\r\n	}\r\n\r\n	public void setUp() {\r\n		System.out.println(\"Step7：初始化完毕之后\");\r\n	}\r\n\r\n	public void tearDown() {\r\n		System.out.println(\"Step11：销毁之前\");\r\n	}\r\n\r\n	@Override\r\n	public void setBeanName(String name) {\r\n		System.out.println(\"Step3：获取到 bean 的 id = \" + name);\r\n	}\r\n\r\n	@Override\r\n	public void setBeanFactory(BeanFactory beanFactory) throws BeansException {\r\n		System.out.println(\"Step4：获取到 BeanFactory 容器\");\r\n	}\r\n\r\n	@Override\r\n	public void afterPropertiesSet() throws Exception {\r\n		System.out.println(\"Step6：Bean 初始化完毕了\");\r\n	}\r\n\r\n	@Override\r\n	public void destroy() throws Exception {\r\n		System.out.println(\"Step10：实现接口的销毁之前\");\r\n	}\r\n}\r\n```\r\n*MyBeanPostProcessor.java - Bean 后处理器*\r\n```\r\npublic class MyBeanPostProcessor implements BeanPostProcessor {\r\n	@Override\r\n	public Object postProcessBeforeInitialization(Object bean, String beanName)\r\n			throws BeansException {\r\n		System.out.println(\"Step5：MyBeanPostProcessor - 执行 before() 方法\");\r\n		return bean;\r\n	}\r\n\r\n	@Override\r\n	public Object postProcessAfterInitialization(final Object bean, String beanName)\r\n			throws BeansException {\r\n		System.out.println(\"Step8：MyBeanPostProcessor - 执行 after() 方法\");\r\n		return bean;\r\n	}\r\n}\r\n```\r\n*applicationContext.mxl*\r\n```\r\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<beans xmlns=\"http://www.springframework.org/schema/beans\"\r\n    xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n    xsi:schemaLocation=\"\r\n        http://www.springframework.org/schema/beans \r\n        http://www.springframework.org/schema/beans/spring-beans.xsd\">\r\n\r\n    <!-- 注册Service -->\r\n    <bean id=\"myService\" class=\"top.qingrang.ba07.SomeServiceImpl\"\r\n    		init-method=\"setUp\" destroy-method=\"tearDown\">\r\n    	<property name=\"adao\" value=\"aaa\"/>\r\n    	<property name=\"bdao\" value=\"bbb\"/>\r\n   	</bean>\r\n\r\n   	<bean class=\"top.qingrang.ba07.MyBeanPostProcessor\"/>\r\n</beans>\r\n```\r\n*Test.java - 测试*\r\n```\r\npublic void test01() {\r\n	// 创建容器对象，加载Spring配置文件\r\n	String resource = \"top/qingrang/ba07/applicationContext.xml\";\r\n	ApplicationContext ac = new ClassPathXmlApplicationContext(resource);\r\n	ISomeService service = (ISomeService) ac.getBean(\"myService\");\r\n	service.doSome();\r\n	// 对于销毁方法的执行，有两个条件：\r\n	// 1)当前的Bean需要是singleton的\r\n	// 2)要手工关闭容器\r\n	((ClassPathXmlApplicationContext)ac).close();\r\n}\r\n```\r\n\r\n*输出信息*\r\n```\r\nStep1：执行无参构造器\r\nStep2：执行 setter\r\nStep2：执行 setter\r\nStep3：获取到 bean 的 id = myService\r\nStep4：获取到 BeanFactory 容器\r\nStep5：MyBeanPostProcessor - 执行 before() 方法\r\nStep6：Bean 初始化完毕了\r\nStep7：初始化完毕之后\r\nStep8：MyBeanPostProcessor - 执行 after() 方法\r\nStep9：执行 doSome() 方法\r\nStep10：实现接口的销毁之前\r\nStep11：销毁之前\r\n```\r\n### 基于 XML 的 DI\r\n#### 注入分类\r\n##### 设值注入\r\n和 `setter` 方法有关系。\r\n\r\n*School.java*\r\n```\r\npublic class School {\r\n	private String name;\r\n	public void setName(String name) {\r\n		this.name = name;\r\n	}\r\n\r\n	@Override\r\n	public String toString() {\r\n		return \"School [name=\" + name + \"]\";\r\n	}\r\n}\r\n```\r\n\r\n*Student.java*\r\n```\r\npublic class Student {\r\n	private String name;\r\n	private int age;\r\n	private School school;   // 对象属性，域属性\r\n	\r\n	public void setName(String name) {\r\n		System.out.println(\"执行setName()\");\r\n		this.name = name;\r\n	}\r\n	public void setAge(int age) {\r\n		System.out.println(\"执行setAge()\");\r\n		this.age = age;\r\n	}\r\n	public void setSchool(School school) {\r\n		this.school = school;\r\n	}\r\n\r\n	@Override\r\n	public String toString() {\r\n		return \"Student [name=\" + name + \", age=\" + age + \", school=\" + school\r\n				+ \"]\";\r\n	}\r\n}\r\n```\r\n\r\n*applicationContext.mxl*\r\n```\r\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<beans xmlns=\"http://www.springframework.org/schema/beans\"\r\n    xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n    xsi:schemaLocation=\"\r\n        http://www.springframework.org/schema/beans \r\n        http://www.springframework.org/schema/beans/spring-beans.xsd\">\r\n\r\n    <!-- 注册 Student -->\r\n    <bean id=\"myStudent\" class=\"top.qingrang.di01.Student\">\r\n    	<property name=\"name\" value=\"张三\"/>\r\n    	<property name=\"age\" value=\"23\"/>\r\n        <!-- 对于对象的注入要用 ref -->\r\n    	<property name=\"school\" ref=\"mySchool\"/>\r\n    </bean>\r\n\r\n    <!-- 注册 School -->\r\n    <bean id=\"mySchool\" class=\"top.qingrang.di01.School\">\r\n    	<property name=\"name\" value=\"清华大学\"/>\r\n    </bean>\r\n\r\n</beans>\r\n```\r\n\r\n*Test.java - 测试*\r\n```\r\npublic void test01() {\r\n	// 创建容器对象，加载Spring配置文件\r\n	String resource = \"top/qingrang/di01/applicationContext.xml\";\r\n	ApplicationContext ac = new ClassPathXmlApplicationContext(resource);\r\n	Student student = (Student) ac.getBean(\"myStudent\");\r\n	System.out.println(student);\r\n}\r\n```\r\n\r\n*输出信息*\r\n```\r\n执行setName()\r\n执行setAge()\r\nStudent [name=张三, age=23, school=School [name=清华大学]]\r\n```\r\n##### 构造注入\r\n和 `setter` 方法没有关系，和构造方法有关系。\r\n\r\n\r\n',`groups`='Java',`is_show`=1,`publish`=1,`summary`=''  WHERE  `id` = 247 [ RunTime:0.001225s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Java' LIMIT 1 [ RunTime:0.001308s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=19  WHERE  `groups` = 'Java' [ RunTime:0.000656s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Java' LIMIT 1 [ RunTime:0.001168s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=19  WHERE  `groups` = 'Java' [ RunTime:0.000432s ]
+---------------------------------------------------------------
+[ 2018-11-14T21:44:04+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/247.html
+[ info ] qingrang.top/daily/admin/note/shownote/id/247.html [运行时间：0.064965s][吞吐率：15.39req/s] [内存消耗：2,014.49kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/247.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1541082864,1541122974,1541171416,1542098176; PHPSESSID=uf0vl2dk107t7poh4oul97f9e3',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '247',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000554s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001360s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 247 LIMIT 1 [ RunTime:0.000790s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000887s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000324s ]
+---------------------------------------------------------------
+[ 2018-11-14T22:35:27+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ info ] 74.120.168.12/daily/ [运行时间：0.086411s][吞吐率：11.57req/s] [内存消耗：2,177.62kb] [文件加载：58]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '74.120.168.12',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Show->notelst[ /var/www/html/daily/application/admin/controller/Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/show/notelst.html [ array (
+  0 => 'list_new',
+  1 => 'groups',
+  2 => 'groups0',
+  3 => 'groups1',
+  4 => 'groups2',
+  5 => 'groupname',
+  6 => 'content',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001082s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.002216s ]
+[ sql ] [ SQL ] SELECT `content` FROM `note` WHERE  (  id=32 ) LIMIT 1 [ RunTime:0.000781s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` <> 'Personal'  AND `publish` = 1 LIMIT 1 [ RunTime:0.002506s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal'  AND `publish` = 1 ORDER BY id desc LIMIT 0,6 [ RunTime:0.000937s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001579s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `groups` <> 'Personal' [ RunTime:0.000576s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `groups` <> 'Personal'  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000701s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1  AND `groups` <> 'Personal' [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000476s ]
+---------------------------------------------------------------
+[ 2018-11-14T23:44:27+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ info ] qingrang.top/daily/ [运行时间：0.074274s][吞吐率：13.46req/s] [内存消耗：2,177.96kb] [文件加载：58]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.1.0; OE106) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Show->notelst[ /var/www/html/daily/application/admin/controller/Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/show/notelst.html [ array (
+  0 => 'list_new',
+  1 => 'groups',
+  2 => 'groups0',
+  3 => 'groups1',
+  4 => 'groups2',
+  5 => 'groupname',
+  6 => 'content',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000800s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001775s ]
+[ sql ] [ SQL ] SELECT `content` FROM `note` WHERE  (  id=32 ) LIMIT 1 [ RunTime:0.000816s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` <> 'Personal'  AND `publish` = 1 LIMIT 1 [ RunTime:0.001347s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal'  AND `publish` = 1 ORDER BY id desc LIMIT 0,6 [ RunTime:0.000729s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001235s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `groups` <> 'Personal' [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `groups` <> 'Personal'  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000440s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1  AND `groups` <> 'Personal' [ RunTime:0.000328s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000345s ]
+---------------------------------------------------------------
+[ 2018-11-14T23:45:06+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ info ] qingrang.top/daily/ [运行时间：0.081106s][吞吐率：12.33req/s] [内存消耗：2,178.34kb] [文件加载：58]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.1.0; OE106) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1542210648; Hm_lpvt_1769181352e9adc950166aada465644e=1542210648',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Show->notelst[ /var/www/html/daily/application/admin/controller/Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/show/notelst.html [ array (
+  0 => 'list_new',
+  1 => 'groups',
+  2 => 'groups0',
+  3 => 'groups1',
+  4 => 'groups2',
+  5 => 'groupname',
+  6 => 'content',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000678s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001591s ]
+[ sql ] [ SQL ] SELECT `content` FROM `note` WHERE  (  id=32 ) LIMIT 1 [ RunTime:0.000564s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` <> 'Personal'  AND `publish` = 1 LIMIT 1 [ RunTime:0.001165s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal'  AND `publish` = 1 ORDER BY id desc LIMIT 0,6 [ RunTime:0.000731s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001019s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `groups` <> 'Personal' [ RunTime:0.000400s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `groups` <> 'Personal'  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000479s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1  AND `groups` <> 'Personal' [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000349s ]
+---------------------------------------------------------------
+[ 2018-11-14T23:45:20+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ info ] qingrang.top/daily/ [运行时间：0.084362s][吞吐率：11.85req/s] [内存消耗：2,178.27kb] [文件加载：58]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.1.0; OE106) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.80 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1542210648; Hm_lpvt_1769181352e9adc950166aada465644e=1542210682',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Show->notelst[ /var/www/html/daily/application/admin/controller/Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/show/notelst.html [ array (
+  0 => 'list_new',
+  1 => 'groups',
+  2 => 'groups0',
+  3 => 'groups1',
+  4 => 'groups2',
+  5 => 'groupname',
+  6 => 'content',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000779s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001711s ]
+[ sql ] [ SQL ] SELECT `content` FROM `note` WHERE  (  id=32 ) LIMIT 1 [ RunTime:0.000755s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` <> 'Personal'  AND `publish` = 1 LIMIT 1 [ RunTime:0.001304s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal'  AND `publish` = 1 ORDER BY id desc LIMIT 0,6 [ RunTime:0.001087s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001235s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `groups` <> 'Personal' [ RunTime:0.000510s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `groups` <> 'Personal'  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000510s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1  AND `groups` <> 'Personal' [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000442s ]

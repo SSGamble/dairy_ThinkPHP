@@ -1,0 +1,3631 @@
+---------------------------------------------------------------
+[ 2018-10-25T01:14:48+08:00 ] 74.120.168.12 180.149.130.149 GET /daily/
+[ info ] qingrang.top/daily/ [运行时间：0.076364s][吞吐率：13.10req/s] [内存消耗：2,118.32kb] [文件加载：58]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-US,*',
+  'host' => 'qingrang.top',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Show->notelst[ /var/www/html/daily/application/admin/controller/Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/show/notelst.html [ array (
+  0 => 'list_new',
+  1 => 'groups',
+  2 => 'groups0',
+  3 => 'groups1',
+  4 => 'groups2',
+  5 => 'groupname',
+  6 => 'content',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001504s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.002570s ]
+[ sql ] [ SQL ] SELECT `content` FROM `note` WHERE  (  id=32 ) LIMIT 1 [ RunTime:0.000883s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` <> 'Personal'  AND `publish` = 1 LIMIT 1 [ RunTime:0.001969s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal'  AND `publish` = 1 ORDER BY id desc LIMIT 0,6 [ RunTime:0.000600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001116s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `groups` <> 'Personal' [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `groups` <> 'Personal'  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000545s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1  AND `groups` <> 'Personal' [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000414s ]
+---------------------------------------------------------------
+[ 2018-10-25T13:41:25+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note
+[ info ] qingrang.top/daily/admin/note [运行时间：0.043939s][吞吐率：22.76req/s] [内存消耗：1,428.40kb] [文件加载：49]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308,1540133692,1540187497,1540387796',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /var/www/html/daily/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-25T13:41:28+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/login/index.html
+[ info ] qingrang.top/daily/admin/login/index.html [运行时间：0.041011s][吞吐率：24.38req/s] [内存消耗：1,340.77kb] [文件加载：47]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308,1540133692,1540187497,1540387796; PHPSESSID=fj3tsfgumtponb2nmp89vcu6d2',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /var/www/html/daily/application/admin/controller/Login.php ]
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-25T13:41:35+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/login/index.html
+[ info ] qingrang.top/daily/admin/login/index.html [运行时间：0.060625s][吞吐率：16.49req/s] [内存消耗：1,922.37kb] [文件加载：54]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '8',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308,1540133692,1540187497,1540387796; PHPSESSID=fj3tsfgumtponb2nmp89vcu6d2',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'pwd' => 'shao',
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /var/www/html/daily/application/admin/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001552s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.002803s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000567s ]
+---------------------------------------------------------------
+[ 2018-10-25T13:41:35+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note
+[ info ] qingrang.top/daily/admin/note [运行时间：0.080211s][吞吐率：12.47req/s] [内存消耗：2,249.34kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308,1540133692,1540187497,1540387796; PHPSESSID=fj3tsfgumtponb2nmp89vcu6d2',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/notelst.html [ array (
+  0 => 'stickList',
+  1 => 'hide',
+  2 => 'list',
+  3 => 'list_new',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+  10 => 'default_num',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000627s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001527s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.003817s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal' ORDER BY id desc LIMIT 5 [ RunTime:0.000643s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001218s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000563s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000941s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000515s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.001348s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000271s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001173s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000763s ]
+---------------------------------------------------------------
+[ 2018-10-25T13:41:39+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/newedit.html
+[ info ] qingrang.top/daily/admin/note/newedit.html [运行时间：0.083017s][吞吐率：12.05req/s] [内存消耗：2,020.94kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'newedit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308,1540133692,1540187497,1540387796; PHPSESSID=fj3tsfgumtponb2nmp89vcu6d2',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->newEdit[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/newedit.html [ array (
+  0 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000832s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.002129s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000522s ]
+---------------------------------------------------------------
+[ 2018-10-25T13:42:43+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/addnote.html
+[ info ] qingrang.top/daily/admin/note/addnote.html [运行时间：0.071768s][吞吐率：13.93req/s] [内存消耗：1,977.97kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'addnote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '1027',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/newedit.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308,1540133692,1540187497,1540387796; PHPSESSID=fj3tsfgumtponb2nmp89vcu6d2',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'groups' => 'Basics',
+  'content' => '# 深入理解计算机系统 - 计算机系统漫游
+## 信息 = 位 + 上下文',
+  'test-editormd-html-code' => '<h1 id="h1--"><a name="深入理解计算机系统 - 计算机系统漫游" class="reference-link"></a><span class="header-link octicon octicon-link"></span>深入理解计算机系统 - 计算机系统漫游</h1><h2 id="h2--"><a name="信息 = 位 + 上下文" class="reference-link"></a><span class="header-link octicon octicon-link"></span>信息 = 位 + 上下文</h2>',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->addNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000808s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001479s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `groups` WHERE  `groups` = 'Basics' LIMIT 1 [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001028s ]
+[ sql ] [ SQL ] INSERT INTO `note` (`title` , `content` , `groups` , `p_id` , `date`) VALUES ('深入理解计算机系统 - 计算机系统漫游\r' , '# 深入理解计算机系统 - 计算机系统漫游\r\n## 信息 = 位 + 上下文' , 'Basics' , 2 , '2018-10-25') [ RunTime:0.000543s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Basics' LIMIT 1 [ RunTime:0.001305s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=18  WHERE  `groups` = 'Basics' [ RunTime:0.000461s ]
+---------------------------------------------------------------
+[ 2018-10-25T13:42:44+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note
+[ info ] qingrang.top/daily/admin/note [运行时间：0.128781s][吞吐率：7.77req/s] [内存消耗：2,248.79kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/newedit.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308,1540133692,1540187497,1540387796; PHPSESSID=fj3tsfgumtponb2nmp89vcu6d2',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/notelst.html [ array (
+  0 => 'stickList',
+  1 => 'hide',
+  2 => 'list',
+  3 => 'list_new',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+  10 => 'default_num',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000865s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.002085s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.003720s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal' ORDER BY id desc LIMIT 5 [ RunTime:0.000870s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001665s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000821s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001624s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000736s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000576s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.002067s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.002149s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.001077s ]
+---------------------------------------------------------------
+[ 2018-10-25T13:42:48+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/editnote/id/227.html
+[ info ] qingrang.top/daily/admin/note/editnote/id/227.html [运行时间：0.065121s][吞吐率：15.36req/s] [内存消耗：2,028.08kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'editnote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308,1540133692,1540187497,1540387796; PHPSESSID=fj3tsfgumtponb2nmp89vcu6d2',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '227',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->editNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/editnote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000555s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001604s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 227 LIMIT 1 [ RunTime:0.000462s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001043s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000346s ]
+---------------------------------------------------------------
+[ 2018-10-25T13:42:57+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/updatenote/id/227.html
+[ info ] qingrang.top/daily/admin/note/updatenote/id/227.html [运行时间：0.069944s][吞吐率：14.30req/s] [内存消耗：2,047.88kb] [文件加载：58]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'updatenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '279',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/227.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308,1540133692,1540187497,1540387796; PHPSESSID=fj3tsfgumtponb2nmp89vcu6d2',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'summary' => '',
+  'content' => '# 深入理解计算机系统 - 计算机系统漫游
+## 信息 = 位 + 上下文',
+  'groups' => 'Basics',
+  'showsel' => '1',
+  'showse2' => '0',
+  'id' => '227',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->updateNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000630s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001337s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 227 LIMIT 1 [ RunTime:0.000469s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `note` WHERE  `id` = 227 LIMIT 1 [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000840s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `groups` WHERE  `groups` = 'Basics' LIMIT 1 [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000275s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `id`=227,`p_id`=2,`title`='深入理解计算机系统 - 计算机系统漫游\r',`content`='# 深入理解计算机系统 - 计算机系统漫游\r\n## 信息 = 位 + 上下文',`groups`='Basics',`is_show`=1,`publish`=0,`summary`=''  WHERE  `id` = 227 [ RunTime:0.000621s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Basics' LIMIT 1 [ RunTime:0.001462s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=18  WHERE  `groups` = 'Basics' [ RunTime:0.000374s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Basics' LIMIT 1 [ RunTime:0.001182s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=18  WHERE  `groups` = 'Basics' [ RunTime:0.000395s ]
+---------------------------------------------------------------
+[ 2018-10-25T13:42:57+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/227.html
+[ info ] qingrang.top/daily/admin/note/shownote/id/227.html [运行时间：0.051946s][吞吐率：19.25req/s] [内存消耗：1,979.91kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/227.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308,1540133692,1540187497,1540387796; PHPSESSID=fj3tsfgumtponb2nmp89vcu6d2',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '227',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000530s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001303s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 227 LIMIT 1 [ RunTime:0.000494s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000949s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000277s ]
+---------------------------------------------------------------
+[ 2018-10-25T13:43:05+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/editnote/id/227.html
+[ info ] qingrang.top/daily/admin/note/editnote/id/227.html [运行时间：0.061381s][吞吐率：16.29req/s] [内存消耗：2,027.59kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'editnote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308,1540133692,1540187497,1540387796; PHPSESSID=fj3tsfgumtponb2nmp89vcu6d2',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '227',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->editNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/editnote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000564s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001449s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 227 LIMIT 1 [ RunTime:0.000559s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001066s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000274s ]
+---------------------------------------------------------------
+[ 2018-10-25T13:55:17+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/updatenote/id/227.html
+[ info ] qingrang.top/daily/admin/note/updatenote/id/227.html [运行时间：0.073079s][吞吐率：13.68req/s] [内存消耗：2,053.75kb] [文件加载：58]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'updatenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '2443',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/227.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308,1540133692,1540187497,1540387796; PHPSESSID=fj3tsfgumtponb2nmp89vcu6d2',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'summary' => '',
+  'content' => '# 深入理解计算机系统 - 计算机系统漫游
+[TOC]
+## 名词解释
+### 位：0 和 1
+### 字节：8 个位组成 1 个字节
+每个字节表示程序中的某些文本字符
+### 字：
+### 字长：
+### ASCII 标准
+用一个唯一的单字节大小的整数值来表示每个字符。
+
+只由 ASCII 字符构成的文件称为文本文件,所有其他文件都称为二进制文件。
+
+
+## 信息 = 位 + 上下文
+系统中所有的信息——包括磁盘文件、内存中的程序、内存中存放的用户数据以及网络上传送的数据,都是由一串比特表示的。区分不同数据对象的唯一方法是我们读到这些数据对象时的上下文。比如,在不同的上下文中,一个同样的字节序列可能表示一个整数、浮点数、字符串或者机器指令。',
+  'groups' => 'Basics',
+  'showsel' => '1',
+  'showse2' => '0',
+  'id' => '227',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->updateNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000654s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001471s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 227 LIMIT 1 [ RunTime:0.000505s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `note` WHERE  `id` = 227 LIMIT 1 [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000981s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `groups` WHERE  `groups` = 'Basics' LIMIT 1 [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000353s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `id`=227,`p_id`=2,`title`='深入理解计算机系统 - 计算机系统漫游\r',`content`='# 深入理解计算机系统 - 计算机系统漫游\r\n[TOC]\r\n## 名词解释\r\n### 位：0 和 1\r\n### 字节：8 个位组成 1 个字节\r\n每个字节表示程序中的某些文本字符\r\n### 字：\r\n### 字长：\r\n### ASCII 标准\r\n用一个唯一的单字节大小的整数值来表示每个字符。\r\n\r\n只由 ASCII 字符构成的文件称为文本文件,所有其他文件都称为二进制文件。\r\n\r\n\r\n## 信息 = 位 + 上下文\r\n系统中所有的信息——包括磁盘文件、内存中的程序、内存中存放的用户数据以及网络上传送的数据,都是由一串比特表示的。区分不同数据对象的唯一方法是我们读到这些数据对象时的上下文。比如,在不同的上下文中,一个同样的字节序列可能表示一个整数、浮点数、字符串或者机器指令。',`groups`='Basics',`is_show`=1,`publish`=0,`summary`=''  WHERE  `id` = 227 [ RunTime:0.000616s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Basics' LIMIT 1 [ RunTime:0.001074s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=18  WHERE  `groups` = 'Basics' [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Basics' LIMIT 1 [ RunTime:0.001026s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=18  WHERE  `groups` = 'Basics' [ RunTime:0.000308s ]
+---------------------------------------------------------------
+[ 2018-10-25T13:55:18+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/227.html
+[ info ] qingrang.top/daily/admin/note/shownote/id/227.html [运行时间：0.069141s][吞吐率：14.46req/s] [内存消耗：1,980.63kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/227.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308,1540133692,1540187497,1540387796; PHPSESSID=fj3tsfgumtponb2nmp89vcu6d2',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '227',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000493s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.019085s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 227 LIMIT 1 [ RunTime:0.000740s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001390s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000344s ]
+---------------------------------------------------------------
+[ 2018-10-25T21:54:51+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/ashownote2.html
+[ info ] qingrang.top/daily/admin/note/ashownote2.html [运行时间：0.067287s][吞吐率：14.86req/s] [内存消耗：2,271.76kb] [文件加载：52]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'ashownote2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '14',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://qingrang.top/daily/admin/note',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308,1540133692,1540187497,1540387796; PHPSESSID=fj3tsfgumtponb2nmp89vcu6d2',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'groupname' => 'Java',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->aShowNote2[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000998s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.002824s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` = 'Java' ORDER BY date desc [ RunTime:0.003106s ]
+---------------------------------------------------------------
+[ 2018-10-25T21:55:01+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/newedit.html
+[ info ] qingrang.top/daily/admin/note/newedit.html [运行时间：0.069404s][吞吐率：14.41req/s] [内存消耗：2,020.94kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'newedit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308,1540133692,1540187497,1540387796; PHPSESSID=fj3tsfgumtponb2nmp89vcu6d2',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->newEdit[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/newedit.html [ array (
+  0 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000611s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001726s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000396s ]
+---------------------------------------------------------------
+[ 2018-10-25T21:55:34+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/addnote.html
+[ info ] qingrang.top/daily/admin/note/addnote.html [运行时间：0.065037s][吞吐率：15.38req/s] [内存消耗：1,976.44kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'addnote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '328',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/newedit.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308,1540133692,1540187497,1540387796; PHPSESSID=fj3tsfgumtponb2nmp89vcu6d2',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'groups' => 'Java',
+  'content' => '# JavaEE 框架 - Spring',
+  'test-editormd-html-code' => '<h1 id="h1-javaee-spring"><a name="JavaEE 框架 - Spring" class="reference-link"></a><span class="header-link octicon octicon-link"></span>JavaEE 框架 - Spring</h1>',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->addNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000606s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001594s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `groups` WHERE  `groups` = 'Java' LIMIT 1 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001134s ]
+[ sql ] [ SQL ] INSERT INTO `note` (`title` , `content` , `groups` , `p_id` , `date`) VALUES ('JavaEE 框架 - Spring' , '# JavaEE 框架 - Spring' , 'Java' , 2 , '2018-10-25') [ RunTime:0.000515s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Java' LIMIT 1 [ RunTime:0.001398s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=9  WHERE  `groups` = 'Java' [ RunTime:0.000563s ]
+---------------------------------------------------------------
+[ 2018-10-25T21:55:35+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note
+[ info ] qingrang.top/daily/admin/note [运行时间：0.082099s][吞吐率：12.18req/s] [内存消耗：2,249.92kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/newedit.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308,1540133692,1540187497,1540387796; PHPSESSID=fj3tsfgumtponb2nmp89vcu6d2',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/notelst.html [ array (
+  0 => 'stickList',
+  1 => 'hide',
+  2 => 'list',
+  3 => 'list_new',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+  10 => 'default_num',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000532s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001257s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.001853s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal' ORDER BY id desc LIMIT 5 [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.000908s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000529s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000881s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000275s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000285s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.001117s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000222s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001110s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000768s ]
+---------------------------------------------------------------
+[ 2018-10-25T21:55:50+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/editnote/id/228.html
+[ info ] qingrang.top/daily/admin/note/editnote/id/228.html [运行时间：0.069925s][吞吐率：14.30req/s] [内存消耗：2,028.00kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'editnote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308,1540133692,1540187497,1540387796; PHPSESSID=fj3tsfgumtponb2nmp89vcu6d2',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '228',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->editNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/editnote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000607s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001503s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 228 LIMIT 1 [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000987s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000297s ]
+---------------------------------------------------------------
+[ 2018-10-25T23:35:48+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/updatenote/id/228.html
+[ info ] qingrang.top/daily/admin/note/updatenote/id/228.html [运行时间：0.047410s][吞吐率：21.09req/s] [内存消耗：1,406.94kb] [文件加载：50]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'updatenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308,1540133692,1540187497,1540387796; PHPSESSID=fj3tsfgumtponb2nmp89vcu6d2',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '228',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->updateNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义数组下标: 1[/var/www/html/daily/application/admin/controller/Note.php:241]
+---------------------------------------------------------------
+[ 2018-10-25T23:35:55+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/editnote/id/228.html
+[ info ] qingrang.top/daily/admin/note/editnote/id/228.html [运行时间：0.070695s][吞吐率：14.15req/s] [内存消耗：2,028.00kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'editnote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308,1540133692,1540187497,1540387796; PHPSESSID=fj3tsfgumtponb2nmp89vcu6d2',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '228',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->editNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/editnote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000579s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001581s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 228 LIMIT 1 [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000883s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000314s ]
+---------------------------------------------------------------
+[ 2018-10-25T23:36:06+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/savenote.html
+[ info ] qingrang.top/daily/admin/note/savenote.html [运行时间：0.082709s][吞吐率：12.09req/s] [内存消耗：2,058.09kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'savenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '9553',
+  'accept' => 'text/plain, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/228.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308,1540133692,1540187497,1540387796; PHPSESSID=fj3tsfgumtponb2nmp89vcu6d2',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'ogroup' => 'Default',
+  'context' => '# JavaEE 框架 - Spring
+Spring 是一个基于 **IOC** 和 **AOP** 的结构 J2EE 系统的框架。
+
+## IOC 反转控制
+>概念
+
+IOC（Inversion Of Control）反转控制：是 Spring 的基础，简单说就是创建对象由以前的程序员自己 new 构造方法来调用，变成了交由 Spring 创建对象。
+
+DI（Dependency Inject）依赖注入：简单地说就是拿到的对象的属性，已经被注入好相关值了，直接使用即可。
+
+>以获取对象的方式来进行比较
+
+- 传统的方式
+
+通过 new 关键字主动创建一个对象
+
+相当于你自己去菜市场 new 了一只鸡，不过是生鸡，要自己拔毛，去内脏，再上花椒，酱油，烤制，经过各种工序之后，才可以食用。
+
+- IOC方式
+
+对象的生命周期由 Spring 来管理，直接从 Spring 那里去获取一个对象。IOC 是反转控制 (Inversion Of Control)的缩写，就像控制权从本来在自己手里，现在交给了 Spring。
+
+相当于去馆子(Spring)点了一只鸡，交到你手上的时候，已经五味俱全，你就只管吃就行了。
+## AOP 面向切面编程
+即 Aspect Oriented Program 面向切面编程。
+
+首先，在面向切面编程的思想里面，把功能分为**核心业务功能**，和**辅助功能**。
+
+所谓的核心业务，比如登陆，增加数据，删除数据都叫核心业务。
+所谓的辅助功能，比如性能统计，日志，事务管理等等。周边功能在 Spring 的面向切面编程 AOP 思想里，即被定义为切面。
+
+在面向切面编程 AOP 的思想里面，核心业务功能和切面功能分别独立进行开发，然后把切面功能和核心业务功能 "编织" 在一起，这就叫 AOP。
+## 各种注解
+`@Component("p")`	//表示这是一个 bean ,由 Spring 进行管理
+
+`@Autowired`	//注入对象
+
+`@Aspect`	//表示这是一个切面
+
+`@Around(value = "execution(* com.how2java.service.ProductService.*(..))")`	//表示对 com.how2java.service.ProductService 这个类中的所有方法进行切面操作
+
+`@RunWith(SpringJUnit4ClassRunner.class)`	//表示这是一个 Spring 的测试类
+
+`@ContextConfiguration("classpath:applicationContext.xml")`	//定位 Spring 的配置文件
+
+`@Test`	//测试逻辑
+## Demo
+### bean
+```
+@Component("p")	//表示这是一个 bean ,由 Spring 进行管理
+public class Product {
+    private String name = "Product 1";	//属性初始化放在属性声明上进行
+    @Autowired	//注入对象
+    private Category category;
+
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public Category getCategory() {
+        return category;
+    }
+    public void setCategory(Category category) {
+        this.category = category;
+    }
+}
+```
+### 业务类
+```
+@Component("s")	//表示这是一个 bean ,由 Spring 进行管理
+public class ProductService {
+    public void doSomeService(){
+        System.out.println("doSomeService");
+    }
+}
+```
+### 切面类
+```
+@Aspect	//表示这是一个切面
+@Component	//表示这是一个 bean ,由 Spring 进行管理
+public class LoggerAspect {	//日志切面
+	//表示对 com.how2java.service.ProductService 这个类中的所有方法进行切面操作
+	@Around(value = "execution(* com.how2java.service.ProductService.*(..))")
+    public Object log(ProceedingJoinPoint joinPoint) throws Throwable {
+        System.out.println("start log:" + joinPoint.getSignature().getName());
+        Object object = joinPoint.proceed();
+        System.out.println("end log:" + joinPoint.getSignature().getName());
+        return object;
+    }
+}
+```
+### applicationContext.xml
+```
+<!-- 扫描包  com.how2java.pojo,com.how2java.aspect 和 com.how2java.service，定位 bean,业务类和切面类 -->
+<context:component-scan base-package="com.how2java.pojo"/>
+<context:component-scan base-package="com.how2java.aspect"/>
+<context:component-scan base-package="com.how2java.service"/>
+
+<!-- 找到被注解了的切面类，进行切面配置 -->
+<aop:aspectj-autoproxy/>
+```
+### 测试类
+```
+@RunWith(SpringJUnit4ClassRunner.class)	//表示这是一个 Spring 的测试类
+@ContextConfiguration("classpath:applicationContext.xml")	//定位 Spring 的配置文件
+public class TestSpring {
+	//给这个测试类装配对象
+	@Autowired
+    Category c;
+	@Autowired
+	Product p;
+	@Autowired
+	ProductService ps;
+
+    @Test	//测试逻辑
+    public void test(){
+        System.out.println(c.getName());
+        System.out.println(p.getName() + " - " + p.getCategory().getName());
+        ps.doSomeService();
+    }
+}
+```',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->saveNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000778s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.002201s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `title`='JavaEE 框架 - Spring',`content`='# JavaEE 框架 - Spring\nSpring 是一个基于 **IOC** 和 **AOP** 的结构 J2EE 系统的框架。\n\n## IOC 反转控制\n>概念\n\nIOC（Inversion Of Control）反转控制：是 Spring 的基础，简单说就是创建对象由以前的程序员自己 new 构造方法来调用，变成了交由 Spring 创建对象。\n\nDI（Dependency Inject）依赖注入：简单地说就是拿到的对象的属性，已经被注入好相关值了，直接使用即可。\n\n>以获取对象的方式来进行比较\n\n- 传统的方式\n\n通过 new 关键字主动创建一个对象\n\n相当于你自己去菜市场 new 了一只鸡，不过是生鸡，要自己拔毛，去内脏，再上花椒，酱油，烤制，经过各种工序之后，才可以食用。\n\n- IOC方式\n\n对象的生命周期由 Spring 来管理，直接从 Spring 那里去获取一个对象。IOC 是反转控制 (Inversion Of Control)的缩写，就像控制权从本来在自己手里，现在交给了 Spring。\n\n相当于去馆子(Spring)点了一只鸡，交到你手上的时候，已经五味俱全，你就只管吃就行了。\n## AOP 面向切面编程\n即 Aspect Oriented Program 面向切面编程。\n\n首先，在面向切面编程的思想里面，把功能分为**核心业务功能**，和**辅助功能**。\n\n所谓的核心业务，比如登陆，增加数据，删除数据都叫核心业务。\n所谓的辅助功能，比如性能统计，日志，事务管理等等。周边功能在 Spring 的面向切面编程 AOP 思想里，即被定义为切面。\n\n在面向切面编程 AOP 的思想里面，核心业务功能和切面功能分别独立进行开发，然后把切面功能和核心业务功能 \"编织\" 在一起，这就叫 AOP。\n## 各种注解\n`@Component(\"p\")`	//表示这是一个 bean ,由 Spring 进行管理\n\n`@Autowired`	//注入对象\n\n`@Aspect`	//表示这是一个切面\n\n`@Around(value = \"execution(* com.how2java.service.ProductService.*(..))\")`	//表示对 com.how2java.service.ProductService 这个类中的所有方法进行切面操作\n\n`@RunWith(SpringJUnit4ClassRunner.class)`	//表示这是一个 Spring 的测试类\n\n`@ContextConfiguration(\"classpath:applicationContext.xml\")`	//定位 Spring 的配置文件\n\n`@Test`	//测试逻辑\n## Demo\n### bean\n```\n@Component(\"p\")	//表示这是一个 bean ,由 Spring 进行管理\npublic class Product {\n    private String name = \"Product 1\";	//属性初始化放在属性声明上进行\n    @Autowired	//注入对象\n    private Category category;\n\n    public String getName() {\n        return name;\n    }\n    public void setName(String name) {\n        this.name = name;\n    }\n    public Category getCategory() {\n        return category;\n    }\n    public void setCategory(Category category) {\n        this.category = category;\n    }\n}\n```\n### 业务类\n```\n@Component(\"s\")	//表示这是一个 bean ,由 Spring 进行管理\npublic class ProductService {\n    public void doSomeService(){\n        System.out.println(\"doSomeService\");\n    }\n}\n```\n### 切面类\n```\n@Aspect	//表示这是一个切面\n@Component	//表示这是一个 bean ,由 Spring 进行管理\npublic class LoggerAspect {	//日志切面\n	//表示对 com.how2java.service.ProductService 这个类中的所有方法进行切面操作\n	@Around(value = \"execution(* com.how2java.service.ProductService.*(..))\")\n    public Object log(ProceedingJoinPoint joinPoint) throws Throwable {\n        System.out.println(\"start log:\" + joinPoint.getSignature().getName());\n        Object object = joinPoint.proceed();\n        System.out.println(\"end log:\" + joinPoint.getSignature().getName());\n        return object;\n    }\n}\n```\n### applicationContext.xml\n```\n<!-- 扫描包  com.how2java.pojo,com.how2java.aspect 和 com.how2java.service，定位 bean,业务类和切面类 -->\n<context:component-scan base-package=\"com.how2java.pojo\"/>\n<context:component-scan base-package=\"com.how2java.aspect\"/>\n<context:component-scan base-package=\"com.how2java.service\"/>\n\n<!-- 找到被注解了的切面类，进行切面配置 -->\n<aop:aspectj-autoproxy/>\n```\n### 测试类\n```\n@RunWith(SpringJUnit4ClassRunner.class)	//表示这是一个 Spring 的测试类\n@ContextConfiguration(\"classpath:applicationContext.xml\")	//定位 Spring 的配置文件\npublic class TestSpring {\n	//给这个测试类装配对象\n	@Autowired\n    Category c;\n	@Autowired\n	Product p;\n	@Autowired\n	ProductService ps;\n\n    @Test	//测试逻辑\n    public void test(){\n        System.out.println(c.getName());\n        System.out.println(p.getName() + \" - \" + p.getCategory().getName());\n        ps.doSomeService();\n    }\n}\n```',`groups`='Default',`p_id`=1  WHERE  `id` = 1 [ RunTime:0.000884s ]
+---------------------------------------------------------------
+[ 2018-10-25T23:36:16+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/updatenote/id/228.html
+[ info ] qingrang.top/daily/admin/note/updatenote/id/228.html [运行时间：0.069332s][吞吐率：14.42req/s] [内存消耗：2,080.92kb] [文件加载：58]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'updatenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '10180',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/228.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308,1540133692,1540187497,1540387796; PHPSESSID=fj3tsfgumtponb2nmp89vcu6d2',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'summary' => 'IOC，DI，AOP，注解，测试',
+  'content' => '# JavaEE 框架 - Spring
+Spring 是一个基于 **IOC** 和 **AOP** 的结构 J2EE 系统的框架。
+
+## IOC 反转控制
+>概念
+
+IOC（Inversion Of Control）反转控制：是 Spring 的基础，简单说就是创建对象由以前的程序员自己 new 构造方法来调用，变成了交由 Spring 创建对象。
+
+DI（Dependency Inject）依赖注入：简单地说就是拿到的对象的属性，已经被注入好相关值了，直接使用即可。
+
+>以获取对象的方式来进行比较
+
+- 传统的方式
+
+通过 new 关键字主动创建一个对象
+
+相当于你自己去菜市场 new 了一只鸡，不过是生鸡，要自己拔毛，去内脏，再上花椒，酱油，烤制，经过各种工序之后，才可以食用。
+
+- IOC方式
+
+对象的生命周期由 Spring 来管理，直接从 Spring 那里去获取一个对象。IOC 是反转控制 (Inversion Of Control)的缩写，就像控制权从本来在自己手里，现在交给了 Spring。
+
+相当于去馆子(Spring)点了一只鸡，交到你手上的时候，已经五味俱全，你就只管吃就行了。
+## AOP 面向切面编程
+即 Aspect Oriented Program 面向切面编程。
+
+首先，在面向切面编程的思想里面，把功能分为**核心业务功能**，和**辅助功能**。
+
+所谓的核心业务，比如登陆，增加数据，删除数据都叫核心业务。
+所谓的辅助功能，比如性能统计，日志，事务管理等等。周边功能在 Spring 的面向切面编程 AOP 思想里，即被定义为切面。
+
+在面向切面编程 AOP 的思想里面，核心业务功能和切面功能分别独立进行开发，然后把切面功能和核心业务功能 "编织" 在一起，这就叫 AOP。
+## 各种注解
+`@Component("p")`	//表示这是一个 bean ,由 Spring 进行管理
+
+`@Autowired`	//注入对象
+
+`@Aspect`	//表示这是一个切面
+
+`@Around(value = "execution(* com.how2java.service.ProductService.*(..))")`	//表示对 com.how2java.service.ProductService 这个类中的所有方法进行切面操作
+
+`@RunWith(SpringJUnit4ClassRunner.class)`	//表示这是一个 Spring 的测试类
+
+`@ContextConfiguration("classpath:applicationContext.xml")`	//定位 Spring 的配置文件
+
+`@Test`	//测试逻辑
+## Demo
+### bean
+```
+@Component("p")	//表示这是一个 bean ,由 Spring 进行管理
+public class Product {
+    private String name = "Product 1";	//属性初始化放在属性声明上进行
+    @Autowired	//注入对象
+    private Category category;
+
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public Category getCategory() {
+        return category;
+    }
+    public void setCategory(Category category) {
+        this.category = category;
+    }
+}
+```
+### 业务类
+```
+@Component("s")	//表示这是一个 bean ,由 Spring 进行管理
+public class ProductService {
+    public void doSomeService(){
+        System.out.println("doSomeService");
+    }
+}
+```
+### 切面类
+```
+@Aspect	//表示这是一个切面
+@Component	//表示这是一个 bean ,由 Spring 进行管理
+public class LoggerAspect {	//日志切面
+	//表示对 com.how2java.service.ProductService 这个类中的所有方法进行切面操作
+	@Around(value = "execution(* com.how2java.service.ProductService.*(..))")
+    public Object log(ProceedingJoinPoint joinPoint) throws Throwable {
+        System.out.println("start log:" + joinPoint.getSignature().getName());
+        Object object = joinPoint.proceed();
+        System.out.println("end log:" + joinPoint.getSignature().getName());
+        return object;
+    }
+}
+```
+### applicationContext.xml
+```
+<!-- 扫描包  com.how2java.pojo,com.how2java.aspect 和 com.how2java.service，定位 bean,业务类和切面类 -->
+<context:component-scan base-package="com.how2java.pojo"/>
+<context:component-scan base-package="com.how2java.aspect"/>
+<context:component-scan base-package="com.how2java.service"/>
+
+<!-- 找到被注解了的切面类，进行切面配置 -->
+<aop:aspectj-autoproxy/>
+```
+### 测试类
+```
+@RunWith(SpringJUnit4ClassRunner.class)	//表示这是一个 Spring 的测试类
+@ContextConfiguration("classpath:applicationContext.xml")	//定位 Spring 的配置文件
+public class TestSpring {
+	//给这个测试类装配对象
+	@Autowired
+    Category c;
+	@Autowired
+	Product p;
+	@Autowired
+	ProductService ps;
+
+    @Test	//测试逻辑
+    public void test(){
+        System.out.println(c.getName());
+        System.out.println(p.getName() + " - " + p.getCategory().getName());
+        ps.doSomeService();
+    }
+}
+```',
+  'groups' => 'Java',
+  'showsel' => '1',
+  'showse2' => '1',
+  'id' => '228',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->updateNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000686s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001742s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 228 LIMIT 1 [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `note` WHERE  `id` = 228 LIMIT 1 [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000920s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `groups` WHERE  `groups` = 'Java' LIMIT 1 [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000299s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `id`=228,`p_id`=2,`title`='JavaEE 框架 - Spring\r',`content`='# JavaEE 框架 - Spring\r\nSpring 是一个基于 **IOC** 和 **AOP** 的结构 J2EE 系统的框架。\r\n\r\n## IOC 反转控制\r\n>概念\r\n\r\nIOC（Inversion Of Control）反转控制：是 Spring 的基础，简单说就是创建对象由以前的程序员自己 new 构造方法来调用，变成了交由 Spring 创建对象。\r\n\r\nDI（Dependency Inject）依赖注入：简单地说就是拿到的对象的属性，已经被注入好相关值了，直接使用即可。\r\n\r\n>以获取对象的方式来进行比较\r\n\r\n- 传统的方式\r\n\r\n通过 new 关键字主动创建一个对象\r\n\r\n相当于你自己去菜市场 new 了一只鸡，不过是生鸡，要自己拔毛，去内脏，再上花椒，酱油，烤制，经过各种工序之后，才可以食用。\r\n\r\n- IOC方式\r\n\r\n对象的生命周期由 Spring 来管理，直接从 Spring 那里去获取一个对象。IOC 是反转控制 (Inversion Of Control)的缩写，就像控制权从本来在自己手里，现在交给了 Spring。\r\n\r\n相当于去馆子(Spring)点了一只鸡，交到你手上的时候，已经五味俱全，你就只管吃就行了。\r\n## AOP 面向切面编程\r\n即 Aspect Oriented Program 面向切面编程。\r\n\r\n首先，在面向切面编程的思想里面，把功能分为**核心业务功能**，和**辅助功能**。\r\n\r\n所谓的核心业务，比如登陆，增加数据，删除数据都叫核心业务。\r\n所谓的辅助功能，比如性能统计，日志，事务管理等等。周边功能在 Spring 的面向切面编程 AOP 思想里，即被定义为切面。\r\n\r\n在面向切面编程 AOP 的思想里面，核心业务功能和切面功能分别独立进行开发，然后把切面功能和核心业务功能 \"编织\" 在一起，这就叫 AOP。\r\n## 各种注解\r\n`@Component(\"p\")`	//表示这是一个 bean ,由 Spring 进行管理\r\n\r\n`@Autowired`	//注入对象\r\n\r\n`@Aspect`	//表示这是一个切面\r\n\r\n`@Around(value = \"execution(* com.how2java.service.ProductService.*(..))\")`	//表示对 com.how2java.service.ProductService 这个类中的所有方法进行切面操作\r\n\r\n`@RunWith(SpringJUnit4ClassRunner.class)`	//表示这是一个 Spring 的测试类\r\n\r\n`@ContextConfiguration(\"classpath:applicationContext.xml\")`	//定位 Spring 的配置文件\r\n\r\n`@Test`	//测试逻辑\r\n## Demo\r\n### bean\r\n```\r\n@Component(\"p\")	//表示这是一个 bean ,由 Spring 进行管理\r\npublic class Product {\r\n    private String name = \"Product 1\";	//属性初始化放在属性声明上进行\r\n    @Autowired	//注入对象\r\n    private Category category;\r\n\r\n    public String getName() {\r\n        return name;\r\n    }\r\n    public void setName(String name) {\r\n        this.name = name;\r\n    }\r\n    public Category getCategory() {\r\n        return category;\r\n    }\r\n    public void setCategory(Category category) {\r\n        this.category = category;\r\n    }\r\n}\r\n```\r\n### 业务类\r\n```\r\n@Component(\"s\")	//表示这是一个 bean ,由 Spring 进行管理\r\npublic class ProductService {\r\n    public void doSomeService(){\r\n        System.out.println(\"doSomeService\");\r\n    }\r\n}\r\n```\r\n### 切面类\r\n```\r\n@Aspect	//表示这是一个切面\r\n@Component	//表示这是一个 bean ,由 Spring 进行管理\r\npublic class LoggerAspect {	//日志切面\r\n	//表示对 com.how2java.service.ProductService 这个类中的所有方法进行切面操作\r\n	@Around(value = \"execution(* com.how2java.service.ProductService.*(..))\")\r\n    public Object log(ProceedingJoinPoint joinPoint) throws Throwable {\r\n        System.out.println(\"start log:\" + joinPoint.getSignature().getName());\r\n        Object object = joinPoint.proceed();\r\n        System.out.println(\"end log:\" + joinPoint.getSignature().getName());\r\n        return object;\r\n    }\r\n}\r\n```\r\n### applicationContext.xml\r\n```\r\n<!-- 扫描包  com.how2java.pojo,com.how2java.aspect 和 com.how2java.service，定位 bean,业务类和切面类 -->\r\n<context:component-scan base-package=\"com.how2java.pojo\"/>\r\n<context:component-scan base-package=\"com.how2java.aspect\"/>\r\n<context:component-scan base-package=\"com.how2java.service\"/>\r\n\r\n<!-- 找到被注解了的切面类，进行切面配置 -->\r\n<aop:aspectj-autoproxy/>\r\n```\r\n### 测试类\r\n```\r\n@RunWith(SpringJUnit4ClassRunner.class)	//表示这是一个 Spring 的测试类\r\n@ContextConfiguration(\"classpath:applicationContext.xml\")	//定位 Spring 的配置文件\r\npublic class TestSpring {\r\n	//给这个测试类装配对象\r\n	@Autowired\r\n    Category c;\r\n	@Autowired\r\n	Product p;\r\n	@Autowired\r\n	ProductService ps;\r\n\r\n    @Test	//测试逻辑\r\n    public void test(){\r\n        System.out.println(c.getName());\r\n        System.out.println(p.getName() + \" - \" + p.getCategory().getName());\r\n        ps.doSomeService();\r\n    }\r\n}\r\n```',`groups`='Java',`is_show`=1,`publish`=1,`summary`='IOC，DI，AOP，注解，测试'  WHERE  `id` = 228 [ RunTime:0.000707s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Java' LIMIT 1 [ RunTime:0.002246s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=9  WHERE  `groups` = 'Java' [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Java' LIMIT 1 [ RunTime:0.001161s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=9  WHERE  `groups` = 'Java' [ RunTime:0.000349s ]
+---------------------------------------------------------------
+[ 2018-10-25T23:36:16+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/228.html
+[ info ] qingrang.top/daily/admin/note/shownote/id/228.html [运行时间：0.058504s][吞吐率：17.09req/s] [内存消耗：1,984.43kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/228.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308,1540133692,1540187497,1540387796; PHPSESSID=fj3tsfgumtponb2nmp89vcu6d2',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '228',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000631s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001367s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 228 LIMIT 1 [ RunTime:0.000558s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000852s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000305s ]
+---------------------------------------------------------------
+[ 2018-10-25T23:36:36+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/editnote/id/228.html
+[ info ] qingrang.top/daily/admin/note/editnote/id/228.html [运行时间：0.069100s][吞吐率：14.47req/s] [内存消耗：2,032.10kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'editnote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308,1540133692,1540187497,1540387796; PHPSESSID=fj3tsfgumtponb2nmp89vcu6d2',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '228',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->editNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/editnote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000746s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001601s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 228 LIMIT 1 [ RunTime:0.000546s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000879s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000365s ]
+---------------------------------------------------------------
+[ 2018-10-25T23:36:42+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/updatenote/id/228.html
+[ info ] qingrang.top/daily/admin/note/updatenote/id/228.html [运行时间：0.090998s][吞吐率：10.99req/s] [内存消耗：2,081.13kb] [文件加载：58]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'updatenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '10178',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/228.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308,1540133692,1540187497,1540387796; PHPSESSID=fj3tsfgumtponb2nmp89vcu6d2',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'summary' => 'IOC，DI，AOP，注解，测试',
+  'content' => '# Java 框架 - Spring
+Spring 是一个基于 **IOC** 和 **AOP** 的结构 J2EE 系统的框架。
+
+## IOC 反转控制
+>概念
+
+IOC（Inversion Of Control）反转控制：是 Spring 的基础，简单说就是创建对象由以前的程序员自己 new 构造方法来调用，变成了交由 Spring 创建对象。
+
+DI（Dependency Inject）依赖注入：简单地说就是拿到的对象的属性，已经被注入好相关值了，直接使用即可。
+
+>以获取对象的方式来进行比较
+
+- 传统的方式
+
+通过 new 关键字主动创建一个对象
+
+相当于你自己去菜市场 new 了一只鸡，不过是生鸡，要自己拔毛，去内脏，再上花椒，酱油，烤制，经过各种工序之后，才可以食用。
+
+- IOC方式
+
+对象的生命周期由 Spring 来管理，直接从 Spring 那里去获取一个对象。IOC 是反转控制 (Inversion Of Control)的缩写，就像控制权从本来在自己手里，现在交给了 Spring。
+
+相当于去馆子(Spring)点了一只鸡，交到你手上的时候，已经五味俱全，你就只管吃就行了。
+## AOP 面向切面编程
+即 Aspect Oriented Program 面向切面编程。
+
+首先，在面向切面编程的思想里面，把功能分为**核心业务功能**，和**辅助功能**。
+
+所谓的核心业务，比如登陆，增加数据，删除数据都叫核心业务。
+所谓的辅助功能，比如性能统计，日志，事务管理等等。周边功能在 Spring 的面向切面编程 AOP 思想里，即被定义为切面。
+
+在面向切面编程 AOP 的思想里面，核心业务功能和切面功能分别独立进行开发，然后把切面功能和核心业务功能 "编织" 在一起，这就叫 AOP。
+## 各种注解
+`@Component("p")`	//表示这是一个 bean ,由 Spring 进行管理
+
+`@Autowired`	//注入对象
+
+`@Aspect`	//表示这是一个切面
+
+`@Around(value = "execution(* com.how2java.service.ProductService.*(..))")`	//表示对 com.how2java.service.ProductService 这个类中的所有方法进行切面操作
+
+`@RunWith(SpringJUnit4ClassRunner.class)`	//表示这是一个 Spring 的测试类
+
+`@ContextConfiguration("classpath:applicationContext.xml")`	//定位 Spring 的配置文件
+
+`@Test`	//测试逻辑
+## Demo
+### bean
+```
+@Component("p")	//表示这是一个 bean ,由 Spring 进行管理
+public class Product {
+    private String name = "Product 1";	//属性初始化放在属性声明上进行
+    @Autowired	//注入对象
+    private Category category;
+
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public Category getCategory() {
+        return category;
+    }
+    public void setCategory(Category category) {
+        this.category = category;
+    }
+}
+```
+### 业务类
+```
+@Component("s")	//表示这是一个 bean ,由 Spring 进行管理
+public class ProductService {
+    public void doSomeService(){
+        System.out.println("doSomeService");
+    }
+}
+```
+### 切面类
+```
+@Aspect	//表示这是一个切面
+@Component	//表示这是一个 bean ,由 Spring 进行管理
+public class LoggerAspect {	//日志切面
+	//表示对 com.how2java.service.ProductService 这个类中的所有方法进行切面操作
+	@Around(value = "execution(* com.how2java.service.ProductService.*(..))")
+    public Object log(ProceedingJoinPoint joinPoint) throws Throwable {
+        System.out.println("start log:" + joinPoint.getSignature().getName());
+        Object object = joinPoint.proceed();
+        System.out.println("end log:" + joinPoint.getSignature().getName());
+        return object;
+    }
+}
+```
+### applicationContext.xml
+```
+<!-- 扫描包  com.how2java.pojo,com.how2java.aspect 和 com.how2java.service，定位 bean,业务类和切面类 -->
+<context:component-scan base-package="com.how2java.pojo"/>
+<context:component-scan base-package="com.how2java.aspect"/>
+<context:component-scan base-package="com.how2java.service"/>
+
+<!-- 找到被注解了的切面类，进行切面配置 -->
+<aop:aspectj-autoproxy/>
+```
+### 测试类
+```
+@RunWith(SpringJUnit4ClassRunner.class)	//表示这是一个 Spring 的测试类
+@ContextConfiguration("classpath:applicationContext.xml")	//定位 Spring 的配置文件
+public class TestSpring {
+	//给这个测试类装配对象
+	@Autowired
+    Category c;
+	@Autowired
+	Product p;
+	@Autowired
+	ProductService ps;
+
+    @Test	//测试逻辑
+    public void test(){
+        System.out.println(c.getName());
+        System.out.println(p.getName() + " - " + p.getCategory().getName());
+        ps.doSomeService();
+    }
+}
+```',
+  'groups' => 'Java',
+  'showsel' => '1',
+  'showse2' => '1',
+  'id' => '228',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->updateNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000613s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001799s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 228 LIMIT 1 [ RunTime:0.000509s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `note` WHERE  `id` = 228 LIMIT 1 [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001427s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `groups` WHERE  `groups` = 'Java' LIMIT 1 [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000378s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `id`=228,`p_id`=2,`title`='Java 框架 - Spring\r',`content`='# Java 框架 - Spring\r\nSpring 是一个基于 **IOC** 和 **AOP** 的结构 J2EE 系统的框架。\r\n\r\n## IOC 反转控制\r\n>概念\r\n\r\nIOC（Inversion Of Control）反转控制：是 Spring 的基础，简单说就是创建对象由以前的程序员自己 new 构造方法来调用，变成了交由 Spring 创建对象。\r\n\r\nDI（Dependency Inject）依赖注入：简单地说就是拿到的对象的属性，已经被注入好相关值了，直接使用即可。\r\n\r\n>以获取对象的方式来进行比较\r\n\r\n- 传统的方式\r\n\r\n通过 new 关键字主动创建一个对象\r\n\r\n相当于你自己去菜市场 new 了一只鸡，不过是生鸡，要自己拔毛，去内脏，再上花椒，酱油，烤制，经过各种工序之后，才可以食用。\r\n\r\n- IOC方式\r\n\r\n对象的生命周期由 Spring 来管理，直接从 Spring 那里去获取一个对象。IOC 是反转控制 (Inversion Of Control)的缩写，就像控制权从本来在自己手里，现在交给了 Spring。\r\n\r\n相当于去馆子(Spring)点了一只鸡，交到你手上的时候，已经五味俱全，你就只管吃就行了。\r\n## AOP 面向切面编程\r\n即 Aspect Oriented Program 面向切面编程。\r\n\r\n首先，在面向切面编程的思想里面，把功能分为**核心业务功能**，和**辅助功能**。\r\n\r\n所谓的核心业务，比如登陆，增加数据，删除数据都叫核心业务。\r\n所谓的辅助功能，比如性能统计，日志，事务管理等等。周边功能在 Spring 的面向切面编程 AOP 思想里，即被定义为切面。\r\n\r\n在面向切面编程 AOP 的思想里面，核心业务功能和切面功能分别独立进行开发，然后把切面功能和核心业务功能 \"编织\" 在一起，这就叫 AOP。\r\n## 各种注解\r\n`@Component(\"p\")`	//表示这是一个 bean ,由 Spring 进行管理\r\n\r\n`@Autowired`	//注入对象\r\n\r\n`@Aspect`	//表示这是一个切面\r\n\r\n`@Around(value = \"execution(* com.how2java.service.ProductService.*(..))\")`	//表示对 com.how2java.service.ProductService 这个类中的所有方法进行切面操作\r\n\r\n`@RunWith(SpringJUnit4ClassRunner.class)`	//表示这是一个 Spring 的测试类\r\n\r\n`@ContextConfiguration(\"classpath:applicationContext.xml\")`	//定位 Spring 的配置文件\r\n\r\n`@Test`	//测试逻辑\r\n## Demo\r\n### bean\r\n```\r\n@Component(\"p\")	//表示这是一个 bean ,由 Spring 进行管理\r\npublic class Product {\r\n    private String name = \"Product 1\";	//属性初始化放在属性声明上进行\r\n    @Autowired	//注入对象\r\n    private Category category;\r\n\r\n    public String getName() {\r\n        return name;\r\n    }\r\n    public void setName(String name) {\r\n        this.name = name;\r\n    }\r\n    public Category getCategory() {\r\n        return category;\r\n    }\r\n    public void setCategory(Category category) {\r\n        this.category = category;\r\n    }\r\n}\r\n```\r\n### 业务类\r\n```\r\n@Component(\"s\")	//表示这是一个 bean ,由 Spring 进行管理\r\npublic class ProductService {\r\n    public void doSomeService(){\r\n        System.out.println(\"doSomeService\");\r\n    }\r\n}\r\n```\r\n### 切面类\r\n```\r\n@Aspect	//表示这是一个切面\r\n@Component	//表示这是一个 bean ,由 Spring 进行管理\r\npublic class LoggerAspect {	//日志切面\r\n	//表示对 com.how2java.service.ProductService 这个类中的所有方法进行切面操作\r\n	@Around(value = \"execution(* com.how2java.service.ProductService.*(..))\")\r\n    public Object log(ProceedingJoinPoint joinPoint) throws Throwable {\r\n        System.out.println(\"start log:\" + joinPoint.getSignature().getName());\r\n        Object object = joinPoint.proceed();\r\n        System.out.println(\"end log:\" + joinPoint.getSignature().getName());\r\n        return object;\r\n    }\r\n}\r\n```\r\n### applicationContext.xml\r\n```\r\n<!-- 扫描包  com.how2java.pojo,com.how2java.aspect 和 com.how2java.service，定位 bean,业务类和切面类 -->\r\n<context:component-scan base-package=\"com.how2java.pojo\"/>\r\n<context:component-scan base-package=\"com.how2java.aspect\"/>\r\n<context:component-scan base-package=\"com.how2java.service\"/>\r\n\r\n<!-- 找到被注解了的切面类，进行切面配置 -->\r\n<aop:aspectj-autoproxy/>\r\n```\r\n### 测试类\r\n```\r\n@RunWith(SpringJUnit4ClassRunner.class)	//表示这是一个 Spring 的测试类\r\n@ContextConfiguration(\"classpath:applicationContext.xml\")	//定位 Spring 的配置文件\r\npublic class TestSpring {\r\n	//给这个测试类装配对象\r\n	@Autowired\r\n    Category c;\r\n	@Autowired\r\n	Product p;\r\n	@Autowired\r\n	ProductService ps;\r\n\r\n    @Test	//测试逻辑\r\n    public void test(){\r\n        System.out.println(c.getName());\r\n        System.out.println(p.getName() + \" - \" + p.getCategory().getName());\r\n        ps.doSomeService();\r\n    }\r\n}\r\n```',`groups`='Java',`is_show`=1,`publish`=1,`summary`='IOC，DI，AOP，注解，测试'  WHERE  `id` = 228 [ RunTime:0.000851s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Java' LIMIT 1 [ RunTime:0.001522s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=9  WHERE  `groups` = 'Java' [ RunTime:0.000473s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Java' LIMIT 1 [ RunTime:0.001495s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=9  WHERE  `groups` = 'Java' [ RunTime:0.000425s ]
+---------------------------------------------------------------
+[ 2018-10-25T23:36:43+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/228.html
+[ info ] qingrang.top/daily/admin/note/shownote/id/228.html [运行时间：0.061606s][吞吐率：16.23req/s] [内存消耗：1,984.42kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/228.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308,1540133692,1540187497,1540387796; PHPSESSID=fj3tsfgumtponb2nmp89vcu6d2',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '228',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000724s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001569s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 228 LIMIT 1 [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000876s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000278s ]
+---------------------------------------------------------------
+[ 2018-10-25T23:37:02+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/editnote/id/228.html
+[ info ] qingrang.top/daily/admin/note/editnote/id/228.html [运行时间：0.056547s][吞吐率：17.68req/s] [内存消耗：2,032.10kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'editnote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308,1540133692,1540187497,1540387796; PHPSESSID=fj3tsfgumtponb2nmp89vcu6d2',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '228',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->editNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/editnote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000632s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.002002s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 228 LIMIT 1 [ RunTime:0.000561s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001402s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000349s ]
+---------------------------------------------------------------
+[ 2018-10-25T23:37:23+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/updatenote/id/228.html
+[ info ] qingrang.top/daily/admin/note/updatenote/id/228.html [运行时间：0.064666s][吞吐率：15.46req/s] [内存消耗：2,080.97kb] [文件加载：58]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'updatenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '10199',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/228.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308,1540133692,1540187497,1540387796; PHPSESSID=fj3tsfgumtponb2nmp89vcu6d2',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'summary' => 'IOC，DI，AOP，注解，测试',
+  'content' => '# Java 框架 - Spring
+[TOC]
+
+Spring 是一个基于 **IOC** 和 **AOP** 的结构 J2EE 系统的框架。
+
+## IOC 反转控制
+>概念
+
+IOC（Inversion Of Control）反转控制：是 Spring 的基础，简单说就是创建对象由以前的程序员自己 new 构造方法来调用，变成了交由 Spring 创建对象。
+
+DI（Dependency Inject）依赖注入：简单地说就是拿到的对象的属性，已经被注入好相关值了，直接使用即可。
+
+>以获取对象的方式来进行比较
+
+- 传统的方式
+
+通过 new 关键字主动创建一个对象
+
+相当于你自己去菜市场 new 了一只鸡，不过是生鸡，要自己拔毛，去内脏，再上花椒，酱油，烤制，经过各种工序之后，才可以食用。
+
+- IOC方式
+
+对象的生命周期由 Spring 来管理，直接从 Spring 那里去获取一个对象。IOC 是反转控制 (Inversion Of Control)的缩写，就像控制权从本来在自己手里，现在交给了 Spring。
+
+相当于去馆子(Spring)点了一只鸡，交到你手上的时候，已经五味俱全，你就只管吃就行了。
+## AOP 面向切面编程
+即 Aspect Oriented Program 面向切面编程。
+
+首先，在面向切面编程的思想里面，把功能分为**核心业务功能**，和**辅助功能**。
+
+所谓的核心业务，比如登陆，增加数据，删除数据都叫核心业务。
+所谓的辅助功能，比如性能统计，日志，事务管理等等。周边功能在 Spring 的面向切面编程 AOP 思想里，即被定义为切面。
+
+在面向切面编程 AOP 的思想里面，核心业务功能和切面功能分别独立进行开发，然后把切面功能和核心业务功能 "编织" 在一起，这就叫 AOP。
+## 各种注解
+`@Component("p")`	//表示这是一个 bean ,由 Spring 进行管理
+
+`@Autowired`	//注入对象
+
+`@Aspect`	//表示这是一个切面
+
+`@Around(value = "execution(* com.how2java.service.ProductService.*(..))")`	//表示对 com.how2java.service.ProductService 这个类中的所有方法进行切面操作
+
+`@RunWith(SpringJUnit4ClassRunner.class)`	//表示这是一个 Spring 的测试类
+
+`@ContextConfiguration("classpath:applicationContext.xml")`	//定位 Spring 的配置文件
+
+`@Test`	//测试逻辑
+## Demo
+### bean
+```
+@Component("p")	//表示这是一个 bean ,由 Spring 进行管理
+public class Product {
+    private String name = "Product 1";	//属性初始化放在属性声明上进行
+    @Autowired	//注入对象
+    private Category category;
+
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public Category getCategory() {
+        return category;
+    }
+    public void setCategory(Category category) {
+        this.category = category;
+    }
+}
+```
+### 业务类
+```
+@Component("s")	//表示这是一个 bean ,由 Spring 进行管理
+public class ProductService {
+    public void doSomeService(){
+        System.out.println("doSomeService");
+    }
+}
+```
+### 切面类
+```
+@Aspect	//表示这是一个切面
+@Component	//表示这是一个 bean ,由 Spring 进行管理
+public class LoggerAspect {	//日志切面
+	//表示对 com.how2java.service.ProductService 这个类中的所有方法进行切面操作
+	@Around(value = "execution(* com.how2java.service.ProductService.*(..))")
+    public Object log(ProceedingJoinPoint joinPoint) throws Throwable {
+        System.out.println("start log:" + joinPoint.getSignature().getName());
+        Object object = joinPoint.proceed();
+        System.out.println("end log:" + joinPoint.getSignature().getName());
+        return object;
+    }
+}
+```
+### applicationContext.xml
+```
+<!-- 扫描包  com.how2java.pojo,com.how2java.aspect 和 com.how2java.service，定位 bean,业务类和切面类 -->
+<context:component-scan base-package="com.how2java.pojo"/>
+<context:component-scan base-package="com.how2java.aspect"/>
+<context:component-scan base-package="com.how2java.service"/>
+
+<!-- 找到被注解了的切面类，进行切面配置 -->
+<aop:aspectj-autoproxy/>
+```
+### 测试类
+```
+@RunWith(SpringJUnit4ClassRunner.class)	//表示这是一个 Spring 的测试类
+@ContextConfiguration("classpath:applicationContext.xml")	//定位 Spring 的配置文件
+public class TestSpring {
+	//给这个测试类装配对象
+	@Autowired
+    Category c;
+	@Autowired
+	Product p;
+	@Autowired
+	ProductService ps;
+
+    @Test	//测试逻辑
+    public void test(){
+        System.out.println(c.getName());
+        System.out.println(p.getName() + " - " + p.getCategory().getName());
+        ps.doSomeService();
+    }
+}
+```',
+  'groups' => 'Java',
+  'showsel' => '1',
+  'showse2' => '1',
+  'id' => '228',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->updateNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000690s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001347s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 228 LIMIT 1 [ RunTime:0.000444s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `note` WHERE  `id` = 228 LIMIT 1 [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000881s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `groups` WHERE  `groups` = 'Java' LIMIT 1 [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000289s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `id`=228,`p_id`=2,`title`='Java 框架 - Spring\r',`content`='# Java 框架 - Spring\r\n[TOC]\r\n\r\nSpring 是一个基于 **IOC** 和 **AOP** 的结构 J2EE 系统的框架。\r\n\r\n## IOC 反转控制\r\n>概念\r\n\r\nIOC（Inversion Of Control）反转控制：是 Spring 的基础，简单说就是创建对象由以前的程序员自己 new 构造方法来调用，变成了交由 Spring 创建对象。\r\n\r\nDI（Dependency Inject）依赖注入：简单地说就是拿到的对象的属性，已经被注入好相关值了，直接使用即可。\r\n\r\n>以获取对象的方式来进行比较\r\n\r\n- 传统的方式\r\n\r\n通过 new 关键字主动创建一个对象\r\n\r\n相当于你自己去菜市场 new 了一只鸡，不过是生鸡，要自己拔毛，去内脏，再上花椒，酱油，烤制，经过各种工序之后，才可以食用。\r\n\r\n- IOC方式\r\n\r\n对象的生命周期由 Spring 来管理，直接从 Spring 那里去获取一个对象。IOC 是反转控制 (Inversion Of Control)的缩写，就像控制权从本来在自己手里，现在交给了 Spring。\r\n\r\n相当于去馆子(Spring)点了一只鸡，交到你手上的时候，已经五味俱全，你就只管吃就行了。\r\n## AOP 面向切面编程\r\n即 Aspect Oriented Program 面向切面编程。\r\n\r\n首先，在面向切面编程的思想里面，把功能分为**核心业务功能**，和**辅助功能**。\r\n\r\n所谓的核心业务，比如登陆，增加数据，删除数据都叫核心业务。\r\n所谓的辅助功能，比如性能统计，日志，事务管理等等。周边功能在 Spring 的面向切面编程 AOP 思想里，即被定义为切面。\r\n\r\n在面向切面编程 AOP 的思想里面，核心业务功能和切面功能分别独立进行开发，然后把切面功能和核心业务功能 \"编织\" 在一起，这就叫 AOP。\r\n## 各种注解\r\n`@Component(\"p\")`	//表示这是一个 bean ,由 Spring 进行管理\r\n\r\n`@Autowired`	//注入对象\r\n\r\n`@Aspect`	//表示这是一个切面\r\n\r\n`@Around(value = \"execution(* com.how2java.service.ProductService.*(..))\")`	//表示对 com.how2java.service.ProductService 这个类中的所有方法进行切面操作\r\n\r\n`@RunWith(SpringJUnit4ClassRunner.class)`	//表示这是一个 Spring 的测试类\r\n\r\n`@ContextConfiguration(\"classpath:applicationContext.xml\")`	//定位 Spring 的配置文件\r\n\r\n`@Test`	//测试逻辑\r\n## Demo\r\n### bean\r\n```\r\n@Component(\"p\")	//表示这是一个 bean ,由 Spring 进行管理\r\npublic class Product {\r\n    private String name = \"Product 1\";	//属性初始化放在属性声明上进行\r\n    @Autowired	//注入对象\r\n    private Category category;\r\n\r\n    public String getName() {\r\n        return name;\r\n    }\r\n    public void setName(String name) {\r\n        this.name = name;\r\n    }\r\n    public Category getCategory() {\r\n        return category;\r\n    }\r\n    public void setCategory(Category category) {\r\n        this.category = category;\r\n    }\r\n}\r\n```\r\n### 业务类\r\n```\r\n@Component(\"s\")	//表示这是一个 bean ,由 Spring 进行管理\r\npublic class ProductService {\r\n    public void doSomeService(){\r\n        System.out.println(\"doSomeService\");\r\n    }\r\n}\r\n```\r\n### 切面类\r\n```\r\n@Aspect	//表示这是一个切面\r\n@Component	//表示这是一个 bean ,由 Spring 进行管理\r\npublic class LoggerAspect {	//日志切面\r\n	//表示对 com.how2java.service.ProductService 这个类中的所有方法进行切面操作\r\n	@Around(value = \"execution(* com.how2java.service.ProductService.*(..))\")\r\n    public Object log(ProceedingJoinPoint joinPoint) throws Throwable {\r\n        System.out.println(\"start log:\" + joinPoint.getSignature().getName());\r\n        Object object = joinPoint.proceed();\r\n        System.out.println(\"end log:\" + joinPoint.getSignature().getName());\r\n        return object;\r\n    }\r\n}\r\n```\r\n### applicationContext.xml\r\n```\r\n<!-- 扫描包  com.how2java.pojo,com.how2java.aspect 和 com.how2java.service，定位 bean,业务类和切面类 -->\r\n<context:component-scan base-package=\"com.how2java.pojo\"/>\r\n<context:component-scan base-package=\"com.how2java.aspect\"/>\r\n<context:component-scan base-package=\"com.how2java.service\"/>\r\n\r\n<!-- 找到被注解了的切面类，进行切面配置 -->\r\n<aop:aspectj-autoproxy/>\r\n```\r\n### 测试类\r\n```\r\n@RunWith(SpringJUnit4ClassRunner.class)	//表示这是一个 Spring 的测试类\r\n@ContextConfiguration(\"classpath:applicationContext.xml\")	//定位 Spring 的配置文件\r\npublic class TestSpring {\r\n	//给这个测试类装配对象\r\n	@Autowired\r\n    Category c;\r\n	@Autowired\r\n	Product p;\r\n	@Autowired\r\n	ProductService ps;\r\n\r\n    @Test	//测试逻辑\r\n    public void test(){\r\n        System.out.println(c.getName());\r\n        System.out.println(p.getName() + \" - \" + p.getCategory().getName());\r\n        ps.doSomeService();\r\n    }\r\n}\r\n```',`groups`='Java',`is_show`=1,`publish`=1,`summary`='IOC，DI，AOP，注解，测试'  WHERE  `id` = 228 [ RunTime:0.000573s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Java' LIMIT 1 [ RunTime:0.001107s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=9  WHERE  `groups` = 'Java' [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Java' LIMIT 1 [ RunTime:0.000917s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=9  WHERE  `groups` = 'Java' [ RunTime:0.000401s ]
+---------------------------------------------------------------
+[ 2018-10-25T23:37:24+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/228.html
+[ info ] qingrang.top/daily/admin/note/shownote/id/228.html [运行时间：0.051350s][吞吐率：19.47req/s] [内存消耗：1,984.43kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/228.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308,1540133692,1540187497,1540387796; PHPSESSID=fj3tsfgumtponb2nmp89vcu6d2',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '228',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000429s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001277s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 228 LIMIT 1 [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000837s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000277s ]
+---------------------------------------------------------------
+[ 2018-10-25T23:37:34+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/editnote/id/228.html
+[ info ] qingrang.top/daily/admin/note/editnote/id/228.html [运行时间：0.059256s][吞吐率：16.88req/s] [内存消耗：2,032.09kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'editnote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308,1540133692,1540187497,1540387796; PHPSESSID=fj3tsfgumtponb2nmp89vcu6d2',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '228',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->editNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/editnote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000618s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001499s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 228 LIMIT 1 [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000824s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000276s ]
+---------------------------------------------------------------
+[ 2018-10-25T23:37:38+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/updatenote/id/228.html
+[ info ] qingrang.top/daily/admin/note/updatenote/id/228.html [运行时间：0.066621s][吞吐率：15.01req/s] [内存消耗：2,080.97kb] [文件加载：58]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'updatenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '10199',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/228.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308,1540133692,1540187497,1540387796; PHPSESSID=fj3tsfgumtponb2nmp89vcu6d2',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'summary' => 'IOC，DI，AOP，注解，测试',
+  'content' => '# Java 框架 - Spring
+[TOC]
+
+Spring 是一个基于 **IOC** 和 **AOP** 的结构 J2EE 系统的框架。
+
+## IOC 反转控制
+>概念
+
+IOC（Inversion Of Control）反转控制：是 Spring 的基础，简单说就是创建对象由以前的程序员自己 new 构造方法来调用，变成了交由 Spring 创建对象。
+
+DI（Dependency Inject）依赖注入：简单地说就是拿到的对象的属性，已经被注入好相关值了，直接使用即可。
+
+>以获取对象的方式来进行比较
+
+- 传统的方式
+
+通过 new 关键字主动创建一个对象
+
+相当于你自己去菜市场 new 了一只鸡，不过是生鸡，要自己拔毛，去内脏，再上花椒，酱油，烤制，经过各种工序之后，才可以食用。
+
+- IOC方式
+
+对象的生命周期由 Spring 来管理，直接从 Spring 那里去获取一个对象。IOC 是反转控制 (Inversion Of Control)的缩写，就像控制权从本来在自己手里，现在交给了 Spring。
+
+相当于去馆子(Spring)点了一只鸡，交到你手上的时候，已经五味俱全，你就只管吃就行了。
+## AOP 面向切面编程
+即 Aspect Oriented Program 面向切面编程。
+
+首先，在面向切面编程的思想里面，把功能分为**核心业务功能**，和**辅助功能**。
+
+所谓的核心业务，比如登陆，增加数据，删除数据都叫核心业务。
+所谓的辅助功能，比如性能统计，日志，事务管理等等。周边功能在 Spring 的面向切面编程 AOP 思想里，即被定义为切面。
+
+在面向切面编程 AOP 的思想里面，核心业务功能和切面功能分别独立进行开发，然后把切面功能和核心业务功能 "编织" 在一起，这就叫 AOP。
+## 各种注解
+`@Component("p")`	//表示这是一个 bean ,由 Spring 进行管理
+
+`@Autowired`	//注入对象
+
+`@Aspect`	//表示这是一个切面
+
+`@Around(value = "execution(* com.how2java.service.ProductService.*(..))")`	//表示对 com.how2java.service.ProductService 这个类中的所有方法进行切面操作
+
+`@RunWith(SpringJUnit4ClassRunner.class)`	//表示这是一个 Spring 的测试类
+
+`@ContextConfiguration("classpath:applicationContext.xml")`	//定位 Spring 的配置文件
+
+`@Test`	//测试逻辑
+## Demo
+### bean
+```
+@Component("p")	//表示这是一个 bean ,由 Spring 进行管理
+public class Product {
+    private String name = "Product 1";	//属性初始化放在属性声明上进行
+    @Autowired	//注入对象
+    private Category category;
+
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public Category getCategory() {
+        return category;
+    }
+    public void setCategory(Category category) {
+        this.category = category;
+    }
+}
+```
+### 业务类
+```
+@Component("s")	//表示这是一个 bean ,由 Spring 进行管理
+public class ProductService {
+    public void doSomeService(){
+        System.out.println("doSomeService");
+    }
+}
+```
+### 切面类
+```
+@Aspect	//表示这是一个切面
+@Component	//表示这是一个 bean ,由 Spring 进行管理
+public class LoggerAspect {	//日志切面
+	//表示对 com.how2java.service.ProductService 这个类中的所有方法进行切面操作
+	@Around(value = "execution(* com.how2java.service.ProductService.*(..))")
+    public Object log(ProceedingJoinPoint joinPoint) throws Throwable {
+        System.out.println("start log:" + joinPoint.getSignature().getName());
+        Object object = joinPoint.proceed();
+        System.out.println("end log:" + joinPoint.getSignature().getName());
+        return object;
+    }
+}
+```
+### applicationContext.xml
+```
+<!-- 扫描包  com.how2java.pojo,com.how2java.aspect 和 com.how2java.service，定位 bean,业务类和切面类 -->
+<context:component-scan base-package="com.how2java.pojo"/>
+<context:component-scan base-package="com.how2java.aspect"/>
+<context:component-scan base-package="com.how2java.service"/>
+
+<!-- 找到被注解了的切面类，进行切面配置 -->
+<aop:aspectj-autoproxy/>
+```
+### 测试类
+```
+@RunWith(SpringJUnit4ClassRunner.class)	//表示这是一个 Spring 的测试类
+@ContextConfiguration("classpath:applicationContext.xml")	//定位 Spring 的配置文件
+public class TestSpring {
+	//给这个测试类装配对象
+	@Autowired
+    Category c;
+	@Autowired
+	Product p;
+	@Autowired
+	ProductService ps;
+
+    @Test	//测试逻辑
+    public void test(){
+        System.out.println(c.getName());
+        System.out.println(p.getName() + " - " + p.getCategory().getName());
+        ps.doSomeService();
+    }
+}
+```',
+  'groups' => 'Java',
+  'showsel' => '0',
+  'showse2' => '1',
+  'id' => '228',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->updateNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000541s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001289s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 228 LIMIT 1 [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `note` WHERE  `id` = 228 LIMIT 1 [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000854s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `groups` WHERE  `groups` = 'Java' LIMIT 1 [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000404s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `id`=228,`p_id`=2,`title`='Java 框架 - Spring\r',`content`='# Java 框架 - Spring\r\n[TOC]\r\n\r\nSpring 是一个基于 **IOC** 和 **AOP** 的结构 J2EE 系统的框架。\r\n\r\n## IOC 反转控制\r\n>概念\r\n\r\nIOC（Inversion Of Control）反转控制：是 Spring 的基础，简单说就是创建对象由以前的程序员自己 new 构造方法来调用，变成了交由 Spring 创建对象。\r\n\r\nDI（Dependency Inject）依赖注入：简单地说就是拿到的对象的属性，已经被注入好相关值了，直接使用即可。\r\n\r\n>以获取对象的方式来进行比较\r\n\r\n- 传统的方式\r\n\r\n通过 new 关键字主动创建一个对象\r\n\r\n相当于你自己去菜市场 new 了一只鸡，不过是生鸡，要自己拔毛，去内脏，再上花椒，酱油，烤制，经过各种工序之后，才可以食用。\r\n\r\n- IOC方式\r\n\r\n对象的生命周期由 Spring 来管理，直接从 Spring 那里去获取一个对象。IOC 是反转控制 (Inversion Of Control)的缩写，就像控制权从本来在自己手里，现在交给了 Spring。\r\n\r\n相当于去馆子(Spring)点了一只鸡，交到你手上的时候，已经五味俱全，你就只管吃就行了。\r\n## AOP 面向切面编程\r\n即 Aspect Oriented Program 面向切面编程。\r\n\r\n首先，在面向切面编程的思想里面，把功能分为**核心业务功能**，和**辅助功能**。\r\n\r\n所谓的核心业务，比如登陆，增加数据，删除数据都叫核心业务。\r\n所谓的辅助功能，比如性能统计，日志，事务管理等等。周边功能在 Spring 的面向切面编程 AOP 思想里，即被定义为切面。\r\n\r\n在面向切面编程 AOP 的思想里面，核心业务功能和切面功能分别独立进行开发，然后把切面功能和核心业务功能 \"编织\" 在一起，这就叫 AOP。\r\n## 各种注解\r\n`@Component(\"p\")`	//表示这是一个 bean ,由 Spring 进行管理\r\n\r\n`@Autowired`	//注入对象\r\n\r\n`@Aspect`	//表示这是一个切面\r\n\r\n`@Around(value = \"execution(* com.how2java.service.ProductService.*(..))\")`	//表示对 com.how2java.service.ProductService 这个类中的所有方法进行切面操作\r\n\r\n`@RunWith(SpringJUnit4ClassRunner.class)`	//表示这是一个 Spring 的测试类\r\n\r\n`@ContextConfiguration(\"classpath:applicationContext.xml\")`	//定位 Spring 的配置文件\r\n\r\n`@Test`	//测试逻辑\r\n## Demo\r\n### bean\r\n```\r\n@Component(\"p\")	//表示这是一个 bean ,由 Spring 进行管理\r\npublic class Product {\r\n    private String name = \"Product 1\";	//属性初始化放在属性声明上进行\r\n    @Autowired	//注入对象\r\n    private Category category;\r\n\r\n    public String getName() {\r\n        return name;\r\n    }\r\n    public void setName(String name) {\r\n        this.name = name;\r\n    }\r\n    public Category getCategory() {\r\n        return category;\r\n    }\r\n    public void setCategory(Category category) {\r\n        this.category = category;\r\n    }\r\n}\r\n```\r\n### 业务类\r\n```\r\n@Component(\"s\")	//表示这是一个 bean ,由 Spring 进行管理\r\npublic class ProductService {\r\n    public void doSomeService(){\r\n        System.out.println(\"doSomeService\");\r\n    }\r\n}\r\n```\r\n### 切面类\r\n```\r\n@Aspect	//表示这是一个切面\r\n@Component	//表示这是一个 bean ,由 Spring 进行管理\r\npublic class LoggerAspect {	//日志切面\r\n	//表示对 com.how2java.service.ProductService 这个类中的所有方法进行切面操作\r\n	@Around(value = \"execution(* com.how2java.service.ProductService.*(..))\")\r\n    public Object log(ProceedingJoinPoint joinPoint) throws Throwable {\r\n        System.out.println(\"start log:\" + joinPoint.getSignature().getName());\r\n        Object object = joinPoint.proceed();\r\n        System.out.println(\"end log:\" + joinPoint.getSignature().getName());\r\n        return object;\r\n    }\r\n}\r\n```\r\n### applicationContext.xml\r\n```\r\n<!-- 扫描包  com.how2java.pojo,com.how2java.aspect 和 com.how2java.service，定位 bean,业务类和切面类 -->\r\n<context:component-scan base-package=\"com.how2java.pojo\"/>\r\n<context:component-scan base-package=\"com.how2java.aspect\"/>\r\n<context:component-scan base-package=\"com.how2java.service\"/>\r\n\r\n<!-- 找到被注解了的切面类，进行切面配置 -->\r\n<aop:aspectj-autoproxy/>\r\n```\r\n### 测试类\r\n```\r\n@RunWith(SpringJUnit4ClassRunner.class)	//表示这是一个 Spring 的测试类\r\n@ContextConfiguration(\"classpath:applicationContext.xml\")	//定位 Spring 的配置文件\r\npublic class TestSpring {\r\n	//给这个测试类装配对象\r\n	@Autowired\r\n    Category c;\r\n	@Autowired\r\n	Product p;\r\n	@Autowired\r\n	ProductService ps;\r\n\r\n    @Test	//测试逻辑\r\n    public void test(){\r\n        System.out.println(c.getName());\r\n        System.out.println(p.getName() + \" - \" + p.getCategory().getName());\r\n        ps.doSomeService();\r\n    }\r\n}\r\n```',`groups`='Java',`is_show`=0,`publish`=1,`summary`='IOC，DI，AOP，注解，测试'  WHERE  `id` = 228 [ RunTime:0.000534s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Java' LIMIT 1 [ RunTime:0.001014s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=9  WHERE  `groups` = 'Java' [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Java' LIMIT 1 [ RunTime:0.000950s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=9  WHERE  `groups` = 'Java' [ RunTime:0.000317s ]
+---------------------------------------------------------------
+[ 2018-10-25T23:37:39+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/228.html
+[ info ] qingrang.top/daily/admin/note/shownote/id/228.html [运行时间：0.104453s][吞吐率：9.57req/s] [内存消耗：1,984.43kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/228.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308,1540133692,1540187497,1540387796; PHPSESSID=fj3tsfgumtponb2nmp89vcu6d2',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '228',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000463s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001689s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 228 LIMIT 1 [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001413s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000455s ]
+---------------------------------------------------------------
+[ 2018-10-25T23:38:08+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note
+[ info ] qingrang.top/daily/admin/note [运行时间：0.071886s][吞吐率：13.91req/s] [内存消耗：2,241.42kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308,1540133692,1540187497,1540387796; PHPSESSID=fj3tsfgumtponb2nmp89vcu6d2',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/notelst.html [ array (
+  0 => 'stickList',
+  1 => 'hide',
+  2 => 'list',
+  3 => 'list_new',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+  10 => 'default_num',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000636s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001480s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.001989s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal' ORDER BY id desc LIMIT 5 [ RunTime:0.000471s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001036s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000827s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000400s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.001067s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000222s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.000971s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000759s ]
+---------------------------------------------------------------
+[ 2018-10-25T23:38:23+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/editnote/id/225.html
+[ info ] qingrang.top/daily/admin/note/editnote/id/225.html [运行时间：0.053889s][吞吐率：18.56req/s] [内存消耗：2,030.18kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'editnote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308,1540133692,1540187497,1540387796; PHPSESSID=fj3tsfgumtponb2nmp89vcu6d2',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '225',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->editNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/editnote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000492s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001433s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 225 LIMIT 1 [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000917s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000304s ]
+---------------------------------------------------------------
+[ 2018-10-25T23:38:34+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/updatenote/id/225.html
+[ info ] qingrang.top/daily/admin/note/updatenote/id/225.html [运行时间：0.064372s][吞吐率：15.53req/s] [内存消耗：2,063.36kb] [文件加载：58]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'updatenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '5175',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/225.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308,1540133692,1540187497,1540387796; PHPSESSID=fj3tsfgumtponb2nmp89vcu6d2',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'summary' => '',
+  'content' => '# Java EE - Servlet
+## Servlet 简介
+Java Servlet 是运行在 Web 服务器或应用服务器上的程序，它是作为来自 Web 浏览器或其他 HTTP 客户端的请求和 HTTP 服务器上的数据库或应用程序之间的中间层。
+
+浏览器发送一个 HTTP 请求，HTTP 请求由 Web 容器分配给特定的 Servlet 进行处理，Servlet 的本质是一个 Java 对象，这个对象拥有一系列的方法来处理 HTTP 请求。
+## 通过最原始的方式创建一个 web 应用
+### 创建一个 java 项目 j2ee
+### 导入必须的 servlet-api.jar 包
+servlet-api.jar 包位于 D:\\tomcat\\lib\\servlet-api.jar
+### 编写 LoginServlet
+- 创建 LoginServlet类 继承 HttpServlet
+- 重写 service() 方法
+
+### 配置 web.xml
+### 指定项目输出到 classes 目录
+首先在 WEB-INF 下创建classes目录,把项目的class文件输出由原来的 j2ee/bin 设置到 j2ee/web/WEB-INF/classes下
+
+步骤:
+项目右键->properties->Java Build Path->Source->右下角的 Brower-> 指定位置是 j2ee/web/WEB-INF/classes。
+
+>为什么要有这一步？
+
+在 ecilpse 中默认输出的 class 是在 bin 目录下，但是 tomcat 启动之后，在默认情况下，不会去 bin 目录找这些 class 文件，而是到 WEB-INF/classes 这个目录下去寻找。 所以通过这一步的配置，使得 eclipse 的 class 文件输出到 WEB-INF/classes 目录下，那么这样就和 tomcat 兼容了。
+### 配置tomcat的server.xml 中的 <context/>
+为了把 j2ee/web 这个目录部署到 tomcat 中，进行如下操作：
+
+修改 tomcat/conf/sever.xml：
+`<Context path="/" docBase="e:\\\\project\\\\j2ee\\\\web" debug="0" reloadable="false" />`
+
+path="/"：就表示直接通过 http://127.0.0.1/hello 就可以访问网页了。
+
+如果设置为`<Context path="/j2ee" docBase="e:\\\\project\\\\j2ee\\\\web" debug="0" reloadable="false" />`
+
+那么表示需要通过 `http://127.0.0.1/j2ee/hello`才能访问
+
+reloadable：
+### 删除 tomcat webapps 下的 ROOT 目录
+在上一步部署 web 的时候 server.xml 中的 path 配置为 "/" 与 webapps下的 ROOT 目录冲突了
+
+所以要删除 ROOT 目录，如果没有就不用删除了。
+### 重启 tomcat，访问http://127.0.0.1/hello
+',
+  'groups' => 'Java',
+  'showsel' => '0',
+  'showse2' => '0',
+  'id' => '225',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->updateNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000459s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001363s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 225 LIMIT 1 [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `note` WHERE  `id` = 225 LIMIT 1 [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000902s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `groups` WHERE  `groups` = 'Java' LIMIT 1 [ RunTime:0.000302s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000325s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `id`=225,`p_id`=2,`title`='Java EE - Servlet\r',`content`='# Java EE - Servlet\r\n## Servlet 简介\r\nJava Servlet 是运行在 Web 服务器或应用服务器上的程序，它是作为来自 Web 浏览器或其他 HTTP 客户端的请求和 HTTP 服务器上的数据库或应用程序之间的中间层。\r\n\r\n浏览器发送一个 HTTP 请求，HTTP 请求由 Web 容器分配给特定的 Servlet 进行处理，Servlet 的本质是一个 Java 对象，这个对象拥有一系列的方法来处理 HTTP 请求。\r\n## 通过最原始的方式创建一个 web 应用\r\n### 创建一个 java 项目 j2ee\r\n### 导入必须的 servlet-api.jar 包\r\nservlet-api.jar 包位于 D:\\tomcat\\lib\\servlet-api.jar\r\n### 编写 LoginServlet\r\n- 创建 LoginServlet类 继承 HttpServlet\r\n- 重写 service() 方法\r\n\r\n### 配置 web.xml\r\n### 指定项目输出到 classes 目录\r\n首先在 WEB-INF 下创建classes目录,把项目的class文件输出由原来的 j2ee/bin 设置到 j2ee/web/WEB-INF/classes下\r\n\r\n步骤:\r\n项目右键->properties->Java Build Path->Source->右下角的 Brower-> 指定位置是 j2ee/web/WEB-INF/classes。\r\n\r\n>为什么要有这一步？\r\n\r\n在 ecilpse 中默认输出的 class 是在 bin 目录下，但是 tomcat 启动之后，在默认情况下，不会去 bin 目录找这些 class 文件，而是到 WEB-INF/classes 这个目录下去寻找。 所以通过这一步的配置，使得 eclipse 的 class 文件输出到 WEB-INF/classes 目录下，那么这样就和 tomcat 兼容了。\r\n### 配置tomcat的server.xml 中的 <context/>\r\n为了把 j2ee/web 这个目录部署到 tomcat 中，进行如下操作：\r\n\r\n修改 tomcat/conf/sever.xml：\r\n`<Context path=\"/\" docBase=\"e:\\\\project\\\\j2ee\\\\web\" debug=\"0\" reloadable=\"false\" />`\r\n\r\npath=\"/\"：就表示直接通过 http://127.0.0.1/hello 就可以访问网页了。\r\n\r\n如果设置为`<Context path=\"/j2ee\" docBase=\"e:\\\\project\\\\j2ee\\\\web\" debug=\"0\" reloadable=\"false\" />`\r\n\r\n那么表示需要通过 `http://127.0.0.1/j2ee/hello`才能访问\r\n\r\nreloadable：\r\n### 删除 tomcat webapps 下的 ROOT 目录\r\n在上一步部署 web 的时候 server.xml 中的 path 配置为 \"/\" 与 webapps下的 ROOT 目录冲突了\r\n\r\n所以要删除 ROOT 目录，如果没有就不用删除了。\r\n### 重启 tomcat，访问http://127.0.0.1/hello\r\n',`groups`='Java',`is_show`=0,`publish`=0,`summary`=''  WHERE  `id` = 225 [ RunTime:0.000525s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Java' LIMIT 1 [ RunTime:0.001296s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=9  WHERE  `groups` = 'Java' [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Java' LIMIT 1 [ RunTime:0.000914s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=9  WHERE  `groups` = 'Java' [ RunTime:0.000321s ]
+---------------------------------------------------------------
+[ 2018-10-25T23:38:34+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/225.html
+[ info ] qingrang.top/daily/admin/note/shownote/id/225.html [运行时间：0.053693s][吞吐率：18.62req/s] [内存消耗：1,981.98kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/225.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308,1540133692,1540187497,1540387796; PHPSESSID=fj3tsfgumtponb2nmp89vcu6d2',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '225',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000497s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001289s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 225 LIMIT 1 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000890s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000342s ]
+---------------------------------------------------------------
+[ 2018-10-25T23:38:44+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note
+[ info ] qingrang.top/daily/admin/note [运行时间：0.120926s][吞吐率：8.27req/s] [内存消耗：2,238.14kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308,1540133692,1540187497,1540387796; PHPSESSID=fj3tsfgumtponb2nmp89vcu6d2',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/notelst.html [ array (
+  0 => 'stickList',
+  1 => 'hide',
+  2 => 'list',
+  3 => 'list_new',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+  10 => 'default_num',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000707s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001984s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.003391s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal' ORDER BY id desc LIMIT 5 [ RunTime:0.000867s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001810s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000818s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000831s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.002196s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000496s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000620s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000586s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.002023s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.002132s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.001233s ]
+---------------------------------------------------------------
+[ 2018-10-25T23:38:59+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/editnote/id/209.html
+[ info ] qingrang.top/daily/admin/note/editnote/id/209.html [运行时间：0.056837s][吞吐率：17.59req/s] [内存消耗：2,068.04kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'editnote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308,1540133692,1540187497,1540387796; PHPSESSID=fj3tsfgumtponb2nmp89vcu6d2',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '209',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->editNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/editnote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000480s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001704s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 209 LIMIT 1 [ RunTime:0.000611s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001043s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000310s ]
+---------------------------------------------------------------
+[ 2018-10-25T23:39:09+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/updatenote/id/209.html
+[ info ] qingrang.top/daily/admin/note/updatenote/id/209.html [运行时间：0.069207s][吞吐率：14.45req/s] [内存消耗：2,228.17kb] [文件加载：58]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'updatenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '56493',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/209.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308,1540133692,1540187497,1540387796; PHPSESSID=fj3tsfgumtponb2nmp89vcu6d2',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'summary' => '',
+  'content' => '# Java SE - 基础
+[TOC]
+## Scanner
+```
+package basics;
+
+import java.util.Scanner;
+
+public class ScannerDemo {
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		int num = scan.nextInt();
+		System.out.println("输入的整数是：" + num);
+		
+		float f = scan.nextFloat();
+		System.out.println("输入的浮点数是：" + f);
+		
+//		如果在通过nextInt()读取了整数后，再接着读取字符串，读出来的是回车换行:"\\r\\n",因为 nextInt 仅仅读取数字信息，而不会读取回车换行"\\r\\n".
+//		所以，如果在业务上需要读取了整数后，接着读取字符串，那么就应该连续执行两次 nextLine()，第一次是取走回车换行，第二次才是读取真正的字符串
+		String str = scan.nextLine(); //读取回车换行
+		String str2 = scan.nextLine(); //读取真正的字符串
+		System.out.println("str1是：" + str);
+		System.out.println("输入的字符串是：" + str2);
+	}
+}
+```
+## 匿名对象
+### 1.1 使用方式
+```
+package study;
+
+/**
+ * 匿名对象
+ * Created by CaptainQR on 2018/9/26.
+ */
+public class AnonymousObject {
+    public static void main(String[] args) {
+        new Car().age = 5;
+        new Car().color = "blue";
+        new Car().show();   //每一次 new 都是一个新的对象
+    }
+}
+
+class Car{
+    String color = "red";
+    int age = 4;
+    public void show(){
+        System.out.println("Car color = " + this.color + ", Car age = " + this.age);
+    }
+}
+```
+
+---
+~~Car color = red, Car age = 4~~
+
+---
+
+1. **当对对象的方法只调用一次时，可以用匿名对象来完成**，这样写比较简化。如果对一个对象进行多个成员调用，必须给这个对象起个名字。
+
+1. 可以将匿名对象作为实际参数进行传递。
+`Show(new Car());`
+
+## JAVA 的默认修饰符
+### 1.default
+只能由跟这个类在同一个包中的类来访问，比 private 限制更少，但比 protected 限制更多。
+
+## 多态
+### 1. 简单应用
+```
+package study;
+
+/**
+ * 多态
+ * Created by CaptainQR on 2018/9/26.
+ */
+public class Polymorphism {
+    public static void main(String[] args) {
+        function(new Cat());
+        function(new Dog());
+    }
+
+    public static void function(Animale a){ //Animale a = new Cat(); 向上转型,父类引用指向子类对象
+        a.eat();
+//        a.seeHome();    //没有为类型 Animale 定义 seeHome() 方法，只能使用父类的引用访问父类的成员
+    }
+}
+
+/**
+ * 抽象类
+ */
+abstract class Animale{
+    abstract public void eat();
+}
+
+/**
+ * 猫类 实现 抽象的 动物类
+ */
+class Cat extends Animale{
+    public void eat() {
+        System.out.println("Cat eat finish");
+    }
+
+    public void catMouse(){
+        System.out.println("Cat catch mouse");
+    }
+}
+
+/**
+ * 狗类 实现 抽象的 动物类
+ */
+class Dog extends Animale{
+    public void eat() {
+        System.out.println("Dog eat bone");
+    }
+
+    public void seeHome(){
+        System.out.println("Dog see Home");
+    }
+}
+```
+---
+~~Cat eat finish
+Dog eat bone~~
+
+---
+### 2.向上转型和向下转型
+```
+package study;
+
+/**
+ * 向上转型和向下转型
+ * Created by CaptainQR on 2018/9/26.
+ */
+public class Transformation {
+    public static void main(String[] args) {
+        Animale2 a = new Cat2();    //向上转型
+        a.eat();    //此时不能调用子类的特有方法
+        Cat2 c = (Cat2)a;   //向下转型
+        c.catchMouse(); //此时才能调用子类的特有方法
+    }
+}
+
+abstract class Animale2{
+    abstract public void eat();
+}
+
+class Cat2 extends Animale2{
+    public void eat(){
+        System.out.println("Cat eat finish");
+    }
+    public void catchMouse(){
+        System.out.println("Cat cat mouse");
+    }
+}
+```
+---
+~~Cat eat finish
+Cat cat mouse~~
+
+---
+**千万不能出现这样的操作：就是将父类对象转成子类类型**
+
+```
+Animale a = new Animale();
+Cat c = (Cat)a;
+```
+## 内部类
+### 内部类的使用
+#### 内部类的访问规则
+1．内部类可以直接访问外部类中的成员，包括私有。之所以可以直接访问外部类中的成员，是因为内部类中默认持有了一个外部类的引用，（外部类名.this --> Outer.this.x ）
+2．外部类要访问内部类，必须建立内部类对象。
+
+```
+package basics;
+
+import basics.Outer.StaticInner;
+
+public class OutIn{
+	public static void main(String[] args) {
+		//外部类访问内部类
+		//非静态内部类	外部类名.内部类名 变量名 = new 外部类().new 内部类()
+		Outer.Inner inner = new Outer().new Inner();
+		inner.fun();
+		
+		//静态内部类	内部类名 变量名 = new 外部类.静态内部类()
+		StaticInner inner2 = new Outer.StaticInner();
+		inner2.fun();
+	}
+}
+
+class Outer {
+	private static int x = 1;
+	
+	/**
+	 * 非静态内部类
+	 */
+	class Inner{
+		int x = 2;
+		public void fun(){
+			int x = 3;
+			System.out.println(x);//内部类方法中的变量
+			System.out.println(this.x);//内部类中的变量
+			System.out.println(Outer.this.x);//外部类中的变量
+		}
+	}
+	
+	/**
+	 * 静态内部类
+	 */
+	static class StaticInner{
+		public void fun(){
+			//当内部类被 static 修饰后，只能直接访问外部类中的 static 成员,出现了访问局限。
+			System.out.println("此为静态内部类方法" + x);
+		}
+	}
+}
+```
+#### 访问格式
+1．当内部类定义在外部类的成员位置上，而且非私有，可以在外部其他类中。可以直接建立内部类对象。
+格式
+```
+外部类名.内部类名  变量名 = 外部类对象.内部类对象;
+Outer.Inner in = new Outer().new Inner();
+```
+2．当内部类在成员位置上，就可以被成员修饰符所修饰。
+
+比如：
+- private：将内部类在外部类中进行封装。
+- static:  内部类就具备static的特性。
+
+当内部类被static修饰后，只能直接访问外部类中的static成员。出现了访问局限。
+
+>在外部其他类中，如何直接访问static内部类的非静态成员呢？
+
+new Outer.Inner().function();
+>在外部其他类中，如何直接访问static内部类的静态成员呢？
+
+uter.Inner.function();
+
+注意：
+当内部类中定义了静态成员，该内部类必须是static的。
+当外部类中的静态方法访问内部类时，内部类也必须是static的。
+
+### 匿名内部类
+匿名类指的是**在声明一个类的同时实例化它**，使代码更加简洁精练。通常情况下，要使用一个接口或者抽象类，都必须创建一个子类
+
+有的时候，为了快速使用，直接实例化一个抽象类，并“当场”实现其抽象方法。既然实现了抽象方法，那么就是一个新的类，只是这个类，没有命名。这样的类，叫做匿名类。
+
+#### 匿名内部类的格式
+**new 父类或者接口(){定义子类的内容};**
+```
+Runnable r = new Runnable(){};
+
+//多在 Android 中使用，例如监听方法的实现
+new Demo(){	//匿名内部类
+	public void show(){
+		System.out.println("Inner show!");
+	}
+}.show();
+```
+#### 例子
+```
+package basics;
+
+/**
+ * 接口
+ */
+interface Inter{
+	public void fun();
+}
+
+/**
+ * 抽象方法
+ */
+abstract class Inter2{
+	abstract public void fun();
+}
+
+class Test{
+	//返回  Inter 对象
+	public static Inter fun2(){
+		return new Inter(){
+			public void fun(){
+				System.out.println("fun2 running!");
+			}
+		};
+	}
+	
+	public static void fun3(){
+		//对象.方法();
+		new Inter2(){
+			public void fun(){
+				System.out.println("fun3 running!");
+			}
+		}.fun();
+	}
+}
+
+public class AnonymousInnerClass {
+	public static void main(String[] args) {
+		//Test.fun2() 返回的是  Inter 对象，对象.方法
+		Test.fun2().fun();
+		
+		Test.fun3();
+	}
+}
+```
+## 默认方法
+默认方法是 JDK8 新特性，指的是接口也可以提供具体方法了，而不像以前，只能提供抽象方法。
+```
+package basics;
+
+public interface Person {
+	public void eat();
+	
+	//默认方法，有实现体
+	default public void die(){
+		System.out.println("Game Over!");
+	}
+}
+```
+Person 这个接口，增加了一个默认方法 die，这个方法有实现体，并且被声明为了 default
+
+>为什么会有默认方法
+
+假设没有默认方法这种机制，那么如果要为 Person 增加一个新的方法 die ,那么所有实现了 Person 接口的类，都需要做改动。
+
+但是引入了默认方法后，原来的类，不需要做任何改动，并且还能得到这个默认方法。
+
+通过这种手段，就能够很好的扩展新的类，并且做到不影响原来的类。
+
+```
+package basics;
+
+public class DefaultFunction implements Person{
+
+	@Override
+	public void eat() {
+		// TODO Auto-generated method stub
+	}
+	
+	public static void main(String[] args) {
+		//不需要做任何改动，直接得到这个默认方法
+		new DefaultFunction().die();
+	}
+}
+```
+## 装箱和拆箱
+### 封装类
+所有的基本类型，都有对应的类类型，比如 int 对应的类是 Integer，这种类就叫做封装类。
+### 自动装箱和自动拆箱
+```
+int i = 5;
+
+//把一个基本类型的变量,转换为 Integer 对象
+Integer it = new Integer(i);
+//不需要调用构造方法，通过 = 符号自动把 基本类型 转换为 类类型 就叫装箱
+Integer it2 = i;
+
+//把一个 Integer 对象，转换为一个基本类型的 int
+int i2 = it.intValue();
+//不需要调用 Integer 的 intValue 方法，通过 = 就自动转换成 int 类型，就叫拆箱
+int i3 = it;
+```
+### Number 类
+数字封装类有：Byte,Short,Integer,Long,Float,Double
+这些类都是抽象类 Number 的子类
+```
+int i = 5;
+
+Integer it = new Integer(i);
+//Integer 是 Number 的子类，所以打印 true
+System.out.println(it instanceof Number);
+```
+## Math
+```
+float f1 = 5.4f;
+
+//四舍五入
+System.out.println(Math.round(f1));
+
+//得到一个 0-1 之间的随机浮点数（取不到1）
+System.out.println(Math.random());
+
+//得到一个 0-10 之间的随机整数 （取不到10）
+System.out.println((int)( Math.random()*10));
+
+//大于指定数据的最小整数
+System.out.println(Math.ceil(f1));	//6.0
+
+//小于指定数据的最大整数
+System.out.println(Math.floor(f1));	//5.0
+
+//开方
+System.out.println(Math.sqrt(9));
+
+//次方（2的4次方）
+System.out.println(Math.pow(2,4));
+
+//π
+System.out.println(Math.PI);
+
+//自然常数
+System.out.println(Math.E);
+```
+## 格式控制
+### 换行符和回车符
+- 换行符就是另起一行 --- \'\\n\' 换行（newline）
+- 回车符就是回到一行的开头 --- \'\\r\' 回车（return）
+
+在 eclipse 里敲一个回车，实际上是回车换行符，Java 是跨平台的编程语言，同样的代码，可以在不同的平台使用，比如 Windows,Linux,Mac。
+
+然而在不同的操作系统，换行符是不一样的
+- 在DOS和Windows中，每行结尾是 “\\r\\n”；
+- Linux系统里，每行结尾只有 “\\n”；
+- Mac系统里，每行结尾是只有 "\\r"。
+
+为了使得同一个 java 程序的换行符在所有的操作系统中都有一样的表现，使用 **%n**，就可以做到平台无关的换行。
+### \\\\t 空格对齐
+```
+System.out.println("使用空格无法达到对齐的效果");
+System.out.println("abc def");
+System.out.println("ab def");
+System.out.println("a def");
+
+System.out.println("使用\\\\t制表符可以达到对齐的效果");
+System.out.println("abc\\tdef");
+System.out.println("ab\\tdef");
+System.out.println("a\\tdef");
+```
+---
+~~使用空格无法达到对齐的效果
+abc def
+ab def
+a def
+使用 \\t 制表符可以达到对齐的效果
+abc	def
+ab	def
+a	def~~
+
+---
+## String
+### 概述
+字符串最大特点：一旦被初始化就不可以被改变。
+
+String 类复写了 Object 类中 equals 方法，该方法用于判断字符串是否相同。
+```
+//s1 在内存中有一个对象
+String s1 = "abc";
+//s2 在内存中有两个对象
+String s2 = new String("abc");
+String s3 = "abc";
+
+System.out.println(s1==s2);//false
+System.out.println(s1==s3);//true
+System.out.println(s1.equals(s2));//true
+```
+
+### 常见方法
+#### 获取
+```
+String str = "aabcbcc";
+
+//字符串的长度
+System.out.println(str.length());
+
+//根据位置获取位置上某个字符
+System.out.println(str.charAt(1));
+
+//===== 根据字符获取该字符在字符串中位置 =====
+//int indexOf(int ch):返回的是ch在字符串中第一次出现的位置。
+//int indexOf(int ch, int fromIndex) :从fromIndex指定位置开始，获取ch在字符串中出现的位置。
+//如果没有找到，返回-1
+System.out.println(str.indexOf(\'b\',3));
+//可以用于对指定判断是否包含
+if(str.indexOf("aa")!=-1)
+
+
+//int lastIndexOf(int ch) ：反向索引一个字符出现位置，角标并不会变
+System.out.println(str.lastIndexOf(\'b\'));
+```
+#### 判断
+```
+//判断文件名称是否是Array单词开头。
+sop(str.startsWith("Array"));
+//判断文件名称是否是.java的文件。
+sop(str.endsWith(".java"));
+//判断文件中是否包含Demo
+sop(str.contains("Demo"));
+```
+- 字符串中是否包含某一个子串。
+`boolean contains(str):`
+特殊之处：indexOf(str):可以索引str第一次出现位置，如果返回-1.表示该字符串中不存在str。
+所以，也可以用于对指定判断是否包含。
+`if(str.indexOf("aa")!=-1)`
+
+而且该方法既可以判断，又可以获取出现的位置。
+
+- 字符中是否有内容。
+`boolean isEmpty(): 原理就是判断长度是否为0. `
+- 字符串是否是以指定内容开头。
+`boolean startsWith(str);`
+- 字符串是否是以指定内容结尾。
+`boolean endsWith(str);`
+- 判断字符串内容是否相同。复写了Object类中的equals方法。
+`boolean equals(str);`
+- 判断内容是否相同，并忽略大小写。
+`boolean equalsIgnoreCase();`
+
+#### 转换
+```
+public static void method_trans()
+	{
+		char[] arr = {\'a\',\'b\',\'c\',\'d\',\'e\',\'f\'};
+		String s= new String(arr,1,3);//3是个数
+		sop("s="+s);
+		String s1 = "zxcvbnm";
+		char[] chs = s1.toCharArray();
+		for(int x=0; x<chs.length; x++)
+		{
+			sop("ch="+chs[x]);
+		}
+	}
+```
+- 将字符数组转成字符串。
+构造函数：
+```
+String(char[])
+String(char[],offset,count):将字符数组中的一部分转成字符串。
+```
+静态方法：
+```
+static String copyValueOf(char[]);
+static String copyValueOf(char[] data, int offset, int count) 
+static String valueOf(char[]):
+```
+- 将字符串转成字符数组。**
+`char[] toCharArray():`
+
+- 将字节数组转成字符串。
+`String(byte[])`
+`String(byte[],offset,count):将字节数组中的一部分转成字符串。`
+
+- 将字符串转成字节数组。
+`byte[]  getBytes():`
+
+- 将基本数据类型转成字符串。
+`static String valueOf(int)`
+`static String valueOf(double)`
+特殊：字符串和字节数组在转换过程中，是可以指定编码表的。
+#### 替换
+`String replace(oldchar,newchar);`
+```
+public static void method_replace()
+	{
+		String s = "hello java";
+	 //String s1 = s.replace(\'q\',\'n\');
+//如果要替换的字符不存在，返回的还是原串。
+		String s1 = s.replace("java","world");
+		sop("s="+s);
+		sop("s1="+s1);
+	}
+```
+#### 切割
+`String[] split(regex);`
+```
+public static void  method_split()
+	{
+		String s = "zhagnsa,lisi,wangwu";
+
+		String[] arr  = s.split(",");
+
+		for(int x = 0; x<arr.length; x++)
+		{
+			sop(arr[x]);
+		}
+	}	
+```
+#### 子串（获取字符串中的一部分）
+`String substring(begin);`
+`String substring(begin,end);`
+```
+public static void method_sub()
+	{
+		String s = "abcdef";
+		sop(s.substring(2));//从指定位置开始到结尾。如果角标不存在，会出现字符串角标越界异常。
+		sop(s.substring(2,4)); 
+ 		//包含头，不包含尾。s.substring(0,s.length());
+	}
+```
+#### 转换，去除空格，比较
+- 将字符串转成大写或则小写。
+`String toUpperCase();`
+`String toLowerCase();`
+
+- 将字符串两端的多个空格去除。
+`String trim();`
+
+- 对两个字符串进行自然顺序的比较。
+`int compareTo(string);`
+### StringBuffer
+#### 特点
+1. 长度是可变化的。
+2. 可以直接操作多个数据类型。
+3. 最终会通过 toString 方法变成字符串。
+4. 是一个容器。
+
+>为什么StringBuffer可以变长？
+
+和String内部是一个字符数组一样，StringBuffer 也维护了一个字符数组。 但是，这个字符数组，留有冗余长度。
+
+比如说new StringBuffer("the")，其内部的字符数组的长度，是19，而不是3，这样调用插入和追加，在现成的数组的基础上就可以完成了。
+
+如果追加的长度超过了19，就会分配一个新的数组，长度比原来多一些，把原来的数据复制到新的数组中，看上去 数组长度就变长了。
+
+注： 19 这个数量，不同的JDK数量是不一样的
+### StringBuilder
+StringBuffer 是线程同步。
+StringBuilder 是线程不同步。
+建议使用 StringBuilder
+#### 存储。
+StringBuffer append():将指定数据作为参数添加到已有数据结尾处。
+StringBuffer insert(index,数据):可以将数据插入到指定index位置。
+### 删除。
+StringBuffer delete(start,end):删除缓冲区中的数据，包含start，不包含end。
+StringBuffer deleteCharAt(index):删除指定位置的字符。
+### 获取。
+char charAt(int index) 
+int indexOf(String str) 
+int lastIndexOf(String str) 
+int length() 
+String substring(int start, int end)  
+### 修改。
+StringBuffer replace(start,end,string);
+void setCharAt(int index, char ch) ;
+### 反转。
+StringBuffer reverse(); 
+### 将缓冲区中指定数据存储到指定字符数组中。
+void getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin)
+## Date
+|字符|含义|
+|-|
+|y| 代表年|
+|M| 代表月|
+|d| 代表日|
+|H| 代表24进制的小时|
+|h| 代表12进制的小时|
+|m| 代表分钟|
+|s| 代表秒|
+|S| 代表毫秒|
+
+```
+//时间原点
+Date date = new Date(5000);
+System.out.println(date);	//Thu Jan 01 08:00:05 CST 1970
+
+//当前时间
+Date dateNow = new Date();
+System.out.println(dateNow);	//Fri Oct 12 11:10:23 CST 2018
+
+//时间格式化
+SimpleDateFormat sdf =new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+Date d= new Date();
+String str = sdf.format(d);
+System.out.println(str);	//2018-10-12 11:10:23
+```
+## Calendar
+```
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
+public class DateDemo {
+	private static SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+	 
+    public static void main(String[] args) {
+    	//采用单例模式获取日历对象Calendar.getInstance();
+        Calendar c = Calendar.getInstance();
+        
+        //通过日历对象得到日期对象
+        Date now = c.getTime();
+        
+        //===== 当前日期 =====
+        System.out.println("当前日期：\\t" + format(c.getTime()));
+ 
+        //===== 下个月的今天 =====
+        //set方法，直接设置年/月/日
+        c.setTime(now);
+        //add方法，在原日期上增加年/月/日
+        c.add(Calendar.MONTH, 1);
+        System.out.println("下个月的今天:\\t" +format(c.getTime()));
+ 
+        //===== 去年的今天 =====
+        c.setTime(now);
+        c.add(Calendar.YEAR, -1);
+        System.out.println("去年的今天:\\t" +format(c.getTime()));
+ 
+        //===== 上个月的第三天 =====
+        c.setTime(now);
+        c.add(Calendar.MONTH, -1);
+        c.set(Calendar.DATE, 3);
+        System.out.println("上个月的第三天:\\t" +format(c.getTime()));
+ 
+    }
+ 
+    private static String format(Date time) {
+        return sdf.format(time);
+    }
+}
+```
+## 异常
+### finally
+- finally中定义的通常是-->关闭资源代码,因为资源必须释放。
+- finally只有一种情况不会执行。
+当执行到System.exit(0); //系统退出 jvm 结束
+fianlly不会执行。
+
+### throw 和 throws 的区别
+- throws：使用在函数上，后面跟的是异常类，可以跟多个，用逗号隔开。`public void method() throws FileNotFoundException {}`
+throw：使用在函数内，后面跟的是异常对象。`throw new FuShuException();`
+- throws：表示出现异常的一种可能性，并不一定会发生这些异常；
+throw：执行 throw 则一定抛出了某个异常对象。
+### 异常的分类
+异常分类： 可查异常，运行时异常和错误 3 种。
+- 可查异常：即必须进行处理的异常，要么 try catch 住,要么往外抛，谁调用，谁处理，比如 `FileNotFoundException` 如果不处理，编译器，就不让你通过。
+- 运行时异常（RuntimeException）： 不是必须进行 try catch 的异常。在编写代码的时候，依然可以使用 try catch throws 进行处理，与可查异常不同之处在于，即便不进行 try catch ，也不会有编译错误。Java之所以会设计运行时异常的原因之一，是因为下标越界，空指针这些运行时异常太过于普遍，如果都需要进行捕捉，代码的可读性就会变得很糟糕。
+在自定义异常时，如果该异常的发生，程序无法再继续进行运算，需要程序停下来，就让自定义异常继承 RuntimeException。
+- 错误（Error）：指的是系统级别的异常，通常是内存用光了，在默认设置下，一般 java 程序启动的时候，最大可以使用 16m 的内存。如不停的给 StringBuffer 追加字符，很快就把内存使用光了。抛出 OutOfMemoryError，与运行时异常一样，错误也是不要求强制捕捉的。
+### 自定义异常
+**自定义异常必须继承 Exception**
+
+>需求：在本程序中，对于除数是负数，视为是错误的是无法进行运算的。
+
+```
+package basics;
+
+public class TestDemo {
+    public static void main(String[] args) {
+    	Demo d = new Demo();
+    	try{
+    		int x = d.div(4, -1);
+    		System.out.println("除数为负数");
+    	}catch(FuShuException e){
+    		System.out.println(e.toString() + "\\t错误的负数："+e.GetNum());
+    	}
+    	System.out.println("Over!!!");
+    }
+}
+
+/**
+ * 自定义异常信息
+ */
+class FuShuException extends Exception{	//自定义异常必须继承 Exception
+	private int num;
+	FuShuException(String msg,int num){
+		//因为父类中已经把异常信息的操作都完成了，所以子类只要在构造时，将异常信息传递给父类通过 super 语句，那么就可以直接通过 getMessage 等方法获取自定义的异常信息。
+		super(msg);
+		this.num = num;
+	}
+	public int GetNum(){
+		return num;
+	}
+}
+
+class Demo{
+	public int div(int a,int b)throws FuShuException{
+		if(b<0)	{
+			throw new FuShuException("异常信息，除负数啦！", b);
+		}
+		return a/b;
+	}
+}
+```
+---
+~~basics.FuShuException: 异常信息，除负数啦！	错误的负数：-1
+Over!!!~~
+
+---
+### 异常在子父类中的覆盖
+1．子类在覆盖父类时，如果父类的方法抛出异常，那么子类的覆盖方法，只能抛出父类的异常或者该异常的子类。
+2．如果父类方法抛出多个异常，那么子类在覆盖该方法时，只能抛出父类异常的子集。
+3．如果父类或者接口的方法中没有异常抛出，那么子类在覆盖方法时，也不可以抛出异常。如果子类方法发生了异常，就必须要进行 try 处理。绝对不能抛。
+## 集合框架
+### LinkedList
+除了实现了 List 接口外，LinkedList 还实现了双向链表结构 Deque，可以很方便的在头尾插入删除数据。
+
+>1.添加
+
+addFirst();
+addLast();
+>2.获取
+
+获取元素，但不删除元素。
+如果集合中没有元素，会出现 NoSuchElementException 异常。
+getFirst();
+getLast();
+
+获取元素，但是元素被删除。
+如果集合中没有元素，会出现 NoSuchElementException 异常。
+removeFirst();
+removeLast();
+
+---
+
+在JDK1.6出现了替代方法。
+>1.添加
+
+offerFirst();
+offerLast();
+>2.获取
+
+获取元素，但不删除元素。
+如果集合中没有元素，会返回null。
+peekFirst();
+peekLast(); 
+
+获取元素，但是元素被删除。
+如果集合中没有元素，会返回null。
+pollFirst();
+pollLast();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+',
+  'groups' => 'Java',
+  'showsel' => '0',
+  'showse2' => '1',
+  'id' => '209',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->updateNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000501s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001378s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 209 LIMIT 1 [ RunTime:0.000604s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `note` WHERE  `id` = 209 LIMIT 1 [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001008s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `groups` WHERE  `groups` = 'Java' LIMIT 1 [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000289s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `id`=209,`p_id`=2,`title`='Java SE - 基础\r',`content`='# Java SE - 基础\r\n[TOC]\r\n## Scanner\r\n```\r\npackage basics;\r\n\r\nimport java.util.Scanner;\r\n\r\npublic class ScannerDemo {\r\n	public static void main(String[] args) {\r\n		Scanner scan = new Scanner(System.in);\r\n		int num = scan.nextInt();\r\n		System.out.println(\"输入的整数是：\" + num);\r\n		\r\n		float f = scan.nextFloat();\r\n		System.out.println(\"输入的浮点数是：\" + f);\r\n		\r\n//		如果在通过nextInt()读取了整数后，再接着读取字符串，读出来的是回车换行:\"\\r\\n\",因为 nextInt 仅仅读取数字信息，而不会读取回车换行\"\\r\\n\".\r\n//		所以，如果在业务上需要读取了整数后，接着读取字符串，那么就应该连续执行两次 nextLine()，第一次是取走回车换行，第二次才是读取真正的字符串\r\n		String str = scan.nextLine(); //读取回车换行\r\n		String str2 = scan.nextLine(); //读取真正的字符串\r\n		System.out.println(\"str1是：\" + str);\r\n		System.out.println(\"输入的字符串是：\" + str2);\r\n	}\r\n}\r\n```\r\n## 匿名对象\r\n### 1.1 使用方式\r\n```\r\npackage study;\r\n\r\n/**\r\n * 匿名对象\r\n * Created by CaptainQR on 2018/9/26.\r\n */\r\npublic class AnonymousObject {\r\n    public static void main(String[] args) {\r\n        new Car().age = 5;\r\n        new Car().color = \"blue\";\r\n        new Car().show();   //每一次 new 都是一个新的对象\r\n    }\r\n}\r\n\r\nclass Car{\r\n    String color = \"red\";\r\n    int age = 4;\r\n    public void show(){\r\n        System.out.println(\"Car color = \" + this.color + \", Car age = \" + this.age);\r\n    }\r\n}\r\n```\r\n\r\n---\r\n~~Car color = red, Car age = 4~~\r\n\r\n---\r\n\r\n1. **当对对象的方法只调用一次时，可以用匿名对象来完成**，这样写比较简化。如果对一个对象进行多个成员调用，必须给这个对象起个名字。\r\n\r\n1. 可以将匿名对象作为实际参数进行传递。\r\n`Show(new Car());`\r\n\r\n## JAVA 的默认修饰符\r\n### 1.default\r\n只能由跟这个类在同一个包中的类来访问，比 private 限制更少，但比 protected 限制更多。\r\n\r\n## 多态\r\n### 1. 简单应用\r\n```\r\npackage study;\r\n\r\n/**\r\n * 多态\r\n * Created by CaptainQR on 2018/9/26.\r\n */\r\npublic class Polymorphism {\r\n    public static void main(String[] args) {\r\n        function(new Cat());\r\n        function(new Dog());\r\n    }\r\n\r\n    public static void function(Animale a){ //Animale a = new Cat(); 向上转型,父类引用指向子类对象\r\n        a.eat();\r\n//        a.seeHome();    //没有为类型 Animale 定义 seeHome() 方法，只能使用父类的引用访问父类的成员\r\n    }\r\n}\r\n\r\n/**\r\n * 抽象类\r\n */\r\nabstract class Animale{\r\n    abstract public void eat();\r\n}\r\n\r\n/**\r\n * 猫类 实现 抽象的 动物类\r\n */\r\nclass Cat extends Animale{\r\n    public void eat() {\r\n        System.out.println(\"Cat eat finish\");\r\n    }\r\n\r\n    public void catMouse(){\r\n        System.out.println(\"Cat catch mouse\");\r\n    }\r\n}\r\n\r\n/**\r\n * 狗类 实现 抽象的 动物类\r\n */\r\nclass Dog extends Animale{\r\n    public void eat() {\r\n        System.out.println(\"Dog eat bone\");\r\n    }\r\n\r\n    public void seeHome(){\r\n        System.out.println(\"Dog see Home\");\r\n    }\r\n}\r\n```\r\n---\r\n~~Cat eat finish\r\nDog eat bone~~\r\n\r\n---\r\n### 2.向上转型和向下转型\r\n```\r\npackage study;\r\n\r\n/**\r\n * 向上转型和向下转型\r\n * Created by CaptainQR on 2018/9/26.\r\n */\r\npublic class Transformation {\r\n    public static void main(String[] args) {\r\n        Animale2 a = new Cat2();    //向上转型\r\n        a.eat();    //此时不能调用子类的特有方法\r\n        Cat2 c = (Cat2)a;   //向下转型\r\n        c.catchMouse(); //此时才能调用子类的特有方法\r\n    }\r\n}\r\n\r\nabstract class Animale2{\r\n    abstract public void eat();\r\n}\r\n\r\nclass Cat2 extends Animale2{\r\n    public void eat(){\r\n        System.out.println(\"Cat eat finish\");\r\n    }\r\n    public void catchMouse(){\r\n        System.out.println(\"Cat cat mouse\");\r\n    }\r\n}\r\n```\r\n---\r\n~~Cat eat finish\r\nCat cat mouse~~\r\n\r\n---\r\n**千万不能出现这样的操作：就是将父类对象转成子类类型**\r\n\r\n```\r\nAnimale a = new Animale();\r\nCat c = (Cat)a;\r\n```\r\n## 内部类\r\n### 内部类的使用\r\n#### 内部类的访问规则\r\n1．内部类可以直接访问外部类中的成员，包括私有。之所以可以直接访问外部类中的成员，是因为内部类中默认持有了一个外部类的引用，（外部类名.this --> Outer.this.x ）\r\n2．外部类要访问内部类，必须建立内部类对象。\r\n\r\n```\r\npackage basics;\r\n\r\nimport basics.Outer.StaticInner;\r\n\r\npublic class OutIn{\r\n	public static void main(String[] args) {\r\n		//外部类访问内部类\r\n		//非静态内部类	外部类名.内部类名 变量名 = new 外部类().new 内部类()\r\n		Outer.Inner inner = new Outer().new Inner();\r\n		inner.fun();\r\n		\r\n		//静态内部类	内部类名 变量名 = new 外部类.静态内部类()\r\n		StaticInner inner2 = new Outer.StaticInner();\r\n		inner2.fun();\r\n	}\r\n}\r\n\r\nclass Outer {\r\n	private static int x = 1;\r\n	\r\n	/**\r\n	 * 非静态内部类\r\n	 */\r\n	class Inner{\r\n		int x = 2;\r\n		public void fun(){\r\n			int x = 3;\r\n			System.out.println(x);//内部类方法中的变量\r\n			System.out.println(this.x);//内部类中的变量\r\n			System.out.println(Outer.this.x);//外部类中的变量\r\n		}\r\n	}\r\n	\r\n	/**\r\n	 * 静态内部类\r\n	 */\r\n	static class StaticInner{\r\n		public void fun(){\r\n			//当内部类被 static 修饰后，只能直接访问外部类中的 static 成员,出现了访问局限。\r\n			System.out.println(\"此为静态内部类方法\" + x);\r\n		}\r\n	}\r\n}\r\n```\r\n#### 访问格式\r\n1．当内部类定义在外部类的成员位置上，而且非私有，可以在外部其他类中。可以直接建立内部类对象。\r\n格式\r\n```\r\n外部类名.内部类名  变量名 = 外部类对象.内部类对象;\r\nOuter.Inner in = new Outer().new Inner();\r\n```\r\n2．当内部类在成员位置上，就可以被成员修饰符所修饰。\r\n\r\n比如：\r\n- private：将内部类在外部类中进行封装。\r\n- static:  内部类就具备static的特性。\r\n\r\n当内部类被static修饰后，只能直接访问外部类中的static成员。出现了访问局限。\r\n\r\n>在外部其他类中，如何直接访问static内部类的非静态成员呢？\r\n\r\nnew Outer.Inner().function();\r\n>在外部其他类中，如何直接访问static内部类的静态成员呢？\r\n\r\nuter.Inner.function();\r\n\r\n注意：\r\n当内部类中定义了静态成员，该内部类必须是static的。\r\n当外部类中的静态方法访问内部类时，内部类也必须是static的。\r\n\r\n### 匿名内部类\r\n匿名类指的是**在声明一个类的同时实例化它**，使代码更加简洁精练。通常情况下，要使用一个接口或者抽象类，都必须创建一个子类\r\n\r\n有的时候，为了快速使用，直接实例化一个抽象类，并“当场”实现其抽象方法。既然实现了抽象方法，那么就是一个新的类，只是这个类，没有命名。这样的类，叫做匿名类。\r\n\r\n#### 匿名内部类的格式\r\n**new 父类或者接口(){定义子类的内容};**\r\n```\r\nRunnable r = new Runnable(){};\r\n\r\n//多在 Android 中使用，例如监听方法的实现\r\nnew Demo(){	//匿名内部类\r\n	public void show(){\r\n		System.out.println(\"Inner show!\");\r\n	}\r\n}.show();\r\n```\r\n#### 例子\r\n```\r\npackage basics;\r\n\r\n/**\r\n * 接口\r\n */\r\ninterface Inter{\r\n	public void fun();\r\n}\r\n\r\n/**\r\n * 抽象方法\r\n */\r\nabstract class Inter2{\r\n	abstract public void fun();\r\n}\r\n\r\nclass Test{\r\n	//返回  Inter 对象\r\n	public static Inter fun2(){\r\n		return new Inter(){\r\n			public void fun(){\r\n				System.out.println(\"fun2 running!\");\r\n			}\r\n		};\r\n	}\r\n	\r\n	public static void fun3(){\r\n		//对象.方法();\r\n		new Inter2(){\r\n			public void fun(){\r\n				System.out.println(\"fun3 running!\");\r\n			}\r\n		}.fun();\r\n	}\r\n}\r\n\r\npublic class AnonymousInnerClass {\r\n	public static void main(String[] args) {\r\n		//Test.fun2() 返回的是  Inter 对象，对象.方法\r\n		Test.fun2().fun();\r\n		\r\n		Test.fun3();\r\n	}\r\n}\r\n```\r\n## 默认方法\r\n默认方法是 JDK8 新特性，指的是接口也可以提供具体方法了，而不像以前，只能提供抽象方法。\r\n```\r\npackage basics;\r\n\r\npublic interface Person {\r\n	public void eat();\r\n	\r\n	//默认方法，有实现体\r\n	default public void die(){\r\n		System.out.println(\"Game Over!\");\r\n	}\r\n}\r\n```\r\nPerson 这个接口，增加了一个默认方法 die，这个方法有实现体，并且被声明为了 default\r\n\r\n>为什么会有默认方法\r\n\r\n假设没有默认方法这种机制，那么如果要为 Person 增加一个新的方法 die ,那么所有实现了 Person 接口的类，都需要做改动。\r\n\r\n但是引入了默认方法后，原来的类，不需要做任何改动，并且还能得到这个默认方法。\r\n\r\n通过这种手段，就能够很好的扩展新的类，并且做到不影响原来的类。\r\n\r\n```\r\npackage basics;\r\n\r\npublic class DefaultFunction implements Person{\r\n\r\n	@Override\r\n	public void eat() {\r\n		// TODO Auto-generated method stub\r\n	}\r\n	\r\n	public static void main(String[] args) {\r\n		//不需要做任何改动，直接得到这个默认方法\r\n		new DefaultFunction().die();\r\n	}\r\n}\r\n```\r\n## 装箱和拆箱\r\n### 封装类\r\n所有的基本类型，都有对应的类类型，比如 int 对应的类是 Integer，这种类就叫做封装类。\r\n### 自动装箱和自动拆箱\r\n```\r\nint i = 5;\r\n\r\n//把一个基本类型的变量,转换为 Integer 对象\r\nInteger it = new Integer(i);\r\n//不需要调用构造方法，通过 = 符号自动把 基本类型 转换为 类类型 就叫装箱\r\nInteger it2 = i;\r\n\r\n//把一个 Integer 对象，转换为一个基本类型的 int\r\nint i2 = it.intValue();\r\n//不需要调用 Integer 的 intValue 方法，通过 = 就自动转换成 int 类型，就叫拆箱\r\nint i3 = it;\r\n```\r\n### Number 类\r\n数字封装类有：Byte,Short,Integer,Long,Float,Double\r\n这些类都是抽象类 Number 的子类\r\n```\r\nint i = 5;\r\n\r\nInteger it = new Integer(i);\r\n//Integer 是 Number 的子类，所以打印 true\r\nSystem.out.println(it instanceof Number);\r\n```\r\n## Math\r\n```\r\nfloat f1 = 5.4f;\r\n\r\n//四舍五入\r\nSystem.out.println(Math.round(f1));\r\n\r\n//得到一个 0-1 之间的随机浮点数（取不到1）\r\nSystem.out.println(Math.random());\r\n\r\n//得到一个 0-10 之间的随机整数 （取不到10）\r\nSystem.out.println((int)( Math.random()*10));\r\n\r\n//大于指定数据的最小整数\r\nSystem.out.println(Math.ceil(f1));	//6.0\r\n\r\n//小于指定数据的最大整数\r\nSystem.out.println(Math.floor(f1));	//5.0\r\n\r\n//开方\r\nSystem.out.println(Math.sqrt(9));\r\n\r\n//次方（2的4次方）\r\nSystem.out.println(Math.pow(2,4));\r\n\r\n//π\r\nSystem.out.println(Math.PI);\r\n\r\n//自然常数\r\nSystem.out.println(Math.E);\r\n```\r\n## 格式控制\r\n### 换行符和回车符\r\n- 换行符就是另起一行 --- \'\\n\' 换行（newline）\r\n- 回车符就是回到一行的开头 --- \'\\r\' 回车（return）\r\n\r\n在 eclipse 里敲一个回车，实际上是回车换行符，Java 是跨平台的编程语言，同样的代码，可以在不同的平台使用，比如 Windows,Linux,Mac。\r\n\r\n然而在不同的操作系统，换行符是不一样的\r\n- 在DOS和Windows中，每行结尾是 “\\r\\n”；\r\n- Linux系统里，每行结尾只有 “\\n”；\r\n- Mac系统里，每行结尾是只有 \"\\r\"。\r\n\r\n为了使得同一个 java 程序的换行符在所有的操作系统中都有一样的表现，使用 **%n**，就可以做到平台无关的换行。\r\n### \\\\t 空格对齐\r\n```\r\nSystem.out.println(\"使用空格无法达到对齐的效果\");\r\nSystem.out.println(\"abc def\");\r\nSystem.out.println(\"ab def\");\r\nSystem.out.println(\"a def\");\r\n\r\nSystem.out.println(\"使用\\\\t制表符可以达到对齐的效果\");\r\nSystem.out.println(\"abc\\tdef\");\r\nSystem.out.println(\"ab\\tdef\");\r\nSystem.out.println(\"a\\tdef\");\r\n```\r\n---\r\n~~使用空格无法达到对齐的效果\r\nabc def\r\nab def\r\na def\r\n使用 \\t 制表符可以达到对齐的效果\r\nabc	def\r\nab	def\r\na	def~~\r\n\r\n---\r\n## String\r\n### 概述\r\n字符串最大特点：一旦被初始化就不可以被改变。\r\n\r\nString 类复写了 Object 类中 equals 方法，该方法用于判断字符串是否相同。\r\n```\r\n//s1 在内存中有一个对象\r\nString s1 = \"abc\";\r\n//s2 在内存中有两个对象\r\nString s2 = new String(\"abc\");\r\nString s3 = \"abc\";\r\n\r\nSystem.out.println(s1==s2);//false\r\nSystem.out.println(s1==s3);//true\r\nSystem.out.println(s1.equals(s2));//true\r\n```\r\n\r\n### 常见方法\r\n#### 获取\r\n```\r\nString str = \"aabcbcc\";\r\n\r\n//字符串的长度\r\nSystem.out.println(str.length());\r\n\r\n//根据位置获取位置上某个字符\r\nSystem.out.println(str.charAt(1));\r\n\r\n//===== 根据字符获取该字符在字符串中位置 =====\r\n//int indexOf(int ch):返回的是ch在字符串中第一次出现的位置。\r\n//int indexOf(int ch, int fromIndex) :从fromIndex指定位置开始，获取ch在字符串中出现的位置。\r\n//如果没有找到，返回-1\r\nSystem.out.println(str.indexOf(\'b\',3));\r\n//可以用于对指定判断是否包含\r\nif(str.indexOf(\"aa\")!=-1)\r\n\r\n\r\n//int lastIndexOf(int ch) ：反向索引一个字符出现位置，角标并不会变\r\nSystem.out.println(str.lastIndexOf(\'b\'));\r\n```\r\n#### 判断\r\n```\r\n//判断文件名称是否是Array单词开头。\r\nsop(str.startsWith(\"Array\"));\r\n//判断文件名称是否是.java的文件。\r\nsop(str.endsWith(\".java\"));\r\n//判断文件中是否包含Demo\r\nsop(str.contains(\"Demo\"));\r\n```\r\n- 字符串中是否包含某一个子串。\r\n`boolean contains(str):`\r\n特殊之处：indexOf(str):可以索引str第一次出现位置，如果返回-1.表示该字符串中不存在str。\r\n所以，也可以用于对指定判断是否包含。\r\n`if(str.indexOf(\"aa\")!=-1)`\r\n\r\n而且该方法既可以判断，又可以获取出现的位置。\r\n\r\n- 字符中是否有内容。\r\n`boolean isEmpty(): 原理就是判断长度是否为0. `\r\n- 字符串是否是以指定内容开头。\r\n`boolean startsWith(str);`\r\n- 字符串是否是以指定内容结尾。\r\n`boolean endsWith(str);`\r\n- 判断字符串内容是否相同。复写了Object类中的equals方法。\r\n`boolean equals(str);`\r\n- 判断内容是否相同，并忽略大小写。\r\n`boolean equalsIgnoreCase();`\r\n\r\n#### 转换\r\n```\r\npublic static void method_trans()\r\n	{\r\n		char[] arr = {\'a\',\'b\',\'c\',\'d\',\'e\',\'f\'};\r\n		String s= new String(arr,1,3);//3是个数\r\n		sop(\"s=\"+s);\r\n		String s1 = \"zxcvbnm\";\r\n		char[] chs = s1.toCharArray();\r\n		for(int x=0; x<chs.length; x++)\r\n		{\r\n			sop(\"ch=\"+chs[x]);\r\n		}\r\n	}\r\n```\r\n- 将字符数组转成字符串。\r\n构造函数：\r\n```\r\nString(char[])\r\nString(char[],offset,count):将字符数组中的一部分转成字符串。\r\n```\r\n静态方法：\r\n```\r\nstatic String copyValueOf(char[]);\r\nstatic String copyValueOf(char[] data, int offset, int count) \r\nstatic String valueOf(char[]):\r\n```\r\n- 将字符串转成字符数组。**\r\n`char[] toCharArray():`\r\n\r\n- 将字节数组转成字符串。\r\n`String(byte[])`\r\n`String(byte[],offset,count):将字节数组中的一部分转成字符串。`\r\n\r\n- 将字符串转成字节数组。\r\n`byte[]  getBytes():`\r\n\r\n- 将基本数据类型转成字符串。\r\n`static String valueOf(int)`\r\n`static String valueOf(double)`\r\n特殊：字符串和字节数组在转换过程中，是可以指定编码表的。\r\n#### 替换\r\n`String replace(oldchar,newchar);`\r\n```\r\npublic static void method_replace()\r\n	{\r\n		String s = \"hello java\";\r\n	 //String s1 = s.replace(\'q\',\'n\');\r\n//如果要替换的字符不存在，返回的还是原串。\r\n		String s1 = s.replace(\"java\",\"world\");\r\n		sop(\"s=\"+s);\r\n		sop(\"s1=\"+s1);\r\n	}\r\n```\r\n#### 切割\r\n`String[] split(regex);`\r\n```\r\npublic static void  method_split()\r\n	{\r\n		String s = \"zhagnsa,lisi,wangwu\";\r\n\r\n		String[] arr  = s.split(\",\");\r\n\r\n		for(int x = 0; x<arr.length; x++)\r\n		{\r\n			sop(arr[x]);\r\n		}\r\n	}	\r\n```\r\n#### 子串（获取字符串中的一部分）\r\n`String substring(begin);`\r\n`String substring(begin,end);`\r\n```\r\npublic static void method_sub()\r\n	{\r\n		String s = \"abcdef\";\r\n		sop(s.substring(2));//从指定位置开始到结尾。如果角标不存在，会出现字符串角标越界异常。\r\n		sop(s.substring(2,4)); \r\n 		//包含头，不包含尾。s.substring(0,s.length());\r\n	}\r\n```\r\n#### 转换，去除空格，比较\r\n- 将字符串转成大写或则小写。\r\n`String toUpperCase();`\r\n`String toLowerCase();`\r\n\r\n- 将字符串两端的多个空格去除。\r\n`String trim();`\r\n\r\n- 对两个字符串进行自然顺序的比较。\r\n`int compareTo(string);`\r\n### StringBuffer\r\n#### 特点\r\n1. 长度是可变化的。\r\n2. 可以直接操作多个数据类型。\r\n3. 最终会通过 toString 方法变成字符串。\r\n4. 是一个容器。\r\n\r\n>为什么StringBuffer可以变长？\r\n\r\n和String内部是一个字符数组一样，StringBuffer 也维护了一个字符数组。 但是，这个字符数组，留有冗余长度。\r\n\r\n比如说new StringBuffer(\"the\")，其内部的字符数组的长度，是19，而不是3，这样调用插入和追加，在现成的数组的基础上就可以完成了。\r\n\r\n如果追加的长度超过了19，就会分配一个新的数组，长度比原来多一些，把原来的数据复制到新的数组中，看上去 数组长度就变长了。\r\n\r\n注： 19 这个数量，不同的JDK数量是不一样的\r\n### StringBuilder\r\nStringBuffer 是线程同步。\r\nStringBuilder 是线程不同步。\r\n建议使用 StringBuilder\r\n#### 存储。\r\nStringBuffer append():将指定数据作为参数添加到已有数据结尾处。\r\nStringBuffer insert(index,数据):可以将数据插入到指定index位置。\r\n### 删除。\r\nStringBuffer delete(start,end):删除缓冲区中的数据，包含start，不包含end。\r\nStringBuffer deleteCharAt(index):删除指定位置的字符。\r\n### 获取。\r\nchar charAt(int index) \r\nint indexOf(String str) \r\nint lastIndexOf(String str) \r\nint length() \r\nString substring(int start, int end)  \r\n### 修改。\r\nStringBuffer replace(start,end,string);\r\nvoid setCharAt(int index, char ch) ;\r\n### 反转。\r\nStringBuffer reverse(); \r\n### 将缓冲区中指定数据存储到指定字符数组中。\r\nvoid getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin)\r\n## Date\r\n|字符|含义|\r\n|-|\r\n|y| 代表年|\r\n|M| 代表月|\r\n|d| 代表日|\r\n|H| 代表24进制的小时|\r\n|h| 代表12进制的小时|\r\n|m| 代表分钟|\r\n|s| 代表秒|\r\n|S| 代表毫秒|\r\n\r\n```\r\n//时间原点\r\nDate date = new Date(5000);\r\nSystem.out.println(date);	//Thu Jan 01 08:00:05 CST 1970\r\n\r\n//当前时间\r\nDate dateNow = new Date();\r\nSystem.out.println(dateNow);	//Fri Oct 12 11:10:23 CST 2018\r\n\r\n//时间格式化\r\nSimpleDateFormat sdf =new SimpleDateFormat(\"yyyy-MM-dd HH:mm:ss\");\r\nDate d= new Date();\r\nString str = sdf.format(d);\r\nSystem.out.println(str);	//2018-10-12 11:10:23\r\n```\r\n## Calendar\r\n```\r\nimport java.text.SimpleDateFormat;\r\nimport java.util.Calendar;\r\nimport java.util.Date;\r\n\r\npublic class DateDemo {\r\n	private static SimpleDateFormat sdf = new SimpleDateFormat(\"yyyy-MM-dd HH:mm:ss\");\r\n	 \r\n    public static void main(String[] args) {\r\n    	//采用单例模式获取日历对象Calendar.getInstance();\r\n        Calendar c = Calendar.getInstance();\r\n        \r\n        //通过日历对象得到日期对象\r\n        Date now = c.getTime();\r\n        \r\n        //===== 当前日期 =====\r\n        System.out.println(\"当前日期：\\t\" + format(c.getTime()));\r\n \r\n        //===== 下个月的今天 =====\r\n        //set方法，直接设置年/月/日\r\n        c.setTime(now);\r\n        //add方法，在原日期上增加年/月/日\r\n        c.add(Calendar.MONTH, 1);\r\n        System.out.println(\"下个月的今天:\\t\" +format(c.getTime()));\r\n \r\n        //===== 去年的今天 =====\r\n        c.setTime(now);\r\n        c.add(Calendar.YEAR, -1);\r\n        System.out.println(\"去年的今天:\\t\" +format(c.getTime()));\r\n \r\n        //===== 上个月的第三天 =====\r\n        c.setTime(now);\r\n        c.add(Calendar.MONTH, -1);\r\n        c.set(Calendar.DATE, 3);\r\n        System.out.println(\"上个月的第三天:\\t\" +format(c.getTime()));\r\n \r\n    }\r\n \r\n    private static String format(Date time) {\r\n        return sdf.format(time);\r\n    }\r\n}\r\n```\r\n## 异常\r\n### finally\r\n- finally中定义的通常是-->关闭资源代码,因为资源必须释放。\r\n- finally只有一种情况不会执行。\r\n当执行到System.exit(0); //系统退出 jvm 结束\r\nfianlly不会执行。\r\n\r\n### throw 和 throws 的区别\r\n- throws：使用在函数上，后面跟的是异常类，可以跟多个，用逗号隔开。`public void method() throws FileNotFoundException {}`\r\nthrow：使用在函数内，后面跟的是异常对象。`throw new FuShuException();`\r\n- throws：表示出现异常的一种可能性，并不一定会发生这些异常；\r\nthrow：执行 throw 则一定抛出了某个异常对象。\r\n### 异常的分类\r\n异常分类： 可查异常，运行时异常和错误 3 种。\r\n- 可查异常：即必须进行处理的异常，要么 try catch 住,要么往外抛，谁调用，谁处理，比如 `FileNotFoundException` 如果不处理，编译器，就不让你通过。\r\n- 运行时异常（RuntimeException）： 不是必须进行 try catch 的异常。在编写代码的时候，依然可以使用 try catch throws 进行处理，与可查异常不同之处在于，即便不进行 try catch ，也不会有编译错误。Java之所以会设计运行时异常的原因之一，是因为下标越界，空指针这些运行时异常太过于普遍，如果都需要进行捕捉，代码的可读性就会变得很糟糕。\r\n在自定义异常时，如果该异常的发生，程序无法再继续进行运算，需要程序停下来，就让自定义异常继承 RuntimeException。\r\n- 错误（Error）：指的是系统级别的异常，通常是内存用光了，在默认设置下，一般 java 程序启动的时候，最大可以使用 16m 的内存。如不停的给 StringBuffer 追加字符，很快就把内存使用光了。抛出 OutOfMemoryError，与运行时异常一样，错误也是不要求强制捕捉的。\r\n### 自定义异常\r\n**自定义异常必须继承 Exception**\r\n\r\n>需求：在本程序中，对于除数是负数，视为是错误的是无法进行运算的。\r\n\r\n```\r\npackage basics;\r\n\r\npublic class TestDemo {\r\n    public static void main(String[] args) {\r\n    	Demo d = new Demo();\r\n    	try{\r\n    		int x = d.div(4, -1);\r\n    		System.out.println(\"除数为负数\");\r\n    	}catch(FuShuException e){\r\n    		System.out.println(e.toString() + \"\\t错误的负数：\"+e.GetNum());\r\n    	}\r\n    	System.out.println(\"Over!!!\");\r\n    }\r\n}\r\n\r\n/**\r\n * 自定义异常信息\r\n */\r\nclass FuShuException extends Exception{	//自定义异常必须继承 Exception\r\n	private int num;\r\n	FuShuException(String msg,int num){\r\n		//因为父类中已经把异常信息的操作都完成了，所以子类只要在构造时，将异常信息传递给父类通过 super 语句，那么就可以直接通过 getMessage 等方法获取自定义的异常信息。\r\n		super(msg);\r\n		this.num = num;\r\n	}\r\n	public int GetNum(){\r\n		return num;\r\n	}\r\n}\r\n\r\nclass Demo{\r\n	public int div(int a,int b)throws FuShuException{\r\n		if(b<0)	{\r\n			throw new FuShuException(\"异常信息，除负数啦！\", b);\r\n		}\r\n		return a/b;\r\n	}\r\n}\r\n```\r\n---\r\n~~basics.FuShuException: 异常信息，除负数啦！	错误的负数：-1\r\nOver!!!~~\r\n\r\n---\r\n### 异常在子父类中的覆盖\r\n1．子类在覆盖父类时，如果父类的方法抛出异常，那么子类的覆盖方法，只能抛出父类的异常或者该异常的子类。\r\n2．如果父类方法抛出多个异常，那么子类在覆盖该方法时，只能抛出父类异常的子集。\r\n3．如果父类或者接口的方法中没有异常抛出，那么子类在覆盖方法时，也不可以抛出异常。如果子类方法发生了异常，就必须要进行 try 处理。绝对不能抛。\r\n## 集合框架\r\n### LinkedList\r\n除了实现了 List 接口外，LinkedList 还实现了双向链表结构 Deque，可以很方便的在头尾插入删除数据。\r\n\r\n>1.添加\r\n\r\naddFirst();\r\naddLast();\r\n>2.获取\r\n\r\n获取元素，但不删除元素。\r\n如果集合中没有元素，会出现 NoSuchElementException 异常。\r\ngetFirst();\r\ngetLast();\r\n\r\n获取元素，但是元素被删除。\r\n如果集合中没有元素，会出现 NoSuchElementException 异常。\r\nremoveFirst();\r\nremoveLast();\r\n\r\n---\r\n\r\n在JDK1.6出现了替代方法。\r\n>1.添加\r\n\r\nofferFirst();\r\nofferLast();\r\n>2.获取\r\n\r\n获取元素，但不删除元素。\r\n如果集合中没有元素，会返回null。\r\npeekFirst();\r\npeekLast(); \r\n\r\n获取元素，但是元素被删除。\r\n如果集合中没有元素，会返回null。\r\npollFirst();\r\npollLast();\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n',`groups`='Java',`is_show`=0,`publish`=1,`summary`=''  WHERE  `id` = 209 [ RunTime:0.001349s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Java' LIMIT 1 [ RunTime:0.001216s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=9  WHERE  `groups` = 'Java' [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Java' LIMIT 1 [ RunTime:0.000989s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=9  WHERE  `groups` = 'Java' [ RunTime:0.000353s ]
+---------------------------------------------------------------
+[ 2018-10-25T23:39:09+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/209.html
+[ info ] qingrang.top/daily/admin/note/shownote/id/209.html [运行时间：0.056894s][吞吐率：17.58req/s] [内存消耗：2,019.88kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/209.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308,1540133692,1540187497,1540387796; PHPSESSID=fj3tsfgumtponb2nmp89vcu6d2',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '209',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000629s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001274s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 209 LIMIT 1 [ RunTime:0.000601s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001025s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000301s ]
+---------------------------------------------------------------
+[ 2018-10-25T23:39:18+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note
+[ info ] qingrang.top/daily/admin/note [运行时间：0.073578s][吞吐率：13.59req/s] [内存消耗：2,209.02kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308,1540133692,1540187497,1540387796; PHPSESSID=fj3tsfgumtponb2nmp89vcu6d2',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/notelst.html [ array (
+  0 => 'stickList',
+  1 => 'hide',
+  2 => 'list',
+  3 => 'list_new',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+  10 => 'default_num',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000556s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001544s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.001850s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal' ORDER BY id desc LIMIT 5 [ RunTime:0.000600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001058s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000564s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000925s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000427s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.001017s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001051s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000692s ]

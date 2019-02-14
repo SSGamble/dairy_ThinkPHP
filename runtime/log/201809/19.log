@@ -1,0 +1,518 @@
+---------------------------------------------------------------
+[ 2018-09-19T20:10:00+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/login/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004514s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.002887s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000590s ]
+---------------------------------------------------------------
+[ 2018-09-19T20:10:01+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002822s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001656s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.005943s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001322s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000398s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000802s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001002s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000791s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001160s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000818s ]
+---------------------------------------------------------------
+[ 2018-09-19T20:10:21+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/newedit.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002922s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001555s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000339s ]
+---------------------------------------------------------------
+[ 2018-09-19T20:10:33+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/addnote.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002624s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001296s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `groups` WHERE  `groups` = 'BookReview' LIMIT 1 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT `id` FROM `groups` WHERE  `groups` = 'BookReview' LIMIT 1 [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.000988s ]
+[ sql ] [ SQL ] INSERT INTO `note` (`title` , `content` , `groups` , `p_id` , `date`) VALUES ('步履不停\r' , '# 步履不停\r\n*是枝裕和*\r\n>添加于 2018 年 9 月\r\n\r\n《步履不停》本是回忆录，时间跨度仅为 2 天，描写了在作者哥哥的忌日时一家人团聚一起返家悼念，小说中很多都是作者的心理描写，交叉了写作时父母均已去世的感触，这些都是电影很难表达出来的，是枝裕和用平淡的语言描绘了琐碎的日常，书中的每个人都有一堆的臭毛病，这恰也是生活最真实的样子，小孩很难照着父母的期待成长，父母也很难得到孩子的认同，哪怕是最亲的人，也很难始终保持共同的理念，更多的是在琐碎日常中积累的冲突与不解，再加上结果往往是思想的不了了之和为了隐藏矛盾的假意和解。尽管大家总说要珍惜当下，但很多时候，人不经过就无法切实的懂得，事后的情绪往往伴随着「站着说话不腰疼」，这些经过自我渲染的情绪并不能带入到当时的情况下。最终，人生总是带着那么一点来不及，但，我们都知道，步履不停。\r\n\r\n------------\r\n\r\n1. 而关于我接下来要讲的那一天，其实也没有发生什么决定性的事件，我只是隐隐约约地感觉到，许多事情已经在水面下悄悄酝酿。\r\n\r\n1. 顺着眼前的状况随波逐流，事后却反悔不已……这是我的坏习惯。\r\n~~这也是我的坏习惯。~~\r\n\r\n1. 那已经是三十多年前的事情了。但直到现在，只要我们之间陷入尴尬的沉默，父亲仍旧会聊起棒球。 “不知道今年的海湾星队怎样了……” “我哪儿知道，我早就不看棒球了。” 如果可以这样决断地回答，也许对彼此都会是一种解脱。但我从不曾这么做。 “是啊……怎么样了呢……”我总是不断给他如此模棱两可的回应。\r\n\r\n1. 她是正确的，我完全无从反驳。但对我这种人来说，她的那种正义感有时候会让我觉得很烦。\r\n\r\n1. “小孩很难照着父母的期待成长的。”，姐姐露出落井下石的笑容。她还不是跟我一样没有照着母亲的期待成长，可她不知何时从孩子的立场变到家长那里去了。这就是她最狡猾的地方。\r\n~~小孩很难照着父母的期待成长，父母也很难得到孩子的认同。~~\r\n\r\n1. 但无论他死得多么崇高，对家人来说，心中的缺憾都是一样的。\r\n\r\n1. 去墓地的路上，母亲一边走，一边跟我讲在我小时候就死去了的爷爷的事，然后又聊起关于大哥的往事，时而欢笑，时而哭泣。如果坐车的话，是不会有这种时光的。也许正因为她知道如此，所以我们总是花上二十分钟的路程，慢慢走上那不算平缓的上坡。\r\n\r\n1. 我看着被母亲丢掉的向日葵，鲜艳的黄色令人炫目。虽然母亲为之不悦，但我却相反。在大哥不算长的人生中，想必存在着某个我们不认识的人，在那个人心中也存在着我们不认识的大哥。也许大哥曾经告诉过那个人：“我喜欢向日葵。”或是大哥曾跟那个人说：“你就像向日葵一样。”抑或是大哥如此被别人说过。然后，那位某人也许想起了大哥的笑容，特地到街上买了花来到这里也说不定。我也没什么凭据。只是如果真有这么一回事，那也算是个不错的人生。\r\n\r\n1. 我单身的时候，她每次打电话来都嚷着结婚、结婚。最后竟然开始恳求我，说“跟谁都可以”“就算结了再离婚也行”。那已经不是在为我的幸福着想了，我觉得她在意的只是世俗的眼光。\r\n\r\n1. “我是说，不要拿别人的人生做比较……”我对着父亲的背影顶撞他，“他也是拼了命地在过活啊。人啊，哪能没有个不如意的时候？可是像爸这样子，用那种高高在上的态度，说什么有用没用的……”\r\n\r\n1. 人生总会犯下不管付出多少代价都无法挽回的过错。\r\n\r\n1. 光是自己的感情就快让我们承受不住了。我甚至是下意识地不去面对它，当作什么都没看到。\r\n\r\n1. 原来如此，为人母亲，就是会在意这些小细节，我真的是上了一堂课。然而，对于她在乎的仍是淳史而不是我这件事，说实话也让我稍微有些失落。\r\n\r\n1. 这一天发生的这些连事件都称不上的小事，直到现在我都记忆犹新。因为正是在这一天，我第一次感觉到父母不可能永远都像以前一样。这是件理所当然的事情。但即便我眼看着父母年华老去，我却什么都没有做。我只能不知所措地远远看着同样不知所措的父母。而第二天，我甚至忘记了这些事件，仍对他们的存在感到厌烦，然后马上回到了属于我自己的、与他们毫不相干的日常生活。双亲会老，是无可奈何的事情；会死，多半也是无可奈何的。但是，没能与他们的衰老或死亡发生一点联系这件事，对我来说如鲠在喉。\r\n\r\n1. 手术成功了。虽然已经无法开口，眼睛也看不到，但在耳边跟她讲话，她还是会点点头或摇摇头。再接下来的半年，我每天就只能不知所措地看着母亲一步步接近死亡。从刚开始的急救医院转到第二间医院的时候，母亲已经不被看作一个人了。医生和看护从来没有叫过她的名字，也没有跟她说过话。当然也可以说，那是因为他们从来没见过母亲有说有笑的样子。我去探病，却要看到母亲被当作东西看，实在是很痛苦的事情。但我还是硬着头皮每天去探病。可能是为了弥补无视父亲托梦忠告的过错，也有可能是为了惩罚犯错的自己。\r\n\r\n1. 我停下脚步，突然拿出手机假装有来电，站到路旁，其实是在听语音信箱。在这期间，父亲慢慢地超过了我。他为了要赶上淳史拼了老命，但又不想被人察觉到这一点，让我看得更加心疼。我静静地将手机放回口袋里，然后看着父亲的背影，用不会追赶上他的速度慢慢走。\r\n\r\n1. 唉，早知道的话……每当我这么想的时候，机会都早已从我身边溜走了，而且再也无法挽回。\r\n\r\n1. 人生，总有那么一点来不及。那就是我失去父亲还有母亲之后，我最真实的感受。\r\n\r\n1. 如此看来，种种事情也许只是换了一个形式，换了对象，但还是会不断地重复下去。那并不是快乐或悲伤这种易于理解的感情。也正因为它是如此难以理解，所以我觉得它说不定与人生这东西十分相近。\r\n' , 'BookReview' , 21 , '2018-09-19') [ RunTime:0.000624s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'BookReview' LIMIT 1 [ RunTime:0.000893s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=29  WHERE  `groups` = 'BookReview' [ RunTime:0.000452s ]
+---------------------------------------------------------------
+[ 2018-09-19T20:10:34+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002546s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001880s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.003542s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001236s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001021s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000287s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000622s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000233s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001300s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000644s ]
+---------------------------------------------------------------
+[ 2018-09-19T20:10:40+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/202.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001050s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001311s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 202 LIMIT 1 [ RunTime:0.000477s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000847s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000342s ]
+---------------------------------------------------------------
+[ 2018-09-19T20:11:54+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/editnote/id/202.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001096s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001842s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 202 LIMIT 1 [ RunTime:0.000510s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001034s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000398s ]
+---------------------------------------------------------------
+[ 2018-09-19T20:14:16+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/updatenote/id/202.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001010s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001590s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 202 LIMIT 1 [ RunTime:0.000661s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `note` WHERE  `id` = 202 LIMIT 1 [ RunTime:0.000464s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001040s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `groups` WHERE  `groups` = 'BookReview' LIMIT 1 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SELECT `id` FROM `groups` WHERE  `groups` = 'BookReview' LIMIT 1 [ RunTime:0.000320s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `id`=202,`p_id`=21,`title`='步履不停\r',`content`='# 步履不停\r\n*是枝裕和*\r\n>添加于 2018 年 9 月\r\n\r\n《步履不停》是本回忆录，时间跨度仅为 2 天，描写了作者哥哥的忌日时一家人一起返家悼念的经历，小说中很多都是作者的心理描写，交叉了写作时父母均已去世的感触，这些都是电影很难表达出来的，是枝裕和用平淡的语言描绘了琐碎的日常，书中的每个人都有一堆的臭毛病，哪怕是最亲的人，也很难始终保持共同的理念，小孩很难照着父母的期待成长，父母也很难得到孩子的认同，这恰也是生活最真实的样子，更多的是在琐碎日常中积累的冲突与不解，再加上结果往往是思想的不了了之和为了隐藏矛盾的假意和解。尽管大家总说要珍惜当下，但很多时候，人不经历就无法切实的懂得，事后的情绪往往伴随着「站着说话不腰疼」，这些经过自我渲染的情绪并不能带入到当时的情景下。最终，人生总是带着那么一点来不及，但，我们都知道，步履不停。\r\n\r\n------------\r\n\r\n1. 而关于我接下来要讲的那一天，其实也没有发生什么决定性的事件，我只是隐隐约约地感觉到，许多事情已经在水面下悄悄酝酿。\r\n\r\n1. 顺着眼前的状况随波逐流，事后却反悔不已……这是我的坏习惯。\r\n~~这也是我的坏习惯。~~\r\n\r\n1. 那已经是三十多年前的事情了。但直到现在，只要我们之间陷入尴尬的沉默，父亲仍旧会聊起棒球。 “不知道今年的海湾星队怎样了……” “我哪儿知道，我早就不看棒球了。” 如果可以这样决断地回答，也许对彼此都会是一种解脱。但我从不曾这么做。 “是啊……怎么样了呢……”我总是不断给他如此模棱两可的回应。\r\n\r\n1. 她是正确的，我完全无从反驳。但对我这种人来说，她的那种正义感有时候会让我觉得很烦。\r\n\r\n1. “小孩很难照着父母的期待成长的。”，姐姐露出落井下石的笑容。她还不是跟我一样没有照着母亲的期待成长，可她不知何时从孩子的立场变到家长那里去了。这就是她最狡猾的地方。\r\n~~小孩很难照着父母的期待成长，父母也很难得到孩子的认同。~~\r\n\r\n1. 但无论他死得多么崇高，对家人来说，心中的缺憾都是一样的。\r\n\r\n1. 去墓地的路上，母亲一边走，一边跟我讲在我小时候就死去了的爷爷的事，然后又聊起关于大哥的往事，时而欢笑，时而哭泣。如果坐车的话，是不会有这种时光的。也许正因为她知道如此，所以我们总是花上二十分钟的路程，慢慢走上那不算平缓的上坡。\r\n\r\n1. 我看着被母亲丢掉的向日葵，鲜艳的黄色令人炫目。虽然母亲为之不悦，但我却相反。在大哥不算长的人生中，想必存在着某个我们不认识的人，在那个人心中也存在着我们不认识的大哥。也许大哥曾经告诉过那个人：“我喜欢向日葵。”或是大哥曾跟那个人说：“你就像向日葵一样。”抑或是大哥如此被别人说过。然后，那位某人也许想起了大哥的笑容，特地到街上买了花来到这里也说不定。我也没什么凭据。只是如果真有这么一回事，那也算是个不错的人生。\r\n\r\n1. 我单身的时候，她每次打电话来都嚷着结婚、结婚。最后竟然开始恳求我，说“跟谁都可以”“就算结了再离婚也行”。那已经不是在为我的幸福着想了，我觉得她在意的只是世俗的眼光。\r\n\r\n1. “我是说，不要拿别人的人生做比较……”我对着父亲的背影顶撞他，“他也是拼了命地在过活啊。人啊，哪能没有个不如意的时候？可是像爸这样子，用那种高高在上的态度，说什么有用没用的……”\r\n\r\n1. 人生总会犯下不管付出多少代价都无法挽回的过错。\r\n\r\n1. 光是自己的感情就快让我们承受不住了。我甚至是下意识地不去面对它，当作什么都没看到。\r\n\r\n1. 原来如此，为人母亲，就是会在意这些小细节，我真的是上了一堂课。然而，对于她在乎的仍是淳史而不是我这件事，说实话也让我稍微有些失落。\r\n\r\n1. 这一天发生的这些连事件都称不上的小事，直到现在我都记忆犹新。因为正是在这一天，我第一次感觉到父母不可能永远都像以前一样。这是件理所当然的事情。但即便我眼看着父母年华老去，我却什么都没有做。我只能不知所措地远远看着同样不知所措的父母。而第二天，我甚至忘记了这些事件，仍对他们的存在感到厌烦，然后马上回到了属于我自己的、与他们毫不相干的日常生活。双亲会老，是无可奈何的事情；会死，多半也是无可奈何的。但是，没能与他们的衰老或死亡发生一点联系这件事，对我来说如鲠在喉。\r\n\r\n1. 手术成功了。虽然已经无法开口，眼睛也看不到，但在耳边跟她讲话，她还是会点点头或摇摇头。再接下来的半年，我每天就只能不知所措地看着母亲一步步接近死亡。从刚开始的急救医院转到第二间医院的时候，母亲已经不被看作一个人了。医生和看护从来没有叫过她的名字，也没有跟她说过话。当然也可以说，那是因为他们从来没见过母亲有说有笑的样子。我去探病，却要看到母亲被当作东西看，实在是很痛苦的事情。但我还是硬着头皮每天去探病。可能是为了弥补无视父亲托梦忠告的过错，也有可能是为了惩罚犯错的自己。\r\n\r\n1. 我停下脚步，突然拿出手机假装有来电，站到路旁，其实是在听语音信箱。在这期间，父亲慢慢地超过了我。他为了要赶上淳史拼了老命，但又不想被人察觉到这一点，让我看得更加心疼。我静静地将手机放回口袋里，然后看着父亲的背影，用不会追赶上他的速度慢慢走。\r\n\r\n1. 唉，早知道的话……每当我这么想的时候，机会都早已从我身边溜走了，而且再也无法挽回。\r\n\r\n1. 人生，总有那么一点来不及。那就是我失去父亲还有母亲之后，我最真实的感受。\r\n\r\n1. 如此看来，种种事情也许只是换了一个形式，换了对象，但还是会不断地重复下去。那并不是快乐或悲伤这种易于理解的感情。也正因为它是如此难以理解，所以我觉得它说不定与人生这东西十分相近。\r\n',`groups`='BookReview'  WHERE  `id` = 202 [ RunTime:0.000624s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'BookReview' LIMIT 1 [ RunTime:0.000734s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=29  WHERE  `groups` = 'BookReview' [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'BookReview' LIMIT 1 [ RunTime:0.000583s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=29  WHERE  `groups` = 'BookReview' [ RunTime:0.000322s ]
+---------------------------------------------------------------
+[ 2018-09-19T20:14:17+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/202.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001012s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001488s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 202 LIMIT 1 [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001049s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000422s ]
+---------------------------------------------------------------
+[ 2018-09-19T20:17:56+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/3.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001020s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001604s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000398s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000946s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000361s ]
+---------------------------------------------------------------
+[ 2018-09-19T20:33:17+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001823s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.003042s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.004750s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001175s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000426s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000998s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000552s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000750s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000240s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001124s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000780s ]
+---------------------------------------------------------------
+[ 2018-09-19T20:33:19+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/202.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003024s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001443s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 202 LIMIT 1 [ RunTime:0.000600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000901s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000344s ]
+---------------------------------------------------------------
+[ 2018-09-19T20:33:39+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/login/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001109s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.001241s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000425s ]
+---------------------------------------------------------------
+[ 2018-09-19T20:33:40+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002539s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001277s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.003014s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001068s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000839s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000639s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000223s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001025s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000592s ]
+---------------------------------------------------------------
+[ 2018-09-19T20:33:44+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/202.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000986s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001328s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 202 LIMIT 1 [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001035s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000281s ]
+---------------------------------------------------------------
+[ 2018-09-19T20:34:26+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001108s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.002169s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.003227s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001047s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000305s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000939s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000439s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000752s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000250s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001113s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000620s ]
+---------------------------------------------------------------
+[ 2018-09-19T20:35:23+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000993s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001366s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.003303s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001052s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000927s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000306s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000719s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000249s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001067s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000806s ]
+---------------------------------------------------------------
+[ 2018-09-19T20:35:31+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000954s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001322s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.003551s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001093s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000891s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000475s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000495s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000732s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001758s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000858s ]
+---------------------------------------------------------------
+[ 2018-09-19T20:35:59+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/200.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001032s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001385s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 200 LIMIT 1 [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000874s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000273s ]
+---------------------------------------------------------------
+[ 2018-09-19T20:36:15+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/189.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001271s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001383s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 189 LIMIT 1 [ RunTime:0.000822s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.002434s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000433s ]
+---------------------------------------------------------------
+[ 2018-09-19T20:36:26+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/180.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001174s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001452s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 180 LIMIT 1 [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000963s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000290s ]
+---------------------------------------------------------------
+[ 2018-09-19T20:36:32+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/170.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000909s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001174s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 170 LIMIT 1 [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000904s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000279s ]
+---------------------------------------------------------------
+[ 2018-09-19T20:36:38+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/ashownote1.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000984s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001322s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `p_id` = 20  AND `id` > 2 ORDER BY id desc [ RunTime:0.001143s ]
+---------------------------------------------------------------
+[ 2018-09-19T20:36:53+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/45
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001211s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001464s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 45 LIMIT 1 [ RunTime:0.000480s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000884s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000343s ]
+---------------------------------------------------------------
+[ 2018-09-19T20:37:02+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001064s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001281s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.003083s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001165s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000328s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000880s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000668s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000222s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001328s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000681s ]
+---------------------------------------------------------------
+[ 2018-09-19T20:37:08+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/ashownote2.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000966s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001281s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` = 'Android' ORDER BY id desc [ RunTime:0.001399s ]
+---------------------------------------------------------------
+[ 2018-09-19T20:37:10+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/ashownote2.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002531s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001211s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` = 'Basics' ORDER BY id desc [ RunTime:0.000968s ]
+---------------------------------------------------------------
+[ 2018-09-19T20:37:12+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/ashownote2.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001111s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001215s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` = 'DataBase' ORDER BY id desc [ RunTime:0.000767s ]
+---------------------------------------------------------------
+[ 2018-09-19T20:37:14+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/ashownote2.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001129s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001397s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` = 'Java' ORDER BY id desc [ RunTime:0.000964s ]
+---------------------------------------------------------------
+[ 2018-09-19T20:37:15+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/ashownote2.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000981s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001223s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` = 'Linux' ORDER BY id desc [ RunTime:0.001088s ]
+---------------------------------------------------------------
+[ 2018-09-19T20:37:16+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/ashownote2.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000952s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001263s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` = 'VR_AR' ORDER BY id desc [ RunTime:0.000744s ]
+---------------------------------------------------------------
+[ 2018-09-19T20:37:18+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/ashownote2.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001055s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001243s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` = 'VR_AR' ORDER BY id desc [ RunTime:0.000988s ]
+---------------------------------------------------------------
+[ 2018-09-19T20:37:20+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/ashownote2.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000938s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001231s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` = 'Android' ORDER BY id desc [ RunTime:0.001338s ]
+---------------------------------------------------------------
+[ 2018-09-19T20:37:23+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/154
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001126s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001313s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 154 LIMIT 1 [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000856s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000284s ]
+---------------------------------------------------------------
+[ 2018-09-19T20:37:46+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000978s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001308s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.002765s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001024s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001152s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000551s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000671s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000214s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001094s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000708s ]
+---------------------------------------------------------------
+[ 2018-09-19T20:40:23+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/login/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001313s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.001980s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000469s ]
+---------------------------------------------------------------
+[ 2018-09-19T20:40:27+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/login/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001092s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.001270s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000430s ]
+---------------------------------------------------------------
+[ 2018-09-19T20:40:28+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001063s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001399s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.003636s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001399s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000334s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001057s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000422s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000326s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000489s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000654s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000235s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001475s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000923s ]
+---------------------------------------------------------------
+[ 2018-09-19T20:40:35+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000973s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001402s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.003109s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.000951s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000896s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000626s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000234s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.000981s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000592s ]
+---------------------------------------------------------------
+[ 2018-09-19T20:41:46+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001152s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001525s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.003611s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001309s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000332s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001191s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000506s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000809s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001266s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000682s ]
+---------------------------------------------------------------
+[ 2018-09-19T20:45:29+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/ashownote2.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001032s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001293s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` = 'Java' ORDER BY id desc [ RunTime:0.000780s ]
+---------------------------------------------------------------
+[ 2018-09-19T20:45:34+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000989s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.002235s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.003607s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001133s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001258s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000561s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000729s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000253s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001155s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000652s ]
+---------------------------------------------------------------
+[ 2018-09-19T20:45:38+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/ashownote2.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000993s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001163s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` = 'Java' ORDER BY id desc [ RunTime:0.000725s ]
+---------------------------------------------------------------
+[ 2018-09-19T20:45:43+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/ashownote2.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001077s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001293s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` = 'Java' ORDER BY id desc [ RunTime:0.000810s ]
+---------------------------------------------------------------
+[ 2018-09-19T20:45:48+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/ashownote2.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001038s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.002021s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` = 'Java' ORDER BY id desc [ RunTime:0.000834s ]
+---------------------------------------------------------------
+[ 2018-09-19T20:54:25+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001113s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001638s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.003570s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001250s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001247s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000275s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000695s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000215s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001068s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000758s ]
+---------------------------------------------------------------
+[ 2018-09-19T20:55:03+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001174s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001473s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.003156s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.000975s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000973s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000717s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000287s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.000975s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000599s ]
+---------------------------------------------------------------
+[ 2018-09-19T20:56:37+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001080s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001459s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.004311s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001155s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000374s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000992s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000398s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.001046s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000222s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001095s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000712s ]
+---------------------------------------------------------------
+[ 2018-09-19T20:56:53+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/202.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001113s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001406s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 202 LIMIT 1 [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000899s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000297s ]
+---------------------------------------------------------------
+[ 2018-09-19T20:59:42+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/201.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001341s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001473s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 201 LIMIT 1 [ RunTime:0.000498s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001178s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000334s ]

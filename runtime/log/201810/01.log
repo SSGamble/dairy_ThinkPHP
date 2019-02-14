@@ -1,0 +1,1012 @@
+---------------------------------------------------------------
+[ 2018-10-01T11:17:57+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/login/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004144s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.002975s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000569s ]
+---------------------------------------------------------------
+[ 2018-10-01T11:17:57+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003703s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001503s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.002091s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001102s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000635s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001115s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000778s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000265s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001547s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.001052s ]
+---------------------------------------------------------------
+[ 2018-10-01T11:18:05+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000957s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001595s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.001378s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.000900s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000393s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000938s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000609s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000906s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001121s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000680s ]
+---------------------------------------------------------------
+[ 2018-10-01T11:18:16+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/newedit.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003253s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001661s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000309s ]
+---------------------------------------------------------------
+[ 2018-10-01T11:18:28+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002616s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001443s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.000943s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001112s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000393s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000882s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000640s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000228s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001113s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000777s ]
+---------------------------------------------------------------
+[ 2018-10-01T11:18:34+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001083s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001877s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.001027s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.000920s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000533s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001047s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000671s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001366s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000648s ]
+---------------------------------------------------------------
+[ 2018-10-01T13:50:04+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/login/index.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001967s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.002644s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000581s ]
+---------------------------------------------------------------
+[ 2018-10-01T13:50:05+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003954s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001993s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.002635s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001230s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000578s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001122s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000524s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000907s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001345s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.001063s ]
+---------------------------------------------------------------
+[ 2018-10-01T13:54:53+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002854s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001781s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.001487s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001159s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000308s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001269s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000374s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000281s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000877s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000257s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001077s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000639s ]
+---------------------------------------------------------------
+[ 2018-10-01T13:54:59+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/210.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002877s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001597s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 210 LIMIT 1 [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000996s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000353s ]
+---------------------------------------------------------------
+[ 2018-10-01T13:55:04+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002883s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001668s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.001570s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001688s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000479s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000750s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001529s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000632s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000420s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000560s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.001016s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001920s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.001020s ]
+---------------------------------------------------------------
+[ 2018-10-01T13:55:06+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/195.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000958s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001352s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 195 LIMIT 1 [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000873s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000321s ]
+---------------------------------------------------------------
+[ 2018-10-01T13:55:18+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001141s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001726s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.001359s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001006s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000332s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000998s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000962s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000909s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000236s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001072s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000646s ]
+---------------------------------------------------------------
+[ 2018-10-01T13:55:24+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/32.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001290s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001360s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 32 LIMIT 1 [ RunTime:0.000513s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000920s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000278s ]
+---------------------------------------------------------------
+[ 2018-10-01T13:55:36+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001121s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001356s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.001114s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001005s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000302s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001004s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000483s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000669s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000252s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001430s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000661s ]
+---------------------------------------------------------------
+[ 2018-10-01T13:55:47+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/noteview.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000987s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001387s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 210 LIMIT 1 [ RunTime:0.000508s ]
+---------------------------------------------------------------
+[ 2018-10-01T13:56:02+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/195.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000979s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001209s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 195 LIMIT 1 [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000834s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000290s ]
+---------------------------------------------------------------
+[ 2018-10-01T13:56:12+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001284s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001632s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.001425s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001169s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001288s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000565s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000573s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000891s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001272s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000880s ]
+---------------------------------------------------------------
+[ 2018-10-01T13:57:38+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001143s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001360s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.001069s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001086s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001553s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000678s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000235s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001382s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000716s ]
+---------------------------------------------------------------
+[ 2018-10-01T13:59:54+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001002s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001343s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.001022s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001149s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000583s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001619s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000682s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001119s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000813s ]
+---------------------------------------------------------------
+[ 2018-10-01T14:00:34+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/newedit.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001014s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001416s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000382s ]
+---------------------------------------------------------------
+[ 2018-10-01T14:01:08+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000926s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001368s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.000938s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000928s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000637s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000242s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001013s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000597s ]
+---------------------------------------------------------------
+[ 2018-10-01T14:01:21+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/newedit.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000991s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001175s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000296s ]
+---------------------------------------------------------------
+[ 2018-10-01T14:01:26+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001146s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001300s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.001143s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.000910s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000838s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000502s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000956s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000219s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000600s ]
+---------------------------------------------------------------
+[ 2018-10-01T14:01:28+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/newedit.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001146s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001194s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000379s ]
+---------------------------------------------------------------
+[ 2018-10-01T14:01:34+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001020s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001254s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.001067s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.000881s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000302s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000989s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000641s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000214s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.000915s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000649s ]
+---------------------------------------------------------------
+[ 2018-10-01T14:01:36+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/newedit.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000960s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001355s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000292s ]
+---------------------------------------------------------------
+[ 2018-10-01T14:02:15+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000954s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001361s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.001111s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.000889s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000870s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000326s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000638s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000251s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001018s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000571s ]
+---------------------------------------------------------------
+[ 2018-10-01T14:02:26+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000976s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001490s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.000989s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.000879s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000393s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000902s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000271s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000615s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000265s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001310s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000860s ]
+---------------------------------------------------------------
+[ 2018-10-01T14:03:24+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/asearch.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001406s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001769s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  ( `title` LIKE '%python%' OR `content` LIKE '%python%' ) ORDER BY date desc [ RunTime:0.012131s ]
+---------------------------------------------------------------
+[ 2018-10-01T14:03:27+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/noteview.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000937s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001252s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 195 LIMIT 1 [ RunTime:0.000441s ]
+---------------------------------------------------------------
+[ 2018-10-01T14:03:30+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/195
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001540s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.002324s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 195 LIMIT 1 [ RunTime:0.000659s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001659s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000759s ]
+---------------------------------------------------------------
+[ 2018-10-01T14:03:38+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001089s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001290s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.001045s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.000839s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000835s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000302s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000696s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000252s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001574s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000622s ]
+---------------------------------------------------------------
+[ 2018-10-01T14:03:45+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/ashownote1.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001240s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001431s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `p_id` = 21  AND `id` > 2 ORDER BY date desc [ RunTime:0.001672s ]
+---------------------------------------------------------------
+[ 2018-10-01T14:04:26+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/202
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001019s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001896s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 202 LIMIT 1 [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000886s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000523s ]
+---------------------------------------------------------------
+[ 2018-10-01T14:04:49+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001310s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001741s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.001364s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001259s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000424s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000532s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001441s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000569s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000517s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000961s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001521s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000902s ]
+---------------------------------------------------------------
+[ 2018-10-01T14:04:52+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001212s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001705s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.001101s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001005s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000964s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000887s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000226s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001067s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000605s ]
+---------------------------------------------------------------
+[ 2018-10-01T14:05:29+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000999s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001261s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.000968s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.000982s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000459s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000884s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000304s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000326s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000642s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000220s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001112s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000643s ]
+---------------------------------------------------------------
+[ 2018-10-01T14:08:20+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000917s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001414s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.001101s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.000870s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.001486s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000405s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001119s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000398s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000697s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.000959s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000691s ]
+---------------------------------------------------------------
+[ 2018-10-01T14:08:45+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/195.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001113s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001695s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 195 LIMIT 1 [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000949s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000281s ]
+---------------------------------------------------------------
+[ 2018-10-01T14:15:37+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/api/synTemp?content=%E6%B4%BB%E7%9A%84%E5%A5%BD%E7%9A%84%E4%BA%BA%E5%AE%B9%E6%98%93%E6%88%90%E4%B8%BA%E5%A5%BD%E4%BA%BA%E3%80%82%0A%0A%E5%8F%B2%E9%93%81%E7%94%9F%E6%9B%BE%E8%AF%B4%E8%BF%87%EF%BC%9A%E2%80%9C%E5%86%99%E4%BD%9C%E8%80%85%EF%BC%8C%E6%9C%AA%E5%BF%85%E8%83%BD%E5%A1%91%E9%80%A0%E5%87%BA%E7%9C%9F%E5%AE%9E%E7%9A%84%E4%BB%96%E4%BA%BA%EF%BC%8C%E5%86%99%E4%BD%9C%E8%80%85%E5%8F%AA%E5%8F%AF%E8%83%BD%E5%A1%91%E9%80%A0%E7%9C%9F%E5%AE%9E%E7%9A%84%E8%87%AA%E5%B7%B1%E3%80%82%E2%80%9D%E5%A4%AA%E5%AE%B0%E6%B2%BB%E5%B0%B1%E6%98%AF%E8%BF%99%E6%A0%B7%EF%BC%8C%E7%94%A8%E5%8F%B6%E8%97%8F%E6%9D%A5%E5%A1%91%E9%80%A0%E4%BA%86%E4%B8%80%E4%B8%AA%E7%9C%9F%E5%AE%9E%E7%9A%84%E8%87%AA%E5%B7%B1%E3%80%82%0A%0A%E6%97%A9%E5%9C%A8%E5%AD%A9%E6%8F%90%E6%97%B6%E4%BB%A3%EF%BC%8C%E5%BD%93%E5%85%B6%E4%BB%96%E5%AD%A9%E5%AD%90%E8%BF%98%E5%9C%A8%E5%AF%B9%E4%B8%96%E7%95%8C%E4%BA%88%E5%8F%96%E4%BA%88%E6%B1%82%E7%9A%84%E8%87%AA%E6%88%91%E4%B8%AD%E5%BF%83%E5%8C%96%E9%98%B6%E6%AE%B5%E6%97%B6%EF%BC%8C%E5%8F%B6%E8%97%8F%EF%BC%88%E6%88%96%E8%AF%B4%E5%A4%AA%E5%AE%B0%EF%BC%89%E5%B0%B1%E5%B7%B2%E7%BB%8F%E6%95%8F%E6%84%9F%E5%9C%B0%E6%84%9F%E7%9F%A5%E5%88%B0%E4%BA%86%E8%87%AA%E5%B7%B1%E7%9A%84%E4%B8%8E%E4%BC%97%E4%B8%8D%E5%90%8C%EF%BC%8C%E5%B9%B6%E5%AF%B9%E8%BF%99%E7%A7%8D%E5%8F%AF%E8%83%BD%E5%B8%A6%E6%9D%A5%E5%AD%A4%E7%AB%8B%E5%92%8C%E7%96%8F%E7%A6%BB%E7%9A%84%E5%B7%AE%E5%BC%82%E8%80%8C%E6%B7%B1%E6%B7%B1%E7%84%A6%E8%99%91%E4%B8%8D%E5%AE%89%EF%BC%8C%E5%85%85%E6%BB%A1%E4%BA%86%E5%AF%B9%E5%A4%96%E7%95%8C%E5%92%8C%E4%BB%96%E4%BA%BA%E7%9A%84%E6%88%92%E6%83%A7%E6%84%9F%E3%80%82%E2%80%9C%E5%AF%B9%E4%BA%8E%E4%BA%BA%EF%BC%8C%E6%88%91%E6%80%BB%E6%98%AF%E6%81%90%E6%83%A7%E5%9C%B0%E9%A2%A4%E6%8A%96%E2%80%9D%E3%80%82%E6%98%AF%E4%BB%80%E4%B9%88%E9%80%A0%E6%88%90%E4%BA%86%E8%BF%99%E7%A7%8D%E8%BF%87%E5%BA%A6%E7%9A%84%E6%95%8F%E6%84%9F%E5%92%8C%E6%97%A9%E7%86%9F%EF%BC%9F%E6%98%AF%E8%BA%AB%E4%B8%BA%E8%B4%B5%E6%97%8F%E7%9A%84%E7%88%B6%E4%BA%B2%E7%9A%84%E8%BF%87%E5%BA%A6%E4%B8%A5%E5%8E%89%EF%BC%9F%E6%98%AF%E5%9B%A0%E4%B8%BA%E2%80%9C%E7%BA%BD%E5%B8%A6%E2%80%9D%E4%BD%9C%E7%94%A8%E7%9A%84%E6%AF%8D%E4%BA%B2%E7%9A%84%E7%BC%BA%E4%BD%8D%EF%BC%9F%E8%BF%98%E6%98%AF%E6%B4%A5%E5%B2%9B%E5%AE%B6%E6%B7%A1%E6%BC%A0%E7%9A%84%E4%BA%BA%E6%83%85%EF%BC%9F%E5%AF%B9%E6%AD%A4%E6%88%91%E4%BB%AC%E6%97%A0%E4%BB%8E%E5%BE%97%E7%9F%A5%EF%BC%8C%E4%BD%86%E5%85%B6%E7%BB%93%E6%9E%9C%E5%8D%B4%E6%98%AF%E4%B8%80%E7%9B%AE%E4%BA%86%E7%84%B6%E7%9A%84%EF%BC%8C%E9%82%A3%E5%B0%B1%E6%98%AF%E5%B9%B4%E5%B9%BC%E7%9A%84%E5%A4%AA%E5%AE%B0%E5%B0%B1%E6%AD%A4%E5%AD%A6%E4%BC%9A%E4%BA%86%E6%88%B4%E4%B8%8A%E4%B8%91%E8%A7%92%E2%80%9D%E7%9A%84%E9%9D%A2%E5%85%B7%EF%BC%8C%E2%80%9C%E5%B0%86%E9%82%A3%E4%BB%BD%E5%BF%A7%E9%83%81%E3%80%81%E7%A5%9E%E7%BB%8F%E8%B4%A8%E4%B8%80%E8%82%A1%E8%84%91%E5%9C%B0%E9%9A%90%E8%97%8F%E8%B5%B7%E6%9D%A5%EF%BC%8C%E5%8A%AA%E5%8A%9B%E4%BC%AA%E8%A3%85%E5%87%BA%E5%A4%A9%E7%9C%9F%E6%97%A0%E9%82%AA%E7%9A%84%E4%B9%90%E5%A4%A9%EF%BC%8C%E9%80%90%E6%B8%90%E6%88%90%E4%B8%BA%E4%B8%80%E4%B8%AA%E5%A8%B1%E4%B9%90%E4%BB%96%E4%BA%BA%E7%9A%84%E6%80%AA%E8%83%8E%E3%80%82%E2%80%9D%0A%0A%E6%89%80%E8%B0%93%E2%80%9C%E4%B8%91%E8%A7%92%E7%B2%BE%E7%A5%9E%E2%80%9D%EF%BC%8C%E5%B0%B1%E6%98%AF%E5%9C%A8%E7%94%9F%E6%B4%BB%E4%B8%AD%E4%B8%8E%E4%BB%96%E4%BA%BA%E4%BA%A4%E5%BE%80%E6%97%B6%EF%BC%8C%E4%B8%80%E5%91%B3%E5%B1%88%E4%BB%8E%E5%AF%B9%E6%96%B9%E7%9A%84%E8%A6%81%E6%B1%82%EF%BC%8C%E4%B8%BA%E5%8F%96%E6%82%A6%E4%BB%96%E4%BA%BA%E4%B8%8D%E6%83%9C%E8%87%AA%E5%B7%B1%E6%88%B4%E4%B8%8A%E2%80%9C%E5%B0%8F%E4%B8%91%E2%80%9D%E7%9A%84%E9%9D%A2%E5%85%B7%EF%BC%8C%E4%BB%A5%E5%88%BB%E6%84%8F%E7%9A%84%E5%87%BA%E4%B9%96%E5%8D%96%E4%B8%91%EF%BC%8C%E8%80%8D%E5%AE%9D%E6%90%9E%E7%AC%91%E6%9D%A5%E4%B8%8E%E4%BB%96%E4%BA%BA%E5%90%8C%E4%B8%80%E5%8C%96%E7%9A%84%E8%A1%8C%E4%B8%BA%E8%B6%8B%E5%90%91%E3%80%82%0A%0A%E4%B9%8D%E7%9C%8B%E4%B9%8B%E4%B8%8B%EF%BC%8C%E2%80%9C%E4%B8%91%E8%A7%92%E7%B2%BE%E7%A5%9E%E2%80%9D%E4%B9%9F%E6%98%AF%E8%BF%99%E7%A7%8D%E5%90%8C%E4%B8%80%E5%8C%96%E7%9A%84%E8%A1%A8%E7%8E%B0%EF%BC%8C%E7%84%B6%E8%80%8C%E5%85%B6%E5%86%85%E5%9C%A8%E5%8D%B4%E5%A4%A7%E6%9C%89%E4%B8%8D%E5%90%8C%EF%BC%8C%E5%9B%A0%E4%B8%BA%E2%80%9C%E4%B8%91%E8%A7%92%E2%80%9D%E6%9C%AC%E8%B4%A8%E4%B8%8A%E5%8F%AA%E6%98%AF%E4%B8%80%E5%B1%82%E4%BC%AA%E8%A3%85%EF%BC%8C%E6%98%AF%E4%BB%8E%E8%87%AA%E6%88%91%E6%9C%AC%E4%BD%93%E4%B8%AD%E5%88%86%E7%A6%BB%E5%87%BA%E6%9D%A5%E7%9A%84%E2%80%9C%E4%BA%BA%E6%A0%BC%E9%9D%A2%E5%85%B7%E2%80%9D%E3%80%82%E5%85%B6%E5%AD%98%E5%9C%A8%E7%9B%AE%E7%9A%84%EF%BC%8C%E4%B8%8D%E6%98%AF%E6%B6%88%E5%BC%AD%E8%87%AA%E6%88%91%E6%B1%82%E5%BE%97%E5%90%8C%E5%8C%96%EF%BC%8C%E8%80%8C%E6%81%B0%E6%98%AF%E9%9A%90%E8%97%8F%E9%82%A3%E4%B8%AA%E4%B8%8E%E4%BC%97%E4%BA%BA%E2%80%9C%E7%9B%B8%E5%BC%82%E2%80%9D%E7%9A%84%E8%87%AA%E6%88%91%E3%80%82%0A%0A%E4%BB%94%E7%BB%86%E5%9B%9E%E6%83%B3%E7%9A%84%E8%AF%9D%EF%BC%8C%E4%B9%9F%E8%AE%B8%E6%88%91%E4%BB%AC%E5%9C%A8%E5%AD%A6%E7%94%9F%E6%97%B6%E4%BB%A3%E4%B9%83%E8%87%B3%E5%BD%93%E4%B8%8B%E7%9A%84%E7%94%9F%E6%B4%BB%E9%87%8C%EF%BC%8C%E4%B9%9F%E6%9B%BE%E9%81%87%E5%88%B0%E8%BF%87%E7%B1%BB%E4%BC%BC%E8%A1%8C%E4%B8%BA%E7%9A%84%E4%BA%BA%EF%BC%8C%E7%94%9A%E8%87%B3%E6%88%91%E4%BB%AC%E8%87%AA%E5%B7%B1%EF%BC%8C%E4%B9%9F%E6%9B%BE%E5%A4%9A%E5%B0%91%E6%89%AE%E6%BC%94%E8%BF%87%E2%80%9C%E4%B8%91%E8%A7%92%E2%80%9D%E3%80%82%0A%0A%E5%A4%AA%E5%AE%B0%E6%B2%BB%E4%BD%9C%E4%B8%BA%E6%88%98%E5%90%8E%E5%B4%9B%E8%B5%B7%E7%9A%84%E4%BD%9C%E5%AE%B6%EF%BC%8C%E4%BB%A5%E6%98%AD%E5%92%8C%E5%8D%81%E4%BA%8C%E5%B9%B4%E4%B8%BA%E7%95%8C%EF%BC%8C%E6%88%98%E5%89%8D%E6%88%98%E5%90%8E%E7%9A%84%E5%8F%98%E6%95%85%E8%B6%B3%E4%BB%A5%E6%91%A7%E6%AF%81%E5%A4%AA%E5%A4%9A%E4%B8%9C%E8%A5%BF%EF%BC%8C%E4%BB%96%E5%A4%A7%E5%AD%A6%E6%97%B6%E4%BB%A3%E5%B0%B1%E5%AF%B9%E5%B7%A6%E7%BF%BC%E8%BF%90%E5%8A%A8%E7%9A%84%E6%9E%81%E5%A4%A7%E7%83%AD%E6%83%85%EF%BC%8C%E4%B9%8B%E5%90%8E%E7%BB%8F%E5%8E%86%E5%B7%A6%E7%BF%BC%E8%BF%90%E5%8A%A8%E8%A2%AB%E9%95%87%E5%8E%8B%EF%BC%8C%E6%97%A5%E6%9C%AC%E6%88%98%E8%B4%A5%EF%BC%8C%E6%88%98%E5%90%8E%E5%B7%A6%E7%BF%BC%E7%9A%84%E5%A6%A5%E5%8D%8F%EF%BC%8C%E6%97%A5%E6%9C%AC%E6%96%87%E6%98%8E%E7%9A%84%E7%93%A6%E8%A7%A3%EF%BC%8C%E5%9B%BD%E5%AE%B6%E8%A2%AB%E8%BF%AB%E8%BD%AC%E5%9E%8B%EF%BC%8C%E8%BF%99%E4%BA%9B%E5%8A%A8%E8%8D%A1%E8%99%BD%E7%84%B6%E5%9C%A8%E4%BB%96%E5%B0%8F%E8%AF%B4%E4%B8%AD%E7%9D%80%E5%A2%A8%E4%B8%8D%E5%A4%9A%E4%BD%86%E6%98%AF%E5%AF%B9%E4%BA%8E%E7%94%9F%E5%91%BD%E4%BF%A1%E4%BB%B0%E7%9A%84%E7%A0%B4%E5%9D%8F%E5%8D%B4%E6%98%AF%E8%87%B4%E5%91%BD%E7%9A%84%EF%BC%9B%0A%0A%E4%B8%8E%E5%85%B6%E8%AF%B4%EF%BC%8C%E8%87%AA%E6%9D%80%E6%98%AF%E5%A4%B1%E5%8E%BB%E4%B8%BA%E4%BA%BA%E7%9A%84%E8%B5%84%E6%A0%BC%EF%BC%8C%E6%84%9F%E5%88%B0%E5%AF%B9%E4%B8%96%E7%95%8C%E5%A4%B1%E6%9C%9B%EF%BC%8C%E4%B8%8D%E5%A6%82%E8%AF%B4%E6%98%AF%E4%B8%BA%E4%BA%86%E5%BC%95%E8%B5%B7%E4%BA%BA%E7%9A%84%E6%B3%A8%E6%84%8F%EF%BC%8C%E5%A4%A7%E5%A4%9A%E4%BA%BA%E6%87%A6%E5%BC%B1%E5%9C%B0%E9%9D%A2%E5%AF%B9%E4%BA%BA%E7%94%9F%EF%BC%8C%E5%8F%88%E9%AB%98%E8%B0%83%E5%9C%B0%E9%9D%A2%E5%AF%B9%E6%AD%BB%E4%BA%A1%E2%80%A6%0A%0A*%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D*%0A
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002153s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.002336s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `content`='活的好的人容易成为好人。\n\n史铁生曾说过：“写作者，未必能塑造出真实的他人，写作者只可能塑造真实的自己。”太宰治就是这样，用叶藏来塑造了一个真实的自己。\n\n早在孩提时代，当其他孩子还在对世界予取予求的自我中心化阶段时，叶藏（或说太宰）就已经敏感地感知到了自己的与众不同，并对这种可能带来孤立和疏离的差异而深深焦虑不安，充满了对外界和他人的戒惧感。“对于人，我总是恐惧地颤抖”。是什么造成了这种过度的敏感和早熟？是身为贵族的父亲的过度严厉？是因为“纽带”作用的母亲的缺位？还是津岛家淡漠的人情？对此我们无从得知，但其结果却是一目了然的，那就是年幼的太宰就此学会了戴上丑角”的面具，“将那份忧郁、神经质一股脑地隐藏起来，努力伪装出天真无邪的乐天，逐渐成为一个娱乐他人的怪胎。”\n\n所谓“丑角精神”，就是在生活中与他人交往时，一味屈从对方的要求，为取悦他人不惜自己戴上“小丑”的面具，以刻意的出乖卖丑，耍宝搞笑来与他人同一化的行为趋向。\n\n乍看之下，“丑角精神”也是这种同一化的表现，然而其内在却大有不同，因为“丑角”本质上只是一层伪装，是从自我本体中分离出来的“人格面具”。其存在目的，不是消弭自我求得同化，而恰是隐藏那个与众人“相异”的自我。\n\n仔细回想的话，也许我们在学生时代乃至当下的生活里，也曾遇到过类似行为的人，甚至我们自己，也曾多少扮演过“丑角”。\n\n太宰治作为战后崛起的作家，以昭和十二年为界，战前战后的变故足以摧毁太多东西，他大学时代就对左翼运动的极大热情，之后经历左翼运动被镇压，日本战败，战后左翼的妥协，日本文明的瓦解，国家被迫转型，这些动荡虽然在他小说中着墨不多但是对于生命信仰的破坏却是致命的；\n\n与其说，自杀是失去为人的资格，感到对世界失望，不如说是为了引起人的注意，大多人懦弱地面对人生，又高调地面对死亡…\n\n*=============*\n'  WHERE  `id` = 2 [ RunTime:0.000871s ]
+---------------------------------------------------------------
+[ 2018-10-01T14:15:48+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001073s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001326s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.001087s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.000992s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000973s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000695s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001041s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000655s ]
+---------------------------------------------------------------
+[ 2018-10-01T14:15:50+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/2.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000968s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001186s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000405s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000836s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000301s ]
+---------------------------------------------------------------
+[ 2018-10-01T14:16:08+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/newedit.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001006s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001207s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000329s ]
+---------------------------------------------------------------
+[ 2018-10-01T14:16:41+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/savenote.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001443s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001925s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `title`='人间失格',`content`='# 人间失格\n*太宰治*\n\n活的好的人容易成为好人。\n\n史铁生曾说过：“写作者，未必能塑造出真实的他人，写作者只可能塑造真实的自己。”太宰治就是这样，用叶藏来塑造了一个真实的自己。\n\n早在孩提时代，当其他孩子还在对世界予取予求的自我中心化阶段时，叶藏（或说太宰）就已经敏感地感知到了自己的与众不同，并对这种可能带来孤立和疏离的差异而深深焦虑不安，充满了对外界和他人的戒惧感。“对于人，我总是恐惧地颤抖”。是什么造成了这种过度的敏感和早熟？是身为贵族的父亲的过度严厉？是因为“纽带”作用的母亲的缺位？还是津岛家淡漠的人情？对此我们无从得知，但其结果却是一目了然的，那就是年幼的太宰就此学会了戴上丑角”的面具，“将那份忧郁、神经质一股脑地隐藏起来，努力伪装出天真无邪的乐天，逐渐成为一个娱乐他人的怪胎。”\n\n所谓“丑角精神”，就是在生活中与他人交往时，一味屈从对方的要求，为取悦他人不惜自己戴上“小丑”的面具，以刻意的出乖卖丑，耍宝搞笑来与他人同一化的行为趋向。\n\n乍看之下，“丑角精神”也是这种同一化的表现，然而其内在却大有不同，因为“丑角”本质上只是一层伪装，是从自我本体中分离出来的“人格面具”。其存在目的，不是消弭自我求得同化，而恰是隐藏那个与众人“相异”的自我。\n\n仔细回想的话，也许我们在学生时代乃至当下的生活里，也曾遇到过类似行为的人，甚至我们自己，也曾多少扮演过“丑角”。\n\n太宰治作为战后崛起的作家，以昭和十二年为界，战前战后的变故足以摧毁太多东西，他大学时代就对左翼运动的极大热情，之后经历左翼运动被镇压，日本战败，战后左翼的妥协，日本文明的瓦解，国家被迫转型，这些动荡虽然在他小说中着墨不多但是对于生命信仰的破坏却是致命的；\n\n与其说，自杀是失去为人的资格，感到对世界失望，不如说是为了引起人的注意，大多人懦弱地面对人生，又高调地面对死亡…',`groups`='Default',`p_id`=1  WHERE  `id` = 1 [ RunTime:0.000835s ]
+---------------------------------------------------------------
+[ 2018-10-01T14:16:49+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/savenote.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000983s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001903s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `title`='人间失格',`content`='# 人间失格\n*太宰治*\n\n活的好的人容易成为好人。\n\n史铁生曾说过：“写作者，未必能塑造出真实的他人，写作者只可能塑造真实的自己。”太宰治就是这样，用叶藏来塑造了一个真实的自己。\n\n早在孩提时代，当其他孩子还在对世界予取予求的自我中心化阶段时，叶藏（或说太宰）就已经敏感地感知到了自己的与众不同，并对这种可能带来孤立和疏离的差异而深深焦虑不安，充满了对外界和他人的戒惧感。“对于人，我总是恐惧地颤抖”。是什么造成了这种过度的敏感和早熟？是身为贵族的父亲的过度严厉？是因为“纽带”作用的母亲的缺位？还是津岛家淡漠的人情？对此我们无从得知，但其结果却是一目了然的，那就是年幼的太宰就此学会了戴上丑角”的面具，“将那份忧郁、神经质一股脑地隐藏起来，努力伪装出天真无邪的乐天，逐渐成为一个娱乐他人的怪胎。”\n\n所谓“丑角精神”，就是在生活中与他人交往时，一味屈从对方的要求，为取悦他人不惜自己戴上“小丑”的面具，以刻意的出乖卖丑，耍宝搞笑来与他人同一化的行为趋向。\n\n乍看之下，“丑角精神”也是这种同一化的表现，然而其内在却大有不同，因为“丑角”本质上只是一层伪装，是从自我本体中分离出来的“人格面具”。其存在目的，不是消弭自我求得同化，而恰是隐藏那个与众人“相异”的自我。\n\n仔细回想的话，也许我们在学生时代乃至当下的生活里，也曾遇到过类似行为的人，甚至我们自己，也曾多少扮演过“丑角”。\n\n太宰治作为战后崛起的作家，以昭和十二年为界，战前战后的变故足以摧毁太多东西，他大学时代就对左翼运动的极大热情，之后经历左翼运动被镇压，日本战败，战后左翼的妥协，日本文明的瓦解，国家被迫转型，这些动荡虽然在他小说中着墨不多但是对于生命信仰的破坏却是致命的；\n\n与其说，自杀是失去为人的资格，感到对世界失望，不如说是为了引起人的注意，大多人懦弱地面对人生，又高调地面对死亡…',`groups`='Default',`p_id`=1  WHERE  `id` = 1 [ RunTime:0.000524s ]
+---------------------------------------------------------------
+[ 2018-10-01T14:17:27+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/savenote.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001143s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001727s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `title`='人间失格',`content`='# 人间失格\n*太宰治*\n\n活的好的人容易成为好人。\n\n史铁生曾说过：“写作者，未必能塑造出真实的他人，写作者只可能塑造真实的自己。”太宰治就是这样，用叶藏来塑造了一个真实的自己。\n\n早在孩提时代，当其他孩子还在对世界予取予求的自我中心化阶段时，叶藏（或说太宰）就已经敏感地感知到了自己的与众不同，并对这种可能带来孤立和疏离的差异而深深焦虑不安，充满了对外界和他人的戒惧感。“对于人，我总是恐惧地颤抖”。是什么造成了这种过度的敏感和早熟？是身为贵族的父亲的过度严厉？是因为“纽带”作用的母亲的缺位？还是津岛家淡漠的人情？对此我们无从得知，但其结果却是一目了然的，那就是年幼的太宰就此学会了戴上丑角”的面具，“将那份忧郁、神经质一股脑地隐藏起来，努力伪装出天真无邪的乐天，逐渐成为一个娱乐他人的怪胎。”\n\n所谓“丑角精神”，就是在生活中与他人交往时，一味屈从对方的要求，为取悦他人不惜自己戴上“小丑”的面具，以刻意的出乖卖丑，耍宝搞笑来与他人同一化的行为趋向。\n\n乍看之下，“丑角精神”也是这种同一化的表现，然而其内在却大有不同，因为“丑角”本质上只是一层伪装，是从自我本体中分离出来的“人格面具”。其存在目的，不是消弭自我求得同化，而恰是隐藏那个与众人“相异”的自我。\n\n仔细回想的话，也许我们在学生时代乃至当下的生活里，也曾遇到过类似行为的人，甚至我们自己，也曾多少扮演过“丑角”。\n\n太宰治作为战后崛起的作家，以昭和十二年为界，战前战后的变故足以摧毁太多东西，他大学时代就对左翼运动的极大热情，之后经历左翼运动被镇压，日本战败，战后左翼的妥协，日本文明的瓦解，国家被迫转型，这些动荡虽然在他小说中着墨不多但是对于生命信仰的破坏却是致命的；\n\n与其说，自杀是失去为人的资格，感到对世界失望，不如说是为了引起人的注意，大多人懦弱地面对人生，又高调地面对死亡…',`groups`='Default',`p_id`=1  WHERE  `id` = 1 [ RunTime:0.000661s ]
+---------------------------------------------------------------
+[ 2018-10-01T14:18:01+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/addnote.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001414s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001641s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `groups` WHERE  `groups` = 'BookReview' LIMIT 1 [ RunTime:0.000485s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SELECT `id` FROM `groups` WHERE  `groups` = 'BookReview' LIMIT 1 [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001522s ]
+[ sql ] [ SQL ] INSERT INTO `note` (`title` , `content` , `groups` , `p_id` , `date`) VALUES ('人间失格\r' , '# 人间失格\r\n*太宰治*\r\n\r\n活的好的人容易成为好人。\r\n\r\n史铁生曾说过：“写作者，未必能塑造出真实的他人，写作者只可能塑造真实的自己。”太宰治就是这样，用叶藏来塑造了一个真实的自己。\r\n\r\n早在孩提时代，当其他孩子还在对世界予取予求的自我中心化阶段时，叶藏（或说太宰）就已经敏感地感知到了自己的与众不同，并对这种可能带来孤立和疏离的差异而深深焦虑不安，充满了对外界和他人的戒惧感。“对于人，我总是恐惧地颤抖”。是什么造成了这种过度的敏感和早熟？是身为贵族的父亲的过度严厉？是因为“纽带”作用的母亲的缺位？还是津岛家淡漠的人情？对此我们无从得知，但其结果却是一目了然的，那就是年幼的太宰就此学会了戴上丑角”的面具，“将那份忧郁、神经质一股脑地隐藏起来，努力伪装出天真无邪的乐天，逐渐成为一个娱乐他人的怪胎。”\r\n\r\n所谓“丑角精神”，就是在生活中与他人交往时，一味屈从对方的要求，为取悦他人不惜自己戴上“小丑”的面具，以刻意的出乖卖丑，耍宝搞笑来与他人同一化的行为趋向。\r\n\r\n乍看之下，“丑角精神”也是这种同一化的表现，然而其内在却大有不同，因为“丑角”本质上只是一层伪装，是从自我本体中分离出来的“人格面具”。其存在目的，不是消弭自我求得同化，而恰是隐藏那个与众人“相异”的自我。\r\n\r\n仔细回想的话，也许我们在学生时代乃至当下的生活里，也曾遇到过类似行为的人，甚至我们自己，也曾多少扮演过“丑角”。\r\n\r\n太宰治作为战后崛起的作家，以昭和十二年为界，战前战后的变故足以摧毁太多东西，他大学时代就对左翼运动的极大热情，之后经历左翼运动被镇压，日本战败，战后左翼的妥协，日本文明的瓦解，国家被迫转型，这些动荡虽然在他小说中着墨不多但是对于生命信仰的破坏却是致命的；\r\n\r\n与其说，自杀是失去为人的资格，感到对世界失望，不如说是为了引起人的注意，大多人懦弱地面对人生，又高调地面对死亡…' , 'BookReview' , 21 , '2018-10-01') [ RunTime:0.000750s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'BookReview' LIMIT 1 [ RunTime:0.001105s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=30  WHERE  `groups` = 'BookReview' [ RunTime:0.000658s ]
+---------------------------------------------------------------
+[ 2018-10-01T14:18:01+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001160s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001439s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.001177s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.000986s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000952s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000766s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000487s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.001068s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000252s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001123s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.001522s ]
+---------------------------------------------------------------
+[ 2018-10-01T14:18:06+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/ashownote1.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001328s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.002475s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `p_id` = 21  AND `id` > 2 ORDER BY date desc [ RunTime:0.002094s ]
+---------------------------------------------------------------
+[ 2018-10-01T14:18:10+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/editNote/id/211
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001129s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001356s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 211 LIMIT 1 [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001041s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000384s ]
+---------------------------------------------------------------
+[ 2018-10-01T14:29:13+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/66
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001091s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001437s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 66 LIMIT 1 [ RunTime:0.000400s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000829s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000290s ]
+---------------------------------------------------------------
+[ 2018-10-01T14:29:21+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/updatenote/id/211.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002113s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001801s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 211 LIMIT 1 [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `note` WHERE  `id` = 211 LIMIT 1 [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001158s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `groups` WHERE  `groups` = 'BookReview' LIMIT 1 [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000618s ]
+[ sql ] [ SQL ] SELECT `id` FROM `groups` WHERE  `groups` = 'BookReview' LIMIT 1 [ RunTime:0.000387s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `id`=211,`p_id`=21,`title`='人间失格\r',`content`='# 人间失格\r\n*太宰治*\r\n\r\n活的好的人容易成为好人。\r\n\r\n史铁生曾说过：“写作者，未必能塑造出真实的他人，写作者只可能塑造真实的自己。”太宰治就是这样，用叶藏来塑造了一个真实的自己。\r\n\r\n早在孩提时代，当其他孩子还在对世界予取予求的自我中心化阶段时，叶藏（或说太宰）就已经敏感地感知到了自己的与众不同，并对这种可能带来孤立和疏离的差异而深深焦虑不安，充满了对外界和他人的戒惧感。“对于人，我总是恐惧地颤抖”。是什么造成了这种过度的敏感和早熟？是身为贵族的父亲的过度严厉？是因为“纽带”作用的母亲的缺位？还是津岛家淡漠的人情？对此我们无从得知，但其结果却是一目了然的，那就是年幼的太宰就此学会了戴上丑角”的面具，“将那份忧郁、神经质一股脑地隐藏起来，努力伪装出天真无邪的乐天，逐渐成为一个娱乐他人的怪胎。”\r\n\r\n所谓“丑角精神”，就是在生活中与他人交往时，一味屈从对方的要求，为取悦他人不惜自己戴上“小丑”的面具，以刻意的出乖卖丑，耍宝搞笑来与他人同一化的行为趋向。\r\n\r\n乍看之下，“丑角精神”也是这种同一化的表现，然而其内在却大有不同，因为“丑角”本质上只是一层伪装，是从自我本体中分离出来的“人格面具”。其存在目的，不是消弭自我求得同化，而恰是隐藏那个与众人“相异”的自我。\r\n\r\n仔细回想的话，也许我们在学生时代乃至当下的生活里，也曾遇到过类似行为的人，甚至我们自己，也曾多少扮演过“丑角”。\r\n\r\n太宰治作为战后崛起的作家，以昭和十二年为界，战前战后的变故足以摧毁太多东西，他大学时代就对左翼运动的极大热情，之后经历左翼运动被镇压，日本战败，战后左翼的妥协，日本文明的瓦解，国家被迫转型，这些动荡虽然在他小说中着墨不多但是对于生命信仰的破坏却是致命的；\r\n\r\n与其说，自杀是失去为人的资格，感到对世界失望，不如说是为了引起人的注意，大多人懦弱地面对人生，又高调地面对死亡…',`groups`='BookReview',`is_show`=0  WHERE  `id` = 211 [ RunTime:0.000530s ]
+---------------------------------------------------------------
+[ 2018-10-01T14:54:10+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001208s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001467s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.001259s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001131s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000605s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000914s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000952s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001238s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000897s ]
+---------------------------------------------------------------
+[ 2018-10-01T14:54:13+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/ashownote1.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001011s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001309s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `p_id` = 21  AND `id` > 2 ORDER BY date desc [ RunTime:0.001571s ]
+---------------------------------------------------------------
+[ 2018-10-01T14:54:21+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001111s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001369s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.001280s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001021s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000931s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000725s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001436s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000619s ]
+---------------------------------------------------------------
+[ 2018-10-01T15:02:31+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001106s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001354s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.001412s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001105s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000882s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000440s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000741s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000265s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001049s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000592s ]
+---------------------------------------------------------------
+[ 2018-10-01T15:02:35+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000988s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001624s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.001011s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001131s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000918s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000533s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000954s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001461s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000673s ]
+---------------------------------------------------------------
+[ 2018-10-01T15:04:25+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001133s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001534s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.001179s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001206s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000482s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001059s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000533s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000906s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001485s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000827s ]
+---------------------------------------------------------------
+[ 2018-10-01T15:04:29+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000969s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001177s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.001049s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001054s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000922s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000739s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000222s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001258s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000644s ]
+---------------------------------------------------------------
+[ 2018-10-01T15:05:37+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001464s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001915s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.002370s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001182s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000700s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001213s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000486s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000535s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.001103s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000265s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001710s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.001103s ]
+---------------------------------------------------------------
+[ 2018-10-01T15:06:10+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001126s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001258s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.001187s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001028s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000887s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000678s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001122s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000660s ]
+---------------------------------------------------------------
+[ 2018-10-01T15:06:12+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001147s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001592s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.001493s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001213s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000502s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001173s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000527s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000472s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000584s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000793s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000251s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001408s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000677s ]
+---------------------------------------------------------------
+[ 2018-10-01T15:07:19+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001114s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001153s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.000915s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000488s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001025s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000697s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001265s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000786s ]
+---------------------------------------------------------------
+[ 2018-10-01T15:08:46+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000977s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001297s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.001061s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.000830s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001024s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000946s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000502s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000650s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.000992s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000890s ]
+---------------------------------------------------------------
+[ 2018-10-01T15:09:55+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001111s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001488s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.001176s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.003140s ]
+[ error ] [1]Call to a member function limit() on array
+---------------------------------------------------------------
+[ 2018-10-01T15:10:40+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001158s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001376s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.001104s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc LIMIT 5 [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.000874s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000827s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000746s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000256s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.000991s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000620s ]
+---------------------------------------------------------------
+[ 2018-10-01T15:11:58+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001018s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001258s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.001101s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc LIMIT 5 [ RunTime:0.000374s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.000928s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000895s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000666s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001061s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000600s ]
+---------------------------------------------------------------
+[ 2018-10-01T15:12:05+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000953s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001411s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.001386s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc LIMIT 5 [ RunTime:0.000517s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001063s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000983s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000757s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001124s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000698s ]
+---------------------------------------------------------------
+[ 2018-10-01T15:13:59+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001330s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001621s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.001406s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc LIMIT 5 [ RunTime:0.000621s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001232s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000543s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001289s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000641s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000820s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000594s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.001221s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.002367s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.001078s ]
+---------------------------------------------------------------
+[ 2018-10-01T15:16:09+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000990s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001411s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.001018s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc LIMIT 5 [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001009s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001057s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000755s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001095s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000648s ]
+---------------------------------------------------------------
+[ 2018-10-01T15:18:07+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001081s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001365s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.000979s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc LIMIT 5 [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001246s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000630s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000563s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000978s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000704s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001010s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000719s ]
+---------------------------------------------------------------
+[ 2018-10-01T15:19:00+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001136s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001618s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.001002s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc LIMIT 5 [ RunTime:0.000457s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001178s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000506s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001085s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000275s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000747s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000230s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001288s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000702s ]
+---------------------------------------------------------------
+[ 2018-10-01T15:20:28+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000982s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001313s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.001016s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc LIMIT 5 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.000806s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000290s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000844s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000688s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.000964s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000574s ]
+---------------------------------------------------------------
+[ 2018-10-01T15:20:52+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001183s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001256s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.001115s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc LIMIT 5 [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001106s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000877s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000654s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000214s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.000965s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000593s ]
+---------------------------------------------------------------
+[ 2018-10-01T15:24:35+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/editnote/id/211.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001135s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001450s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 211 LIMIT 1 [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000895s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000332s ]
+---------------------------------------------------------------
+[ 2018-10-01T15:41:02+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/savenote.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003278s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.002665s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `title`='人间失格',`content`='# 人间失格\n*太宰治*\n\n过的好的人容易活成好人。\n\n史铁生曾说过：“写作者，未必能塑造出真实的他人，写作者只可能塑造真实的自己。”太宰治就是这样，用叶藏来塑造了一个真实的自己。\n\n早在孩提时代，当其他孩子还在对世界予取予求的自我中心化阶段时，叶藏（或说太宰）就已经敏感地感知到了自己的与众不同，并对这种可能带来孤立和疏离的差异而深深焦虑不安，充满了对外界和他人的戒惧感。“对于人，我总是恐惧地颤抖”。是什么造成了这种过度的敏感和早熟？是身为贵族的父亲的过度严厉？是因为“纽带”作用的母亲的缺位？还是津岛家淡漠的人情？对此我们无从得知，但其结果却是一目了然的，那就是年幼的太宰就此学会了戴上丑角”的面具，“将那份忧郁、神经质一股脑地隐藏起来，努力伪装出天真无邪的乐天，逐渐成为一个娱乐他人的怪胎。”\n\n所谓“丑角精神”，就是在生活中与他人交往时，一味屈从对方的要求，为取悦他人不惜自己戴上“小丑”的面具，以刻意的出乖卖丑，耍宝搞笑来与他人同一化的行为趋向。\n\n乍看之下，“丑角精神”也是这种同一化的表现，然而其内在却大有不同，因为“丑角”本质上只是一层伪装，是从自我本体中分离出来的“人格面具”。其存在目的，不是消弭自我求得同化，而恰是隐藏那个与众人“相异”的自我。\n\n仔细回想的话，也许我们在学生时代乃至当下的生活里，也曾遇到过类似行为的人，甚至我们自己，也曾多少扮演过“丑角”。\n\n太宰治作为战后崛起的作家，以昭和十二年为界，战前战后的变故足以摧毁太多东西，他大学时代就对左翼运动的极大热情，之后经历左翼运动被镇压，日本战败，战后左翼的妥协，日本文明的瓦解，国家被迫转型，这些动荡虽然在他小说中着墨不多但是对于生命信仰的破坏却是致命的；\n\n与其说，自杀是失去为人的资格，感到对世界失望，不如说是为了引起人的注意，大多人懦弱地面对人生，又高调地面对死亡…\n\n>书摘\n\n- “受人尊敬”，这种念头本身也让我畏葸不已。我对受人尊敬这一状态进行了如下定义：近于完美无缺地蒙骗别人，尔后又被某个全智全能之人识破真相，最终原形毕露，被迫当众出丑，以致于比死亡更难堪更困窘。即使依靠欺骗赢得了别人的尊敬，无疑也有某个人熟谙其中的真相。不久，那个人必定会告知其他的人。当人们发觉自己上当受骗后，那种愤怒和报复将是怎样一种情形呢？即使稍加想象，也不由得毛发竖立。\n\n- 我担心他们甚至没有发现这便是我的本来面目，而依旧视为一种新近发明的搞笑方式，把它当成一大笑料。\n\n- 竭力想把觉得美的东西原封不动地描绘为美是幼稚和愚蠢乃至完全谬误的。绘画大师利用主观力量，对那些平淡无奇的东西加以美的创造，虽说他们对丑恶的东西感到恶心呕吐，却并不隐瞒对它们的兴趣，从而沉浸在表现的愉悦中。换言之，他们丝毫不为别人的看法左右。\n\n- 尽管与我的表现方式大相径庭，在彻底游离于人世的营生之外、迷惘彷徨这一点上，毕竟属于同类\n\n- 人们彼此并不了解，相互截然不同，却自以为是亲密无间的挚友，一辈子也没有觉察到彼此的殊异。待等对方死去，不是还哭哭啼啼地念一番悼词吗？\n\n- 只需遵从与昨天相同的习性\n倘若愿意避免狂喜狂乐\n大惊大悲就不会降临\n躲开前方的挡路巨石\n像蟾蜍一般迂回前进\n当我读到由上田敏[日本诗人、翻译家]，由夏尔.库洛所作的这首诗时，整个脸庞羞赧得就像火苗在燃烧一样。\n\n- 他竟然说罪的反义词是法律！或许世人都是抱着那样一种简单的想法而装模作样地生活着。以为罪恶只是在没有警察的地方蠢蠢欲动。\n\n- “未必吧。……罪的反义词是善。善良的市民，也就是像我们这样的人。”\n“别再开这种玩笑了。不过，善是恶的反义词，而不是罪的反义词呐。”\n“恶与罪难道有什么不同吗？”\n“我想是不同的。善恶的概念是由人创造出来的，是人随随便便创造出来的道德词语。”\n\n- 罪与祈祷，罪与忏悔，罪与告白，罪与……呜呼，全是同义词。罪的反义词究竟是什么呢？”\n“罪的反义词是蜜，如蜂蜜般甘甜“\n\n- “对吧？自从我用那种药以后，就一直滴酒未沾呐。多亏了这样，我的身体状况可谓好得很哩。我也不认为自己会永远画蹩脚的漫画，从今以后，我要把酒戒掉，调节好身体、努力地学习，成为一个伟大的画家给你们瞧瞧。眼下正处于节骨眼上，所以我求求你啦，让我吻你吧。”\n\n- 骑自行车去观赏绿叶掩映的瀑布，这只是我难以企及的奢望罢了。\n\n- 她还蒙在鼓里，以为那是强精剂。\n“不，我不要那个。” \n这可是一件罕见的事情。在别人劝我的情况下，敢于加以拒绝，这是我迄今为止的生涯中，是绝无仅有的例外，这样说一点也不夸张。我的不幸乃是一个缺乏拒绝能力的人的不幸。我时常陷入一种恐惧之中，以为如果别人劝我干什么而自己加以拒绝的话，就会在对方的心灵和自己的心灵中剜开一道永远无法修复的裂痕。可是，在良子递给我药品时，我却自然而然地拒绝了自己几近疯狂地四处寻求的吗啡。或许是我被良子那种“神灵一般的无知”所打动了吧。在那一瞬间，难道我不是并没有中毒吗？\n\n- 我已丧失了做人的资格。我已彻底变得不是一个人了。\n\n',`groups`='Default',`p_id`=1  WHERE  `id` = 1 [ RunTime:0.001849s ]
+---------------------------------------------------------------
+[ 2018-10-01T16:11:06+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/asearch.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001110s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001427s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  ( `title` LIKE '%被嫌弃%' OR `content` LIKE '%被嫌弃%' ) ORDER BY date desc [ RunTime:0.006422s ]
+---------------------------------------------------------------
+[ 2018-10-01T16:11:09+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/166
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001377s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001528s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 166 LIMIT 1 [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001096s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000355s ]
+---------------------------------------------------------------
+[ 2018-10-01T17:26:50+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/savenote.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001274s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.002075s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `title`='人间失格',`content`='# 人间失格\n*太宰治*\n\n**过的好的人容易活成好人。 --《我的大叔》**\n\n在年初的时候一个人在寝室看了《被嫌弃的松子的一生》，当时我草率的表达了自己的不解与质疑，我当时的观点是：她明明有很多的选择，却偏偏要把自己一步又一步的推向深渊，自作自受。还记得当时在看了一些影评后，我又反思了自己，最后得出了一个结论：「你独有的生活经历，塑造了你如今的思想，悲欢本不想通，不要尝试以你的思想去解释别人的人生，可以见人思己，以此为戒，但并不需要你以旁观者的身份站在制高点上对其指手画脚。」\n\n最近，我花了大概 2 天的时间阅读了这本书。这一次，我试着以叶藏的角度来思考，试着把自己带入到他所处的情景中，试着去了解他的这种「丑角精神」。\n\n所谓「丑角精神」，就是在生活中与他人交往时，一味屈从对方的要求，为取悦他人不惜自己戴上小丑的面具，以刻意的出乖卖丑，耍宝搞笑来与他人同一化的行为趋向。\n\n乍看之下，“丑角精神”也是这种同一化的表现，然而其内在却大有不同，因为“丑角”本质上只是一层伪装，是从自我本体中分离出来的“人格面具”。其存在目的，不是消弭自我求得同化，而恰是隐藏那个与众人“相异”的自我。\n\n年幼的叶藏与大多数人都不同，他忧郁而孤独，过度的敏感让他过早的感知到了自己的与众不同，并对这种可能带来孤立和疏离的差异而深深不安，充满了对外界和他人的戒惧感，只知道在岁月的流逝中，这种戒惧一直在慢慢积累着，他将那份忧郁、神经质一股脑地隐藏起来，努力伪装出天真无邪的乐天，逐渐成为一个戴上面具娱乐他人的丑角。\n\n仔细回想的话，也许我们在学生时代乃至当下的生活里，也曾遇到过类似行为的人，甚至我们自己，也曾多少扮演过“丑角”。\n\n太宰治作为战后崛起的作家，以昭和十二年为界，战前战后的变故足以摧毁太多东西，他大学时代就对左翼运动的极大热情，之后经历左翼运动被镇压，日本战败，战后左翼的妥协，日本文明的瓦解，国家被迫转型，这些动荡虽然在他小说中着墨不多但是对于生命信仰的破坏却是致命的；\n\n与其说，自杀是失去为人的资格，感到对世界失望，不如说是为了引起人的注意，大多人懦弱地面对人生，又高调地面对死亡…\n\n>书摘\n\n- “受人尊敬”，这种念头本身也让我畏葸不已。我对受人尊敬这一状态进行了如下定义：近于完美无缺地蒙骗别人，尔后又被某个全智全能之人识破真相，最终原形毕露，被迫当众出丑，以致于比死亡更难堪更困窘。即使依靠欺骗赢得了别人的尊敬，无疑也有某个人熟谙其中的真相。不久，那个人必定会告知其他的人。当人们发觉自己上当受骗后，那种愤怒和报复将是怎样一种情形呢？即使稍加想象，也不由得毛发竖立。\n\n- 我担心他们甚至没有发现这便是我的本来面目，而依旧视为一种新近发明的搞笑方式，把它当成一大笑料。\n\n- 竭力想把觉得美的东西原封不动地描绘为美是幼稚和愚蠢乃至完全谬误的。绘画大师利用主观力量，对那些平淡无奇的东西加以美的创造，虽说他们对丑恶的东西感到恶心呕吐，却并不隐瞒对它们的兴趣，从而沉浸在表现的愉悦中。换言之，他们丝毫不为别人的看法左右。\n\n- 尽管与我的表现方式大相径庭，在彻底游离于人世的营生之外、迷惘彷徨这一点上，毕竟属于同类\n\n- 人们彼此并不了解，相互截然不同，却自以为是亲密无间的挚友，一辈子也没有觉察到彼此的殊异。待等对方死去，不是还哭哭啼啼地念一番悼词吗？\n\n- 只需遵从与昨天相同的习性\n倘若愿意避免狂喜狂乐\n大惊大悲就不会降临\n躲开前方的挡路巨石\n像蟾蜍一般迂回前进\n当我读到由上田敏[日本诗人、翻译家]，由夏尔.库洛所作的这首诗时，整个脸庞羞赧得就像火苗在燃烧一样。\n\n- 他竟然说罪的反义词是法律！或许世人都是抱着那样一种简单的想法而装模作样地生活着。以为罪恶只是在没有警察的地方蠢蠢欲动。\n\n- “未必吧。……罪的反义词是善。善良的市民，也就是像我们这样的人。”\n“别再开这种玩笑了。不过，善是恶的反义词，而不是罪的反义词呐。”\n“恶与罪难道有什么不同吗？”\n“我想是不同的。善恶的概念是由人创造出来的，是人随随便便创造出来的道德词语。”\n\n- 罪与祈祷，罪与忏悔，罪与告白，罪与……呜呼，全是同义词。罪的反义词究竟是什么呢？”\n“罪的反义词是蜜，如蜂蜜般甘甜“\n\n- “对吧？自从我用那种药以后，就一直滴酒未沾呐。多亏了这样，我的身体状况可谓好得很哩。我也不认为自己会永远画蹩脚的漫画，从今以后，我要把酒戒掉，调节好身体、努力地学习，成为一个伟大的画家给你们瞧瞧。眼下正处于节骨眼上，所以我求求你啦，让我吻你吧。”\n\n- 骑自行车去观赏绿叶掩映的瀑布，这只是我难以企及的奢望罢了。\n\n- 她还蒙在鼓里，以为那是强精剂。\n“不，我不要那个。” \n这可是一件罕见的事情。在别人劝我的情况下，敢于加以拒绝，这是我迄今为止的生涯中，是绝无仅有的例外，这样说一点也不夸张。我的不幸乃是一个缺乏拒绝能力的人的不幸。我时常陷入一种恐惧之中，以为如果别人劝我干什么而自己加以拒绝的话，就会在对方的心灵和自己的心灵中剜开一道永远无法修复的裂痕。可是，在良子递给我药品时，我却自然而然地拒绝了自己几近疯狂地四处寻求的吗啡。或许是我被良子那种“神灵一般的无知”所打动了吧。在那一瞬间，难道我不是并没有中毒吗？\n\n- 我已丧失了做人的资格。我已彻底变得不是一个人了。\n\n',`groups`='Default',`p_id`=1  WHERE  `id` = 1 [ RunTime:0.000758s ]
+---------------------------------------------------------------
+[ 2018-10-01T17:33:26+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/savenote.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001345s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001264s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `title`='人间失格',`content`='# 人间失格\n*太宰治*\n\n**过的好的人容易活成好人。 --《我的大叔》**\n\n在年初的时候一个人在寝室看了《被嫌弃的松子的一生》，当时我草率的表达了自己的不解与质疑，我当时的观点是：自作自受，她明明有很多的选择，却偏偏要把自己一步又一步的推向深渊。还记得当时在看了一些影评后，我又反思了自己，最后得出了一个结论：「**你独有的生活经历，塑造了你如今的思想，悲欢本不相通，不要尝试以你的思想去解释别人的人生，可以见人思己，以此为戒，但并不需要你以旁观者的身份站在制高点上对其指手画脚。**」\n\n最近，我花了大概 2 天的时间阅读了这本书。这一次，我试着以叶藏的角度来思考，试着把自己带入到他所处的情景中，试着去了解他的这种「丑角精神」。\n\n所谓「丑角精神」，就是在生活中与他人交往时，一味屈从对方的要求，为取悦他人不惜自己戴上小丑的面具，以刻意的出乖卖丑，耍宝搞笑来与他人同一化的行为趋向。乍看之下，「丑角精神」也是这种同一化的表现，然而其内在却大有不同，因为“丑角”本质上只是一层伪装，是从自我本体中分离出来的人格面具。其存在目的，不是消弭自我求得同化，而恰是隐藏那个与众人相异的自我。\n\n年幼的叶藏与大多数人都不同，他忧郁而孤独，过度的敏感让他过早的感知到了自己的与众不同，并对这种可能带来孤立和疏离的差异而深深不安，充满了对外界和他人的戒惧感，随着岁月的流逝，这种戒惧一直在慢慢积累着，他将那份忧郁、神经质一股脑地隐藏起来，努力伪装出天真无邪的乐天，逐渐成为一个戴上面具娱乐他人的丑角。\n\n仔细回想自己也曾多少扮演过「丑角」，通过一些卖傻耍宝来轻松下气氛或是缓解当下的尴尬。但我与叶藏最大的不同则是「拒绝」，\n\n太宰治作为战后崛起的作家，以昭和十二年为界，战前战后的变故足以摧毁太多东西，他大学时代就对左翼运动的极大热情，之后经历左翼运动被镇压，日本战败，战后左翼的妥协，日本文明的瓦解，国家被迫转型，这些动荡虽然在他小说中着墨不多但是对于生命信仰的破坏却是致命的；\n\n与其说，自杀是失去为人的资格，感到对世界失望，不如说是为了引起人的注意，大多人懦弱地面对人生，又高调地面对死亡…\n\n>书摘\n\n- “受人尊敬”，这种念头本身也让我畏葸不已。我对受人尊敬这一状态进行了如下定义：近于完美无缺地蒙骗别人，尔后又被某个全智全能之人识破真相，最终原形毕露，被迫当众出丑，以致于比死亡更难堪更困窘。即使依靠欺骗赢得了别人的尊敬，无疑也有某个人熟谙其中的真相。不久，那个人必定会告知其他的人。当人们发觉自己上当受骗后，那种愤怒和报复将是怎样一种情形呢？即使稍加想象，也不由得毛发竖立。\n\n- 我担心他们甚至没有发现这便是我的本来面目，而依旧视为一种新近发明的搞笑方式，把它当成一大笑料。\n\n- 竭力想把觉得美的东西原封不动地描绘为美是幼稚和愚蠢乃至完全谬误的。绘画大师利用主观力量，对那些平淡无奇的东西加以美的创造，虽说他们对丑恶的东西感到恶心呕吐，却并不隐瞒对它们的兴趣，从而沉浸在表现的愉悦中。换言之，他们丝毫不为别人的看法左右。\n\n- 尽管与我的表现方式大相径庭，在彻底游离于人世的营生之外、迷惘彷徨这一点上，毕竟属于同类\n\n- 人们彼此并不了解，相互截然不同，却自以为是亲密无间的挚友，一辈子也没有觉察到彼此的殊异。待等对方死去，不是还哭哭啼啼地念一番悼词吗？\n\n- 只需遵从与昨天相同的习性\n倘若愿意避免狂喜狂乐\n大惊大悲就不会降临\n躲开前方的挡路巨石\n像蟾蜍一般迂回前进\n当我读到由上田敏[日本诗人、翻译家]，由夏尔.库洛所作的这首诗时，整个脸庞羞赧得就像火苗在燃烧一样。\n\n- 他竟然说罪的反义词是法律！或许世人都是抱着那样一种简单的想法而装模作样地生活着。以为罪恶只是在没有警察的地方蠢蠢欲动。\n\n- “未必吧。……罪的反义词是善。善良的市民，也就是像我们这样的人。”\n“别再开这种玩笑了。不过，善是恶的反义词，而不是罪的反义词呐。”\n“恶与罪难道有什么不同吗？”\n“我想是不同的。善恶的概念是由人创造出来的，是人随随便便创造出来的道德词语。”\n\n- 罪与祈祷，罪与忏悔，罪与告白，罪与……呜呼，全是同义词。罪的反义词究竟是什么呢？”\n“罪的反义词是蜜，如蜂蜜般甘甜“\n\n- “对吧？自从我用那种药以后，就一直滴酒未沾呐。多亏了这样，我的身体状况可谓好得很哩。我也不认为自己会永远画蹩脚的漫画，从今以后，我要把酒戒掉，调节好身体、努力地学习，成为一个伟大的画家给你们瞧瞧。眼下正处于节骨眼上，所以我求求你啦，让我吻你吧。”\n\n- 骑自行车去观赏绿叶掩映的瀑布，这只是我难以企及的奢望罢了。\n\n- 她还蒙在鼓里，以为那是强精剂。\n“不，我不要那个。” \n这可是一件罕见的事情。在别人劝我的情况下，敢于加以拒绝，这是我迄今为止的生涯中，是绝无仅有的例外，这样说一点也不夸张。我的不幸乃是一个缺乏拒绝能力的人的不幸。我时常陷入一种恐惧之中，以为如果别人劝我干什么而自己加以拒绝的话，就会在对方的心灵和自己的心灵中剜开一道永远无法修复的裂痕。可是，在良子递给我药品时，我却自然而然地拒绝了自己几近疯狂地四处寻求的吗啡。或许是我被良子那种“神灵一般的无知”所打动了吧。在那一瞬间，难道我不是并没有中毒吗？\n\n- 我已丧失了做人的资格。我已彻底变得不是一个人了。\n\n',`groups`='Default',`p_id`=1  WHERE  `id` = 1 [ RunTime:0.000665s ]
+---------------------------------------------------------------
+[ 2018-10-01T18:02:49+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/savenote.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000980s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001267s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `title`='人间失格',`content`='# 人间失格\n*太宰治*\n\n**过的好的人容易活成好人。 --《我的大叔》**\n\n>太宰治作为战后崛起的作家，以昭和十二年为界，战前战后的变故足以摧毁太多东西，他大学时代就对左翼运动的极大热情，之后经历左翼运动被镇压，日本战败，战后左翼的妥协，日本文明的瓦解，国家被迫转型，这些动荡虽然在他小说中着墨不多但是对于生命信仰的破坏却是致命的。\n\n在年初的时候一个人在寝室看了《被嫌弃的松子的一生》，当时我草率的表达了自己的不解与质疑，我当时的观点是：自作自受，她明明有很多的选择，却偏偏要把自己一步又一步的推向深渊。还记得当时在看了一些影评后，我又反思了自己，最后得出了一个结论：「**你独有的生活经历，塑造了你如今的思想，悲欢本不相通，不要尝试以你的思想去解释别人的人生，可以见人思己，以此为戒，但并不需要你以旁观者的身份站在制高点上对其指手画脚。**」\n\n最近，我花了大概 2 天的时间阅读了这本书。这一次，我试着以叶藏的角度来思考，试着把自己带入到他所处的情景中，试着去了解他的这种「丑角精神」。\n\n所谓「丑角精神」，就是在生活中与他人交往时，一味屈从对方的要求，为取悦他人不惜自己戴上小丑的面具，以刻意的出乖卖丑，耍宝搞笑来与他人同一化的行为趋向。乍看之下，「丑角精神」也是这种同一化的表现，然而其内在却大有不同，因为“丑角”本质上只是一层伪装，是从自我本体中分离出来的人格面具。其存在目的，不是消弭自我求得同化，而恰是隐藏那个与众人相异的自我。\n\n年幼的叶藏与大多数人都不同，他忧郁而孤独，过度的敏感让他过早的感知到了自己的与众不同，并对这种可能带来孤立和疏离的差异而深深不安，充满了对外界和他人的戒惧感，最终游离于人世的营生之外，迷惘彷徨。随着岁月的流逝，这种戒惧一直在慢慢积累着，他将那份忧郁、神经质一股脑地隐藏起来，努力伪装出天真无邪的乐天，逐渐成为一个戴上面具娱乐他人的丑角。\n\n仔细回想自己也曾多少扮演过「丑角」，曾经偶尔会通过一些卖傻耍宝来轻松下气氛，缓解当下的尴尬。但我与叶藏最大的不同则是拒绝与反抗，我之所以会去扮演一个丑角，很大一部分原因是他会为我省去一些麻烦，且做这些事对是我无害的，若所要求之事是我所抗拒的，那很大几率我是会直接拒绝的。而叶藏，他不会拒绝，尽管扮演一个丑角让他精疲力尽，他依然会这么做，他不是为了他自己，而是为了观众。\n\n不管是松子还是叶藏，最终我都还是无法理解他们的忧郁从何而来。我这是何其的幸运啊。\n\n>书摘\n\n- “受人尊敬”，这种念头本身也让我畏葸不已。我对受人尊敬这一状态进行了如下定义：近于完美无缺地蒙骗别人，尔后又被某个全智全能之人识破真相，最终原形毕露，被迫当众出丑，以致于比死亡更难堪更困窘。即使依靠欺骗赢得了别人的尊敬，无疑也有某个人熟谙其中的真相。不久，那个人必定会告知其他的人。当人们发觉自己上当受骗后，那种愤怒和报复将是怎样一种情形呢？即使稍加想象，也不由得毛发竖立。\n\n- 我担心他们甚至没有发现这便是我的本来面目，而依旧视为一种新近发明的搞笑方式，把它当成一大笑料。\n~~这就是丑角吧，旁人不解，你又不直说。~~\n\n- 竭力想把觉得美的东西原封不动地描绘为美是幼稚和愚蠢乃至完全谬误的。绘画大师利用主观力量，对那些平淡无奇的东西加以美的创造，虽说他们对丑恶的东西感到恶心呕吐，却并不隐瞒对它们的兴趣，从而沉浸在表现的愉悦中。换言之，他们丝毫不为别人的看法左右。\n\n- 尽管与我的表现方式大相径庭，在彻底游离于人世的营生之外、迷惘彷徨这一点上，毕竟属于同类。\n~~游离于人世的营生之外、看他人在人世中营生。~~\n\n- 人们彼此并不了解，相互截然不同，却自以为是亲密无间的挚友，一辈子也没有觉察到彼此的殊异。待等对方死去，不是还哭哭啼啼地念一番悼词吗？\n~~何苦要去察觉彼此的殊异，知道了又如何，人与人之间的殊异本就存在，且一直存在。~~\n\n- 只需遵从与昨天相同的习性\n倘若愿意避免狂喜狂乐\n大惊大悲就不会降临\n躲开前方的挡路巨石\n像蟾蜍一般迂回前进\n当我读到由上田敏[日本诗人、翻译家]，由夏尔.库洛所作的这首诗时，整个脸庞羞赧得就像火苗在燃烧一样。\n~~避免狂喜狂乐，大惊大悲就不会降临~~\n\n- 他竟然说罪的反义词是法律！或许世人都是抱着那样一种简单的想法而装模作样地生活着。以为罪恶只是在没有警察的地方蠢蠢欲动。\n\n- “未必吧。罪的反义词是善。善良的市民，也就是像我们这样的人。”\n“别再开这种玩笑了。不过，善是恶的反义词，而不是罪的反义词呐。”\n“恶与罪难道有什么不同吗？”\n“我想是不同的。善恶的概念是由人创造出来的，是人随随便便创造出来的道德词语。”\n~~善恶是人创造出来的，罪也是。~~\n\n- 罪与祈祷，罪与忏悔，罪与告白，罪与……呜呼，全是同义词。罪的反义词究竟是什么呢？”\n“罪的反义词是蜜，如蜂蜜般甘甜。“\n\n- “对吧？自从我用那种药以后，就一直滴酒未沾呐。多亏了这样，我的身体状况可谓好得很哩。我也不认为自己会永远画蹩脚的漫画，从今以后，我要把酒戒掉，调节好身体、努力地学习，成为一个伟大的画家给你们瞧瞧。眼下正处于节骨眼上，所以我求求你啦，让我吻你吧。”\n\n- 骑自行车去观赏绿叶掩映的瀑布，这只是我难以企及的奢望罢了。\n\n- 她还蒙在鼓里，以为那是强精剂。\n“不，我不要那个。” \n这可是一件罕见的事情。在别人劝我的情况下，敢于加以拒绝，这是我迄今为止的生涯中，是绝无仅有的例外，这样说一点也不夸张。我的不幸乃是一个缺乏拒绝能力的人的不幸。我时常陷入一种恐惧之中，以为如果别人劝我干什么而自己加以拒绝的话，就会在对方的心灵和自己的心灵中剜开一道永远无法修复的裂痕。可是，在良子递给我药品时，我却自然而然地拒绝了自己几近疯狂地四处寻求的吗啡。或许是我被良子那种“神灵一般的无知”所打动了吧。在那一瞬间，难道我不是并没有中毒吗？\n\n- 我已丧失了做人的资格。我已彻底变得不是一个人了。\n\n',`groups`='Default',`p_id`=1  WHERE  `id` = 1 [ RunTime:0.000597s ]
+---------------------------------------------------------------
+[ 2018-10-01T18:06:04+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/savenote.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001009s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001186s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `title`='人间失格',`content`='# 人间失格\n*太宰治*\n\n**过的好的人容易活成好人。 --《我的大叔》**\n\n>太宰治作为战后崛起的作家，以昭和十二年为界，战前战后的变故足以摧毁太多东西，他大学时代就对左翼运动的极大热情，之后经历左翼运动被镇压，日本战败，战后左翼的妥协，日本文明的瓦解，国家被迫转型，这些动荡虽然在他小说中着墨不多但是对于生命信仰的破坏却是致命的。\n\n**骑自行车去观赏绿叶掩映的瀑布，这只是我难以企及的奢望罢了。 --叶藏**\n\n在年初的时候一个人在寝室看了《被嫌弃的松子的一生》，当时我草率的表达了自己的不解与质疑，我当时的观点是：自作自受，她明明有很多的选择，却偏偏要把自己一步又一步的推向深渊。还记得当时在看了一些影评后，我又反思了自己，最后得出了一个结论：「**你独有的生活经历，塑造了你如今的思想，悲欢本不相通，不要尝试以你的思想去解释别人的人生，可以见人思己，以此为戒，但并不需要你以旁观者的身份站在制高点上对其指手画脚。**」\n\n最近，我花了大概 2 天的时间阅读了这本书。这一次，我试着以叶藏的角度来思考，试着把自己带入到他所处的情景中，试着去了解他的这种「丑角精神」。\n\n所谓「丑角精神」，就是在生活中与他人交往时，一味屈从对方的要求，为取悦他人不惜自己戴上小丑的面具，以刻意的出乖卖丑，耍宝搞笑来与他人同一化的行为趋向。乍看之下，「丑角精神」也是这种同一化的表现，然而其内在却大有不同，因为“丑角”本质上只是一层伪装，是从自我本体中分离出来的人格面具。其存在目的，不是消弭自我求得同化，而恰是隐藏那个与众人相异的自我。\n\n年幼的叶藏与大多数人都不同，他忧郁而孤独，过度的敏感让他过早的感知到了自己的与众不同，并对这种可能带来孤立和疏离的差异而深深不安，充满了对外界和他人的戒惧感，最终游离于人世的营生之外，迷惘彷徨。随着岁月的流逝，这种戒惧一直在慢慢积累着，他将那份忧郁、神经质一股脑地隐藏起来，努力伪装出天真无邪的乐天，逐渐成为一个戴上面具娱乐他人的丑角。\n\n仔细回想自己也曾多少扮演过「丑角」，曾经偶尔会通过一些卖傻耍宝来轻松下气氛，缓解当下的尴尬。但我与叶藏最大的不同则是拒绝与反抗，我之所以会去扮演一个丑角，很大一部分原因是他会为我省去一些麻烦，且做这些事对是我无害的，若所要求之事是我所抗拒的，那很大几率我是会直接拒绝的。而叶藏，他不会拒绝，尽管扮演一个丑角让他精疲力尽，他依然会这么做，他不是为了他自己，而是为了观众。\n\n不管是松子还是叶藏，最终我都还是无法理解他们的忧郁从何而来。我这是何其的幸运啊。\n\n>书摘\n\n- “受人尊敬”，这种念头本身也让我畏葸不已。我对受人尊敬这一状态进行了如下定义：近于完美无缺地蒙骗别人，尔后又被某个全智全能之人识破真相，最终原形毕露，被迫当众出丑，以致于比死亡更难堪更困窘。即使依靠欺骗赢得了别人的尊敬，无疑也有某个人熟谙其中的真相。不久，那个人必定会告知其他的人。当人们发觉自己上当受骗后，那种愤怒和报复将是怎样一种情形呢？即使稍加想象，也不由得毛发竖立。\n\n- 我担心他们甚至没有发现这便是我的本来面目，而依旧视为一种新近发明的搞笑方式，把它当成一大笑料。\n~~这就是丑角吧，旁人不解，你又不直说。~~\n\n- 竭力想把觉得美的东西原封不动地描绘为美是幼稚和愚蠢乃至完全谬误的。绘画大师利用主观力量，对那些平淡无奇的东西加以美的创造，虽说他们对丑恶的东西感到恶心呕吐，却并不隐瞒对它们的兴趣，从而沉浸在表现的愉悦中。换言之，他们丝毫不为别人的看法左右。\n\n- 尽管与我的表现方式大相径庭，在彻底游离于人世的营生之外、迷惘彷徨这一点上，毕竟属于同类。\n~~游离于人世的营生之外、看他人在人世中营生。~~\n\n- 人们彼此并不了解，相互截然不同，却自以为是亲密无间的挚友，一辈子也没有觉察到彼此的殊异。待等对方死去，不是还哭哭啼啼地念一番悼词吗？\n~~何苦要去察觉彼此的殊异，知道了又如何，人与人之间的殊异本就存在，且一直存在。~~\n\n- 只需遵从与昨天相同的习性\n倘若愿意避免狂喜狂乐\n大惊大悲就不会降临\n躲开前方的挡路巨石\n像蟾蜍一般迂回前进\n当我读到由上田敏[日本诗人、翻译家]，由夏尔.库洛所作的这首诗时，整个脸庞羞赧得就像火苗在燃烧一样。\n~~避免狂喜狂乐，大惊大悲就不会降临~~\n\n- 他竟然说罪的反义词是法律！或许世人都是抱着那样一种简单的想法而装模作样地生活着。以为罪恶只是在没有警察的地方蠢蠢欲动。\n\n- “未必吧。罪的反义词是善。善良的市民，也就是像我们这样的人。”\n“别再开这种玩笑了。不过，善是恶的反义词，而不是罪的反义词呐。”\n“恶与罪难道有什么不同吗？”\n“我想是不同的。善恶的概念是由人创造出来的，是人随随便便创造出来的道德词语。”\n~~善恶是人创造出来的，罪也是。~~\n\n- 罪与祈祷，罪与忏悔，罪与告白，罪与……呜呼，全是同义词。罪的反义词究竟是什么呢？”\n“罪的反义词是蜜，如蜂蜜般甘甜。”\n\n- “对吧？自从我用那种药以后，就一直滴酒未沾呐。多亏了这样，我的身体状况可谓好得很哩。我也不认为自己会永远画蹩脚的漫画，从今以后，我要把酒戒掉，调节好身体、努力地学习，成为一个伟大的画家给你们瞧瞧。眼下正处于节骨眼上，所以我求求你啦，让我吻你吧。”\n\n- 她还蒙在鼓里，以为那是强精剂。\n“不，我不要那个。”\n这可是一件罕见的事情。在别人劝我的情况下，敢于加以拒绝，这是我迄今为止的生涯中，是绝无仅有的例外，这样说一点也不夸张。我的不幸乃是一个缺乏拒绝能力的人的不幸。我时常陷入一种恐惧之中，以为如果别人劝我干什么而自己加以拒绝的话，就会在对方的心灵和自己的心灵中剜开一道永远无法修复的裂痕。可是，在良子递给我药品时，我却自然而然地拒绝了自己几近疯狂地四处寻求的吗啡。或许是我被良子那种“神灵一般的无知”所打动了吧。在那一瞬间，难道我不是并没有中毒吗？\n\n- 我已丧失了做人的资格。我已彻底变得不是一个人了。\n\n',`groups`='Default',`p_id`=1  WHERE  `id` = 1 [ RunTime:0.000663s ]
+---------------------------------------------------------------
+[ 2018-10-01T18:06:08+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/updatenote/id/211.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001076s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001219s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 211 LIMIT 1 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `note` WHERE  `id` = 211 LIMIT 1 [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000929s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `groups` WHERE  `groups` = 'BookReview' LIMIT 1 [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT `id` FROM `groups` WHERE  `groups` = 'BookReview' LIMIT 1 [ RunTime:0.000281s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `id`=211,`p_id`=21,`title`='人间失格\r',`content`='# 人间失格\r\n*太宰治*\r\n\r\n**过的好的人容易活成好人。 --《我的大叔》**\r\n\r\n>太宰治作为战后崛起的作家，以昭和十二年为界，战前战后的变故足以摧毁太多东西，他大学时代就对左翼运动的极大热情，之后经历左翼运动被镇压，日本战败，战后左翼的妥协，日本文明的瓦解，国家被迫转型，这些动荡虽然在他小说中着墨不多但是对于生命信仰的破坏却是致命的。\r\n\r\n**骑自行车去观赏绿叶掩映的瀑布，这只是我难以企及的奢望罢了。 --叶藏**\r\n\r\n在年初的时候一个人在寝室看了《被嫌弃的松子的一生》，当时我草率的表达了自己的不解与质疑，我当时的观点是：自作自受，她明明有很多的选择，却偏偏要把自己一步又一步的推向深渊。还记得当时在看了一些影评后，我又反思了自己，最后得出了一个结论：「**你独有的生活经历，塑造了你如今的思想，悲欢本不相通，不要尝试以你的思想去解释别人的人生，可以见人思己，以此为戒，但并不需要你以旁观者的身份站在制高点上对其指手画脚。**」\r\n\r\n最近，我花了大概 2 天的时间阅读了这本书。这一次，我试着以叶藏的角度来思考，试着把自己带入到他所处的情景中，试着去了解他的这种「丑角精神」。\r\n\r\n所谓「丑角精神」，就是在生活中与他人交往时，一味屈从对方的要求，为取悦他人不惜自己戴上小丑的面具，以刻意的出乖卖丑，耍宝搞笑来与他人同一化的行为趋向。乍看之下，「丑角精神」也是这种同一化的表现，然而其内在却大有不同，因为“丑角”本质上只是一层伪装，是从自我本体中分离出来的人格面具。其存在目的，不是消弭自我求得同化，而恰是隐藏那个与众人相异的自我。\r\n\r\n年幼的叶藏与大多数人都不同，他忧郁而孤独，过度的敏感让他过早的感知到了自己的与众不同，并对这种可能带来孤立和疏离的差异而深深不安，充满了对外界和他人的戒惧感，最终游离于人世的营生之外，迷惘彷徨。随着岁月的流逝，这种戒惧一直在慢慢积累着，他将那份忧郁、神经质一股脑地隐藏起来，努力伪装出天真无邪的乐天，逐渐成为一个戴上面具娱乐他人的丑角。\r\n\r\n仔细回想自己也曾多少扮演过「丑角」，曾经偶尔会通过一些卖傻耍宝来轻松下气氛，缓解当下的尴尬。但我与叶藏最大的不同则是拒绝与反抗，我之所以会去扮演一个丑角，很大一部分原因是他会为我省去一些麻烦，且做这些事对是我无害的，若所要求之事是我所抗拒的，那很大几率我是会直接拒绝的。而叶藏，他不会拒绝，尽管扮演一个丑角让他精疲力尽，他依然会这么做，他不是为了他自己，而是为了观众。\r\n\r\n不管是松子还是叶藏，最终我都还是无法理解他们的忧郁从何而来。我这是何其的幸运啊。\r\n\r\n>书摘\r\n\r\n- “受人尊敬”，这种念头本身也让我畏葸不已。我对受人尊敬这一状态进行了如下定义：近于完美无缺地蒙骗别人，尔后又被某个全智全能之人识破真相，最终原形毕露，被迫当众出丑，以致于比死亡更难堪更困窘。即使依靠欺骗赢得了别人的尊敬，无疑也有某个人熟谙其中的真相。不久，那个人必定会告知其他的人。当人们发觉自己上当受骗后，那种愤怒和报复将是怎样一种情形呢？即使稍加想象，也不由得毛发竖立。\r\n\r\n- 我担心他们甚至没有发现这便是我的本来面目，而依旧视为一种新近发明的搞笑方式，把它当成一大笑料。\r\n~~这就是丑角吧，旁人不解，你又不直说。~~\r\n\r\n- 竭力想把觉得美的东西原封不动地描绘为美是幼稚和愚蠢乃至完全谬误的。绘画大师利用主观力量，对那些平淡无奇的东西加以美的创造，虽说他们对丑恶的东西感到恶心呕吐，却并不隐瞒对它们的兴趣，从而沉浸在表现的愉悦中。换言之，他们丝毫不为别人的看法左右。\r\n\r\n- 尽管与我的表现方式大相径庭，在彻底游离于人世的营生之外、迷惘彷徨这一点上，毕竟属于同类。\r\n~~游离于人世的营生之外、看他人在人世中营生。~~\r\n\r\n- 人们彼此并不了解，相互截然不同，却自以为是亲密无间的挚友，一辈子也没有觉察到彼此的殊异。待等对方死去，不是还哭哭啼啼地念一番悼词吗？\r\n~~何苦要去察觉彼此的殊异，知道了又如何，人与人之间的殊异本就存在，且一直存在。~~\r\n\r\n- 只需遵从与昨天相同的习性\r\n倘若愿意避免狂喜狂乐\r\n大惊大悲就不会降临\r\n躲开前方的挡路巨石\r\n像蟾蜍一般迂回前进\r\n当我读到由上田敏[日本诗人、翻译家]，由夏尔.库洛所作的这首诗时，整个脸庞羞赧得就像火苗在燃烧一样。\r\n~~避免狂喜狂乐，大惊大悲就不会降临~~\r\n\r\n- 他竟然说罪的反义词是法律！或许世人都是抱着那样一种简单的想法而装模作样地生活着。以为罪恶只是在没有警察的地方蠢蠢欲动。\r\n\r\n- “未必吧。罪的反义词是善。善良的市民，也就是像我们这样的人。”\r\n“别再开这种玩笑了。不过，善是恶的反义词，而不是罪的反义词呐。”\r\n“恶与罪难道有什么不同吗？”\r\n“我想是不同的。善恶的概念是由人创造出来的，是人随随便便创造出来的道德词语。”\r\n~~善恶是人创造出来的，罪也是。~~\r\n\r\n- 罪与祈祷，罪与忏悔，罪与告白，罪与……呜呼，全是同义词。罪的反义词究竟是什么呢？”\r\n“罪的反义词是蜜，如蜂蜜般甘甜。”\r\n\r\n- “对吧？自从我用那种药以后，就一直滴酒未沾呐。多亏了这样，我的身体状况可谓好得很哩。我也不认为自己会永远画蹩脚的漫画，从今以后，我要把酒戒掉，调节好身体、努力地学习，成为一个伟大的画家给你们瞧瞧。眼下正处于节骨眼上，所以我求求你啦，让我吻你吧。”\r\n\r\n- 她还蒙在鼓里，以为那是强精剂。\r\n“不，我不要那个。”\r\n这可是一件罕见的事情。在别人劝我的情况下，敢于加以拒绝，这是我迄今为止的生涯中，是绝无仅有的例外，这样说一点也不夸张。我的不幸乃是一个缺乏拒绝能力的人的不幸。我时常陷入一种恐惧之中，以为如果别人劝我干什么而自己加以拒绝的话，就会在对方的心灵和自己的心灵中剜开一道永远无法修复的裂痕。可是，在良子递给我药品时，我却自然而然地拒绝了自己几近疯狂地四处寻求的吗啡。或许是我被良子那种“神灵一般的无知”所打动了吧。在那一瞬间，难道我不是并没有中毒吗？\r\n\r\n- 我已丧失了做人的资格。我已彻底变得不是一个人了。\r\n\r\n',`groups`='BookReview',`is_show`=0  WHERE  `id` = 211 [ RunTime:0.000652s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'BookReview' LIMIT 1 [ RunTime:0.000900s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=30  WHERE  `groups` = 'BookReview' [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'BookReview' LIMIT 1 [ RunTime:0.000791s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=30  WHERE  `groups` = 'BookReview' [ RunTime:0.000331s ]
+---------------------------------------------------------------
+[ 2018-10-01T18:06:09+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/211.html
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001039s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001611s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 211 LIMIT 1 [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001300s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000415s ]

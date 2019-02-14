@@ -1,0 +1,3085 @@
+---------------------------------------------------------------
+[ 2018-11-05T15:43:46+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/login/index.html
+[ info ] qingrang.top/daily/admin/login/index.html [运行时间：0.053416s][吞吐率：18.72req/s] [内存消耗：1,340.49kb] [文件加载：47]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /var/www/html/daily/application/admin/controller/Login.php ]
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-05T15:57:29+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/login/index.html
+[ info ] qingrang.top/daily/admin/login/index.html [运行时间：0.065408s][吞吐率：15.29req/s] [内存消耗：1,922.46kb] [文件加载：54]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '8',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'pwd' => 'shao',
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /var/www/html/daily/application/admin/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001694s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.002640s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000530s ]
+---------------------------------------------------------------
+[ 2018-11-05T15:57:29+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note
+[ info ] qingrang.top/daily/admin/note [运行时间：0.087867s][吞吐率：11.38req/s] [内存消耗：2,226.50kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416; PHPSESSID=svekv5f2h80ehsg1hpaqegbrv5',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/notelst.html [ array (
+  0 => 'stickList',
+  1 => 'hide',
+  2 => 'list',
+  3 => 'list_new',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+  10 => 'default_num',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000835s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001622s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.003512s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal' ORDER BY id desc LIMIT 5 [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001046s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000530s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000901s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000426s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.001471s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000255s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001119s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000683s ]
+---------------------------------------------------------------
+[ 2018-11-05T16:17:42+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/208.html
+[ info ] qingrang.top/daily/admin/note/shownote/id/208.html [运行时间：0.076939s][吞吐率：13.00req/s] [内存消耗：1,982.75kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416; PHPSESSID=svekv5f2h80ehsg1hpaqegbrv5',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '208',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002699s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001865s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 208 LIMIT 1 [ RunTime:0.000533s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001054s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000303s ]
+---------------------------------------------------------------
+[ 2018-11-05T17:01:36+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note
+[ info ] qingrang.top/daily/admin/note [运行时间：0.103106s][吞吐率：9.70req/s] [内存消耗：2,226.50kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416; PHPSESSID=svekv5f2h80ehsg1hpaqegbrv5',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/notelst.html [ array (
+  0 => 'stickList',
+  1 => 'hide',
+  2 => 'list',
+  3 => 'list_new',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+  10 => 'default_num',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000691s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.002741s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.003394s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal' ORDER BY id desc LIMIT 5 [ RunTime:0.000731s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001673s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000584s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001412s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000635s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000577s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.002199s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001676s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.001111s ]
+---------------------------------------------------------------
+[ 2018-11-05T18:51:40+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/login/index.html
+[ info ] qingrang.top/daily/admin/login/index.html [运行时间：0.047393s][吞吐率：21.10req/s] [内存消耗：1,339.90kb] [文件加载：47]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /var/www/html/daily/application/admin/controller/Login.php ]
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-05T19:50:49+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/login/index.html
+[ info ] qingrang.top/daily/admin/login/index.html [运行时间：0.037783s][吞吐率：26.47req/s] [内存消耗：1,339.90kb] [文件加载：47]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /var/www/html/daily/application/admin/controller/Login.php ]
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-05T20:18:02+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/login/index.html
+[ info ] qingrang.top/daily/admin/login/index.html [运行时间：0.053927s][吞吐率：18.54req/s] [内存消耗：1,340.04kb] [文件加载：47]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /var/www/html/daily/application/admin/controller/Login.php ]
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-05T22:25:29+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/login/index.html
+[ info ] qingrang.top/daily/admin/login/index.html [运行时间：0.046703s][吞吐率：21.41req/s] [内存消耗：1,339.90kb] [文件加载：47]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /var/www/html/daily/application/admin/controller/Login.php ]
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-05T22:28:42+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note
+[ info ] qingrang.top/daily/admin/note [运行时间：0.051518s][吞吐率：19.41req/s] [内存消耗：1,428.32kb] [文件加载：49]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /var/www/html/daily/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-05T22:28:44+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/login/index.html
+[ info ] qingrang.top/daily/admin/login/index.html [运行时间：0.043018s][吞吐率：23.25req/s] [内存消耗：1,340.78kb] [文件加载：47]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416; PHPSESSID=eb81ogaab9jatuojts3q1fv7r6',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /var/www/html/daily/application/admin/controller/Login.php ]
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-05T22:28:46+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/login/index.html
+[ info ] qingrang.top/daily/admin/login/index.html [运行时间：0.050973s][吞吐率：19.62req/s] [内存消耗：1,340.78kb] [文件加载：47]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416; PHPSESSID=eb81ogaab9jatuojts3q1fv7r6',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /var/www/html/daily/application/admin/controller/Login.php ]
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-05T22:28:49+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/login/index.html
+[ info ] qingrang.top/daily/admin/login/index.html [运行时间：0.087355s][吞吐率：11.45req/s] [内存消耗：1,922.37kb] [文件加载：54]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '8',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416; PHPSESSID=eb81ogaab9jatuojts3q1fv7r6',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'pwd' => 'shao',
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /var/www/html/daily/application/admin/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001176s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.003342s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000728s ]
+---------------------------------------------------------------
+[ 2018-11-05T22:28:50+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note
+[ info ] qingrang.top/daily/admin/note [运行时间：0.136436s][吞吐率：7.33req/s] [内存消耗：2,226.50kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416; PHPSESSID=eb81ogaab9jatuojts3q1fv7r6',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/notelst.html [ array (
+  0 => 'stickList',
+  1 => 'hide',
+  2 => 'list',
+  3 => 'list_new',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+  10 => 'default_num',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000875s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.002051s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.004752s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal' ORDER BY id desc LIMIT 5 [ RunTime:0.000823s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001617s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000664s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001337s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000564s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000518s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.003631s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001804s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.001071s ]
+---------------------------------------------------------------
+[ 2018-11-05T22:29:45+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/newedit.html
+[ info ] qingrang.top/daily/admin/note/newedit.html [运行时间：0.067306s][吞吐率：14.86req/s] [内存消耗：2,020.98kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'newedit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416; PHPSESSID=eb81ogaab9jatuojts3q1fv7r6',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->newEdit[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/newedit.html [ array (
+  0 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000695s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001652s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000679s ]
+---------------------------------------------------------------
+[ 2018-11-05T22:33:27+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/addnote.html
+[ info ] qingrang.top/daily/admin/note/addnote.html [运行时间：0.068100s][吞吐率：14.68req/s] [内存消耗：1,985.35kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'addnote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '3783',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/newedit.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416; PHPSESSID=eb81ogaab9jatuojts3q1fv7r6',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'groups' => 'Java',
+  'content' => '# JUnit
+## 1. 导包
+## 2. 测试
+```
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+/**
+ * JUint 测试
+ */
+public class MyTest
+{
+	// 每个测试方法在执行之前会先执行该方法
+	@Before
+	public void before() {
+		System.out.println("执行before()方法");
+	}
+	
+	// 每个测试方法在执行之后会执行该方法
+	@After
+	public void after() {
+		System.out.println("执行after()方法");
+	}
+
+	@Test
+	public void test01() {
+		System.out.println("执行test01()");
+	}
+
+	@Test
+	public void test02() {
+		System.out.println("执行test02()");
+	}
+}
+```
+
+运行结果看到绿条，则说明运行成功；看到红条，说明运行出了问题。',
+  'test-editormd-html-code' => '<h1 id="h1-junit"><a name="JUnit" class="reference-link"></a><span class="header-link octicon octicon-link"></span>JUnit</h1><h2 id="h2-1-"><a name="1. 导包" class="reference-link"></a><span class="header-link octicon octicon-link"></span>1. 导包</h2><h2 id="h2-2-"><a name="2. 测试" class="reference-link"></a><span class="header-link octicon octicon-link"></span>2. 测试</h2><pre><code>import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+/**
+ * JUint 测试
+ */
+public class MyTest
+{
+    // 每个测试方法在执行之前会先执行该方法
+    @Before
+    public void before() {
+        System.out.println(&quot;执行before()方法&quot;);
+    }
+
+    // 每个测试方法在执行之后会执行该方法
+    @After
+    public void after() {
+        System.out.println(&quot;执行after()方法&quot;);
+    }
+
+    @Test
+    public void test01() {
+        System.out.println(&quot;执行test01()&quot;);
+    }
+
+    @Test
+    public void test02() {
+        System.out.println(&quot;执行test02()&quot;);
+    }
+}
+</code></pre><p>运行结果看到绿条，则说明运行成功；看到红条，说明运行出了问题。</p>
+',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->addNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002441s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001414s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `groups` WHERE  `groups` = 'Java' LIMIT 1 [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001321s ]
+[ sql ] [ SQL ] INSERT INTO `note` (`title` , `content` , `groups` , `p_id` , `date`) VALUES ('JUnit\r' , '# JUnit\r\n## 1. 导包\r\n## 2. 测试\r\n```\r\nimport org.junit.After;\r\nimport org.junit.Before;\r\nimport org.junit.Test;\r\n\r\n/**\r\n * JUint 测试\r\n */\r\npublic class MyTest\r\n{\r\n	// 每个测试方法在执行之前会先执行该方法\r\n	@Before\r\n	public void before() {\r\n		System.out.println(\"执行before()方法\");\r\n	}\r\n	\r\n	// 每个测试方法在执行之后会执行该方法\r\n	@After\r\n	public void after() {\r\n		System.out.println(\"执行after()方法\");\r\n	}\r\n\r\n	@Test\r\n	public void test01() {\r\n		System.out.println(\"执行test01()\");\r\n	}\r\n\r\n	@Test\r\n	public void test02() {\r\n		System.out.println(\"执行test02()\");\r\n	}\r\n}\r\n```\r\n\r\n运行结果看到绿条，则说明运行成功；看到红条，说明运行出了问题。' , 'Java' , 2 , '2018-11-05') [ RunTime:0.000526s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Java' LIMIT 1 [ RunTime:0.001466s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=15  WHERE  `groups` = 'Java' [ RunTime:0.000691s ]
+---------------------------------------------------------------
+[ 2018-11-05T22:33:29+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note
+[ info ] qingrang.top/daily/admin/note [运行时间：0.083945s][吞吐率：11.91req/s] [内存消耗：2,220.13kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/newedit.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416; PHPSESSID=eb81ogaab9jatuojts3q1fv7r6',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/notelst.html [ array (
+  0 => 'stickList',
+  1 => 'hide',
+  2 => 'list',
+  3 => 'list_new',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+  10 => 'default_num',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002148s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001937s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.003477s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal' ORDER BY id desc LIMIT 5 [ RunTime:0.000587s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001186s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000506s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001134s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000304s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000483s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.001225s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001328s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000788s ]
+---------------------------------------------------------------
+[ 2018-11-05T22:33:34+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/editnote/id/242.html
+[ info ] qingrang.top/daily/admin/note/editnote/id/242.html [运行时间：0.064881s][吞吐率：15.41req/s] [内存消耗：2,028.52kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'editnote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416; PHPSESSID=eb81ogaab9jatuojts3q1fv7r6',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '242',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->editNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/editnote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000445s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001396s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 242 LIMIT 1 [ RunTime:0.000400s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000939s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000281s ]
+---------------------------------------------------------------
+[ 2018-11-05T22:33:38+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/updatenote/id/242.html
+[ info ] qingrang.top/daily/admin/note/updatenote/id/242.html [运行时间：0.064399s][吞吐率：15.53req/s] [内存消耗：2,052.34kb] [文件加载：58]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'updatenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '1609',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/242.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416; PHPSESSID=eb81ogaab9jatuojts3q1fv7r6',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'summary' => '',
+  'content' => '# JUnit
+## 1. 导包
+## 2. 测试
+```
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+/**
+ * JUint 测试
+ */
+public class MyTest
+{
+	// 每个测试方法在执行之前会先执行该方法
+	@Before
+	public void before() {
+		System.out.println("执行before()方法");
+	}
+	
+	// 每个测试方法在执行之后会执行该方法
+	@After
+	public void after() {
+		System.out.println("执行after()方法");
+	}
+
+	@Test
+	public void test01() {
+		System.out.println("执行test01()");
+	}
+
+	@Test
+	public void test02() {
+		System.out.println("执行test02()");
+	}
+}
+```
+
+运行结果看到绿条，则说明运行成功；看到红条，说明运行出了问题。',
+  'groups' => 'Java',
+  'showsel' => '0',
+  'showse2' => '1',
+  'id' => '242',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->updateNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000520s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001223s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 242 LIMIT 1 [ RunTime:0.000393s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `note` WHERE  `id` = 242 LIMIT 1 [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000897s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `groups` WHERE  `groups` = 'Java' LIMIT 1 [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000385s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `id`=242,`p_id`=2,`title`='JUnit\r',`content`='# JUnit\r\n## 1. 导包\r\n## 2. 测试\r\n```\r\nimport org.junit.After;\r\nimport org.junit.Before;\r\nimport org.junit.Test;\r\n\r\n/**\r\n * JUint 测试\r\n */\r\npublic class MyTest\r\n{\r\n	// 每个测试方法在执行之前会先执行该方法\r\n	@Before\r\n	public void before() {\r\n		System.out.println(\"执行before()方法\");\r\n	}\r\n	\r\n	// 每个测试方法在执行之后会执行该方法\r\n	@After\r\n	public void after() {\r\n		System.out.println(\"执行after()方法\");\r\n	}\r\n\r\n	@Test\r\n	public void test01() {\r\n		System.out.println(\"执行test01()\");\r\n	}\r\n\r\n	@Test\r\n	public void test02() {\r\n		System.out.println(\"执行test02()\");\r\n	}\r\n}\r\n```\r\n\r\n运行结果看到绿条，则说明运行成功；看到红条，说明运行出了问题。',`groups`='Java',`is_show`=0,`publish`=1,`summary`=''  WHERE  `id` = 242 [ RunTime:0.000534s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Java' LIMIT 1 [ RunTime:0.001367s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=15  WHERE  `groups` = 'Java' [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Java' LIMIT 1 [ RunTime:0.001107s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=15  WHERE  `groups` = 'Java' [ RunTime:0.000340s ]
+---------------------------------------------------------------
+[ 2018-11-05T22:33:38+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/242.html
+[ info ] qingrang.top/daily/admin/note/shownote/id/242.html [运行时间：0.055956s][吞吐率：17.87req/s] [内存消耗：1,980.54kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/242.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416; PHPSESSID=eb81ogaab9jatuojts3q1fv7r6',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '242',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002389s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001299s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 242 LIMIT 1 [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001061s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000356s ]
+---------------------------------------------------------------
+[ 2018-11-05T22:35:35+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/editnote/id/233.html
+[ info ] qingrang.top/daily/admin/note/editnote/id/233.html [运行时间：0.065017s][吞吐率：15.38req/s] [内存消耗：2,056.55kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'editnote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416; PHPSESSID=eb81ogaab9jatuojts3q1fv7r6',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '233',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->editNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/editnote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002902s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001733s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 233 LIMIT 1 [ RunTime:0.000518s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001222s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000317s ]
+---------------------------------------------------------------
+[ 2018-11-05T23:03:01+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/updatenote/id/233.html
+[ info ] qingrang.top/daily/admin/note/updatenote/id/233.html [运行时间：0.081460s][吞吐率：12.28req/s] [内存消耗：2,181.45kb] [文件加载：61]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'updatenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '48967',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/233.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416; PHPSESSID=eb81ogaab9jatuojts3q1fv7r6',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'summary' => '',
+  'content' => '# 中国史纲
+[TOC]
+## 中国历史的时空坐标
+时间和空间加在一块,才是完整的历史。
+### 四个时间坐标点
+中国历史发生过几次重要的转型,这些转型推动着中国历史向前的发展。
+
+1.第一个转型,是**商周之变**,就是从商朝到周朝的转型。
+
+这次转型之后,我们开始有了“中国”这个概念,中华文明当中最初的普世主义理想开始出现了。
+
+2.第二个转型,**周秦之变**,就是从周朝到秦朝的转型。
+
+这次转型,让中原从分封割据的局面进入到大一统的局面,中国历史也开始超越于中原之上,中原与草原的相互塑造和对抗开始成为中国历史的大脉络。
+
+3.第三个转型,**唐宋之变**,就是从唐朝到宋朝的转型。
+
+这次转型,让中国的社会结构从豪族社会进入到平民社会,此后中国历史再无长期的分裂,大一统开始成为一个不可逆的历史过程。在先秦之后,中国的文化在宋朝迎来了又一次大爆发,有些西方学者甚至称这是中国的文艺复兴。这次文化爆发,不仅决定了此后将近一千年的中国文化气质,也决定了日本、朝鲜、越南等其他儒教国家的文化气质。
+
+4.第四个转型,就是**清朝末期开始的古今之变**,中国开始从古代社会向现代社会进行艰难转型。
+
+这个过程带来了一系列轰轰烈烈的历史过程,转型过程直到今天仍在继续,还未完成。
+
+### 五个空间坐标点
+草原、中原、海洋、西域、高原。
+
+这几个大的空间,彼此之间有着极为深刻的相互依赖相互塑造的关系,以至于脱离开一方就完全解释不了另一方,所以它们加在一块构成一个体系。
+
+## 中国的概念和中华文明的普世主义理想【商周】【中原】
+### 历史上第一次出现「中国」
+周朝的第二位君主周成王,兴建了东都洛阳城,当时有个叫做「何」的贵族,这人铸了一件青铜器纪念这个事儿,1963年这个青铜器在陕西宝鸡被发现,今天称其为「何尊」，「何尊」的底部铸了一百多个字,里面提到,周武王说要"宅兹中国”,就是说要“住在中国”,这是"中国"这个词的最早来源。
+
+什么叫中国？**达到了文明最高水准的地方,就是文明意义上的中心,古人就管这种地方叫做「中国」。**
+### 中华文明的普世主义理想：究竟天命是降于周人呢,还是天命降于周王
+商朝是由“商人"。他们认为天命降于商人。为了让天能够永远地保佑自己,商人会经常地进行大规模的祭祀活动,祭祀当中会大量用到活人做祭品。
+
+这些被献祭的人从哪来呢?
+
+从对外战争掠夺的羌人而来。所谓的羌人就是生活在商王朝西部的、除了商朝人以外的所有人。
+
+商人的这种天命观,肯定会受到羌人的抵抗。其中,周人是最主要的一支抵抗力量,他们逐渐组织了很多苦不堪言的羌人群体来反抗商朝，反抗的时候,在周人中间有过一个观念层面的争论,究竟天命是降于周人呢,还是天命降于周王?争论的结果是,天命降于周王。
+
+这个观念变化太重要了。初看上去,这似乎是把天命的载体变得狭隘了,实际上是把它变得普世了。
+
+为什么这么说呢?如果天命是降于周人,那就和此前降于商人的路数差不多,周人的岁月要想静好,就得时刻压制住所有不是周人的群体。这样的话,周人和商人征战,谁胜谁败就不好说了。因为,对其他羌人群体来说,打完这一仗,十有八九只不过换了个地方拿我们献祭,凭啥要跟你混啊?而**如果天命是降于周王,则周王便是天下的共主,他不仅仅要为周人主持正义,而是要为全天下人主持正义,这是一种真正的普世主义观念**。
+
+### 什么是封建社会
+推翻了商朝之后,周朝又是如何具体建立它的统治方式呢?那就是,分封制。周天子向下分封了他的大量亲戚和重臣,意图依靠他们形成的藩属诸侯国,来拱卫周王。这样一种政治统治形式就被称作“封建”,这种社会叫做封建社会。
+
+封建“这个词最初出自《左传》,里面有句话叫做“封建亲戚,以藩屏周”,就是说分封亲信出去建立诸侯国,作为周朝王室领地的屏障。**只有这种封土建邦、分封割据的状态,才叫做封建。**
+
+封建社会的一大特征是,最高统治者是没有权力干涉诸侯国内部事务的,诸侯们确实是最高统治者的封臣,但某种意义上也像是个合伙人,都有比较强的独立性。
+
+周朝的时候,诸侯都承认周天子是最高权威,但周天子并不能管诸侯国内部的事情。周朝在这个过程中建立了封建社会,但周天子又逐渐衰落了。在周天子衰落之后,历史的主角就变成了那些诸侯。诸侯们彼此不断竞争,最终终结了中国的封建社会。
+
+## 封建社会的终结【春秋末期、战国初期】【中原】
+到了西周后期,周天子的影响力越来越差,最终被迫迁都洛阳,中国历史进入到东周。
+
+东周又分成了舂秋战国两个时期,**春秋末期出现了一些重要的技术发展,它带来了新的经济和人力资源,打破了过去的社会均衡,封建社会当中的贵族秩序崩塌了，封建社会也在春秋战国时代走上末日。**
+
+### 战争的逻辑的变化
+春秋之前的的战争十分注重礼仪性(战争都是贵族在参与，这就导致了参与人数并不多，他们认为战争是一件高贵的事，他们的战争可能就是比谁的正步踢得好)。但到了春秋中后期,随着楚国(楚国是个土生政权,并不是周天子分封的诸侯国，它的文化和中原有很大区别,也不大在乎中原的礼仪之类的东西,在当时的中原诸侯看来它就是个蛮夷之邦。)的加入，战争变成以砍死人为目的了。也正是由于这个战争逻辑的变化,才把中国引向了大一统。
+
+### 两个技术变迁
+诸侯分封次级诸侯，随着次级诸侯势力的增大，诸侯和次级诸侯的关系同周天子和诸侯的关系一样。在春秋末期、战国初期,出现了两个重要的技术变迁,让诸侯力量的扩大有了可能。正是因为这两次技术变革,打破了君主和封臣之间的力量均衡,周厉王当初搞不定自己下级的事,现在诸侯可以做到了,也就是诸侯能够搞定这些次级诸侯。
+
+这两个技术变迁,一个是铁器和牛耕的农业生产技术,一个是竹简这种知识传播技术。
+
+>铁器和牛耕 - 农业生产技术
+
+铁器与牛耕的出现,提升了平民的劳动效率。过去,他们的耕种效率很低,只能在贵族控制的公田、又叫井田上种地,没有能力再去开垦自己的私田了;但是,铁器和牛耕让生产效率大大提升了,平民有余力去开垦自己的私田,甚至索性就从贵族控制的井田上跑路了。此时君主、贵族、平民三者之间的一种复杂博弈关系就出现了。注意,这儿所说的君主,指的就是周天子封的诸侯,贵族指的就是诸侯所封的次级诸侯,这会儿的历史已经没周天子什么事儿了。
+
+君主向耕种私田的平民提供保护,平民向君主交税。平民从井田上越跑越多,贵族所控制的井田制就逐渐瓦解了,贵族的力量也逐渐削弱了。君主开始获得相对于贵族的优势。
+
+>竹简 - 知识传播技术
+
+ 知识传播的成本急剧下降,一般的贵族子弟、甚至运气好的普通百姓,都有机会学习文字获得知识了。由于多年的人口膨胀,这个时候出现了很多有文化、却无法获得一块封地的贵族子弟,他们就变成游士,到处寻找把自己卖个好价钱的机会。
+
+君主们早就想养一群可控的自己人了。什么样的人最好用呢?
+
+第一,他们要在本国没有根基,没资本对抗君主;
+第二,他们的地位尊荣都取决于君主的赏赐,就有动力与君主相配合。
+
+从别国跑来的游士完全符合这两点要求。君主与游士拍即合,游士成为依附于君主的私人人事班底。这个人事班底,后来就发展为官僚制。
+
+官僚和贵族的区别在于,本质上来说,官僚没有独立性,他们是职业经理人,其地位取决于君主的意志;贵族有独立性,他们是准合伙人,君主有大事必须和他们商量着来。游士的出现,终于让君主们可以全方位碾压贵族封臣,诸侯国也就从君主与贵族共治的结构,转向君主说了算的官僚制结构。
+
+### 变法
+
+这个过程在历史上被叫作什么呢?
+
+变法! 没错,魏国的李悝变法、秦国的商鞅变法等等,就是这样展开的。
+
+来自其他国家的游士,成了各诸侯国的新贵,他们压制住所在国的大贵族,把君主的意志贯彻下去。随着各种变法的展开,中国历史就进入到了战国时代。
+
+对君主来说,这回有办法把平民也动员起来了。你们虽然不是贵族血统,但你们可以立军功。只要你有办法从战场上拎回更多的人头,你也有机会上升到比贵族还高的地位。这种激励可不得了,战争的规模和频次急剧上升,大规模的灭国之战很容易就爆发了。灭国之战都到什么量级呢?比如很多人推崇的战神白起,一场战役就会坑杀赵国的40万降兵,这都在变法之后成为可能，变法这个事情也有传染性,谁最先变法,谁的战争效率就大幅上升;其他国家如果不跟上,就只能等着挨打。
+
+**随着各国陆续变法,各诸侯国内部的旧贵族阶层被一扫而空**。变法之后,君主能决定军功的标准,也就能决定官僚新贵们的地位高低,**君主对国家的控制力就变得更强**,再没有能够约束君主的力量,**分封割据的封建社会也就逐渐走上了终结之日**,战争逻辑的变化,影响还不止于此,当战争规模扩大到了诸侯国承受不起的时候,中国也就开始走向大一统。
+
+## 诸子百家的三大流派【春秋后期】【中原】
+春秋后期,天下大乱,礼崩乐坏。人们突然发现赖以理解世界的坐标系没有了,世界的意义丧失了。而这种时候,就是思想大爆发的时候。
+
+诸子百家,根据他们对待传统不同的态度,可以分为三类:一类是力挺传统（**克己复礼**）,代表就是儒家;一类是抛弃传统（**以法代礼**）,代表就是法家;还有一类是不在乎传统（出世，**无为而治**）,代表就是道家。
+
+### 儒家
+孔子认为复古的路径是“克己复礼”,就是要克制自己的各种冲动,依照传统留下来的"礼"的要求来做事。这样就能达到儒家的最高理想,“仁”。
+
+>如果你理解孔子是儒家的开创者,莫不如把他理解为此前巫师传统的集大成者。
+
+儒家是从商周两朝的巫师系统发展出来的,巫师就是古代沟通天意与人事的神职人员，这种工作主要通过占卜和祭祀来完成。祭祀这属于最高的“礼”,而巫师们就是“礼”的具体操作者与记录者。
+
+到了礼崩乐坏的时候,如果要想复古,第步肯定得先说清楚这个“古”究竟是什么。巫师系统有这方面的很多记录,当然是最合适的解说人选,他们由此就逐渐发展为儒家。
+
+### 法家
+
+儒家强调恢复“礼”,“礼”来自传统,贵族是“礼"的载体;法家强调创建“法”,“法”出自君主意志,官僚是法的执行者。
+
+>法家常在别国成事
+
+根据君主、贵族、官僚的博弈关系,各诸侯国的君主们肯定不会愿意接受儒家,而更愿意接受法所以孔子孟子都曾周游列国,都没得到过重用,反倒是法家的人占据各种高位。有趣的是,法家的鼓吹者往往在本国是不受欢迎的,无论是商鞅还是李斯,都是在别国建功立业。韩非虽然在别国没有能够建立功业,但在本国也从没获得过机会。原因在于,君主需要官僚在本国没有根基,才能听使唤;倘若是出身本国的法家,他总会有各种根基,这种人又太懂得法术势,很容易成为君主忌惮的对象。脱离了家乡的游士,如漂泊浮萍,孤身人,荣辱富贵都依赖于君主,君主最喜欢了。所以,法家只能在别国成事。
+
+### 道家
+
+顺其自然,让世界、让百姓自由自主地活动,事情自然就好了,这就叫“无为而治”。
+
+道家认为,正是各种入世的念头才把事情搞糟了,倘若不再追求转瞬即逝的现世成就,天地一下子就宽了。
+
+## 周秦之变【周-秦-汉】【中原】
+
+周秦之变对中国的思想史还带来个自然延伸的影响,就是我们在历史上看到的,从秦皇到汉武,帝国的官方思想经历了**从法家到道家再到儒家**的转换过程。
+
+### 周秦之变的“法家逻辑”
+百家争鸣的诸多学说,哪一种更注重提升战争效率,它就会获得诸侯们在政治上的更多支持。从中胜出的就是法家。但你用法家就能够征服天下,却不能仅仅用法家来治理天下。
+
+### 汉高祖的“无为而治”
+为什么汉高祖会选择道家呢?最根本的原因在于力量均衡。
+
+刘邦起家之前是个平民百姓,征服天下只能靠团结足够多的人。刘邦能够吸引一群重要将领和谋士追随自己,不是因为自己有力量,而是因为有威信。刘邦和这些人近乎是合伙人的关系,并没有压倒性力量来钳制他们,反倒会被这些兄弟给制衡住。这么一来,皇帝想要专制也不可能,**无为而治只是面对强大合伙人时的无奈之举。**
+
+### 汉武帝的“独尊儒术”
+“阳儒阴法",又称“**外儒内法**"。什么意思呢?从观念层面来看,是儒家在主导,儒生解读着天意,君主也不敢完全违背儒家的教导而行事。儒家表面上的迂腐,却为君主划出了大致的行动边界;但在具体的制度设计上,却还是法家逻辑。这样一来,**对君主来说,治理的效率有了,安抚民心的口径也有了。**
+
+## 汉人王朝为何无法统治长城以北【汉】【中原】
+这个问题,其底层是由儒家文化以及儒家文化的地理依赖性决定的。
+
+### 究竟什么是汉人
+**只要是接受儒家文化,并按儒家文化的指导生活的人,在古代就被视作汉人。**
+
+### 儒家文化的地理依赖性
+儒家文化光有个体心灵的皈依远远不够,个体还必须生活在一种特定的人际关系结构当中才行。
+
+比如,“三从四德三纲五常"等等这些规矩,都是对某种人际关系的规定,脱离开人际关系根本就没法展开。把你一个人扔荒岛上,还让你三从四德,你肯定做不到。
+
+儒家文化所要求的这种特定的人际关系,首先就要求有比较稳定的家庭组织,而稳定的家庭组织,前提是你得是定居的。
+
+定居的前提是农耕,而农耕有一个最硬性的约束条件,就是年降水量。东亚大陆上,如果一个地方年降水量少于400毫米的话,靠农耕是活不下去的。
+
+那么,东亚大陆的400毫米等降雨线在哪儿呢?
+
+这条400毫米等降雨线,差不多和长城重合。长城再往北,年降水量就不足400毫米了。也就是说,儒家帝国在农耕地区的扩张极限,就是400毫米等降雨线。于是在这里,儒家帝国修建了长城。长城再往北就是游牧地区了。
+
+在古代社会,由于农耕对降雨量的要求,使得你要是越过了长城以北,还想活得下去的话,就必须游牧化,否则是死路一条。而一旦游牧化之后,就意味着中原式的人际关系结构、家庭结构等等都没有基础了,无法再按照儒家的方式来生活了。
+
+**儒家文化有一种地理依赖性。因为自然生态原因,儒家越不过去长城以北、嘉峪关以西。儒家文化只能在中原地区展开。**
+
+### 中原和草原的继承逻辑区别
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/181105/dFAEllbB47.png)
+
+官僚制帝国有个很重要的特征,就是君主和官僚,在功能上是有分工的。君主的首要功能,是象征正当性。所以,君主的能力只排在第二位,第一重要的是君位继承的稳定性。嫡长子资格是最容易达成这种共识的。所以,中原的继承原则就稳定在嫡长子继承制上了。
+
+',
+  'groups' => 'Default',
+  'showsel' => '1',
+  'showse2' => '1',
+  'id' => '233',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->updateNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001191s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.002453s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 233 LIMIT 1 [ RunTime:0.000813s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `note` WHERE  `id` = 233 LIMIT 1 [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001010s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `groups` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SELECT `id` FROM `groups` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000354s ]
+[ error ] [10501]SQLSTATE[08S01]: Communication link failure: 1153 Got a packet bigger than 'max_allowed_packet' bytes[/var/www/html/daily/thinkphp/library/think/db/Connection.php:451]
+---------------------------------------------------------------
+[ 2018-11-05T23:03:11+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/editnote/id/233.html
+[ info ] qingrang.top/daily/admin/note/editnote/id/233.html [运行时间：0.056811s][吞吐率：17.60req/s] [内存消耗：2,056.44kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'editnote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416; PHPSESSID=eb81ogaab9jatuojts3q1fv7r6',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '233',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->editNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/editnote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000576s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001526s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 233 LIMIT 1 [ RunTime:0.000610s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000910s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000310s ]
+---------------------------------------------------------------
+[ 2018-11-05T23:03:23+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/savenote.html
+[ info ] qingrang.top/daily/admin/note/savenote.html [运行时间：0.054583s][吞吐率：18.32req/s] [内存消耗：2,164.36kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'savenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '48405',
+  'accept' => 'text/plain, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/233.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416; PHPSESSID=eb81ogaab9jatuojts3q1fv7r6',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'ogroup' => 'Essays',
+  'context' => '# 中国史纲
+[TOC]
+## 中国历史的时空坐标
+时间和空间加在一块,才是完整的历史。
+### 四个时间坐标点
+中国历史发生过几次重要的转型,这些转型推动着中国历史向前的发展。
+
+1.第一个转型,是**商周之变**,就是从商朝到周朝的转型。
+
+这次转型之后,我们开始有了“中国”这个概念,中华文明当中最初的普世主义理想开始出现了。
+
+2.第二个转型,**周秦之变**,就是从周朝到秦朝的转型。
+
+这次转型,让中原从分封割据的局面进入到大一统的局面,中国历史也开始超越于中原之上,中原与草原的相互塑造和对抗开始成为中国历史的大脉络。
+
+3.第三个转型,**唐宋之变**,就是从唐朝到宋朝的转型。
+
+这次转型,让中国的社会结构从豪族社会进入到平民社会,此后中国历史再无长期的分裂,大一统开始成为一个不可逆的历史过程。在先秦之后,中国的文化在宋朝迎来了又一次大爆发,有些西方学者甚至称这是中国的文艺复兴。这次文化爆发,不仅决定了此后将近一千年的中国文化气质,也决定了日本、朝鲜、越南等其他儒教国家的文化气质。
+
+4.第四个转型,就是**清朝末期开始的古今之变**,中国开始从古代社会向现代社会进行艰难转型。
+
+这个过程带来了一系列轰轰烈烈的历史过程,转型过程直到今天仍在继续,还未完成。
+
+### 五个空间坐标点
+草原、中原、海洋、西域、高原。
+
+这几个大的空间,彼此之间有着极为深刻的相互依赖相互塑造的关系,以至于脱离开一方就完全解释不了另一方,所以它们加在一块构成一个体系。
+
+## 中国的概念和中华文明的普世主义理想【商周】【中原】
+### 历史上第一次出现「中国」
+周朝的第二位君主周成王,兴建了东都洛阳城,当时有个叫做「何」的贵族,这人铸了一件青铜器纪念这个事儿,1963年这个青铜器在陕西宝鸡被发现,今天称其为「何尊」，「何尊」的底部铸了一百多个字,里面提到,周武王说要"宅兹中国”,就是说要“住在中国”,这是"中国"这个词的最早来源。
+
+什么叫中国？**达到了文明最高水准的地方,就是文明意义上的中心,古人就管这种地方叫做「中国」。**
+### 中华文明的普世主义理想：究竟天命是降于周人呢,还是天命降于周王
+商朝是由“商人"。他们认为天命降于商人。为了让天能够永远地保佑自己,商人会经常地进行大规模的祭祀活动,祭祀当中会大量用到活人做祭品。
+
+这些被献祭的人从哪来呢?
+
+从对外战争掠夺的羌人而来。所谓的羌人就是生活在商王朝西部的、除了商朝人以外的所有人。
+
+商人的这种天命观,肯定会受到羌人的抵抗。其中,周人是最主要的一支抵抗力量,他们逐渐组织了很多苦不堪言的羌人群体来反抗商朝，反抗的时候,在周人中间有过一个观念层面的争论,究竟天命是降于周人呢,还是天命降于周王?争论的结果是,天命降于周王。
+
+这个观念变化太重要了。初看上去,这似乎是把天命的载体变得狭隘了,实际上是把它变得普世了。
+
+为什么这么说呢?如果天命是降于周人,那就和此前降于商人的路数差不多,周人的岁月要想静好,就得时刻压制住所有不是周人的群体。这样的话,周人和商人征战,谁胜谁败就不好说了。因为,对其他羌人群体来说,打完这一仗,十有八九只不过换了个地方拿我们献祭,凭啥要跟你混啊?而**如果天命是降于周王,则周王便是天下的共主,他不仅仅要为周人主持正义,而是要为全天下人主持正义,这是一种真正的普世主义观念**。
+
+### 什么是封建社会
+推翻了商朝之后,周朝又是如何具体建立它的统治方式呢?那就是,分封制。周天子向下分封了他的大量亲戚和重臣,意图依靠他们形成的藩属诸侯国,来拱卫周王。这样一种政治统治形式就被称作“封建”,这种社会叫做封建社会。
+
+封建“这个词最初出自《左传》,里面有句话叫做“封建亲戚,以藩屏周”,就是说分封亲信出去建立诸侯国,作为周朝王室领地的屏障。**只有这种封土建邦、分封割据的状态,才叫做封建。**
+
+封建社会的一大特征是,最高统治者是没有权力干涉诸侯国内部事务的,诸侯们确实是最高统治者的封臣,但某种意义上也像是个合伙人,都有比较强的独立性。
+
+周朝的时候,诸侯都承认周天子是最高权威,但周天子并不能管诸侯国内部的事情。周朝在这个过程中建立了封建社会,但周天子又逐渐衰落了。在周天子衰落之后,历史的主角就变成了那些诸侯。诸侯们彼此不断竞争,最终终结了中国的封建社会。
+
+## 封建社会的终结【春秋末期、战国初期】【中原】
+到了西周后期,周天子的影响力越来越差,最终被迫迁都洛阳,中国历史进入到东周。
+
+东周又分成了舂秋战国两个时期,**春秋末期出现了一些重要的技术发展,它带来了新的经济和人力资源,打破了过去的社会均衡,封建社会当中的贵族秩序崩塌了，封建社会也在春秋战国时代走上末日。**
+
+### 战争的逻辑的变化
+春秋之前的的战争十分注重礼仪性(战争都是贵族在参与，这就导致了参与人数并不多，他们认为战争是一件高贵的事，他们的战争可能就是比谁的正步踢得好)。但到了春秋中后期,随着楚国(楚国是个土生政权,并不是周天子分封的诸侯国，它的文化和中原有很大区别,也不大在乎中原的礼仪之类的东西,在当时的中原诸侯看来它就是个蛮夷之邦。)的加入，战争变成以砍死人为目的了。也正是由于这个战争逻辑的变化,才把中国引向了大一统。
+
+### 两个技术变迁
+诸侯分封次级诸侯，随着次级诸侯势力的增大，诸侯和次级诸侯的关系同周天子和诸侯的关系一样。在春秋末期、战国初期,出现了两个重要的技术变迁,让诸侯力量的扩大有了可能。正是因为这两次技术变革,打破了君主和封臣之间的力量均衡,周厉王当初搞不定自己下级的事,现在诸侯可以做到了,也就是诸侯能够搞定这些次级诸侯。
+
+这两个技术变迁,一个是铁器和牛耕的农业生产技术,一个是竹简这种知识传播技术。
+
+>铁器和牛耕 - 农业生产技术
+
+铁器与牛耕的出现,提升了平民的劳动效率。过去,他们的耕种效率很低,只能在贵族控制的公田、又叫井田上种地,没有能力再去开垦自己的私田了;但是,铁器和牛耕让生产效率大大提升了,平民有余力去开垦自己的私田,甚至索性就从贵族控制的井田上跑路了。此时君主、贵族、平民三者之间的一种复杂博弈关系就出现了。注意,这儿所说的君主,指的就是周天子封的诸侯,贵族指的就是诸侯所封的次级诸侯,这会儿的历史已经没周天子什么事儿了。
+
+君主向耕种私田的平民提供保护,平民向君主交税。平民从井田上越跑越多,贵族所控制的井田制就逐渐瓦解了,贵族的力量也逐渐削弱了。君主开始获得相对于贵族的优势。
+
+>竹简 - 知识传播技术
+
+ 知识传播的成本急剧下降,一般的贵族子弟、甚至运气好的普通百姓,都有机会学习文字获得知识了。由于多年的人口膨胀,这个时候出现了很多有文化、却无法获得一块封地的贵族子弟,他们就变成游士,到处寻找把自己卖个好价钱的机会。
+
+君主们早就想养一群可控的自己人了。什么样的人最好用呢?
+
+第一,他们要在本国没有根基,没资本对抗君主;
+第二,他们的地位尊荣都取决于君主的赏赐,就有动力与君主相配合。
+
+从别国跑来的游士完全符合这两点要求。君主与游士拍即合,游士成为依附于君主的私人人事班底。这个人事班底,后来就发展为官僚制。
+
+官僚和贵族的区别在于,本质上来说,官僚没有独立性,他们是职业经理人,其地位取决于君主的意志;贵族有独立性,他们是准合伙人,君主有大事必须和他们商量着来。游士的出现,终于让君主们可以全方位碾压贵族封臣,诸侯国也就从君主与贵族共治的结构,转向君主说了算的官僚制结构。
+
+### 变法
+
+这个过程在历史上被叫作什么呢?
+
+变法! 没错,魏国的李悝变法、秦国的商鞅变法等等,就是这样展开的。
+
+来自其他国家的游士,成了各诸侯国的新贵,他们压制住所在国的大贵族,把君主的意志贯彻下去。随着各种变法的展开,中国历史就进入到了战国时代。
+
+对君主来说,这回有办法把平民也动员起来了。你们虽然不是贵族血统,但你们可以立军功。只要你有办法从战场上拎回更多的人头,你也有机会上升到比贵族还高的地位。这种激励可不得了,战争的规模和频次急剧上升,大规模的灭国之战很容易就爆发了。灭国之战都到什么量级呢?比如很多人推崇的战神白起,一场战役就会坑杀赵国的40万降兵,这都在变法之后成为可能，变法这个事情也有传染性,谁最先变法,谁的战争效率就大幅上升;其他国家如果不跟上,就只能等着挨打。
+
+**随着各国陆续变法,各诸侯国内部的旧贵族阶层被一扫而空**。变法之后,君主能决定军功的标准,也就能决定官僚新贵们的地位高低,**君主对国家的控制力就变得更强**,再没有能够约束君主的力量,**分封割据的封建社会也就逐渐走上了终结之日**,战争逻辑的变化,影响还不止于此,当战争规模扩大到了诸侯国承受不起的时候,中国也就开始走向大一统。
+
+## 诸子百家的三大流派【春秋后期】【中原】
+春秋后期,天下大乱,礼崩乐坏。人们突然发现赖以理解世界的坐标系没有了,世界的意义丧失了。而这种时候,就是思想大爆发的时候。
+
+诸子百家,根据他们对待传统不同的态度,可以分为三类:一类是力挺传统（**克己复礼**）,代表就是儒家;一类是抛弃传统（**以法代礼**）,代表就是法家;还有一类是不在乎传统（出世，**无为而治**）,代表就是道家。
+
+### 儒家
+孔子认为复古的路径是“克己复礼”,就是要克制自己的各种冲动,依照传统留下来的"礼"的要求来做事。这样就能达到儒家的最高理想,“仁”。
+
+>如果你理解孔子是儒家的开创者,莫不如把他理解为此前巫师传统的集大成者。
+
+儒家是从商周两朝的巫师系统发展出来的,巫师就是古代沟通天意与人事的神职人员，这种工作主要通过占卜和祭祀来完成。祭祀这属于最高的“礼”,而巫师们就是“礼”的具体操作者与记录者。
+
+到了礼崩乐坏的时候,如果要想复古,第步肯定得先说清楚这个“古”究竟是什么。巫师系统有这方面的很多记录,当然是最合适的解说人选,他们由此就逐渐发展为儒家。
+
+### 法家
+
+儒家强调恢复“礼”,“礼”来自传统,贵族是“礼"的载体;法家强调创建“法”,“法”出自君主意志,官僚是法的执行者。
+
+>法家常在别国成事
+
+根据君主、贵族、官僚的博弈关系,各诸侯国的君主们肯定不会愿意接受儒家,而更愿意接受法所以孔子孟子都曾周游列国,都没得到过重用,反倒是法家的人占据各种高位。有趣的是,法家的鼓吹者往往在本国是不受欢迎的,无论是商鞅还是李斯,都是在别国建功立业。韩非虽然在别国没有能够建立功业,但在本国也从没获得过机会。原因在于,君主需要官僚在本国没有根基,才能听使唤;倘若是出身本国的法家,他总会有各种根基,这种人又太懂得法术势,很容易成为君主忌惮的对象。脱离了家乡的游士,如漂泊浮萍,孤身人,荣辱富贵都依赖于君主,君主最喜欢了。所以,法家只能在别国成事。
+
+### 道家
+
+顺其自然,让世界、让百姓自由自主地活动,事情自然就好了,这就叫“无为而治”。
+
+道家认为,正是各种入世的念头才把事情搞糟了,倘若不再追求转瞬即逝的现世成就,天地一下子就宽了。
+
+## 周秦之变【周-秦-汉】【中原】
+
+周秦之变对中国的思想史还带来个自然延伸的影响,就是我们在历史上看到的,从秦皇到汉武,帝国的官方思想经历了**从法家到道家再到儒家**的转换过程。
+
+### 周秦之变的“法家逻辑”
+百家争鸣的诸多学说,哪一种更注重提升战争效率,它就会获得诸侯们在政治上的更多支持。从中胜出的就是法家。但你用法家就能够征服天下,却不能仅仅用法家来治理天下。
+
+### 汉高祖的“无为而治”
+为什么汉高祖会选择道家呢?最根本的原因在于力量均衡。
+
+刘邦起家之前是个平民百姓,征服天下只能靠团结足够多的人。刘邦能够吸引一群重要将领和谋士追随自己,不是因为自己有力量,而是因为有威信。刘邦和这些人近乎是合伙人的关系,并没有压倒性力量来钳制他们,反倒会被这些兄弟给制衡住。这么一来,皇帝想要专制也不可能,**无为而治只是面对强大合伙人时的无奈之举。**
+
+### 汉武帝的“独尊儒术”
+“阳儒阴法",又称“**外儒内法**"。什么意思呢?从观念层面来看,是儒家在主导,儒生解读着天意,君主也不敢完全违背儒家的教导而行事。儒家表面上的迂腐,却为君主划出了大致的行动边界;但在具体的制度设计上,却还是法家逻辑。这样一来,**对君主来说,治理的效率有了,安抚民心的口径也有了。**
+
+## 汉人王朝为何无法统治长城以北【汉】【中原】
+这个问题,其底层是由儒家文化以及儒家文化的地理依赖性决定的。
+
+### 究竟什么是汉人
+**只要是接受儒家文化,并按儒家文化的指导生活的人,在古代就被视作汉人。**
+
+### 儒家文化的地理依赖性
+儒家文化光有个体心灵的皈依远远不够,个体还必须生活在一种特定的人际关系结构当中才行。
+
+比如,“三从四德三纲五常"等等这些规矩,都是对某种人际关系的规定,脱离开人际关系根本就没法展开。把你一个人扔荒岛上,还让你三从四德,你肯定做不到。
+
+儒家文化所要求的这种特定的人际关系,首先就要求有比较稳定的家庭组织,而稳定的家庭组织,前提是你得是定居的。
+
+定居的前提是农耕,而农耕有一个最硬性的约束条件,就是年降水量。东亚大陆上,如果一个地方年降水量少于400毫米的话,靠农耕是活不下去的。
+
+那么,东亚大陆的400毫米等降雨线在哪儿呢?
+
+这条400毫米等降雨线,差不多和长城重合。长城再往北,年降水量就不足400毫米了。也就是说,儒家帝国在农耕地区的扩张极限,就是400毫米等降雨线。于是在这里,儒家帝国修建了长城。长城再往北就是游牧地区了。
+
+在古代社会,由于农耕对降雨量的要求,使得你要是越过了长城以北,还想活得下去的话,就必须游牧化,否则是死路一条。而一旦游牧化之后,就意味着中原式的人际关系结构、家庭结构等等都没有基础了,无法再按照儒家的方式来生活了。
+
+**儒家文化有一种地理依赖性。因为自然生态原因,儒家越不过去长城以北、嘉峪关以西。儒家文化只能在中原地区展开。**
+
+### 中原和草原的继承逻辑区别
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/181105/dFAEllbB47.png)
+
+官僚制帝国有个很重要的特征,就是君主和官僚,在功能上是有分工的。君主的首要功能,是象征正当性。所以,君主的能力只排在第二位,第一重要的是君位继承的稳定性。嫡长子资格是最容易达成这种共识的。所以,中原的继承原则就稳定在嫡长子继承制上了。',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->saveNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000623s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001304s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `title`='中国史纲',`content`='# 中国史纲\n[TOC]\n## 中国历史的时空坐标\n时间和空间加在一块,才是完整的历史。\n### 四个时间坐标点\n中国历史发生过几次重要的转型,这些转型推动着中国历史向前的发展。\n\n1.第一个转型,是**商周之变**,就是从商朝到周朝的转型。\n\n这次转型之后,我们开始有了“中国”这个概念,中华文明当中最初的普世主义理想开始出现了。\n\n2.第二个转型,**周秦之变**,就是从周朝到秦朝的转型。\n\n这次转型,让中原从分封割据的局面进入到大一统的局面,中国历史也开始超越于中原之上,中原与草原的相互塑造和对抗开始成为中国历史的大脉络。\n\n3.第三个转型,**唐宋之变**,就是从唐朝到宋朝的转型。\n\n这次转型,让中国的社会结构从豪族社会进入到平民社会,此后中国历史再无长期的分裂,大一统开始成为一个不可逆的历史过程。在先秦之后,中国的文化在宋朝迎来了又一次大爆发,有些西方学者甚至称这是中国的文艺复兴。这次文化爆发,不仅决定了此后将近一千年的中国文化气质,也决定了日本、朝鲜、越南等其他儒教国家的文化气质。\n\n4.第四个转型,就是**清朝末期开始的古今之变**,中国开始从古代社会向现代社会进行艰难转型。\n\n这个过程带来了一系列轰轰烈烈的历史过程,转型过程直到今天仍在继续,还未完成。\n\n### 五个空间坐标点\n草原、中原、海洋、西域、高原。\n\n这几个大的空间,彼此之间有着极为深刻的相互依赖相互塑造的关系,以至于脱离开一方就完全解释不了另一方,所以它们加在一块构成一个体系。\n\n## 中国的概念和中华文明的普世主义理想【商周】【中原】\n### 历史上第一次出现「中国」\n周朝的第二位君主周成王,兴建了东都洛阳城,当时有个叫做「何」的贵族,这人铸了一件青铜器纪念这个事儿,1963年这个青铜器在陕西宝鸡被发现,今天称其为「何尊」，「何尊」的底部铸了一百多个字,里面提到,周武王说要\"宅兹中国”,就是说要“住在中国”,这是\"中国\"这个词的最早来源。\n\n什么叫中国？**达到了文明最高水准的地方,就是文明意义上的中心,古人就管这种地方叫做「中国」。**\n### 中华文明的普世主义理想：究竟天命是降于周人呢,还是天命降于周王\n商朝是由“商人\"。他们认为天命降于商人。为了让天能够永远地保佑自己,商人会经常地进行大规模的祭祀活动,祭祀当中会大量用到活人做祭品。\n\n这些被献祭的人从哪来呢?\n\n从对外战争掠夺的羌人而来。所谓的羌人就是生活在商王朝西部的、除了商朝人以外的所有人。\n\n商人的这种天命观,肯定会受到羌人的抵抗。其中,周人是最主要的一支抵抗力量,他们逐渐组织了很多苦不堪言的羌人群体来反抗商朝，反抗的时候,在周人中间有过一个观念层面的争论,究竟天命是降于周人呢,还是天命降于周王?争论的结果是,天命降于周王。\n\n这个观念变化太重要了。初看上去,这似乎是把天命的载体变得狭隘了,实际上是把它变得普世了。\n\n为什么这么说呢?如果天命是降于周人,那就和此前降于商人的路数差不多,周人的岁月要想静好,就得时刻压制住所有不是周人的群体。这样的话,周人和商人征战,谁胜谁败就不好说了。因为,对其他羌人群体来说,打完这一仗,十有八九只不过换了个地方拿我们献祭,凭啥要跟你混啊?而**如果天命是降于周王,则周王便是天下的共主,他不仅仅要为周人主持正义,而是要为全天下人主持正义,这是一种真正的普世主义观念**。\n\n### 什么是封建社会\n推翻了商朝之后,周朝又是如何具体建立它的统治方式呢?那就是,分封制。周天子向下分封了他的大量亲戚和重臣,意图依靠他们形成的藩属诸侯国,来拱卫周王。这样一种政治统治形式就被称作“封建”,这种社会叫做封建社会。\n\n封建“这个词最初出自《左传》,里面有句话叫做“封建亲戚,以藩屏周”,就是说分封亲信出去建立诸侯国,作为周朝王室领地的屏障。**只有这种封土建邦、分封割据的状态,才叫做封建。**\n\n封建社会的一大特征是,最高统治者是没有权力干涉诸侯国内部事务的,诸侯们确实是最高统治者的封臣,但某种意义上也像是个合伙人,都有比较强的独立性。\n\n周朝的时候,诸侯都承认周天子是最高权威,但周天子并不能管诸侯国内部的事情。周朝在这个过程中建立了封建社会,但周天子又逐渐衰落了。在周天子衰落之后,历史的主角就变成了那些诸侯。诸侯们彼此不断竞争,最终终结了中国的封建社会。\n\n## 封建社会的终结【春秋末期、战国初期】【中原】\n到了西周后期,周天子的影响力越来越差,最终被迫迁都洛阳,中国历史进入到东周。\n\n东周又分成了舂秋战国两个时期,**春秋末期出现了一些重要的技术发展,它带来了新的经济和人力资源,打破了过去的社会均衡,封建社会当中的贵族秩序崩塌了，封建社会也在春秋战国时代走上末日。**\n\n### 战争的逻辑的变化\n春秋之前的的战争十分注重礼仪性(战争都是贵族在参与，这就导致了参与人数并不多，他们认为战争是一件高贵的事，他们的战争可能就是比谁的正步踢得好)。但到了春秋中后期,随着楚国(楚国是个土生政权,并不是周天子分封的诸侯国，它的文化和中原有很大区别,也不大在乎中原的礼仪之类的东西,在当时的中原诸侯看来它就是个蛮夷之邦。)的加入，战争变成以砍死人为目的了。也正是由于这个战争逻辑的变化,才把中国引向了大一统。\n\n### 两个技术变迁\n诸侯分封次级诸侯，随着次级诸侯势力的增大，诸侯和次级诸侯的关系同周天子和诸侯的关系一样。在春秋末期、战国初期,出现了两个重要的技术变迁,让诸侯力量的扩大有了可能。正是因为这两次技术变革,打破了君主和封臣之间的力量均衡,周厉王当初搞不定自己下级的事,现在诸侯可以做到了,也就是诸侯能够搞定这些次级诸侯。\n\n这两个技术变迁,一个是铁器和牛耕的农业生产技术,一个是竹简这种知识传播技术。\n\n>铁器和牛耕 - 农业生产技术\n\n铁器与牛耕的出现,提升了平民的劳动效率。过去,他们的耕种效率很低,只能在贵族控制的公田、又叫井田上种地,没有能力再去开垦自己的私田了;但是,铁器和牛耕让生产效率大大提升了,平民有余力去开垦自己的私田,甚至索性就从贵族控制的井田上跑路了。此时君主、贵族、平民三者之间的一种复杂博弈关系就出现了。注意,这儿所说的君主,指的就是周天子封的诸侯,贵族指的就是诸侯所封的次级诸侯,这会儿的历史已经没周天子什么事儿了。\n\n君主向耕种私田的平民提供保护,平民向君主交税。平民从井田上越跑越多,贵族所控制的井田制就逐渐瓦解了,贵族的力量也逐渐削弱了。君主开始获得相对于贵族的优势。\n\n>竹简 - 知识传播技术\n\n 知识传播的成本急剧下降,一般的贵族子弟、甚至运气好的普通百姓,都有机会学习文字获得知识了。由于多年的人口膨胀,这个时候出现了很多有文化、却无法获得一块封地的贵族子弟,他们就变成游士,到处寻找把自己卖个好价钱的机会。\n\n君主们早就想养一群可控的自己人了。什么样的人最好用呢?\n\n第一,他们要在本国没有根基,没资本对抗君主;\n第二,他们的地位尊荣都取决于君主的赏赐,就有动力与君主相配合。\n\n从别国跑来的游士完全符合这两点要求。君主与游士拍即合,游士成为依附于君主的私人人事班底。这个人事班底,后来就发展为官僚制。\n\n官僚和贵族的区别在于,本质上来说,官僚没有独立性,他们是职业经理人,其地位取决于君主的意志;贵族有独立性,他们是准合伙人,君主有大事必须和他们商量着来。游士的出现,终于让君主们可以全方位碾压贵族封臣,诸侯国也就从君主与贵族共治的结构,转向君主说了算的官僚制结构。\n\n### 变法\n\n这个过程在历史上被叫作什么呢?\n\n变法! 没错,魏国的李悝变法、秦国的商鞅变法等等,就是这样展开的。\n\n来自其他国家的游士,成了各诸侯国的新贵,他们压制住所在国的大贵族,把君主的意志贯彻下去。随着各种变法的展开,中国历史就进入到了战国时代。\n\n对君主来说,这回有办法把平民也动员起来了。你们虽然不是贵族血统,但你们可以立军功。只要你有办法从战场上拎回更多的人头,你也有机会上升到比贵族还高的地位。这种激励可不得了,战争的规模和频次急剧上升,大规模的灭国之战很容易就爆发了。灭国之战都到什么量级呢?比如很多人推崇的战神白起,一场战役就会坑杀赵国的40万降兵,这都在变法之后成为可能，变法这个事情也有传染性,谁最先变法,谁的战争效率就大幅上升;其他国家如果不跟上,就只能等着挨打。\n\n**随着各国陆续变法,各诸侯国内部的旧贵族阶层被一扫而空**。变法之后,君主能决定军功的标准,也就能决定官僚新贵们的地位高低,**君主对国家的控制力就变得更强**,再没有能够约束君主的力量,**分封割据的封建社会也就逐渐走上了终结之日**,战争逻辑的变化,影响还不止于此,当战争规模扩大到了诸侯国承受不起的时候,中国也就开始走向大一统。\n\n## 诸子百家的三大流派【春秋后期】【中原】\n春秋后期,天下大乱,礼崩乐坏。人们突然发现赖以理解世界的坐标系没有了,世界的意义丧失了。而这种时候,就是思想大爆发的时候。\n\n诸子百家,根据他们对待传统不同的态度,可以分为三类:一类是力挺传统（**克己复礼**）,代表就是儒家;一类是抛弃传统（**以法代礼**）,代表就是法家;还有一类是不在乎传统（出世，**无为而治**）,代表就是道家。\n\n### 儒家\n孔子认为复古的路径是“克己复礼”,就是要克制自己的各种冲动,依照传统留下来的\"礼\"的要求来做事。这样就能达到儒家的最高理想,“仁”。\n\n>如果你理解孔子是儒家的开创者,莫不如把他理解为此前巫师传统的集大成者。\n\n儒家是从商周两朝的巫师系统发展出来的,巫师就是古代沟通天意与人事的神职人员，这种工作主要通过占卜和祭祀来完成。祭祀这属于最高的“礼”,而巫师们就是“礼”的具体操作者与记录者。\n\n到了礼崩乐坏的时候,如果要想复古,第步肯定得先说清楚这个“古”究竟是什么。巫师系统有这方面的很多记录,当然是最合适的解说人选,他们由此就逐渐发展为儒家。\n\n### 法家\n\n儒家强调恢复“礼”,“礼”来自传统,贵族是“礼\"的载体;法家强调创建“法”,“法”出自君主意志,官僚是法的执行者。\n\n>法家常在别国成事\n\n根据君主、贵族、官僚的博弈关系,各诸侯国的君主们肯定不会愿意接受儒家,而更愿意接受法所以孔子孟子都曾周游列国,都没得到过重用,反倒是法家的人占据各种高位。有趣的是,法家的鼓吹者往往在本国是不受欢迎的,无论是商鞅还是李斯,都是在别国建功立业。韩非虽然在别国没有能够建立功业,但在本国也从没获得过机会。原因在于,君主需要官僚在本国没有根基,才能听使唤;倘若是出身本国的法家,他总会有各种根基,这种人又太懂得法术势,很容易成为君主忌惮的对象。脱离了家乡的游士,如漂泊浮萍,孤身人,荣辱富贵都依赖于君主,君主最喜欢了。所以,法家只能在别国成事。\n\n### 道家\n\n顺其自然,让世界、让百姓自由自主地活动,事情自然就好了,这就叫“无为而治”。\n\n道家认为,正是各种入世的念头才把事情搞糟了,倘若不再追求转瞬即逝的现世成就,天地一下子就宽了。\n\n## 周秦之变【周-秦-汉】【中原】\n\n周秦之变对中国的思想史还带来个自然延伸的影响,就是我们在历史上看到的,从秦皇到汉武,帝国的官方思想经历了**从法家到道家再到儒家**的转换过程。\n\n### 周秦之变的“法家逻辑”\n百家争鸣的诸多学说,哪一种更注重提升战争效率,它就会获得诸侯们在政治上的更多支持。从中胜出的就是法家。但你用法家就能够征服天下,却不能仅仅用法家来治理天下。\n\n### 汉高祖的“无为而治”\n为什么汉高祖会选择道家呢?最根本的原因在于力量均衡。\n\n刘邦起家之前是个平民百姓,征服天下只能靠团结足够多的人。刘邦能够吸引一群重要将领和谋士追随自己,不是因为自己有力量,而是因为有威信。刘邦和这些人近乎是合伙人的关系,并没有压倒性力量来钳制他们,反倒会被这些兄弟给制衡住。这么一来,皇帝想要专制也不可能,**无为而治只是面对强大合伙人时的无奈之举。**\n\n### 汉武帝的“独尊儒术”\n“阳儒阴法\",又称“**外儒内法**\"。什么意思呢?从观念层面来看,是儒家在主导,儒生解读着天意,君主也不敢完全违背儒家的教导而行事。儒家表面上的迂腐,却为君主划出了大致的行动边界;但在具体的制度设计上,却还是法家逻辑。这样一来,**对君主来说,治理的效率有了,安抚民心的口径也有了。**\n\n## 汉人王朝为何无法统治长城以北【汉】【中原】\n这个问题,其底层是由儒家文化以及儒家文化的地理依赖性决定的。\n\n### 究竟什么是汉人\n**只要是接受儒家文化,并按儒家文化的指导生活的人,在古代就被视作汉人。**\n\n### 儒家文化的地理依赖性\n儒家文化光有个体心灵的皈依远远不够,个体还必须生活在一种特定的人际关系结构当中才行。\n\n比如,“三从四德三纲五常\"等等这些规矩,都是对某种人际关系的规定,脱离开人际关系根本就没法展开。把你一个人扔荒岛上,还让你三从四德,你肯定做不到。\n\n儒家文化所要求的这种特定的人际关系,首先就要求有比较稳定的家庭组织,而稳定的家庭组织,前提是你得是定居的。\n\n定居的前提是农耕,而农耕有一个最硬性的约束条件,就是年降水量。东亚大陆上,如果一个地方年降水量少于400毫米的话,靠农耕是活不下去的。\n\n那么,东亚大陆的400毫米等降雨线在哪儿呢?\n\n这条400毫米等降雨线,差不多和长城重合。长城再往北,年降水量就不足400毫米了。也就是说,儒家帝国在农耕地区的扩张极限,就是400毫米等降雨线。于是在这里,儒家帝国修建了长城。长城再往北就是游牧地区了。\n\n在古代社会,由于农耕对降雨量的要求,使得你要是越过了长城以北,还想活得下去的话,就必须游牧化,否则是死路一条。而一旦游牧化之后,就意味着中原式的人际关系结构、家庭结构等等都没有基础了,无法再按照儒家的方式来生活了。\n\n**儒家文化有一种地理依赖性。因为自然生态原因,儒家越不过去长城以北、嘉峪关以西。儒家文化只能在中原地区展开。**\n\n### 中原和草原的继承逻辑区别\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/181105/dFAEllbB47.png)\n\n官僚制帝国有个很重要的特征,就是君主和官僚,在功能上是有分工的。君主的首要功能,是象征正当性。所以,君主的能力只排在第二位,第一重要的是君位继承的稳定性。嫡长子资格是最容易达成这种共识的。所以,中原的继承原则就稳定在嫡长子继承制上了。',`groups`='Default',`p_id`=1  WHERE  `id` = 1 [ RunTime:0.000919s ]
+---------------------------------------------------------------
+[ 2018-11-05T23:03:25+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/savenote.html
+[ info ] qingrang.top/daily/admin/note/savenote.html [运行时间：0.055302s][吞吐率：18.08req/s] [内存消耗：2,164.39kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'savenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '48405',
+  'accept' => 'text/plain, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/233.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416; PHPSESSID=eb81ogaab9jatuojts3q1fv7r6',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'ogroup' => 'Essays',
+  'context' => '# 中国史纲
+[TOC]
+## 中国历史的时空坐标
+时间和空间加在一块,才是完整的历史。
+### 四个时间坐标点
+中国历史发生过几次重要的转型,这些转型推动着中国历史向前的发展。
+
+1.第一个转型,是**商周之变**,就是从商朝到周朝的转型。
+
+这次转型之后,我们开始有了“中国”这个概念,中华文明当中最初的普世主义理想开始出现了。
+
+2.第二个转型,**周秦之变**,就是从周朝到秦朝的转型。
+
+这次转型,让中原从分封割据的局面进入到大一统的局面,中国历史也开始超越于中原之上,中原与草原的相互塑造和对抗开始成为中国历史的大脉络。
+
+3.第三个转型,**唐宋之变**,就是从唐朝到宋朝的转型。
+
+这次转型,让中国的社会结构从豪族社会进入到平民社会,此后中国历史再无长期的分裂,大一统开始成为一个不可逆的历史过程。在先秦之后,中国的文化在宋朝迎来了又一次大爆发,有些西方学者甚至称这是中国的文艺复兴。这次文化爆发,不仅决定了此后将近一千年的中国文化气质,也决定了日本、朝鲜、越南等其他儒教国家的文化气质。
+
+4.第四个转型,就是**清朝末期开始的古今之变**,中国开始从古代社会向现代社会进行艰难转型。
+
+这个过程带来了一系列轰轰烈烈的历史过程,转型过程直到今天仍在继续,还未完成。
+
+### 五个空间坐标点
+草原、中原、海洋、西域、高原。
+
+这几个大的空间,彼此之间有着极为深刻的相互依赖相互塑造的关系,以至于脱离开一方就完全解释不了另一方,所以它们加在一块构成一个体系。
+
+## 中国的概念和中华文明的普世主义理想【商周】【中原】
+### 历史上第一次出现「中国」
+周朝的第二位君主周成王,兴建了东都洛阳城,当时有个叫做「何」的贵族,这人铸了一件青铜器纪念这个事儿,1963年这个青铜器在陕西宝鸡被发现,今天称其为「何尊」，「何尊」的底部铸了一百多个字,里面提到,周武王说要"宅兹中国”,就是说要“住在中国”,这是"中国"这个词的最早来源。
+
+什么叫中国？**达到了文明最高水准的地方,就是文明意义上的中心,古人就管这种地方叫做「中国」。**
+### 中华文明的普世主义理想：究竟天命是降于周人呢,还是天命降于周王
+商朝是由“商人"。他们认为天命降于商人。为了让天能够永远地保佑自己,商人会经常地进行大规模的祭祀活动,祭祀当中会大量用到活人做祭品。
+
+这些被献祭的人从哪来呢?
+
+从对外战争掠夺的羌人而来。所谓的羌人就是生活在商王朝西部的、除了商朝人以外的所有人。
+
+商人的这种天命观,肯定会受到羌人的抵抗。其中,周人是最主要的一支抵抗力量,他们逐渐组织了很多苦不堪言的羌人群体来反抗商朝，反抗的时候,在周人中间有过一个观念层面的争论,究竟天命是降于周人呢,还是天命降于周王?争论的结果是,天命降于周王。
+
+这个观念变化太重要了。初看上去,这似乎是把天命的载体变得狭隘了,实际上是把它变得普世了。
+
+为什么这么说呢?如果天命是降于周人,那就和此前降于商人的路数差不多,周人的岁月要想静好,就得时刻压制住所有不是周人的群体。这样的话,周人和商人征战,谁胜谁败就不好说了。因为,对其他羌人群体来说,打完这一仗,十有八九只不过换了个地方拿我们献祭,凭啥要跟你混啊?而**如果天命是降于周王,则周王便是天下的共主,他不仅仅要为周人主持正义,而是要为全天下人主持正义,这是一种真正的普世主义观念**。
+
+### 什么是封建社会
+推翻了商朝之后,周朝又是如何具体建立它的统治方式呢?那就是,分封制。周天子向下分封了他的大量亲戚和重臣,意图依靠他们形成的藩属诸侯国,来拱卫周王。这样一种政治统治形式就被称作“封建”,这种社会叫做封建社会。
+
+封建“这个词最初出自《左传》,里面有句话叫做“封建亲戚,以藩屏周”,就是说分封亲信出去建立诸侯国,作为周朝王室领地的屏障。**只有这种封土建邦、分封割据的状态,才叫做封建。**
+
+封建社会的一大特征是,最高统治者是没有权力干涉诸侯国内部事务的,诸侯们确实是最高统治者的封臣,但某种意义上也像是个合伙人,都有比较强的独立性。
+
+周朝的时候,诸侯都承认周天子是最高权威,但周天子并不能管诸侯国内部的事情。周朝在这个过程中建立了封建社会,但周天子又逐渐衰落了。在周天子衰落之后,历史的主角就变成了那些诸侯。诸侯们彼此不断竞争,最终终结了中国的封建社会。
+
+## 封建社会的终结【春秋末期、战国初期】【中原】
+到了西周后期,周天子的影响力越来越差,最终被迫迁都洛阳,中国历史进入到东周。
+
+东周又分成了舂秋战国两个时期,**春秋末期出现了一些重要的技术发展,它带来了新的经济和人力资源,打破了过去的社会均衡,封建社会当中的贵族秩序崩塌了，封建社会也在春秋战国时代走上末日。**
+
+### 战争的逻辑的变化
+春秋之前的的战争十分注重礼仪性(战争都是贵族在参与，这就导致了参与人数并不多，他们认为战争是一件高贵的事，他们的战争可能就是比谁的正步踢得好)。但到了春秋中后期,随着楚国(楚国是个土生政权,并不是周天子分封的诸侯国，它的文化和中原有很大区别,也不大在乎中原的礼仪之类的东西,在当时的中原诸侯看来它就是个蛮夷之邦。)的加入，战争变成以砍死人为目的了。也正是由于这个战争逻辑的变化,才把中国引向了大一统。
+
+### 两个技术变迁
+诸侯分封次级诸侯，随着次级诸侯势力的增大，诸侯和次级诸侯的关系同周天子和诸侯的关系一样。在春秋末期、战国初期,出现了两个重要的技术变迁,让诸侯力量的扩大有了可能。正是因为这两次技术变革,打破了君主和封臣之间的力量均衡,周厉王当初搞不定自己下级的事,现在诸侯可以做到了,也就是诸侯能够搞定这些次级诸侯。
+
+这两个技术变迁,一个是铁器和牛耕的农业生产技术,一个是竹简这种知识传播技术。
+
+>铁器和牛耕 - 农业生产技术
+
+铁器与牛耕的出现,提升了平民的劳动效率。过去,他们的耕种效率很低,只能在贵族控制的公田、又叫井田上种地,没有能力再去开垦自己的私田了;但是,铁器和牛耕让生产效率大大提升了,平民有余力去开垦自己的私田,甚至索性就从贵族控制的井田上跑路了。此时君主、贵族、平民三者之间的一种复杂博弈关系就出现了。注意,这儿所说的君主,指的就是周天子封的诸侯,贵族指的就是诸侯所封的次级诸侯,这会儿的历史已经没周天子什么事儿了。
+
+君主向耕种私田的平民提供保护,平民向君主交税。平民从井田上越跑越多,贵族所控制的井田制就逐渐瓦解了,贵族的力量也逐渐削弱了。君主开始获得相对于贵族的优势。
+
+>竹简 - 知识传播技术
+
+ 知识传播的成本急剧下降,一般的贵族子弟、甚至运气好的普通百姓,都有机会学习文字获得知识了。由于多年的人口膨胀,这个时候出现了很多有文化、却无法获得一块封地的贵族子弟,他们就变成游士,到处寻找把自己卖个好价钱的机会。
+
+君主们早就想养一群可控的自己人了。什么样的人最好用呢?
+
+第一,他们要在本国没有根基,没资本对抗君主;
+第二,他们的地位尊荣都取决于君主的赏赐,就有动力与君主相配合。
+
+从别国跑来的游士完全符合这两点要求。君主与游士拍即合,游士成为依附于君主的私人人事班底。这个人事班底,后来就发展为官僚制。
+
+官僚和贵族的区别在于,本质上来说,官僚没有独立性,他们是职业经理人,其地位取决于君主的意志;贵族有独立性,他们是准合伙人,君主有大事必须和他们商量着来。游士的出现,终于让君主们可以全方位碾压贵族封臣,诸侯国也就从君主与贵族共治的结构,转向君主说了算的官僚制结构。
+
+### 变法
+
+这个过程在历史上被叫作什么呢?
+
+变法! 没错,魏国的李悝变法、秦国的商鞅变法等等,就是这样展开的。
+
+来自其他国家的游士,成了各诸侯国的新贵,他们压制住所在国的大贵族,把君主的意志贯彻下去。随着各种变法的展开,中国历史就进入到了战国时代。
+
+对君主来说,这回有办法把平民也动员起来了。你们虽然不是贵族血统,但你们可以立军功。只要你有办法从战场上拎回更多的人头,你也有机会上升到比贵族还高的地位。这种激励可不得了,战争的规模和频次急剧上升,大规模的灭国之战很容易就爆发了。灭国之战都到什么量级呢?比如很多人推崇的战神白起,一场战役就会坑杀赵国的40万降兵,这都在变法之后成为可能，变法这个事情也有传染性,谁最先变法,谁的战争效率就大幅上升;其他国家如果不跟上,就只能等着挨打。
+
+**随着各国陆续变法,各诸侯国内部的旧贵族阶层被一扫而空**。变法之后,君主能决定军功的标准,也就能决定官僚新贵们的地位高低,**君主对国家的控制力就变得更强**,再没有能够约束君主的力量,**分封割据的封建社会也就逐渐走上了终结之日**,战争逻辑的变化,影响还不止于此,当战争规模扩大到了诸侯国承受不起的时候,中国也就开始走向大一统。
+
+## 诸子百家的三大流派【春秋后期】【中原】
+春秋后期,天下大乱,礼崩乐坏。人们突然发现赖以理解世界的坐标系没有了,世界的意义丧失了。而这种时候,就是思想大爆发的时候。
+
+诸子百家,根据他们对待传统不同的态度,可以分为三类:一类是力挺传统（**克己复礼**）,代表就是儒家;一类是抛弃传统（**以法代礼**）,代表就是法家;还有一类是不在乎传统（出世，**无为而治**）,代表就是道家。
+
+### 儒家
+孔子认为复古的路径是“克己复礼”,就是要克制自己的各种冲动,依照传统留下来的"礼"的要求来做事。这样就能达到儒家的最高理想,“仁”。
+
+>如果你理解孔子是儒家的开创者,莫不如把他理解为此前巫师传统的集大成者。
+
+儒家是从商周两朝的巫师系统发展出来的,巫师就是古代沟通天意与人事的神职人员，这种工作主要通过占卜和祭祀来完成。祭祀这属于最高的“礼”,而巫师们就是“礼”的具体操作者与记录者。
+
+到了礼崩乐坏的时候,如果要想复古,第步肯定得先说清楚这个“古”究竟是什么。巫师系统有这方面的很多记录,当然是最合适的解说人选,他们由此就逐渐发展为儒家。
+
+### 法家
+
+儒家强调恢复“礼”,“礼”来自传统,贵族是“礼"的载体;法家强调创建“法”,“法”出自君主意志,官僚是法的执行者。
+
+>法家常在别国成事
+
+根据君主、贵族、官僚的博弈关系,各诸侯国的君主们肯定不会愿意接受儒家,而更愿意接受法所以孔子孟子都曾周游列国,都没得到过重用,反倒是法家的人占据各种高位。有趣的是,法家的鼓吹者往往在本国是不受欢迎的,无论是商鞅还是李斯,都是在别国建功立业。韩非虽然在别国没有能够建立功业,但在本国也从没获得过机会。原因在于,君主需要官僚在本国没有根基,才能听使唤;倘若是出身本国的法家,他总会有各种根基,这种人又太懂得法术势,很容易成为君主忌惮的对象。脱离了家乡的游士,如漂泊浮萍,孤身人,荣辱富贵都依赖于君主,君主最喜欢了。所以,法家只能在别国成事。
+
+### 道家
+
+顺其自然,让世界、让百姓自由自主地活动,事情自然就好了,这就叫“无为而治”。
+
+道家认为,正是各种入世的念头才把事情搞糟了,倘若不再追求转瞬即逝的现世成就,天地一下子就宽了。
+
+## 周秦之变【周-秦-汉】【中原】
+
+周秦之变对中国的思想史还带来个自然延伸的影响,就是我们在历史上看到的,从秦皇到汉武,帝国的官方思想经历了**从法家到道家再到儒家**的转换过程。
+
+### 周秦之变的“法家逻辑”
+百家争鸣的诸多学说,哪一种更注重提升战争效率,它就会获得诸侯们在政治上的更多支持。从中胜出的就是法家。但你用法家就能够征服天下,却不能仅仅用法家来治理天下。
+
+### 汉高祖的“无为而治”
+为什么汉高祖会选择道家呢?最根本的原因在于力量均衡。
+
+刘邦起家之前是个平民百姓,征服天下只能靠团结足够多的人。刘邦能够吸引一群重要将领和谋士追随自己,不是因为自己有力量,而是因为有威信。刘邦和这些人近乎是合伙人的关系,并没有压倒性力量来钳制他们,反倒会被这些兄弟给制衡住。这么一来,皇帝想要专制也不可能,**无为而治只是面对强大合伙人时的无奈之举。**
+
+### 汉武帝的“独尊儒术”
+“阳儒阴法",又称“**外儒内法**"。什么意思呢?从观念层面来看,是儒家在主导,儒生解读着天意,君主也不敢完全违背儒家的教导而行事。儒家表面上的迂腐,却为君主划出了大致的行动边界;但在具体的制度设计上,却还是法家逻辑。这样一来,**对君主来说,治理的效率有了,安抚民心的口径也有了。**
+
+## 汉人王朝为何无法统治长城以北【汉】【中原】
+这个问题,其底层是由儒家文化以及儒家文化的地理依赖性决定的。
+
+### 究竟什么是汉人
+**只要是接受儒家文化,并按儒家文化的指导生活的人,在古代就被视作汉人。**
+
+### 儒家文化的地理依赖性
+儒家文化光有个体心灵的皈依远远不够,个体还必须生活在一种特定的人际关系结构当中才行。
+
+比如,“三从四德三纲五常"等等这些规矩,都是对某种人际关系的规定,脱离开人际关系根本就没法展开。把你一个人扔荒岛上,还让你三从四德,你肯定做不到。
+
+儒家文化所要求的这种特定的人际关系,首先就要求有比较稳定的家庭组织,而稳定的家庭组织,前提是你得是定居的。
+
+定居的前提是农耕,而农耕有一个最硬性的约束条件,就是年降水量。东亚大陆上,如果一个地方年降水量少于400毫米的话,靠农耕是活不下去的。
+
+那么,东亚大陆的400毫米等降雨线在哪儿呢?
+
+这条400毫米等降雨线,差不多和长城重合。长城再往北,年降水量就不足400毫米了。也就是说,儒家帝国在农耕地区的扩张极限,就是400毫米等降雨线。于是在这里,儒家帝国修建了长城。长城再往北就是游牧地区了。
+
+在古代社会,由于农耕对降雨量的要求,使得你要是越过了长城以北,还想活得下去的话,就必须游牧化,否则是死路一条。而一旦游牧化之后,就意味着中原式的人际关系结构、家庭结构等等都没有基础了,无法再按照儒家的方式来生活了。
+
+**儒家文化有一种地理依赖性。因为自然生态原因,儒家越不过去长城以北、嘉峪关以西。儒家文化只能在中原地区展开。**
+
+### 中原和草原的继承逻辑区别
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/181105/dFAEllbB47.png)
+
+官僚制帝国有个很重要的特征,就是君主和官僚,在功能上是有分工的。君主的首要功能,是象征正当性。所以,君主的能力只排在第二位,第一重要的是君位继承的稳定性。嫡长子资格是最容易达成这种共识的。所以,中原的继承原则就稳定在嫡长子继承制上了。',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->saveNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000644s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001297s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `title`='中国史纲',`content`='# 中国史纲\n[TOC]\n## 中国历史的时空坐标\n时间和空间加在一块,才是完整的历史。\n### 四个时间坐标点\n中国历史发生过几次重要的转型,这些转型推动着中国历史向前的发展。\n\n1.第一个转型,是**商周之变**,就是从商朝到周朝的转型。\n\n这次转型之后,我们开始有了“中国”这个概念,中华文明当中最初的普世主义理想开始出现了。\n\n2.第二个转型,**周秦之变**,就是从周朝到秦朝的转型。\n\n这次转型,让中原从分封割据的局面进入到大一统的局面,中国历史也开始超越于中原之上,中原与草原的相互塑造和对抗开始成为中国历史的大脉络。\n\n3.第三个转型,**唐宋之变**,就是从唐朝到宋朝的转型。\n\n这次转型,让中国的社会结构从豪族社会进入到平民社会,此后中国历史再无长期的分裂,大一统开始成为一个不可逆的历史过程。在先秦之后,中国的文化在宋朝迎来了又一次大爆发,有些西方学者甚至称这是中国的文艺复兴。这次文化爆发,不仅决定了此后将近一千年的中国文化气质,也决定了日本、朝鲜、越南等其他儒教国家的文化气质。\n\n4.第四个转型,就是**清朝末期开始的古今之变**,中国开始从古代社会向现代社会进行艰难转型。\n\n这个过程带来了一系列轰轰烈烈的历史过程,转型过程直到今天仍在继续,还未完成。\n\n### 五个空间坐标点\n草原、中原、海洋、西域、高原。\n\n这几个大的空间,彼此之间有着极为深刻的相互依赖相互塑造的关系,以至于脱离开一方就完全解释不了另一方,所以它们加在一块构成一个体系。\n\n## 中国的概念和中华文明的普世主义理想【商周】【中原】\n### 历史上第一次出现「中国」\n周朝的第二位君主周成王,兴建了东都洛阳城,当时有个叫做「何」的贵族,这人铸了一件青铜器纪念这个事儿,1963年这个青铜器在陕西宝鸡被发现,今天称其为「何尊」，「何尊」的底部铸了一百多个字,里面提到,周武王说要\"宅兹中国”,就是说要“住在中国”,这是\"中国\"这个词的最早来源。\n\n什么叫中国？**达到了文明最高水准的地方,就是文明意义上的中心,古人就管这种地方叫做「中国」。**\n### 中华文明的普世主义理想：究竟天命是降于周人呢,还是天命降于周王\n商朝是由“商人\"。他们认为天命降于商人。为了让天能够永远地保佑自己,商人会经常地进行大规模的祭祀活动,祭祀当中会大量用到活人做祭品。\n\n这些被献祭的人从哪来呢?\n\n从对外战争掠夺的羌人而来。所谓的羌人就是生活在商王朝西部的、除了商朝人以外的所有人。\n\n商人的这种天命观,肯定会受到羌人的抵抗。其中,周人是最主要的一支抵抗力量,他们逐渐组织了很多苦不堪言的羌人群体来反抗商朝，反抗的时候,在周人中间有过一个观念层面的争论,究竟天命是降于周人呢,还是天命降于周王?争论的结果是,天命降于周王。\n\n这个观念变化太重要了。初看上去,这似乎是把天命的载体变得狭隘了,实际上是把它变得普世了。\n\n为什么这么说呢?如果天命是降于周人,那就和此前降于商人的路数差不多,周人的岁月要想静好,就得时刻压制住所有不是周人的群体。这样的话,周人和商人征战,谁胜谁败就不好说了。因为,对其他羌人群体来说,打完这一仗,十有八九只不过换了个地方拿我们献祭,凭啥要跟你混啊?而**如果天命是降于周王,则周王便是天下的共主,他不仅仅要为周人主持正义,而是要为全天下人主持正义,这是一种真正的普世主义观念**。\n\n### 什么是封建社会\n推翻了商朝之后,周朝又是如何具体建立它的统治方式呢?那就是,分封制。周天子向下分封了他的大量亲戚和重臣,意图依靠他们形成的藩属诸侯国,来拱卫周王。这样一种政治统治形式就被称作“封建”,这种社会叫做封建社会。\n\n封建“这个词最初出自《左传》,里面有句话叫做“封建亲戚,以藩屏周”,就是说分封亲信出去建立诸侯国,作为周朝王室领地的屏障。**只有这种封土建邦、分封割据的状态,才叫做封建。**\n\n封建社会的一大特征是,最高统治者是没有权力干涉诸侯国内部事务的,诸侯们确实是最高统治者的封臣,但某种意义上也像是个合伙人,都有比较强的独立性。\n\n周朝的时候,诸侯都承认周天子是最高权威,但周天子并不能管诸侯国内部的事情。周朝在这个过程中建立了封建社会,但周天子又逐渐衰落了。在周天子衰落之后,历史的主角就变成了那些诸侯。诸侯们彼此不断竞争,最终终结了中国的封建社会。\n\n## 封建社会的终结【春秋末期、战国初期】【中原】\n到了西周后期,周天子的影响力越来越差,最终被迫迁都洛阳,中国历史进入到东周。\n\n东周又分成了舂秋战国两个时期,**春秋末期出现了一些重要的技术发展,它带来了新的经济和人力资源,打破了过去的社会均衡,封建社会当中的贵族秩序崩塌了，封建社会也在春秋战国时代走上末日。**\n\n### 战争的逻辑的变化\n春秋之前的的战争十分注重礼仪性(战争都是贵族在参与，这就导致了参与人数并不多，他们认为战争是一件高贵的事，他们的战争可能就是比谁的正步踢得好)。但到了春秋中后期,随着楚国(楚国是个土生政权,并不是周天子分封的诸侯国，它的文化和中原有很大区别,也不大在乎中原的礼仪之类的东西,在当时的中原诸侯看来它就是个蛮夷之邦。)的加入，战争变成以砍死人为目的了。也正是由于这个战争逻辑的变化,才把中国引向了大一统。\n\n### 两个技术变迁\n诸侯分封次级诸侯，随着次级诸侯势力的增大，诸侯和次级诸侯的关系同周天子和诸侯的关系一样。在春秋末期、战国初期,出现了两个重要的技术变迁,让诸侯力量的扩大有了可能。正是因为这两次技术变革,打破了君主和封臣之间的力量均衡,周厉王当初搞不定自己下级的事,现在诸侯可以做到了,也就是诸侯能够搞定这些次级诸侯。\n\n这两个技术变迁,一个是铁器和牛耕的农业生产技术,一个是竹简这种知识传播技术。\n\n>铁器和牛耕 - 农业生产技术\n\n铁器与牛耕的出现,提升了平民的劳动效率。过去,他们的耕种效率很低,只能在贵族控制的公田、又叫井田上种地,没有能力再去开垦自己的私田了;但是,铁器和牛耕让生产效率大大提升了,平民有余力去开垦自己的私田,甚至索性就从贵族控制的井田上跑路了。此时君主、贵族、平民三者之间的一种复杂博弈关系就出现了。注意,这儿所说的君主,指的就是周天子封的诸侯,贵族指的就是诸侯所封的次级诸侯,这会儿的历史已经没周天子什么事儿了。\n\n君主向耕种私田的平民提供保护,平民向君主交税。平民从井田上越跑越多,贵族所控制的井田制就逐渐瓦解了,贵族的力量也逐渐削弱了。君主开始获得相对于贵族的优势。\n\n>竹简 - 知识传播技术\n\n 知识传播的成本急剧下降,一般的贵族子弟、甚至运气好的普通百姓,都有机会学习文字获得知识了。由于多年的人口膨胀,这个时候出现了很多有文化、却无法获得一块封地的贵族子弟,他们就变成游士,到处寻找把自己卖个好价钱的机会。\n\n君主们早就想养一群可控的自己人了。什么样的人最好用呢?\n\n第一,他们要在本国没有根基,没资本对抗君主;\n第二,他们的地位尊荣都取决于君主的赏赐,就有动力与君主相配合。\n\n从别国跑来的游士完全符合这两点要求。君主与游士拍即合,游士成为依附于君主的私人人事班底。这个人事班底,后来就发展为官僚制。\n\n官僚和贵族的区别在于,本质上来说,官僚没有独立性,他们是职业经理人,其地位取决于君主的意志;贵族有独立性,他们是准合伙人,君主有大事必须和他们商量着来。游士的出现,终于让君主们可以全方位碾压贵族封臣,诸侯国也就从君主与贵族共治的结构,转向君主说了算的官僚制结构。\n\n### 变法\n\n这个过程在历史上被叫作什么呢?\n\n变法! 没错,魏国的李悝变法、秦国的商鞅变法等等,就是这样展开的。\n\n来自其他国家的游士,成了各诸侯国的新贵,他们压制住所在国的大贵族,把君主的意志贯彻下去。随着各种变法的展开,中国历史就进入到了战国时代。\n\n对君主来说,这回有办法把平民也动员起来了。你们虽然不是贵族血统,但你们可以立军功。只要你有办法从战场上拎回更多的人头,你也有机会上升到比贵族还高的地位。这种激励可不得了,战争的规模和频次急剧上升,大规模的灭国之战很容易就爆发了。灭国之战都到什么量级呢?比如很多人推崇的战神白起,一场战役就会坑杀赵国的40万降兵,这都在变法之后成为可能，变法这个事情也有传染性,谁最先变法,谁的战争效率就大幅上升;其他国家如果不跟上,就只能等着挨打。\n\n**随着各国陆续变法,各诸侯国内部的旧贵族阶层被一扫而空**。变法之后,君主能决定军功的标准,也就能决定官僚新贵们的地位高低,**君主对国家的控制力就变得更强**,再没有能够约束君主的力量,**分封割据的封建社会也就逐渐走上了终结之日**,战争逻辑的变化,影响还不止于此,当战争规模扩大到了诸侯国承受不起的时候,中国也就开始走向大一统。\n\n## 诸子百家的三大流派【春秋后期】【中原】\n春秋后期,天下大乱,礼崩乐坏。人们突然发现赖以理解世界的坐标系没有了,世界的意义丧失了。而这种时候,就是思想大爆发的时候。\n\n诸子百家,根据他们对待传统不同的态度,可以分为三类:一类是力挺传统（**克己复礼**）,代表就是儒家;一类是抛弃传统（**以法代礼**）,代表就是法家;还有一类是不在乎传统（出世，**无为而治**）,代表就是道家。\n\n### 儒家\n孔子认为复古的路径是“克己复礼”,就是要克制自己的各种冲动,依照传统留下来的\"礼\"的要求来做事。这样就能达到儒家的最高理想,“仁”。\n\n>如果你理解孔子是儒家的开创者,莫不如把他理解为此前巫师传统的集大成者。\n\n儒家是从商周两朝的巫师系统发展出来的,巫师就是古代沟通天意与人事的神职人员，这种工作主要通过占卜和祭祀来完成。祭祀这属于最高的“礼”,而巫师们就是“礼”的具体操作者与记录者。\n\n到了礼崩乐坏的时候,如果要想复古,第步肯定得先说清楚这个“古”究竟是什么。巫师系统有这方面的很多记录,当然是最合适的解说人选,他们由此就逐渐发展为儒家。\n\n### 法家\n\n儒家强调恢复“礼”,“礼”来自传统,贵族是“礼\"的载体;法家强调创建“法”,“法”出自君主意志,官僚是法的执行者。\n\n>法家常在别国成事\n\n根据君主、贵族、官僚的博弈关系,各诸侯国的君主们肯定不会愿意接受儒家,而更愿意接受法所以孔子孟子都曾周游列国,都没得到过重用,反倒是法家的人占据各种高位。有趣的是,法家的鼓吹者往往在本国是不受欢迎的,无论是商鞅还是李斯,都是在别国建功立业。韩非虽然在别国没有能够建立功业,但在本国也从没获得过机会。原因在于,君主需要官僚在本国没有根基,才能听使唤;倘若是出身本国的法家,他总会有各种根基,这种人又太懂得法术势,很容易成为君主忌惮的对象。脱离了家乡的游士,如漂泊浮萍,孤身人,荣辱富贵都依赖于君主,君主最喜欢了。所以,法家只能在别国成事。\n\n### 道家\n\n顺其自然,让世界、让百姓自由自主地活动,事情自然就好了,这就叫“无为而治”。\n\n道家认为,正是各种入世的念头才把事情搞糟了,倘若不再追求转瞬即逝的现世成就,天地一下子就宽了。\n\n## 周秦之变【周-秦-汉】【中原】\n\n周秦之变对中国的思想史还带来个自然延伸的影响,就是我们在历史上看到的,从秦皇到汉武,帝国的官方思想经历了**从法家到道家再到儒家**的转换过程。\n\n### 周秦之变的“法家逻辑”\n百家争鸣的诸多学说,哪一种更注重提升战争效率,它就会获得诸侯们在政治上的更多支持。从中胜出的就是法家。但你用法家就能够征服天下,却不能仅仅用法家来治理天下。\n\n### 汉高祖的“无为而治”\n为什么汉高祖会选择道家呢?最根本的原因在于力量均衡。\n\n刘邦起家之前是个平民百姓,征服天下只能靠团结足够多的人。刘邦能够吸引一群重要将领和谋士追随自己,不是因为自己有力量,而是因为有威信。刘邦和这些人近乎是合伙人的关系,并没有压倒性力量来钳制他们,反倒会被这些兄弟给制衡住。这么一来,皇帝想要专制也不可能,**无为而治只是面对强大合伙人时的无奈之举。**\n\n### 汉武帝的“独尊儒术”\n“阳儒阴法\",又称“**外儒内法**\"。什么意思呢?从观念层面来看,是儒家在主导,儒生解读着天意,君主也不敢完全违背儒家的教导而行事。儒家表面上的迂腐,却为君主划出了大致的行动边界;但在具体的制度设计上,却还是法家逻辑。这样一来,**对君主来说,治理的效率有了,安抚民心的口径也有了。**\n\n## 汉人王朝为何无法统治长城以北【汉】【中原】\n这个问题,其底层是由儒家文化以及儒家文化的地理依赖性决定的。\n\n### 究竟什么是汉人\n**只要是接受儒家文化,并按儒家文化的指导生活的人,在古代就被视作汉人。**\n\n### 儒家文化的地理依赖性\n儒家文化光有个体心灵的皈依远远不够,个体还必须生活在一种特定的人际关系结构当中才行。\n\n比如,“三从四德三纲五常\"等等这些规矩,都是对某种人际关系的规定,脱离开人际关系根本就没法展开。把你一个人扔荒岛上,还让你三从四德,你肯定做不到。\n\n儒家文化所要求的这种特定的人际关系,首先就要求有比较稳定的家庭组织,而稳定的家庭组织,前提是你得是定居的。\n\n定居的前提是农耕,而农耕有一个最硬性的约束条件,就是年降水量。东亚大陆上,如果一个地方年降水量少于400毫米的话,靠农耕是活不下去的。\n\n那么,东亚大陆的400毫米等降雨线在哪儿呢?\n\n这条400毫米等降雨线,差不多和长城重合。长城再往北,年降水量就不足400毫米了。也就是说,儒家帝国在农耕地区的扩张极限,就是400毫米等降雨线。于是在这里,儒家帝国修建了长城。长城再往北就是游牧地区了。\n\n在古代社会,由于农耕对降雨量的要求,使得你要是越过了长城以北,还想活得下去的话,就必须游牧化,否则是死路一条。而一旦游牧化之后,就意味着中原式的人际关系结构、家庭结构等等都没有基础了,无法再按照儒家的方式来生活了。\n\n**儒家文化有一种地理依赖性。因为自然生态原因,儒家越不过去长城以北、嘉峪关以西。儒家文化只能在中原地区展开。**\n\n### 中原和草原的继承逻辑区别\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/181105/dFAEllbB47.png)\n\n官僚制帝国有个很重要的特征,就是君主和官僚,在功能上是有分工的。君主的首要功能,是象征正当性。所以,君主的能力只排在第二位,第一重要的是君位继承的稳定性。嫡长子资格是最容易达成这种共识的。所以,中原的继承原则就稳定在嫡长子继承制上了。',`groups`='Default',`p_id`=1  WHERE  `id` = 1 [ RunTime:0.000705s ]
+---------------------------------------------------------------
+[ 2018-11-05T23:03:27+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/updatenote/id/233.html
+[ info ] qingrang.top/daily/admin/note/updatenote/id/233.html [运行时间：0.068594s][吞吐率：14.58req/s] [内存消耗：2,181.33kb] [文件加载：61]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'updatenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '48955',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/233.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416; PHPSESSID=eb81ogaab9jatuojts3q1fv7r6',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'summary' => '',
+  'content' => '# 中国史纲
+[TOC]
+## 中国历史的时空坐标
+时间和空间加在一块,才是完整的历史。
+### 四个时间坐标点
+中国历史发生过几次重要的转型,这些转型推动着中国历史向前的发展。
+
+1.第一个转型,是**商周之变**,就是从商朝到周朝的转型。
+
+这次转型之后,我们开始有了“中国”这个概念,中华文明当中最初的普世主义理想开始出现了。
+
+2.第二个转型,**周秦之变**,就是从周朝到秦朝的转型。
+
+这次转型,让中原从分封割据的局面进入到大一统的局面,中国历史也开始超越于中原之上,中原与草原的相互塑造和对抗开始成为中国历史的大脉络。
+
+3.第三个转型,**唐宋之变**,就是从唐朝到宋朝的转型。
+
+这次转型,让中国的社会结构从豪族社会进入到平民社会,此后中国历史再无长期的分裂,大一统开始成为一个不可逆的历史过程。在先秦之后,中国的文化在宋朝迎来了又一次大爆发,有些西方学者甚至称这是中国的文艺复兴。这次文化爆发,不仅决定了此后将近一千年的中国文化气质,也决定了日本、朝鲜、越南等其他儒教国家的文化气质。
+
+4.第四个转型,就是**清朝末期开始的古今之变**,中国开始从古代社会向现代社会进行艰难转型。
+
+这个过程带来了一系列轰轰烈烈的历史过程,转型过程直到今天仍在继续,还未完成。
+
+### 五个空间坐标点
+草原、中原、海洋、西域、高原。
+
+这几个大的空间,彼此之间有着极为深刻的相互依赖相互塑造的关系,以至于脱离开一方就完全解释不了另一方,所以它们加在一块构成一个体系。
+
+## 中国的概念和中华文明的普世主义理想【商周】【中原】
+### 历史上第一次出现「中国」
+周朝的第二位君主周成王,兴建了东都洛阳城,当时有个叫做「何」的贵族,这人铸了一件青铜器纪念这个事儿,1963年这个青铜器在陕西宝鸡被发现,今天称其为「何尊」，「何尊」的底部铸了一百多个字,里面提到,周武王说要"宅兹中国”,就是说要“住在中国”,这是"中国"这个词的最早来源。
+
+什么叫中国？**达到了文明最高水准的地方,就是文明意义上的中心,古人就管这种地方叫做「中国」。**
+### 中华文明的普世主义理想：究竟天命是降于周人呢,还是天命降于周王
+商朝是由“商人"。他们认为天命降于商人。为了让天能够永远地保佑自己,商人会经常地进行大规模的祭祀活动,祭祀当中会大量用到活人做祭品。
+
+这些被献祭的人从哪来呢?
+
+从对外战争掠夺的羌人而来。所谓的羌人就是生活在商王朝西部的、除了商朝人以外的所有人。
+
+商人的这种天命观,肯定会受到羌人的抵抗。其中,周人是最主要的一支抵抗力量,他们逐渐组织了很多苦不堪言的羌人群体来反抗商朝，反抗的时候,在周人中间有过一个观念层面的争论,究竟天命是降于周人呢,还是天命降于周王?争论的结果是,天命降于周王。
+
+这个观念变化太重要了。初看上去,这似乎是把天命的载体变得狭隘了,实际上是把它变得普世了。
+
+为什么这么说呢?如果天命是降于周人,那就和此前降于商人的路数差不多,周人的岁月要想静好,就得时刻压制住所有不是周人的群体。这样的话,周人和商人征战,谁胜谁败就不好说了。因为,对其他羌人群体来说,打完这一仗,十有八九只不过换了个地方拿我们献祭,凭啥要跟你混啊?而**如果天命是降于周王,则周王便是天下的共主,他不仅仅要为周人主持正义,而是要为全天下人主持正义,这是一种真正的普世主义观念**。
+
+### 什么是封建社会
+推翻了商朝之后,周朝又是如何具体建立它的统治方式呢?那就是,分封制。周天子向下分封了他的大量亲戚和重臣,意图依靠他们形成的藩属诸侯国,来拱卫周王。这样一种政治统治形式就被称作“封建”,这种社会叫做封建社会。
+
+封建“这个词最初出自《左传》,里面有句话叫做“封建亲戚,以藩屏周”,就是说分封亲信出去建立诸侯国,作为周朝王室领地的屏障。**只有这种封土建邦、分封割据的状态,才叫做封建。**
+
+封建社会的一大特征是,最高统治者是没有权力干涉诸侯国内部事务的,诸侯们确实是最高统治者的封臣,但某种意义上也像是个合伙人,都有比较强的独立性。
+
+周朝的时候,诸侯都承认周天子是最高权威,但周天子并不能管诸侯国内部的事情。周朝在这个过程中建立了封建社会,但周天子又逐渐衰落了。在周天子衰落之后,历史的主角就变成了那些诸侯。诸侯们彼此不断竞争,最终终结了中国的封建社会。
+
+## 封建社会的终结【春秋末期、战国初期】【中原】
+到了西周后期,周天子的影响力越来越差,最终被迫迁都洛阳,中国历史进入到东周。
+
+东周又分成了舂秋战国两个时期,**春秋末期出现了一些重要的技术发展,它带来了新的经济和人力资源,打破了过去的社会均衡,封建社会当中的贵族秩序崩塌了，封建社会也在春秋战国时代走上末日。**
+
+### 战争的逻辑的变化
+春秋之前的的战争十分注重礼仪性(战争都是贵族在参与，这就导致了参与人数并不多，他们认为战争是一件高贵的事，他们的战争可能就是比谁的正步踢得好)。但到了春秋中后期,随着楚国(楚国是个土生政权,并不是周天子分封的诸侯国，它的文化和中原有很大区别,也不大在乎中原的礼仪之类的东西,在当时的中原诸侯看来它就是个蛮夷之邦。)的加入，战争变成以砍死人为目的了。也正是由于这个战争逻辑的变化,才把中国引向了大一统。
+
+### 两个技术变迁
+诸侯分封次级诸侯，随着次级诸侯势力的增大，诸侯和次级诸侯的关系同周天子和诸侯的关系一样。在春秋末期、战国初期,出现了两个重要的技术变迁,让诸侯力量的扩大有了可能。正是因为这两次技术变革,打破了君主和封臣之间的力量均衡,周厉王当初搞不定自己下级的事,现在诸侯可以做到了,也就是诸侯能够搞定这些次级诸侯。
+
+这两个技术变迁,一个是铁器和牛耕的农业生产技术,一个是竹简这种知识传播技术。
+
+>铁器和牛耕 - 农业生产技术
+
+铁器与牛耕的出现,提升了平民的劳动效率。过去,他们的耕种效率很低,只能在贵族控制的公田、又叫井田上种地,没有能力再去开垦自己的私田了;但是,铁器和牛耕让生产效率大大提升了,平民有余力去开垦自己的私田,甚至索性就从贵族控制的井田上跑路了。此时君主、贵族、平民三者之间的一种复杂博弈关系就出现了。注意,这儿所说的君主,指的就是周天子封的诸侯,贵族指的就是诸侯所封的次级诸侯,这会儿的历史已经没周天子什么事儿了。
+
+君主向耕种私田的平民提供保护,平民向君主交税。平民从井田上越跑越多,贵族所控制的井田制就逐渐瓦解了,贵族的力量也逐渐削弱了。君主开始获得相对于贵族的优势。
+
+>竹简 - 知识传播技术
+
+ 知识传播的成本急剧下降,一般的贵族子弟、甚至运气好的普通百姓,都有机会学习文字获得知识了。由于多年的人口膨胀,这个时候出现了很多有文化、却无法获得一块封地的贵族子弟,他们就变成游士,到处寻找把自己卖个好价钱的机会。
+
+君主们早就想养一群可控的自己人了。什么样的人最好用呢?
+
+第一,他们要在本国没有根基,没资本对抗君主;
+第二,他们的地位尊荣都取决于君主的赏赐,就有动力与君主相配合。
+
+从别国跑来的游士完全符合这两点要求。君主与游士拍即合,游士成为依附于君主的私人人事班底。这个人事班底,后来就发展为官僚制。
+
+官僚和贵族的区别在于,本质上来说,官僚没有独立性,他们是职业经理人,其地位取决于君主的意志;贵族有独立性,他们是准合伙人,君主有大事必须和他们商量着来。游士的出现,终于让君主们可以全方位碾压贵族封臣,诸侯国也就从君主与贵族共治的结构,转向君主说了算的官僚制结构。
+
+### 变法
+
+这个过程在历史上被叫作什么呢?
+
+变法! 没错,魏国的李悝变法、秦国的商鞅变法等等,就是这样展开的。
+
+来自其他国家的游士,成了各诸侯国的新贵,他们压制住所在国的大贵族,把君主的意志贯彻下去。随着各种变法的展开,中国历史就进入到了战国时代。
+
+对君主来说,这回有办法把平民也动员起来了。你们虽然不是贵族血统,但你们可以立军功。只要你有办法从战场上拎回更多的人头,你也有机会上升到比贵族还高的地位。这种激励可不得了,战争的规模和频次急剧上升,大规模的灭国之战很容易就爆发了。灭国之战都到什么量级呢?比如很多人推崇的战神白起,一场战役就会坑杀赵国的40万降兵,这都在变法之后成为可能，变法这个事情也有传染性,谁最先变法,谁的战争效率就大幅上升;其他国家如果不跟上,就只能等着挨打。
+
+**随着各国陆续变法,各诸侯国内部的旧贵族阶层被一扫而空**。变法之后,君主能决定军功的标准,也就能决定官僚新贵们的地位高低,**君主对国家的控制力就变得更强**,再没有能够约束君主的力量,**分封割据的封建社会也就逐渐走上了终结之日**,战争逻辑的变化,影响还不止于此,当战争规模扩大到了诸侯国承受不起的时候,中国也就开始走向大一统。
+
+## 诸子百家的三大流派【春秋后期】【中原】
+春秋后期,天下大乱,礼崩乐坏。人们突然发现赖以理解世界的坐标系没有了,世界的意义丧失了。而这种时候,就是思想大爆发的时候。
+
+诸子百家,根据他们对待传统不同的态度,可以分为三类:一类是力挺传统（**克己复礼**）,代表就是儒家;一类是抛弃传统（**以法代礼**）,代表就是法家;还有一类是不在乎传统（出世，**无为而治**）,代表就是道家。
+
+### 儒家
+孔子认为复古的路径是“克己复礼”,就是要克制自己的各种冲动,依照传统留下来的"礼"的要求来做事。这样就能达到儒家的最高理想,“仁”。
+
+>如果你理解孔子是儒家的开创者,莫不如把他理解为此前巫师传统的集大成者。
+
+儒家是从商周两朝的巫师系统发展出来的,巫师就是古代沟通天意与人事的神职人员，这种工作主要通过占卜和祭祀来完成。祭祀这属于最高的“礼”,而巫师们就是“礼”的具体操作者与记录者。
+
+到了礼崩乐坏的时候,如果要想复古,第步肯定得先说清楚这个“古”究竟是什么。巫师系统有这方面的很多记录,当然是最合适的解说人选,他们由此就逐渐发展为儒家。
+
+### 法家
+
+儒家强调恢复“礼”,“礼”来自传统,贵族是“礼"的载体;法家强调创建“法”,“法”出自君主意志,官僚是法的执行者。
+
+>法家常在别国成事
+
+根据君主、贵族、官僚的博弈关系,各诸侯国的君主们肯定不会愿意接受儒家,而更愿意接受法所以孔子孟子都曾周游列国,都没得到过重用,反倒是法家的人占据各种高位。有趣的是,法家的鼓吹者往往在本国是不受欢迎的,无论是商鞅还是李斯,都是在别国建功立业。韩非虽然在别国没有能够建立功业,但在本国也从没获得过机会。原因在于,君主需要官僚在本国没有根基,才能听使唤;倘若是出身本国的法家,他总会有各种根基,这种人又太懂得法术势,很容易成为君主忌惮的对象。脱离了家乡的游士,如漂泊浮萍,孤身人,荣辱富贵都依赖于君主,君主最喜欢了。所以,法家只能在别国成事。
+
+### 道家
+
+顺其自然,让世界、让百姓自由自主地活动,事情自然就好了,这就叫“无为而治”。
+
+道家认为,正是各种入世的念头才把事情搞糟了,倘若不再追求转瞬即逝的现世成就,天地一下子就宽了。
+
+## 周秦之变【周-秦-汉】【中原】
+
+周秦之变对中国的思想史还带来个自然延伸的影响,就是我们在历史上看到的,从秦皇到汉武,帝国的官方思想经历了**从法家到道家再到儒家**的转换过程。
+
+### 周秦之变的“法家逻辑”
+百家争鸣的诸多学说,哪一种更注重提升战争效率,它就会获得诸侯们在政治上的更多支持。从中胜出的就是法家。但你用法家就能够征服天下,却不能仅仅用法家来治理天下。
+
+### 汉高祖的“无为而治”
+为什么汉高祖会选择道家呢?最根本的原因在于力量均衡。
+
+刘邦起家之前是个平民百姓,征服天下只能靠团结足够多的人。刘邦能够吸引一群重要将领和谋士追随自己,不是因为自己有力量,而是因为有威信。刘邦和这些人近乎是合伙人的关系,并没有压倒性力量来钳制他们,反倒会被这些兄弟给制衡住。这么一来,皇帝想要专制也不可能,**无为而治只是面对强大合伙人时的无奈之举。**
+
+### 汉武帝的“独尊儒术”
+“阳儒阴法",又称“**外儒内法**"。什么意思呢?从观念层面来看,是儒家在主导,儒生解读着天意,君主也不敢完全违背儒家的教导而行事。儒家表面上的迂腐,却为君主划出了大致的行动边界;但在具体的制度设计上,却还是法家逻辑。这样一来,**对君主来说,治理的效率有了,安抚民心的口径也有了。**
+
+## 汉人王朝为何无法统治长城以北【汉】【中原】
+这个问题,其底层是由儒家文化以及儒家文化的地理依赖性决定的。
+
+### 究竟什么是汉人
+**只要是接受儒家文化,并按儒家文化的指导生活的人,在古代就被视作汉人。**
+
+### 儒家文化的地理依赖性
+儒家文化光有个体心灵的皈依远远不够,个体还必须生活在一种特定的人际关系结构当中才行。
+
+比如,“三从四德三纲五常"等等这些规矩,都是对某种人际关系的规定,脱离开人际关系根本就没法展开。把你一个人扔荒岛上,还让你三从四德,你肯定做不到。
+
+儒家文化所要求的这种特定的人际关系,首先就要求有比较稳定的家庭组织,而稳定的家庭组织,前提是你得是定居的。
+
+定居的前提是农耕,而农耕有一个最硬性的约束条件,就是年降水量。东亚大陆上,如果一个地方年降水量少于400毫米的话,靠农耕是活不下去的。
+
+那么,东亚大陆的400毫米等降雨线在哪儿呢?
+
+这条400毫米等降雨线,差不多和长城重合。长城再往北,年降水量就不足400毫米了。也就是说,儒家帝国在农耕地区的扩张极限,就是400毫米等降雨线。于是在这里,儒家帝国修建了长城。长城再往北就是游牧地区了。
+
+在古代社会,由于农耕对降雨量的要求,使得你要是越过了长城以北,还想活得下去的话,就必须游牧化,否则是死路一条。而一旦游牧化之后,就意味着中原式的人际关系结构、家庭结构等等都没有基础了,无法再按照儒家的方式来生活了。
+
+**儒家文化有一种地理依赖性。因为自然生态原因,儒家越不过去长城以北、嘉峪关以西。儒家文化只能在中原地区展开。**
+
+### 中原和草原的继承逻辑区别
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/181105/dFAEllbB47.png)
+
+官僚制帝国有个很重要的特征,就是君主和官僚,在功能上是有分工的。君主的首要功能,是象征正当性。所以,君主的能力只排在第二位,第一重要的是君位继承的稳定性。嫡长子资格是最容易达成这种共识的。所以,中原的继承原则就稳定在嫡长子继承制上了。',
+  'groups' => 'Default',
+  'showsel' => '1',
+  'showse2' => '1',
+  'id' => '233',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->updateNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000537s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001304s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 233 LIMIT 1 [ RunTime:0.000502s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `note` WHERE  `id` = 233 LIMIT 1 [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001099s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `groups` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000444s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SELECT `id` FROM `groups` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000278s ]
+[ error ] [10501]SQLSTATE[08S01]: Communication link failure: 1153 Got a packet bigger than 'max_allowed_packet' bytes[/var/www/html/daily/thinkphp/library/think/db/Connection.php:451]
+---------------------------------------------------------------
+[ 2018-11-05T23:03:44+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/editnote/id/233.html
+[ info ] qingrang.top/daily/admin/note/editnote/id/233.html [运行时间：0.060841s][吞吐率：16.44req/s] [内存消耗：2,056.44kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'editnote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416; PHPSESSID=eb81ogaab9jatuojts3q1fv7r6',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '233',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->editNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/editnote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000672s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001375s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 233 LIMIT 1 [ RunTime:0.000513s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000846s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000339s ]
+---------------------------------------------------------------
+[ 2018-11-05T23:03:52+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/savenote.html
+[ info ] qingrang.top/daily/admin/note/savenote.html [运行时间：0.052994s][吞吐率：18.87req/s] [内存消耗：2,164.39kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'savenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '48405',
+  'accept' => 'text/plain, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/233.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416; PHPSESSID=eb81ogaab9jatuojts3q1fv7r6',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'ogroup' => 'Essays',
+  'context' => '# 中国史纲
+[TOC]
+## 中国历史的时空坐标
+时间和空间加在一块,才是完整的历史。
+### 四个时间坐标点
+中国历史发生过几次重要的转型,这些转型推动着中国历史向前的发展。
+
+1.第一个转型,是**商周之变**,就是从商朝到周朝的转型。
+
+这次转型之后,我们开始有了“中国”这个概念,中华文明当中最初的普世主义理想开始出现了。
+
+2.第二个转型,**周秦之变**,就是从周朝到秦朝的转型。
+
+这次转型,让中原从分封割据的局面进入到大一统的局面,中国历史也开始超越于中原之上,中原与草原的相互塑造和对抗开始成为中国历史的大脉络。
+
+3.第三个转型,**唐宋之变**,就是从唐朝到宋朝的转型。
+
+这次转型,让中国的社会结构从豪族社会进入到平民社会,此后中国历史再无长期的分裂,大一统开始成为一个不可逆的历史过程。在先秦之后,中国的文化在宋朝迎来了又一次大爆发,有些西方学者甚至称这是中国的文艺复兴。这次文化爆发,不仅决定了此后将近一千年的中国文化气质,也决定了日本、朝鲜、越南等其他儒教国家的文化气质。
+
+4.第四个转型,就是**清朝末期开始的古今之变**,中国开始从古代社会向现代社会进行艰难转型。
+
+这个过程带来了一系列轰轰烈烈的历史过程,转型过程直到今天仍在继续,还未完成。
+
+### 五个空间坐标点
+草原、中原、海洋、西域、高原。
+
+这几个大的空间,彼此之间有着极为深刻的相互依赖相互塑造的关系,以至于脱离开一方就完全解释不了另一方,所以它们加在一块构成一个体系。
+
+## 中国的概念和中华文明的普世主义理想【商周】【中原】
+### 历史上第一次出现「中国」
+周朝的第二位君主周成王,兴建了东都洛阳城,当时有个叫做「何」的贵族,这人铸了一件青铜器纪念这个事儿,1963年这个青铜器在陕西宝鸡被发现,今天称其为「何尊」，「何尊」的底部铸了一百多个字,里面提到,周武王说要"宅兹中国”,就是说要“住在中国”,这是"中国"这个词的最早来源。
+
+什么叫中国？**达到了文明最高水准的地方,就是文明意义上的中心,古人就管这种地方叫做「中国」。**
+### 中华文明的普世主义理想：究竟天命是降于周人呢,还是天命降于周王
+商朝是由“商人"。他们认为天命降于商人。为了让天能够永远地保佑自己,商人会经常地进行大规模的祭祀活动,祭祀当中会大量用到活人做祭品。
+
+这些被献祭的人从哪来呢?
+
+从对外战争掠夺的羌人而来。所谓的羌人就是生活在商王朝西部的、除了商朝人以外的所有人。
+
+商人的这种天命观,肯定会受到羌人的抵抗。其中,周人是最主要的一支抵抗力量,他们逐渐组织了很多苦不堪言的羌人群体来反抗商朝，反抗的时候,在周人中间有过一个观念层面的争论,究竟天命是降于周人呢,还是天命降于周王?争论的结果是,天命降于周王。
+
+这个观念变化太重要了。初看上去,这似乎是把天命的载体变得狭隘了,实际上是把它变得普世了。
+
+为什么这么说呢?如果天命是降于周人,那就和此前降于商人的路数差不多,周人的岁月要想静好,就得时刻压制住所有不是周人的群体。这样的话,周人和商人征战,谁胜谁败就不好说了。因为,对其他羌人群体来说,打完这一仗,十有八九只不过换了个地方拿我们献祭,凭啥要跟你混啊?而**如果天命是降于周王,则周王便是天下的共主,他不仅仅要为周人主持正义,而是要为全天下人主持正义,这是一种真正的普世主义观念**。
+
+### 什么是封建社会
+推翻了商朝之后,周朝又是如何具体建立它的统治方式呢?那就是,分封制。周天子向下分封了他的大量亲戚和重臣,意图依靠他们形成的藩属诸侯国,来拱卫周王。这样一种政治统治形式就被称作“封建”,这种社会叫做封建社会。
+
+封建“这个词最初出自《左传》,里面有句话叫做“封建亲戚,以藩屏周”,就是说分封亲信出去建立诸侯国,作为周朝王室领地的屏障。**只有这种封土建邦、分封割据的状态,才叫做封建。**
+
+封建社会的一大特征是,最高统治者是没有权力干涉诸侯国内部事务的,诸侯们确实是最高统治者的封臣,但某种意义上也像是个合伙人,都有比较强的独立性。
+
+周朝的时候,诸侯都承认周天子是最高权威,但周天子并不能管诸侯国内部的事情。周朝在这个过程中建立了封建社会,但周天子又逐渐衰落了。在周天子衰落之后,历史的主角就变成了那些诸侯。诸侯们彼此不断竞争,最终终结了中国的封建社会。
+
+## 封建社会的终结【春秋末期、战国初期】【中原】
+到了西周后期,周天子的影响力越来越差,最终被迫迁都洛阳,中国历史进入到东周。
+
+东周又分成了舂秋战国两个时期,**春秋末期出现了一些重要的技术发展,它带来了新的经济和人力资源,打破了过去的社会均衡,封建社会当中的贵族秩序崩塌了，封建社会也在春秋战国时代走上末日。**
+
+### 战争的逻辑的变化
+春秋之前的的战争十分注重礼仪性(战争都是贵族在参与，这就导致了参与人数并不多，他们认为战争是一件高贵的事，他们的战争可能就是比谁的正步踢得好)。但到了春秋中后期,随着楚国(楚国是个土生政权,并不是周天子分封的诸侯国，它的文化和中原有很大区别,也不大在乎中原的礼仪之类的东西,在当时的中原诸侯看来它就是个蛮夷之邦。)的加入，战争变成以砍死人为目的了。也正是由于这个战争逻辑的变化,才把中国引向了大一统。
+
+### 两个技术变迁
+诸侯分封次级诸侯，随着次级诸侯势力的增大，诸侯和次级诸侯的关系同周天子和诸侯的关系一样。在春秋末期、战国初期,出现了两个重要的技术变迁,让诸侯力量的扩大有了可能。正是因为这两次技术变革,打破了君主和封臣之间的力量均衡,周厉王当初搞不定自己下级的事,现在诸侯可以做到了,也就是诸侯能够搞定这些次级诸侯。
+
+这两个技术变迁,一个是铁器和牛耕的农业生产技术,一个是竹简这种知识传播技术。
+
+>铁器和牛耕 - 农业生产技术
+
+铁器与牛耕的出现,提升了平民的劳动效率。过去,他们的耕种效率很低,只能在贵族控制的公田、又叫井田上种地,没有能力再去开垦自己的私田了;但是,铁器和牛耕让生产效率大大提升了,平民有余力去开垦自己的私田,甚至索性就从贵族控制的井田上跑路了。此时君主、贵族、平民三者之间的一种复杂博弈关系就出现了。注意,这儿所说的君主,指的就是周天子封的诸侯,贵族指的就是诸侯所封的次级诸侯,这会儿的历史已经没周天子什么事儿了。
+
+君主向耕种私田的平民提供保护,平民向君主交税。平民从井田上越跑越多,贵族所控制的井田制就逐渐瓦解了,贵族的力量也逐渐削弱了。君主开始获得相对于贵族的优势。
+
+>竹简 - 知识传播技术
+
+ 知识传播的成本急剧下降,一般的贵族子弟、甚至运气好的普通百姓,都有机会学习文字获得知识了。由于多年的人口膨胀,这个时候出现了很多有文化、却无法获得一块封地的贵族子弟,他们就变成游士,到处寻找把自己卖个好价钱的机会。
+
+君主们早就想养一群可控的自己人了。什么样的人最好用呢?
+
+第一,他们要在本国没有根基,没资本对抗君主;
+第二,他们的地位尊荣都取决于君主的赏赐,就有动力与君主相配合。
+
+从别国跑来的游士完全符合这两点要求。君主与游士拍即合,游士成为依附于君主的私人人事班底。这个人事班底,后来就发展为官僚制。
+
+官僚和贵族的区别在于,本质上来说,官僚没有独立性,他们是职业经理人,其地位取决于君主的意志;贵族有独立性,他们是准合伙人,君主有大事必须和他们商量着来。游士的出现,终于让君主们可以全方位碾压贵族封臣,诸侯国也就从君主与贵族共治的结构,转向君主说了算的官僚制结构。
+
+### 变法
+
+这个过程在历史上被叫作什么呢?
+
+变法! 没错,魏国的李悝变法、秦国的商鞅变法等等,就是这样展开的。
+
+来自其他国家的游士,成了各诸侯国的新贵,他们压制住所在国的大贵族,把君主的意志贯彻下去。随着各种变法的展开,中国历史就进入到了战国时代。
+
+对君主来说,这回有办法把平民也动员起来了。你们虽然不是贵族血统,但你们可以立军功。只要你有办法从战场上拎回更多的人头,你也有机会上升到比贵族还高的地位。这种激励可不得了,战争的规模和频次急剧上升,大规模的灭国之战很容易就爆发了。灭国之战都到什么量级呢?比如很多人推崇的战神白起,一场战役就会坑杀赵国的40万降兵,这都在变法之后成为可能，变法这个事情也有传染性,谁最先变法,谁的战争效率就大幅上升;其他国家如果不跟上,就只能等着挨打。
+
+**随着各国陆续变法,各诸侯国内部的旧贵族阶层被一扫而空**。变法之后,君主能决定军功的标准,也就能决定官僚新贵们的地位高低,**君主对国家的控制力就变得更强**,再没有能够约束君主的力量,**分封割据的封建社会也就逐渐走上了终结之日**,战争逻辑的变化,影响还不止于此,当战争规模扩大到了诸侯国承受不起的时候,中国也就开始走向大一统。
+
+## 诸子百家的三大流派【春秋后期】【中原】
+春秋后期,天下大乱,礼崩乐坏。人们突然发现赖以理解世界的坐标系没有了,世界的意义丧失了。而这种时候,就是思想大爆发的时候。
+
+诸子百家,根据他们对待传统不同的态度,可以分为三类:一类是力挺传统（**克己复礼**）,代表就是儒家;一类是抛弃传统（**以法代礼**）,代表就是法家;还有一类是不在乎传统（出世，**无为而治**）,代表就是道家。
+
+### 儒家
+孔子认为复古的路径是“克己复礼”,就是要克制自己的各种冲动,依照传统留下来的"礼"的要求来做事。这样就能达到儒家的最高理想,“仁”。
+
+>如果你理解孔子是儒家的开创者,莫不如把他理解为此前巫师传统的集大成者。
+
+儒家是从商周两朝的巫师系统发展出来的,巫师就是古代沟通天意与人事的神职人员，这种工作主要通过占卜和祭祀来完成。祭祀这属于最高的“礼”,而巫师们就是“礼”的具体操作者与记录者。
+
+到了礼崩乐坏的时候,如果要想复古,第步肯定得先说清楚这个“古”究竟是什么。巫师系统有这方面的很多记录,当然是最合适的解说人选,他们由此就逐渐发展为儒家。
+
+### 法家
+
+儒家强调恢复“礼”,“礼”来自传统,贵族是“礼"的载体;法家强调创建“法”,“法”出自君主意志,官僚是法的执行者。
+
+>法家常在别国成事
+
+根据君主、贵族、官僚的博弈关系,各诸侯国的君主们肯定不会愿意接受儒家,而更愿意接受法所以孔子孟子都曾周游列国,都没得到过重用,反倒是法家的人占据各种高位。有趣的是,法家的鼓吹者往往在本国是不受欢迎的,无论是商鞅还是李斯,都是在别国建功立业。韩非虽然在别国没有能够建立功业,但在本国也从没获得过机会。原因在于,君主需要官僚在本国没有根基,才能听使唤;倘若是出身本国的法家,他总会有各种根基,这种人又太懂得法术势,很容易成为君主忌惮的对象。脱离了家乡的游士,如漂泊浮萍,孤身人,荣辱富贵都依赖于君主,君主最喜欢了。所以,法家只能在别国成事。
+
+### 道家
+
+顺其自然,让世界、让百姓自由自主地活动,事情自然就好了,这就叫“无为而治”。
+
+道家认为,正是各种入世的念头才把事情搞糟了,倘若不再追求转瞬即逝的现世成就,天地一下子就宽了。
+
+## 周秦之变【周-秦-汉】【中原】
+
+周秦之变对中国的思想史还带来个自然延伸的影响,就是我们在历史上看到的,从秦皇到汉武,帝国的官方思想经历了**从法家到道家再到儒家**的转换过程。
+
+### 周秦之变的“法家逻辑”
+百家争鸣的诸多学说,哪一种更注重提升战争效率,它就会获得诸侯们在政治上的更多支持。从中胜出的就是法家。但你用法家就能够征服天下,却不能仅仅用法家来治理天下。
+
+### 汉高祖的“无为而治”
+为什么汉高祖会选择道家呢?最根本的原因在于力量均衡。
+
+刘邦起家之前是个平民百姓,征服天下只能靠团结足够多的人。刘邦能够吸引一群重要将领和谋士追随自己,不是因为自己有力量,而是因为有威信。刘邦和这些人近乎是合伙人的关系,并没有压倒性力量来钳制他们,反倒会被这些兄弟给制衡住。这么一来,皇帝想要专制也不可能,**无为而治只是面对强大合伙人时的无奈之举。**
+
+### 汉武帝的“独尊儒术”
+“阳儒阴法",又称“**外儒内法**"。什么意思呢?从观念层面来看,是儒家在主导,儒生解读着天意,君主也不敢完全违背儒家的教导而行事。儒家表面上的迂腐,却为君主划出了大致的行动边界;但在具体的制度设计上,却还是法家逻辑。这样一来,**对君主来说,治理的效率有了,安抚民心的口径也有了。**
+
+## 汉人王朝为何无法统治长城以北【汉】【中原】
+这个问题,其底层是由儒家文化以及儒家文化的地理依赖性决定的。
+
+### 究竟什么是汉人
+**只要是接受儒家文化,并按儒家文化的指导生活的人,在古代就被视作汉人。**
+
+### 儒家文化的地理依赖性
+儒家文化光有个体心灵的皈依远远不够,个体还必须生活在一种特定的人际关系结构当中才行。
+
+比如,“三从四德三纲五常"等等这些规矩,都是对某种人际关系的规定,脱离开人际关系根本就没法展开。把你一个人扔荒岛上,还让你三从四德,你肯定做不到。
+
+儒家文化所要求的这种特定的人际关系,首先就要求有比较稳定的家庭组织,而稳定的家庭组织,前提是你得是定居的。
+
+定居的前提是农耕,而农耕有一个最硬性的约束条件,就是年降水量。东亚大陆上,如果一个地方年降水量少于400毫米的话,靠农耕是活不下去的。
+
+那么,东亚大陆的400毫米等降雨线在哪儿呢?
+
+这条400毫米等降雨线,差不多和长城重合。长城再往北,年降水量就不足400毫米了。也就是说,儒家帝国在农耕地区的扩张极限,就是400毫米等降雨线。于是在这里,儒家帝国修建了长城。长城再往北就是游牧地区了。
+
+在古代社会,由于农耕对降雨量的要求,使得你要是越过了长城以北,还想活得下去的话,就必须游牧化,否则是死路一条。而一旦游牧化之后,就意味着中原式的人际关系结构、家庭结构等等都没有基础了,无法再按照儒家的方式来生活了。
+
+**儒家文化有一种地理依赖性。因为自然生态原因,儒家越不过去长城以北、嘉峪关以西。儒家文化只能在中原地区展开。**
+
+### 中原和草原的继承逻辑区别
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/181105/dFAEllbB47.png)
+
+官僚制帝国有个很重要的特征,就是君主和官僚,在功能上是有分工的。君主的首要功能,是象征正当性。所以,君主的能力只排在第二位,第一重要的是君位继承的稳定性。嫡长子资格是最容易达成这种共识的。所以,中原的继承原则就稳定在嫡长子继承制上了。',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->saveNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000509s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001398s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `title`='中国史纲',`content`='# 中国史纲\n[TOC]\n## 中国历史的时空坐标\n时间和空间加在一块,才是完整的历史。\n### 四个时间坐标点\n中国历史发生过几次重要的转型,这些转型推动着中国历史向前的发展。\n\n1.第一个转型,是**商周之变**,就是从商朝到周朝的转型。\n\n这次转型之后,我们开始有了“中国”这个概念,中华文明当中最初的普世主义理想开始出现了。\n\n2.第二个转型,**周秦之变**,就是从周朝到秦朝的转型。\n\n这次转型,让中原从分封割据的局面进入到大一统的局面,中国历史也开始超越于中原之上,中原与草原的相互塑造和对抗开始成为中国历史的大脉络。\n\n3.第三个转型,**唐宋之变**,就是从唐朝到宋朝的转型。\n\n这次转型,让中国的社会结构从豪族社会进入到平民社会,此后中国历史再无长期的分裂,大一统开始成为一个不可逆的历史过程。在先秦之后,中国的文化在宋朝迎来了又一次大爆发,有些西方学者甚至称这是中国的文艺复兴。这次文化爆发,不仅决定了此后将近一千年的中国文化气质,也决定了日本、朝鲜、越南等其他儒教国家的文化气质。\n\n4.第四个转型,就是**清朝末期开始的古今之变**,中国开始从古代社会向现代社会进行艰难转型。\n\n这个过程带来了一系列轰轰烈烈的历史过程,转型过程直到今天仍在继续,还未完成。\n\n### 五个空间坐标点\n草原、中原、海洋、西域、高原。\n\n这几个大的空间,彼此之间有着极为深刻的相互依赖相互塑造的关系,以至于脱离开一方就完全解释不了另一方,所以它们加在一块构成一个体系。\n\n## 中国的概念和中华文明的普世主义理想【商周】【中原】\n### 历史上第一次出现「中国」\n周朝的第二位君主周成王,兴建了东都洛阳城,当时有个叫做「何」的贵族,这人铸了一件青铜器纪念这个事儿,1963年这个青铜器在陕西宝鸡被发现,今天称其为「何尊」，「何尊」的底部铸了一百多个字,里面提到,周武王说要\"宅兹中国”,就是说要“住在中国”,这是\"中国\"这个词的最早来源。\n\n什么叫中国？**达到了文明最高水准的地方,就是文明意义上的中心,古人就管这种地方叫做「中国」。**\n### 中华文明的普世主义理想：究竟天命是降于周人呢,还是天命降于周王\n商朝是由“商人\"。他们认为天命降于商人。为了让天能够永远地保佑自己,商人会经常地进行大规模的祭祀活动,祭祀当中会大量用到活人做祭品。\n\n这些被献祭的人从哪来呢?\n\n从对外战争掠夺的羌人而来。所谓的羌人就是生活在商王朝西部的、除了商朝人以外的所有人。\n\n商人的这种天命观,肯定会受到羌人的抵抗。其中,周人是最主要的一支抵抗力量,他们逐渐组织了很多苦不堪言的羌人群体来反抗商朝，反抗的时候,在周人中间有过一个观念层面的争论,究竟天命是降于周人呢,还是天命降于周王?争论的结果是,天命降于周王。\n\n这个观念变化太重要了。初看上去,这似乎是把天命的载体变得狭隘了,实际上是把它变得普世了。\n\n为什么这么说呢?如果天命是降于周人,那就和此前降于商人的路数差不多,周人的岁月要想静好,就得时刻压制住所有不是周人的群体。这样的话,周人和商人征战,谁胜谁败就不好说了。因为,对其他羌人群体来说,打完这一仗,十有八九只不过换了个地方拿我们献祭,凭啥要跟你混啊?而**如果天命是降于周王,则周王便是天下的共主,他不仅仅要为周人主持正义,而是要为全天下人主持正义,这是一种真正的普世主义观念**。\n\n### 什么是封建社会\n推翻了商朝之后,周朝又是如何具体建立它的统治方式呢?那就是,分封制。周天子向下分封了他的大量亲戚和重臣,意图依靠他们形成的藩属诸侯国,来拱卫周王。这样一种政治统治形式就被称作“封建”,这种社会叫做封建社会。\n\n封建“这个词最初出自《左传》,里面有句话叫做“封建亲戚,以藩屏周”,就是说分封亲信出去建立诸侯国,作为周朝王室领地的屏障。**只有这种封土建邦、分封割据的状态,才叫做封建。**\n\n封建社会的一大特征是,最高统治者是没有权力干涉诸侯国内部事务的,诸侯们确实是最高统治者的封臣,但某种意义上也像是个合伙人,都有比较强的独立性。\n\n周朝的时候,诸侯都承认周天子是最高权威,但周天子并不能管诸侯国内部的事情。周朝在这个过程中建立了封建社会,但周天子又逐渐衰落了。在周天子衰落之后,历史的主角就变成了那些诸侯。诸侯们彼此不断竞争,最终终结了中国的封建社会。\n\n## 封建社会的终结【春秋末期、战国初期】【中原】\n到了西周后期,周天子的影响力越来越差,最终被迫迁都洛阳,中国历史进入到东周。\n\n东周又分成了舂秋战国两个时期,**春秋末期出现了一些重要的技术发展,它带来了新的经济和人力资源,打破了过去的社会均衡,封建社会当中的贵族秩序崩塌了，封建社会也在春秋战国时代走上末日。**\n\n### 战争的逻辑的变化\n春秋之前的的战争十分注重礼仪性(战争都是贵族在参与，这就导致了参与人数并不多，他们认为战争是一件高贵的事，他们的战争可能就是比谁的正步踢得好)。但到了春秋中后期,随着楚国(楚国是个土生政权,并不是周天子分封的诸侯国，它的文化和中原有很大区别,也不大在乎中原的礼仪之类的东西,在当时的中原诸侯看来它就是个蛮夷之邦。)的加入，战争变成以砍死人为目的了。也正是由于这个战争逻辑的变化,才把中国引向了大一统。\n\n### 两个技术变迁\n诸侯分封次级诸侯，随着次级诸侯势力的增大，诸侯和次级诸侯的关系同周天子和诸侯的关系一样。在春秋末期、战国初期,出现了两个重要的技术变迁,让诸侯力量的扩大有了可能。正是因为这两次技术变革,打破了君主和封臣之间的力量均衡,周厉王当初搞不定自己下级的事,现在诸侯可以做到了,也就是诸侯能够搞定这些次级诸侯。\n\n这两个技术变迁,一个是铁器和牛耕的农业生产技术,一个是竹简这种知识传播技术。\n\n>铁器和牛耕 - 农业生产技术\n\n铁器与牛耕的出现,提升了平民的劳动效率。过去,他们的耕种效率很低,只能在贵族控制的公田、又叫井田上种地,没有能力再去开垦自己的私田了;但是,铁器和牛耕让生产效率大大提升了,平民有余力去开垦自己的私田,甚至索性就从贵族控制的井田上跑路了。此时君主、贵族、平民三者之间的一种复杂博弈关系就出现了。注意,这儿所说的君主,指的就是周天子封的诸侯,贵族指的就是诸侯所封的次级诸侯,这会儿的历史已经没周天子什么事儿了。\n\n君主向耕种私田的平民提供保护,平民向君主交税。平民从井田上越跑越多,贵族所控制的井田制就逐渐瓦解了,贵族的力量也逐渐削弱了。君主开始获得相对于贵族的优势。\n\n>竹简 - 知识传播技术\n\n 知识传播的成本急剧下降,一般的贵族子弟、甚至运气好的普通百姓,都有机会学习文字获得知识了。由于多年的人口膨胀,这个时候出现了很多有文化、却无法获得一块封地的贵族子弟,他们就变成游士,到处寻找把自己卖个好价钱的机会。\n\n君主们早就想养一群可控的自己人了。什么样的人最好用呢?\n\n第一,他们要在本国没有根基,没资本对抗君主;\n第二,他们的地位尊荣都取决于君主的赏赐,就有动力与君主相配合。\n\n从别国跑来的游士完全符合这两点要求。君主与游士拍即合,游士成为依附于君主的私人人事班底。这个人事班底,后来就发展为官僚制。\n\n官僚和贵族的区别在于,本质上来说,官僚没有独立性,他们是职业经理人,其地位取决于君主的意志;贵族有独立性,他们是准合伙人,君主有大事必须和他们商量着来。游士的出现,终于让君主们可以全方位碾压贵族封臣,诸侯国也就从君主与贵族共治的结构,转向君主说了算的官僚制结构。\n\n### 变法\n\n这个过程在历史上被叫作什么呢?\n\n变法! 没错,魏国的李悝变法、秦国的商鞅变法等等,就是这样展开的。\n\n来自其他国家的游士,成了各诸侯国的新贵,他们压制住所在国的大贵族,把君主的意志贯彻下去。随着各种变法的展开,中国历史就进入到了战国时代。\n\n对君主来说,这回有办法把平民也动员起来了。你们虽然不是贵族血统,但你们可以立军功。只要你有办法从战场上拎回更多的人头,你也有机会上升到比贵族还高的地位。这种激励可不得了,战争的规模和频次急剧上升,大规模的灭国之战很容易就爆发了。灭国之战都到什么量级呢?比如很多人推崇的战神白起,一场战役就会坑杀赵国的40万降兵,这都在变法之后成为可能，变法这个事情也有传染性,谁最先变法,谁的战争效率就大幅上升;其他国家如果不跟上,就只能等着挨打。\n\n**随着各国陆续变法,各诸侯国内部的旧贵族阶层被一扫而空**。变法之后,君主能决定军功的标准,也就能决定官僚新贵们的地位高低,**君主对国家的控制力就变得更强**,再没有能够约束君主的力量,**分封割据的封建社会也就逐渐走上了终结之日**,战争逻辑的变化,影响还不止于此,当战争规模扩大到了诸侯国承受不起的时候,中国也就开始走向大一统。\n\n## 诸子百家的三大流派【春秋后期】【中原】\n春秋后期,天下大乱,礼崩乐坏。人们突然发现赖以理解世界的坐标系没有了,世界的意义丧失了。而这种时候,就是思想大爆发的时候。\n\n诸子百家,根据他们对待传统不同的态度,可以分为三类:一类是力挺传统（**克己复礼**）,代表就是儒家;一类是抛弃传统（**以法代礼**）,代表就是法家;还有一类是不在乎传统（出世，**无为而治**）,代表就是道家。\n\n### 儒家\n孔子认为复古的路径是“克己复礼”,就是要克制自己的各种冲动,依照传统留下来的\"礼\"的要求来做事。这样就能达到儒家的最高理想,“仁”。\n\n>如果你理解孔子是儒家的开创者,莫不如把他理解为此前巫师传统的集大成者。\n\n儒家是从商周两朝的巫师系统发展出来的,巫师就是古代沟通天意与人事的神职人员，这种工作主要通过占卜和祭祀来完成。祭祀这属于最高的“礼”,而巫师们就是“礼”的具体操作者与记录者。\n\n到了礼崩乐坏的时候,如果要想复古,第步肯定得先说清楚这个“古”究竟是什么。巫师系统有这方面的很多记录,当然是最合适的解说人选,他们由此就逐渐发展为儒家。\n\n### 法家\n\n儒家强调恢复“礼”,“礼”来自传统,贵族是“礼\"的载体;法家强调创建“法”,“法”出自君主意志,官僚是法的执行者。\n\n>法家常在别国成事\n\n根据君主、贵族、官僚的博弈关系,各诸侯国的君主们肯定不会愿意接受儒家,而更愿意接受法所以孔子孟子都曾周游列国,都没得到过重用,反倒是法家的人占据各种高位。有趣的是,法家的鼓吹者往往在本国是不受欢迎的,无论是商鞅还是李斯,都是在别国建功立业。韩非虽然在别国没有能够建立功业,但在本国也从没获得过机会。原因在于,君主需要官僚在本国没有根基,才能听使唤;倘若是出身本国的法家,他总会有各种根基,这种人又太懂得法术势,很容易成为君主忌惮的对象。脱离了家乡的游士,如漂泊浮萍,孤身人,荣辱富贵都依赖于君主,君主最喜欢了。所以,法家只能在别国成事。\n\n### 道家\n\n顺其自然,让世界、让百姓自由自主地活动,事情自然就好了,这就叫“无为而治”。\n\n道家认为,正是各种入世的念头才把事情搞糟了,倘若不再追求转瞬即逝的现世成就,天地一下子就宽了。\n\n## 周秦之变【周-秦-汉】【中原】\n\n周秦之变对中国的思想史还带来个自然延伸的影响,就是我们在历史上看到的,从秦皇到汉武,帝国的官方思想经历了**从法家到道家再到儒家**的转换过程。\n\n### 周秦之变的“法家逻辑”\n百家争鸣的诸多学说,哪一种更注重提升战争效率,它就会获得诸侯们在政治上的更多支持。从中胜出的就是法家。但你用法家就能够征服天下,却不能仅仅用法家来治理天下。\n\n### 汉高祖的“无为而治”\n为什么汉高祖会选择道家呢?最根本的原因在于力量均衡。\n\n刘邦起家之前是个平民百姓,征服天下只能靠团结足够多的人。刘邦能够吸引一群重要将领和谋士追随自己,不是因为自己有力量,而是因为有威信。刘邦和这些人近乎是合伙人的关系,并没有压倒性力量来钳制他们,反倒会被这些兄弟给制衡住。这么一来,皇帝想要专制也不可能,**无为而治只是面对强大合伙人时的无奈之举。**\n\n### 汉武帝的“独尊儒术”\n“阳儒阴法\",又称“**外儒内法**\"。什么意思呢?从观念层面来看,是儒家在主导,儒生解读着天意,君主也不敢完全违背儒家的教导而行事。儒家表面上的迂腐,却为君主划出了大致的行动边界;但在具体的制度设计上,却还是法家逻辑。这样一来,**对君主来说,治理的效率有了,安抚民心的口径也有了。**\n\n## 汉人王朝为何无法统治长城以北【汉】【中原】\n这个问题,其底层是由儒家文化以及儒家文化的地理依赖性决定的。\n\n### 究竟什么是汉人\n**只要是接受儒家文化,并按儒家文化的指导生活的人,在古代就被视作汉人。**\n\n### 儒家文化的地理依赖性\n儒家文化光有个体心灵的皈依远远不够,个体还必须生活在一种特定的人际关系结构当中才行。\n\n比如,“三从四德三纲五常\"等等这些规矩,都是对某种人际关系的规定,脱离开人际关系根本就没法展开。把你一个人扔荒岛上,还让你三从四德,你肯定做不到。\n\n儒家文化所要求的这种特定的人际关系,首先就要求有比较稳定的家庭组织,而稳定的家庭组织,前提是你得是定居的。\n\n定居的前提是农耕,而农耕有一个最硬性的约束条件,就是年降水量。东亚大陆上,如果一个地方年降水量少于400毫米的话,靠农耕是活不下去的。\n\n那么,东亚大陆的400毫米等降雨线在哪儿呢?\n\n这条400毫米等降雨线,差不多和长城重合。长城再往北,年降水量就不足400毫米了。也就是说,儒家帝国在农耕地区的扩张极限,就是400毫米等降雨线。于是在这里,儒家帝国修建了长城。长城再往北就是游牧地区了。\n\n在古代社会,由于农耕对降雨量的要求,使得你要是越过了长城以北,还想活得下去的话,就必须游牧化,否则是死路一条。而一旦游牧化之后,就意味着中原式的人际关系结构、家庭结构等等都没有基础了,无法再按照儒家的方式来生活了。\n\n**儒家文化有一种地理依赖性。因为自然生态原因,儒家越不过去长城以北、嘉峪关以西。儒家文化只能在中原地区展开。**\n\n### 中原和草原的继承逻辑区别\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/181105/dFAEllbB47.png)\n\n官僚制帝国有个很重要的特征,就是君主和官僚,在功能上是有分工的。君主的首要功能,是象征正当性。所以,君主的能力只排在第二位,第一重要的是君位继承的稳定性。嫡长子资格是最容易达成这种共识的。所以,中原的继承原则就稳定在嫡长子继承制上了。',`groups`='Default',`p_id`=1  WHERE  `id` = 1 [ RunTime:0.000671s ]
+---------------------------------------------------------------
+[ 2018-11-05T23:03:53+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/savenote.html
+[ info ] qingrang.top/daily/admin/note/savenote.html [运行时间：0.053588s][吞吐率：18.66req/s] [内存消耗：2,164.39kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'savenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '48405',
+  'accept' => 'text/plain, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/233.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416; PHPSESSID=eb81ogaab9jatuojts3q1fv7r6',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'ogroup' => 'Essays',
+  'context' => '# 中国史纲
+[TOC]
+## 中国历史的时空坐标
+时间和空间加在一块,才是完整的历史。
+### 四个时间坐标点
+中国历史发生过几次重要的转型,这些转型推动着中国历史向前的发展。
+
+1.第一个转型,是**商周之变**,就是从商朝到周朝的转型。
+
+这次转型之后,我们开始有了“中国”这个概念,中华文明当中最初的普世主义理想开始出现了。
+
+2.第二个转型,**周秦之变**,就是从周朝到秦朝的转型。
+
+这次转型,让中原从分封割据的局面进入到大一统的局面,中国历史也开始超越于中原之上,中原与草原的相互塑造和对抗开始成为中国历史的大脉络。
+
+3.第三个转型,**唐宋之变**,就是从唐朝到宋朝的转型。
+
+这次转型,让中国的社会结构从豪族社会进入到平民社会,此后中国历史再无长期的分裂,大一统开始成为一个不可逆的历史过程。在先秦之后,中国的文化在宋朝迎来了又一次大爆发,有些西方学者甚至称这是中国的文艺复兴。这次文化爆发,不仅决定了此后将近一千年的中国文化气质,也决定了日本、朝鲜、越南等其他儒教国家的文化气质。
+
+4.第四个转型,就是**清朝末期开始的古今之变**,中国开始从古代社会向现代社会进行艰难转型。
+
+这个过程带来了一系列轰轰烈烈的历史过程,转型过程直到今天仍在继续,还未完成。
+
+### 五个空间坐标点
+草原、中原、海洋、西域、高原。
+
+这几个大的空间,彼此之间有着极为深刻的相互依赖相互塑造的关系,以至于脱离开一方就完全解释不了另一方,所以它们加在一块构成一个体系。
+
+## 中国的概念和中华文明的普世主义理想【商周】【中原】
+### 历史上第一次出现「中国」
+周朝的第二位君主周成王,兴建了东都洛阳城,当时有个叫做「何」的贵族,这人铸了一件青铜器纪念这个事儿,1963年这个青铜器在陕西宝鸡被发现,今天称其为「何尊」，「何尊」的底部铸了一百多个字,里面提到,周武王说要"宅兹中国”,就是说要“住在中国”,这是"中国"这个词的最早来源。
+
+什么叫中国？**达到了文明最高水准的地方,就是文明意义上的中心,古人就管这种地方叫做「中国」。**
+### 中华文明的普世主义理想：究竟天命是降于周人呢,还是天命降于周王
+商朝是由“商人"。他们认为天命降于商人。为了让天能够永远地保佑自己,商人会经常地进行大规模的祭祀活动,祭祀当中会大量用到活人做祭品。
+
+这些被献祭的人从哪来呢?
+
+从对外战争掠夺的羌人而来。所谓的羌人就是生活在商王朝西部的、除了商朝人以外的所有人。
+
+商人的这种天命观,肯定会受到羌人的抵抗。其中,周人是最主要的一支抵抗力量,他们逐渐组织了很多苦不堪言的羌人群体来反抗商朝，反抗的时候,在周人中间有过一个观念层面的争论,究竟天命是降于周人呢,还是天命降于周王?争论的结果是,天命降于周王。
+
+这个观念变化太重要了。初看上去,这似乎是把天命的载体变得狭隘了,实际上是把它变得普世了。
+
+为什么这么说呢?如果天命是降于周人,那就和此前降于商人的路数差不多,周人的岁月要想静好,就得时刻压制住所有不是周人的群体。这样的话,周人和商人征战,谁胜谁败就不好说了。因为,对其他羌人群体来说,打完这一仗,十有八九只不过换了个地方拿我们献祭,凭啥要跟你混啊?而**如果天命是降于周王,则周王便是天下的共主,他不仅仅要为周人主持正义,而是要为全天下人主持正义,这是一种真正的普世主义观念**。
+
+### 什么是封建社会
+推翻了商朝之后,周朝又是如何具体建立它的统治方式呢?那就是,分封制。周天子向下分封了他的大量亲戚和重臣,意图依靠他们形成的藩属诸侯国,来拱卫周王。这样一种政治统治形式就被称作“封建”,这种社会叫做封建社会。
+
+封建“这个词最初出自《左传》,里面有句话叫做“封建亲戚,以藩屏周”,就是说分封亲信出去建立诸侯国,作为周朝王室领地的屏障。**只有这种封土建邦、分封割据的状态,才叫做封建。**
+
+封建社会的一大特征是,最高统治者是没有权力干涉诸侯国内部事务的,诸侯们确实是最高统治者的封臣,但某种意义上也像是个合伙人,都有比较强的独立性。
+
+周朝的时候,诸侯都承认周天子是最高权威,但周天子并不能管诸侯国内部的事情。周朝在这个过程中建立了封建社会,但周天子又逐渐衰落了。在周天子衰落之后,历史的主角就变成了那些诸侯。诸侯们彼此不断竞争,最终终结了中国的封建社会。
+
+## 封建社会的终结【春秋末期、战国初期】【中原】
+到了西周后期,周天子的影响力越来越差,最终被迫迁都洛阳,中国历史进入到东周。
+
+东周又分成了舂秋战国两个时期,**春秋末期出现了一些重要的技术发展,它带来了新的经济和人力资源,打破了过去的社会均衡,封建社会当中的贵族秩序崩塌了，封建社会也在春秋战国时代走上末日。**
+
+### 战争的逻辑的变化
+春秋之前的的战争十分注重礼仪性(战争都是贵族在参与，这就导致了参与人数并不多，他们认为战争是一件高贵的事，他们的战争可能就是比谁的正步踢得好)。但到了春秋中后期,随着楚国(楚国是个土生政权,并不是周天子分封的诸侯国，它的文化和中原有很大区别,也不大在乎中原的礼仪之类的东西,在当时的中原诸侯看来它就是个蛮夷之邦。)的加入，战争变成以砍死人为目的了。也正是由于这个战争逻辑的变化,才把中国引向了大一统。
+
+### 两个技术变迁
+诸侯分封次级诸侯，随着次级诸侯势力的增大，诸侯和次级诸侯的关系同周天子和诸侯的关系一样。在春秋末期、战国初期,出现了两个重要的技术变迁,让诸侯力量的扩大有了可能。正是因为这两次技术变革,打破了君主和封臣之间的力量均衡,周厉王当初搞不定自己下级的事,现在诸侯可以做到了,也就是诸侯能够搞定这些次级诸侯。
+
+这两个技术变迁,一个是铁器和牛耕的农业生产技术,一个是竹简这种知识传播技术。
+
+>铁器和牛耕 - 农业生产技术
+
+铁器与牛耕的出现,提升了平民的劳动效率。过去,他们的耕种效率很低,只能在贵族控制的公田、又叫井田上种地,没有能力再去开垦自己的私田了;但是,铁器和牛耕让生产效率大大提升了,平民有余力去开垦自己的私田,甚至索性就从贵族控制的井田上跑路了。此时君主、贵族、平民三者之间的一种复杂博弈关系就出现了。注意,这儿所说的君主,指的就是周天子封的诸侯,贵族指的就是诸侯所封的次级诸侯,这会儿的历史已经没周天子什么事儿了。
+
+君主向耕种私田的平民提供保护,平民向君主交税。平民从井田上越跑越多,贵族所控制的井田制就逐渐瓦解了,贵族的力量也逐渐削弱了。君主开始获得相对于贵族的优势。
+
+>竹简 - 知识传播技术
+
+ 知识传播的成本急剧下降,一般的贵族子弟、甚至运气好的普通百姓,都有机会学习文字获得知识了。由于多年的人口膨胀,这个时候出现了很多有文化、却无法获得一块封地的贵族子弟,他们就变成游士,到处寻找把自己卖个好价钱的机会。
+
+君主们早就想养一群可控的自己人了。什么样的人最好用呢?
+
+第一,他们要在本国没有根基,没资本对抗君主;
+第二,他们的地位尊荣都取决于君主的赏赐,就有动力与君主相配合。
+
+从别国跑来的游士完全符合这两点要求。君主与游士拍即合,游士成为依附于君主的私人人事班底。这个人事班底,后来就发展为官僚制。
+
+官僚和贵族的区别在于,本质上来说,官僚没有独立性,他们是职业经理人,其地位取决于君主的意志;贵族有独立性,他们是准合伙人,君主有大事必须和他们商量着来。游士的出现,终于让君主们可以全方位碾压贵族封臣,诸侯国也就从君主与贵族共治的结构,转向君主说了算的官僚制结构。
+
+### 变法
+
+这个过程在历史上被叫作什么呢?
+
+变法! 没错,魏国的李悝变法、秦国的商鞅变法等等,就是这样展开的。
+
+来自其他国家的游士,成了各诸侯国的新贵,他们压制住所在国的大贵族,把君主的意志贯彻下去。随着各种变法的展开,中国历史就进入到了战国时代。
+
+对君主来说,这回有办法把平民也动员起来了。你们虽然不是贵族血统,但你们可以立军功。只要你有办法从战场上拎回更多的人头,你也有机会上升到比贵族还高的地位。这种激励可不得了,战争的规模和频次急剧上升,大规模的灭国之战很容易就爆发了。灭国之战都到什么量级呢?比如很多人推崇的战神白起,一场战役就会坑杀赵国的40万降兵,这都在变法之后成为可能，变法这个事情也有传染性,谁最先变法,谁的战争效率就大幅上升;其他国家如果不跟上,就只能等着挨打。
+
+**随着各国陆续变法,各诸侯国内部的旧贵族阶层被一扫而空**。变法之后,君主能决定军功的标准,也就能决定官僚新贵们的地位高低,**君主对国家的控制力就变得更强**,再没有能够约束君主的力量,**分封割据的封建社会也就逐渐走上了终结之日**,战争逻辑的变化,影响还不止于此,当战争规模扩大到了诸侯国承受不起的时候,中国也就开始走向大一统。
+
+## 诸子百家的三大流派【春秋后期】【中原】
+春秋后期,天下大乱,礼崩乐坏。人们突然发现赖以理解世界的坐标系没有了,世界的意义丧失了。而这种时候,就是思想大爆发的时候。
+
+诸子百家,根据他们对待传统不同的态度,可以分为三类:一类是力挺传统（**克己复礼**）,代表就是儒家;一类是抛弃传统（**以法代礼**）,代表就是法家;还有一类是不在乎传统（出世，**无为而治**）,代表就是道家。
+
+### 儒家
+孔子认为复古的路径是“克己复礼”,就是要克制自己的各种冲动,依照传统留下来的"礼"的要求来做事。这样就能达到儒家的最高理想,“仁”。
+
+>如果你理解孔子是儒家的开创者,莫不如把他理解为此前巫师传统的集大成者。
+
+儒家是从商周两朝的巫师系统发展出来的,巫师就是古代沟通天意与人事的神职人员，这种工作主要通过占卜和祭祀来完成。祭祀这属于最高的“礼”,而巫师们就是“礼”的具体操作者与记录者。
+
+到了礼崩乐坏的时候,如果要想复古,第步肯定得先说清楚这个“古”究竟是什么。巫师系统有这方面的很多记录,当然是最合适的解说人选,他们由此就逐渐发展为儒家。
+
+### 法家
+
+儒家强调恢复“礼”,“礼”来自传统,贵族是“礼"的载体;法家强调创建“法”,“法”出自君主意志,官僚是法的执行者。
+
+>法家常在别国成事
+
+根据君主、贵族、官僚的博弈关系,各诸侯国的君主们肯定不会愿意接受儒家,而更愿意接受法所以孔子孟子都曾周游列国,都没得到过重用,反倒是法家的人占据各种高位。有趣的是,法家的鼓吹者往往在本国是不受欢迎的,无论是商鞅还是李斯,都是在别国建功立业。韩非虽然在别国没有能够建立功业,但在本国也从没获得过机会。原因在于,君主需要官僚在本国没有根基,才能听使唤;倘若是出身本国的法家,他总会有各种根基,这种人又太懂得法术势,很容易成为君主忌惮的对象。脱离了家乡的游士,如漂泊浮萍,孤身人,荣辱富贵都依赖于君主,君主最喜欢了。所以,法家只能在别国成事。
+
+### 道家
+
+顺其自然,让世界、让百姓自由自主地活动,事情自然就好了,这就叫“无为而治”。
+
+道家认为,正是各种入世的念头才把事情搞糟了,倘若不再追求转瞬即逝的现世成就,天地一下子就宽了。
+
+## 周秦之变【周-秦-汉】【中原】
+
+周秦之变对中国的思想史还带来个自然延伸的影响,就是我们在历史上看到的,从秦皇到汉武,帝国的官方思想经历了**从法家到道家再到儒家**的转换过程。
+
+### 周秦之变的“法家逻辑”
+百家争鸣的诸多学说,哪一种更注重提升战争效率,它就会获得诸侯们在政治上的更多支持。从中胜出的就是法家。但你用法家就能够征服天下,却不能仅仅用法家来治理天下。
+
+### 汉高祖的“无为而治”
+为什么汉高祖会选择道家呢?最根本的原因在于力量均衡。
+
+刘邦起家之前是个平民百姓,征服天下只能靠团结足够多的人。刘邦能够吸引一群重要将领和谋士追随自己,不是因为自己有力量,而是因为有威信。刘邦和这些人近乎是合伙人的关系,并没有压倒性力量来钳制他们,反倒会被这些兄弟给制衡住。这么一来,皇帝想要专制也不可能,**无为而治只是面对强大合伙人时的无奈之举。**
+
+### 汉武帝的“独尊儒术”
+“阳儒阴法",又称“**外儒内法**"。什么意思呢?从观念层面来看,是儒家在主导,儒生解读着天意,君主也不敢完全违背儒家的教导而行事。儒家表面上的迂腐,却为君主划出了大致的行动边界;但在具体的制度设计上,却还是法家逻辑。这样一来,**对君主来说,治理的效率有了,安抚民心的口径也有了。**
+
+## 汉人王朝为何无法统治长城以北【汉】【中原】
+这个问题,其底层是由儒家文化以及儒家文化的地理依赖性决定的。
+
+### 究竟什么是汉人
+**只要是接受儒家文化,并按儒家文化的指导生活的人,在古代就被视作汉人。**
+
+### 儒家文化的地理依赖性
+儒家文化光有个体心灵的皈依远远不够,个体还必须生活在一种特定的人际关系结构当中才行。
+
+比如,“三从四德三纲五常"等等这些规矩,都是对某种人际关系的规定,脱离开人际关系根本就没法展开。把你一个人扔荒岛上,还让你三从四德,你肯定做不到。
+
+儒家文化所要求的这种特定的人际关系,首先就要求有比较稳定的家庭组织,而稳定的家庭组织,前提是你得是定居的。
+
+定居的前提是农耕,而农耕有一个最硬性的约束条件,就是年降水量。东亚大陆上,如果一个地方年降水量少于400毫米的话,靠农耕是活不下去的。
+
+那么,东亚大陆的400毫米等降雨线在哪儿呢?
+
+这条400毫米等降雨线,差不多和长城重合。长城再往北,年降水量就不足400毫米了。也就是说,儒家帝国在农耕地区的扩张极限,就是400毫米等降雨线。于是在这里,儒家帝国修建了长城。长城再往北就是游牧地区了。
+
+在古代社会,由于农耕对降雨量的要求,使得你要是越过了长城以北,还想活得下去的话,就必须游牧化,否则是死路一条。而一旦游牧化之后,就意味着中原式的人际关系结构、家庭结构等等都没有基础了,无法再按照儒家的方式来生活了。
+
+**儒家文化有一种地理依赖性。因为自然生态原因,儒家越不过去长城以北、嘉峪关以西。儒家文化只能在中原地区展开。**
+
+### 中原和草原的继承逻辑区别
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/181105/dFAEllbB47.png)
+
+官僚制帝国有个很重要的特征,就是君主和官僚,在功能上是有分工的。君主的首要功能,是象征正当性。所以,君主的能力只排在第二位,第一重要的是君位继承的稳定性。嫡长子资格是最容易达成这种共识的。所以,中原的继承原则就稳定在嫡长子继承制上了。',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->saveNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000533s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001297s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `title`='中国史纲',`content`='# 中国史纲\n[TOC]\n## 中国历史的时空坐标\n时间和空间加在一块,才是完整的历史。\n### 四个时间坐标点\n中国历史发生过几次重要的转型,这些转型推动着中国历史向前的发展。\n\n1.第一个转型,是**商周之变**,就是从商朝到周朝的转型。\n\n这次转型之后,我们开始有了“中国”这个概念,中华文明当中最初的普世主义理想开始出现了。\n\n2.第二个转型,**周秦之变**,就是从周朝到秦朝的转型。\n\n这次转型,让中原从分封割据的局面进入到大一统的局面,中国历史也开始超越于中原之上,中原与草原的相互塑造和对抗开始成为中国历史的大脉络。\n\n3.第三个转型,**唐宋之变**,就是从唐朝到宋朝的转型。\n\n这次转型,让中国的社会结构从豪族社会进入到平民社会,此后中国历史再无长期的分裂,大一统开始成为一个不可逆的历史过程。在先秦之后,中国的文化在宋朝迎来了又一次大爆发,有些西方学者甚至称这是中国的文艺复兴。这次文化爆发,不仅决定了此后将近一千年的中国文化气质,也决定了日本、朝鲜、越南等其他儒教国家的文化气质。\n\n4.第四个转型,就是**清朝末期开始的古今之变**,中国开始从古代社会向现代社会进行艰难转型。\n\n这个过程带来了一系列轰轰烈烈的历史过程,转型过程直到今天仍在继续,还未完成。\n\n### 五个空间坐标点\n草原、中原、海洋、西域、高原。\n\n这几个大的空间,彼此之间有着极为深刻的相互依赖相互塑造的关系,以至于脱离开一方就完全解释不了另一方,所以它们加在一块构成一个体系。\n\n## 中国的概念和中华文明的普世主义理想【商周】【中原】\n### 历史上第一次出现「中国」\n周朝的第二位君主周成王,兴建了东都洛阳城,当时有个叫做「何」的贵族,这人铸了一件青铜器纪念这个事儿,1963年这个青铜器在陕西宝鸡被发现,今天称其为「何尊」，「何尊」的底部铸了一百多个字,里面提到,周武王说要\"宅兹中国”,就是说要“住在中国”,这是\"中国\"这个词的最早来源。\n\n什么叫中国？**达到了文明最高水准的地方,就是文明意义上的中心,古人就管这种地方叫做「中国」。**\n### 中华文明的普世主义理想：究竟天命是降于周人呢,还是天命降于周王\n商朝是由“商人\"。他们认为天命降于商人。为了让天能够永远地保佑自己,商人会经常地进行大规模的祭祀活动,祭祀当中会大量用到活人做祭品。\n\n这些被献祭的人从哪来呢?\n\n从对外战争掠夺的羌人而来。所谓的羌人就是生活在商王朝西部的、除了商朝人以外的所有人。\n\n商人的这种天命观,肯定会受到羌人的抵抗。其中,周人是最主要的一支抵抗力量,他们逐渐组织了很多苦不堪言的羌人群体来反抗商朝，反抗的时候,在周人中间有过一个观念层面的争论,究竟天命是降于周人呢,还是天命降于周王?争论的结果是,天命降于周王。\n\n这个观念变化太重要了。初看上去,这似乎是把天命的载体变得狭隘了,实际上是把它变得普世了。\n\n为什么这么说呢?如果天命是降于周人,那就和此前降于商人的路数差不多,周人的岁月要想静好,就得时刻压制住所有不是周人的群体。这样的话,周人和商人征战,谁胜谁败就不好说了。因为,对其他羌人群体来说,打完这一仗,十有八九只不过换了个地方拿我们献祭,凭啥要跟你混啊?而**如果天命是降于周王,则周王便是天下的共主,他不仅仅要为周人主持正义,而是要为全天下人主持正义,这是一种真正的普世主义观念**。\n\n### 什么是封建社会\n推翻了商朝之后,周朝又是如何具体建立它的统治方式呢?那就是,分封制。周天子向下分封了他的大量亲戚和重臣,意图依靠他们形成的藩属诸侯国,来拱卫周王。这样一种政治统治形式就被称作“封建”,这种社会叫做封建社会。\n\n封建“这个词最初出自《左传》,里面有句话叫做“封建亲戚,以藩屏周”,就是说分封亲信出去建立诸侯国,作为周朝王室领地的屏障。**只有这种封土建邦、分封割据的状态,才叫做封建。**\n\n封建社会的一大特征是,最高统治者是没有权力干涉诸侯国内部事务的,诸侯们确实是最高统治者的封臣,但某种意义上也像是个合伙人,都有比较强的独立性。\n\n周朝的时候,诸侯都承认周天子是最高权威,但周天子并不能管诸侯国内部的事情。周朝在这个过程中建立了封建社会,但周天子又逐渐衰落了。在周天子衰落之后,历史的主角就变成了那些诸侯。诸侯们彼此不断竞争,最终终结了中国的封建社会。\n\n## 封建社会的终结【春秋末期、战国初期】【中原】\n到了西周后期,周天子的影响力越来越差,最终被迫迁都洛阳,中国历史进入到东周。\n\n东周又分成了舂秋战国两个时期,**春秋末期出现了一些重要的技术发展,它带来了新的经济和人力资源,打破了过去的社会均衡,封建社会当中的贵族秩序崩塌了，封建社会也在春秋战国时代走上末日。**\n\n### 战争的逻辑的变化\n春秋之前的的战争十分注重礼仪性(战争都是贵族在参与，这就导致了参与人数并不多，他们认为战争是一件高贵的事，他们的战争可能就是比谁的正步踢得好)。但到了春秋中后期,随着楚国(楚国是个土生政权,并不是周天子分封的诸侯国，它的文化和中原有很大区别,也不大在乎中原的礼仪之类的东西,在当时的中原诸侯看来它就是个蛮夷之邦。)的加入，战争变成以砍死人为目的了。也正是由于这个战争逻辑的变化,才把中国引向了大一统。\n\n### 两个技术变迁\n诸侯分封次级诸侯，随着次级诸侯势力的增大，诸侯和次级诸侯的关系同周天子和诸侯的关系一样。在春秋末期、战国初期,出现了两个重要的技术变迁,让诸侯力量的扩大有了可能。正是因为这两次技术变革,打破了君主和封臣之间的力量均衡,周厉王当初搞不定自己下级的事,现在诸侯可以做到了,也就是诸侯能够搞定这些次级诸侯。\n\n这两个技术变迁,一个是铁器和牛耕的农业生产技术,一个是竹简这种知识传播技术。\n\n>铁器和牛耕 - 农业生产技术\n\n铁器与牛耕的出现,提升了平民的劳动效率。过去,他们的耕种效率很低,只能在贵族控制的公田、又叫井田上种地,没有能力再去开垦自己的私田了;但是,铁器和牛耕让生产效率大大提升了,平民有余力去开垦自己的私田,甚至索性就从贵族控制的井田上跑路了。此时君主、贵族、平民三者之间的一种复杂博弈关系就出现了。注意,这儿所说的君主,指的就是周天子封的诸侯,贵族指的就是诸侯所封的次级诸侯,这会儿的历史已经没周天子什么事儿了。\n\n君主向耕种私田的平民提供保护,平民向君主交税。平民从井田上越跑越多,贵族所控制的井田制就逐渐瓦解了,贵族的力量也逐渐削弱了。君主开始获得相对于贵族的优势。\n\n>竹简 - 知识传播技术\n\n 知识传播的成本急剧下降,一般的贵族子弟、甚至运气好的普通百姓,都有机会学习文字获得知识了。由于多年的人口膨胀,这个时候出现了很多有文化、却无法获得一块封地的贵族子弟,他们就变成游士,到处寻找把自己卖个好价钱的机会。\n\n君主们早就想养一群可控的自己人了。什么样的人最好用呢?\n\n第一,他们要在本国没有根基,没资本对抗君主;\n第二,他们的地位尊荣都取决于君主的赏赐,就有动力与君主相配合。\n\n从别国跑来的游士完全符合这两点要求。君主与游士拍即合,游士成为依附于君主的私人人事班底。这个人事班底,后来就发展为官僚制。\n\n官僚和贵族的区别在于,本质上来说,官僚没有独立性,他们是职业经理人,其地位取决于君主的意志;贵族有独立性,他们是准合伙人,君主有大事必须和他们商量着来。游士的出现,终于让君主们可以全方位碾压贵族封臣,诸侯国也就从君主与贵族共治的结构,转向君主说了算的官僚制结构。\n\n### 变法\n\n这个过程在历史上被叫作什么呢?\n\n变法! 没错,魏国的李悝变法、秦国的商鞅变法等等,就是这样展开的。\n\n来自其他国家的游士,成了各诸侯国的新贵,他们压制住所在国的大贵族,把君主的意志贯彻下去。随着各种变法的展开,中国历史就进入到了战国时代。\n\n对君主来说,这回有办法把平民也动员起来了。你们虽然不是贵族血统,但你们可以立军功。只要你有办法从战场上拎回更多的人头,你也有机会上升到比贵族还高的地位。这种激励可不得了,战争的规模和频次急剧上升,大规模的灭国之战很容易就爆发了。灭国之战都到什么量级呢?比如很多人推崇的战神白起,一场战役就会坑杀赵国的40万降兵,这都在变法之后成为可能，变法这个事情也有传染性,谁最先变法,谁的战争效率就大幅上升;其他国家如果不跟上,就只能等着挨打。\n\n**随着各国陆续变法,各诸侯国内部的旧贵族阶层被一扫而空**。变法之后,君主能决定军功的标准,也就能决定官僚新贵们的地位高低,**君主对国家的控制力就变得更强**,再没有能够约束君主的力量,**分封割据的封建社会也就逐渐走上了终结之日**,战争逻辑的变化,影响还不止于此,当战争规模扩大到了诸侯国承受不起的时候,中国也就开始走向大一统。\n\n## 诸子百家的三大流派【春秋后期】【中原】\n春秋后期,天下大乱,礼崩乐坏。人们突然发现赖以理解世界的坐标系没有了,世界的意义丧失了。而这种时候,就是思想大爆发的时候。\n\n诸子百家,根据他们对待传统不同的态度,可以分为三类:一类是力挺传统（**克己复礼**）,代表就是儒家;一类是抛弃传统（**以法代礼**）,代表就是法家;还有一类是不在乎传统（出世，**无为而治**）,代表就是道家。\n\n### 儒家\n孔子认为复古的路径是“克己复礼”,就是要克制自己的各种冲动,依照传统留下来的\"礼\"的要求来做事。这样就能达到儒家的最高理想,“仁”。\n\n>如果你理解孔子是儒家的开创者,莫不如把他理解为此前巫师传统的集大成者。\n\n儒家是从商周两朝的巫师系统发展出来的,巫师就是古代沟通天意与人事的神职人员，这种工作主要通过占卜和祭祀来完成。祭祀这属于最高的“礼”,而巫师们就是“礼”的具体操作者与记录者。\n\n到了礼崩乐坏的时候,如果要想复古,第步肯定得先说清楚这个“古”究竟是什么。巫师系统有这方面的很多记录,当然是最合适的解说人选,他们由此就逐渐发展为儒家。\n\n### 法家\n\n儒家强调恢复“礼”,“礼”来自传统,贵族是“礼\"的载体;法家强调创建“法”,“法”出自君主意志,官僚是法的执行者。\n\n>法家常在别国成事\n\n根据君主、贵族、官僚的博弈关系,各诸侯国的君主们肯定不会愿意接受儒家,而更愿意接受法所以孔子孟子都曾周游列国,都没得到过重用,反倒是法家的人占据各种高位。有趣的是,法家的鼓吹者往往在本国是不受欢迎的,无论是商鞅还是李斯,都是在别国建功立业。韩非虽然在别国没有能够建立功业,但在本国也从没获得过机会。原因在于,君主需要官僚在本国没有根基,才能听使唤;倘若是出身本国的法家,他总会有各种根基,这种人又太懂得法术势,很容易成为君主忌惮的对象。脱离了家乡的游士,如漂泊浮萍,孤身人,荣辱富贵都依赖于君主,君主最喜欢了。所以,法家只能在别国成事。\n\n### 道家\n\n顺其自然,让世界、让百姓自由自主地活动,事情自然就好了,这就叫“无为而治”。\n\n道家认为,正是各种入世的念头才把事情搞糟了,倘若不再追求转瞬即逝的现世成就,天地一下子就宽了。\n\n## 周秦之变【周-秦-汉】【中原】\n\n周秦之变对中国的思想史还带来个自然延伸的影响,就是我们在历史上看到的,从秦皇到汉武,帝国的官方思想经历了**从法家到道家再到儒家**的转换过程。\n\n### 周秦之变的“法家逻辑”\n百家争鸣的诸多学说,哪一种更注重提升战争效率,它就会获得诸侯们在政治上的更多支持。从中胜出的就是法家。但你用法家就能够征服天下,却不能仅仅用法家来治理天下。\n\n### 汉高祖的“无为而治”\n为什么汉高祖会选择道家呢?最根本的原因在于力量均衡。\n\n刘邦起家之前是个平民百姓,征服天下只能靠团结足够多的人。刘邦能够吸引一群重要将领和谋士追随自己,不是因为自己有力量,而是因为有威信。刘邦和这些人近乎是合伙人的关系,并没有压倒性力量来钳制他们,反倒会被这些兄弟给制衡住。这么一来,皇帝想要专制也不可能,**无为而治只是面对强大合伙人时的无奈之举。**\n\n### 汉武帝的“独尊儒术”\n“阳儒阴法\",又称“**外儒内法**\"。什么意思呢?从观念层面来看,是儒家在主导,儒生解读着天意,君主也不敢完全违背儒家的教导而行事。儒家表面上的迂腐,却为君主划出了大致的行动边界;但在具体的制度设计上,却还是法家逻辑。这样一来,**对君主来说,治理的效率有了,安抚民心的口径也有了。**\n\n## 汉人王朝为何无法统治长城以北【汉】【中原】\n这个问题,其底层是由儒家文化以及儒家文化的地理依赖性决定的。\n\n### 究竟什么是汉人\n**只要是接受儒家文化,并按儒家文化的指导生活的人,在古代就被视作汉人。**\n\n### 儒家文化的地理依赖性\n儒家文化光有个体心灵的皈依远远不够,个体还必须生活在一种特定的人际关系结构当中才行。\n\n比如,“三从四德三纲五常\"等等这些规矩,都是对某种人际关系的规定,脱离开人际关系根本就没法展开。把你一个人扔荒岛上,还让你三从四德,你肯定做不到。\n\n儒家文化所要求的这种特定的人际关系,首先就要求有比较稳定的家庭组织,而稳定的家庭组织,前提是你得是定居的。\n\n定居的前提是农耕,而农耕有一个最硬性的约束条件,就是年降水量。东亚大陆上,如果一个地方年降水量少于400毫米的话,靠农耕是活不下去的。\n\n那么,东亚大陆的400毫米等降雨线在哪儿呢?\n\n这条400毫米等降雨线,差不多和长城重合。长城再往北,年降水量就不足400毫米了。也就是说,儒家帝国在农耕地区的扩张极限,就是400毫米等降雨线。于是在这里,儒家帝国修建了长城。长城再往北就是游牧地区了。\n\n在古代社会,由于农耕对降雨量的要求,使得你要是越过了长城以北,还想活得下去的话,就必须游牧化,否则是死路一条。而一旦游牧化之后,就意味着中原式的人际关系结构、家庭结构等等都没有基础了,无法再按照儒家的方式来生活了。\n\n**儒家文化有一种地理依赖性。因为自然生态原因,儒家越不过去长城以北、嘉峪关以西。儒家文化只能在中原地区展开。**\n\n### 中原和草原的继承逻辑区别\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/181105/dFAEllbB47.png)\n\n官僚制帝国有个很重要的特征,就是君主和官僚,在功能上是有分工的。君主的首要功能,是象征正当性。所以,君主的能力只排在第二位,第一重要的是君位继承的稳定性。嫡长子资格是最容易达成这种共识的。所以,中原的继承原则就稳定在嫡长子继承制上了。',`groups`='Default',`p_id`=1  WHERE  `id` = 1 [ RunTime:0.000636s ]
+---------------------------------------------------------------
+[ 2018-11-05T23:04:14+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/savenote.html
+[ info ] qingrang.top/daily/admin/note/savenote.html [运行时间：0.050549s][吞吐率：19.78req/s] [内存消耗：2,164.39kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'savenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '48405',
+  'accept' => 'text/plain, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/233.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416; PHPSESSID=eb81ogaab9jatuojts3q1fv7r6',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'ogroup' => 'Essays',
+  'context' => '# 中国史纲
+[TOC]
+## 中国历史的时空坐标
+时间和空间加在一块,才是完整的历史。
+### 四个时间坐标点
+中国历史发生过几次重要的转型,这些转型推动着中国历史向前的发展。
+
+1.第一个转型,是**商周之变**,就是从商朝到周朝的转型。
+
+这次转型之后,我们开始有了“中国”这个概念,中华文明当中最初的普世主义理想开始出现了。
+
+2.第二个转型,**周秦之变**,就是从周朝到秦朝的转型。
+
+这次转型,让中原从分封割据的局面进入到大一统的局面,中国历史也开始超越于中原之上,中原与草原的相互塑造和对抗开始成为中国历史的大脉络。
+
+3.第三个转型,**唐宋之变**,就是从唐朝到宋朝的转型。
+
+这次转型,让中国的社会结构从豪族社会进入到平民社会,此后中国历史再无长期的分裂,大一统开始成为一个不可逆的历史过程。在先秦之后,中国的文化在宋朝迎来了又一次大爆发,有些西方学者甚至称这是中国的文艺复兴。这次文化爆发,不仅决定了此后将近一千年的中国文化气质,也决定了日本、朝鲜、越南等其他儒教国家的文化气质。
+
+4.第四个转型,就是**清朝末期开始的古今之变**,中国开始从古代社会向现代社会进行艰难转型。
+
+这个过程带来了一系列轰轰烈烈的历史过程,转型过程直到今天仍在继续,还未完成。
+
+### 五个空间坐标点
+草原、中原、海洋、西域、高原。
+
+这几个大的空间,彼此之间有着极为深刻的相互依赖相互塑造的关系,以至于脱离开一方就完全解释不了另一方,所以它们加在一块构成一个体系。
+
+## 中国的概念和中华文明的普世主义理想【商周】【中原】
+### 历史上第一次出现「中国」
+周朝的第二位君主周成王,兴建了东都洛阳城,当时有个叫做「何」的贵族,这人铸了一件青铜器纪念这个事儿,1963年这个青铜器在陕西宝鸡被发现,今天称其为「何尊」，「何尊」的底部铸了一百多个字,里面提到,周武王说要"宅兹中国”,就是说要“住在中国”,这是"中国"这个词的最早来源。
+
+什么叫中国？**达到了文明最高水准的地方,就是文明意义上的中心,古人就管这种地方叫做「中国」。**
+### 中华文明的普世主义理想：究竟天命是降于周人呢,还是天命降于周王
+商朝是由“商人"。他们认为天命降于商人。为了让天能够永远地保佑自己,商人会经常地进行大规模的祭祀活动,祭祀当中会大量用到活人做祭品。
+
+这些被献祭的人从哪来呢?
+
+从对外战争掠夺的羌人而来。所谓的羌人就是生活在商王朝西部的、除了商朝人以外的所有人。
+
+商人的这种天命观,肯定会受到羌人的抵抗。其中,周人是最主要的一支抵抗力量,他们逐渐组织了很多苦不堪言的羌人群体来反抗商朝，反抗的时候,在周人中间有过一个观念层面的争论,究竟天命是降于周人呢,还是天命降于周王?争论的结果是,天命降于周王。
+
+这个观念变化太重要了。初看上去,这似乎是把天命的载体变得狭隘了,实际上是把它变得普世了。
+
+为什么这么说呢?如果天命是降于周人,那就和此前降于商人的路数差不多,周人的岁月要想静好,就得时刻压制住所有不是周人的群体。这样的话,周人和商人征战,谁胜谁败就不好说了。因为,对其他羌人群体来说,打完这一仗,十有八九只不过换了个地方拿我们献祭,凭啥要跟你混啊?而**如果天命是降于周王,则周王便是天下的共主,他不仅仅要为周人主持正义,而是要为全天下人主持正义,这是一种真正的普世主义观念**。
+
+### 什么是封建社会
+推翻了商朝之后,周朝又是如何具体建立它的统治方式呢?那就是,分封制。周天子向下分封了他的大量亲戚和重臣,意图依靠他们形成的藩属诸侯国,来拱卫周王。这样一种政治统治形式就被称作“封建”,这种社会叫做封建社会。
+
+封建“这个词最初出自《左传》,里面有句话叫做“封建亲戚,以藩屏周”,就是说分封亲信出去建立诸侯国,作为周朝王室领地的屏障。**只有这种封土建邦、分封割据的状态,才叫做封建。**
+
+封建社会的一大特征是,最高统治者是没有权力干涉诸侯国内部事务的,诸侯们确实是最高统治者的封臣,但某种意义上也像是个合伙人,都有比较强的独立性。
+
+周朝的时候,诸侯都承认周天子是最高权威,但周天子并不能管诸侯国内部的事情。周朝在这个过程中建立了封建社会,但周天子又逐渐衰落了。在周天子衰落之后,历史的主角就变成了那些诸侯。诸侯们彼此不断竞争,最终终结了中国的封建社会。
+
+## 封建社会的终结【春秋末期、战国初期】【中原】
+到了西周后期,周天子的影响力越来越差,最终被迫迁都洛阳,中国历史进入到东周。
+
+东周又分成了舂秋战国两个时期,**春秋末期出现了一些重要的技术发展,它带来了新的经济和人力资源,打破了过去的社会均衡,封建社会当中的贵族秩序崩塌了，封建社会也在春秋战国时代走上末日。**
+
+### 战争的逻辑的变化
+春秋之前的的战争十分注重礼仪性(战争都是贵族在参与，这就导致了参与人数并不多，他们认为战争是一件高贵的事，他们的战争可能就是比谁的正步踢得好)。但到了春秋中后期,随着楚国(楚国是个土生政权,并不是周天子分封的诸侯国，它的文化和中原有很大区别,也不大在乎中原的礼仪之类的东西,在当时的中原诸侯看来它就是个蛮夷之邦。)的加入，战争变成以砍死人为目的了。也正是由于这个战争逻辑的变化,才把中国引向了大一统。
+
+### 两个技术变迁
+诸侯分封次级诸侯，随着次级诸侯势力的增大，诸侯和次级诸侯的关系同周天子和诸侯的关系一样。在春秋末期、战国初期,出现了两个重要的技术变迁,让诸侯力量的扩大有了可能。正是因为这两次技术变革,打破了君主和封臣之间的力量均衡,周厉王当初搞不定自己下级的事,现在诸侯可以做到了,也就是诸侯能够搞定这些次级诸侯。
+
+这两个技术变迁,一个是铁器和牛耕的农业生产技术,一个是竹简这种知识传播技术。
+
+>铁器和牛耕 - 农业生产技术
+
+铁器与牛耕的出现,提升了平民的劳动效率。过去,他们的耕种效率很低,只能在贵族控制的公田、又叫井田上种地,没有能力再去开垦自己的私田了;但是,铁器和牛耕让生产效率大大提升了,平民有余力去开垦自己的私田,甚至索性就从贵族控制的井田上跑路了。此时君主、贵族、平民三者之间的一种复杂博弈关系就出现了。注意,这儿所说的君主,指的就是周天子封的诸侯,贵族指的就是诸侯所封的次级诸侯,这会儿的历史已经没周天子什么事儿了。
+
+君主向耕种私田的平民提供保护,平民向君主交税。平民从井田上越跑越多,贵族所控制的井田制就逐渐瓦解了,贵族的力量也逐渐削弱了。君主开始获得相对于贵族的优势。
+
+>竹简 - 知识传播技术
+
+ 知识传播的成本急剧下降,一般的贵族子弟、甚至运气好的普通百姓,都有机会学习文字获得知识了。由于多年的人口膨胀,这个时候出现了很多有文化、却无法获得一块封地的贵族子弟,他们就变成游士,到处寻找把自己卖个好价钱的机会。
+
+君主们早就想养一群可控的自己人了。什么样的人最好用呢?
+
+第一,他们要在本国没有根基,没资本对抗君主;
+第二,他们的地位尊荣都取决于君主的赏赐,就有动力与君主相配合。
+
+从别国跑来的游士完全符合这两点要求。君主与游士拍即合,游士成为依附于君主的私人人事班底。这个人事班底,后来就发展为官僚制。
+
+官僚和贵族的区别在于,本质上来说,官僚没有独立性,他们是职业经理人,其地位取决于君主的意志;贵族有独立性,他们是准合伙人,君主有大事必须和他们商量着来。游士的出现,终于让君主们可以全方位碾压贵族封臣,诸侯国也就从君主与贵族共治的结构,转向君主说了算的官僚制结构。
+
+### 变法
+
+这个过程在历史上被叫作什么呢?
+
+变法! 没错,魏国的李悝变法、秦国的商鞅变法等等,就是这样展开的。
+
+来自其他国家的游士,成了各诸侯国的新贵,他们压制住所在国的大贵族,把君主的意志贯彻下去。随着各种变法的展开,中国历史就进入到了战国时代。
+
+对君主来说,这回有办法把平民也动员起来了。你们虽然不是贵族血统,但你们可以立军功。只要你有办法从战场上拎回更多的人头,你也有机会上升到比贵族还高的地位。这种激励可不得了,战争的规模和频次急剧上升,大规模的灭国之战很容易就爆发了。灭国之战都到什么量级呢?比如很多人推崇的战神白起,一场战役就会坑杀赵国的40万降兵,这都在变法之后成为可能，变法这个事情也有传染性,谁最先变法,谁的战争效率就大幅上升;其他国家如果不跟上,就只能等着挨打。
+
+**随着各国陆续变法,各诸侯国内部的旧贵族阶层被一扫而空**。变法之后,君主能决定军功的标准,也就能决定官僚新贵们的地位高低,**君主对国家的控制力就变得更强**,再没有能够约束君主的力量,**分封割据的封建社会也就逐渐走上了终结之日**,战争逻辑的变化,影响还不止于此,当战争规模扩大到了诸侯国承受不起的时候,中国也就开始走向大一统。
+
+## 诸子百家的三大流派【春秋后期】【中原】
+春秋后期,天下大乱,礼崩乐坏。人们突然发现赖以理解世界的坐标系没有了,世界的意义丧失了。而这种时候,就是思想大爆发的时候。
+
+诸子百家,根据他们对待传统不同的态度,可以分为三类:一类是力挺传统（**克己复礼**）,代表就是儒家;一类是抛弃传统（**以法代礼**）,代表就是法家;还有一类是不在乎传统（出世，**无为而治**）,代表就是道家。
+
+### 儒家
+孔子认为复古的路径是“克己复礼”,就是要克制自己的各种冲动,依照传统留下来的"礼"的要求来做事。这样就能达到儒家的最高理想,“仁”。
+
+>如果你理解孔子是儒家的开创者,莫不如把他理解为此前巫师传统的集大成者。
+
+儒家是从商周两朝的巫师系统发展出来的,巫师就是古代沟通天意与人事的神职人员，这种工作主要通过占卜和祭祀来完成。祭祀这属于最高的“礼”,而巫师们就是“礼”的具体操作者与记录者。
+
+到了礼崩乐坏的时候,如果要想复古,第步肯定得先说清楚这个“古”究竟是什么。巫师系统有这方面的很多记录,当然是最合适的解说人选,他们由此就逐渐发展为儒家。
+
+### 法家
+
+儒家强调恢复“礼”,“礼”来自传统,贵族是“礼"的载体;法家强调创建“法”,“法”出自君主意志,官僚是法的执行者。
+
+>法家常在别国成事
+
+根据君主、贵族、官僚的博弈关系,各诸侯国的君主们肯定不会愿意接受儒家,而更愿意接受法所以孔子孟子都曾周游列国,都没得到过重用,反倒是法家的人占据各种高位。有趣的是,法家的鼓吹者往往在本国是不受欢迎的,无论是商鞅还是李斯,都是在别国建功立业。韩非虽然在别国没有能够建立功业,但在本国也从没获得过机会。原因在于,君主需要官僚在本国没有根基,才能听使唤;倘若是出身本国的法家,他总会有各种根基,这种人又太懂得法术势,很容易成为君主忌惮的对象。脱离了家乡的游士,如漂泊浮萍,孤身人,荣辱富贵都依赖于君主,君主最喜欢了。所以,法家只能在别国成事。
+
+### 道家
+
+顺其自然,让世界、让百姓自由自主地活动,事情自然就好了,这就叫“无为而治”。
+
+道家认为,正是各种入世的念头才把事情搞糟了,倘若不再追求转瞬即逝的现世成就,天地一下子就宽了。
+
+## 周秦之变【周-秦-汉】【中原】
+
+周秦之变对中国的思想史还带来个自然延伸的影响,就是我们在历史上看到的,从秦皇到汉武,帝国的官方思想经历了**从法家到道家再到儒家**的转换过程。
+
+### 周秦之变的“法家逻辑”
+百家争鸣的诸多学说,哪一种更注重提升战争效率,它就会获得诸侯们在政治上的更多支持。从中胜出的就是法家。但你用法家就能够征服天下,却不能仅仅用法家来治理天下。
+
+### 汉高祖的“无为而治”
+为什么汉高祖会选择道家呢?最根本的原因在于力量均衡。
+
+刘邦起家之前是个平民百姓,征服天下只能靠团结足够多的人。刘邦能够吸引一群重要将领和谋士追随自己,不是因为自己有力量,而是因为有威信。刘邦和这些人近乎是合伙人的关系,并没有压倒性力量来钳制他们,反倒会被这些兄弟给制衡住。这么一来,皇帝想要专制也不可能,**无为而治只是面对强大合伙人时的无奈之举。**
+
+### 汉武帝的“独尊儒术”
+“阳儒阴法",又称“**外儒内法**"。什么意思呢?从观念层面来看,是儒家在主导,儒生解读着天意,君主也不敢完全违背儒家的教导而行事。儒家表面上的迂腐,却为君主划出了大致的行动边界;但在具体的制度设计上,却还是法家逻辑。这样一来,**对君主来说,治理的效率有了,安抚民心的口径也有了。**
+
+## 汉人王朝为何无法统治长城以北【汉】【中原】
+这个问题,其底层是由儒家文化以及儒家文化的地理依赖性决定的。
+
+### 究竟什么是汉人
+**只要是接受儒家文化,并按儒家文化的指导生活的人,在古代就被视作汉人。**
+
+### 儒家文化的地理依赖性
+儒家文化光有个体心灵的皈依远远不够,个体还必须生活在一种特定的人际关系结构当中才行。
+
+比如,“三从四德三纲五常"等等这些规矩,都是对某种人际关系的规定,脱离开人际关系根本就没法展开。把你一个人扔荒岛上,还让你三从四德,你肯定做不到。
+
+儒家文化所要求的这种特定的人际关系,首先就要求有比较稳定的家庭组织,而稳定的家庭组织,前提是你得是定居的。
+
+定居的前提是农耕,而农耕有一个最硬性的约束条件,就是年降水量。东亚大陆上,如果一个地方年降水量少于400毫米的话,靠农耕是活不下去的。
+
+那么,东亚大陆的400毫米等降雨线在哪儿呢?
+
+这条400毫米等降雨线,差不多和长城重合。长城再往北,年降水量就不足400毫米了。也就是说,儒家帝国在农耕地区的扩张极限,就是400毫米等降雨线。于是在这里,儒家帝国修建了长城。长城再往北就是游牧地区了。
+
+在古代社会,由于农耕对降雨量的要求,使得你要是越过了长城以北,还想活得下去的话,就必须游牧化,否则是死路一条。而一旦游牧化之后,就意味着中原式的人际关系结构、家庭结构等等都没有基础了,无法再按照儒家的方式来生活了。
+
+**儒家文化有一种地理依赖性。因为自然生态原因,儒家越不过去长城以北、嘉峪关以西。儒家文化只能在中原地区展开。**
+
+### 中原和草原的继承逻辑区别
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/181105/dFAEllbB47.png)
+
+官僚制帝国有个很重要的特征,就是君主和官僚,在功能上是有分工的。君主的首要功能,是象征正当性。所以,君主的能力只排在第二位,第一重要的是君位继承的稳定性。嫡长子资格是最容易达成这种共识的。所以,中原的继承原则就稳定在嫡长子继承制上了。',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->saveNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000503s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001231s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `title`='中国史纲',`content`='# 中国史纲\n[TOC]\n## 中国历史的时空坐标\n时间和空间加在一块,才是完整的历史。\n### 四个时间坐标点\n中国历史发生过几次重要的转型,这些转型推动着中国历史向前的发展。\n\n1.第一个转型,是**商周之变**,就是从商朝到周朝的转型。\n\n这次转型之后,我们开始有了“中国”这个概念,中华文明当中最初的普世主义理想开始出现了。\n\n2.第二个转型,**周秦之变**,就是从周朝到秦朝的转型。\n\n这次转型,让中原从分封割据的局面进入到大一统的局面,中国历史也开始超越于中原之上,中原与草原的相互塑造和对抗开始成为中国历史的大脉络。\n\n3.第三个转型,**唐宋之变**,就是从唐朝到宋朝的转型。\n\n这次转型,让中国的社会结构从豪族社会进入到平民社会,此后中国历史再无长期的分裂,大一统开始成为一个不可逆的历史过程。在先秦之后,中国的文化在宋朝迎来了又一次大爆发,有些西方学者甚至称这是中国的文艺复兴。这次文化爆发,不仅决定了此后将近一千年的中国文化气质,也决定了日本、朝鲜、越南等其他儒教国家的文化气质。\n\n4.第四个转型,就是**清朝末期开始的古今之变**,中国开始从古代社会向现代社会进行艰难转型。\n\n这个过程带来了一系列轰轰烈烈的历史过程,转型过程直到今天仍在继续,还未完成。\n\n### 五个空间坐标点\n草原、中原、海洋、西域、高原。\n\n这几个大的空间,彼此之间有着极为深刻的相互依赖相互塑造的关系,以至于脱离开一方就完全解释不了另一方,所以它们加在一块构成一个体系。\n\n## 中国的概念和中华文明的普世主义理想【商周】【中原】\n### 历史上第一次出现「中国」\n周朝的第二位君主周成王,兴建了东都洛阳城,当时有个叫做「何」的贵族,这人铸了一件青铜器纪念这个事儿,1963年这个青铜器在陕西宝鸡被发现,今天称其为「何尊」，「何尊」的底部铸了一百多个字,里面提到,周武王说要\"宅兹中国”,就是说要“住在中国”,这是\"中国\"这个词的最早来源。\n\n什么叫中国？**达到了文明最高水准的地方,就是文明意义上的中心,古人就管这种地方叫做「中国」。**\n### 中华文明的普世主义理想：究竟天命是降于周人呢,还是天命降于周王\n商朝是由“商人\"。他们认为天命降于商人。为了让天能够永远地保佑自己,商人会经常地进行大规模的祭祀活动,祭祀当中会大量用到活人做祭品。\n\n这些被献祭的人从哪来呢?\n\n从对外战争掠夺的羌人而来。所谓的羌人就是生活在商王朝西部的、除了商朝人以外的所有人。\n\n商人的这种天命观,肯定会受到羌人的抵抗。其中,周人是最主要的一支抵抗力量,他们逐渐组织了很多苦不堪言的羌人群体来反抗商朝，反抗的时候,在周人中间有过一个观念层面的争论,究竟天命是降于周人呢,还是天命降于周王?争论的结果是,天命降于周王。\n\n这个观念变化太重要了。初看上去,这似乎是把天命的载体变得狭隘了,实际上是把它变得普世了。\n\n为什么这么说呢?如果天命是降于周人,那就和此前降于商人的路数差不多,周人的岁月要想静好,就得时刻压制住所有不是周人的群体。这样的话,周人和商人征战,谁胜谁败就不好说了。因为,对其他羌人群体来说,打完这一仗,十有八九只不过换了个地方拿我们献祭,凭啥要跟你混啊?而**如果天命是降于周王,则周王便是天下的共主,他不仅仅要为周人主持正义,而是要为全天下人主持正义,这是一种真正的普世主义观念**。\n\n### 什么是封建社会\n推翻了商朝之后,周朝又是如何具体建立它的统治方式呢?那就是,分封制。周天子向下分封了他的大量亲戚和重臣,意图依靠他们形成的藩属诸侯国,来拱卫周王。这样一种政治统治形式就被称作“封建”,这种社会叫做封建社会。\n\n封建“这个词最初出自《左传》,里面有句话叫做“封建亲戚,以藩屏周”,就是说分封亲信出去建立诸侯国,作为周朝王室领地的屏障。**只有这种封土建邦、分封割据的状态,才叫做封建。**\n\n封建社会的一大特征是,最高统治者是没有权力干涉诸侯国内部事务的,诸侯们确实是最高统治者的封臣,但某种意义上也像是个合伙人,都有比较强的独立性。\n\n周朝的时候,诸侯都承认周天子是最高权威,但周天子并不能管诸侯国内部的事情。周朝在这个过程中建立了封建社会,但周天子又逐渐衰落了。在周天子衰落之后,历史的主角就变成了那些诸侯。诸侯们彼此不断竞争,最终终结了中国的封建社会。\n\n## 封建社会的终结【春秋末期、战国初期】【中原】\n到了西周后期,周天子的影响力越来越差,最终被迫迁都洛阳,中国历史进入到东周。\n\n东周又分成了舂秋战国两个时期,**春秋末期出现了一些重要的技术发展,它带来了新的经济和人力资源,打破了过去的社会均衡,封建社会当中的贵族秩序崩塌了，封建社会也在春秋战国时代走上末日。**\n\n### 战争的逻辑的变化\n春秋之前的的战争十分注重礼仪性(战争都是贵族在参与，这就导致了参与人数并不多，他们认为战争是一件高贵的事，他们的战争可能就是比谁的正步踢得好)。但到了春秋中后期,随着楚国(楚国是个土生政权,并不是周天子分封的诸侯国，它的文化和中原有很大区别,也不大在乎中原的礼仪之类的东西,在当时的中原诸侯看来它就是个蛮夷之邦。)的加入，战争变成以砍死人为目的了。也正是由于这个战争逻辑的变化,才把中国引向了大一统。\n\n### 两个技术变迁\n诸侯分封次级诸侯，随着次级诸侯势力的增大，诸侯和次级诸侯的关系同周天子和诸侯的关系一样。在春秋末期、战国初期,出现了两个重要的技术变迁,让诸侯力量的扩大有了可能。正是因为这两次技术变革,打破了君主和封臣之间的力量均衡,周厉王当初搞不定自己下级的事,现在诸侯可以做到了,也就是诸侯能够搞定这些次级诸侯。\n\n这两个技术变迁,一个是铁器和牛耕的农业生产技术,一个是竹简这种知识传播技术。\n\n>铁器和牛耕 - 农业生产技术\n\n铁器与牛耕的出现,提升了平民的劳动效率。过去,他们的耕种效率很低,只能在贵族控制的公田、又叫井田上种地,没有能力再去开垦自己的私田了;但是,铁器和牛耕让生产效率大大提升了,平民有余力去开垦自己的私田,甚至索性就从贵族控制的井田上跑路了。此时君主、贵族、平民三者之间的一种复杂博弈关系就出现了。注意,这儿所说的君主,指的就是周天子封的诸侯,贵族指的就是诸侯所封的次级诸侯,这会儿的历史已经没周天子什么事儿了。\n\n君主向耕种私田的平民提供保护,平民向君主交税。平民从井田上越跑越多,贵族所控制的井田制就逐渐瓦解了,贵族的力量也逐渐削弱了。君主开始获得相对于贵族的优势。\n\n>竹简 - 知识传播技术\n\n 知识传播的成本急剧下降,一般的贵族子弟、甚至运气好的普通百姓,都有机会学习文字获得知识了。由于多年的人口膨胀,这个时候出现了很多有文化、却无法获得一块封地的贵族子弟,他们就变成游士,到处寻找把自己卖个好价钱的机会。\n\n君主们早就想养一群可控的自己人了。什么样的人最好用呢?\n\n第一,他们要在本国没有根基,没资本对抗君主;\n第二,他们的地位尊荣都取决于君主的赏赐,就有动力与君主相配合。\n\n从别国跑来的游士完全符合这两点要求。君主与游士拍即合,游士成为依附于君主的私人人事班底。这个人事班底,后来就发展为官僚制。\n\n官僚和贵族的区别在于,本质上来说,官僚没有独立性,他们是职业经理人,其地位取决于君主的意志;贵族有独立性,他们是准合伙人,君主有大事必须和他们商量着来。游士的出现,终于让君主们可以全方位碾压贵族封臣,诸侯国也就从君主与贵族共治的结构,转向君主说了算的官僚制结构。\n\n### 变法\n\n这个过程在历史上被叫作什么呢?\n\n变法! 没错,魏国的李悝变法、秦国的商鞅变法等等,就是这样展开的。\n\n来自其他国家的游士,成了各诸侯国的新贵,他们压制住所在国的大贵族,把君主的意志贯彻下去。随着各种变法的展开,中国历史就进入到了战国时代。\n\n对君主来说,这回有办法把平民也动员起来了。你们虽然不是贵族血统,但你们可以立军功。只要你有办法从战场上拎回更多的人头,你也有机会上升到比贵族还高的地位。这种激励可不得了,战争的规模和频次急剧上升,大规模的灭国之战很容易就爆发了。灭国之战都到什么量级呢?比如很多人推崇的战神白起,一场战役就会坑杀赵国的40万降兵,这都在变法之后成为可能，变法这个事情也有传染性,谁最先变法,谁的战争效率就大幅上升;其他国家如果不跟上,就只能等着挨打。\n\n**随着各国陆续变法,各诸侯国内部的旧贵族阶层被一扫而空**。变法之后,君主能决定军功的标准,也就能决定官僚新贵们的地位高低,**君主对国家的控制力就变得更强**,再没有能够约束君主的力量,**分封割据的封建社会也就逐渐走上了终结之日**,战争逻辑的变化,影响还不止于此,当战争规模扩大到了诸侯国承受不起的时候,中国也就开始走向大一统。\n\n## 诸子百家的三大流派【春秋后期】【中原】\n春秋后期,天下大乱,礼崩乐坏。人们突然发现赖以理解世界的坐标系没有了,世界的意义丧失了。而这种时候,就是思想大爆发的时候。\n\n诸子百家,根据他们对待传统不同的态度,可以分为三类:一类是力挺传统（**克己复礼**）,代表就是儒家;一类是抛弃传统（**以法代礼**）,代表就是法家;还有一类是不在乎传统（出世，**无为而治**）,代表就是道家。\n\n### 儒家\n孔子认为复古的路径是“克己复礼”,就是要克制自己的各种冲动,依照传统留下来的\"礼\"的要求来做事。这样就能达到儒家的最高理想,“仁”。\n\n>如果你理解孔子是儒家的开创者,莫不如把他理解为此前巫师传统的集大成者。\n\n儒家是从商周两朝的巫师系统发展出来的,巫师就是古代沟通天意与人事的神职人员，这种工作主要通过占卜和祭祀来完成。祭祀这属于最高的“礼”,而巫师们就是“礼”的具体操作者与记录者。\n\n到了礼崩乐坏的时候,如果要想复古,第步肯定得先说清楚这个“古”究竟是什么。巫师系统有这方面的很多记录,当然是最合适的解说人选,他们由此就逐渐发展为儒家。\n\n### 法家\n\n儒家强调恢复“礼”,“礼”来自传统,贵族是“礼\"的载体;法家强调创建“法”,“法”出自君主意志,官僚是法的执行者。\n\n>法家常在别国成事\n\n根据君主、贵族、官僚的博弈关系,各诸侯国的君主们肯定不会愿意接受儒家,而更愿意接受法所以孔子孟子都曾周游列国,都没得到过重用,反倒是法家的人占据各种高位。有趣的是,法家的鼓吹者往往在本国是不受欢迎的,无论是商鞅还是李斯,都是在别国建功立业。韩非虽然在别国没有能够建立功业,但在本国也从没获得过机会。原因在于,君主需要官僚在本国没有根基,才能听使唤;倘若是出身本国的法家,他总会有各种根基,这种人又太懂得法术势,很容易成为君主忌惮的对象。脱离了家乡的游士,如漂泊浮萍,孤身人,荣辱富贵都依赖于君主,君主最喜欢了。所以,法家只能在别国成事。\n\n### 道家\n\n顺其自然,让世界、让百姓自由自主地活动,事情自然就好了,这就叫“无为而治”。\n\n道家认为,正是各种入世的念头才把事情搞糟了,倘若不再追求转瞬即逝的现世成就,天地一下子就宽了。\n\n## 周秦之变【周-秦-汉】【中原】\n\n周秦之变对中国的思想史还带来个自然延伸的影响,就是我们在历史上看到的,从秦皇到汉武,帝国的官方思想经历了**从法家到道家再到儒家**的转换过程。\n\n### 周秦之变的“法家逻辑”\n百家争鸣的诸多学说,哪一种更注重提升战争效率,它就会获得诸侯们在政治上的更多支持。从中胜出的就是法家。但你用法家就能够征服天下,却不能仅仅用法家来治理天下。\n\n### 汉高祖的“无为而治”\n为什么汉高祖会选择道家呢?最根本的原因在于力量均衡。\n\n刘邦起家之前是个平民百姓,征服天下只能靠团结足够多的人。刘邦能够吸引一群重要将领和谋士追随自己,不是因为自己有力量,而是因为有威信。刘邦和这些人近乎是合伙人的关系,并没有压倒性力量来钳制他们,反倒会被这些兄弟给制衡住。这么一来,皇帝想要专制也不可能,**无为而治只是面对强大合伙人时的无奈之举。**\n\n### 汉武帝的“独尊儒术”\n“阳儒阴法\",又称“**外儒内法**\"。什么意思呢?从观念层面来看,是儒家在主导,儒生解读着天意,君主也不敢完全违背儒家的教导而行事。儒家表面上的迂腐,却为君主划出了大致的行动边界;但在具体的制度设计上,却还是法家逻辑。这样一来,**对君主来说,治理的效率有了,安抚民心的口径也有了。**\n\n## 汉人王朝为何无法统治长城以北【汉】【中原】\n这个问题,其底层是由儒家文化以及儒家文化的地理依赖性决定的。\n\n### 究竟什么是汉人\n**只要是接受儒家文化,并按儒家文化的指导生活的人,在古代就被视作汉人。**\n\n### 儒家文化的地理依赖性\n儒家文化光有个体心灵的皈依远远不够,个体还必须生活在一种特定的人际关系结构当中才行。\n\n比如,“三从四德三纲五常\"等等这些规矩,都是对某种人际关系的规定,脱离开人际关系根本就没法展开。把你一个人扔荒岛上,还让你三从四德,你肯定做不到。\n\n儒家文化所要求的这种特定的人际关系,首先就要求有比较稳定的家庭组织,而稳定的家庭组织,前提是你得是定居的。\n\n定居的前提是农耕,而农耕有一个最硬性的约束条件,就是年降水量。东亚大陆上,如果一个地方年降水量少于400毫米的话,靠农耕是活不下去的。\n\n那么,东亚大陆的400毫米等降雨线在哪儿呢?\n\n这条400毫米等降雨线,差不多和长城重合。长城再往北,年降水量就不足400毫米了。也就是说,儒家帝国在农耕地区的扩张极限,就是400毫米等降雨线。于是在这里,儒家帝国修建了长城。长城再往北就是游牧地区了。\n\n在古代社会,由于农耕对降雨量的要求,使得你要是越过了长城以北,还想活得下去的话,就必须游牧化,否则是死路一条。而一旦游牧化之后,就意味着中原式的人际关系结构、家庭结构等等都没有基础了,无法再按照儒家的方式来生活了。\n\n**儒家文化有一种地理依赖性。因为自然生态原因,儒家越不过去长城以北、嘉峪关以西。儒家文化只能在中原地区展开。**\n\n### 中原和草原的继承逻辑区别\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/181105/dFAEllbB47.png)\n\n官僚制帝国有个很重要的特征,就是君主和官僚,在功能上是有分工的。君主的首要功能,是象征正当性。所以,君主的能力只排在第二位,第一重要的是君位继承的稳定性。嫡长子资格是最容易达成这种共识的。所以,中原的继承原则就稳定在嫡长子继承制上了。',`groups`='Default',`p_id`=1  WHERE  `id` = 1 [ RunTime:0.000917s ]
+---------------------------------------------------------------
+[ 2018-11-05T23:04:17+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/savenote.html
+[ info ] qingrang.top/daily/admin/note/savenote.html [运行时间：0.051737s][吞吐率：19.33req/s] [内存消耗：2,164.39kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'savenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '48405',
+  'accept' => 'text/plain, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/233.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416; PHPSESSID=eb81ogaab9jatuojts3q1fv7r6',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'ogroup' => 'Essays',
+  'context' => '# 中国史纲
+[TOC]
+## 中国历史的时空坐标
+时间和空间加在一块,才是完整的历史。
+### 四个时间坐标点
+中国历史发生过几次重要的转型,这些转型推动着中国历史向前的发展。
+
+1.第一个转型,是**商周之变**,就是从商朝到周朝的转型。
+
+这次转型之后,我们开始有了“中国”这个概念,中华文明当中最初的普世主义理想开始出现了。
+
+2.第二个转型,**周秦之变**,就是从周朝到秦朝的转型。
+
+这次转型,让中原从分封割据的局面进入到大一统的局面,中国历史也开始超越于中原之上,中原与草原的相互塑造和对抗开始成为中国历史的大脉络。
+
+3.第三个转型,**唐宋之变**,就是从唐朝到宋朝的转型。
+
+这次转型,让中国的社会结构从豪族社会进入到平民社会,此后中国历史再无长期的分裂,大一统开始成为一个不可逆的历史过程。在先秦之后,中国的文化在宋朝迎来了又一次大爆发,有些西方学者甚至称这是中国的文艺复兴。这次文化爆发,不仅决定了此后将近一千年的中国文化气质,也决定了日本、朝鲜、越南等其他儒教国家的文化气质。
+
+4.第四个转型,就是**清朝末期开始的古今之变**,中国开始从古代社会向现代社会进行艰难转型。
+
+这个过程带来了一系列轰轰烈烈的历史过程,转型过程直到今天仍在继续,还未完成。
+
+### 五个空间坐标点
+草原、中原、海洋、西域、高原。
+
+这几个大的空间,彼此之间有着极为深刻的相互依赖相互塑造的关系,以至于脱离开一方就完全解释不了另一方,所以它们加在一块构成一个体系。
+
+## 中国的概念和中华文明的普世主义理想【商周】【中原】
+### 历史上第一次出现「中国」
+周朝的第二位君主周成王,兴建了东都洛阳城,当时有个叫做「何」的贵族,这人铸了一件青铜器纪念这个事儿,1963年这个青铜器在陕西宝鸡被发现,今天称其为「何尊」，「何尊」的底部铸了一百多个字,里面提到,周武王说要"宅兹中国”,就是说要“住在中国”,这是"中国"这个词的最早来源。
+
+什么叫中国？**达到了文明最高水准的地方,就是文明意义上的中心,古人就管这种地方叫做「中国」。**
+### 中华文明的普世主义理想：究竟天命是降于周人呢,还是天命降于周王
+商朝是由“商人"。他们认为天命降于商人。为了让天能够永远地保佑自己,商人会经常地进行大规模的祭祀活动,祭祀当中会大量用到活人做祭品。
+
+这些被献祭的人从哪来呢?
+
+从对外战争掠夺的羌人而来。所谓的羌人就是生活在商王朝西部的、除了商朝人以外的所有人。
+
+商人的这种天命观,肯定会受到羌人的抵抗。其中,周人是最主要的一支抵抗力量,他们逐渐组织了很多苦不堪言的羌人群体来反抗商朝，反抗的时候,在周人中间有过一个观念层面的争论,究竟天命是降于周人呢,还是天命降于周王?争论的结果是,天命降于周王。
+
+这个观念变化太重要了。初看上去,这似乎是把天命的载体变得狭隘了,实际上是把它变得普世了。
+
+为什么这么说呢?如果天命是降于周人,那就和此前降于商人的路数差不多,周人的岁月要想静好,就得时刻压制住所有不是周人的群体。这样的话,周人和商人征战,谁胜谁败就不好说了。因为,对其他羌人群体来说,打完这一仗,十有八九只不过换了个地方拿我们献祭,凭啥要跟你混啊?而**如果天命是降于周王,则周王便是天下的共主,他不仅仅要为周人主持正义,而是要为全天下人主持正义,这是一种真正的普世主义观念**。
+
+### 什么是封建社会
+推翻了商朝之后,周朝又是如何具体建立它的统治方式呢?那就是,分封制。周天子向下分封了他的大量亲戚和重臣,意图依靠他们形成的藩属诸侯国,来拱卫周王。这样一种政治统治形式就被称作“封建”,这种社会叫做封建社会。
+
+封建“这个词最初出自《左传》,里面有句话叫做“封建亲戚,以藩屏周”,就是说分封亲信出去建立诸侯国,作为周朝王室领地的屏障。**只有这种封土建邦、分封割据的状态,才叫做封建。**
+
+封建社会的一大特征是,最高统治者是没有权力干涉诸侯国内部事务的,诸侯们确实是最高统治者的封臣,但某种意义上也像是个合伙人,都有比较强的独立性。
+
+周朝的时候,诸侯都承认周天子是最高权威,但周天子并不能管诸侯国内部的事情。周朝在这个过程中建立了封建社会,但周天子又逐渐衰落了。在周天子衰落之后,历史的主角就变成了那些诸侯。诸侯们彼此不断竞争,最终终结了中国的封建社会。
+
+## 封建社会的终结【春秋末期、战国初期】【中原】
+到了西周后期,周天子的影响力越来越差,最终被迫迁都洛阳,中国历史进入到东周。
+
+东周又分成了舂秋战国两个时期,**春秋末期出现了一些重要的技术发展,它带来了新的经济和人力资源,打破了过去的社会均衡,封建社会当中的贵族秩序崩塌了，封建社会也在春秋战国时代走上末日。**
+
+### 战争的逻辑的变化
+春秋之前的的战争十分注重礼仪性(战争都是贵族在参与，这就导致了参与人数并不多，他们认为战争是一件高贵的事，他们的战争可能就是比谁的正步踢得好)。但到了春秋中后期,随着楚国(楚国是个土生政权,并不是周天子分封的诸侯国，它的文化和中原有很大区别,也不大在乎中原的礼仪之类的东西,在当时的中原诸侯看来它就是个蛮夷之邦。)的加入，战争变成以砍死人为目的了。也正是由于这个战争逻辑的变化,才把中国引向了大一统。
+
+### 两个技术变迁
+诸侯分封次级诸侯，随着次级诸侯势力的增大，诸侯和次级诸侯的关系同周天子和诸侯的关系一样。在春秋末期、战国初期,出现了两个重要的技术变迁,让诸侯力量的扩大有了可能。正是因为这两次技术变革,打破了君主和封臣之间的力量均衡,周厉王当初搞不定自己下级的事,现在诸侯可以做到了,也就是诸侯能够搞定这些次级诸侯。
+
+这两个技术变迁,一个是铁器和牛耕的农业生产技术,一个是竹简这种知识传播技术。
+
+>铁器和牛耕 - 农业生产技术
+
+铁器与牛耕的出现,提升了平民的劳动效率。过去,他们的耕种效率很低,只能在贵族控制的公田、又叫井田上种地,没有能力再去开垦自己的私田了;但是,铁器和牛耕让生产效率大大提升了,平民有余力去开垦自己的私田,甚至索性就从贵族控制的井田上跑路了。此时君主、贵族、平民三者之间的一种复杂博弈关系就出现了。注意,这儿所说的君主,指的就是周天子封的诸侯,贵族指的就是诸侯所封的次级诸侯,这会儿的历史已经没周天子什么事儿了。
+
+君主向耕种私田的平民提供保护,平民向君主交税。平民从井田上越跑越多,贵族所控制的井田制就逐渐瓦解了,贵族的力量也逐渐削弱了。君主开始获得相对于贵族的优势。
+
+>竹简 - 知识传播技术
+
+ 知识传播的成本急剧下降,一般的贵族子弟、甚至运气好的普通百姓,都有机会学习文字获得知识了。由于多年的人口膨胀,这个时候出现了很多有文化、却无法获得一块封地的贵族子弟,他们就变成游士,到处寻找把自己卖个好价钱的机会。
+
+君主们早就想养一群可控的自己人了。什么样的人最好用呢?
+
+第一,他们要在本国没有根基,没资本对抗君主;
+第二,他们的地位尊荣都取决于君主的赏赐,就有动力与君主相配合。
+
+从别国跑来的游士完全符合这两点要求。君主与游士拍即合,游士成为依附于君主的私人人事班底。这个人事班底,后来就发展为官僚制。
+
+官僚和贵族的区别在于,本质上来说,官僚没有独立性,他们是职业经理人,其地位取决于君主的意志;贵族有独立性,他们是准合伙人,君主有大事必须和他们商量着来。游士的出现,终于让君主们可以全方位碾压贵族封臣,诸侯国也就从君主与贵族共治的结构,转向君主说了算的官僚制结构。
+
+### 变法
+
+这个过程在历史上被叫作什么呢?
+
+变法! 没错,魏国的李悝变法、秦国的商鞅变法等等,就是这样展开的。
+
+来自其他国家的游士,成了各诸侯国的新贵,他们压制住所在国的大贵族,把君主的意志贯彻下去。随着各种变法的展开,中国历史就进入到了战国时代。
+
+对君主来说,这回有办法把平民也动员起来了。你们虽然不是贵族血统,但你们可以立军功。只要你有办法从战场上拎回更多的人头,你也有机会上升到比贵族还高的地位。这种激励可不得了,战争的规模和频次急剧上升,大规模的灭国之战很容易就爆发了。灭国之战都到什么量级呢?比如很多人推崇的战神白起,一场战役就会坑杀赵国的40万降兵,这都在变法之后成为可能，变法这个事情也有传染性,谁最先变法,谁的战争效率就大幅上升;其他国家如果不跟上,就只能等着挨打。
+
+**随着各国陆续变法,各诸侯国内部的旧贵族阶层被一扫而空**。变法之后,君主能决定军功的标准,也就能决定官僚新贵们的地位高低,**君主对国家的控制力就变得更强**,再没有能够约束君主的力量,**分封割据的封建社会也就逐渐走上了终结之日**,战争逻辑的变化,影响还不止于此,当战争规模扩大到了诸侯国承受不起的时候,中国也就开始走向大一统。
+
+## 诸子百家的三大流派【春秋后期】【中原】
+春秋后期,天下大乱,礼崩乐坏。人们突然发现赖以理解世界的坐标系没有了,世界的意义丧失了。而这种时候,就是思想大爆发的时候。
+
+诸子百家,根据他们对待传统不同的态度,可以分为三类:一类是力挺传统（**克己复礼**）,代表就是儒家;一类是抛弃传统（**以法代礼**）,代表就是法家;还有一类是不在乎传统（出世，**无为而治**）,代表就是道家。
+
+### 儒家
+孔子认为复古的路径是“克己复礼”,就是要克制自己的各种冲动,依照传统留下来的"礼"的要求来做事。这样就能达到儒家的最高理想,“仁”。
+
+>如果你理解孔子是儒家的开创者,莫不如把他理解为此前巫师传统的集大成者。
+
+儒家是从商周两朝的巫师系统发展出来的,巫师就是古代沟通天意与人事的神职人员，这种工作主要通过占卜和祭祀来完成。祭祀这属于最高的“礼”,而巫师们就是“礼”的具体操作者与记录者。
+
+到了礼崩乐坏的时候,如果要想复古,第步肯定得先说清楚这个“古”究竟是什么。巫师系统有这方面的很多记录,当然是最合适的解说人选,他们由此就逐渐发展为儒家。
+
+### 法家
+
+儒家强调恢复“礼”,“礼”来自传统,贵族是“礼"的载体;法家强调创建“法”,“法”出自君主意志,官僚是法的执行者。
+
+>法家常在别国成事
+
+根据君主、贵族、官僚的博弈关系,各诸侯国的君主们肯定不会愿意接受儒家,而更愿意接受法所以孔子孟子都曾周游列国,都没得到过重用,反倒是法家的人占据各种高位。有趣的是,法家的鼓吹者往往在本国是不受欢迎的,无论是商鞅还是李斯,都是在别国建功立业。韩非虽然在别国没有能够建立功业,但在本国也从没获得过机会。原因在于,君主需要官僚在本国没有根基,才能听使唤;倘若是出身本国的法家,他总会有各种根基,这种人又太懂得法术势,很容易成为君主忌惮的对象。脱离了家乡的游士,如漂泊浮萍,孤身人,荣辱富贵都依赖于君主,君主最喜欢了。所以,法家只能在别国成事。
+
+### 道家
+
+顺其自然,让世界、让百姓自由自主地活动,事情自然就好了,这就叫“无为而治”。
+
+道家认为,正是各种入世的念头才把事情搞糟了,倘若不再追求转瞬即逝的现世成就,天地一下子就宽了。
+
+## 周秦之变【周-秦-汉】【中原】
+
+周秦之变对中国的思想史还带来个自然延伸的影响,就是我们在历史上看到的,从秦皇到汉武,帝国的官方思想经历了**从法家到道家再到儒家**的转换过程。
+
+### 周秦之变的“法家逻辑”
+百家争鸣的诸多学说,哪一种更注重提升战争效率,它就会获得诸侯们在政治上的更多支持。从中胜出的就是法家。但你用法家就能够征服天下,却不能仅仅用法家来治理天下。
+
+### 汉高祖的“无为而治”
+为什么汉高祖会选择道家呢?最根本的原因在于力量均衡。
+
+刘邦起家之前是个平民百姓,征服天下只能靠团结足够多的人。刘邦能够吸引一群重要将领和谋士追随自己,不是因为自己有力量,而是因为有威信。刘邦和这些人近乎是合伙人的关系,并没有压倒性力量来钳制他们,反倒会被这些兄弟给制衡住。这么一来,皇帝想要专制也不可能,**无为而治只是面对强大合伙人时的无奈之举。**
+
+### 汉武帝的“独尊儒术”
+“阳儒阴法",又称“**外儒内法**"。什么意思呢?从观念层面来看,是儒家在主导,儒生解读着天意,君主也不敢完全违背儒家的教导而行事。儒家表面上的迂腐,却为君主划出了大致的行动边界;但在具体的制度设计上,却还是法家逻辑。这样一来,**对君主来说,治理的效率有了,安抚民心的口径也有了。**
+
+## 汉人王朝为何无法统治长城以北【汉】【中原】
+这个问题,其底层是由儒家文化以及儒家文化的地理依赖性决定的。
+
+### 究竟什么是汉人
+**只要是接受儒家文化,并按儒家文化的指导生活的人,在古代就被视作汉人。**
+
+### 儒家文化的地理依赖性
+儒家文化光有个体心灵的皈依远远不够,个体还必须生活在一种特定的人际关系结构当中才行。
+
+比如,“三从四德三纲五常"等等这些规矩,都是对某种人际关系的规定,脱离开人际关系根本就没法展开。把你一个人扔荒岛上,还让你三从四德,你肯定做不到。
+
+儒家文化所要求的这种特定的人际关系,首先就要求有比较稳定的家庭组织,而稳定的家庭组织,前提是你得是定居的。
+
+定居的前提是农耕,而农耕有一个最硬性的约束条件,就是年降水量。东亚大陆上,如果一个地方年降水量少于400毫米的话,靠农耕是活不下去的。
+
+那么,东亚大陆的400毫米等降雨线在哪儿呢?
+
+这条400毫米等降雨线,差不多和长城重合。长城再往北,年降水量就不足400毫米了。也就是说,儒家帝国在农耕地区的扩张极限,就是400毫米等降雨线。于是在这里,儒家帝国修建了长城。长城再往北就是游牧地区了。
+
+在古代社会,由于农耕对降雨量的要求,使得你要是越过了长城以北,还想活得下去的话,就必须游牧化,否则是死路一条。而一旦游牧化之后,就意味着中原式的人际关系结构、家庭结构等等都没有基础了,无法再按照儒家的方式来生活了。
+
+**儒家文化有一种地理依赖性。因为自然生态原因,儒家越不过去长城以北、嘉峪关以西。儒家文化只能在中原地区展开。**
+
+### 中原和草原的继承逻辑区别
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/181105/dFAEllbB47.png)
+
+官僚制帝国有个很重要的特征,就是君主和官僚,在功能上是有分工的。君主的首要功能,是象征正当性。所以,君主的能力只排在第二位,第一重要的是君位继承的稳定性。嫡长子资格是最容易达成这种共识的。所以,中原的继承原则就稳定在嫡长子继承制上了。',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->saveNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000516s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001555s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `title`='中国史纲',`content`='# 中国史纲\n[TOC]\n## 中国历史的时空坐标\n时间和空间加在一块,才是完整的历史。\n### 四个时间坐标点\n中国历史发生过几次重要的转型,这些转型推动着中国历史向前的发展。\n\n1.第一个转型,是**商周之变**,就是从商朝到周朝的转型。\n\n这次转型之后,我们开始有了“中国”这个概念,中华文明当中最初的普世主义理想开始出现了。\n\n2.第二个转型,**周秦之变**,就是从周朝到秦朝的转型。\n\n这次转型,让中原从分封割据的局面进入到大一统的局面,中国历史也开始超越于中原之上,中原与草原的相互塑造和对抗开始成为中国历史的大脉络。\n\n3.第三个转型,**唐宋之变**,就是从唐朝到宋朝的转型。\n\n这次转型,让中国的社会结构从豪族社会进入到平民社会,此后中国历史再无长期的分裂,大一统开始成为一个不可逆的历史过程。在先秦之后,中国的文化在宋朝迎来了又一次大爆发,有些西方学者甚至称这是中国的文艺复兴。这次文化爆发,不仅决定了此后将近一千年的中国文化气质,也决定了日本、朝鲜、越南等其他儒教国家的文化气质。\n\n4.第四个转型,就是**清朝末期开始的古今之变**,中国开始从古代社会向现代社会进行艰难转型。\n\n这个过程带来了一系列轰轰烈烈的历史过程,转型过程直到今天仍在继续,还未完成。\n\n### 五个空间坐标点\n草原、中原、海洋、西域、高原。\n\n这几个大的空间,彼此之间有着极为深刻的相互依赖相互塑造的关系,以至于脱离开一方就完全解释不了另一方,所以它们加在一块构成一个体系。\n\n## 中国的概念和中华文明的普世主义理想【商周】【中原】\n### 历史上第一次出现「中国」\n周朝的第二位君主周成王,兴建了东都洛阳城,当时有个叫做「何」的贵族,这人铸了一件青铜器纪念这个事儿,1963年这个青铜器在陕西宝鸡被发现,今天称其为「何尊」，「何尊」的底部铸了一百多个字,里面提到,周武王说要\"宅兹中国”,就是说要“住在中国”,这是\"中国\"这个词的最早来源。\n\n什么叫中国？**达到了文明最高水准的地方,就是文明意义上的中心,古人就管这种地方叫做「中国」。**\n### 中华文明的普世主义理想：究竟天命是降于周人呢,还是天命降于周王\n商朝是由“商人\"。他们认为天命降于商人。为了让天能够永远地保佑自己,商人会经常地进行大规模的祭祀活动,祭祀当中会大量用到活人做祭品。\n\n这些被献祭的人从哪来呢?\n\n从对外战争掠夺的羌人而来。所谓的羌人就是生活在商王朝西部的、除了商朝人以外的所有人。\n\n商人的这种天命观,肯定会受到羌人的抵抗。其中,周人是最主要的一支抵抗力量,他们逐渐组织了很多苦不堪言的羌人群体来反抗商朝，反抗的时候,在周人中间有过一个观念层面的争论,究竟天命是降于周人呢,还是天命降于周王?争论的结果是,天命降于周王。\n\n这个观念变化太重要了。初看上去,这似乎是把天命的载体变得狭隘了,实际上是把它变得普世了。\n\n为什么这么说呢?如果天命是降于周人,那就和此前降于商人的路数差不多,周人的岁月要想静好,就得时刻压制住所有不是周人的群体。这样的话,周人和商人征战,谁胜谁败就不好说了。因为,对其他羌人群体来说,打完这一仗,十有八九只不过换了个地方拿我们献祭,凭啥要跟你混啊?而**如果天命是降于周王,则周王便是天下的共主,他不仅仅要为周人主持正义,而是要为全天下人主持正义,这是一种真正的普世主义观念**。\n\n### 什么是封建社会\n推翻了商朝之后,周朝又是如何具体建立它的统治方式呢?那就是,分封制。周天子向下分封了他的大量亲戚和重臣,意图依靠他们形成的藩属诸侯国,来拱卫周王。这样一种政治统治形式就被称作“封建”,这种社会叫做封建社会。\n\n封建“这个词最初出自《左传》,里面有句话叫做“封建亲戚,以藩屏周”,就是说分封亲信出去建立诸侯国,作为周朝王室领地的屏障。**只有这种封土建邦、分封割据的状态,才叫做封建。**\n\n封建社会的一大特征是,最高统治者是没有权力干涉诸侯国内部事务的,诸侯们确实是最高统治者的封臣,但某种意义上也像是个合伙人,都有比较强的独立性。\n\n周朝的时候,诸侯都承认周天子是最高权威,但周天子并不能管诸侯国内部的事情。周朝在这个过程中建立了封建社会,但周天子又逐渐衰落了。在周天子衰落之后,历史的主角就变成了那些诸侯。诸侯们彼此不断竞争,最终终结了中国的封建社会。\n\n## 封建社会的终结【春秋末期、战国初期】【中原】\n到了西周后期,周天子的影响力越来越差,最终被迫迁都洛阳,中国历史进入到东周。\n\n东周又分成了舂秋战国两个时期,**春秋末期出现了一些重要的技术发展,它带来了新的经济和人力资源,打破了过去的社会均衡,封建社会当中的贵族秩序崩塌了，封建社会也在春秋战国时代走上末日。**\n\n### 战争的逻辑的变化\n春秋之前的的战争十分注重礼仪性(战争都是贵族在参与，这就导致了参与人数并不多，他们认为战争是一件高贵的事，他们的战争可能就是比谁的正步踢得好)。但到了春秋中后期,随着楚国(楚国是个土生政权,并不是周天子分封的诸侯国，它的文化和中原有很大区别,也不大在乎中原的礼仪之类的东西,在当时的中原诸侯看来它就是个蛮夷之邦。)的加入，战争变成以砍死人为目的了。也正是由于这个战争逻辑的变化,才把中国引向了大一统。\n\n### 两个技术变迁\n诸侯分封次级诸侯，随着次级诸侯势力的增大，诸侯和次级诸侯的关系同周天子和诸侯的关系一样。在春秋末期、战国初期,出现了两个重要的技术变迁,让诸侯力量的扩大有了可能。正是因为这两次技术变革,打破了君主和封臣之间的力量均衡,周厉王当初搞不定自己下级的事,现在诸侯可以做到了,也就是诸侯能够搞定这些次级诸侯。\n\n这两个技术变迁,一个是铁器和牛耕的农业生产技术,一个是竹简这种知识传播技术。\n\n>铁器和牛耕 - 农业生产技术\n\n铁器与牛耕的出现,提升了平民的劳动效率。过去,他们的耕种效率很低,只能在贵族控制的公田、又叫井田上种地,没有能力再去开垦自己的私田了;但是,铁器和牛耕让生产效率大大提升了,平民有余力去开垦自己的私田,甚至索性就从贵族控制的井田上跑路了。此时君主、贵族、平民三者之间的一种复杂博弈关系就出现了。注意,这儿所说的君主,指的就是周天子封的诸侯,贵族指的就是诸侯所封的次级诸侯,这会儿的历史已经没周天子什么事儿了。\n\n君主向耕种私田的平民提供保护,平民向君主交税。平民从井田上越跑越多,贵族所控制的井田制就逐渐瓦解了,贵族的力量也逐渐削弱了。君主开始获得相对于贵族的优势。\n\n>竹简 - 知识传播技术\n\n 知识传播的成本急剧下降,一般的贵族子弟、甚至运气好的普通百姓,都有机会学习文字获得知识了。由于多年的人口膨胀,这个时候出现了很多有文化、却无法获得一块封地的贵族子弟,他们就变成游士,到处寻找把自己卖个好价钱的机会。\n\n君主们早就想养一群可控的自己人了。什么样的人最好用呢?\n\n第一,他们要在本国没有根基,没资本对抗君主;\n第二,他们的地位尊荣都取决于君主的赏赐,就有动力与君主相配合。\n\n从别国跑来的游士完全符合这两点要求。君主与游士拍即合,游士成为依附于君主的私人人事班底。这个人事班底,后来就发展为官僚制。\n\n官僚和贵族的区别在于,本质上来说,官僚没有独立性,他们是职业经理人,其地位取决于君主的意志;贵族有独立性,他们是准合伙人,君主有大事必须和他们商量着来。游士的出现,终于让君主们可以全方位碾压贵族封臣,诸侯国也就从君主与贵族共治的结构,转向君主说了算的官僚制结构。\n\n### 变法\n\n这个过程在历史上被叫作什么呢?\n\n变法! 没错,魏国的李悝变法、秦国的商鞅变法等等,就是这样展开的。\n\n来自其他国家的游士,成了各诸侯国的新贵,他们压制住所在国的大贵族,把君主的意志贯彻下去。随着各种变法的展开,中国历史就进入到了战国时代。\n\n对君主来说,这回有办法把平民也动员起来了。你们虽然不是贵族血统,但你们可以立军功。只要你有办法从战场上拎回更多的人头,你也有机会上升到比贵族还高的地位。这种激励可不得了,战争的规模和频次急剧上升,大规模的灭国之战很容易就爆发了。灭国之战都到什么量级呢?比如很多人推崇的战神白起,一场战役就会坑杀赵国的40万降兵,这都在变法之后成为可能，变法这个事情也有传染性,谁最先变法,谁的战争效率就大幅上升;其他国家如果不跟上,就只能等着挨打。\n\n**随着各国陆续变法,各诸侯国内部的旧贵族阶层被一扫而空**。变法之后,君主能决定军功的标准,也就能决定官僚新贵们的地位高低,**君主对国家的控制力就变得更强**,再没有能够约束君主的力量,**分封割据的封建社会也就逐渐走上了终结之日**,战争逻辑的变化,影响还不止于此,当战争规模扩大到了诸侯国承受不起的时候,中国也就开始走向大一统。\n\n## 诸子百家的三大流派【春秋后期】【中原】\n春秋后期,天下大乱,礼崩乐坏。人们突然发现赖以理解世界的坐标系没有了,世界的意义丧失了。而这种时候,就是思想大爆发的时候。\n\n诸子百家,根据他们对待传统不同的态度,可以分为三类:一类是力挺传统（**克己复礼**）,代表就是儒家;一类是抛弃传统（**以法代礼**）,代表就是法家;还有一类是不在乎传统（出世，**无为而治**）,代表就是道家。\n\n### 儒家\n孔子认为复古的路径是“克己复礼”,就是要克制自己的各种冲动,依照传统留下来的\"礼\"的要求来做事。这样就能达到儒家的最高理想,“仁”。\n\n>如果你理解孔子是儒家的开创者,莫不如把他理解为此前巫师传统的集大成者。\n\n儒家是从商周两朝的巫师系统发展出来的,巫师就是古代沟通天意与人事的神职人员，这种工作主要通过占卜和祭祀来完成。祭祀这属于最高的“礼”,而巫师们就是“礼”的具体操作者与记录者。\n\n到了礼崩乐坏的时候,如果要想复古,第步肯定得先说清楚这个“古”究竟是什么。巫师系统有这方面的很多记录,当然是最合适的解说人选,他们由此就逐渐发展为儒家。\n\n### 法家\n\n儒家强调恢复“礼”,“礼”来自传统,贵族是“礼\"的载体;法家强调创建“法”,“法”出自君主意志,官僚是法的执行者。\n\n>法家常在别国成事\n\n根据君主、贵族、官僚的博弈关系,各诸侯国的君主们肯定不会愿意接受儒家,而更愿意接受法所以孔子孟子都曾周游列国,都没得到过重用,反倒是法家的人占据各种高位。有趣的是,法家的鼓吹者往往在本国是不受欢迎的,无论是商鞅还是李斯,都是在别国建功立业。韩非虽然在别国没有能够建立功业,但在本国也从没获得过机会。原因在于,君主需要官僚在本国没有根基,才能听使唤;倘若是出身本国的法家,他总会有各种根基,这种人又太懂得法术势,很容易成为君主忌惮的对象。脱离了家乡的游士,如漂泊浮萍,孤身人,荣辱富贵都依赖于君主,君主最喜欢了。所以,法家只能在别国成事。\n\n### 道家\n\n顺其自然,让世界、让百姓自由自主地活动,事情自然就好了,这就叫“无为而治”。\n\n道家认为,正是各种入世的念头才把事情搞糟了,倘若不再追求转瞬即逝的现世成就,天地一下子就宽了。\n\n## 周秦之变【周-秦-汉】【中原】\n\n周秦之变对中国的思想史还带来个自然延伸的影响,就是我们在历史上看到的,从秦皇到汉武,帝国的官方思想经历了**从法家到道家再到儒家**的转换过程。\n\n### 周秦之变的“法家逻辑”\n百家争鸣的诸多学说,哪一种更注重提升战争效率,它就会获得诸侯们在政治上的更多支持。从中胜出的就是法家。但你用法家就能够征服天下,却不能仅仅用法家来治理天下。\n\n### 汉高祖的“无为而治”\n为什么汉高祖会选择道家呢?最根本的原因在于力量均衡。\n\n刘邦起家之前是个平民百姓,征服天下只能靠团结足够多的人。刘邦能够吸引一群重要将领和谋士追随自己,不是因为自己有力量,而是因为有威信。刘邦和这些人近乎是合伙人的关系,并没有压倒性力量来钳制他们,反倒会被这些兄弟给制衡住。这么一来,皇帝想要专制也不可能,**无为而治只是面对强大合伙人时的无奈之举。**\n\n### 汉武帝的“独尊儒术”\n“阳儒阴法\",又称“**外儒内法**\"。什么意思呢?从观念层面来看,是儒家在主导,儒生解读着天意,君主也不敢完全违背儒家的教导而行事。儒家表面上的迂腐,却为君主划出了大致的行动边界;但在具体的制度设计上,却还是法家逻辑。这样一来,**对君主来说,治理的效率有了,安抚民心的口径也有了。**\n\n## 汉人王朝为何无法统治长城以北【汉】【中原】\n这个问题,其底层是由儒家文化以及儒家文化的地理依赖性决定的。\n\n### 究竟什么是汉人\n**只要是接受儒家文化,并按儒家文化的指导生活的人,在古代就被视作汉人。**\n\n### 儒家文化的地理依赖性\n儒家文化光有个体心灵的皈依远远不够,个体还必须生活在一种特定的人际关系结构当中才行。\n\n比如,“三从四德三纲五常\"等等这些规矩,都是对某种人际关系的规定,脱离开人际关系根本就没法展开。把你一个人扔荒岛上,还让你三从四德,你肯定做不到。\n\n儒家文化所要求的这种特定的人际关系,首先就要求有比较稳定的家庭组织,而稳定的家庭组织,前提是你得是定居的。\n\n定居的前提是农耕,而农耕有一个最硬性的约束条件,就是年降水量。东亚大陆上,如果一个地方年降水量少于400毫米的话,靠农耕是活不下去的。\n\n那么,东亚大陆的400毫米等降雨线在哪儿呢?\n\n这条400毫米等降雨线,差不多和长城重合。长城再往北,年降水量就不足400毫米了。也就是说,儒家帝国在农耕地区的扩张极限,就是400毫米等降雨线。于是在这里,儒家帝国修建了长城。长城再往北就是游牧地区了。\n\n在古代社会,由于农耕对降雨量的要求,使得你要是越过了长城以北,还想活得下去的话,就必须游牧化,否则是死路一条。而一旦游牧化之后,就意味着中原式的人际关系结构、家庭结构等等都没有基础了,无法再按照儒家的方式来生活了。\n\n**儒家文化有一种地理依赖性。因为自然生态原因,儒家越不过去长城以北、嘉峪关以西。儒家文化只能在中原地区展开。**\n\n### 中原和草原的继承逻辑区别\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/181105/dFAEllbB47.png)\n\n官僚制帝国有个很重要的特征,就是君主和官僚,在功能上是有分工的。君主的首要功能,是象征正当性。所以,君主的能力只排在第二位,第一重要的是君位继承的稳定性。嫡长子资格是最容易达成这种共识的。所以,中原的继承原则就稳定在嫡长子继承制上了。',`groups`='Default',`p_id`=1  WHERE  `id` = 1 [ RunTime:0.000669s ]
+---------------------------------------------------------------
+[ 2018-11-05T23:04:18+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/updatenote/id/233.html
+[ info ] qingrang.top/daily/admin/note/updatenote/id/233.html [运行时间：0.061602s][吞吐率：16.23req/s] [内存消耗：2,181.33kb] [文件加载：61]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'updatenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '48955',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/233.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416; PHPSESSID=eb81ogaab9jatuojts3q1fv7r6',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'summary' => '',
+  'content' => '# 中国史纲
+[TOC]
+## 中国历史的时空坐标
+时间和空间加在一块,才是完整的历史。
+### 四个时间坐标点
+中国历史发生过几次重要的转型,这些转型推动着中国历史向前的发展。
+
+1.第一个转型,是**商周之变**,就是从商朝到周朝的转型。
+
+这次转型之后,我们开始有了“中国”这个概念,中华文明当中最初的普世主义理想开始出现了。
+
+2.第二个转型,**周秦之变**,就是从周朝到秦朝的转型。
+
+这次转型,让中原从分封割据的局面进入到大一统的局面,中国历史也开始超越于中原之上,中原与草原的相互塑造和对抗开始成为中国历史的大脉络。
+
+3.第三个转型,**唐宋之变**,就是从唐朝到宋朝的转型。
+
+这次转型,让中国的社会结构从豪族社会进入到平民社会,此后中国历史再无长期的分裂,大一统开始成为一个不可逆的历史过程。在先秦之后,中国的文化在宋朝迎来了又一次大爆发,有些西方学者甚至称这是中国的文艺复兴。这次文化爆发,不仅决定了此后将近一千年的中国文化气质,也决定了日本、朝鲜、越南等其他儒教国家的文化气质。
+
+4.第四个转型,就是**清朝末期开始的古今之变**,中国开始从古代社会向现代社会进行艰难转型。
+
+这个过程带来了一系列轰轰烈烈的历史过程,转型过程直到今天仍在继续,还未完成。
+
+### 五个空间坐标点
+草原、中原、海洋、西域、高原。
+
+这几个大的空间,彼此之间有着极为深刻的相互依赖相互塑造的关系,以至于脱离开一方就完全解释不了另一方,所以它们加在一块构成一个体系。
+
+## 中国的概念和中华文明的普世主义理想【商周】【中原】
+### 历史上第一次出现「中国」
+周朝的第二位君主周成王,兴建了东都洛阳城,当时有个叫做「何」的贵族,这人铸了一件青铜器纪念这个事儿,1963年这个青铜器在陕西宝鸡被发现,今天称其为「何尊」，「何尊」的底部铸了一百多个字,里面提到,周武王说要"宅兹中国”,就是说要“住在中国”,这是"中国"这个词的最早来源。
+
+什么叫中国？**达到了文明最高水准的地方,就是文明意义上的中心,古人就管这种地方叫做「中国」。**
+### 中华文明的普世主义理想：究竟天命是降于周人呢,还是天命降于周王
+商朝是由“商人"。他们认为天命降于商人。为了让天能够永远地保佑自己,商人会经常地进行大规模的祭祀活动,祭祀当中会大量用到活人做祭品。
+
+这些被献祭的人从哪来呢?
+
+从对外战争掠夺的羌人而来。所谓的羌人就是生活在商王朝西部的、除了商朝人以外的所有人。
+
+商人的这种天命观,肯定会受到羌人的抵抗。其中,周人是最主要的一支抵抗力量,他们逐渐组织了很多苦不堪言的羌人群体来反抗商朝，反抗的时候,在周人中间有过一个观念层面的争论,究竟天命是降于周人呢,还是天命降于周王?争论的结果是,天命降于周王。
+
+这个观念变化太重要了。初看上去,这似乎是把天命的载体变得狭隘了,实际上是把它变得普世了。
+
+为什么这么说呢?如果天命是降于周人,那就和此前降于商人的路数差不多,周人的岁月要想静好,就得时刻压制住所有不是周人的群体。这样的话,周人和商人征战,谁胜谁败就不好说了。因为,对其他羌人群体来说,打完这一仗,十有八九只不过换了个地方拿我们献祭,凭啥要跟你混啊?而**如果天命是降于周王,则周王便是天下的共主,他不仅仅要为周人主持正义,而是要为全天下人主持正义,这是一种真正的普世主义观念**。
+
+### 什么是封建社会
+推翻了商朝之后,周朝又是如何具体建立它的统治方式呢?那就是,分封制。周天子向下分封了他的大量亲戚和重臣,意图依靠他们形成的藩属诸侯国,来拱卫周王。这样一种政治统治形式就被称作“封建”,这种社会叫做封建社会。
+
+封建“这个词最初出自《左传》,里面有句话叫做“封建亲戚,以藩屏周”,就是说分封亲信出去建立诸侯国,作为周朝王室领地的屏障。**只有这种封土建邦、分封割据的状态,才叫做封建。**
+
+封建社会的一大特征是,最高统治者是没有权力干涉诸侯国内部事务的,诸侯们确实是最高统治者的封臣,但某种意义上也像是个合伙人,都有比较强的独立性。
+
+周朝的时候,诸侯都承认周天子是最高权威,但周天子并不能管诸侯国内部的事情。周朝在这个过程中建立了封建社会,但周天子又逐渐衰落了。在周天子衰落之后,历史的主角就变成了那些诸侯。诸侯们彼此不断竞争,最终终结了中国的封建社会。
+
+## 封建社会的终结【春秋末期、战国初期】【中原】
+到了西周后期,周天子的影响力越来越差,最终被迫迁都洛阳,中国历史进入到东周。
+
+东周又分成了舂秋战国两个时期,**春秋末期出现了一些重要的技术发展,它带来了新的经济和人力资源,打破了过去的社会均衡,封建社会当中的贵族秩序崩塌了，封建社会也在春秋战国时代走上末日。**
+
+### 战争的逻辑的变化
+春秋之前的的战争十分注重礼仪性(战争都是贵族在参与，这就导致了参与人数并不多，他们认为战争是一件高贵的事，他们的战争可能就是比谁的正步踢得好)。但到了春秋中后期,随着楚国(楚国是个土生政权,并不是周天子分封的诸侯国，它的文化和中原有很大区别,也不大在乎中原的礼仪之类的东西,在当时的中原诸侯看来它就是个蛮夷之邦。)的加入，战争变成以砍死人为目的了。也正是由于这个战争逻辑的变化,才把中国引向了大一统。
+
+### 两个技术变迁
+诸侯分封次级诸侯，随着次级诸侯势力的增大，诸侯和次级诸侯的关系同周天子和诸侯的关系一样。在春秋末期、战国初期,出现了两个重要的技术变迁,让诸侯力量的扩大有了可能。正是因为这两次技术变革,打破了君主和封臣之间的力量均衡,周厉王当初搞不定自己下级的事,现在诸侯可以做到了,也就是诸侯能够搞定这些次级诸侯。
+
+这两个技术变迁,一个是铁器和牛耕的农业生产技术,一个是竹简这种知识传播技术。
+
+>铁器和牛耕 - 农业生产技术
+
+铁器与牛耕的出现,提升了平民的劳动效率。过去,他们的耕种效率很低,只能在贵族控制的公田、又叫井田上种地,没有能力再去开垦自己的私田了;但是,铁器和牛耕让生产效率大大提升了,平民有余力去开垦自己的私田,甚至索性就从贵族控制的井田上跑路了。此时君主、贵族、平民三者之间的一种复杂博弈关系就出现了。注意,这儿所说的君主,指的就是周天子封的诸侯,贵族指的就是诸侯所封的次级诸侯,这会儿的历史已经没周天子什么事儿了。
+
+君主向耕种私田的平民提供保护,平民向君主交税。平民从井田上越跑越多,贵族所控制的井田制就逐渐瓦解了,贵族的力量也逐渐削弱了。君主开始获得相对于贵族的优势。
+
+>竹简 - 知识传播技术
+
+ 知识传播的成本急剧下降,一般的贵族子弟、甚至运气好的普通百姓,都有机会学习文字获得知识了。由于多年的人口膨胀,这个时候出现了很多有文化、却无法获得一块封地的贵族子弟,他们就变成游士,到处寻找把自己卖个好价钱的机会。
+
+君主们早就想养一群可控的自己人了。什么样的人最好用呢?
+
+第一,他们要在本国没有根基,没资本对抗君主;
+第二,他们的地位尊荣都取决于君主的赏赐,就有动力与君主相配合。
+
+从别国跑来的游士完全符合这两点要求。君主与游士拍即合,游士成为依附于君主的私人人事班底。这个人事班底,后来就发展为官僚制。
+
+官僚和贵族的区别在于,本质上来说,官僚没有独立性,他们是职业经理人,其地位取决于君主的意志;贵族有独立性,他们是准合伙人,君主有大事必须和他们商量着来。游士的出现,终于让君主们可以全方位碾压贵族封臣,诸侯国也就从君主与贵族共治的结构,转向君主说了算的官僚制结构。
+
+### 变法
+
+这个过程在历史上被叫作什么呢?
+
+变法! 没错,魏国的李悝变法、秦国的商鞅变法等等,就是这样展开的。
+
+来自其他国家的游士,成了各诸侯国的新贵,他们压制住所在国的大贵族,把君主的意志贯彻下去。随着各种变法的展开,中国历史就进入到了战国时代。
+
+对君主来说,这回有办法把平民也动员起来了。你们虽然不是贵族血统,但你们可以立军功。只要你有办法从战场上拎回更多的人头,你也有机会上升到比贵族还高的地位。这种激励可不得了,战争的规模和频次急剧上升,大规模的灭国之战很容易就爆发了。灭国之战都到什么量级呢?比如很多人推崇的战神白起,一场战役就会坑杀赵国的40万降兵,这都在变法之后成为可能，变法这个事情也有传染性,谁最先变法,谁的战争效率就大幅上升;其他国家如果不跟上,就只能等着挨打。
+
+**随着各国陆续变法,各诸侯国内部的旧贵族阶层被一扫而空**。变法之后,君主能决定军功的标准,也就能决定官僚新贵们的地位高低,**君主对国家的控制力就变得更强**,再没有能够约束君主的力量,**分封割据的封建社会也就逐渐走上了终结之日**,战争逻辑的变化,影响还不止于此,当战争规模扩大到了诸侯国承受不起的时候,中国也就开始走向大一统。
+
+## 诸子百家的三大流派【春秋后期】【中原】
+春秋后期,天下大乱,礼崩乐坏。人们突然发现赖以理解世界的坐标系没有了,世界的意义丧失了。而这种时候,就是思想大爆发的时候。
+
+诸子百家,根据他们对待传统不同的态度,可以分为三类:一类是力挺传统（**克己复礼**）,代表就是儒家;一类是抛弃传统（**以法代礼**）,代表就是法家;还有一类是不在乎传统（出世，**无为而治**）,代表就是道家。
+
+### 儒家
+孔子认为复古的路径是“克己复礼”,就是要克制自己的各种冲动,依照传统留下来的"礼"的要求来做事。这样就能达到儒家的最高理想,“仁”。
+
+>如果你理解孔子是儒家的开创者,莫不如把他理解为此前巫师传统的集大成者。
+
+儒家是从商周两朝的巫师系统发展出来的,巫师就是古代沟通天意与人事的神职人员，这种工作主要通过占卜和祭祀来完成。祭祀这属于最高的“礼”,而巫师们就是“礼”的具体操作者与记录者。
+
+到了礼崩乐坏的时候,如果要想复古,第步肯定得先说清楚这个“古”究竟是什么。巫师系统有这方面的很多记录,当然是最合适的解说人选,他们由此就逐渐发展为儒家。
+
+### 法家
+
+儒家强调恢复“礼”,“礼”来自传统,贵族是“礼"的载体;法家强调创建“法”,“法”出自君主意志,官僚是法的执行者。
+
+>法家常在别国成事
+
+根据君主、贵族、官僚的博弈关系,各诸侯国的君主们肯定不会愿意接受儒家,而更愿意接受法所以孔子孟子都曾周游列国,都没得到过重用,反倒是法家的人占据各种高位。有趣的是,法家的鼓吹者往往在本国是不受欢迎的,无论是商鞅还是李斯,都是在别国建功立业。韩非虽然在别国没有能够建立功业,但在本国也从没获得过机会。原因在于,君主需要官僚在本国没有根基,才能听使唤;倘若是出身本国的法家,他总会有各种根基,这种人又太懂得法术势,很容易成为君主忌惮的对象。脱离了家乡的游士,如漂泊浮萍,孤身人,荣辱富贵都依赖于君主,君主最喜欢了。所以,法家只能在别国成事。
+
+### 道家
+
+顺其自然,让世界、让百姓自由自主地活动,事情自然就好了,这就叫“无为而治”。
+
+道家认为,正是各种入世的念头才把事情搞糟了,倘若不再追求转瞬即逝的现世成就,天地一下子就宽了。
+
+## 周秦之变【周-秦-汉】【中原】
+
+周秦之变对中国的思想史还带来个自然延伸的影响,就是我们在历史上看到的,从秦皇到汉武,帝国的官方思想经历了**从法家到道家再到儒家**的转换过程。
+
+### 周秦之变的“法家逻辑”
+百家争鸣的诸多学说,哪一种更注重提升战争效率,它就会获得诸侯们在政治上的更多支持。从中胜出的就是法家。但你用法家就能够征服天下,却不能仅仅用法家来治理天下。
+
+### 汉高祖的“无为而治”
+为什么汉高祖会选择道家呢?最根本的原因在于力量均衡。
+
+刘邦起家之前是个平民百姓,征服天下只能靠团结足够多的人。刘邦能够吸引一群重要将领和谋士追随自己,不是因为自己有力量,而是因为有威信。刘邦和这些人近乎是合伙人的关系,并没有压倒性力量来钳制他们,反倒会被这些兄弟给制衡住。这么一来,皇帝想要专制也不可能,**无为而治只是面对强大合伙人时的无奈之举。**
+
+### 汉武帝的“独尊儒术”
+“阳儒阴法",又称“**外儒内法**"。什么意思呢?从观念层面来看,是儒家在主导,儒生解读着天意,君主也不敢完全违背儒家的教导而行事。儒家表面上的迂腐,却为君主划出了大致的行动边界;但在具体的制度设计上,却还是法家逻辑。这样一来,**对君主来说,治理的效率有了,安抚民心的口径也有了。**
+
+## 汉人王朝为何无法统治长城以北【汉】【中原】
+这个问题,其底层是由儒家文化以及儒家文化的地理依赖性决定的。
+
+### 究竟什么是汉人
+**只要是接受儒家文化,并按儒家文化的指导生活的人,在古代就被视作汉人。**
+
+### 儒家文化的地理依赖性
+儒家文化光有个体心灵的皈依远远不够,个体还必须生活在一种特定的人际关系结构当中才行。
+
+比如,“三从四德三纲五常"等等这些规矩,都是对某种人际关系的规定,脱离开人际关系根本就没法展开。把你一个人扔荒岛上,还让你三从四德,你肯定做不到。
+
+儒家文化所要求的这种特定的人际关系,首先就要求有比较稳定的家庭组织,而稳定的家庭组织,前提是你得是定居的。
+
+定居的前提是农耕,而农耕有一个最硬性的约束条件,就是年降水量。东亚大陆上,如果一个地方年降水量少于400毫米的话,靠农耕是活不下去的。
+
+那么,东亚大陆的400毫米等降雨线在哪儿呢?
+
+这条400毫米等降雨线,差不多和长城重合。长城再往北,年降水量就不足400毫米了。也就是说,儒家帝国在农耕地区的扩张极限,就是400毫米等降雨线。于是在这里,儒家帝国修建了长城。长城再往北就是游牧地区了。
+
+在古代社会,由于农耕对降雨量的要求,使得你要是越过了长城以北,还想活得下去的话,就必须游牧化,否则是死路一条。而一旦游牧化之后,就意味着中原式的人际关系结构、家庭结构等等都没有基础了,无法再按照儒家的方式来生活了。
+
+**儒家文化有一种地理依赖性。因为自然生态原因,儒家越不过去长城以北、嘉峪关以西。儒家文化只能在中原地区展开。**
+
+### 中原和草原的继承逻辑区别
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/181105/dFAEllbB47.png)
+
+官僚制帝国有个很重要的特征,就是君主和官僚,在功能上是有分工的。君主的首要功能,是象征正当性。所以,君主的能力只排在第二位,第一重要的是君位继承的稳定性。嫡长子资格是最容易达成这种共识的。所以,中原的继承原则就稳定在嫡长子继承制上了。',
+  'groups' => 'Default',
+  'showsel' => '1',
+  'showse2' => '1',
+  'id' => '233',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->updateNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000477s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001234s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 233 LIMIT 1 [ RunTime:0.000439s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `note` WHERE  `id` = 233 LIMIT 1 [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000970s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `groups` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SELECT `id` FROM `groups` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000335s ]
+[ error ] [10501]SQLSTATE[08S01]: Communication link failure: 1153 Got a packet bigger than 'max_allowed_packet' bytes[/var/www/html/daily/thinkphp/library/think/db/Connection.php:451]

@@ -1,0 +1,1000 @@
+---------------------------------------------------------------
+[ 2018-06-22T18:03:07+08:00 ] 127.0.0.1 127.0.0.1 GET /daily/
+[ info ] 127.0.0.1:9096/daily/ [运行时间：9.069301s][吞吐率：0.11req/s] [内存消耗：3,337.61kb] [文件加载：55]
+[ info ] [ LANG ] G:\PHP\daily\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=1320009278.460295; UM_distinctid=164038792b0164-0378992cc88f78-47e1137-1fa400-164038792b260a; CNZZDATA1261472815=974110255-1529066955-%7C1529066955',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'host' => '127.0.0.1:9096',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ G:\PHP\daily\application\admin\controller\Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\PHP\daily/application/admin\view\note\notelst.html [ array (
+  0 => 'autoSave',
+  1 => 'phoneSave',
+  2 => 'hide',
+  3 => 'list',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.865447s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.385208s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:2.765161s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.408273s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.409707s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.407663s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.408750s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.409859s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.412072s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0 [ RunTime:0.405187s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.408972s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 [ RunTime:0.406463s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.407101s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.409287s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.414443s ]
+---------------------------------------------------------------
+[ 2018-06-22T18:03:10+08:00 ] 127.0.0.1 127.0.0.1 GET /daily/
+[ info ] 127.0.0.1:9096/daily/ [运行时间：8.878129s][吞吐率：0.11req/s] [内存消耗：3,337.62kb] [文件加载：55]
+[ info ] [ LANG ] G:\PHP\daily\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=1320009278.460295; UM_distinctid=164038792b0164-0378992cc88f78-47e1137-1fa400-164038792b260a; CNZZDATA1261472815=974110255-1529066955-%7C1529066955',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'host' => '127.0.0.1:9096',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ G:\PHP\daily\application\admin\controller\Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\PHP\daily/application/admin\view\note\notelst.html [ array (
+  0 => 'autoSave',
+  1 => 'phoneSave',
+  2 => 'hide',
+  3 => 'list',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.830895s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.393662s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:2.655583s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.406512s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.409080s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.413926s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.409279s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.410428s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.409205s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0 [ RunTime:0.407851s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.414175s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 [ RunTime:0.406197s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.407195s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.408383s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.409254s ]
+---------------------------------------------------------------
+[ 2018-06-22T18:05:51+08:00 ] 127.0.0.1 127.0.0.1 GET /daily/admin/note/shownote/id/189.html
+[ info ] 127.0.0.1:9096/daily/admin/note/shownote/id/189.html [运行时间：2.354454s][吞吐率：0.42req/s] [内存消耗：2,116.40kb] [文件加载：56]
+[ info ] [ LANG ] G:\PHP\daily\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=1320009278.460295; UM_distinctid=164038792b0164-0378992cc88f78-47e1137-1fa400-164038792b260a; CNZZDATA1261472815=974110255-1529066955-%7C1529066955',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9096/daily/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'host' => '127.0.0.1:9096',
+)
+[ info ] [ PARAM ] array (
+  'id' => '189',
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ G:\PHP\daily\application\admin\controller\Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\PHP\daily/application/admin\view\note\shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.628282s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.392861s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 189 LIMIT 1 [ RunTime:0.408877s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.408981s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.408898s ]
+---------------------------------------------------------------
+[ 2018-06-22T18:06:03+08:00 ] 127.0.0.1 127.0.0.1 GET /daily/admin/note/editnote/id/189.html
+[ info ] 127.0.0.1:9096/daily/admin/note/editnote/id/189.html [运行时间：2.497813s][吞吐率：0.40req/s] [内存消耗：2,046.66kb] [文件加载：55]
+[ info ] [ LANG ] G:\PHP\daily\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'editnote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=1320009278.460295; UM_distinctid=164038792b0164-0378992cc88f78-47e1137-1fa400-164038792b260a; CNZZDATA1261472815=974110255-1529066955-%7C1529066955',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9096/daily/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'host' => '127.0.0.1:9096',
+)
+[ info ] [ PARAM ] array (
+  'id' => '189',
+)
+[ info ] [ RUN ] app\admin\controller\Note->editNote[ G:\PHP\daily\application\admin\controller\Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\PHP\daily/application/admin\view\note\editnote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.811665s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.395357s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 189 LIMIT 1 [ RunTime:0.409153s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.406765s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.408636s ]
+---------------------------------------------------------------
+[ 2018-06-22T18:08:05+08:00 ] 127.0.0.1 127.0.0.1 POST /daily/admin/note/updatenote/id/189.html
+[ info ] 127.0.0.1:9096/daily/admin/note/updatenote/id/189.html [运行时间：4.676143s][吞吐率：0.21req/s] [内存消耗：2,033.63kb] [文件加载：56]
+[ info ] [ LANG ] G:\PHP\daily\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'updatenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=1320009278.460295; UM_distinctid=164038792b0164-0378992cc88f78-47e1137-1fa400-164038792b260a; CNZZDATA1261472815=974110255-1529066955-%7C1529066955',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9096/daily/admin/note/editnote/id/189.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://127.0.0.1:9096',
+  'cache-control' => 'max-age=0',
+  'content-length' => '2153',
+  'host' => '127.0.0.1:9096',
+)
+[ info ] [ PARAM ] array (
+  'content' => '# Linux 自动删除 N 天前的文件
+[TOC]  
+## 1. 新建一个可执行文件 del.sh
+```
+#!/bin/bash
+find /home/backup -mtime +10 -name "*.sql*" -exec rm -rf {} /;
+-------------------------------------------------------------------
+find：linux 的查找命令，用户查找指定条件的文件
+/u01/backups：想要进行清理的任意目录
+-mtime：标准语句写法
+＋10：查找 10 天前的文件，这里用数字代表天数，＋30 表示查找 30 天前的文件
+"*.*"：希望查找的数据类型，"*.jpg" 表示查找扩展名为jpg的所有文件，"*" 表示查找所有文件
+-exec：固定写法
+rm -rf：强制删除文件，包括目录
+{} /; ：固定写法，一对大括号 + 空格 + / + ;
+```
+添加可执行权限：
+```
+chmod u+x del.sh
+```
+## 2. 将 del.sh 文件加入到系统计划任务
+```
+#crontab -e
+
+59 23 * * * /home/backup/del.sh
+```',
+  'groups' => 'Linux',
+  'id' => '189',
+)
+[ info ] [ RUN ] app\admin\controller\Note->updateNote[ G:\PHP\daily\application\admin\controller\Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.656858s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.931234s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 189 LIMIT 1 [ RunTime:0.395515s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.445501s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `groups` WHERE  `groups` = 'Linux' LIMIT 1 [ RunTime:1.077172s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.628095s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `id`=189,`p_id`=2,`title`='Linux 自动删除 N 天前的文件\r',`content`='# Linux 自动删除 N 天前的文件\r\n[TOC]  \r\n## 1. 新建一个可执行文件 del.sh\r\n```\r\n#!/bin/bash\r\nfind /home/backup -mtime +10 -name \"*.sql*\" -exec rm -rf {} /;\r\n-------------------------------------------------------------------\r\nfind：linux 的查找命令，用户查找指定条件的文件\r\n/u01/backups：想要进行清理的任意目录\r\n-mtime：标准语句写法\r\n＋10：查找 10 天前的文件，这里用数字代表天数，＋30 表示查找 30 天前的文件\r\n\"*.*\"：希望查找的数据类型，\"*.jpg\" 表示查找扩展名为jpg的所有文件，\"*\" 表示查找所有文件\r\n-exec：固定写法\r\nrm -rf：强制删除文件，包括目录\r\n{} /; ：固定写法，一对大括号 + 空格 + / + ;\r\n```\r\n添加可执行权限：\r\n```\r\nchmod u+x del.sh\r\n```\r\n## 2. 将 del.sh 文件加入到系统计划任务\r\n```\r\n#crontab -e\r\n\r\n59 23 * * * /home/backup/del.sh\r\n```',`groups`='Linux'  WHERE  `id` = 189 [ RunTime:0.362404s ]
+---------------------------------------------------------------
+[ 2018-06-22T18:08:07+08:00 ] 127.0.0.1 127.0.0.1 GET /daily/admin/note/shownote/id/189.html
+[ info ] 127.0.0.1:9096/daily/admin/note/shownote/id/189.html [运行时间：2.523355s][吞吐率：0.40req/s] [内存消耗：1,998.75kb] [文件加载：54]
+[ info ] [ LANG ] G:\PHP\daily\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=1320009278.460295; UM_distinctid=164038792b0164-0378992cc88f78-47e1137-1fa400-164038792b260a; CNZZDATA1261472815=974110255-1529066955-%7C1529066955',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9096/daily/admin/note/editnote/id/189.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'host' => '127.0.0.1:9096',
+)
+[ info ] [ PARAM ] array (
+  'id' => '189',
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ G:\PHP\daily\application\admin\controller\Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\PHP\daily/application/admin\view\note\shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.857920s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.398513s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 189 LIMIT 1 [ RunTime:0.404781s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.403297s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.409451s ]
+---------------------------------------------------------------
+[ 2018-06-22T18:08:44+08:00 ] 127.0.0.1 127.0.0.1 POST /daily/admin/note/updatenote/id/189.html
+[ info ] 127.0.0.1:9096/daily/admin/note/updatenote/id/189.html [运行时间：4.633765s][吞吐率：0.22req/s] [内存消耗：2,033.72kb] [文件加载：56]
+[ info ] [ LANG ] G:\PHP\daily\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'updatenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=1320009278.460295; UM_distinctid=164038792b0164-0378992cc88f78-47e1137-1fa400-164038792b260a; CNZZDATA1261472815=974110255-1529066955-%7C1529066955',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9096/daily/admin/note/editnote/id/189.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://127.0.0.1:9096',
+  'cache-control' => 'max-age=0',
+  'content-length' => '2151',
+  'host' => '127.0.0.1:9096',
+)
+[ info ] [ PARAM ] array (
+  'content' => '# Linux 自动删除 N 天前的文件
+[TOC]
+## 1. 新建一个可执行文件 del.sh
+```
+#!/bin/bash
+find /home/backup -mtime +10 -name "*.sql*" -exec rm -rf {} /;
+-------------------------------------------------------------------
+find：linux 的查找命令，用户查找指定条件的文件
+/u01/backups：想要进行清理的任意目录
+-mtime：标准语句写法
+＋10：查找 10 天前的文件，这里用数字代表天数，＋30 表示查找 30 天前的文件
+"*.*"：希望查找的数据类型，"*.jpg" 表示查找扩展名为jpg的所有文件，"*" 表示查找所有文件
+-exec：固定写法
+rm -rf：强制删除文件，包括目录
+{} /; ：固定写法，一对大括号 + 空格 + / + ;
+```
+添加可执行权限：
+```
+chmod u+x del.sh
+```
+## 2. 将 del.sh 文件加入到系统计划任务
+```
+#crontab -e
+
+59 23 * * * /home/backup/del.sh
+```',
+  'groups' => 'Linux',
+  'id' => '189',
+)
+[ info ] [ RUN ] app\admin\controller\Note->updateNote[ G:\PHP\daily\application\admin\controller\Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.175201s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.472617s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 189 LIMIT 1 [ RunTime:1.312411s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.403149s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `groups` WHERE  `groups` = 'Linux' LIMIT 1 [ RunTime:0.410601s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.408928s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `id`=189,`p_id`=2,`title`='Linux 自动删除 N 天前的文件\r',`content`='# Linux 自动删除 N 天前的文件\r\n[TOC]\r\n## 1. 新建一个可执行文件 del.sh\r\n```\r\n#!/bin/bash\r\nfind /home/backup -mtime +10 -name \"*.sql*\" -exec rm -rf {} /;\r\n-------------------------------------------------------------------\r\nfind：linux 的查找命令，用户查找指定条件的文件\r\n/u01/backups：想要进行清理的任意目录\r\n-mtime：标准语句写法\r\n＋10：查找 10 天前的文件，这里用数字代表天数，＋30 表示查找 30 天前的文件\r\n\"*.*\"：希望查找的数据类型，\"*.jpg\" 表示查找扩展名为jpg的所有文件，\"*\" 表示查找所有文件\r\n-exec：固定写法\r\nrm -rf：强制删除文件，包括目录\r\n{} /; ：固定写法，一对大括号 + 空格 + / + ;\r\n```\r\n添加可执行权限：\r\n```\r\nchmod u+x del.sh\r\n```\r\n## 2. 将 del.sh 文件加入到系统计划任务\r\n```\r\n#crontab -e\r\n\r\n59 23 * * * /home/backup/del.sh\r\n```',`groups`='Linux'  WHERE  `id` = 189 [ RunTime:0.402823s ]
+---------------------------------------------------------------
+[ 2018-06-22T18:08:47+08:00 ] 127.0.0.1 127.0.0.1 GET /daily/admin/note/shownote/id/189.html
+[ info ] 127.0.0.1:9096/daily/admin/note/shownote/id/189.html [运行时间：2.714765s][吞吐率：0.37req/s] [内存消耗：1,998.75kb] [文件加载：54]
+[ info ] [ LANG ] G:\PHP\daily\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=1320009278.460295; UM_distinctid=164038792b0164-0378992cc88f78-47e1137-1fa400-164038792b260a; CNZZDATA1261472815=974110255-1529066955-%7C1529066955',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9096/daily/admin/note/editnote/id/189.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'host' => '127.0.0.1:9096',
+)
+[ info ] [ PARAM ] array (
+  'id' => '189',
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ G:\PHP\daily\application\admin\controller\Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\PHP\daily/application/admin\view\note\shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.623512s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.390689s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 189 LIMIT 1 [ RunTime:0.815159s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.408587s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.408507s ]
+---------------------------------------------------------------
+[ 2018-06-22T18:12:35+08:00 ] 127.0.0.1 127.0.0.1 GET /daily/
+[ info ] 127.0.0.1:9096/daily/ [运行时间：8.988712s][吞吐率：0.11req/s] [内存消耗：4,027.20kb] [文件加载：57]
+[ info ] [ LANG ] G:\PHP\daily\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=1320009278.460295; UM_distinctid=164038792b0164-0378992cc88f78-47e1137-1fa400-164038792b260a; CNZZDATA1261472815=974110255-1529066955-%7C1529066955',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'host' => '127.0.0.1:9096',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ G:\PHP\daily\application\admin\controller\Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\PHP\daily/application/admin\view\note\notelst.html [ array (
+  0 => 'autoSave',
+  1 => 'phoneSave',
+  2 => 'hide',
+  3 => 'list',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.648312s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.408254s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:2.084619s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.364467s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.814066s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.405705s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.423921s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.389338s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.422057s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0 [ RunTime:0.399903s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.409251s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 [ RunTime:0.828132s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.425136s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.412751s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.439176s ]
+---------------------------------------------------------------
+[ 2018-06-22T18:12:56+08:00 ] 127.0.0.1 127.0.0.1 GET /daily/admin/note/editnote/id/189.html
+[ info ] 127.0.0.1:9096/daily/admin/note/editnote/id/189.html [运行时间：2.946394s][吞吐率：0.34req/s] [内存消耗：2,046.73kb] [文件加载：55]
+[ info ] [ LANG ] G:\PHP\daily\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'editnote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=1320009278.460295; UM_distinctid=164038792b0164-0378992cc88f78-47e1137-1fa400-164038792b260a; CNZZDATA1261472815=974110255-1529066955-%7C1529066955',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9096/daily/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'host' => '127.0.0.1:9096',
+)
+[ info ] [ PARAM ] array (
+  'id' => '189',
+)
+[ info ] [ RUN ] app\admin\controller\Note->editNote[ G:\PHP\daily\application\admin\controller\Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\PHP\daily/application/admin\view\note\editnote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.939907s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.493289s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 189 LIMIT 1 [ RunTime:0.458910s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.507247s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.473750s ]
+---------------------------------------------------------------
+[ 2018-06-22T18:13:01+08:00 ] 127.0.0.1 127.0.0.1 GET /daily/admin/note/shownote/id/189.html
+[ info ] 127.0.0.1:9096/daily/admin/note/shownote/id/189.html [运行时间：2.601373s][吞吐率：0.38req/s] [内存消耗：1,998.44kb] [文件加载：54]
+[ info ] [ LANG ] G:\PHP\daily\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=1320009278.460295; UM_distinctid=164038792b0164-0378992cc88f78-47e1137-1fa400-164038792b260a; CNZZDATA1261472815=974110255-1529066955-%7C1529066955',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9096/daily/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'host' => '127.0.0.1:9096',
+)
+[ info ] [ PARAM ] array (
+  'id' => '189',
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ G:\PHP\daily\application\admin\controller\Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\PHP\daily/application/admin\view\note\shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.902697s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.395868s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 189 LIMIT 1 [ RunTime:0.417799s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.399759s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.408867s ]
+---------------------------------------------------------------
+[ 2018-06-22T18:14:18+08:00 ] 127.0.0.1 127.0.0.1 GET /daily/admin/note/shownote/id/189.html
+[ info ] 127.0.0.1:9096/daily/admin/note/shownote/id/189.html [运行时间：2.927970s][吞吐率：0.34req/s] [内存消耗：2,169.96kb] [文件加载：57]
+[ info ] [ LANG ] G:\PHP\daily\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=1320009278.460295; UM_distinctid=164038792b0164-0378992cc88f78-47e1137-1fa400-164038792b260a; CNZZDATA1261472815=974110255-1529066955-%7C1529066955',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9096/daily/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'host' => '127.0.0.1:9096',
+)
+[ info ] [ PARAM ] array (
+  'id' => '189',
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ G:\PHP\daily\application\admin\controller\Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\PHP\daily/application/admin\view\note\shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.253272s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.393553s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 189 LIMIT 1 [ RunTime:0.409070s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.411540s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.409441s ]
+---------------------------------------------------------------
+[ 2018-06-22T18:14:38+08:00 ] 127.0.0.1 127.0.0.1 POST /daily/admin/note/updatenote/id/189.html
+[ info ] 127.0.0.1:9096/daily/admin/note/updatenote/id/189.html [运行时间：4.021373s][吞吐率：0.25req/s] [内存消耗：2,033.63kb] [文件加载：56]
+[ info ] [ LANG ] G:\PHP\daily\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'updatenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=1320009278.460295; UM_distinctid=164038792b0164-0378992cc88f78-47e1137-1fa400-164038792b260a; CNZZDATA1261472815=974110255-1529066955-%7C1529066955',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9096/daily/admin/note/shownote/id/189.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://127.0.0.1:9096',
+  'cache-control' => 'max-age=0',
+  'content-length' => '2153',
+  'host' => '127.0.0.1:9096',
+)
+[ info ] [ PARAM ] array (
+  'content' => '# Linux 自动删除 N 天前的文件
+[TOC]  
+## 1. 新建一个可执行文件 del.sh
+```
+#!/bin/bash
+find /home/backup -mtime +10 -name "*.sql*" -exec rm -rf {} /;
+-------------------------------------------------------------------
+find：linux 的查找命令，用户查找指定条件的文件
+/u01/backups：想要进行清理的任意目录
+-mtime：标准语句写法
+＋10：查找 10 天前的文件，这里用数字代表天数，＋30 表示查找 30 天前的文件
+"*.*"：希望查找的数据类型，"*.jpg" 表示查找扩展名为jpg的所有文件，"*" 表示查找所有文件
+-exec：固定写法
+rm -rf：强制删除文件，包括目录
+{} /; ：固定写法，一对大括号 + 空格 + / + ;
+```
+添加可执行权限：
+```
+chmod u+x del.sh
+```
+## 2. 将 del.sh 文件加入到系统计划任务
+```
+#crontab -e
+
+59 23 * * * /home/backup/del.sh
+```',
+  'groups' => 'Linux',
+  'id' => '189',
+)
+[ info ] [ RUN ] app\admin\controller\Note->updateNote[ G:\PHP\daily\application\admin\controller\Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.732199s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.476651s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 189 LIMIT 1 [ RunTime:0.613398s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.494319s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `groups` WHERE  `groups` = 'Linux' LIMIT 1 [ RunTime:0.424451s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.616407s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `id`=189,`p_id`=2,`title`='Linux 自动删除 N 天前的文件\r',`content`='# Linux 自动删除 N 天前的文件\r\n[TOC]  \r\n## 1. 新建一个可执行文件 del.sh\r\n```\r\n#!/bin/bash\r\nfind /home/backup -mtime +10 -name \"*.sql*\" -exec rm -rf {} /;\r\n-------------------------------------------------------------------\r\nfind：linux 的查找命令，用户查找指定条件的文件\r\n/u01/backups：想要进行清理的任意目录\r\n-mtime：标准语句写法\r\n＋10：查找 10 天前的文件，这里用数字代表天数，＋30 表示查找 30 天前的文件\r\n\"*.*\"：希望查找的数据类型，\"*.jpg\" 表示查找扩展名为jpg的所有文件，\"*\" 表示查找所有文件\r\n-exec：固定写法\r\nrm -rf：强制删除文件，包括目录\r\n{} /; ：固定写法，一对大括号 + 空格 + / + ;\r\n```\r\n添加可执行权限：\r\n```\r\nchmod u+x del.sh\r\n```\r\n## 2. 将 del.sh 文件加入到系统计划任务\r\n```\r\n#crontab -e\r\n\r\n59 23 * * * /home/backup/del.sh\r\n```',`groups`='Linux'  WHERE  `id` = 189 [ RunTime:0.588891s ]
+---------------------------------------------------------------
+[ 2018-06-22T18:14:41+08:00 ] 127.0.0.1 127.0.0.1 GET /daily/admin/note/shownote/id/189.html
+[ info ] 127.0.0.1:9096/daily/admin/note/shownote/id/189.html [运行时间：3.361349s][吞吐率：0.30req/s] [内存消耗：2,047.05kb] [文件加载：55]
+[ info ] [ LANG ] G:\PHP\daily\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=1320009278.460295; UM_distinctid=164038792b0164-0378992cc88f78-47e1137-1fa400-164038792b260a; CNZZDATA1261472815=974110255-1529066955-%7C1529066955',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9096/daily/admin/note/shownote/id/189.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'host' => '127.0.0.1:9096',
+)
+[ info ] [ PARAM ] array (
+  'id' => '189',
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ G:\PHP\daily\application\admin\controller\Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\PHP\daily/application/admin\view\note\shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.665839s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.395025s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 189 LIMIT 1 [ RunTime:0.417780s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.410107s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.398328s ]
+---------------------------------------------------------------
+[ 2018-06-22T18:15:28+08:00 ] 127.0.0.1 127.0.0.1 GET /daily/admin/note/shownote/id/189.html
+[ info ] 127.0.0.1:9096/daily/admin/note/shownote/id/189.html [运行时间：2.668130s][吞吐率：0.37req/s] [内存消耗：2,166.89kb] [文件加载：57]
+[ info ] [ LANG ] G:\PHP\daily\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=1320009278.460295; UM_distinctid=164038792b0164-0378992cc88f78-47e1137-1fa400-164038792b260a; CNZZDATA1261472815=974110255-1529066955-%7C1529066955',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9096/daily/admin/note/shownote/id/189.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'host' => '127.0.0.1:9096',
+)
+[ info ] [ PARAM ] array (
+  'id' => '189',
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ G:\PHP\daily\application\admin\controller\Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\PHP\daily/application/admin\view\note\shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.938920s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.381708s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 189 LIMIT 1 [ RunTime:0.408616s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.409378s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.407688s ]
+---------------------------------------------------------------
+[ 2018-06-22T18:16:38+08:00 ] 127.0.0.1 127.0.0.1 GET /daily/admin/note/shownote/id/189.html
+[ info ] 127.0.0.1:9096/daily/admin/note/shownote/id/189.html [运行时间：3.407050s][吞吐率：0.29req/s] [内存消耗：2,167.39kb] [文件加载：57]
+[ info ] [ LANG ] G:\PHP\daily\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=1320009278.460295; UM_distinctid=164038792b0164-0378992cc88f78-47e1137-1fa400-164038792b260a; CNZZDATA1261472815=974110255-1529066955-%7C1529066955',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9096/daily/admin/note/shownote/id/189.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'host' => '127.0.0.1:9096',
+)
+[ info ] [ PARAM ] array (
+  'id' => '189',
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ G:\PHP\daily\application\admin\controller\Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\PHP\daily/application/admin\view\note\shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:1.678415s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.399182s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 189 LIMIT 1 [ RunTime:0.399311s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.408754s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.411155s ]
+---------------------------------------------------------------
+[ 2018-06-22T18:18:23+08:00 ] 127.0.0.1 127.0.0.1 GET /daily/admin/note/shownote/id/189.html
+[ info ] 127.0.0.1:9096/daily/admin/note/shownote/id/189.html [运行时间：2.823826s][吞吐率：0.35req/s] [内存消耗：2,167.19kb] [文件加载：57]
+[ info ] [ LANG ] G:\PHP\daily\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=1320009278.460295; UM_distinctid=164038792b0164-0378992cc88f78-47e1137-1fa400-164038792b260a; CNZZDATA1261472815=974110255-1529066955-%7C1529066955',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9096/daily/admin/note/shownote/id/189.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'host' => '127.0.0.1:9096',
+)
+[ info ] [ PARAM ] array (
+  'id' => '189',
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ G:\PHP\daily\application\admin\controller\Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\PHP\daily/application/admin\view\note\shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.642398s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.391901s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 189 LIMIT 1 [ RunTime:0.408620s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.419138s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.911137s ]
+---------------------------------------------------------------
+[ 2018-06-22T18:21:35+08:00 ] 127.0.0.1 127.0.0.1 GET /daily/admin/note/shownote/id/189.html
+[ info ] 127.0.0.1:9096/daily/admin/note/shownote/id/189.html [运行时间：2.292795s][吞吐率：0.44req/s] [内存消耗：2,167.46kb] [文件加载：57]
+[ info ] [ LANG ] G:\PHP\daily\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=1320009278.460295; UM_distinctid=164038792b0164-0378992cc88f78-47e1137-1fa400-164038792b260a; CNZZDATA1261472815=974110255-1529066955-%7C1529066955',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9096/daily/admin/note/shownote/id/189.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'host' => '127.0.0.1:9096',
+)
+[ info ] [ PARAM ] array (
+  'id' => '189',
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ G:\PHP\daily\application\admin\controller\Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\PHP\daily/application/admin\view\note\shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.605938s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.391210s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 189 LIMIT 1 [ RunTime:0.407913s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.409333s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.410227s ]
+---------------------------------------------------------------
+[ 2018-06-22T18:21:48+08:00 ] 127.0.0.1 127.0.0.1 GET /daily/admin/note/shownote/id/189.html
+[ info ] 127.0.0.1:9096/daily/admin/note/shownote/id/189.html [运行时间：2.562069s][吞吐率：0.39req/s] [内存消耗：2,167.47kb] [文件加载：57]
+[ info ] [ LANG ] G:\PHP\daily\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=1320009278.460295; UM_distinctid=164038792b0164-0378992cc88f78-47e1137-1fa400-164038792b260a; CNZZDATA1261472815=974110255-1529066955-%7C1529066955',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9096/daily/admin/note/shownote/id/189.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'host' => '127.0.0.1:9096',
+)
+[ info ] [ PARAM ] array (
+  'id' => '189',
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ G:\PHP\daily\application\admin\controller\Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\PHP\daily/application/admin\view\note\shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.694170s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.408505s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 189 LIMIT 1 [ RunTime:0.469031s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.448306s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.472472s ]
+---------------------------------------------------------------
+[ 2018-06-22T18:22:01+08:00 ] 127.0.0.1 127.0.0.1 POST /daily/admin/note/updatenote/id/189.html
+[ info ] 127.0.0.1:9096/daily/admin/note/updatenote/id/189.html [运行时间：4.576800s][吞吐率：0.22req/s] [内存消耗：2,033.06kb] [文件加载：56]
+[ info ] [ LANG ] G:\PHP\daily\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'updatenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=1320009278.460295; UM_distinctid=164038792b0164-0378992cc88f78-47e1137-1fa400-164038792b260a; CNZZDATA1261472815=974110255-1529066955-%7C1529066955',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9096/daily/admin/note/shownote/id/189.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://127.0.0.1:9096',
+  'cache-control' => 'max-age=0',
+  'content-length' => '2138',
+  'host' => '127.0.0.1:9096',
+)
+[ info ] [ PARAM ] array (
+  'content' => '# Linux 自动删除 N 天前的文件
+[TOC]
+## 1. 新建一个可执行文件 del.sh
+```
+#!/bin/bash
+find /home/backup -mtime +10 -name "*.sql*" -exec rm -rf {} /;
+-------------------------------------------------------------------
+find：linux 的查找命令，用户查找指定条件的文件
+/u01/backups：想要进行清理的任意目录
+-mtime：标准语句写法
+＋10：查找 10 天前的文件，这里用数字代表天数，＋30 表示查找 30 天前的文件
+"*.*"：希望查找的数据类型，"*.jpg" 表示查找扩展名为jpg的所有文件，"*" 表示查找所有文件
+-exec：固定写法
+rm -rf：强制删除文件，包括目录
+{} /; ：固定写法，一对大括号 + 空格 + / + ;
+```
+添加可执行权限：
+```
+chmod u+x del.sh
+```
+## 2. 将 del.sh 文件加入到系统计划任务
+```
+#crontab -e
+
+59 23 * * * /home/backup/del.sh
+```',
+  'id' => '189',
+)
+[ info ] [ RUN ] app\admin\controller\Note->updateNote[ G:\PHP\daily\application\admin\controller\Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.742068s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.481684s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 189 LIMIT 1 [ RunTime:0.444468s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.467694s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `groups` WHERE  `groups` IS NULL LIMIT 1 [ RunTime:0.916250s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `id` IS NULL LIMIT 1 [ RunTime:0.501305s ]
+[ sql ] [ SQL ] SELECT `id` FROM `groups` WHERE  `groups` IS NULL LIMIT 1 [ RunTime:0.511835s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `id`=189,`p_id`=NULL,`title`='Linux 自动删除 N 天前的文件\r',`content`='# Linux 自动删除 N 天前的文件\r\n[TOC]\r\n## 1. 新建一个可执行文件 del.sh\r\n```\r\n#!/bin/bash\r\nfind /home/backup -mtime +10 -name \"*.sql*\" -exec rm -rf {} /;\r\n-------------------------------------------------------------------\r\nfind：linux 的查找命令，用户查找指定条件的文件\r\n/u01/backups：想要进行清理的任意目录\r\n-mtime：标准语句写法\r\n＋10：查找 10 天前的文件，这里用数字代表天数，＋30 表示查找 30 天前的文件\r\n\"*.*\"：希望查找的数据类型，\"*.jpg\" 表示查找扩展名为jpg的所有文件，\"*\" 表示查找所有文件\r\n-exec：固定写法\r\nrm -rf：强制删除文件，包括目录\r\n{} /; ：固定写法，一对大括号 + 空格 + / + ;\r\n```\r\n添加可执行权限：\r\n```\r\nchmod u+x del.sh\r\n```\r\n## 2. 将 del.sh 文件加入到系统计划任务\r\n```\r\n#crontab -e\r\n\r\n59 23 * * * /home/backup/del.sh\r\n```',`groups`=NULL  WHERE  `id` = 189 [ RunTime:0.449892s ]
+---------------------------------------------------------------
+[ 2018-06-22T18:22:04+08:00 ] 127.0.0.1 127.0.0.1 GET /daily/admin/note/shownote/id/189.html
+[ info ] 127.0.0.1:9096/daily/admin/note/shownote/id/189.html [运行时间：3.174035s][吞吐率：0.32req/s] [内存消耗：2,047.02kb] [文件加载：55]
+[ info ] [ LANG ] G:\PHP\daily\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=1320009278.460295; UM_distinctid=164038792b0164-0378992cc88f78-47e1137-1fa400-164038792b260a; CNZZDATA1261472815=974110255-1529066955-%7C1529066955',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9096/daily/admin/note/shownote/id/189.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'host' => '127.0.0.1:9096',
+)
+[ info ] [ PARAM ] array (
+  'id' => '189',
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ G:\PHP\daily\application\admin\controller\Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\PHP\daily/application/admin\view\note\shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.778645s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.655825s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 189 LIMIT 1 [ RunTime:0.683229s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.496469s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.511396s ]

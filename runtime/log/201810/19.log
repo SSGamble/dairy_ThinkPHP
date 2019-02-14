@@ -1,0 +1,2690 @@
+---------------------------------------------------------------
+[ 2018-10-19T03:11:29+08:00 ] 74.120.168.12 180.149.130.153 GET /daily/
+[ info ] qingrang.top/daily/ [运行时间：0.080039s][吞吐率：12.49req/s] [内存消耗：2,103.01kb] [文件加载：58]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-US,*',
+  'host' => 'qingrang.top',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Show->notelst[ /var/www/html/daily/application/admin/controller/Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/show/notelst.html [ array (
+  0 => 'list_new',
+  1 => 'groups',
+  2 => 'groups0',
+  3 => 'groups1',
+  4 => 'groups2',
+  5 => 'groupname',
+  6 => 'content',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001348s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.002917s ]
+[ sql ] [ SQL ] SELECT `content` FROM `note` WHERE  (  id=32 ) LIMIT 1 [ RunTime:0.001024s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` <> 'Personal'  AND `publish` = 1 LIMIT 1 [ RunTime:0.002501s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal'  AND `publish` = 1 ORDER BY id desc LIMIT 0,6 [ RunTime:0.000463s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000955s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `groups` <> 'Personal' [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `groups` <> 'Personal'  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000560s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1  AND `groups` <> 'Personal' [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000364s ]
+---------------------------------------------------------------
+[ 2018-10-19T09:22:05+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/login/index.html
+[ info ] qingrang.top/daily/admin/login/index.html [运行时间：0.049403s][吞吐率：20.24req/s] [内存消耗：1,339.89kb] [文件加载：47]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /var/www/html/daily/application/admin/controller/Login.php ]
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-19T09:22:17+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/login/index.html
+[ info ] qingrang.top/daily/admin/login/index.html [运行时间：0.068440s][吞吐率：14.61req/s] [内存消耗：1,922.37kb] [文件加载：54]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '8',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'pwd' => 'shao',
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /var/www/html/daily/application/admin/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001559s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.003068s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000627s ]
+---------------------------------------------------------------
+[ 2018-10-19T09:22:18+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note
+[ info ] qingrang.top/daily/admin/note [运行时间：0.082665s][吞吐率：12.10req/s] [内存消耗：2,201.64kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308; PHPSESSID=c1lnneb4i9cb43usr2ks9bm4p3',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/notelst.html [ array (
+  0 => 'stickList',
+  1 => 'hide',
+  2 => 'list',
+  3 => 'list_new',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+  10 => 'default_num',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000688s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001619s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.003341s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal' ORDER BY id desc LIMIT 5 [ RunTime:0.000505s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001128s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000517s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000957s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.001409s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000281s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001182s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000735s ]
+---------------------------------------------------------------
+[ 2018-10-19T09:32:31+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/editnote/id/225.html
+[ info ] qingrang.top/daily/admin/note/editnote/id/225.html [运行时间：0.093148s][吞吐率：10.74req/s] [内存消耗：2,028.18kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'editnote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308; PHPSESSID=c1lnneb4i9cb43usr2ks9bm4p3',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '225',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->editNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/editnote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000875s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.002263s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 225 LIMIT 1 [ RunTime:0.000609s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001458s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000442s ]
+---------------------------------------------------------------
+[ 2018-10-19T10:07:31+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/updatenote/id/225.html
+[ info ] qingrang.top/daily/admin/note/updatenote/id/225.html [运行时间：0.087410s][吞吐率：11.44req/s] [内存消耗：2,063.15kb] [文件加载：58]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'updatenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '5175',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/225.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308; PHPSESSID=c1lnneb4i9cb43usr2ks9bm4p3',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'summary' => '',
+  'content' => '# Java EE - Servlet
+## Servlet 简介
+Java Servlet 是运行在 Web 服务器或应用服务器上的程序，它是作为来自 Web 浏览器或其他 HTTP 客户端的请求和 HTTP 服务器上的数据库或应用程序之间的中间层。
+
+浏览器发送一个 HTTP 请求，HTTP 请求由 Web 容器分配给特定的 Servlet 进行处理，Servlet 的本质是一个 Java 对象，这个对象拥有一系列的方法来处理 HTTP 请求。
+## 通过最原始的方式创建一个 web 应用
+### 创建一个 java 项目 j2ee
+### 导入必须的 servlet-api.jar 包
+servlet-api.jar 包位于 D:\\tomcat\\lib\\servlet-api.jar
+### 编写 LoginServlet
+- 创建 LoginServlet类 继承 HttpServlet
+- 重写 service() 方法
+
+### 配置 web.xml
+### 指定项目输出到 classes 目录
+首先在 WEB-INF 下创建classes目录,把项目的class文件输出由原来的 j2ee/bin 设置到 j2ee/web/WEB-INF/classes下
+
+步骤:
+项目右键->properties->Java Build Path->Source->右下角的 Brower-> 指定位置是 j2ee/web/WEB-INF/classes。
+
+>为什么要有这一步？
+
+在 ecilpse 中默认输出的 class 是在 bin 目录下，但是 tomcat 启动之后，在默认情况下，不会去 bin 目录找这些 class 文件，而是到 WEB-INF/classes 这个目录下去寻找。 所以通过这一步的配置，使得 eclipse 的 class 文件输出到 WEB-INF/classes 目录下，那么这样就和 tomcat 兼容了。
+### 配置tomcat的server.xml 中的 <context/>
+为了把 j2ee/web 这个目录部署到 tomcat 中，进行如下操作：
+
+修改 tomcat/conf/sever.xml：
+`<Context path="/" docBase="e:\\\\project\\\\j2ee\\\\web" debug="0" reloadable="false" />`
+
+path="/"：就表示直接通过 http://127.0.0.1/hello 就可以访问网页了。
+
+如果设置为`<Context path="/j2ee" docBase="e:\\\\project\\\\j2ee\\\\web" debug="0" reloadable="false" />`
+
+那么表示需要通过 `http://127.0.0.1/j2ee/hello`才能访问
+
+reloadable：
+### 删除 tomcat webapps 下的 ROOT 目录
+在上一步部署 web 的时候 server.xml 中的 path 配置为 "/" 与 webapps下的 ROOT 目录冲突了
+
+所以要删除 ROOT 目录，如果没有就不用删除了。
+### 重启 tomcat，访问http://127.0.0.1/hello
+',
+  'groups' => 'Java',
+  'showsel' => '1',
+  'showse2' => '0',
+  'id' => '225',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->updateNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000749s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.002585s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 225 LIMIT 1 [ RunTime:0.000457s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `note` WHERE  `id` = 225 LIMIT 1 [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000964s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `groups` WHERE  `groups` = 'Java' LIMIT 1 [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000370s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `id`=225,`p_id`=2,`title`='Java EE - Servlet\r',`content`='# Java EE - Servlet\r\n## Servlet 简介\r\nJava Servlet 是运行在 Web 服务器或应用服务器上的程序，它是作为来自 Web 浏览器或其他 HTTP 客户端的请求和 HTTP 服务器上的数据库或应用程序之间的中间层。\r\n\r\n浏览器发送一个 HTTP 请求，HTTP 请求由 Web 容器分配给特定的 Servlet 进行处理，Servlet 的本质是一个 Java 对象，这个对象拥有一系列的方法来处理 HTTP 请求。\r\n## 通过最原始的方式创建一个 web 应用\r\n### 创建一个 java 项目 j2ee\r\n### 导入必须的 servlet-api.jar 包\r\nservlet-api.jar 包位于 D:\\tomcat\\lib\\servlet-api.jar\r\n### 编写 LoginServlet\r\n- 创建 LoginServlet类 继承 HttpServlet\r\n- 重写 service() 方法\r\n\r\n### 配置 web.xml\r\n### 指定项目输出到 classes 目录\r\n首先在 WEB-INF 下创建classes目录,把项目的class文件输出由原来的 j2ee/bin 设置到 j2ee/web/WEB-INF/classes下\r\n\r\n步骤:\r\n项目右键->properties->Java Build Path->Source->右下角的 Brower-> 指定位置是 j2ee/web/WEB-INF/classes。\r\n\r\n>为什么要有这一步？\r\n\r\n在 ecilpse 中默认输出的 class 是在 bin 目录下，但是 tomcat 启动之后，在默认情况下，不会去 bin 目录找这些 class 文件，而是到 WEB-INF/classes 这个目录下去寻找。 所以通过这一步的配置，使得 eclipse 的 class 文件输出到 WEB-INF/classes 目录下，那么这样就和 tomcat 兼容了。\r\n### 配置tomcat的server.xml 中的 <context/>\r\n为了把 j2ee/web 这个目录部署到 tomcat 中，进行如下操作：\r\n\r\n修改 tomcat/conf/sever.xml：\r\n`<Context path=\"/\" docBase=\"e:\\\\project\\\\j2ee\\\\web\" debug=\"0\" reloadable=\"false\" />`\r\n\r\npath=\"/\"：就表示直接通过 http://127.0.0.1/hello 就可以访问网页了。\r\n\r\n如果设置为`<Context path=\"/j2ee\" docBase=\"e:\\\\project\\\\j2ee\\\\web\" debug=\"0\" reloadable=\"false\" />`\r\n\r\n那么表示需要通过 `http://127.0.0.1/j2ee/hello`才能访问\r\n\r\nreloadable：\r\n### 删除 tomcat webapps 下的 ROOT 目录\r\n在上一步部署 web 的时候 server.xml 中的 path 配置为 \"/\" 与 webapps下的 ROOT 目录冲突了\r\n\r\n所以要删除 ROOT 目录，如果没有就不用删除了。\r\n### 重启 tomcat，访问http://127.0.0.1/hello\r\n',`groups`='Java',`is_show`=1,`publish`=0,`summary`=''  WHERE  `id` = 225 [ RunTime:0.000653s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Java' LIMIT 1 [ RunTime:0.002357s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=8  WHERE  `groups` = 'Java' [ RunTime:0.000612s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Java' LIMIT 1 [ RunTime:0.001403s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=8  WHERE  `groups` = 'Java' [ RunTime:0.000349s ]
+---------------------------------------------------------------
+[ 2018-10-19T10:07:31+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/225.html
+[ info ] qingrang.top/daily/admin/note/shownote/id/225.html [运行时间：0.065564s][吞吐率：15.25req/s] [内存消耗：1,982.09kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/225.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308; PHPSESSID=c1lnneb4i9cb43usr2ks9bm4p3',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '225',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000633s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001263s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 225 LIMIT 1 [ RunTime:0.000623s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000996s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000400s ]
+---------------------------------------------------------------
+[ 2018-10-19T15:28:57+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/login/index.html
+[ info ] qingrang.top/daily/admin/login/index.html [运行时间：0.044920s][吞吐率：22.26req/s] [内存消耗：1,339.89kb] [文件加载：47]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /var/www/html/daily/application/admin/controller/Login.php ]
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-19T15:29:10+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/login/index.html
+[ info ] qingrang.top/daily/admin/login/index.html [运行时间：0.091287s][吞吐率：10.95req/s] [内存消耗：1,922.37kb] [文件加载：54]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '8',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'pwd' => 'shao',
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /var/www/html/daily/application/admin/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001210s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.002615s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000585s ]
+---------------------------------------------------------------
+[ 2018-10-19T15:29:13+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note
+[ info ] qingrang.top/daily/admin/note [运行时间：0.103841s][吞吐率：9.63req/s] [内存消耗：2,205.18kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308; PHPSESSID=ln8j5e4nh62i9n5oqt9pqila41',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/notelst.html [ array (
+  0 => 'stickList',
+  1 => 'hide',
+  2 => 'list',
+  3 => 'list_new',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+  10 => 'default_num',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000793s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001819s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.005330s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal' ORDER BY id desc LIMIT 5 [ RunTime:0.000657s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001359s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000643s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000967s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.001186s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001113s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000769s ]
+---------------------------------------------------------------
+[ 2018-10-19T15:32:54+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/212.html
+[ info ] qingrang.top/daily/admin/note/shownote/id/212.html [运行时间：0.073386s][吞吐率：13.63req/s] [内存消耗：2,017.64kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308; PHPSESSID=ln8j5e4nh62i9n5oqt9pqila41',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '212',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000668s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001557s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 212 LIMIT 1 [ RunTime:0.000706s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000965s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000306s ]
+---------------------------------------------------------------
+[ 2018-10-19T15:57:01+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/asearch.html
+[ info ] qingrang.top/daily/admin/note/asearch.html [运行时间：0.079187s][吞吐率：12.63req/s] [内存消耗：2,158.47kb] [文件加载：52]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'asearch',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '40',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://qingrang.top/daily/admin/note',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308; PHPSESSID=ln8j5e4nh62i9n5oqt9pqila41',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'key' => '文件权限',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->aSearch[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000729s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001629s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  ( `title` LIKE '%文件权限%' OR `content` LIKE '%文件权限%' ) ORDER BY date desc [ RunTime:0.009008s ]
+---------------------------------------------------------------
+[ 2018-10-19T15:57:03+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/113
+[ info ] qingrang.top/daily/admin/note/shownote/id/113 [运行时间：0.067291s][吞吐率：14.86req/s] [内存消耗：2,009.82kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308; PHPSESSID=ln8j5e4nh62i9n5oqt9pqila41',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '113',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000567s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001778s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 113 LIMIT 1 [ RunTime:0.000508s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001020s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000277s ]
+---------------------------------------------------------------
+[ 2018-10-19T16:11:05+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/editnote/id/212.html
+[ info ] qingrang.top/daily/admin/note/editnote/id/212.html [运行时间：0.067587s][吞吐率：14.80req/s] [内存消耗：2,065.45kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'editnote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308; PHPSESSID=ln8j5e4nh62i9n5oqt9pqila41',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '212',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->editNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/editnote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000827s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001513s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 212 LIMIT 1 [ RunTime:0.000641s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000945s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000336s ]
+---------------------------------------------------------------
+[ 2018-10-19T16:11:43+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/savenote.html
+[ info ] qingrang.top/daily/admin/note/savenote.html [运行时间：0.060812s][吞吐率：16.44req/s] [内存消耗：2,205.56kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'savenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '53925',
+  'accept' => 'text/plain, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/212.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308; PHPSESSID=ln8j5e4nh62i9n5oqt9pqila41',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'ogroup' => 'Default',
+  'context' => '# Linux - C 编程
+[TOC]
+## 进程
+### 孤儿进程 和 僵尸进程
+Linux 系统中有两种特殊的进程：孤儿进程和僵尸进程。
+
+父进程应负责子进程的回收工作，但父子进程是异步运行的，父进程不知道什么时候接收子进程，父进程甚至会在子进程结束之前结束。若父进程在子进程退出之前退出，子进程就会变成孤儿进程，此时子进程会被进程 init 收养，之后 init 会代替其原本的父进程完成状态收集工作。
+
+当进程调用了 exit() 函数后，该进程并不是马上消失，而是留下一个称为僵尸进程的数据结构。僵尸进程是 Linux 系统中的另一种特殊进程，它几乎放弃进程退出前占用的所有内存，既没有可执行代码也不能被调度，只在进程列表中保留一个位置，记载进程的退出状态等信息供父进程收集。若父进程中没有回收子进程的代码，子进程将会一直处于僵尸态。
+
+### 进程标识符
+下列函数返回这些标识符，其返回值类型 pid_t，uid_t，gid_t 等都是宏定义，实质是 `unsigned int`
+```
+//头文件
+#include <sys/types.h>
+#include <unistd.h>
+
+//返回:调用进程的 进程ID
+pid_t getpid(void)	
+
+//返回:调用进程的 父进程ID
+pid_t getppid(void);
+
+//返回:调用进程的 实际用户ID
+uid_t getuid(void)
+
+//返回:调用进程的 有效用户ID
+uid_t geteuid(void)
+
+//返回:调用进程的 实际组ID
+gid_t getgid (void)
+
+//返回:调用进程的 有效组ID
+gid_t getegid(void)
+```
+### 进程同步
+Linux 提供了 wait() 函数和 waitpid() 函数来获取进程状态，实现进程同步。这两个函数用于父、子进程之间的同步，即确保子进程一定先于父进程执行并终止。
+```
+#include <sys/types.h>
+#include <sys/wait.h>
+pid_t wait(int *status) ;
+pid_t waitpid(pid_t pid , int * status, int options) ;
+//两个函数返回：若成功则为 进程ID，若出错则为 -1。
+```
+### 实验：fork() 函数的使用
+fork() 函数:
+创建成功，父进程返回子进程的 id ，子进程返回 0
+创建失败，父进程返回 -1
+>使用 fork() 函数创建一个进程，进程创建成功后使父进程和子进程分别执行不同的功能
+
+```
+/*---------------------------------------------------
+使用 fork() 函数创建一个进程，进程创建成功后使父进程和子进程分别执行不同的功能
+-----------------------------------------------------*/
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+int main()
+{
+	//调用fork()函数创建子进程
+	pid_t pid = fork();
+	if (pid == -1)	//创建失败
+	{
+		perror("fork error");
+		exit(1);	//退出进程，指定返回值1
+	}
+	else if (pid > 0)	//创建成功 - 父进程
+	{
+		printf("父进程,pid=%d,ppid=%d\\n", getpid(), getppid());
+	}
+	else if (pid == 0)	//创建成功 - 子进程
+	{
+		printf("子进程,pid=%d,ppid=%d\\n", getpid(), getppid());
+	}
+	printf("........finish..........\\n");
+	return 0;
+}
+
+/*========================================================================
+父进程,pid=3720,ppid=3514
+........finish..........
+子进程,pid=3721,ppid=2012
+........finish..........
+========================================================================*/
+
+```
+
+- 多次执行文件 test_fork会发现这种情况: child process 后输出的 ppid 不等于 parent process 的 pid,而等于1。这是什么原因?
+答：父进程先于子进程终止,子进程变为“孤儿进程”,后由进程 init 接收。
+
+>使用 fork() 函数在循环中创建 5 个子进程，使子进程分别打印各自的编号和 pid
+
+```
+/*---------------------------------------------------
+使用 fork() 函数在循环中创建 5 个子进程，使子进程分别打印各自的编号和 pid
+-----------------------------------------------------*/
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+int main()
+{
+	pid_t pid;
+	int i;
+	//循环创建进程
+	for (i = 0; i<5; i++){				
+		if ((pid = fork()) == 0)	//若当前进程为子进程，便跳出循环
+			break;
+	}
+	if (pid == -1){
+		perror("fork error");
+		exit(1);
+	}
+	else if (pid>0){	//父进程
+		//sleep(5);	//父进程等待所有子进程执行结束后再执行
+		printf("parent process:pid=%d\\n", getpid());
+	}
+	else if (pid == 0){		//子进程
+		//sleep(i);	//每个子进程分别沉睡不同的时间
+		printf("I am child=%d,pid=%d\\n", i + 1, getpid());
+	}
+	return 0;
+}
+
+/*========================================================================
+>不 sleep 的输出：
+zhangliren@ubuntu:~/Documents$ ./a.out 
+I am child=2,pid=3814
+parent process:pid=3812
+I am child=1,pid=3813
+I am child=4,pid=3816
+zhangliren@ubuntu:~/Documents$ I am child=5,pid=3817
+I am child=3,pid=3815
+|(终端提示符)
+----------------------------------------------------------
+>sleep() 后的输出：
+I am child=1,pid=3843
+I am child=2,pid=3844
+I am child=3,pid=3845
+I am child=4,pid=3846
+I am child=5,pid=3847
+parent process:pid=3842
+========================================================================*/
+```
+
+- 观察输出结果,会发现输出结果有以下问题
+（1）子进程的编号不是递增的
+（2）终端提示符后面仍有子进程信息打印,而命令提示符在最后一行的开头闪烁
+这是为什么?
+
+答：（1）父进程先于子进程终止。在 Linux 系统中,子进程应由父进程回收,但是当子进程被创建后,它与父进程及其他进程共同竟争系统资源,所以父子进程执行的顺序是不确定的,终止的先后顺序也是不确定的。此处创建了 5 个子进程,这 5 个子进程与父进程共同竞争资源。6 个进程使用 CPU 的顺序不确定,因此子进程的编号不是递增关系,父进程在子进程尚未全部终止前便终止。
+（2）父进程是一个前台进程。当它终止退出后,会释放命令提示符,输出当前工作路径及端提示符[ thelma@ localhost~],但此时尚有子进程仍在执行,终端仍有信息输出,因此命令提示符会出现在输出结果最后一行的开头。
+
+## 信号和信号处理
+### 信号的概念
+信号的本质是软件中断。很多比较重要的应用程序都需处理信号。信号是异步事件的典型实例，即产生信号的事件对进程而言是随机出现的。进程不能只是测试一个变量(例如errno)来判别是否发生了一个信号，而是必须告诉内核「在此信号发生时，请执行指定操作」。
+
+可以要求系统在某个信号出现时按照下列三种方式中的一种进行操作：
+1. 忽略此信号。大多数信号都可使用这种方式进行处理，但有两种信号却决不能被忽略。它们是：SIGKILL 和 SIGSTOP。这两种信号不能被忽略的原因是：它们向超级用户提供一种使进程终止或停止的可靠方法。
+2. 捕捉信号。为了做到这一点要通知内核在某种信号发生时，调用一个用户函数。在用户函数中，可执行用户希望对这种事件进行的处理。
+3. 执行系统默认动作。每一种信号都有系统默认动作。注意，对大多数信号的系统默认动作是终止该进程。
+
+### 常见函数
+#### kill
+给指定进程发送信号
+
+函数声明：`int kill(pid_t,int sig)`
+pid：接收信号的进程ID
+sig：要发送的信号编号
+#### raise
+发送指定信号给当前进程自身
+
+函数声明：`int raise(int sig)`
+
+#### pause
+暂停进程，接收到任何信号后恢复
+
+函数声明：`int pause()`
+
+#### alarm
+计时器，驱使内核在指定秒数后发送 SIGALRM 信号到调用该函数的进程，进程收到该信号后默认终止运行。
+
+函数声明：`unsigned int alarm(unsigned int seconds)`
+
+#### signal
+捕获信号后，执行指定函数
+
+函数声明：
+`typedef void (* sighandler_t)(int);`
+`sighandler_t signal(int signum,sighandler_t handler);`
+
+signum：信号编号
+handler：自定义信号处理函数的函数指针
+
+### 实验：李纳斯的第一个程序
+```
+/*---------------------------------------------------------------------------------------------------------
+李纳斯的第一个程序：两个进程，一个向屏幕输出 A，一个向屏幕输出 B，两进程轮换输出，中间间隔 1 秒钟。如此反复，直到用户按下 ctl + c 结束两个进程（ctl + c 就是向当前正在运行的所有进程发送SIGINT信号）。
+---------------------------------------------------------------------------------------------------------*/
+#include "stdio.h"
+#include "sys/types.h"
+#include "signal.h"
+
+pid_t pid;
+
+//自定义信号处理函数。
+//父进程打印 AAA，子进程打印 BBB
+void sigusr1_handler(int n)
+{
+	if(pid > 0)
+		printf("AAAA\\n");
+	else
+		printf("BBBB\\n");
+
+	alarm(1);//计时器，1s 后发送 SIGALRM 信号到进程
+}
+
+void sigalrm_handler(int n)
+{
+	if(pid > 0){	//父进程
+		kill(pid, SIGUSR1); //发送 SIGUSR1 信号给 pid 进程
+	}
+	else{	//子进程
+		kill(getppid(), SIGUSR1);//发送 SIGUSR1 信号给 父进程
+	}
+}
+
+int main()
+{
+	//在fork()之前设置的信号处理函数会被子进程继承
+	signal(SIGALRM, sigalrm_handler);//捕获 SIGALRM 信号，执行 sigalrm_handler
+	signal(SIGUSR1, sigusr1_handler);//用户定义的信号，用于捕获 SIGUSR1 信号执行处理函数 sigusr1_handler
+
+	pid = fork();
+	if (pid > 0)	//父进程
+		raise(SIGUSR1);	//发送 SIGUSR1 信号给当前进程
+
+	while(1)
+		pause();	//进程挂起，等待信号唤醒
+
+	return 0;
+}
+```
+## 进程间通信
+### 信号量
+#### 信号量的概念
+信号量是一个计数器，用于多进程对共享数据对象的存取。为了获得共享资源，进程需要执行下列操作：
+1. 测试控制该资源的信号量。
+1. 若此信号量的值为正，则进程可以使用该资源。进程将信号量值减 1（P 操作），表示它使用了一个资源单位。若此信号量的值为 0，则进程进入睡眠状态，直至信号量值大于 0。若进程被唤醒后，它返回至第 1 步。当进程不再使用由一个信息量控制的共享资源时，该信号量值增 1（V 操作）。如果有进程正在睡眠等待此信号量，则唤醒它们中的一个。
+
+这两个过程也叫做 p、v 操作。 p、v操作是原子操作。为此，信号量通常是在内核中实现的。
+
+常用的信号量形式是让它控制单个资源，所以其初始值为 1。但是，一般而言，信号量的初值可以是任一正值，该值说明有多少个共享资源单位可供共享应用。
+
+#### 信号量的创建与打开 semget
+函数声明：`int semget(key_t key,int nsems,int semflg)`
+
+key：所创建或打开的信号量集合的键
+nsems：创建的信号量集合中信号量的个数，此参数只在创建一个新的信号量集合时有效
+semflg：调用函数的操作类型，也可用于设置信号量集合的访问权限，两者通过逻辑或表示
+
+返回：
+- 成功：返回信号量ID
+- 失败：-1，并设置 errno
+
+>调用函数 semget 的作用由参数 key 和 flag 决定，相应约定如下：
+
+- 当 key 为 IPC_PRIVATE 时，创建一个新的信号量集合。此时参数 flag 的取值对函数的操作不起仟何作用。
+- 当 key 不为 IPC_PRIVATE，且 flag 设置了 IPC_CREAT 位，而没有设置 IPC_EXCL 位，则执行操作由 key 值决定：如果 key 为内核中某个已存在的信号量集合的键，则执行打开这个键的操作；反之，则执行创建信号量集合的操作。
+- 当 key 不为 IPC_PRIVATE，且 flag 中同时设置了 IPC_CREAT 位和 IPC_EXCL 位，则执行创建信号量集合的操作。参数 key 的取值应与内核中已存在的任何信号量集合的键值都不相同，否则函数调用失败。
+
+#### 对信号量的控制 semctl
+
+函数声明：`int semctl(int semid, int semnum, int cmd, [union semun arg]) ;`
+
+semid：为信号量集合的标识符。
+semnum：用于指明某个特定信号量。
+cmd：表示调用该函数希望执行的命令
+cmd 的常用设置：
+- SETVAL：表示 semctl() 的功能为初始化信号量的值，信号量值通过可选参数传入，在使用信号量前应先对信号量值进行设置
+- IPC_RMID：表示 semctl() 的功能为从系统中删除指定信号量
+
+arg：是一个 semun 共用体，该共用体中各个成员的具体含义和使用情况与参数 cmd 的取值有关。该共用体的定义如下：
+```
+union semen{
+	int val;	//cmd 为 SETVAL 时，用于指定信号量值
+	struct semid_ds *buf;	//cmd 为 IPC_STAT 时或 IPC_SET 时生效
+	unsigned short *array;	//cmd 为 GETALL 或 SETALL 时生效
+	struct seminfo *_buf;	//cmd 为 GETALL 或 SETALL 时生效
+};
+```
+
+该共用体中的 struct semid_ds 是一个由内核维护的记录信号量属性信息的结构体，该结构体的定义如下：
+```
+ushort semid_ds{
+	struct ipc_perm sem_perm;	//所有者和标致权限
+	time_t sem_otime;	//最后操作时间
+	time_t sem_ctime;	//最后更改时间
+	unsigned short sem_nsems;	//信号集中的信号数量
+}
+```
+
+返回：由参数 cmd 决定。对于除 GETALL 以外的所有 GET 命令，都返回相应值，通常为非负数。否则返回 -1。
+#### 对信号量的操作——semop
+改变信号量的值
+
+函数声明：`int semop(int semid, struct sembuf *sops, unsigned nops) ; `
+
+semid：为信号量集合的ID
+semoparray：是一个 struct sembuf 类型的数组指针，该数组中的每个元素设置了要对信号量集中的哪个型号做哪种操作，struct sembuf 结构体定义如下：
+```
+struct sembuf{
+	short sem_num;	//信号量在信号集中的编号
+	short sem_op;	//信号量操作,-1 P操作，+1 V操作
+	short sem_flag;	//标志位
+};
+```
+nops：参数 sops 所指数组中元素的个数
+
+返回：若成功则为 0，若出错则为 -1。
+
+### 共享内存
+#### 共享内存的概念
+共享内存是进程问通信的一种最基本、最快速的机制。共享内存是两个或多个进程共享同一块内存区域，并通过该内存区域实现数据交换的进程问通信机制。通常是由一个进程开辟一块共享内存区域，然后允许多个进程对此区域进行访问。由于不需使用中间介质，而是数据由内存直接映射到进程空间，因此共享内存是最快速的进程间通信机制。
+
+共享内存的最大不足在于，由于多个进程对同一块内存区域具有访问的权限，各个进程之间的同步问题显得尤为突出。必须控制同一时刻只有一个进程对共享内存区域写入数据，否则将造成数据的混乱。这可通过结合使用信号量来解决。
+
+#### 共享内存的创建和打开 shmget
+函数声明：`int shmget(key_t key, int size, int flag) ;`
+
+key：表示所创建或打开的共享内存的键
+size：表示共享内存区域的大小
+flag：表示函数的操作类型，也可用于设置共享内存的访问权限，两者通过逻辑或表示
+
+返回：若成功则为共享内存ID，若出错则为 -1。
+
+#### 共享内存的附加 shmat
+进行地址映射，将共享内存映射到进程虚拟地址空间中。
+
+函数声明：`void *shmat(int shmid, void *addr, int flag) ;
+`
+
+shmid：表示要附加的共享内存段的ID
+addr：虚拟地址
+flag：用于表示函数的操作方式
+
+返回：若成功则为指向共享内存段的指针，若出错则为-1
+
+#### 共享内存的分离 shmdt
+解除物理内存与进程虚拟地址空间的映射关系
+
+函数声明：`int shmdt(void *addr) ;`
+
+addr：是以前调用 shmat 时的返回值。
+
+返回：若成功则为0，若出错则为 -1。
+
+#### 共享内存的控制 shmctl
+对共享内存段执行多种操作。
+
+函数声明：`int shmctl(int shmid, int cmd, struct shmid_ds *buf) ;
+`
+shmid：为共享内存的标识符
+cmd：表示调用该函数希望执行的操作
+
+---
+cmd 的取值和对应操作如下：
+- IPC_STAT：对此段取 shmid_ds 结构，并存放在由 buf 指向的结构体中。
+- IPC_SET：按 buf 指向的结构体中的值设置与此段相关结构体中的下列三个字段：shm_perm.uid、shm_perm.gid以及shm_perm.mode。此命令只能由下列两种进程执行：一种是其有效用户ID等于shm_perm.cuid或shm_perm.uid的进程；另一种是具有超级用户特权的进程。
+- IPC_RMID：从系统中删除该共享内存段。此命令只能由下列两种进程执行：一种是其有效用户ID等于shm_perm.cuid或shm_perm.uid的进程；另一种是具有超级用户特权的进程。
+- SHM_LOCK：锁住共享内存段。此命令只能由超级用户执行。
+- SHM_UNLOCK：解锁共享内存段。此命令只能由超级用户执行。
+
+---
+buf：指向 shmid_ds 结构体的指针
+
+返回：若成功则为0，若出错则为 -1。
+
+### 实验：父进程产生10个子进程，并打印出子进程产生的随机数的和
+```
+/*---------------------------------------------------------------------------------------------------------
+功能：
+    父进程产生10个子进程，并打印出子进程产生的随机数的和。要求用信号机制、信号量以及共享内存实现。
+
+思路：
+    子进程将自己产生的随机数累加到共享内存。当10个子进程都累加完后，用信号机制通知父进程，
+父进程就可以从共享内存中读取数据了。为了避免10个子进程向共享内存中写入数据时发生冲突，
+应使用信号量进行并发控制。	
+---------------------------------------------------------------------------------------------------------*/
+
+#include "stdio.h"
+#include "sys/types.h"
+#include "signal.h"
+#include "sys/ipc.h"
+#include "sys/sem.h"
+#include "sys/shm.h"
+
+//semun 共用体
+union semun
+{
+	int val;
+	struct semid_ds *buf;	//一个由内核维护的记录信号量属性信息的结构体 
+	ushort *array;
+};
+
+
+int semid;//信号量ID
+int shmid;//共享内存ID
+char *shm_virtualaddr;  //共享内存关联到进程后的虚拟地址
+
+// P操作，获取信号量，-1
+void p(int semid)
+{
+	struct sembuf buf = {0, -1, 0};
+	//int semop(int semid, struct sembuf *sops, unsigned nops) ;
+	semop(semid, &buf, 1);	//改变信号量的值
+}
+
+// V操作，释放信号量，+1
+void v(int semid)
+{
+	struct sembuf buf = {0, 1, 0};
+	semop(semid, &buf, 1);
+}
+
+void sigusr1_handler(int n)
+{
+	printf("count = %d, total = %d\\n", *(int *)shm_virtualaddr, *(int *)(shm_virtualaddr+4));  //打印进程编号（不是进程ID）和随机数和
+	
+	//删除信号量
+	if(semctl(semid, IPC_RMID, 0) == -1)  
+		printf("remove semaphore fail\\n");
+	else
+		printf("remove semaphore ok\\n");
+	
+	shmdt(shm_virtualaddr);  //解除共享内存的关联
+
+	//删除共享内存
+	if(shmctl(shmid, IPC_RMID, 0) == -1)  
+		printf("remove shared-memory fail\\n");
+	else
+		printf("remove shared-memory ok\\n");
+
+	exit(0);
+}
+
+int main()
+{
+	signal(SIGUSR1, sigusr1_handler);  //用户定义的信号，用于捕获 SIGUSR1 信号执行处理函数 sigusr1_handler
+
+	//int semget(key_t key,int nsems,int semflg)
+	//key：所创建或打开的信号量集合的键，nsems：创建的信号量集合中信号量的个数，semflg：调用函数的操作类型，也可用于设置信号量集合的访问权限
+	//成功：返回信号量ID，失败：-1
+	semid = semget(IPC_PRIVATE, 1, 0666);	//创建并初始化信号量
+
+	if(semid == -1)	//信号量创建失败
+	{
+		printf("create semaphore fail\\n");
+		return 0;
+	}
+	else{	 //返回信号量ID
+		printf("create semaphore ok\\n");
+	}
+
+	//semun 共用体
+	union semun x;
+	x.val = 1;  //信号量初值应为多少？为1
+
+	//int semctl(int semid, int semnum, int cmd, [union semun arg]) ;
+	//semid：信号量集合，semnum：用于指明某个特定信号量，cmd：表示调用该函数希望执行的命令，arg：是一个 semun 共用体，
+	semctl(semid, 0, SETVAL, x);	//初始化信号量为 1
+	
+	//int shmget(key_t key, int size, int flag);
+	//key：表示所创建或打开的共享内存的键，size：表示共享内存区域的大小，flag：表示函数的操作类型，也可用于设置共享内存的访问权限
+	//若成功则为共享内存ID，若出错则为 -1
+	shmid = shmget(IPC_PRIVATE, 8, 0666);  //创建并关联到共享内存，共享内存一共 8 字节，前 4 字节存放 count，后 4 字节存放 total
+	if(shmid == -1)	
+	{
+		printf("create shared-memory fail\\n");
+		return 0;
+	}
+	else{	//返回共享内存ID
+		printf("create shared-memory ok\\n");
+	}
+
+	//void *shmat(int shmid, void *addr, int flag) ;
+	//shmid：表示要附加的共享内存段的ID，addr：虚拟地址，flag：用于表示函数的操作方式
+	//成功则为指向共享内存段的指针，若出错则为-1
+	shm_virtualaddr = shmat(shmid, 0, 0);//共享内存的附加，地址映射，addr 为 0，此共享内存段附加到由内核选择的第一个可用地址上
+
+	*(int *)shm_virtualaddr = 0;  //初始化进程编号，将指针转成int*，然后取该指针指向地址的值
+	*(int *)(shm_virtualaddr + 4) = 0;  //初始化随机数和
+
+	//flag 是否是子进程
+	char is_child = 0;
+	int i;
+	//循环创建 10 个进程
+	for(i=0; i<10; i++)
+	{
+		pid_t pid = fork(); 
+		if(pid == 0)	//子进程
+		{
+			is_child = 1;  //设置子进程中 is_child 为 1
+			break;  //退出循环
+		}
+	}
+
+	//子进程
+	if(is_child)
+	{
+		p(semid);  // P操作，获取信号量（-1）
+
+		srand(time(NULL) + i);	//设置随机种子数
+		int num = rand()%10;	//取 0-9 随机数
+
+		(*(int *)shm_virtualaddr)++;  //进程编号自增
+		*(int *)(shm_virtualaddr + 4) += num;  //随机数相加
+
+		printf("child%d: %d\\n", i, num);
+
+		v(semid);  //V操作，释放信号量（+1）
+
+		if(*(int *)shm_virtualaddr == 10)  //if(i==10)最后一个子进程，善后操作
+			kill(getppid(), SIGUSR1);  //向父进程发送 SIGUSER1 信号 
+	}
+	else
+	{
+		while(1)
+			pause();//挂起，等待信号唤醒
+	}
+
+	return 0;
+}
+/*========================================================================
+create semaphore ok
+create shared-memory ok
+child0: 8
+child1: 8
+child5: 9
+child4: 0
+child6: 2
+child3: 9
+child7: 6
+child8: 4
+child9: 1
+child2: 9
+count = 10, total = 56
+remove semaphore ok
+remove shared-memory ok
+========================================================================*/
+```
+## socket 编程接口',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->saveNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000780s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001375s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `title`='Linux - C 编程',`content`='# Linux - C 编程\n[TOC]\n## 进程\n### 孤儿进程 和 僵尸进程\nLinux 系统中有两种特殊的进程：孤儿进程和僵尸进程。\n\n父进程应负责子进程的回收工作，但父子进程是异步运行的，父进程不知道什么时候接收子进程，父进程甚至会在子进程结束之前结束。若父进程在子进程退出之前退出，子进程就会变成孤儿进程，此时子进程会被进程 init 收养，之后 init 会代替其原本的父进程完成状态收集工作。\n\n当进程调用了 exit() 函数后，该进程并不是马上消失，而是留下一个称为僵尸进程的数据结构。僵尸进程是 Linux 系统中的另一种特殊进程，它几乎放弃进程退出前占用的所有内存，既没有可执行代码也不能被调度，只在进程列表中保留一个位置，记载进程的退出状态等信息供父进程收集。若父进程中没有回收子进程的代码，子进程将会一直处于僵尸态。\n\n### 进程标识符\n下列函数返回这些标识符，其返回值类型 pid_t，uid_t，gid_t 等都是宏定义，实质是 `unsigned int`\n```\n//头文件\n#include <sys/types.h>\n#include <unistd.h>\n\n//返回:调用进程的 进程ID\npid_t getpid(void)	\n\n//返回:调用进程的 父进程ID\npid_t getppid(void);\n\n//返回:调用进程的 实际用户ID\nuid_t getuid(void)\n\n//返回:调用进程的 有效用户ID\nuid_t geteuid(void)\n\n//返回:调用进程的 实际组ID\ngid_t getgid (void)\n\n//返回:调用进程的 有效组ID\ngid_t getegid(void)\n```\n### 进程同步\nLinux 提供了 wait() 函数和 waitpid() 函数来获取进程状态，实现进程同步。这两个函数用于父、子进程之间的同步，即确保子进程一定先于父进程执行并终止。\n```\n#include <sys/types.h>\n#include <sys/wait.h>\npid_t wait(int *status) ;\npid_t waitpid(pid_t pid , int * status, int options) ;\n//两个函数返回：若成功则为 进程ID，若出错则为 -1。\n```\n### 实验：fork() 函数的使用\nfork() 函数:\n创建成功，父进程返回子进程的 id ，子进程返回 0\n创建失败，父进程返回 -1\n>使用 fork() 函数创建一个进程，进程创建成功后使父进程和子进程分别执行不同的功能\n\n```\n/*---------------------------------------------------\n使用 fork() 函数创建一个进程，进程创建成功后使父进程和子进程分别执行不同的功能\n-----------------------------------------------------*/\n#include <stdio.h>\n#include <stdlib.h>\n#include <unistd.h>\nint main()\n{\n	//调用fork()函数创建子进程\n	pid_t pid = fork();\n	if (pid == -1)	//创建失败\n	{\n		perror(\"fork error\");\n		exit(1);	//退出进程，指定返回值1\n	}\n	else if (pid > 0)	//创建成功 - 父进程\n	{\n		printf(\"父进程,pid=%d,ppid=%d\\n\", getpid(), getppid());\n	}\n	else if (pid == 0)	//创建成功 - 子进程\n	{\n		printf(\"子进程,pid=%d,ppid=%d\\n\", getpid(), getppid());\n	}\n	printf(\"........finish..........\\n\");\n	return 0;\n}\n\n/*========================================================================\n父进程,pid=3720,ppid=3514\n........finish..........\n子进程,pid=3721,ppid=2012\n........finish..........\n========================================================================*/\n\n```\n\n- 多次执行文件 test_fork会发现这种情况: child process 后输出的 ppid 不等于 parent process 的 pid,而等于1。这是什么原因?\n答：父进程先于子进程终止,子进程变为“孤儿进程”,后由进程 init 接收。\n\n>使用 fork() 函数在循环中创建 5 个子进程，使子进程分别打印各自的编号和 pid\n\n```\n/*---------------------------------------------------\n使用 fork() 函数在循环中创建 5 个子进程，使子进程分别打印各自的编号和 pid\n-----------------------------------------------------*/\n#include <stdio.h>\n#include <stdlib.h>\n#include <unistd.h>\n\nint main()\n{\n	pid_t pid;\n	int i;\n	//循环创建进程\n	for (i = 0; i<5; i++){				\n		if ((pid = fork()) == 0)	//若当前进程为子进程，便跳出循环\n			break;\n	}\n	if (pid == -1){\n		perror(\"fork error\");\n		exit(1);\n	}\n	else if (pid>0){	//父进程\n		//sleep(5);	//父进程等待所有子进程执行结束后再执行\n		printf(\"parent process:pid=%d\\n\", getpid());\n	}\n	else if (pid == 0){		//子进程\n		//sleep(i);	//每个子进程分别沉睡不同的时间\n		printf(\"I am child=%d,pid=%d\\n\", i + 1, getpid());\n	}\n	return 0;\n}\n\n/*========================================================================\n>不 sleep 的输出：\nzhangliren@ubuntu:~/Documents$ ./a.out \nI am child=2,pid=3814\nparent process:pid=3812\nI am child=1,pid=3813\nI am child=4,pid=3816\nzhangliren@ubuntu:~/Documents$ I am child=5,pid=3817\nI am child=3,pid=3815\n|(终端提示符)\n----------------------------------------------------------\n>sleep() 后的输出：\nI am child=1,pid=3843\nI am child=2,pid=3844\nI am child=3,pid=3845\nI am child=4,pid=3846\nI am child=5,pid=3847\nparent process:pid=3842\n========================================================================*/\n```\n\n- 观察输出结果,会发现输出结果有以下问题\n（1）子进程的编号不是递增的\n（2）终端提示符后面仍有子进程信息打印,而命令提示符在最后一行的开头闪烁\n这是为什么?\n\n答：（1）父进程先于子进程终止。在 Linux 系统中,子进程应由父进程回收,但是当子进程被创建后,它与父进程及其他进程共同竟争系统资源,所以父子进程执行的顺序是不确定的,终止的先后顺序也是不确定的。此处创建了 5 个子进程,这 5 个子进程与父进程共同竞争资源。6 个进程使用 CPU 的顺序不确定,因此子进程的编号不是递增关系,父进程在子进程尚未全部终止前便终止。\n（2）父进程是一个前台进程。当它终止退出后,会释放命令提示符,输出当前工作路径及端提示符[ thelma@ localhost~],但此时尚有子进程仍在执行,终端仍有信息输出,因此命令提示符会出现在输出结果最后一行的开头。\n\n## 信号和信号处理\n### 信号的概念\n信号的本质是软件中断。很多比较重要的应用程序都需处理信号。信号是异步事件的典型实例，即产生信号的事件对进程而言是随机出现的。进程不能只是测试一个变量(例如errno)来判别是否发生了一个信号，而是必须告诉内核「在此信号发生时，请执行指定操作」。\n\n可以要求系统在某个信号出现时按照下列三种方式中的一种进行操作：\n1. 忽略此信号。大多数信号都可使用这种方式进行处理，但有两种信号却决不能被忽略。它们是：SIGKILL 和 SIGSTOP。这两种信号不能被忽略的原因是：它们向超级用户提供一种使进程终止或停止的可靠方法。\n2. 捕捉信号。为了做到这一点要通知内核在某种信号发生时，调用一个用户函数。在用户函数中，可执行用户希望对这种事件进行的处理。\n3. 执行系统默认动作。每一种信号都有系统默认动作。注意，对大多数信号的系统默认动作是终止该进程。\n\n### 常见函数\n#### kill\n给指定进程发送信号\n\n函数声明：`int kill(pid_t,int sig)`\npid：接收信号的进程ID\nsig：要发送的信号编号\n#### raise\n发送指定信号给当前进程自身\n\n函数声明：`int raise(int sig)`\n\n#### pause\n暂停进程，接收到任何信号后恢复\n\n函数声明：`int pause()`\n\n#### alarm\n计时器，驱使内核在指定秒数后发送 SIGALRM 信号到调用该函数的进程，进程收到该信号后默认终止运行。\n\n函数声明：`unsigned int alarm(unsigned int seconds)`\n\n#### signal\n捕获信号后，执行指定函数\n\n函数声明：\n`typedef void (* sighandler_t)(int);`\n`sighandler_t signal(int signum,sighandler_t handler);`\n\nsignum：信号编号\nhandler：自定义信号处理函数的函数指针\n\n### 实验：李纳斯的第一个程序\n```\n/*---------------------------------------------------------------------------------------------------------\n李纳斯的第一个程序：两个进程，一个向屏幕输出 A，一个向屏幕输出 B，两进程轮换输出，中间间隔 1 秒钟。如此反复，直到用户按下 ctl + c 结束两个进程（ctl + c 就是向当前正在运行的所有进程发送SIGINT信号）。\n---------------------------------------------------------------------------------------------------------*/\n#include \"stdio.h\"\n#include \"sys/types.h\"\n#include \"signal.h\"\n\npid_t pid;\n\n//自定义信号处理函数。\n//父进程打印 AAA，子进程打印 BBB\nvoid sigusr1_handler(int n)\n{\n	if(pid > 0)\n		printf(\"AAAA\\n\");\n	else\n		printf(\"BBBB\\n\");\n\n	alarm(1);//计时器，1s 后发送 SIGALRM 信号到进程\n}\n\nvoid sigalrm_handler(int n)\n{\n	if(pid > 0){	//父进程\n		kill(pid, SIGUSR1); //发送 SIGUSR1 信号给 pid 进程\n	}\n	else{	//子进程\n		kill(getppid(), SIGUSR1);//发送 SIGUSR1 信号给 父进程\n	}\n}\n\nint main()\n{\n	//在fork()之前设置的信号处理函数会被子进程继承\n	signal(SIGALRM, sigalrm_handler);//捕获 SIGALRM 信号，执行 sigalrm_handler\n	signal(SIGUSR1, sigusr1_handler);//用户定义的信号，用于捕获 SIGUSR1 信号执行处理函数 sigusr1_handler\n\n	pid = fork();\n	if (pid > 0)	//父进程\n		raise(SIGUSR1);	//发送 SIGUSR1 信号给当前进程\n\n	while(1)\n		pause();	//进程挂起，等待信号唤醒\n\n	return 0;\n}\n```\n## 进程间通信\n### 信号量\n#### 信号量的概念\n信号量是一个计数器，用于多进程对共享数据对象的存取。为了获得共享资源，进程需要执行下列操作：\n1. 测试控制该资源的信号量。\n1. 若此信号量的值为正，则进程可以使用该资源。进程将信号量值减 1（P 操作），表示它使用了一个资源单位。若此信号量的值为 0，则进程进入睡眠状态，直至信号量值大于 0。若进程被唤醒后，它返回至第 1 步。当进程不再使用由一个信息量控制的共享资源时，该信号量值增 1（V 操作）。如果有进程正在睡眠等待此信号量，则唤醒它们中的一个。\n\n这两个过程也叫做 p、v 操作。 p、v操作是原子操作。为此，信号量通常是在内核中实现的。\n\n常用的信号量形式是让它控制单个资源，所以其初始值为 1。但是，一般而言，信号量的初值可以是任一正值，该值说明有多少个共享资源单位可供共享应用。\n\n#### 信号量的创建与打开 semget\n函数声明：`int semget(key_t key,int nsems,int semflg)`\n\nkey：所创建或打开的信号量集合的键\nnsems：创建的信号量集合中信号量的个数，此参数只在创建一个新的信号量集合时有效\nsemflg：调用函数的操作类型，也可用于设置信号量集合的访问权限，两者通过逻辑或表示\n\n返回：\n- 成功：返回信号量ID\n- 失败：-1，并设置 errno\n\n>调用函数 semget 的作用由参数 key 和 flag 决定，相应约定如下：\n\n- 当 key 为 IPC_PRIVATE 时，创建一个新的信号量集合。此时参数 flag 的取值对函数的操作不起仟何作用。\n- 当 key 不为 IPC_PRIVATE，且 flag 设置了 IPC_CREAT 位，而没有设置 IPC_EXCL 位，则执行操作由 key 值决定：如果 key 为内核中某个已存在的信号量集合的键，则执行打开这个键的操作；反之，则执行创建信号量集合的操作。\n- 当 key 不为 IPC_PRIVATE，且 flag 中同时设置了 IPC_CREAT 位和 IPC_EXCL 位，则执行创建信号量集合的操作。参数 key 的取值应与内核中已存在的任何信号量集合的键值都不相同，否则函数调用失败。\n\n#### 对信号量的控制 semctl\n\n函数声明：`int semctl(int semid, int semnum, int cmd, [union semun arg]) ;`\n\nsemid：为信号量集合的标识符。\nsemnum：用于指明某个特定信号量。\ncmd：表示调用该函数希望执行的命令\ncmd 的常用设置：\n- SETVAL：表示 semctl() 的功能为初始化信号量的值，信号量值通过可选参数传入，在使用信号量前应先对信号量值进行设置\n- IPC_RMID：表示 semctl() 的功能为从系统中删除指定信号量\n\narg：是一个 semun 共用体，该共用体中各个成员的具体含义和使用情况与参数 cmd 的取值有关。该共用体的定义如下：\n```\nunion semen{\n	int val;	//cmd 为 SETVAL 时，用于指定信号量值\n	struct semid_ds *buf;	//cmd 为 IPC_STAT 时或 IPC_SET 时生效\n	unsigned short *array;	//cmd 为 GETALL 或 SETALL 时生效\n	struct seminfo *_buf;	//cmd 为 GETALL 或 SETALL 时生效\n};\n```\n\n该共用体中的 struct semid_ds 是一个由内核维护的记录信号量属性信息的结构体，该结构体的定义如下：\n```\nushort semid_ds{\n	struct ipc_perm sem_perm;	//所有者和标致权限\n	time_t sem_otime;	//最后操作时间\n	time_t sem_ctime;	//最后更改时间\n	unsigned short sem_nsems;	//信号集中的信号数量\n}\n```\n\n返回：由参数 cmd 决定。对于除 GETALL 以外的所有 GET 命令，都返回相应值，通常为非负数。否则返回 -1。\n#### 对信号量的操作——semop\n改变信号量的值\n\n函数声明：`int semop(int semid, struct sembuf *sops, unsigned nops) ; `\n\nsemid：为信号量集合的ID\nsemoparray：是一个 struct sembuf 类型的数组指针，该数组中的每个元素设置了要对信号量集中的哪个型号做哪种操作，struct sembuf 结构体定义如下：\n```\nstruct sembuf{\n	short sem_num;	//信号量在信号集中的编号\n	short sem_op;	//信号量操作,-1 P操作，+1 V操作\n	short sem_flag;	//标志位\n};\n```\nnops：参数 sops 所指数组中元素的个数\n\n返回：若成功则为 0，若出错则为 -1。\n\n### 共享内存\n#### 共享内存的概念\n共享内存是进程问通信的一种最基本、最快速的机制。共享内存是两个或多个进程共享同一块内存区域，并通过该内存区域实现数据交换的进程问通信机制。通常是由一个进程开辟一块共享内存区域，然后允许多个进程对此区域进行访问。由于不需使用中间介质，而是数据由内存直接映射到进程空间，因此共享内存是最快速的进程间通信机制。\n\n共享内存的最大不足在于，由于多个进程对同一块内存区域具有访问的权限，各个进程之间的同步问题显得尤为突出。必须控制同一时刻只有一个进程对共享内存区域写入数据，否则将造成数据的混乱。这可通过结合使用信号量来解决。\n\n#### 共享内存的创建和打开 shmget\n函数声明：`int shmget(key_t key, int size, int flag) ;`\n\nkey：表示所创建或打开的共享内存的键\nsize：表示共享内存区域的大小\nflag：表示函数的操作类型，也可用于设置共享内存的访问权限，两者通过逻辑或表示\n\n返回：若成功则为共享内存ID，若出错则为 -1。\n\n#### 共享内存的附加 shmat\n进行地址映射，将共享内存映射到进程虚拟地址空间中。\n\n函数声明：`void *shmat(int shmid, void *addr, int flag) ;\n`\n\nshmid：表示要附加的共享内存段的ID\naddr：虚拟地址\nflag：用于表示函数的操作方式\n\n返回：若成功则为指向共享内存段的指针，若出错则为-1\n\n#### 共享内存的分离 shmdt\n解除物理内存与进程虚拟地址空间的映射关系\n\n函数声明：`int shmdt(void *addr) ;`\n\naddr：是以前调用 shmat 时的返回值。\n\n返回：若成功则为0，若出错则为 -1。\n\n#### 共享内存的控制 shmctl\n对共享内存段执行多种操作。\n\n函数声明：`int shmctl(int shmid, int cmd, struct shmid_ds *buf) ;\n`\nshmid：为共享内存的标识符\ncmd：表示调用该函数希望执行的操作\n\n---\ncmd 的取值和对应操作如下：\n- IPC_STAT：对此段取 shmid_ds 结构，并存放在由 buf 指向的结构体中。\n- IPC_SET：按 buf 指向的结构体中的值设置与此段相关结构体中的下列三个字段：shm_perm.uid、shm_perm.gid以及shm_perm.mode。此命令只能由下列两种进程执行：一种是其有效用户ID等于shm_perm.cuid或shm_perm.uid的进程；另一种是具有超级用户特权的进程。\n- IPC_RMID：从系统中删除该共享内存段。此命令只能由下列两种进程执行：一种是其有效用户ID等于shm_perm.cuid或shm_perm.uid的进程；另一种是具有超级用户特权的进程。\n- SHM_LOCK：锁住共享内存段。此命令只能由超级用户执行。\n- SHM_UNLOCK：解锁共享内存段。此命令只能由超级用户执行。\n\n---\nbuf：指向 shmid_ds 结构体的指针\n\n返回：若成功则为0，若出错则为 -1。\n\n### 实验：父进程产生10个子进程，并打印出子进程产生的随机数的和\n```\n/*---------------------------------------------------------------------------------------------------------\n功能：\n    父进程产生10个子进程，并打印出子进程产生的随机数的和。要求用信号机制、信号量以及共享内存实现。\n\n思路：\n    子进程将自己产生的随机数累加到共享内存。当10个子进程都累加完后，用信号机制通知父进程，\n父进程就可以从共享内存中读取数据了。为了避免10个子进程向共享内存中写入数据时发生冲突，\n应使用信号量进行并发控制。	\n---------------------------------------------------------------------------------------------------------*/\n\n#include \"stdio.h\"\n#include \"sys/types.h\"\n#include \"signal.h\"\n#include \"sys/ipc.h\"\n#include \"sys/sem.h\"\n#include \"sys/shm.h\"\n\n//semun 共用体\nunion semun\n{\n	int val;\n	struct semid_ds *buf;	//一个由内核维护的记录信号量属性信息的结构体 \n	ushort *array;\n};\n\n\nint semid;//信号量ID\nint shmid;//共享内存ID\nchar *shm_virtualaddr;  //共享内存关联到进程后的虚拟地址\n\n// P操作，获取信号量，-1\nvoid p(int semid)\n{\n	struct sembuf buf = {0, -1, 0};\n	//int semop(int semid, struct sembuf *sops, unsigned nops) ;\n	semop(semid, &buf, 1);	//改变信号量的值\n}\n\n// V操作，释放信号量，+1\nvoid v(int semid)\n{\n	struct sembuf buf = {0, 1, 0};\n	semop(semid, &buf, 1);\n}\n\nvoid sigusr1_handler(int n)\n{\n	printf(\"count = %d, total = %d\\n\", *(int *)shm_virtualaddr, *(int *)(shm_virtualaddr+4));  //打印进程编号（不是进程ID）和随机数和\n	\n	//删除信号量\n	if(semctl(semid, IPC_RMID, 0) == -1)  \n		printf(\"remove semaphore fail\\n\");\n	else\n		printf(\"remove semaphore ok\\n\");\n	\n	shmdt(shm_virtualaddr);  //解除共享内存的关联\n\n	//删除共享内存\n	if(shmctl(shmid, IPC_RMID, 0) == -1)  \n		printf(\"remove shared-memory fail\\n\");\n	else\n		printf(\"remove shared-memory ok\\n\");\n\n	exit(0);\n}\n\nint main()\n{\n	signal(SIGUSR1, sigusr1_handler);  //用户定义的信号，用于捕获 SIGUSR1 信号执行处理函数 sigusr1_handler\n\n	//int semget(key_t key,int nsems,int semflg)\n	//key：所创建或打开的信号量集合的键，nsems：创建的信号量集合中信号量的个数，semflg：调用函数的操作类型，也可用于设置信号量集合的访问权限\n	//成功：返回信号量ID，失败：-1\n	semid = semget(IPC_PRIVATE, 1, 0666);	//创建并初始化信号量\n\n	if(semid == -1)	//信号量创建失败\n	{\n		printf(\"create semaphore fail\\n\");\n		return 0;\n	}\n	else{	 //返回信号量ID\n		printf(\"create semaphore ok\\n\");\n	}\n\n	//semun 共用体\n	union semun x;\n	x.val = 1;  //信号量初值应为多少？为1\n\n	//int semctl(int semid, int semnum, int cmd, [union semun arg]) ;\n	//semid：信号量集合，semnum：用于指明某个特定信号量，cmd：表示调用该函数希望执行的命令，arg：是一个 semun 共用体，\n	semctl(semid, 0, SETVAL, x);	//初始化信号量为 1\n	\n	//int shmget(key_t key, int size, int flag);\n	//key：表示所创建或打开的共享内存的键，size：表示共享内存区域的大小，flag：表示函数的操作类型，也可用于设置共享内存的访问权限\n	//若成功则为共享内存ID，若出错则为 -1\n	shmid = shmget(IPC_PRIVATE, 8, 0666);  //创建并关联到共享内存，共享内存一共 8 字节，前 4 字节存放 count，后 4 字节存放 total\n	if(shmid == -1)	\n	{\n		printf(\"create shared-memory fail\\n\");\n		return 0;\n	}\n	else{	//返回共享内存ID\n		printf(\"create shared-memory ok\\n\");\n	}\n\n	//void *shmat(int shmid, void *addr, int flag) ;\n	//shmid：表示要附加的共享内存段的ID，addr：虚拟地址，flag：用于表示函数的操作方式\n	//成功则为指向共享内存段的指针，若出错则为-1\n	shm_virtualaddr = shmat(shmid, 0, 0);//共享内存的附加，地址映射，addr 为 0，此共享内存段附加到由内核选择的第一个可用地址上\n\n	*(int *)shm_virtualaddr = 0;  //初始化进程编号，将指针转成int*，然后取该指针指向地址的值\n	*(int *)(shm_virtualaddr + 4) = 0;  //初始化随机数和\n\n	//flag 是否是子进程\n	char is_child = 0;\n	int i;\n	//循环创建 10 个进程\n	for(i=0; i<10; i++)\n	{\n		pid_t pid = fork(); \n		if(pid == 0)	//子进程\n		{\n			is_child = 1;  //设置子进程中 is_child 为 1\n			break;  //退出循环\n		}\n	}\n\n	//子进程\n	if(is_child)\n	{\n		p(semid);  // P操作，获取信号量（-1）\n\n		srand(time(NULL) + i);	//设置随机种子数\n		int num = rand()%10;	//取 0-9 随机数\n\n		(*(int *)shm_virtualaddr)++;  //进程编号自增\n		*(int *)(shm_virtualaddr + 4) += num;  //随机数相加\n\n		printf(\"child%d: %d\\n\", i, num);\n\n		v(semid);  //V操作，释放信号量（+1）\n\n		if(*(int *)shm_virtualaddr == 10)  //if(i==10)最后一个子进程，善后操作\n			kill(getppid(), SIGUSR1);  //向父进程发送 SIGUSER1 信号 \n	}\n	else\n	{\n		while(1)\n			pause();//挂起，等待信号唤醒\n	}\n\n	return 0;\n}\n/*========================================================================\ncreate semaphore ok\ncreate shared-memory ok\nchild0: 8\nchild1: 8\nchild5: 9\nchild4: 0\nchild6: 2\nchild3: 9\nchild7: 6\nchild8: 4\nchild9: 1\nchild2: 9\ncount = 10, total = 56\nremove semaphore ok\nremove shared-memory ok\n========================================================================*/\n```\n## socket 编程接口',`groups`='Default',`p_id`=1  WHERE  `id` = 1 [ RunTime:0.001135s ]
+---------------------------------------------------------------
+[ 2018-10-19T16:21:32+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/savenote.html
+[ info ] qingrang.top/daily/admin/note/savenote.html [运行时间：0.064307s][吞吐率：15.55req/s] [内存消耗：2,206.21kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'savenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '54098',
+  'accept' => 'text/plain, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/212.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308; PHPSESSID=ln8j5e4nh62i9n5oqt9pqila41',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'ogroup' => 'Default',
+  'context' => '# Linux - C 编程
+[TOC]
+## 进程
+### 孤儿进程 和 僵尸进程
+Linux 系统中有两种特殊的进程：孤儿进程和僵尸进程。
+
+父进程应负责子进程的回收工作，但父子进程是异步运行的，父进程不知道什么时候接收子进程，父进程甚至会在子进程结束之前结束。若父进程在子进程退出之前退出，子进程就会变成孤儿进程，此时子进程会被进程 init 收养，之后 init 会代替其原本的父进程完成状态收集工作。
+
+当进程调用了 exit() 函数后，该进程并不是马上消失，而是留下一个称为僵尸进程的数据结构。僵尸进程是 Linux 系统中的另一种特殊进程，它几乎放弃进程退出前占用的所有内存，既没有可执行代码也不能被调度，只在进程列表中保留一个位置，记载进程的退出状态等信息供父进程收集。若父进程中没有回收子进程的代码，子进程将会一直处于僵尸态。
+
+### 进程标识符
+下列函数返回这些标识符，其返回值类型 pid_t，uid_t，gid_t 等都是宏定义，实质是 `unsigned int`
+```
+//头文件
+#include <sys/types.h>
+#include <unistd.h>
+
+//返回:调用进程的 进程ID
+pid_t getpid(void)	
+
+//返回:调用进程的 父进程ID
+pid_t getppid(void);
+
+//返回:调用进程的 实际用户ID
+uid_t getuid(void)
+
+//返回:调用进程的 有效用户ID
+uid_t geteuid(void)
+
+//返回:调用进程的 实际组ID
+gid_t getgid (void)
+
+//返回:调用进程的 有效组ID
+gid_t getegid(void)
+```
+### 进程同步
+Linux 提供了 wait() 函数和 waitpid() 函数来获取进程状态，实现进程同步。这两个函数用于父、子进程之间的同步，即确保子进程一定先于父进程执行并终止。
+```
+#include <sys/types.h>
+#include <sys/wait.h>
+pid_t wait(int *status) ;
+pid_t waitpid(pid_t pid , int * status, int options) ;
+//两个函数返回：若成功则为 进程ID，若出错则为 -1。
+```
+### 实验：fork() 函数的使用
+fork() 函数:
+创建成功，父进程返回子进程的 id ，子进程返回 0
+创建失败，父进程返回 -1
+>使用 fork() 函数创建一个进程，进程创建成功后使父进程和子进程分别执行不同的功能
+
+```
+/*---------------------------------------------------
+使用 fork() 函数创建一个进程，进程创建成功后使父进程和子进程分别执行不同的功能
+-----------------------------------------------------*/
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+int main()
+{
+	//调用fork()函数创建子进程
+	pid_t pid = fork();
+	if (pid == -1)	//创建失败
+	{
+		perror("fork error");
+		exit(1);	//退出进程，指定返回值1
+	}
+	else if (pid > 0)	//创建成功 - 父进程
+	{
+		printf("父进程,pid=%d,ppid=%d\\n", getpid(), getppid());
+	}
+	else if (pid == 0)	//创建成功 - 子进程
+	{
+		printf("子进程,pid=%d,ppid=%d\\n", getpid(), getppid());
+	}
+	printf("........finish..........\\n");
+	return 0;
+}
+
+/*========================================================================
+父进程,pid=3720,ppid=3514
+........finish..........
+子进程,pid=3721,ppid=2012
+........finish..........
+========================================================================*/
+
+```
+
+- 多次执行文件 test_fork会发现这种情况: child process 后输出的 ppid 不等于 parent process 的 pid,而等于1。这是什么原因?
+答：父进程先于子进程终止,子进程变为“孤儿进程”,后由进程 init 接收。
+
+>使用 fork() 函数在循环中创建 5 个子进程，使子进程分别打印各自的编号和 pid
+
+```
+/*---------------------------------------------------
+使用 fork() 函数在循环中创建 5 个子进程，使子进程分别打印各自的编号和 pid
+-----------------------------------------------------*/
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+int main()
+{
+	pid_t pid;
+	int i;
+	//循环创建进程
+	for (i = 0; i<5; i++){				
+		if ((pid = fork()) == 0)	//若当前进程为子进程，便跳出循环
+			break;
+	}
+	if (pid == -1){
+		perror("fork error");
+		exit(1);
+	}
+	else if (pid>0){	//父进程
+		//sleep(5);	//父进程等待所有子进程执行结束后再执行
+		printf("parent process:pid=%d\\n", getpid());
+	}
+	else if (pid == 0){		//子进程
+		//sleep(i);	//每个子进程分别沉睡不同的时间
+		printf("I am child=%d,pid=%d\\n", i + 1, getpid());
+	}
+	return 0;
+}
+
+/*========================================================================
+>不 sleep 的输出：
+zhangliren@ubuntu:~/Documents$ ./a.out 
+I am child=2,pid=3814
+parent process:pid=3812
+I am child=1,pid=3813
+I am child=4,pid=3816
+zhangliren@ubuntu:~/Documents$ I am child=5,pid=3817
+I am child=3,pid=3815
+|(终端提示符)
+----------------------------------------------------------
+>sleep() 后的输出：
+I am child=1,pid=3843
+I am child=2,pid=3844
+I am child=3,pid=3845
+I am child=4,pid=3846
+I am child=5,pid=3847
+parent process:pid=3842
+========================================================================*/
+```
+
+- 观察输出结果,会发现输出结果有以下问题
+（1）子进程的编号不是递增的
+（2）终端提示符后面仍有子进程信息打印,而命令提示符在最后一行的开头闪烁
+这是为什么?
+
+答：（1）父进程先于子进程终止。在 Linux 系统中,子进程应由父进程回收,但是当子进程被创建后,它与父进程及其他进程共同竟争系统资源,所以父子进程执行的顺序是不确定的,终止的先后顺序也是不确定的。此处创建了 5 个子进程,这 5 个子进程与父进程共同竞争资源。6 个进程使用 CPU 的顺序不确定,因此子进程的编号不是递增关系,父进程在子进程尚未全部终止前便终止。
+（2）父进程是一个前台进程。当它终止退出后,会释放命令提示符,输出当前工作路径及端提示符[ thelma@ localhost~],但此时尚有子进程仍在执行,终端仍有信息输出,因此命令提示符会出现在输出结果最后一行的开头。
+
+## 信号和信号处理
+### 信号的概念
+信号的本质是软件中断。很多比较重要的应用程序都需处理信号。信号是异步事件的典型实例，即产生信号的事件对进程而言是随机出现的。进程不能只是测试一个变量(例如errno)来判别是否发生了一个信号，而是必须告诉内核「在此信号发生时，请执行指定操作」。
+
+可以要求系统在某个信号出现时按照下列三种方式中的一种进行操作：
+1. 忽略此信号。大多数信号都可使用这种方式进行处理，但有两种信号却决不能被忽略。它们是：SIGKILL 和 SIGSTOP。这两种信号不能被忽略的原因是：它们向超级用户提供一种使进程终止或停止的可靠方法。
+2. 捕捉信号。为了做到这一点要通知内核在某种信号发生时，调用一个用户函数。在用户函数中，可执行用户希望对这种事件进行的处理。
+3. 执行系统默认动作。每一种信号都有系统默认动作。注意，对大多数信号的系统默认动作是终止该进程。
+
+### 常见函数
+#### kill
+给指定进程发送信号
+
+函数声明：`int kill(pid_t,int sig)`
+pid：接收信号的进程ID
+sig：要发送的信号编号
+#### raise
+发送指定信号给当前进程自身
+
+函数声明：`int raise(int sig)`
+
+#### pause
+暂停进程，接收到任何信号后恢复
+
+函数声明：`int pause()`
+
+#### alarm
+计时器，驱使内核在指定秒数后发送 SIGALRM 信号到调用该函数的进程，进程收到该信号后默认终止运行。
+
+函数声明：`unsigned int alarm(unsigned int seconds)`
+
+#### signal
+捕获信号后，执行指定函数
+
+函数声明：
+`typedef void (* sighandler_t)(int);`
+`sighandler_t signal(int signum,sighandler_t handler);`
+
+signum：信号编号
+handler：自定义信号处理函数的函数指针
+
+### 实验：李纳斯的第一个程序
+```
+/*---------------------------------------------------------------------------------------------------------
+李纳斯的第一个程序：两个进程，一个向屏幕输出 A，一个向屏幕输出 B，两进程轮换输出，中间间隔 1 秒钟。如此反复，直到用户按下 ctl + c 结束两个进程（ctl + c 就是向当前正在运行的所有进程发送SIGINT信号）。
+---------------------------------------------------------------------------------------------------------*/
+#include "stdio.h"
+#include "sys/types.h"
+#include "signal.h"
+
+pid_t pid;
+
+//自定义信号处理函数。
+//父进程打印 AAA，子进程打印 BBB
+void sigusr1_handler(int n)
+{
+	if(pid > 0)
+		printf("AAAA\\n");
+	else
+		printf("BBBB\\n");
+
+	alarm(1);//计时器，1s 后发送 SIGALRM 信号到进程
+}
+
+void sigalrm_handler(int n)
+{
+	if(pid > 0){	//父进程
+		kill(pid, SIGUSR1); //发送 SIGUSR1 信号给 pid 进程
+	}
+	else{	//子进程
+		kill(getppid(), SIGUSR1);//发送 SIGUSR1 信号给 父进程
+	}
+}
+
+int main()
+{
+	//在fork()之前设置的信号处理函数会被子进程继承
+	signal(SIGALRM, sigalrm_handler);//捕获 SIGALRM 信号，执行 sigalrm_handler
+	signal(SIGUSR1, sigusr1_handler);//用户定义的信号，用于捕获 SIGUSR1 信号执行处理函数 sigusr1_handler
+
+	pid = fork();
+	if (pid > 0)	//父进程
+		raise(SIGUSR1);	//发送 SIGUSR1 信号给当前进程
+
+	while(1)
+		pause();	//进程挂起，等待信号唤醒
+
+	return 0;
+}
+```
+## 进程间通信
+### 信号量
+#### 信号量的概念
+信号量是一个计数器，用于多进程对共享数据对象的存取。为了获得共享资源，进程需要执行下列操作：
+1. 测试控制该资源的信号量。
+1. 若此信号量的值为正，则进程可以使用该资源。进程将信号量值减 1（P 操作），表示它使用了一个资源单位。若此信号量的值为 0，则进程进入睡眠状态，直至信号量值大于 0。若进程被唤醒后，它返回至第 1 步。当进程不再使用由一个信息量控制的共享资源时，该信号量值增 1（V 操作）。如果有进程正在睡眠等待此信号量，则唤醒它们中的一个。
+
+这两个过程也叫做 p、v 操作。 p、v操作是原子操作。为此，信号量通常是在内核中实现的。
+
+常用的信号量形式是让它控制单个资源，所以其初始值为 1。但是，一般而言，信号量的初值可以是任一正值，该值说明有多少个共享资源单位可供共享应用。
+
+#### 信号量的创建与打开 semget
+函数声明：`int semget(key_t key,int nsems,int semflg)`
+
+key：所创建或打开的信号量集合的键
+nsems：创建的信号量集合中信号量的个数，此参数只在创建一个新的信号量集合时有效
+semflg：调用函数的操作类型，也可用于设置信号量集合的访问权限，两者通过逻辑或表示
+
+返回：
+- 成功：返回信号量ID
+- 失败：-1，并设置 errno
+
+>调用函数 semget 的作用由参数 key 和 flag 决定，相应约定如下：
+
+- 当 key 为 IPC_PRIVATE 时，创建一个新的信号量集合。此时参数 flag 的取值对函数的操作不起仟何作用。
+- 当 key 不为 IPC_PRIVATE，且 flag 设置了 IPC_CREAT 位，而没有设置 IPC_EXCL 位，则执行操作由 key 值决定：如果 key 为内核中某个已存在的信号量集合的键，则执行打开这个键的操作；反之，则执行创建信号量集合的操作。
+- 当 key 不为 IPC_PRIVATE，且 flag 中同时设置了 IPC_CREAT 位和 IPC_EXCL 位，则执行创建信号量集合的操作。参数 key 的取值应与内核中已存在的任何信号量集合的键值都不相同，否则函数调用失败。
+
+#### 对信号量的控制 semctl
+
+函数声明：`int semctl(int semid, int semnum, int cmd, [union semun arg]) ;`
+
+semid：为信号量集合的标识符。
+semnum：用于指明某个特定信号量。
+cmd：表示调用该函数希望执行的命令
+cmd 的常用设置：
+- SETVAL：表示 semctl() 的功能为初始化信号量的值，信号量值通过可选参数传入，在使用信号量前应先对信号量值进行设置
+- IPC_RMID：表示 semctl() 的功能为从系统中删除指定信号量
+
+arg：是一个 semun 共用体，该共用体中各个成员的具体含义和使用情况与参数 cmd 的取值有关。该共用体的定义如下：
+```
+union semen{
+	int val;	//cmd 为 SETVAL 时，用于指定信号量值
+	struct semid_ds *buf;	//cmd 为 IPC_STAT 时或 IPC_SET 时生效
+	unsigned short *array;	//cmd 为 GETALL 或 SETALL 时生效
+	struct seminfo *_buf;	//cmd 为 GETALL 或 SETALL 时生效
+};
+```
+
+该共用体中的 struct semid_ds 是一个由内核维护的记录信号量属性信息的结构体，该结构体的定义如下：
+```
+ushort semid_ds{
+	struct ipc_perm sem_perm;	//所有者和标致权限
+	time_t sem_otime;	//最后操作时间
+	time_t sem_ctime;	//最后更改时间
+	unsigned short sem_nsems;	//信号集中的信号数量
+}
+```
+
+返回：由参数 cmd 决定。对于除 GETALL 以外的所有 GET 命令，都返回相应值，通常为非负数。否则返回 -1。
+#### 对信号量的操作——semop
+改变信号量的值
+
+函数声明：`int semop(int semid, struct sembuf *sops, unsigned nops) ; `
+
+semid：为信号量集合的ID
+semoparray：是一个 struct sembuf 类型的数组指针，该数组中的每个元素设置了要对信号量集中的哪个型号做哪种操作，struct sembuf 结构体定义如下：
+```
+struct sembuf{
+	short sem_num;	//信号量在信号集中的编号
+	short sem_op;	//信号量操作,-1 P操作，+1 V操作
+	short sem_flag;	//标志位
+};
+```
+nops：参数 sops 所指数组中元素的个数
+
+返回：若成功则为 0，若出错则为 -1。
+
+### 共享内存
+#### 共享内存的概念
+共享内存是进程问通信的一种最基本、最快速的机制。共享内存是两个或多个进程共享同一块内存区域，并通过该内存区域实现数据交换的进程问通信机制。通常是由一个进程开辟一块共享内存区域，然后允许多个进程对此区域进行访问。由于不需使用中间介质，而是数据由内存直接映射到进程空间，因此共享内存是最快速的进程间通信机制。
+
+共享内存的最大不足在于，由于多个进程对同一块内存区域具有访问的权限，各个进程之间的同步问题显得尤为突出。必须控制同一时刻只有一个进程对共享内存区域写入数据，否则将造成数据的混乱。这可通过结合使用信号量来解决。
+
+#### 共享内存的创建和打开 shmget
+函数声明：`int shmget(key_t key, int size, int flag) ;`
+
+key：表示所创建或打开的共享内存的键
+size：表示共享内存区域的大小
+flag：表示函数的操作类型，也可用于设置共享内存的访问权限，两者通过逻辑或表示
+
+返回：若成功则为共享内存ID，若出错则为 -1。
+
+#### 共享内存的附加 shmat
+进行地址映射，将共享内存映射到进程虚拟地址空间中。
+
+函数声明：`void *shmat(int shmid, void *addr, int flag) ;
+`
+
+shmid：表示要附加的共享内存段的ID
+addr：虚拟地址
+flag：用于表示函数的操作方式
+
+返回：若成功则为指向共享内存段的指针，若出错则为-1
+
+#### 共享内存的分离 shmdt
+解除物理内存与进程虚拟地址空间的映射关系
+
+函数声明：`int shmdt(void *addr) ;`
+
+addr：是以前调用 shmat 时的返回值。
+
+返回：若成功则为0，若出错则为 -1。
+
+#### 共享内存的控制 shmctl
+对共享内存段执行多种操作。
+
+函数声明：`int shmctl(int shmid, int cmd, struct shmid_ds *buf) ;
+`
+shmid：为共享内存的标识符
+cmd：表示调用该函数希望执行的操作
+
+---
+cmd 的取值和对应操作如下：
+- IPC_STAT：对此段取 shmid_ds 结构，并存放在由 buf 指向的结构体中。
+- IPC_SET：按 buf 指向的结构体中的值设置与此段相关结构体中的下列三个字段：shm_perm.uid、shm_perm.gid以及shm_perm.mode。此命令只能由下列两种进程执行：一种是其有效用户ID等于shm_perm.cuid或shm_perm.uid的进程；另一种是具有超级用户特权的进程。
+- IPC_RMID：从系统中删除该共享内存段。此命令只能由下列两种进程执行：一种是其有效用户ID等于shm_perm.cuid或shm_perm.uid的进程；另一种是具有超级用户特权的进程。
+- SHM_LOCK：锁住共享内存段。此命令只能由超级用户执行。
+- SHM_UNLOCK：解锁共享内存段。此命令只能由超级用户执行。
+
+---
+buf：指向 shmid_ds 结构体的指针
+
+返回：若成功则为0，若出错则为 -1。
+
+### 实验：父进程产生10个子进程，并打印出子进程产生的随机数的和
+```
+/*---------------------------------------------------------------------------------------------------------
+功能：
+    父进程产生10个子进程，并打印出子进程产生的随机数的和。要求用信号机制、信号量以及共享内存实现。
+
+思路：
+    子进程将自己产生的随机数累加到共享内存。当10个子进程都累加完后，用信号机制通知父进程，
+父进程就可以从共享内存中读取数据了。为了避免10个子进程向共享内存中写入数据时发生冲突，
+应使用信号量进行并发控制。	
+---------------------------------------------------------------------------------------------------------*/
+
+#include "stdio.h"
+#include "sys/types.h"
+#include "signal.h"
+#include "sys/ipc.h"
+#include "sys/sem.h"
+#include "sys/shm.h"
+
+//semun 共用体
+union semun
+{
+	int val;
+	struct semid_ds *buf;	//一个由内核维护的记录信号量属性信息的结构体 
+	ushort *array;
+};
+
+
+int semid;//信号量ID
+int shmid;//共享内存ID
+char *shm_virtualaddr;  //共享内存关联到进程后的虚拟地址
+
+// P操作，获取信号量，-1
+void p(int semid)
+{
+	struct sembuf buf = {0, -1, 0};
+	//int semop(int semid, struct sembuf *sops, unsigned nops) ;
+	semop(semid, &buf, 1);	//改变信号量的值
+}
+
+// V操作，释放信号量，+1
+void v(int semid)
+{
+	struct sembuf buf = {0, 1, 0};
+	semop(semid, &buf, 1);
+}
+
+void sigusr1_handler(int n)
+{
+	printf("count = %d, total = %d\\n", *(int *)shm_virtualaddr, *(int *)(shm_virtualaddr+4));  //打印进程编号（不是进程ID）和随机数和
+	
+	//删除信号量
+	if(semctl(semid, IPC_RMID, 0) == -1)  
+		printf("remove semaphore fail\\n");
+	else
+		printf("remove semaphore ok\\n");
+	
+	shmdt(shm_virtualaddr);  //解除共享内存的关联
+
+	//删除共享内存
+	if(shmctl(shmid, IPC_RMID, 0) == -1)  
+		printf("remove shared-memory fail\\n");
+	else
+		printf("remove shared-memory ok\\n");
+
+	exit(0);
+}
+
+int main()
+{
+	signal(SIGUSR1, sigusr1_handler);  //用户定义的信号，用于捕获 SIGUSR1 信号执行处理函数 sigusr1_handler
+
+	//int semget(key_t key,int nsems,int semflg)
+	//key：所创建或打开的信号量集合的键，nsems：创建的信号量集合中信号量的个数，semflg：调用函数的操作类型，也可用于设置信号量集合的访问权限
+	//成功：返回信号量ID，失败：-1
+	semid = semget(IPC_PRIVATE, 1, 0666);	//创建并初始化信号量
+
+	if(semid == -1)	//信号量创建失败
+	{
+		printf("create semaphore fail\\n");
+		return 0;
+	}
+	else{	 //返回信号量ID
+		printf("create semaphore ok\\n");
+	}
+
+	//semun 共用体
+	union semun x;
+	x.val = 1;  //信号量初值应为多少？为1
+
+	//int semctl(int semid, int semnum, int cmd, [union semun arg]) ;
+	//semid：信号量集合，semnum：用于指明某个特定信号量，cmd：表示调用该函数希望执行的命令，arg：是一个 semun 共用体，
+	semctl(semid, 0, SETVAL, x);	//初始化信号量为 1
+	
+	//int shmget(key_t key, int size, int flag);
+	//key：表示所创建或打开的共享内存的键，size：表示共享内存区域的大小，flag：表示函数的操作类型，也可用于设置共享内存的访问权限
+	//若成功则为共享内存ID，若出错则为 -1
+	shmid = shmget(IPC_PRIVATE, 8, 0666);  //创建并关联到共享内存，共享内存一共 8 字节，前 4 字节存放 count，后 4 字节存放 total
+	if(shmid == -1)	
+	{
+		printf("create shared-memory fail\\n");
+		return 0;
+	}
+	else{	//返回共享内存ID
+		printf("create shared-memory ok\\n");
+	}
+
+	//void *shmat(int shmid, void *addr, int flag) ;
+	//shmid：表示要附加的共享内存段的ID，addr：虚拟地址，flag：用于表示函数的操作方式
+	//成功则为指向共享内存段的指针，若出错则为-1
+	shm_virtualaddr = shmat(shmid, 0, 0);//共享内存的附加，地址映射，addr 为 0，此共享内存段附加到由内核选择的第一个可用地址上
+
+	*(int *)shm_virtualaddr = 0;  //初始化进程编号，将指针转成int*，然后取该指针指向地址的值
+	*(int *)(shm_virtualaddr + 4) = 0;  //初始化随机数和
+
+	//flag 是否是子进程
+	char is_child = 0;
+	int i;
+	//循环创建 10 个进程
+	for(i=0; i<10; i++)
+	{
+		pid_t pid = fork(); 
+		if(pid == 0)	//子进程
+		{
+			is_child = 1;  //设置子进程中 is_child 为 1
+			break;  //退出循环
+		}
+	}
+
+	//子进程
+	if(is_child)
+	{
+		p(semid);  // P操作，获取信号量（-1）
+
+		srand(time(NULL) + i);	//设置随机种子数
+		int num = rand()%10;	//取 0-9 随机数
+
+		(*(int *)shm_virtualaddr)++;  //进程编号自增
+		*(int *)(shm_virtualaddr + 4) += num;  //随机数相加
+
+		printf("child%d: %d\\n", i, num);
+
+		v(semid);  //V操作，释放信号量（+1）
+
+		if(*(int *)shm_virtualaddr == 10)  //if(i==10)最后一个子进程，善后操作
+			kill(getppid(), SIGUSR1);  //向父进程发送 SIGUSER1 信号 
+	}
+	else
+	{
+		while(1)
+			pause();//挂起，等待信号唤醒
+	}
+
+	return 0;
+}
+/*========================================================================
+create semaphore ok
+create shared-memory ok
+child0: 8
+child1: 8
+child5: 9
+child4: 0
+child6: 2
+child3: 9
+child7: 6
+child8: 4
+child9: 1
+child2: 9
+count = 10, total = 56
+remove semaphore ok
+remove shared-memory ok
+========================================================================*/
+```
+## socket 编程接口
+### 创建套接字 socket
+函数声明：`int socket(int domain,int type,int protocol);`
+',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->saveNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000707s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001402s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `title`='Linux - C 编程',`content`='# Linux - C 编程\n[TOC]\n## 进程\n### 孤儿进程 和 僵尸进程\nLinux 系统中有两种特殊的进程：孤儿进程和僵尸进程。\n\n父进程应负责子进程的回收工作，但父子进程是异步运行的，父进程不知道什么时候接收子进程，父进程甚至会在子进程结束之前结束。若父进程在子进程退出之前退出，子进程就会变成孤儿进程，此时子进程会被进程 init 收养，之后 init 会代替其原本的父进程完成状态收集工作。\n\n当进程调用了 exit() 函数后，该进程并不是马上消失，而是留下一个称为僵尸进程的数据结构。僵尸进程是 Linux 系统中的另一种特殊进程，它几乎放弃进程退出前占用的所有内存，既没有可执行代码也不能被调度，只在进程列表中保留一个位置，记载进程的退出状态等信息供父进程收集。若父进程中没有回收子进程的代码，子进程将会一直处于僵尸态。\n\n### 进程标识符\n下列函数返回这些标识符，其返回值类型 pid_t，uid_t，gid_t 等都是宏定义，实质是 `unsigned int`\n```\n//头文件\n#include <sys/types.h>\n#include <unistd.h>\n\n//返回:调用进程的 进程ID\npid_t getpid(void)	\n\n//返回:调用进程的 父进程ID\npid_t getppid(void);\n\n//返回:调用进程的 实际用户ID\nuid_t getuid(void)\n\n//返回:调用进程的 有效用户ID\nuid_t geteuid(void)\n\n//返回:调用进程的 实际组ID\ngid_t getgid (void)\n\n//返回:调用进程的 有效组ID\ngid_t getegid(void)\n```\n### 进程同步\nLinux 提供了 wait() 函数和 waitpid() 函数来获取进程状态，实现进程同步。这两个函数用于父、子进程之间的同步，即确保子进程一定先于父进程执行并终止。\n```\n#include <sys/types.h>\n#include <sys/wait.h>\npid_t wait(int *status) ;\npid_t waitpid(pid_t pid , int * status, int options) ;\n//两个函数返回：若成功则为 进程ID，若出错则为 -1。\n```\n### 实验：fork() 函数的使用\nfork() 函数:\n创建成功，父进程返回子进程的 id ，子进程返回 0\n创建失败，父进程返回 -1\n>使用 fork() 函数创建一个进程，进程创建成功后使父进程和子进程分别执行不同的功能\n\n```\n/*---------------------------------------------------\n使用 fork() 函数创建一个进程，进程创建成功后使父进程和子进程分别执行不同的功能\n-----------------------------------------------------*/\n#include <stdio.h>\n#include <stdlib.h>\n#include <unistd.h>\nint main()\n{\n	//调用fork()函数创建子进程\n	pid_t pid = fork();\n	if (pid == -1)	//创建失败\n	{\n		perror(\"fork error\");\n		exit(1);	//退出进程，指定返回值1\n	}\n	else if (pid > 0)	//创建成功 - 父进程\n	{\n		printf(\"父进程,pid=%d,ppid=%d\\n\", getpid(), getppid());\n	}\n	else if (pid == 0)	//创建成功 - 子进程\n	{\n		printf(\"子进程,pid=%d,ppid=%d\\n\", getpid(), getppid());\n	}\n	printf(\"........finish..........\\n\");\n	return 0;\n}\n\n/*========================================================================\n父进程,pid=3720,ppid=3514\n........finish..........\n子进程,pid=3721,ppid=2012\n........finish..........\n========================================================================*/\n\n```\n\n- 多次执行文件 test_fork会发现这种情况: child process 后输出的 ppid 不等于 parent process 的 pid,而等于1。这是什么原因?\n答：父进程先于子进程终止,子进程变为“孤儿进程”,后由进程 init 接收。\n\n>使用 fork() 函数在循环中创建 5 个子进程，使子进程分别打印各自的编号和 pid\n\n```\n/*---------------------------------------------------\n使用 fork() 函数在循环中创建 5 个子进程，使子进程分别打印各自的编号和 pid\n-----------------------------------------------------*/\n#include <stdio.h>\n#include <stdlib.h>\n#include <unistd.h>\n\nint main()\n{\n	pid_t pid;\n	int i;\n	//循环创建进程\n	for (i = 0; i<5; i++){				\n		if ((pid = fork()) == 0)	//若当前进程为子进程，便跳出循环\n			break;\n	}\n	if (pid == -1){\n		perror(\"fork error\");\n		exit(1);\n	}\n	else if (pid>0){	//父进程\n		//sleep(5);	//父进程等待所有子进程执行结束后再执行\n		printf(\"parent process:pid=%d\\n\", getpid());\n	}\n	else if (pid == 0){		//子进程\n		//sleep(i);	//每个子进程分别沉睡不同的时间\n		printf(\"I am child=%d,pid=%d\\n\", i + 1, getpid());\n	}\n	return 0;\n}\n\n/*========================================================================\n>不 sleep 的输出：\nzhangliren@ubuntu:~/Documents$ ./a.out \nI am child=2,pid=3814\nparent process:pid=3812\nI am child=1,pid=3813\nI am child=4,pid=3816\nzhangliren@ubuntu:~/Documents$ I am child=5,pid=3817\nI am child=3,pid=3815\n|(终端提示符)\n----------------------------------------------------------\n>sleep() 后的输出：\nI am child=1,pid=3843\nI am child=2,pid=3844\nI am child=3,pid=3845\nI am child=4,pid=3846\nI am child=5,pid=3847\nparent process:pid=3842\n========================================================================*/\n```\n\n- 观察输出结果,会发现输出结果有以下问题\n（1）子进程的编号不是递增的\n（2）终端提示符后面仍有子进程信息打印,而命令提示符在最后一行的开头闪烁\n这是为什么?\n\n答：（1）父进程先于子进程终止。在 Linux 系统中,子进程应由父进程回收,但是当子进程被创建后,它与父进程及其他进程共同竟争系统资源,所以父子进程执行的顺序是不确定的,终止的先后顺序也是不确定的。此处创建了 5 个子进程,这 5 个子进程与父进程共同竞争资源。6 个进程使用 CPU 的顺序不确定,因此子进程的编号不是递增关系,父进程在子进程尚未全部终止前便终止。\n（2）父进程是一个前台进程。当它终止退出后,会释放命令提示符,输出当前工作路径及端提示符[ thelma@ localhost~],但此时尚有子进程仍在执行,终端仍有信息输出,因此命令提示符会出现在输出结果最后一行的开头。\n\n## 信号和信号处理\n### 信号的概念\n信号的本质是软件中断。很多比较重要的应用程序都需处理信号。信号是异步事件的典型实例，即产生信号的事件对进程而言是随机出现的。进程不能只是测试一个变量(例如errno)来判别是否发生了一个信号，而是必须告诉内核「在此信号发生时，请执行指定操作」。\n\n可以要求系统在某个信号出现时按照下列三种方式中的一种进行操作：\n1. 忽略此信号。大多数信号都可使用这种方式进行处理，但有两种信号却决不能被忽略。它们是：SIGKILL 和 SIGSTOP。这两种信号不能被忽略的原因是：它们向超级用户提供一种使进程终止或停止的可靠方法。\n2. 捕捉信号。为了做到这一点要通知内核在某种信号发生时，调用一个用户函数。在用户函数中，可执行用户希望对这种事件进行的处理。\n3. 执行系统默认动作。每一种信号都有系统默认动作。注意，对大多数信号的系统默认动作是终止该进程。\n\n### 常见函数\n#### kill\n给指定进程发送信号\n\n函数声明：`int kill(pid_t,int sig)`\npid：接收信号的进程ID\nsig：要发送的信号编号\n#### raise\n发送指定信号给当前进程自身\n\n函数声明：`int raise(int sig)`\n\n#### pause\n暂停进程，接收到任何信号后恢复\n\n函数声明：`int pause()`\n\n#### alarm\n计时器，驱使内核在指定秒数后发送 SIGALRM 信号到调用该函数的进程，进程收到该信号后默认终止运行。\n\n函数声明：`unsigned int alarm(unsigned int seconds)`\n\n#### signal\n捕获信号后，执行指定函数\n\n函数声明：\n`typedef void (* sighandler_t)(int);`\n`sighandler_t signal(int signum,sighandler_t handler);`\n\nsignum：信号编号\nhandler：自定义信号处理函数的函数指针\n\n### 实验：李纳斯的第一个程序\n```\n/*---------------------------------------------------------------------------------------------------------\n李纳斯的第一个程序：两个进程，一个向屏幕输出 A，一个向屏幕输出 B，两进程轮换输出，中间间隔 1 秒钟。如此反复，直到用户按下 ctl + c 结束两个进程（ctl + c 就是向当前正在运行的所有进程发送SIGINT信号）。\n---------------------------------------------------------------------------------------------------------*/\n#include \"stdio.h\"\n#include \"sys/types.h\"\n#include \"signal.h\"\n\npid_t pid;\n\n//自定义信号处理函数。\n//父进程打印 AAA，子进程打印 BBB\nvoid sigusr1_handler(int n)\n{\n	if(pid > 0)\n		printf(\"AAAA\\n\");\n	else\n		printf(\"BBBB\\n\");\n\n	alarm(1);//计时器，1s 后发送 SIGALRM 信号到进程\n}\n\nvoid sigalrm_handler(int n)\n{\n	if(pid > 0){	//父进程\n		kill(pid, SIGUSR1); //发送 SIGUSR1 信号给 pid 进程\n	}\n	else{	//子进程\n		kill(getppid(), SIGUSR1);//发送 SIGUSR1 信号给 父进程\n	}\n}\n\nint main()\n{\n	//在fork()之前设置的信号处理函数会被子进程继承\n	signal(SIGALRM, sigalrm_handler);//捕获 SIGALRM 信号，执行 sigalrm_handler\n	signal(SIGUSR1, sigusr1_handler);//用户定义的信号，用于捕获 SIGUSR1 信号执行处理函数 sigusr1_handler\n\n	pid = fork();\n	if (pid > 0)	//父进程\n		raise(SIGUSR1);	//发送 SIGUSR1 信号给当前进程\n\n	while(1)\n		pause();	//进程挂起，等待信号唤醒\n\n	return 0;\n}\n```\n## 进程间通信\n### 信号量\n#### 信号量的概念\n信号量是一个计数器，用于多进程对共享数据对象的存取。为了获得共享资源，进程需要执行下列操作：\n1. 测试控制该资源的信号量。\n1. 若此信号量的值为正，则进程可以使用该资源。进程将信号量值减 1（P 操作），表示它使用了一个资源单位。若此信号量的值为 0，则进程进入睡眠状态，直至信号量值大于 0。若进程被唤醒后，它返回至第 1 步。当进程不再使用由一个信息量控制的共享资源时，该信号量值增 1（V 操作）。如果有进程正在睡眠等待此信号量，则唤醒它们中的一个。\n\n这两个过程也叫做 p、v 操作。 p、v操作是原子操作。为此，信号量通常是在内核中实现的。\n\n常用的信号量形式是让它控制单个资源，所以其初始值为 1。但是，一般而言，信号量的初值可以是任一正值，该值说明有多少个共享资源单位可供共享应用。\n\n#### 信号量的创建与打开 semget\n函数声明：`int semget(key_t key,int nsems,int semflg)`\n\nkey：所创建或打开的信号量集合的键\nnsems：创建的信号量集合中信号量的个数，此参数只在创建一个新的信号量集合时有效\nsemflg：调用函数的操作类型，也可用于设置信号量集合的访问权限，两者通过逻辑或表示\n\n返回：\n- 成功：返回信号量ID\n- 失败：-1，并设置 errno\n\n>调用函数 semget 的作用由参数 key 和 flag 决定，相应约定如下：\n\n- 当 key 为 IPC_PRIVATE 时，创建一个新的信号量集合。此时参数 flag 的取值对函数的操作不起仟何作用。\n- 当 key 不为 IPC_PRIVATE，且 flag 设置了 IPC_CREAT 位，而没有设置 IPC_EXCL 位，则执行操作由 key 值决定：如果 key 为内核中某个已存在的信号量集合的键，则执行打开这个键的操作；反之，则执行创建信号量集合的操作。\n- 当 key 不为 IPC_PRIVATE，且 flag 中同时设置了 IPC_CREAT 位和 IPC_EXCL 位，则执行创建信号量集合的操作。参数 key 的取值应与内核中已存在的任何信号量集合的键值都不相同，否则函数调用失败。\n\n#### 对信号量的控制 semctl\n\n函数声明：`int semctl(int semid, int semnum, int cmd, [union semun arg]) ;`\n\nsemid：为信号量集合的标识符。\nsemnum：用于指明某个特定信号量。\ncmd：表示调用该函数希望执行的命令\ncmd 的常用设置：\n- SETVAL：表示 semctl() 的功能为初始化信号量的值，信号量值通过可选参数传入，在使用信号量前应先对信号量值进行设置\n- IPC_RMID：表示 semctl() 的功能为从系统中删除指定信号量\n\narg：是一个 semun 共用体，该共用体中各个成员的具体含义和使用情况与参数 cmd 的取值有关。该共用体的定义如下：\n```\nunion semen{\n	int val;	//cmd 为 SETVAL 时，用于指定信号量值\n	struct semid_ds *buf;	//cmd 为 IPC_STAT 时或 IPC_SET 时生效\n	unsigned short *array;	//cmd 为 GETALL 或 SETALL 时生效\n	struct seminfo *_buf;	//cmd 为 GETALL 或 SETALL 时生效\n};\n```\n\n该共用体中的 struct semid_ds 是一个由内核维护的记录信号量属性信息的结构体，该结构体的定义如下：\n```\nushort semid_ds{\n	struct ipc_perm sem_perm;	//所有者和标致权限\n	time_t sem_otime;	//最后操作时间\n	time_t sem_ctime;	//最后更改时间\n	unsigned short sem_nsems;	//信号集中的信号数量\n}\n```\n\n返回：由参数 cmd 决定。对于除 GETALL 以外的所有 GET 命令，都返回相应值，通常为非负数。否则返回 -1。\n#### 对信号量的操作——semop\n改变信号量的值\n\n函数声明：`int semop(int semid, struct sembuf *sops, unsigned nops) ; `\n\nsemid：为信号量集合的ID\nsemoparray：是一个 struct sembuf 类型的数组指针，该数组中的每个元素设置了要对信号量集中的哪个型号做哪种操作，struct sembuf 结构体定义如下：\n```\nstruct sembuf{\n	short sem_num;	//信号量在信号集中的编号\n	short sem_op;	//信号量操作,-1 P操作，+1 V操作\n	short sem_flag;	//标志位\n};\n```\nnops：参数 sops 所指数组中元素的个数\n\n返回：若成功则为 0，若出错则为 -1。\n\n### 共享内存\n#### 共享内存的概念\n共享内存是进程问通信的一种最基本、最快速的机制。共享内存是两个或多个进程共享同一块内存区域，并通过该内存区域实现数据交换的进程问通信机制。通常是由一个进程开辟一块共享内存区域，然后允许多个进程对此区域进行访问。由于不需使用中间介质，而是数据由内存直接映射到进程空间，因此共享内存是最快速的进程间通信机制。\n\n共享内存的最大不足在于，由于多个进程对同一块内存区域具有访问的权限，各个进程之间的同步问题显得尤为突出。必须控制同一时刻只有一个进程对共享内存区域写入数据，否则将造成数据的混乱。这可通过结合使用信号量来解决。\n\n#### 共享内存的创建和打开 shmget\n函数声明：`int shmget(key_t key, int size, int flag) ;`\n\nkey：表示所创建或打开的共享内存的键\nsize：表示共享内存区域的大小\nflag：表示函数的操作类型，也可用于设置共享内存的访问权限，两者通过逻辑或表示\n\n返回：若成功则为共享内存ID，若出错则为 -1。\n\n#### 共享内存的附加 shmat\n进行地址映射，将共享内存映射到进程虚拟地址空间中。\n\n函数声明：`void *shmat(int shmid, void *addr, int flag) ;\n`\n\nshmid：表示要附加的共享内存段的ID\naddr：虚拟地址\nflag：用于表示函数的操作方式\n\n返回：若成功则为指向共享内存段的指针，若出错则为-1\n\n#### 共享内存的分离 shmdt\n解除物理内存与进程虚拟地址空间的映射关系\n\n函数声明：`int shmdt(void *addr) ;`\n\naddr：是以前调用 shmat 时的返回值。\n\n返回：若成功则为0，若出错则为 -1。\n\n#### 共享内存的控制 shmctl\n对共享内存段执行多种操作。\n\n函数声明：`int shmctl(int shmid, int cmd, struct shmid_ds *buf) ;\n`\nshmid：为共享内存的标识符\ncmd：表示调用该函数希望执行的操作\n\n---\ncmd 的取值和对应操作如下：\n- IPC_STAT：对此段取 shmid_ds 结构，并存放在由 buf 指向的结构体中。\n- IPC_SET：按 buf 指向的结构体中的值设置与此段相关结构体中的下列三个字段：shm_perm.uid、shm_perm.gid以及shm_perm.mode。此命令只能由下列两种进程执行：一种是其有效用户ID等于shm_perm.cuid或shm_perm.uid的进程；另一种是具有超级用户特权的进程。\n- IPC_RMID：从系统中删除该共享内存段。此命令只能由下列两种进程执行：一种是其有效用户ID等于shm_perm.cuid或shm_perm.uid的进程；另一种是具有超级用户特权的进程。\n- SHM_LOCK：锁住共享内存段。此命令只能由超级用户执行。\n- SHM_UNLOCK：解锁共享内存段。此命令只能由超级用户执行。\n\n---\nbuf：指向 shmid_ds 结构体的指针\n\n返回：若成功则为0，若出错则为 -1。\n\n### 实验：父进程产生10个子进程，并打印出子进程产生的随机数的和\n```\n/*---------------------------------------------------------------------------------------------------------\n功能：\n    父进程产生10个子进程，并打印出子进程产生的随机数的和。要求用信号机制、信号量以及共享内存实现。\n\n思路：\n    子进程将自己产生的随机数累加到共享内存。当10个子进程都累加完后，用信号机制通知父进程，\n父进程就可以从共享内存中读取数据了。为了避免10个子进程向共享内存中写入数据时发生冲突，\n应使用信号量进行并发控制。	\n---------------------------------------------------------------------------------------------------------*/\n\n#include \"stdio.h\"\n#include \"sys/types.h\"\n#include \"signal.h\"\n#include \"sys/ipc.h\"\n#include \"sys/sem.h\"\n#include \"sys/shm.h\"\n\n//semun 共用体\nunion semun\n{\n	int val;\n	struct semid_ds *buf;	//一个由内核维护的记录信号量属性信息的结构体 \n	ushort *array;\n};\n\n\nint semid;//信号量ID\nint shmid;//共享内存ID\nchar *shm_virtualaddr;  //共享内存关联到进程后的虚拟地址\n\n// P操作，获取信号量，-1\nvoid p(int semid)\n{\n	struct sembuf buf = {0, -1, 0};\n	//int semop(int semid, struct sembuf *sops, unsigned nops) ;\n	semop(semid, &buf, 1);	//改变信号量的值\n}\n\n// V操作，释放信号量，+1\nvoid v(int semid)\n{\n	struct sembuf buf = {0, 1, 0};\n	semop(semid, &buf, 1);\n}\n\nvoid sigusr1_handler(int n)\n{\n	printf(\"count = %d, total = %d\\n\", *(int *)shm_virtualaddr, *(int *)(shm_virtualaddr+4));  //打印进程编号（不是进程ID）和随机数和\n	\n	//删除信号量\n	if(semctl(semid, IPC_RMID, 0) == -1)  \n		printf(\"remove semaphore fail\\n\");\n	else\n		printf(\"remove semaphore ok\\n\");\n	\n	shmdt(shm_virtualaddr);  //解除共享内存的关联\n\n	//删除共享内存\n	if(shmctl(shmid, IPC_RMID, 0) == -1)  \n		printf(\"remove shared-memory fail\\n\");\n	else\n		printf(\"remove shared-memory ok\\n\");\n\n	exit(0);\n}\n\nint main()\n{\n	signal(SIGUSR1, sigusr1_handler);  //用户定义的信号，用于捕获 SIGUSR1 信号执行处理函数 sigusr1_handler\n\n	//int semget(key_t key,int nsems,int semflg)\n	//key：所创建或打开的信号量集合的键，nsems：创建的信号量集合中信号量的个数，semflg：调用函数的操作类型，也可用于设置信号量集合的访问权限\n	//成功：返回信号量ID，失败：-1\n	semid = semget(IPC_PRIVATE, 1, 0666);	//创建并初始化信号量\n\n	if(semid == -1)	//信号量创建失败\n	{\n		printf(\"create semaphore fail\\n\");\n		return 0;\n	}\n	else{	 //返回信号量ID\n		printf(\"create semaphore ok\\n\");\n	}\n\n	//semun 共用体\n	union semun x;\n	x.val = 1;  //信号量初值应为多少？为1\n\n	//int semctl(int semid, int semnum, int cmd, [union semun arg]) ;\n	//semid：信号量集合，semnum：用于指明某个特定信号量，cmd：表示调用该函数希望执行的命令，arg：是一个 semun 共用体，\n	semctl(semid, 0, SETVAL, x);	//初始化信号量为 1\n	\n	//int shmget(key_t key, int size, int flag);\n	//key：表示所创建或打开的共享内存的键，size：表示共享内存区域的大小，flag：表示函数的操作类型，也可用于设置共享内存的访问权限\n	//若成功则为共享内存ID，若出错则为 -1\n	shmid = shmget(IPC_PRIVATE, 8, 0666);  //创建并关联到共享内存，共享内存一共 8 字节，前 4 字节存放 count，后 4 字节存放 total\n	if(shmid == -1)	\n	{\n		printf(\"create shared-memory fail\\n\");\n		return 0;\n	}\n	else{	//返回共享内存ID\n		printf(\"create shared-memory ok\\n\");\n	}\n\n	//void *shmat(int shmid, void *addr, int flag) ;\n	//shmid：表示要附加的共享内存段的ID，addr：虚拟地址，flag：用于表示函数的操作方式\n	//成功则为指向共享内存段的指针，若出错则为-1\n	shm_virtualaddr = shmat(shmid, 0, 0);//共享内存的附加，地址映射，addr 为 0，此共享内存段附加到由内核选择的第一个可用地址上\n\n	*(int *)shm_virtualaddr = 0;  //初始化进程编号，将指针转成int*，然后取该指针指向地址的值\n	*(int *)(shm_virtualaddr + 4) = 0;  //初始化随机数和\n\n	//flag 是否是子进程\n	char is_child = 0;\n	int i;\n	//循环创建 10 个进程\n	for(i=0; i<10; i++)\n	{\n		pid_t pid = fork(); \n		if(pid == 0)	//子进程\n		{\n			is_child = 1;  //设置子进程中 is_child 为 1\n			break;  //退出循环\n		}\n	}\n\n	//子进程\n	if(is_child)\n	{\n		p(semid);  // P操作，获取信号量（-1）\n\n		srand(time(NULL) + i);	//设置随机种子数\n		int num = rand()%10;	//取 0-9 随机数\n\n		(*(int *)shm_virtualaddr)++;  //进程编号自增\n		*(int *)(shm_virtualaddr + 4) += num;  //随机数相加\n\n		printf(\"child%d: %d\\n\", i, num);\n\n		v(semid);  //V操作，释放信号量（+1）\n\n		if(*(int *)shm_virtualaddr == 10)  //if(i==10)最后一个子进程，善后操作\n			kill(getppid(), SIGUSR1);  //向父进程发送 SIGUSER1 信号 \n	}\n	else\n	{\n		while(1)\n			pause();//挂起，等待信号唤醒\n	}\n\n	return 0;\n}\n/*========================================================================\ncreate semaphore ok\ncreate shared-memory ok\nchild0: 8\nchild1: 8\nchild5: 9\nchild4: 0\nchild6: 2\nchild3: 9\nchild7: 6\nchild8: 4\nchild9: 1\nchild2: 9\ncount = 10, total = 56\nremove semaphore ok\nremove shared-memory ok\n========================================================================*/\n```\n## socket 编程接口\n### 创建套接字 socket\n函数声明：`int socket(int domain,int type,int protocol);`\n',`groups`='Default',`p_id`=1  WHERE  `id` = 1 [ RunTime:0.001201s ]
+---------------------------------------------------------------
+[ 2018-10-19T16:43:00+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note
+[ info ] qingrang.top/daily/admin/note [运行时间：0.090624s][吞吐率：11.03req/s] [内存消耗：2,225.62kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308; PHPSESSID=ln8j5e4nh62i9n5oqt9pqila41',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/notelst.html [ array (
+  0 => 'stickList',
+  1 => 'hide',
+  2 => 'list',
+  3 => 'list_new',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+  10 => 'default_num',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000703s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.002204s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.003051s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal' ORDER BY id desc LIMIT 5 [ RunTime:0.000650s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001566s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000973s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001474s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000426s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000625s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000420s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000561s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.001962s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001960s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.001067s ]
+---------------------------------------------------------------
+[ 2018-10-19T16:43:04+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/212.html
+[ info ] qingrang.top/daily/admin/note/shownote/id/212.html [运行时间：0.057435s][吞吐率：17.41req/s] [内存消耗：2,017.64kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308; PHPSESSID=ln8j5e4nh62i9n5oqt9pqila41',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '212',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000543s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001363s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 212 LIMIT 1 [ RunTime:0.000576s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000870s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000434s ]
+---------------------------------------------------------------
+[ 2018-10-19T16:49:35+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/updatenote/id/212.html
+[ info ] qingrang.top/daily/admin/note/updatenote/id/212.html [运行时间：0.090446s][吞吐率：11.06req/s] [内存消耗：2,217.55kb] [文件加载：58]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'updatenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '56639',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/212.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308; PHPSESSID=ln8j5e4nh62i9n5oqt9pqila41',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'summary' => 'Linux 编程基础，包含进程，信号，进程间通信，网络编程等基础知识',
+  'content' => '# Linux - C 编程
+[TOC]
+## 进程
+### 孤儿进程 和 僵尸进程
+Linux 系统中有两种特殊的进程：孤儿进程和僵尸进程。
+
+父进程应负责子进程的回收工作，但父子进程是异步运行的，父进程不知道什么时候接收子进程，父进程甚至会在子进程结束之前结束。若父进程在子进程退出之前退出，子进程就会变成孤儿进程，此时子进程会被进程 init 收养，之后 init 会代替其原本的父进程完成状态收集工作。
+
+当进程调用了 exit() 函数后，该进程并不是马上消失，而是留下一个称为僵尸进程的数据结构。僵尸进程是 Linux 系统中的另一种特殊进程，它几乎放弃进程退出前占用的所有内存，既没有可执行代码也不能被调度，只在进程列表中保留一个位置，记载进程的退出状态等信息供父进程收集。若父进程中没有回收子进程的代码，子进程将会一直处于僵尸态。
+
+### 进程标识符
+下列函数返回这些标识符，其返回值类型 pid_t，uid_t，gid_t 等都是宏定义，实质是 `unsigned int`
+```
+//头文件
+#include <sys/types.h>
+#include <unistd.h>
+
+//返回:调用进程的 进程ID
+pid_t getpid(void)	
+
+//返回:调用进程的 父进程ID
+pid_t getppid(void);
+
+//返回:调用进程的 实际用户ID
+uid_t getuid(void)
+
+//返回:调用进程的 有效用户ID
+uid_t geteuid(void)
+
+//返回:调用进程的 实际组ID
+gid_t getgid (void)
+
+//返回:调用进程的 有效组ID
+gid_t getegid(void)
+```
+### 进程同步
+Linux 提供了 wait() 函数和 waitpid() 函数来获取进程状态，实现进程同步。这两个函数用于父、子进程之间的同步，即确保子进程一定先于父进程执行并终止。
+```
+#include <sys/types.h>
+#include <sys/wait.h>
+pid_t wait(int *status) ;
+pid_t waitpid(pid_t pid , int * status, int options) ;
+//两个函数返回：若成功则为 进程ID，若出错则为 -1。
+```
+### 实验：fork() 函数的使用
+fork() 函数:
+创建成功，父进程返回子进程的 id ，子进程返回 0
+创建失败，父进程返回 -1
+>使用 fork() 函数创建一个进程，进程创建成功后使父进程和子进程分别执行不同的功能
+
+```
+/*---------------------------------------------------
+使用 fork() 函数创建一个进程，进程创建成功后使父进程和子进程分别执行不同的功能
+-----------------------------------------------------*/
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+int main()
+{
+	//调用fork()函数创建子进程
+	pid_t pid = fork();
+	if (pid == -1)	//创建失败
+	{
+		perror("fork error");
+		exit(1);	//退出进程，指定返回值1
+	}
+	else if (pid > 0)	//创建成功 - 父进程
+	{
+		printf("父进程,pid=%d,ppid=%d\\n", getpid(), getppid());
+	}
+	else if (pid == 0)	//创建成功 - 子进程
+	{
+		printf("子进程,pid=%d,ppid=%d\\n", getpid(), getppid());
+	}
+	printf("........finish..........\\n");
+	return 0;
+}
+
+/*========================================================================
+父进程,pid=3720,ppid=3514
+........finish..........
+子进程,pid=3721,ppid=2012
+........finish..........
+========================================================================*/
+
+```
+
+- 多次执行文件 test_fork会发现这种情况: child process 后输出的 ppid 不等于 parent process 的 pid,而等于1。这是什么原因?
+答：父进程先于子进程终止,子进程变为“孤儿进程”,后由进程 init 接收。
+
+>使用 fork() 函数在循环中创建 5 个子进程，使子进程分别打印各自的编号和 pid
+
+```
+/*---------------------------------------------------
+使用 fork() 函数在循环中创建 5 个子进程，使子进程分别打印各自的编号和 pid
+-----------------------------------------------------*/
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+int main()
+{
+	pid_t pid;
+	int i;
+	//循环创建进程
+	for (i = 0; i<5; i++){				
+		if ((pid = fork()) == 0)	//若当前进程为子进程，便跳出循环
+			break;
+	}
+	if (pid == -1){
+		perror("fork error");
+		exit(1);
+	}
+	else if (pid>0){	//父进程
+		//sleep(5);	//父进程等待所有子进程执行结束后再执行
+		printf("parent process:pid=%d\\n", getpid());
+	}
+	else if (pid == 0){		//子进程
+		//sleep(i);	//每个子进程分别沉睡不同的时间
+		printf("I am child=%d,pid=%d\\n", i + 1, getpid());
+	}
+	return 0;
+}
+
+/*========================================================================
+>不 sleep 的输出：
+zhangliren@ubuntu:~/Documents$ ./a.out 
+I am child=2,pid=3814
+parent process:pid=3812
+I am child=1,pid=3813
+I am child=4,pid=3816
+zhangliren@ubuntu:~/Documents$ I am child=5,pid=3817
+I am child=3,pid=3815
+|(终端提示符)
+----------------------------------------------------------
+>sleep() 后的输出：
+I am child=1,pid=3843
+I am child=2,pid=3844
+I am child=3,pid=3845
+I am child=4,pid=3846
+I am child=5,pid=3847
+parent process:pid=3842
+========================================================================*/
+```
+
+- 观察输出结果,会发现输出结果有以下问题
+（1）子进程的编号不是递增的
+（2）终端提示符后面仍有子进程信息打印,而命令提示符在最后一行的开头闪烁
+这是为什么?
+
+答：（1）父进程先于子进程终止。在 Linux 系统中,子进程应由父进程回收,但是当子进程被创建后,它与父进程及其他进程共同竟争系统资源,所以父子进程执行的顺序是不确定的,终止的先后顺序也是不确定的。此处创建了 5 个子进程,这 5 个子进程与父进程共同竞争资源。6 个进程使用 CPU 的顺序不确定,因此子进程的编号不是递增关系,父进程在子进程尚未全部终止前便终止。
+（2）父进程是一个前台进程。当它终止退出后,会释放命令提示符,输出当前工作路径及端提示符[ thelma@ localhost~],但此时尚有子进程仍在执行,终端仍有信息输出,因此命令提示符会出现在输出结果最后一行的开头。
+
+## 信号和信号处理
+### 信号的概念
+信号的本质是软件中断。很多比较重要的应用程序都需处理信号。信号是异步事件的典型实例，即产生信号的事件对进程而言是随机出现的。进程不能只是测试一个变量(例如errno)来判别是否发生了一个信号，而是必须告诉内核「在此信号发生时，请执行指定操作」。
+
+可以要求系统在某个信号出现时按照下列三种方式中的一种进行操作：
+1. 忽略此信号。大多数信号都可使用这种方式进行处理，但有两种信号却决不能被忽略。它们是：SIGKILL 和 SIGSTOP。这两种信号不能被忽略的原因是：它们向超级用户提供一种使进程终止或停止的可靠方法。
+2. 捕捉信号。为了做到这一点要通知内核在某种信号发生时，调用一个用户函数。在用户函数中，可执行用户希望对这种事件进行的处理。
+3. 执行系统默认动作。每一种信号都有系统默认动作。注意，对大多数信号的系统默认动作是终止该进程。
+
+### 常见函数
+#### kill
+给指定进程发送信号
+
+函数声明：`int kill(pid_t,int sig)`
+pid：接收信号的进程ID
+sig：要发送的信号编号
+#### raise
+发送指定信号给当前进程自身
+
+函数声明：`int raise(int sig)`
+
+#### pause
+暂停进程，接收到任何信号后恢复
+
+函数声明：`int pause()`
+
+#### alarm
+计时器，驱使内核在指定秒数后发送 SIGALRM 信号到调用该函数的进程，进程收到该信号后默认终止运行。
+
+函数声明：`unsigned int alarm(unsigned int seconds)`
+
+#### signal
+捕获信号后，执行指定函数
+
+函数声明：
+`typedef void (* sighandler_t)(int);`
+`sighandler_t signal(int signum,sighandler_t handler);`
+
+signum：信号编号
+handler：自定义信号处理函数的函数指针
+
+### 实验：李纳斯的第一个程序
+```
+/*---------------------------------------------------------------------------------------------------------
+李纳斯的第一个程序：两个进程，一个向屏幕输出 A，一个向屏幕输出 B，两进程轮换输出，中间间隔 1 秒钟。如此反复，直到用户按下 ctl + c 结束两个进程（ctl + c 就是向当前正在运行的所有进程发送SIGINT信号）。
+---------------------------------------------------------------------------------------------------------*/
+#include "stdio.h"
+#include "sys/types.h"
+#include "signal.h"
+
+pid_t pid;
+
+//自定义信号处理函数。
+//父进程打印 AAA，子进程打印 BBB
+void sigusr1_handler(int n)
+{
+	if(pid > 0)
+		printf("AAAA\\n");
+	else
+		printf("BBBB\\n");
+
+	alarm(1);//计时器，1s 后发送 SIGALRM 信号到进程
+}
+
+void sigalrm_handler(int n)
+{
+	if(pid > 0){	//父进程
+		kill(pid, SIGUSR1); //发送 SIGUSR1 信号给 pid 进程
+	}
+	else{	//子进程
+		kill(getppid(), SIGUSR1);//发送 SIGUSR1 信号给 父进程
+	}
+}
+
+int main()
+{
+	//在fork()之前设置的信号处理函数会被子进程继承
+	signal(SIGALRM, sigalrm_handler);//捕获 SIGALRM 信号，执行 sigalrm_handler
+	signal(SIGUSR1, sigusr1_handler);//用户定义的信号，用于捕获 SIGUSR1 信号执行处理函数 sigusr1_handler
+
+	pid = fork();
+	if (pid > 0)	//父进程
+		raise(SIGUSR1);	//发送 SIGUSR1 信号给当前进程
+
+	while(1)
+		pause();	//进程挂起，等待信号唤醒
+
+	return 0;
+}
+```
+## 进程间通信
+### 信号量
+#### 信号量的概念
+信号量是一个计数器，用于多进程对共享数据对象的存取。为了获得共享资源，进程需要执行下列操作：
+1. 测试控制该资源的信号量。
+1. 若此信号量的值为正，则进程可以使用该资源。进程将信号量值减 1（P 操作），表示它使用了一个资源单位。若此信号量的值为 0，则进程进入睡眠状态，直至信号量值大于 0。若进程被唤醒后，它返回至第 1 步。当进程不再使用由一个信息量控制的共享资源时，该信号量值增 1（V 操作）。如果有进程正在睡眠等待此信号量，则唤醒它们中的一个。
+
+这两个过程也叫做 p、v 操作。 p、v操作是原子操作。为此，信号量通常是在内核中实现的。
+
+常用的信号量形式是让它控制单个资源，所以其初始值为 1。但是，一般而言，信号量的初值可以是任一正值，该值说明有多少个共享资源单位可供共享应用。
+
+#### 信号量的创建与打开 semget
+函数声明：`int semget(key_t key,int nsems,int semflg)`
+
+key：所创建或打开的信号量集合的键
+nsems：创建的信号量集合中信号量的个数，此参数只在创建一个新的信号量集合时有效
+semflg：调用函数的操作类型，也可用于设置信号量集合的访问权限，两者通过逻辑或表示
+
+返回：
+- 成功：返回信号量ID
+- 失败：-1，并设置 errno
+
+>调用函数 semget 的作用由参数 key 和 flag 决定，相应约定如下：
+
+- 当 key 为 IPC_PRIVATE 时，创建一个新的信号量集合。此时参数 flag 的取值对函数的操作不起仟何作用。
+- 当 key 不为 IPC_PRIVATE，且 flag 设置了 IPC_CREAT 位，而没有设置 IPC_EXCL 位，则执行操作由 key 值决定：如果 key 为内核中某个已存在的信号量集合的键，则执行打开这个键的操作；反之，则执行创建信号量集合的操作。
+- 当 key 不为 IPC_PRIVATE，且 flag 中同时设置了 IPC_CREAT 位和 IPC_EXCL 位，则执行创建信号量集合的操作。参数 key 的取值应与内核中已存在的任何信号量集合的键值都不相同，否则函数调用失败。
+
+#### 对信号量的控制 semctl
+
+函数声明：`int semctl(int semid, int semnum, int cmd, [union semun arg]) ;`
+
+semid：为信号量集合的标识符。
+semnum：用于指明某个特定信号量。
+cmd：表示调用该函数希望执行的命令
+cmd 的常用设置：
+- SETVAL：表示 semctl() 的功能为初始化信号量的值，信号量值通过可选参数传入，在使用信号量前应先对信号量值进行设置
+- IPC_RMID：表示 semctl() 的功能为从系统中删除指定信号量
+
+arg：是一个 semun 共用体，该共用体中各个成员的具体含义和使用情况与参数 cmd 的取值有关。该共用体的定义如下：
+```
+union semen{
+	int val;	//cmd 为 SETVAL 时，用于指定信号量值
+	struct semid_ds *buf;	//cmd 为 IPC_STAT 时或 IPC_SET 时生效
+	unsigned short *array;	//cmd 为 GETALL 或 SETALL 时生效
+	struct seminfo *_buf;	//cmd 为 GETALL 或 SETALL 时生效
+};
+```
+
+该共用体中的 struct semid_ds 是一个由内核维护的记录信号量属性信息的结构体，该结构体的定义如下：
+```
+ushort semid_ds{
+	struct ipc_perm sem_perm;	//所有者和标致权限
+	time_t sem_otime;	//最后操作时间
+	time_t sem_ctime;	//最后更改时间
+	unsigned short sem_nsems;	//信号集中的信号数量
+}
+```
+
+返回：由参数 cmd 决定。对于除 GETALL 以外的所有 GET 命令，都返回相应值，通常为非负数。否则返回 -1。
+#### 对信号量的操作——semop
+改变信号量的值
+
+函数声明：`int semop(int semid, struct sembuf *sops, unsigned nops) ; `
+
+semid：为信号量集合的ID
+semoparray：是一个 struct sembuf 类型的数组指针，该数组中的每个元素设置了要对信号量集中的哪个型号做哪种操作，struct sembuf 结构体定义如下：
+```
+struct sembuf{
+	short sem_num;	//信号量在信号集中的编号
+	short sem_op;	//信号量操作,-1 P操作，+1 V操作
+	short sem_flag;	//标志位
+};
+```
+nops：参数 sops 所指数组中元素的个数
+
+返回：若成功则为 0，若出错则为 -1。
+
+### 共享内存
+#### 共享内存的概念
+共享内存是进程问通信的一种最基本、最快速的机制。共享内存是两个或多个进程共享同一块内存区域，并通过该内存区域实现数据交换的进程问通信机制。通常是由一个进程开辟一块共享内存区域，然后允许多个进程对此区域进行访问。由于不需使用中间介质，而是数据由内存直接映射到进程空间，因此共享内存是最快速的进程间通信机制。
+
+共享内存的最大不足在于，由于多个进程对同一块内存区域具有访问的权限，各个进程之间的同步问题显得尤为突出。必须控制同一时刻只有一个进程对共享内存区域写入数据，否则将造成数据的混乱。这可通过结合使用信号量来解决。
+
+#### 共享内存的创建和打开 shmget
+函数声明：`int shmget(key_t key, int size, int flag) ;`
+
+key：表示所创建或打开的共享内存的键
+size：表示共享内存区域的大小
+flag：表示函数的操作类型，也可用于设置共享内存的访问权限，两者通过逻辑或表示
+
+返回：若成功则为共享内存ID，若出错则为 -1。
+
+#### 共享内存的附加 shmat
+进行地址映射，将共享内存映射到进程虚拟地址空间中。
+
+函数声明：`void *shmat(int shmid, void *addr, int flag) ;
+`
+
+shmid：表示要附加的共享内存段的ID
+addr：虚拟地址
+flag：用于表示函数的操作方式
+
+返回：若成功则为指向共享内存段的指针，若出错则为-1
+
+#### 共享内存的分离 shmdt
+解除物理内存与进程虚拟地址空间的映射关系
+
+函数声明：`int shmdt(void *addr) ;`
+
+addr：是以前调用 shmat 时的返回值。
+
+返回：若成功则为0，若出错则为 -1。
+
+#### 共享内存的控制 shmctl
+对共享内存段执行多种操作。
+
+函数声明：`int shmctl(int shmid, int cmd, struct shmid_ds *buf) ;
+`
+shmid：为共享内存的标识符
+cmd：表示调用该函数希望执行的操作
+
+---
+cmd 的取值和对应操作如下：
+- IPC_STAT：对此段取 shmid_ds 结构，并存放在由 buf 指向的结构体中。
+- IPC_SET：按 buf 指向的结构体中的值设置与此段相关结构体中的下列三个字段：shm_perm.uid、shm_perm.gid以及shm_perm.mode。此命令只能由下列两种进程执行：一种是其有效用户ID等于shm_perm.cuid或shm_perm.uid的进程；另一种是具有超级用户特权的进程。
+- IPC_RMID：从系统中删除该共享内存段。此命令只能由下列两种进程执行：一种是其有效用户ID等于shm_perm.cuid或shm_perm.uid的进程；另一种是具有超级用户特权的进程。
+- SHM_LOCK：锁住共享内存段。此命令只能由超级用户执行。
+- SHM_UNLOCK：解锁共享内存段。此命令只能由超级用户执行。
+
+---
+buf：指向 shmid_ds 结构体的指针
+
+返回：若成功则为0，若出错则为 -1。
+
+### 实验：父进程产生10个子进程，并打印出子进程产生的随机数的和
+```
+/*---------------------------------------------------------------------------------------------------------
+功能：
+    父进程产生10个子进程，并打印出子进程产生的随机数的和。要求用信号机制、信号量以及共享内存实现。
+
+思路：
+    子进程将自己产生的随机数累加到共享内存。当10个子进程都累加完后，用信号机制通知父进程，
+父进程就可以从共享内存中读取数据了。为了避免10个子进程向共享内存中写入数据时发生冲突，
+应使用信号量进行并发控制。	
+---------------------------------------------------------------------------------------------------------*/
+
+#include "stdio.h"
+#include "sys/types.h"
+#include "signal.h"
+#include "sys/ipc.h"
+#include "sys/sem.h"
+#include "sys/shm.h"
+
+//semun 共用体
+union semun
+{
+	int val;
+	struct semid_ds *buf;	//一个由内核维护的记录信号量属性信息的结构体 
+	ushort *array;
+};
+
+
+int semid;//信号量ID
+int shmid;//共享内存ID
+char *shm_virtualaddr;  //共享内存关联到进程后的虚拟地址
+
+// P操作，获取信号量，-1
+void p(int semid)
+{
+	struct sembuf buf = {0, -1, 0};
+	//int semop(int semid, struct sembuf *sops, unsigned nops) ;
+	semop(semid, &buf, 1);	//改变信号量的值
+}
+
+// V操作，释放信号量，+1
+void v(int semid)
+{
+	struct sembuf buf = {0, 1, 0};
+	semop(semid, &buf, 1);
+}
+
+void sigusr1_handler(int n)
+{
+	printf("count = %d, total = %d\\n", *(int *)shm_virtualaddr, *(int *)(shm_virtualaddr+4));  //打印进程编号（不是进程ID）和随机数和
+	
+	//删除信号量
+	if(semctl(semid, IPC_RMID, 0) == -1)  
+		printf("remove semaphore fail\\n");
+	else
+		printf("remove semaphore ok\\n");
+	
+	shmdt(shm_virtualaddr);  //解除共享内存的关联
+
+	//删除共享内存
+	if(shmctl(shmid, IPC_RMID, 0) == -1)  
+		printf("remove shared-memory fail\\n");
+	else
+		printf("remove shared-memory ok\\n");
+
+	exit(0);
+}
+
+int main()
+{
+	signal(SIGUSR1, sigusr1_handler);  //用户定义的信号，用于捕获 SIGUSR1 信号执行处理函数 sigusr1_handler
+
+	//int semget(key_t key,int nsems,int semflg)
+	//key：所创建或打开的信号量集合的键，nsems：创建的信号量集合中信号量的个数，semflg：调用函数的操作类型，也可用于设置信号量集合的访问权限
+	//成功：返回信号量ID，失败：-1
+	semid = semget(IPC_PRIVATE, 1, 0666);	//创建并初始化信号量
+
+	if(semid == -1)	//信号量创建失败
+	{
+		printf("create semaphore fail\\n");
+		return 0;
+	}
+	else{	 //返回信号量ID
+		printf("create semaphore ok\\n");
+	}
+
+	//semun 共用体
+	union semun x;
+	x.val = 1;  //信号量初值应为多少？为1
+
+	//int semctl(int semid, int semnum, int cmd, [union semun arg]) ;
+	//semid：信号量集合，semnum：用于指明某个特定信号量，cmd：表示调用该函数希望执行的命令，arg：是一个 semun 共用体，
+	semctl(semid, 0, SETVAL, x);	//初始化信号量为 1
+	
+	//int shmget(key_t key, int size, int flag);
+	//key：表示所创建或打开的共享内存的键，size：表示共享内存区域的大小，flag：表示函数的操作类型，也可用于设置共享内存的访问权限
+	//若成功则为共享内存ID，若出错则为 -1
+	shmid = shmget(IPC_PRIVATE, 8, 0666);  //创建并关联到共享内存，共享内存一共 8 字节，前 4 字节存放 count，后 4 字节存放 total
+	if(shmid == -1)	
+	{
+		printf("create shared-memory fail\\n");
+		return 0;
+	}
+	else{	//返回共享内存ID
+		printf("create shared-memory ok\\n");
+	}
+
+	//void *shmat(int shmid, void *addr, int flag) ;
+	//shmid：表示要附加的共享内存段的ID，addr：虚拟地址，flag：用于表示函数的操作方式
+	//成功则为指向共享内存段的指针，若出错则为-1
+	shm_virtualaddr = shmat(shmid, 0, 0);//共享内存的附加，地址映射，addr 为 0，此共享内存段附加到由内核选择的第一个可用地址上
+
+	*(int *)shm_virtualaddr = 0;  //初始化进程编号，将指针转成int*，然后取该指针指向地址的值
+	*(int *)(shm_virtualaddr + 4) = 0;  //初始化随机数和
+
+	//flag 是否是子进程
+	char is_child = 0;
+	int i;
+	//循环创建 10 个进程
+	for(i=0; i<10; i++)
+	{
+		pid_t pid = fork(); 
+		if(pid == 0)	//子进程
+		{
+			is_child = 1;  //设置子进程中 is_child 为 1
+			break;  //退出循环
+		}
+	}
+
+	//子进程
+	if(is_child)
+	{
+		p(semid);  // P操作，获取信号量（-1）
+
+		srand(time(NULL) + i);	//设置随机种子数
+		int num = rand()%10;	//取 0-9 随机数
+
+		(*(int *)shm_virtualaddr)++;  //进程编号自增
+		*(int *)(shm_virtualaddr + 4) += num;  //随机数相加
+
+		printf("child%d: %d\\n", i, num);
+
+		v(semid);  //V操作，释放信号量（+1）
+
+		if(*(int *)shm_virtualaddr == 10)  //if(i==10)最后一个子进程，善后操作
+			kill(getppid(), SIGUSR1);  //向父进程发送 SIGUSER1 信号 
+	}
+	else
+	{
+		while(1)
+			pause();//挂起，等待信号唤醒
+	}
+
+	return 0;
+}
+/*========================================================================
+create semaphore ok
+create shared-memory ok
+child0: 8
+child1: 8
+child5: 9
+child4: 0
+child6: 2
+child3: 9
+child7: 6
+child8: 4
+child9: 1
+child2: 9
+count = 10, total = 56
+remove semaphore ok
+remove shared-memory ok
+========================================================================*/
+```
+## socket 编程接口
+### 创建套接字 socket
+函数声明：`int socket(int domain,int type,int protocol);`
+',
+  'groups' => 'Linux',
+  'showsel' => '1',
+  'showse2' => '1',
+  'id' => '212',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->updateNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000794s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001608s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 212 LIMIT 1 [ RunTime:0.000979s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `note` WHERE  `id` = 212 LIMIT 1 [ RunTime:0.000439s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000905s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `groups` WHERE  `groups` = 'Linux' LIMIT 1 [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000324s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `id`=212,`p_id`=2,`title`='Linux - C 编程\r',`content`='# Linux - C 编程\r\n[TOC]\r\n## 进程\r\n### 孤儿进程 和 僵尸进程\r\nLinux 系统中有两种特殊的进程：孤儿进程和僵尸进程。\r\n\r\n父进程应负责子进程的回收工作，但父子进程是异步运行的，父进程不知道什么时候接收子进程，父进程甚至会在子进程结束之前结束。若父进程在子进程退出之前退出，子进程就会变成孤儿进程，此时子进程会被进程 init 收养，之后 init 会代替其原本的父进程完成状态收集工作。\r\n\r\n当进程调用了 exit() 函数后，该进程并不是马上消失，而是留下一个称为僵尸进程的数据结构。僵尸进程是 Linux 系统中的另一种特殊进程，它几乎放弃进程退出前占用的所有内存，既没有可执行代码也不能被调度，只在进程列表中保留一个位置，记载进程的退出状态等信息供父进程收集。若父进程中没有回收子进程的代码，子进程将会一直处于僵尸态。\r\n\r\n### 进程标识符\r\n下列函数返回这些标识符，其返回值类型 pid_t，uid_t，gid_t 等都是宏定义，实质是 `unsigned int`\r\n```\r\n//头文件\r\n#include <sys/types.h>\r\n#include <unistd.h>\r\n\r\n//返回:调用进程的 进程ID\r\npid_t getpid(void)	\r\n\r\n//返回:调用进程的 父进程ID\r\npid_t getppid(void);\r\n\r\n//返回:调用进程的 实际用户ID\r\nuid_t getuid(void)\r\n\r\n//返回:调用进程的 有效用户ID\r\nuid_t geteuid(void)\r\n\r\n//返回:调用进程的 实际组ID\r\ngid_t getgid (void)\r\n\r\n//返回:调用进程的 有效组ID\r\ngid_t getegid(void)\r\n```\r\n### 进程同步\r\nLinux 提供了 wait() 函数和 waitpid() 函数来获取进程状态，实现进程同步。这两个函数用于父、子进程之间的同步，即确保子进程一定先于父进程执行并终止。\r\n```\r\n#include <sys/types.h>\r\n#include <sys/wait.h>\r\npid_t wait(int *status) ;\r\npid_t waitpid(pid_t pid , int * status, int options) ;\r\n//两个函数返回：若成功则为 进程ID，若出错则为 -1。\r\n```\r\n### 实验：fork() 函数的使用\r\nfork() 函数:\r\n创建成功，父进程返回子进程的 id ，子进程返回 0\r\n创建失败，父进程返回 -1\r\n>使用 fork() 函数创建一个进程，进程创建成功后使父进程和子进程分别执行不同的功能\r\n\r\n```\r\n/*---------------------------------------------------\r\n使用 fork() 函数创建一个进程，进程创建成功后使父进程和子进程分别执行不同的功能\r\n-----------------------------------------------------*/\r\n#include <stdio.h>\r\n#include <stdlib.h>\r\n#include <unistd.h>\r\nint main()\r\n{\r\n	//调用fork()函数创建子进程\r\n	pid_t pid = fork();\r\n	if (pid == -1)	//创建失败\r\n	{\r\n		perror(\"fork error\");\r\n		exit(1);	//退出进程，指定返回值1\r\n	}\r\n	else if (pid > 0)	//创建成功 - 父进程\r\n	{\r\n		printf(\"父进程,pid=%d,ppid=%d\\n\", getpid(), getppid());\r\n	}\r\n	else if (pid == 0)	//创建成功 - 子进程\r\n	{\r\n		printf(\"子进程,pid=%d,ppid=%d\\n\", getpid(), getppid());\r\n	}\r\n	printf(\"........finish..........\\n\");\r\n	return 0;\r\n}\r\n\r\n/*========================================================================\r\n父进程,pid=3720,ppid=3514\r\n........finish..........\r\n子进程,pid=3721,ppid=2012\r\n........finish..........\r\n========================================================================*/\r\n\r\n```\r\n\r\n- 多次执行文件 test_fork会发现这种情况: child process 后输出的 ppid 不等于 parent process 的 pid,而等于1。这是什么原因?\r\n答：父进程先于子进程终止,子进程变为“孤儿进程”,后由进程 init 接收。\r\n\r\n>使用 fork() 函数在循环中创建 5 个子进程，使子进程分别打印各自的编号和 pid\r\n\r\n```\r\n/*---------------------------------------------------\r\n使用 fork() 函数在循环中创建 5 个子进程，使子进程分别打印各自的编号和 pid\r\n-----------------------------------------------------*/\r\n#include <stdio.h>\r\n#include <stdlib.h>\r\n#include <unistd.h>\r\n\r\nint main()\r\n{\r\n	pid_t pid;\r\n	int i;\r\n	//循环创建进程\r\n	for (i = 0; i<5; i++){				\r\n		if ((pid = fork()) == 0)	//若当前进程为子进程，便跳出循环\r\n			break;\r\n	}\r\n	if (pid == -1){\r\n		perror(\"fork error\");\r\n		exit(1);\r\n	}\r\n	else if (pid>0){	//父进程\r\n		//sleep(5);	//父进程等待所有子进程执行结束后再执行\r\n		printf(\"parent process:pid=%d\\n\", getpid());\r\n	}\r\n	else if (pid == 0){		//子进程\r\n		//sleep(i);	//每个子进程分别沉睡不同的时间\r\n		printf(\"I am child=%d,pid=%d\\n\", i + 1, getpid());\r\n	}\r\n	return 0;\r\n}\r\n\r\n/*========================================================================\r\n>不 sleep 的输出：\r\nzhangliren@ubuntu:~/Documents$ ./a.out \r\nI am child=2,pid=3814\r\nparent process:pid=3812\r\nI am child=1,pid=3813\r\nI am child=4,pid=3816\r\nzhangliren@ubuntu:~/Documents$ I am child=5,pid=3817\r\nI am child=3,pid=3815\r\n|(终端提示符)\r\n----------------------------------------------------------\r\n>sleep() 后的输出：\r\nI am child=1,pid=3843\r\nI am child=2,pid=3844\r\nI am child=3,pid=3845\r\nI am child=4,pid=3846\r\nI am child=5,pid=3847\r\nparent process:pid=3842\r\n========================================================================*/\r\n```\r\n\r\n- 观察输出结果,会发现输出结果有以下问题\r\n（1）子进程的编号不是递增的\r\n（2）终端提示符后面仍有子进程信息打印,而命令提示符在最后一行的开头闪烁\r\n这是为什么?\r\n\r\n答：（1）父进程先于子进程终止。在 Linux 系统中,子进程应由父进程回收,但是当子进程被创建后,它与父进程及其他进程共同竟争系统资源,所以父子进程执行的顺序是不确定的,终止的先后顺序也是不确定的。此处创建了 5 个子进程,这 5 个子进程与父进程共同竞争资源。6 个进程使用 CPU 的顺序不确定,因此子进程的编号不是递增关系,父进程在子进程尚未全部终止前便终止。\r\n（2）父进程是一个前台进程。当它终止退出后,会释放命令提示符,输出当前工作路径及端提示符[ thelma@ localhost~],但此时尚有子进程仍在执行,终端仍有信息输出,因此命令提示符会出现在输出结果最后一行的开头。\r\n\r\n## 信号和信号处理\r\n### 信号的概念\r\n信号的本质是软件中断。很多比较重要的应用程序都需处理信号。信号是异步事件的典型实例，即产生信号的事件对进程而言是随机出现的。进程不能只是测试一个变量(例如errno)来判别是否发生了一个信号，而是必须告诉内核「在此信号发生时，请执行指定操作」。\r\n\r\n可以要求系统在某个信号出现时按照下列三种方式中的一种进行操作：\r\n1. 忽略此信号。大多数信号都可使用这种方式进行处理，但有两种信号却决不能被忽略。它们是：SIGKILL 和 SIGSTOP。这两种信号不能被忽略的原因是：它们向超级用户提供一种使进程终止或停止的可靠方法。\r\n2. 捕捉信号。为了做到这一点要通知内核在某种信号发生时，调用一个用户函数。在用户函数中，可执行用户希望对这种事件进行的处理。\r\n3. 执行系统默认动作。每一种信号都有系统默认动作。注意，对大多数信号的系统默认动作是终止该进程。\r\n\r\n### 常见函数\r\n#### kill\r\n给指定进程发送信号\r\n\r\n函数声明：`int kill(pid_t,int sig)`\r\npid：接收信号的进程ID\r\nsig：要发送的信号编号\r\n#### raise\r\n发送指定信号给当前进程自身\r\n\r\n函数声明：`int raise(int sig)`\r\n\r\n#### pause\r\n暂停进程，接收到任何信号后恢复\r\n\r\n函数声明：`int pause()`\r\n\r\n#### alarm\r\n计时器，驱使内核在指定秒数后发送 SIGALRM 信号到调用该函数的进程，进程收到该信号后默认终止运行。\r\n\r\n函数声明：`unsigned int alarm(unsigned int seconds)`\r\n\r\n#### signal\r\n捕获信号后，执行指定函数\r\n\r\n函数声明：\r\n`typedef void (* sighandler_t)(int);`\r\n`sighandler_t signal(int signum,sighandler_t handler);`\r\n\r\nsignum：信号编号\r\nhandler：自定义信号处理函数的函数指针\r\n\r\n### 实验：李纳斯的第一个程序\r\n```\r\n/*---------------------------------------------------------------------------------------------------------\r\n李纳斯的第一个程序：两个进程，一个向屏幕输出 A，一个向屏幕输出 B，两进程轮换输出，中间间隔 1 秒钟。如此反复，直到用户按下 ctl + c 结束两个进程（ctl + c 就是向当前正在运行的所有进程发送SIGINT信号）。\r\n---------------------------------------------------------------------------------------------------------*/\r\n#include \"stdio.h\"\r\n#include \"sys/types.h\"\r\n#include \"signal.h\"\r\n\r\npid_t pid;\r\n\r\n//自定义信号处理函数。\r\n//父进程打印 AAA，子进程打印 BBB\r\nvoid sigusr1_handler(int n)\r\n{\r\n	if(pid > 0)\r\n		printf(\"AAAA\\n\");\r\n	else\r\n		printf(\"BBBB\\n\");\r\n\r\n	alarm(1);//计时器，1s 后发送 SIGALRM 信号到进程\r\n}\r\n\r\nvoid sigalrm_handler(int n)\r\n{\r\n	if(pid > 0){	//父进程\r\n		kill(pid, SIGUSR1); //发送 SIGUSR1 信号给 pid 进程\r\n	}\r\n	else{	//子进程\r\n		kill(getppid(), SIGUSR1);//发送 SIGUSR1 信号给 父进程\r\n	}\r\n}\r\n\r\nint main()\r\n{\r\n	//在fork()之前设置的信号处理函数会被子进程继承\r\n	signal(SIGALRM, sigalrm_handler);//捕获 SIGALRM 信号，执行 sigalrm_handler\r\n	signal(SIGUSR1, sigusr1_handler);//用户定义的信号，用于捕获 SIGUSR1 信号执行处理函数 sigusr1_handler\r\n\r\n	pid = fork();\r\n	if (pid > 0)	//父进程\r\n		raise(SIGUSR1);	//发送 SIGUSR1 信号给当前进程\r\n\r\n	while(1)\r\n		pause();	//进程挂起，等待信号唤醒\r\n\r\n	return 0;\r\n}\r\n```\r\n## 进程间通信\r\n### 信号量\r\n#### 信号量的概念\r\n信号量是一个计数器，用于多进程对共享数据对象的存取。为了获得共享资源，进程需要执行下列操作：\r\n1. 测试控制该资源的信号量。\r\n1. 若此信号量的值为正，则进程可以使用该资源。进程将信号量值减 1（P 操作），表示它使用了一个资源单位。若此信号量的值为 0，则进程进入睡眠状态，直至信号量值大于 0。若进程被唤醒后，它返回至第 1 步。当进程不再使用由一个信息量控制的共享资源时，该信号量值增 1（V 操作）。如果有进程正在睡眠等待此信号量，则唤醒它们中的一个。\r\n\r\n这两个过程也叫做 p、v 操作。 p、v操作是原子操作。为此，信号量通常是在内核中实现的。\r\n\r\n常用的信号量形式是让它控制单个资源，所以其初始值为 1。但是，一般而言，信号量的初值可以是任一正值，该值说明有多少个共享资源单位可供共享应用。\r\n\r\n#### 信号量的创建与打开 semget\r\n函数声明：`int semget(key_t key,int nsems,int semflg)`\r\n\r\nkey：所创建或打开的信号量集合的键\r\nnsems：创建的信号量集合中信号量的个数，此参数只在创建一个新的信号量集合时有效\r\nsemflg：调用函数的操作类型，也可用于设置信号量集合的访问权限，两者通过逻辑或表示\r\n\r\n返回：\r\n- 成功：返回信号量ID\r\n- 失败：-1，并设置 errno\r\n\r\n>调用函数 semget 的作用由参数 key 和 flag 决定，相应约定如下：\r\n\r\n- 当 key 为 IPC_PRIVATE 时，创建一个新的信号量集合。此时参数 flag 的取值对函数的操作不起仟何作用。\r\n- 当 key 不为 IPC_PRIVATE，且 flag 设置了 IPC_CREAT 位，而没有设置 IPC_EXCL 位，则执行操作由 key 值决定：如果 key 为内核中某个已存在的信号量集合的键，则执行打开这个键的操作；反之，则执行创建信号量集合的操作。\r\n- 当 key 不为 IPC_PRIVATE，且 flag 中同时设置了 IPC_CREAT 位和 IPC_EXCL 位，则执行创建信号量集合的操作。参数 key 的取值应与内核中已存在的任何信号量集合的键值都不相同，否则函数调用失败。\r\n\r\n#### 对信号量的控制 semctl\r\n\r\n函数声明：`int semctl(int semid, int semnum, int cmd, [union semun arg]) ;`\r\n\r\nsemid：为信号量集合的标识符。\r\nsemnum：用于指明某个特定信号量。\r\ncmd：表示调用该函数希望执行的命令\r\ncmd 的常用设置：\r\n- SETVAL：表示 semctl() 的功能为初始化信号量的值，信号量值通过可选参数传入，在使用信号量前应先对信号量值进行设置\r\n- IPC_RMID：表示 semctl() 的功能为从系统中删除指定信号量\r\n\r\narg：是一个 semun 共用体，该共用体中各个成员的具体含义和使用情况与参数 cmd 的取值有关。该共用体的定义如下：\r\n```\r\nunion semen{\r\n	int val;	//cmd 为 SETVAL 时，用于指定信号量值\r\n	struct semid_ds *buf;	//cmd 为 IPC_STAT 时或 IPC_SET 时生效\r\n	unsigned short *array;	//cmd 为 GETALL 或 SETALL 时生效\r\n	struct seminfo *_buf;	//cmd 为 GETALL 或 SETALL 时生效\r\n};\r\n```\r\n\r\n该共用体中的 struct semid_ds 是一个由内核维护的记录信号量属性信息的结构体，该结构体的定义如下：\r\n```\r\nushort semid_ds{\r\n	struct ipc_perm sem_perm;	//所有者和标致权限\r\n	time_t sem_otime;	//最后操作时间\r\n	time_t sem_ctime;	//最后更改时间\r\n	unsigned short sem_nsems;	//信号集中的信号数量\r\n}\r\n```\r\n\r\n返回：由参数 cmd 决定。对于除 GETALL 以外的所有 GET 命令，都返回相应值，通常为非负数。否则返回 -1。\r\n#### 对信号量的操作——semop\r\n改变信号量的值\r\n\r\n函数声明：`int semop(int semid, struct sembuf *sops, unsigned nops) ; `\r\n\r\nsemid：为信号量集合的ID\r\nsemoparray：是一个 struct sembuf 类型的数组指针，该数组中的每个元素设置了要对信号量集中的哪个型号做哪种操作，struct sembuf 结构体定义如下：\r\n```\r\nstruct sembuf{\r\n	short sem_num;	//信号量在信号集中的编号\r\n	short sem_op;	//信号量操作,-1 P操作，+1 V操作\r\n	short sem_flag;	//标志位\r\n};\r\n```\r\nnops：参数 sops 所指数组中元素的个数\r\n\r\n返回：若成功则为 0，若出错则为 -1。\r\n\r\n### 共享内存\r\n#### 共享内存的概念\r\n共享内存是进程问通信的一种最基本、最快速的机制。共享内存是两个或多个进程共享同一块内存区域，并通过该内存区域实现数据交换的进程问通信机制。通常是由一个进程开辟一块共享内存区域，然后允许多个进程对此区域进行访问。由于不需使用中间介质，而是数据由内存直接映射到进程空间，因此共享内存是最快速的进程间通信机制。\r\n\r\n共享内存的最大不足在于，由于多个进程对同一块内存区域具有访问的权限，各个进程之间的同步问题显得尤为突出。必须控制同一时刻只有一个进程对共享内存区域写入数据，否则将造成数据的混乱。这可通过结合使用信号量来解决。\r\n\r\n#### 共享内存的创建和打开 shmget\r\n函数声明：`int shmget(key_t key, int size, int flag) ;`\r\n\r\nkey：表示所创建或打开的共享内存的键\r\nsize：表示共享内存区域的大小\r\nflag：表示函数的操作类型，也可用于设置共享内存的访问权限，两者通过逻辑或表示\r\n\r\n返回：若成功则为共享内存ID，若出错则为 -1。\r\n\r\n#### 共享内存的附加 shmat\r\n进行地址映射，将共享内存映射到进程虚拟地址空间中。\r\n\r\n函数声明：`void *shmat(int shmid, void *addr, int flag) ;\r\n`\r\n\r\nshmid：表示要附加的共享内存段的ID\r\naddr：虚拟地址\r\nflag：用于表示函数的操作方式\r\n\r\n返回：若成功则为指向共享内存段的指针，若出错则为-1\r\n\r\n#### 共享内存的分离 shmdt\r\n解除物理内存与进程虚拟地址空间的映射关系\r\n\r\n函数声明：`int shmdt(void *addr) ;`\r\n\r\naddr：是以前调用 shmat 时的返回值。\r\n\r\n返回：若成功则为0，若出错则为 -1。\r\n\r\n#### 共享内存的控制 shmctl\r\n对共享内存段执行多种操作。\r\n\r\n函数声明：`int shmctl(int shmid, int cmd, struct shmid_ds *buf) ;\r\n`\r\nshmid：为共享内存的标识符\r\ncmd：表示调用该函数希望执行的操作\r\n\r\n---\r\ncmd 的取值和对应操作如下：\r\n- IPC_STAT：对此段取 shmid_ds 结构，并存放在由 buf 指向的结构体中。\r\n- IPC_SET：按 buf 指向的结构体中的值设置与此段相关结构体中的下列三个字段：shm_perm.uid、shm_perm.gid以及shm_perm.mode。此命令只能由下列两种进程执行：一种是其有效用户ID等于shm_perm.cuid或shm_perm.uid的进程；另一种是具有超级用户特权的进程。\r\n- IPC_RMID：从系统中删除该共享内存段。此命令只能由下列两种进程执行：一种是其有效用户ID等于shm_perm.cuid或shm_perm.uid的进程；另一种是具有超级用户特权的进程。\r\n- SHM_LOCK：锁住共享内存段。此命令只能由超级用户执行。\r\n- SHM_UNLOCK：解锁共享内存段。此命令只能由超级用户执行。\r\n\r\n---\r\nbuf：指向 shmid_ds 结构体的指针\r\n\r\n返回：若成功则为0，若出错则为 -1。\r\n\r\n### 实验：父进程产生10个子进程，并打印出子进程产生的随机数的和\r\n```\r\n/*---------------------------------------------------------------------------------------------------------\r\n功能：\r\n    父进程产生10个子进程，并打印出子进程产生的随机数的和。要求用信号机制、信号量以及共享内存实现。\r\n\r\n思路：\r\n    子进程将自己产生的随机数累加到共享内存。当10个子进程都累加完后，用信号机制通知父进程，\r\n父进程就可以从共享内存中读取数据了。为了避免10个子进程向共享内存中写入数据时发生冲突，\r\n应使用信号量进行并发控制。	\r\n---------------------------------------------------------------------------------------------------------*/\r\n\r\n#include \"stdio.h\"\r\n#include \"sys/types.h\"\r\n#include \"signal.h\"\r\n#include \"sys/ipc.h\"\r\n#include \"sys/sem.h\"\r\n#include \"sys/shm.h\"\r\n\r\n//semun 共用体\r\nunion semun\r\n{\r\n	int val;\r\n	struct semid_ds *buf;	//一个由内核维护的记录信号量属性信息的结构体 \r\n	ushort *array;\r\n};\r\n\r\n\r\nint semid;//信号量ID\r\nint shmid;//共享内存ID\r\nchar *shm_virtualaddr;  //共享内存关联到进程后的虚拟地址\r\n\r\n// P操作，获取信号量，-1\r\nvoid p(int semid)\r\n{\r\n	struct sembuf buf = {0, -1, 0};\r\n	//int semop(int semid, struct sembuf *sops, unsigned nops) ;\r\n	semop(semid, &buf, 1);	//改变信号量的值\r\n}\r\n\r\n// V操作，释放信号量，+1\r\nvoid v(int semid)\r\n{\r\n	struct sembuf buf = {0, 1, 0};\r\n	semop(semid, &buf, 1);\r\n}\r\n\r\nvoid sigusr1_handler(int n)\r\n{\r\n	printf(\"count = %d, total = %d\\n\", *(int *)shm_virtualaddr, *(int *)(shm_virtualaddr+4));  //打印进程编号（不是进程ID）和随机数和\r\n	\r\n	//删除信号量\r\n	if(semctl(semid, IPC_RMID, 0) == -1)  \r\n		printf(\"remove semaphore fail\\n\");\r\n	else\r\n		printf(\"remove semaphore ok\\n\");\r\n	\r\n	shmdt(shm_virtualaddr);  //解除共享内存的关联\r\n\r\n	//删除共享内存\r\n	if(shmctl(shmid, IPC_RMID, 0) == -1)  \r\n		printf(\"remove shared-memory fail\\n\");\r\n	else\r\n		printf(\"remove shared-memory ok\\n\");\r\n\r\n	exit(0);\r\n}\r\n\r\nint main()\r\n{\r\n	signal(SIGUSR1, sigusr1_handler);  //用户定义的信号，用于捕获 SIGUSR1 信号执行处理函数 sigusr1_handler\r\n\r\n	//int semget(key_t key,int nsems,int semflg)\r\n	//key：所创建或打开的信号量集合的键，nsems：创建的信号量集合中信号量的个数，semflg：调用函数的操作类型，也可用于设置信号量集合的访问权限\r\n	//成功：返回信号量ID，失败：-1\r\n	semid = semget(IPC_PRIVATE, 1, 0666);	//创建并初始化信号量\r\n\r\n	if(semid == -1)	//信号量创建失败\r\n	{\r\n		printf(\"create semaphore fail\\n\");\r\n		return 0;\r\n	}\r\n	else{	 //返回信号量ID\r\n		printf(\"create semaphore ok\\n\");\r\n	}\r\n\r\n	//semun 共用体\r\n	union semun x;\r\n	x.val = 1;  //信号量初值应为多少？为1\r\n\r\n	//int semctl(int semid, int semnum, int cmd, [union semun arg]) ;\r\n	//semid：信号量集合，semnum：用于指明某个特定信号量，cmd：表示调用该函数希望执行的命令，arg：是一个 semun 共用体，\r\n	semctl(semid, 0, SETVAL, x);	//初始化信号量为 1\r\n	\r\n	//int shmget(key_t key, int size, int flag);\r\n	//key：表示所创建或打开的共享内存的键，size：表示共享内存区域的大小，flag：表示函数的操作类型，也可用于设置共享内存的访问权限\r\n	//若成功则为共享内存ID，若出错则为 -1\r\n	shmid = shmget(IPC_PRIVATE, 8, 0666);  //创建并关联到共享内存，共享内存一共 8 字节，前 4 字节存放 count，后 4 字节存放 total\r\n	if(shmid == -1)	\r\n	{\r\n		printf(\"create shared-memory fail\\n\");\r\n		return 0;\r\n	}\r\n	else{	//返回共享内存ID\r\n		printf(\"create shared-memory ok\\n\");\r\n	}\r\n\r\n	//void *shmat(int shmid, void *addr, int flag) ;\r\n	//shmid：表示要附加的共享内存段的ID，addr：虚拟地址，flag：用于表示函数的操作方式\r\n	//成功则为指向共享内存段的指针，若出错则为-1\r\n	shm_virtualaddr = shmat(shmid, 0, 0);//共享内存的附加，地址映射，addr 为 0，此共享内存段附加到由内核选择的第一个可用地址上\r\n\r\n	*(int *)shm_virtualaddr = 0;  //初始化进程编号，将指针转成int*，然后取该指针指向地址的值\r\n	*(int *)(shm_virtualaddr + 4) = 0;  //初始化随机数和\r\n\r\n	//flag 是否是子进程\r\n	char is_child = 0;\r\n	int i;\r\n	//循环创建 10 个进程\r\n	for(i=0; i<10; i++)\r\n	{\r\n		pid_t pid = fork(); \r\n		if(pid == 0)	//子进程\r\n		{\r\n			is_child = 1;  //设置子进程中 is_child 为 1\r\n			break;  //退出循环\r\n		}\r\n	}\r\n\r\n	//子进程\r\n	if(is_child)\r\n	{\r\n		p(semid);  // P操作，获取信号量（-1）\r\n\r\n		srand(time(NULL) + i);	//设置随机种子数\r\n		int num = rand()%10;	//取 0-9 随机数\r\n\r\n		(*(int *)shm_virtualaddr)++;  //进程编号自增\r\n		*(int *)(shm_virtualaddr + 4) += num;  //随机数相加\r\n\r\n		printf(\"child%d: %d\\n\", i, num);\r\n\r\n		v(semid);  //V操作，释放信号量（+1）\r\n\r\n		if(*(int *)shm_virtualaddr == 10)  //if(i==10)最后一个子进程，善后操作\r\n			kill(getppid(), SIGUSR1);  //向父进程发送 SIGUSER1 信号 \r\n	}\r\n	else\r\n	{\r\n		while(1)\r\n			pause();//挂起，等待信号唤醒\r\n	}\r\n\r\n	return 0;\r\n}\r\n/*========================================================================\r\ncreate semaphore ok\r\ncreate shared-memory ok\r\nchild0: 8\r\nchild1: 8\r\nchild5: 9\r\nchild4: 0\r\nchild6: 2\r\nchild3: 9\r\nchild7: 6\r\nchild8: 4\r\nchild9: 1\r\nchild2: 9\r\ncount = 10, total = 56\r\nremove semaphore ok\r\nremove shared-memory ok\r\n========================================================================*/\r\n```\r\n## socket 编程接口\r\n### 创建套接字 socket\r\n函数声明：`int socket(int domain,int type,int protocol);`\r\n',`groups`='Linux',`is_show`=1,`publish`=1,`summary`='Linux 编程基础，包含进程，信号，进程间通信，网络编程等基础知识'  WHERE  `id` = 212 [ RunTime:0.001201s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Linux' LIMIT 1 [ RunTime:0.001869s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=11  WHERE  `groups` = 'Linux' [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Linux' LIMIT 1 [ RunTime:0.001121s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=11  WHERE  `groups` = 'Linux' [ RunTime:0.000427s ]
+---------------------------------------------------------------
+[ 2018-10-19T16:49:35+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/212.html
+[ info ] qingrang.top/daily/admin/note/shownote/id/212.html [运行时间：0.057864s][吞吐率：17.28req/s] [内存消耗：2,018.26kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/212.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308; PHPSESSID=ln8j5e4nh62i9n5oqt9pqila41',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '212',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000520s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001394s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 212 LIMIT 1 [ RunTime:0.000547s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000881s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000298s ]
+---------------------------------------------------------------
+[ 2018-10-19T21:24:53+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/login/index.html
+[ info ] qingrang.top/daily/admin/login/index.html [运行时间：0.059541s][吞吐率：16.80req/s] [内存消耗：1,339.89kb] [文件加载：47]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /var/www/html/daily/application/admin/controller/Login.php ]
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File

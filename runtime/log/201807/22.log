@@ -1,0 +1,1165 @@
+---------------------------------------------------------------
+[ 2018-07-22T10:18:29+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ info ] qingrang.top/daily/ [运行时间：0.159112s][吞吐率：6.28req/s] [内存消耗：3,286.00kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/notelst.html [ array (
+  0 => 'autoSave',
+  1 => 'phoneSave',
+  2 => 'hide',
+  3 => 'list',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+  10 => 'default_num',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002839s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.002409s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.006418s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001159s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000680s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001112s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000514s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000723s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001087s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000701s ]
+---------------------------------------------------------------
+[ 2018-07-22T10:19:10+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/noteview.html
+[ info ] qingrang.top/daily/admin/note/noteview.html [运行时间：0.056907s][吞吐率：17.57req/s] [内存消耗：2,085.94kb] [文件加载：50]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'noteview',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '10',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'noteid' => '196',
+)
+[ info ] [ RUN ] app\admin\controller\Note->noteview[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002155s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001509s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 196 LIMIT 1 [ RunTime:0.000449s ]
+---------------------------------------------------------------
+[ 2018-07-22T10:19:14+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/noteview.html
+[ info ] qingrang.top/daily/admin/note/noteview.html [运行时间：0.064824s][吞吐率：15.43req/s] [内存消耗：2,086.80kb] [文件加载：50]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'noteview',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '10',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'noteid' => '195',
+)
+[ info ] [ RUN ] app\admin\controller\Note->noteview[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002220s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001357s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 195 LIMIT 1 [ RunTime:0.000409s ]
+---------------------------------------------------------------
+[ 2018-07-22T10:19:16+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/noteview.html
+[ info ] qingrang.top/daily/admin/note/noteview.html [运行时间：0.060969s][吞吐率：16.40req/s] [内存消耗：2,086.05kb] [文件加载：50]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'noteview',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '10',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'noteid' => '194',
+)
+[ info ] [ RUN ] app\admin\controller\Note->noteview[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002026s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001365s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 194 LIMIT 1 [ RunTime:0.000396s ]
+---------------------------------------------------------------
+[ 2018-07-22T10:19:19+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/noteview.html
+[ info ] qingrang.top/daily/admin/note/noteview.html [运行时间：0.067913s][吞吐率：14.72req/s] [内存消耗：2,093.91kb] [文件加载：50]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'noteview',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '10',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'noteid' => '192',
+)
+[ info ] [ RUN ] app\admin\controller\Note->noteview[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002296s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001357s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 192 LIMIT 1 [ RunTime:0.000495s ]
+---------------------------------------------------------------
+[ 2018-07-22T10:22:53+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/noteview.html
+[ info ] qingrang.top/daily/admin/note/noteview.html [运行时间：0.048151s][吞吐率：20.77req/s] [内存消耗：2,088.61kb] [文件加载：50]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'noteview',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '10',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'noteid' => '193',
+)
+[ info ] [ RUN ] app\admin\controller\Note->noteview[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000549s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001344s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 193 LIMIT 1 [ RunTime:0.000476s ]
+---------------------------------------------------------------
+[ 2018-07-22T10:23:06+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/193.html
+[ info ] qingrang.top/daily/admin/note/shownote/id/193.html [运行时间：0.047099s][吞吐率：21.23req/s] [内存消耗：1,982.45kb] [文件加载：54]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '193',
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000449s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001145s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 193 LIMIT 1 [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000809s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000291s ]
+---------------------------------------------------------------
+[ 2018-07-22T10:26:21+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/asearch.html
+[ info ] qingrang.top/daily/admin/note/asearch.html [运行时间：0.061205s][吞吐率：16.34req/s] [内存消耗：3,239.30kb] [文件加载：50]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'asearch',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '5',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'key' => '5',
+)
+[ info ] [ RUN ] app\admin\controller\Note->aSearch[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000519s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001258s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  ( `title` LIKE '%5%' OR `content` LIKE '%5%' ) ORDER BY id desc [ RunTime:0.004672s ]
+---------------------------------------------------------------
+[ 2018-07-22T10:26:36+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/noteview.html
+[ info ] qingrang.top/daily/admin/note/noteview.html [运行时间：0.045109s][吞吐率：22.17req/s] [内存消耗：2,093.88kb] [文件加载：50]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'noteview',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '10',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'noteid' => '192',
+)
+[ info ] [ RUN ] app\admin\controller\Note->noteview[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000491s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001350s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 192 LIMIT 1 [ RunTime:0.000417s ]
+---------------------------------------------------------------
+[ 2018-07-22T10:26:52+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/asearch.html
+[ info ] qingrang.top/daily/admin/note/asearch.html [运行时间：0.049594s][吞吐率：20.16req/s] [内存消耗：2,091.75kb] [文件加载：50]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'asearch',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '22',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'key' => '高亮',
+)
+[ info ] [ RUN ] app\admin\controller\Note->aSearch[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000430s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001152s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  ( `title` LIKE '%高亮%' OR `content` LIKE '%高亮%' ) ORDER BY id desc [ RunTime:0.005361s ]
+---------------------------------------------------------------
+[ 2018-07-22T10:26:56+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/noteview.html
+[ info ] qingrang.top/daily/admin/note/noteview.html [运行时间：0.042595s][吞吐率：23.48req/s] [内存消耗：2,087.63kb] [文件加载：50]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'noteview',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '10',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'noteid' => '117',
+)
+[ info ] [ RUN ] app\admin\controller\Note->noteview[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000444s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001169s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 117 LIMIT 1 [ RunTime:0.000432s ]
+---------------------------------------------------------------
+[ 2018-07-22T10:27:00+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/117
+[ info ] qingrang.top/daily/admin/note/shownote/id/117 [运行时间：0.055050s][吞吐率：18.17req/s] [内存消耗：1,981.44kb] [文件加载：54]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '117',
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000519s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001248s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 117 LIMIT 1 [ RunTime:0.000412s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000896s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000324s ]
+---------------------------------------------------------------
+[ 2018-07-22T10:27:14+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/asearch.html
+[ info ] qingrang.top/daily/admin/note/asearch.html [运行时间：0.063006s][吞吐率：15.87req/s] [内存消耗：3,781.65kb] [文件加载：50]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'asearch',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '4',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'key' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Note->aSearch[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000541s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001199s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  ( `title` LIKE '%%' OR `content` LIKE '%%' ) ORDER BY id desc [ RunTime:0.002802s ]
+---------------------------------------------------------------
+[ 2018-07-22T10:28:33+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ info ] qingrang.top/daily/ [运行时间：0.107857s][吞吐率：9.27req/s] [内存消耗：3,286.35kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/notelst.html [ array (
+  0 => 'autoSave',
+  1 => 'phoneSave',
+  2 => 'hide',
+  3 => 'list',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+  10 => 'default_num',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000497s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001171s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.002820s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.000887s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000984s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000664s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000240s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.000982s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000572s ]
+---------------------------------------------------------------
+[ 2018-07-22T16:07:24+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/editnote/id/193.html
+[ info ] qingrang.top/daily/admin/note/editnote/id/193.html [运行时间：0.058314s][吞吐率：17.15req/s] [内存消耗：2,030.75kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'editnote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '193',
+)
+[ info ] [ RUN ] app\admin\controller\Note->editNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/editnote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000570s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001696s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 193 LIMIT 1 [ RunTime:0.000477s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001058s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000317s ]
+---------------------------------------------------------------
+[ 2018-07-22T16:10:58+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/updatenote/id/193.html
+[ info ] qingrang.top/daily/admin/note/updatenote/id/193.html [运行时间：0.058200s][吞吐率：17.18req/s] [内存消耗：2,031.82kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'updatenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '8500',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/193.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'content' => '# Linux 后台运行程序
+`nohup` `screen` `tmux`
+[TOC]
+## nohup
+### 简介
+我们通常使用 & 将前台任务变为后台任务执行，但是如果只是使用 &，那么在突然断网或者关闭启动该任务的终端时，内核就会给后台任务发送 SIGHUP 信号，从而导致后台任务停止。这时，我们就需要使用 nohup 来启动该后台任务。
+
+nohup，就是使得运行的命令可以忽略 HANGUP 信号。因此，即使突然断网或者关闭终端，该后台任务依然可以继续执行。
+
+这里需要指明的是，nohup 并不会自动将任务运行在后台，我们需要在命令行末尾加上 & 来显示的指明。
+
+如果 nohup 命令的标准输入是终端，那么 nohup 将会默认使用 /dev/null 来重定向。
+
+如果 nohup 命令的标准输出是终端，那么标准输出会被附加到文件 nohup.out 中；如果用户没有在当前目录创建文件的权限，那么就会把输出附加到 $HOME/nohup.out 中；如果还是没有写入权限，那么该命令就不会执行。
+
+如果 nohup 命令的标准错误是终端，那么就会被定向到标准输出的附加的文件描述符。如果标准输出被关闭了，那么标准错误就会像上面一样尝试附加到 nohup.out 或 $HOME/nohup.out 中。
+### 运行
+
+0、1 和 2 分别表示标准输入、标准输出和标准错误信息输出，可以用来指定需要重定向的标准输入或输出。
+
+- 默认参数运行 `nohup 命令 &`
+
+eg: `nohup python3 test.py &`
+
+在上面执行的命令中，由输出 nohup: ignoring input and appending output to \'nohup.out\' 可知，标准输出被重定向到 nohup.out 中，该文件包含了命令的标准输出和标准错误输出。
+
+- 重定向标准输出 `nohup 命令 文件 1>输出文件名.out &`
+
+eg: `nohup python3 test.py 1>log.out &`
+
+- 重定向标准输出标准错误输出 `nohup 命令 文件 1>标准输出文件名.out 2>错误输出文件名.out &`
+
+eg：`nohup python3 test.py 1>norm.out 2>error.out &`
+
+### 关闭
+- 查看所有后台运行的进程 `ps -aux`
+
+a：显示所有程序 
+u：以用户为主的格式来显示 
+x：显示所有程序，不以终端机来区分
+
+- 杀死这个进程 `kill -9 PID`
+
+### 常见错误
+#### 在运行了一段时间后自己断掉
+在使用nohup的时候，虽然是后台运行了，一段时间内也没有断掉。但是总会在运行了6、7个小时之后断掉。
+
+解决办法：
+
+虽然 Shell 中提示了 nohup 成功，但还是需要按键盘上的任意键退回到 Shell 输入命令窗口，然后通过在 Shell 中**输入 exit 来退出终端，而不是每次在 nohup 执行成功后直接关闭终端**。
+#### nohup 执行 python 脚本看不到 log
+python 的输出有缓冲，导致 log 并不能够马上看到输出。
+
+解决办法：
+
+-u 参数：使得python不启用缓冲。
+
+所以修改命令即可：`nohup python3 -u test.py > log &`
+
+## tmux
+- 安装 tmux `yum install tmux`
+- 启动 tmux `tmux`
+- 在 tmux 中启动程序 `python3 /var/www/html/test.py`
+- 直接关闭 ssh 终端
+- 重新ssh上去之后，执行如下命令：`tmux attach` 现在可以看到python程序还在正常执行。',
+  'groups' => 'Linux',
+  'id' => '193',
+)
+[ info ] [ RUN ] app\admin\controller\Note->updateNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000452s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001231s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 193 LIMIT 1 [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `note` WHERE  `id` = 193 LIMIT 1 [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000865s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `groups` WHERE  `groups` = 'Linux' LIMIT 1 [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000281s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `id`=193,`p_id`=2,`title`='Linux 后台运行程序\r',`content`='# Linux 后台运行程序\r\n`nohup` `screen` `tmux`\r\n[TOC]\r\n## nohup\r\n### 简介\r\n我们通常使用 & 将前台任务变为后台任务执行，但是如果只是使用 &，那么在突然断网或者关闭启动该任务的终端时，内核就会给后台任务发送 SIGHUP 信号，从而导致后台任务停止。这时，我们就需要使用 nohup 来启动该后台任务。\r\n\r\nnohup，就是使得运行的命令可以忽略 HANGUP 信号。因此，即使突然断网或者关闭终端，该后台任务依然可以继续执行。\r\n\r\n这里需要指明的是，nohup 并不会自动将任务运行在后台，我们需要在命令行末尾加上 & 来显示的指明。\r\n\r\n如果 nohup 命令的标准输入是终端，那么 nohup 将会默认使用 /dev/null 来重定向。\r\n\r\n如果 nohup 命令的标准输出是终端，那么标准输出会被附加到文件 nohup.out 中；如果用户没有在当前目录创建文件的权限，那么就会把输出附加到 $HOME/nohup.out 中；如果还是没有写入权限，那么该命令就不会执行。\r\n\r\n如果 nohup 命令的标准错误是终端，那么就会被定向到标准输出的附加的文件描述符。如果标准输出被关闭了，那么标准错误就会像上面一样尝试附加到 nohup.out 或 $HOME/nohup.out 中。\r\n### 运行\r\n\r\n0、1 和 2 分别表示标准输入、标准输出和标准错误信息输出，可以用来指定需要重定向的标准输入或输出。\r\n\r\n- 默认参数运行 `nohup 命令 &`\r\n\r\neg: `nohup python3 test.py &`\r\n\r\n在上面执行的命令中，由输出 nohup: ignoring input and appending output to \'nohup.out\' 可知，标准输出被重定向到 nohup.out 中，该文件包含了命令的标准输出和标准错误输出。\r\n\r\n- 重定向标准输出 `nohup 命令 文件 1>输出文件名.out &`\r\n\r\neg: `nohup python3 test.py 1>log.out &`\r\n\r\n- 重定向标准输出标准错误输出 `nohup 命令 文件 1>标准输出文件名.out 2>错误输出文件名.out &`\r\n\r\neg：`nohup python3 test.py 1>norm.out 2>error.out &`\r\n\r\n### 关闭\r\n- 查看所有后台运行的进程 `ps -aux`\r\n\r\na：显示所有程序 \r\nu：以用户为主的格式来显示 \r\nx：显示所有程序，不以终端机来区分\r\n\r\n- 杀死这个进程 `kill -9 PID`\r\n\r\n### 常见错误\r\n#### 在运行了一段时间后自己断掉\r\n在使用nohup的时候，虽然是后台运行了，一段时间内也没有断掉。但是总会在运行了6、7个小时之后断掉。\r\n\r\n解决办法：\r\n\r\n虽然 Shell 中提示了 nohup 成功，但还是需要按键盘上的任意键退回到 Shell 输入命令窗口，然后通过在 Shell 中**输入 exit 来退出终端，而不是每次在 nohup 执行成功后直接关闭终端**。\r\n#### nohup 执行 python 脚本看不到 log\r\npython 的输出有缓冲，导致 log 并不能够马上看到输出。\r\n\r\n解决办法：\r\n\r\n-u 参数：使得python不启用缓冲。\r\n\r\n所以修改命令即可：`nohup python3 -u test.py > log &`\r\n\r\n## tmux\r\n- 安装 tmux `yum install tmux`\r\n- 启动 tmux `tmux`\r\n- 在 tmux 中启动程序 `python3 /var/www/html/test.py`\r\n- 直接关闭 ssh 终端\r\n- 重新ssh上去之后，执行如下命令：`tmux attach` 现在可以看到python程序还在正常执行。',`groups`='Linux'  WHERE  `id` = 193 [ RunTime:0.000629s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Linux' LIMIT 1 [ RunTime:0.001495s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=9  WHERE  `groups` = 'Linux' [ RunTime:0.000326s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Linux' LIMIT 1 [ RunTime:0.000574s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=9  WHERE  `groups` = 'Linux' [ RunTime:0.000309s ]
+---------------------------------------------------------------
+[ 2018-07-22T16:10:59+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/193.html
+[ info ] qingrang.top/daily/admin/note/shownote/id/193.html [运行时间：0.050976s][吞吐率：19.62req/s] [内存消耗：1,983.03kb] [文件加载：54]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/193.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '193',
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000480s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001210s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 193 LIMIT 1 [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000837s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000302s ]
+---------------------------------------------------------------
+[ 2018-07-22T16:11:13+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/editnote/id/193.html
+[ info ] qingrang.top/daily/admin/note/editnote/id/193.html [运行时间：0.051838s][吞吐率：19.29req/s] [内存消耗：2,030.65kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'editnote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '193',
+)
+[ info ] [ RUN ] app\admin\controller\Note->editNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/editnote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000493s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001225s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 193 LIMIT 1 [ RunTime:0.000582s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000807s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000270s ]
+---------------------------------------------------------------
+[ 2018-07-22T16:11:18+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/updatenote/id/193.html
+[ info ] qingrang.top/daily/admin/note/updatenote/id/193.html [运行时间：0.058713s][吞吐率：17.03req/s] [内存消耗：2,031.89kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'updatenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '8506',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/193.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'content' => '# Linux 后台运行程序
+`nohup` `screen` `tmux`
+
+[TOC]
+## nohup
+### 简介
+我们通常使用 & 将前台任务变为后台任务执行，但是如果只是使用 &，那么在突然断网或者关闭启动该任务的终端时，内核就会给后台任务发送 SIGHUP 信号，从而导致后台任务停止。这时，我们就需要使用 nohup 来启动该后台任务。
+
+nohup，就是使得运行的命令可以忽略 HANGUP 信号。因此，即使突然断网或者关闭终端，该后台任务依然可以继续执行。
+
+这里需要指明的是，nohup 并不会自动将任务运行在后台，我们需要在命令行末尾加上 & 来显示的指明。
+
+如果 nohup 命令的标准输入是终端，那么 nohup 将会默认使用 /dev/null 来重定向。
+
+如果 nohup 命令的标准输出是终端，那么标准输出会被附加到文件 nohup.out 中；如果用户没有在当前目录创建文件的权限，那么就会把输出附加到 $HOME/nohup.out 中；如果还是没有写入权限，那么该命令就不会执行。
+
+如果 nohup 命令的标准错误是终端，那么就会被定向到标准输出的附加的文件描述符。如果标准输出被关闭了，那么标准错误就会像上面一样尝试附加到 nohup.out 或 $HOME/nohup.out 中。
+### 运行
+
+0、1 和 2 分别表示标准输入、标准输出和标准错误信息输出，可以用来指定需要重定向的标准输入或输出。
+
+- 默认参数运行 `nohup 命令 &`
+
+eg: `nohup python3 test.py &`
+
+在上面执行的命令中，由输出 nohup: ignoring input and appending output to \'nohup.out\' 可知，标准输出被重定向到 nohup.out 中，该文件包含了命令的标准输出和标准错误输出。
+
+- 重定向标准输出 `nohup 命令 文件 1>输出文件名.out &`
+
+eg: `nohup python3 test.py 1>log.out &`
+
+- 重定向标准输出标准错误输出 `nohup 命令 文件 1>标准输出文件名.out 2>错误输出文件名.out &`
+
+eg：`nohup python3 test.py 1>norm.out 2>error.out &`
+
+### 关闭
+- 查看所有后台运行的进程 `ps -aux`
+
+a：显示所有程序 
+u：以用户为主的格式来显示 
+x：显示所有程序，不以终端机来区分
+
+- 杀死这个进程 `kill -9 PID`
+
+### 常见错误
+#### 在运行了一段时间后自己断掉
+在使用nohup的时候，虽然是后台运行了，一段时间内也没有断掉。但是总会在运行了6、7个小时之后断掉。
+
+解决办法：
+
+虽然 Shell 中提示了 nohup 成功，但还是需要按键盘上的任意键退回到 Shell 输入命令窗口，然后通过在 Shell 中**输入 exit 来退出终端，而不是每次在 nohup 执行成功后直接关闭终端**。
+#### nohup 执行 python 脚本看不到 log
+python 的输出有缓冲，导致 log 并不能够马上看到输出。
+
+解决办法：
+
+-u 参数：使得python不启用缓冲。
+
+所以修改命令即可：`nohup python3 -u test.py > log &`
+
+## tmux
+- 安装 tmux `yum install tmux`
+- 启动 tmux `tmux`
+- 在 tmux 中启动程序 `python3 /var/www/html/test.py`
+- 直接关闭 ssh 终端
+- 重新ssh上去之后，执行如下命令：`tmux attach` 现在可以看到python程序还在正常执行。',
+  'groups' => 'Linux',
+  'id' => '193',
+)
+[ info ] [ RUN ] app\admin\controller\Note->updateNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000419s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001862s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 193 LIMIT 1 [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `note` WHERE  `id` = 193 LIMIT 1 [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000952s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `groups` WHERE  `groups` = 'Linux' LIMIT 1 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000296s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `id`=193,`p_id`=2,`title`='Linux 后台运行程序\r',`content`='# Linux 后台运行程序\r\n`nohup` `screen` `tmux`\r\n\r\n[TOC]\r\n## nohup\r\n### 简介\r\n我们通常使用 & 将前台任务变为后台任务执行，但是如果只是使用 &，那么在突然断网或者关闭启动该任务的终端时，内核就会给后台任务发送 SIGHUP 信号，从而导致后台任务停止。这时，我们就需要使用 nohup 来启动该后台任务。\r\n\r\nnohup，就是使得运行的命令可以忽略 HANGUP 信号。因此，即使突然断网或者关闭终端，该后台任务依然可以继续执行。\r\n\r\n这里需要指明的是，nohup 并不会自动将任务运行在后台，我们需要在命令行末尾加上 & 来显示的指明。\r\n\r\n如果 nohup 命令的标准输入是终端，那么 nohup 将会默认使用 /dev/null 来重定向。\r\n\r\n如果 nohup 命令的标准输出是终端，那么标准输出会被附加到文件 nohup.out 中；如果用户没有在当前目录创建文件的权限，那么就会把输出附加到 $HOME/nohup.out 中；如果还是没有写入权限，那么该命令就不会执行。\r\n\r\n如果 nohup 命令的标准错误是终端，那么就会被定向到标准输出的附加的文件描述符。如果标准输出被关闭了，那么标准错误就会像上面一样尝试附加到 nohup.out 或 $HOME/nohup.out 中。\r\n### 运行\r\n\r\n0、1 和 2 分别表示标准输入、标准输出和标准错误信息输出，可以用来指定需要重定向的标准输入或输出。\r\n\r\n- 默认参数运行 `nohup 命令 &`\r\n\r\neg: `nohup python3 test.py &`\r\n\r\n在上面执行的命令中，由输出 nohup: ignoring input and appending output to \'nohup.out\' 可知，标准输出被重定向到 nohup.out 中，该文件包含了命令的标准输出和标准错误输出。\r\n\r\n- 重定向标准输出 `nohup 命令 文件 1>输出文件名.out &`\r\n\r\neg: `nohup python3 test.py 1>log.out &`\r\n\r\n- 重定向标准输出标准错误输出 `nohup 命令 文件 1>标准输出文件名.out 2>错误输出文件名.out &`\r\n\r\neg：`nohup python3 test.py 1>norm.out 2>error.out &`\r\n\r\n### 关闭\r\n- 查看所有后台运行的进程 `ps -aux`\r\n\r\na：显示所有程序 \r\nu：以用户为主的格式来显示 \r\nx：显示所有程序，不以终端机来区分\r\n\r\n- 杀死这个进程 `kill -9 PID`\r\n\r\n### 常见错误\r\n#### 在运行了一段时间后自己断掉\r\n在使用nohup的时候，虽然是后台运行了，一段时间内也没有断掉。但是总会在运行了6、7个小时之后断掉。\r\n\r\n解决办法：\r\n\r\n虽然 Shell 中提示了 nohup 成功，但还是需要按键盘上的任意键退回到 Shell 输入命令窗口，然后通过在 Shell 中**输入 exit 来退出终端，而不是每次在 nohup 执行成功后直接关闭终端**。\r\n#### nohup 执行 python 脚本看不到 log\r\npython 的输出有缓冲，导致 log 并不能够马上看到输出。\r\n\r\n解决办法：\r\n\r\n-u 参数：使得python不启用缓冲。\r\n\r\n所以修改命令即可：`nohup python3 -u test.py > log &`\r\n\r\n## tmux\r\n- 安装 tmux `yum install tmux`\r\n- 启动 tmux `tmux`\r\n- 在 tmux 中启动程序 `python3 /var/www/html/test.py`\r\n- 直接关闭 ssh 终端\r\n- 重新ssh上去之后，执行如下命令：`tmux attach` 现在可以看到python程序还在正常执行。',`groups`='Linux'  WHERE  `id` = 193 [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Linux' LIMIT 1 [ RunTime:0.000670s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=9  WHERE  `groups` = 'Linux' [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Linux' LIMIT 1 [ RunTime:0.000553s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=9  WHERE  `groups` = 'Linux' [ RunTime:0.000326s ]
+---------------------------------------------------------------
+[ 2018-07-22T16:11:19+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/193.html
+[ info ] qingrang.top/daily/admin/note/shownote/id/193.html [运行时间：0.050206s][吞吐率：19.92req/s] [内存消耗：1,983.00kb] [文件加载：54]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/193.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '193',
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000454s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001151s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 193 LIMIT 1 [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000780s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000272s ]
+---------------------------------------------------------------
+[ 2018-07-22T16:11:24+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ info ] qingrang.top/daily/ [运行时间：0.109044s][吞吐率：9.17req/s] [内存消耗：3,286.36kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/notelst.html [ array (
+  0 => 'autoSave',
+  1 => 'phoneSave',
+  2 => 'hide',
+  3 => 'list',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+  10 => 'default_num',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000519s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001156s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.003599s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001028s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000846s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000744s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000265s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001052s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000658s ]
+---------------------------------------------------------------
+[ 2018-07-22T19:12:48+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ info ] qingrang.top/daily/ [运行时间：0.125791s][吞吐率：7.95req/s] [内存消耗：3,286.36kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/notelst.html [ array (
+  0 => 'autoSave',
+  1 => 'phoneSave',
+  2 => 'hide',
+  3 => 'list',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+  10 => 'default_num',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000571s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001883s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.005047s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001042s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000845s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000489s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000774s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000256s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.000949s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000647s ]
+---------------------------------------------------------------
+[ 2018-07-22T20:12:51+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ info ] qingrang.top/daily/ [运行时间：0.124262s][吞吐率：8.05req/s] [内存消耗：3,286.36kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/notelst.html [ array (
+  0 => 'autoSave',
+  1 => 'phoneSave',
+  2 => 'hide',
+  3 => 'list',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+  10 => 'default_num',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000774s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.002033s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.003788s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.000903s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000799s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000655s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000215s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.000941s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000689s ]
+---------------------------------------------------------------
+[ 2018-07-22T21:52:47+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ info ] qingrang.top/daily/ [运行时间：0.116017s][吞吐率：8.62req/s] [内存消耗：3,286.36kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/notelst.html [ array (
+  0 => 'autoSave',
+  1 => 'phoneSave',
+  2 => 'hide',
+  3 => 'list',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+  10 => 'default_num',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000504s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001268s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.003209s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.000948s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000850s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000486s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000632s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.000934s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000637s ]

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8" />
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <title>Markdown</title>
+    <link rel="stylesheet" href="__PUBLIC__/assets/markdown/examplescss/style.css" />
+    <link rel="stylesheet" href="__PUBLIC__/assets/markdown/css/editormd.css" />
+    <link rel="shortcut icon" href="https://pandao.github.io/editor.md/favicon.ico" type="image/x-icon" />
+
+    <!-- 下拉搜索 -->
+    <link rel="stylesheet" href="__PUBLIC__/assets/My/dist/css/bootstrap-3.3.4.css">
+    <link rel="stylesheet" href="__PUBLIC__/assets/My/dist/css/bootstrap-select.css">
+    <script src="__PUBLIC__/assets/My/dist/js/jquery.min.js"></script>
+    <script src="__PUBLIC__/assets/My/dist/js/bootstrap-3.3.4.js"></script>
+    <script src="__PUBLIC__/assets/My/dist/js/bootstrap-select.js"></script>
+
+    <link rel="stylesheet" href="__PUBLIC__/assets/markdown/my.css" />
+    <link rel="icon" href="__PUBLIC__/assets/ico/qr_blue.ico" type="image/x-icon">
+    <script type="text/javascript">
+        // 自动保存
+        function showSite(){
+            $.ajax({
+                type:"POST",
+                url: "{:url('note/saveNote')}",
+                data:{
+                    ogroup: $("#ogroup").val(),
+                    context: $("#context").text()
+                },
+                dataType:'text',
+                success:function (data) {
+                    document.getElementById("txtHint").innerHTML = data;
+                },
+                error:function () {
+                    document.getElementById("txtHint").innerHTML="出错啦";
+                }
+            });
+        }
+
+        //按键监听
+        function keyUp(e) {
+            var currKey=0,e=e||event;
+            currKey=e.keyCode||e.which||e.charCode;
+            if(currKey == 81 && (e.ctrlKey||e.metaKey)){
+                showSite();
+                return false;
+            }
+        }
+        document.onkeyup = keyUp;
+    </script>
+</head>
+<body>
+<div id="layout">
+    <header>
+        <h1>Caption</h1>
+    </header>
+    <form id="daily" method="post" action="{:url('note/addNote')}">
+        <div class="sub">
+            <select id="lunch" class="selectpicker" name="groups" data-live-search="true" title="选择分类">
+                {volist name='groups' id='vl'} <!-- 循环输出 -->
+                <option value="{$vl.groups}" id="ogroup">{$vl.groups}</option>
+                {/volist}
+            </select>
+            <input type="submit" value="本地生成MD" class="btn btn-default">
+        </div>
+
+        <div id="test-editormd">
+            <textarea style="display:none;" name="content" id="context"></textarea>
+        </div>
+    </form>
+</div>
+
+<!-- 自动保存信息 -->
+<div id="txtHint" style="color: red"></div>
+
+<script src="__PUBLIC__/assets/markdown/examples/js/jquery.min.js"></script>
+<script src="__PUBLIC__/assets/markdown/editormd.min.js"></script>
+<script type="text/javascript">
+    var testEditor;
+    $(function() {
+        testEditor = editormd("test-editormd", {
+            width   : "90%",
+            height  : 830,
+            syncScrolling : "single",
+            path    : "__PUBLIC__/assets/markdown/lib/",
+            imageUpload : true,
+            imageFormats : ["jpg", "jpeg", "gif", "png", "bmp", "webp"],
+            imageUploadURL : "/uploadfile",
+            saveHTMLToTextarea : true
+        });
+    });
+</script>
+</body>
+</html>

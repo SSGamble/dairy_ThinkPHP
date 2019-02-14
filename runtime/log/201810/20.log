@@ -1,0 +1,172 @@
+---------------------------------------------------------------
+[ 2018-10-20T04:11:55+08:00 ] 74.120.168.12 180.149.130.153 GET /daily/
+[ info ] qingrang.top/daily/ [运行时间：0.089355s][吞吐率：11.19req/s] [内存消耗：2,103.18kb] [文件加载：58]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36',
+  'connection' => 'Keep-Alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-US,*',
+  'host' => 'qingrang.top',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Show->notelst[ /var/www/html/daily/application/admin/controller/Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/show/notelst.html [ array (
+  0 => 'list_new',
+  1 => 'groups',
+  2 => 'groups0',
+  3 => 'groups1',
+  4 => 'groups2',
+  5 => 'groupname',
+  6 => 'content',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001563s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.002883s ]
+[ sql ] [ SQL ] SELECT `content` FROM `note` WHERE  (  id=32 ) LIMIT 1 [ RunTime:0.001076s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` <> 'Personal'  AND `publish` = 1 LIMIT 1 [ RunTime:0.002992s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal'  AND `publish` = 1 ORDER BY id desc LIMIT 0,6 [ RunTime:0.000611s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001184s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `groups` <> 'Personal' [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `groups` <> 'Personal'  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000496s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1  AND `groups` <> 'Personal' [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000395s ]
+---------------------------------------------------------------
+[ 2018-10-20T16:43:24+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/show/notelst/groups/Linux.html
+[ info ] qingrang.top/daily/admin/show/notelst/groups/Linux.html [运行时间：0.113918s][吞吐率：8.78req/s] [内存消耗：2,136.47kb] [文件加载：58]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'show',
+    2 => 'notelst',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.1.0; OE106 Build/OPM1.171019.026) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846074,1539857678',
+)
+[ info ] [ PARAM ] array (
+  'groups' => 'Linux',
+)
+[ info ] [ RUN ] app\admin\controller\Show->notelst[ /var/www/html/daily/application/admin/controller/Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/show/notelst.html [ array (
+  0 => 'list_new',
+  1 => 'groups',
+  2 => 'groups0',
+  3 => 'groups1',
+  4 => 'groups2',
+  5 => 'groupname',
+  6 => 'content',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002131s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.003245s ]
+[ sql ] [ SQL ] SELECT `content` FROM `note` WHERE  (  id=32 ) LIMIT 1 [ RunTime:0.001006s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` <> 'Personal'  AND `publish` = 1 LIMIT 1 [ RunTime:0.003813s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal'  AND `publish` = 1 ORDER BY id desc LIMIT 0,6 [ RunTime:0.000750s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  ( `groups` <> 'Personal' AND `groups` = 'Linux' )  AND `publish` = 1 LIMIT 1 [ RunTime:0.001802s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  ( `groups` <> 'Personal' AND `groups` = 'Linux' )  AND `publish` = 1 ORDER BY id desc LIMIT 0,6 [ RunTime:0.001211s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001498s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `groups` <> 'Personal' [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `groups` <> 'Personal'  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000693s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1  AND `groups` <> 'Personal' [ RunTime:0.000440s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000861s ]
+---------------------------------------------------------------
+[ 2018-10-20T16:43:29+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ info ] qingrang.top/daily/ [运行时间：0.073308s][吞吐率：13.64req/s] [内存消耗：2,103.85kb] [文件加载：58]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.1.0; OE106 Build/OPM1.171019.026) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846074,1539857678,1540025311; Hm_lpvt_1769181352e9adc950166aada465644e=1540025311',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Show->notelst[ /var/www/html/daily/application/admin/controller/Show.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/show/notelst.html [ array (
+  0 => 'list_new',
+  1 => 'groups',
+  2 => 'groups0',
+  3 => 'groups1',
+  4 => 'groups2',
+  5 => 'groupname',
+  6 => 'content',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000693s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001425s ]
+[ sql ] [ SQL ] SELECT `content` FROM `note` WHERE  (  id=32 ) LIMIT 1 [ RunTime:0.000668s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` <> 'Personal'  AND `publish` = 1 LIMIT 1 [ RunTime:0.001501s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal'  AND `publish` = 1 ORDER BY id desc LIMIT 0,6 [ RunTime:0.000544s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001291s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `groups` <> 'Personal' [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `groups` <> 'Personal'  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1  AND `groups` <> 'Personal' [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000347s ]
+---------------------------------------------------------------
+[ 2018-10-20T19:42:15+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/login/index.html
+[ info ] qingrang.top/daily/admin/login/index.html [运行时间：0.041767s][吞吐率：23.94req/s] [内存消耗：1,339.89kb] [文件加载：47]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1539846308',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /var/www/html/daily/application/admin/controller/Login.php ]
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File

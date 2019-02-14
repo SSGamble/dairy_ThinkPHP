@@ -1,0 +1,3191 @@
+---------------------------------------------------------------
+[ 2018-11-12T10:48:29+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/login/index.html
+[ info ] qingrang.top/daily/admin/login/index.html [运行时间：0.043409s][吞吐率：23.04req/s] [内存消耗：1,339.89kb] [文件加载：47]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /var/www/html/daily/application/admin/controller/Login.php ]
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-12T10:58:17+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note
+[ info ] qingrang.top/daily/admin/note [运行时间：0.044425s][吞吐率：22.51req/s] [内存消耗：1,428.44kb] [文件加载：49]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /var/www/html/daily/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-12T10:58:19+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/login/index.html
+[ info ] qingrang.top/daily/admin/login/index.html [运行时间：0.033159s][吞吐率：30.16req/s] [内存消耗：1,340.78kb] [文件加载：47]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416; PHPSESSID=uo0oqfid6e42568auhtec26b64',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /var/www/html/daily/application/admin/controller/Login.php ]
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-12T10:58:23+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/login/index.html
+[ info ] qingrang.top/daily/admin/login/index.html [运行时间：0.058333s][吞吐率：17.14req/s] [内存消耗：1,922.37kb] [文件加载：54]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '8',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416; PHPSESSID=uo0oqfid6e42568auhtec26b64',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'pwd' => 'shao',
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /var/www/html/daily/application/admin/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001019s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.002209s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000550s ]
+---------------------------------------------------------------
+[ 2018-11-12T10:58:24+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note
+[ info ] qingrang.top/daily/admin/note [运行时间：0.110075s][吞吐率：9.08req/s] [内存消耗：2,384.33kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416; PHPSESSID=uo0oqfid6e42568auhtec26b64',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/notelst.html [ array (
+  0 => 'stickList',
+  1 => 'hide',
+  2 => 'list',
+  3 => 'list_new',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+  10 => 'default_num',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000852s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.002129s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.004671s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal' ORDER BY id desc LIMIT 5 [ RunTime:0.001027s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001892s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000858s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001642s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000491s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000632s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000455s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000573s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.001862s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001970s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.001124s ]
+---------------------------------------------------------------
+[ 2018-11-12T10:58:28+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/212.html
+[ info ] qingrang.top/daily/admin/note/shownote/id/212.html [运行时间：0.075335s][吞吐率：13.27req/s] [内存消耗：2,061.40kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416; PHPSESSID=uo0oqfid6e42568auhtec26b64',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '212',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000719s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001550s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 212 LIMIT 1 [ RunTime:0.000867s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001129s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000339s ]
+---------------------------------------------------------------
+[ 2018-11-12T18:29:35+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/login/index.html
+[ info ] qingrang.top/daily/admin/login/index.html [运行时间：0.041906s][吞吐率：23.86req/s] [内存消耗：1,339.90kb] [文件加载：47]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /var/www/html/daily/application/admin/controller/Login.php ]
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-12T18:37:33+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/login/index.html
+[ info ] qingrang.top/daily/admin/login/index.html [运行时间：0.041733s][吞吐率：23.96req/s] [内存消耗：1,339.90kb] [文件加载：47]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /var/www/html/daily/application/admin/controller/Login.php ]
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-12T20:36:00+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note
+[ info ] qingrang.top/daily/admin/note [运行时间：0.057417s][吞吐率：17.42req/s] [内存消耗：1,428.44kb] [文件加载：49]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /var/www/html/daily/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-12T20:36:02+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/login/index.html
+[ info ] qingrang.top/daily/admin/login/index.html [运行时间：0.042417s][吞吐率：23.58req/s] [内存消耗：1,340.78kb] [文件加载：47]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416; PHPSESSID=pe91v2lpjnp3ftccd0qlg2pq87',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /var/www/html/daily/application/admin/controller/Login.php ]
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-12T20:36:06+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/login/index.html
+[ info ] qingrang.top/daily/admin/login/index.html [运行时间：0.065667s][吞吐率：15.23req/s] [内存消耗：1,922.37kb] [文件加载：54]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '8',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416; PHPSESSID=pe91v2lpjnp3ftccd0qlg2pq87',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'pwd' => 'shao',
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /var/www/html/daily/application/admin/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001463s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.002457s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000544s ]
+---------------------------------------------------------------
+[ 2018-11-12T20:36:07+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note
+[ info ] qingrang.top/daily/admin/note [运行时间：0.075076s][吞吐率：13.32req/s] [内存消耗：2,384.33kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416; PHPSESSID=pe91v2lpjnp3ftccd0qlg2pq87',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/notelst.html [ array (
+  0 => 'stickList',
+  1 => 'hide',
+  2 => 'list',
+  3 => 'list_new',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+  10 => 'default_num',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000664s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001462s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.003277s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal' ORDER BY id desc LIMIT 5 [ RunTime:0.000616s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.000966s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000650s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000995s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.001240s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000250s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001122s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000715s ]
+---------------------------------------------------------------
+[ 2018-11-12T20:36:25+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/asearch.html
+[ info ] qingrang.top/daily/admin/note/asearch.html [运行时间：0.065224s][吞吐率：15.33req/s] [内存消耗：2,203.84kb] [文件加载：52]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'asearch',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '22',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://qingrang.top/daily/admin/note',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416; PHPSESSID=pe91v2lpjnp3ftccd0qlg2pq87',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'key' => '分割',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->aSearch[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000710s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001466s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  ( `title` LIKE '%分割%' OR `content` LIKE '%分割%' ) ORDER BY date desc [ RunTime:0.009090s ]
+---------------------------------------------------------------
+[ 2018-11-12T20:36:35+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/asearch.html
+[ info ] qingrang.top/daily/admin/note/asearch.html [运行时间：0.077907s][吞吐率：12.84req/s] [内存消耗：2,127.27kb] [文件加载：52]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'asearch',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '40',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://qingrang.top/daily/admin/note',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416; PHPSESSID=pe91v2lpjnp3ftccd0qlg2pq87',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'key' => '字符分割',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->aSearch[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000844s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.002107s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  ( `title` LIKE '%字符分割%' OR `content` LIKE '%字符分割%' ) ORDER BY date desc [ RunTime:0.013448s ]
+---------------------------------------------------------------
+[ 2018-11-12T20:41:04+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/ashownote2.html
+[ info ] qingrang.top/daily/admin/note/ashownote2.html [运行时间：0.055068s][吞吐率：18.16req/s] [内存消耗：2,468.88kb] [文件加载：52]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'ashownote2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '14',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://qingrang.top/daily/admin/note',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416; PHPSESSID=pe91v2lpjnp3ftccd0qlg2pq87',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'groupname' => 'Java',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->aShowNote2[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000611s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001395s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` = 'Java' ORDER BY date desc [ RunTime:0.001760s ]
+---------------------------------------------------------------
+[ 2018-11-12T20:41:09+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/243
+[ info ] qingrang.top/daily/admin/note/shownote/id/243 [运行时间：0.054652s][吞吐率：18.30req/s] [内存消耗：2,078.07kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416; PHPSESSID=pe91v2lpjnp3ftccd0qlg2pq87',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '243',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000488s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.002283s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 243 LIMIT 1 [ RunTime:0.000849s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001128s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000289s ]
+---------------------------------------------------------------
+[ 2018-11-12T22:20:33+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/ashownote2.html
+[ info ] qingrang.top/daily/admin/note/ashownote2.html [运行时间：0.071199s][吞吐率：14.05req/s] [内存消耗：2,333.38kb] [文件加载：52]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'ashownote2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '15',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://qingrang.top/daily/admin/note',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416; PHPSESSID=pe91v2lpjnp3ftccd0qlg2pq87',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'groupname' => 'Linux',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->aShowNote2[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000902s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001674s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` = 'Linux' ORDER BY date desc [ RunTime:0.002852s ]
+---------------------------------------------------------------
+[ 2018-11-12T22:20:37+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/editNote/id/212
+[ info ] qingrang.top/daily/admin/note/editNote/id/212 [运行时间：0.060494s][吞吐率：16.53req/s] [内存消耗：2,113.68kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'editNote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416; PHPSESSID=pe91v2lpjnp3ftccd0qlg2pq87',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '212',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->editNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/editnote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000627s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001939s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 212 LIMIT 1 [ RunTime:0.000565s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001313s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000398s ]
+---------------------------------------------------------------
+[ 2018-11-12T22:25:42+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/updatenote/id/212.html
+[ info ] qingrang.top/daily/admin/note/updatenote/id/212.html [运行时间：0.081727s][吞吐率：12.24req/s] [内存消耗：2,396.12kb] [文件加载：58]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'updatenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '112594',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editNote/id/212',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416; PHPSESSID=pe91v2lpjnp3ftccd0qlg2pq87',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'summary' => 'Linux 编程基础，包含进程，信号，进程间通信，网络编程等基础知识',
+  'content' => '# Linux - C 编程
+[TOC]
+## 进程
+### 孤儿进程 和 僵尸进程
+Linux 系统中有两种特殊的进程：孤儿进程和僵尸进程。
+
+父进程应负责子进程的回收工作，但父子进程是异步运行的，父进程不知道什么时候接收子进程，父进程甚至会在子进程结束之前结束。若父进程在子进程退出之前退出，子进程就会变成孤儿进程，此时子进程会被进程 init 收养，之后 init 会代替其原本的父进程完成状态收集工作。
+
+当进程调用了 exit() 函数后，该进程并不是马上消失，而是留下一个称为僵尸进程的数据结构。僵尸进程是 Linux 系统中的另一种特殊进程，它几乎放弃进程退出前占用的所有内存，既没有可执行代码也不能被调度，只在进程列表中保留一个位置，记载进程的退出状态等信息供父进程收集。若父进程中没有回收子进程的代码，子进程将会一直处于僵尸态。
+
+### 进程标识符
+下列函数返回这些标识符，其返回值类型 pid_t，uid_t，gid_t 等都是宏定义，实质是 `unsigned int`
+```
+//头文件
+#include <sys/types.h>
+#include <unistd.h>
+
+//返回:调用进程的 进程ID
+pid_t getpid(void)	
+
+//返回:调用进程的 父进程ID
+pid_t getppid(void);
+
+//返回:调用进程的 实际用户ID
+uid_t getuid(void)
+
+//返回:调用进程的 有效用户ID
+uid_t geteuid(void)
+
+//返回:调用进程的 实际组ID
+gid_t getgid (void)
+
+//返回:调用进程的 有效组ID
+gid_t getegid(void)
+```
+### 进程同步
+Linux 提供了 wait() 函数和 waitpid() 函数来获取进程状态，实现进程同步。这两个函数用于父、子进程之间的同步，即确保子进程一定先于父进程执行并终止。
+```
+#include <sys/types.h>
+#include <sys/wait.h>
+pid_t wait(int *status) ;
+pid_t waitpid(pid_t pid , int * status, int options) ;
+//两个函数返回：若成功则为 进程ID，若出错则为 -1。
+```
+### 实验：fork() 函数的使用
+fork() 函数:
+创建成功，父进程返回子进程的 id ，子进程返回 0
+创建失败，父进程返回 -1
+>使用 fork() 函数创建一个进程，进程创建成功后使父进程和子进程分别执行不同的功能
+
+```
+/*---------------------------------------------------
+使用 fork() 函数创建一个进程，进程创建成功后使父进程和子进程分别执行不同的功能
+-----------------------------------------------------*/
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+int main()
+{
+	//调用fork()函数创建子进程
+	pid_t pid = fork();
+	if (pid == -1)	//创建失败
+	{
+		perror("fork error");
+		exit(1);	//退出进程，指定返回值1
+	}
+	else if (pid > 0)	//创建成功 - 父进程
+	{
+		printf("父进程,pid=%d,ppid=%d\\n", getpid(), getppid());
+	}
+	else if (pid == 0)	//创建成功 - 子进程
+	{
+		printf("子进程,pid=%d,ppid=%d\\n", getpid(), getppid());
+	}
+	printf("........finish..........\\n");
+	return 0;
+}
+
+/*========================================================================
+父进程,pid=3720,ppid=3514
+........finish..........
+子进程,pid=3721,ppid=2012
+........finish..........
+========================================================================*/
+
+```
+
+- 多次执行文件 test_fork会发现这种情况: child process 后输出的 ppid 不等于 parent process 的 pid,而等于1。这是什么原因?
+答：父进程先于子进程终止,子进程变为“孤儿进程”,后由进程 init 接收。
+
+>使用 fork() 函数在循环中创建 5 个子进程，使子进程分别打印各自的编号和 pid
+
+```
+/*---------------------------------------------------
+使用 fork() 函数在循环中创建 5 个子进程，使子进程分别打印各自的编号和 pid
+-----------------------------------------------------*/
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+int main()
+{
+	pid_t pid;
+	int i;
+	//循环创建进程
+	for (i = 0; i<5; i++){				
+		if ((pid = fork()) == 0)	//若当前进程为子进程，便跳出循环
+			break;
+	}
+	if (pid == -1){
+		perror("fork error");
+		exit(1);
+	}
+	else if (pid>0){	//父进程
+		//sleep(5);	//父进程等待所有子进程执行结束后再执行
+		printf("parent process:pid=%d\\n", getpid());
+	}
+	else if (pid == 0){		//子进程
+		//sleep(i);	//每个子进程分别沉睡不同的时间
+		printf("I am child=%d,pid=%d\\n", i + 1, getpid());
+	}
+	return 0;
+}
+
+/*========================================================================
+>不 sleep 的输出：
+zhangliren@ubuntu:~/Documents$ ./a.out 
+I am child=2,pid=3814
+parent process:pid=3812
+I am child=1,pid=3813
+I am child=4,pid=3816
+zhangliren@ubuntu:~/Documents$ I am child=5,pid=3817
+I am child=3,pid=3815
+|(终端提示符)
+----------------------------------------------------------
+>sleep() 后的输出：
+I am child=1,pid=3843
+I am child=2,pid=3844
+I am child=3,pid=3845
+I am child=4,pid=3846
+I am child=5,pid=3847
+parent process:pid=3842
+========================================================================*/
+```
+
+- 观察输出结果,会发现输出结果有以下问题
+（1）子进程的编号不是递增的
+（2）终端提示符后面仍有子进程信息打印,而命令提示符在最后一行的开头闪烁
+这是为什么?
+
+答：（1）父进程先于子进程终止。在 Linux 系统中,子进程应由父进程回收,但是当子进程被创建后,它与父进程及其他进程共同竟争系统资源,所以父子进程执行的顺序是不确定的,终止的先后顺序也是不确定的。此处创建了 5 个子进程,这 5 个子进程与父进程共同竞争资源。6 个进程使用 CPU 的顺序不确定,因此子进程的编号不是递增关系,父进程在子进程尚未全部终止前便终止。
+（2）父进程是一个前台进程。当它终止退出后,会释放命令提示符,输出当前工作路径及端提示符[ thelma@ localhost~],但此时尚有子进程仍在执行,终端仍有信息输出,因此命令提示符会出现在输出结果最后一行的开头。
+
+## 信号和信号处理
+### 信号的概念
+信号的本质是软件中断。很多比较重要的应用程序都需处理信号。信号是异步事件的典型实例，即产生信号的事件对进程而言是随机出现的。进程不能只是测试一个变量(例如errno)来判别是否发生了一个信号，而是必须告诉内核「在此信号发生时，请执行指定操作」。
+
+可以要求系统在某个信号出现时按照下列三种方式中的一种进行操作：
+1. 忽略此信号。大多数信号都可使用这种方式进行处理，但有两种信号却决不能被忽略。它们是：SIGKILL 和 SIGSTOP。这两种信号不能被忽略的原因是：它们向超级用户提供一种使进程终止或停止的可靠方法。
+2. 捕捉信号。为了做到这一点要通知内核在某种信号发生时，调用一个用户函数。在用户函数中，可执行用户希望对这种事件进行的处理。
+3. 执行系统默认动作。每一种信号都有系统默认动作。注意，对大多数信号的系统默认动作是终止该进程。
+
+### 常见函数
+#### kill
+给指定进程发送信号
+
+函数声明：`int kill(pid_t,int sig)`
+pid：接收信号的进程ID
+sig：要发送的信号编号
+#### raise
+发送指定信号给当前进程自身
+
+函数声明：`int raise(int sig)`
+
+#### pause
+暂停进程，接收到任何信号后恢复
+
+函数声明：`int pause()`
+
+#### alarm
+计时器，驱使内核在指定秒数后发送 SIGALRM 信号到调用该函数的进程，进程收到该信号后默认终止运行。
+
+函数声明：`unsigned int alarm(unsigned int seconds)`
+
+#### signal
+捕获信号后，执行指定函数
+
+函数声明：
+`typedef void (* sighandler_t)(int);`
+`sighandler_t signal(int signum,sighandler_t handler);`
+
+signum：信号编号
+handler：自定义信号处理函数的函数指针
+
+### 实验：李纳斯的第一个程序
+```
+/*---------------------------------------------------------------------------------------------------------
+李纳斯的第一个程序：两个进程，一个向屏幕输出 A，一个向屏幕输出 B，两进程轮换输出，中间间隔 1 秒钟。如此反复，直到用户按下 ctl + c 结束两个进程（ctl + c 就是向当前正在运行的所有进程发送SIGINT信号）。
+---------------------------------------------------------------------------------------------------------*/
+#include "stdio.h"
+#include "sys/types.h"
+#include "signal.h"
+
+pid_t pid;
+
+//自定义信号处理函数。
+//父进程打印 AAA，子进程打印 BBB
+void sigusr1_handler(int n)
+{
+	if(pid > 0)
+		printf("AAAA\\n");
+	else
+		printf("BBBB\\n");
+
+	alarm(1);//计时器，1s 后发送 SIGALRM 信号到进程
+}
+
+void sigalrm_handler(int n)
+{
+	if(pid > 0){	//父进程
+		kill(pid, SIGUSR1); //发送 SIGUSR1 信号给 pid 进程
+	}
+	else{	//子进程
+		kill(getppid(), SIGUSR1);//发送 SIGUSR1 信号给 父进程
+	}
+}
+
+int main()
+{
+	//在fork()之前设置的信号处理函数会被子进程继承
+	signal(SIGALRM, sigalrm_handler);//捕获 SIGALRM 信号，执行 sigalrm_handler
+	signal(SIGUSR1, sigusr1_handler);//用户定义的信号，用于捕获 SIGUSR1 信号执行处理函数 sigusr1_handler
+
+	pid = fork();
+	if (pid > 0)	//父进程
+		raise(SIGUSR1);	//发送 SIGUSR1 信号给当前进程
+
+	while(1)
+		pause();	//进程挂起，等待信号唤醒
+
+	return 0;
+}
+```
+## 进程间通信
+### 信号量
+#### 信号量的概念
+信号量是一个计数器，用于多进程对共享数据对象的存取。为了获得共享资源，进程需要执行下列操作：
+1. 测试控制该资源的信号量。
+1. 若此信号量的值为正，则进程可以使用该资源。进程将信号量值减 1（P 操作），表示它使用了一个资源单位。若此信号量的值为 0，则进程进入睡眠状态，直至信号量值大于 0。若进程被唤醒后，它返回至第 1 步。当进程不再使用由一个信息量控制的共享资源时，该信号量值增 1（V 操作）。如果有进程正在睡眠等待此信号量，则唤醒它们中的一个。
+
+这两个过程也叫做 p、v 操作。 p、v操作是原子操作。为此，信号量通常是在内核中实现的。
+
+常用的信号量形式是让它控制单个资源，所以其初始值为 1。但是，一般而言，信号量的初值可以是任一正值，该值说明有多少个共享资源单位可供共享应用。
+
+#### 信号量的创建与打开 semget
+函数声明：`int semget(key_t key,int nsems,int semflg)`
+
+key：所创建或打开的信号量集合的键
+nsems：创建的信号量集合中信号量的个数，此参数只在创建一个新的信号量集合时有效
+semflg：调用函数的操作类型，也可用于设置信号量集合的访问权限，两者通过逻辑或表示
+
+返回：
+- 成功：返回信号量ID
+- 失败：-1，并设置 errno
+
+>调用函数 semget 的作用由参数 key 和 flag 决定，相应约定如下：
+
+- 当 key 为 IPC_PRIVATE 时，创建一个新的信号量集合。此时参数 flag 的取值对函数的操作不起仟何作用。
+- 当 key 不为 IPC_PRIVATE，且 flag 设置了 IPC_CREAT 位，而没有设置 IPC_EXCL 位，则执行操作由 key 值决定：如果 key 为内核中某个已存在的信号量集合的键，则执行打开这个键的操作；反之，则执行创建信号量集合的操作。
+- 当 key 不为 IPC_PRIVATE，且 flag 中同时设置了 IPC_CREAT 位和 IPC_EXCL 位，则执行创建信号量集合的操作。参数 key 的取值应与内核中已存在的任何信号量集合的键值都不相同，否则函数调用失败。
+
+#### 对信号量的控制 semctl
+
+函数声明：`int semctl(int semid, int semnum, int cmd, [union semun arg]) ;`
+
+semid：为信号量集合的标识符。
+semnum：用于指明某个特定信号量。
+cmd：表示调用该函数希望执行的命令
+cmd 的常用设置：
+- SETVAL：表示 semctl() 的功能为初始化信号量的值，信号量值通过可选参数传入，在使用信号量前应先对信号量值进行设置
+- IPC_RMID：表示 semctl() 的功能为从系统中删除指定信号量
+
+arg：是一个 semun 共用体，该共用体中各个成员的具体含义和使用情况与参数 cmd 的取值有关。该共用体的定义如下：
+```
+union semen{
+	int val;	//cmd 为 SETVAL 时，用于指定信号量值
+	struct semid_ds *buf;	//cmd 为 IPC_STAT 时或 IPC_SET 时生效
+	unsigned short *array;	//cmd 为 GETALL 或 SETALL 时生效
+	struct seminfo *_buf;	//cmd 为 GETALL 或 SETALL 时生效
+};
+```
+
+该共用体中的 struct semid_ds 是一个由内核维护的记录信号量属性信息的结构体，该结构体的定义如下：
+```
+ushort semid_ds{
+	struct ipc_perm sem_perm;	//所有者和标致权限
+	time_t sem_otime;	//最后操作时间
+	time_t sem_ctime;	//最后更改时间
+	unsigned short sem_nsems;	//信号集中的信号数量
+}
+```
+
+返回：由参数 cmd 决定。对于除 GETALL 以外的所有 GET 命令，都返回相应值，通常为非负数。否则返回 -1。
+#### 对信号量的操作——semop
+改变信号量的值
+
+函数声明：`int semop(int semid, struct sembuf *sops, unsigned nops) ; `
+
+semid：为信号量集合的ID
+semoparray：是一个 struct sembuf 类型的数组指针，该数组中的每个元素设置了要对信号量集中的哪个型号做哪种操作，struct sembuf 结构体定义如下：
+```
+struct sembuf{
+	short sem_num;	//信号量在信号集中的编号
+	short sem_op;	//信号量操作,-1 P操作，+1 V操作
+	short sem_flag;	//标志位
+};
+```
+nops：参数 sops 所指数组中元素的个数
+
+返回：若成功则为 0，若出错则为 -1。
+
+### 共享内存
+#### 共享内存的概念
+共享内存是进程问通信的一种最基本、最快速的机制。共享内存是两个或多个进程共享同一块内存区域，并通过该内存区域实现数据交换的进程问通信机制。通常是由一个进程开辟一块共享内存区域，然后允许多个进程对此区域进行访问。由于不需使用中间介质，而是数据由内存直接映射到进程空间，因此共享内存是最快速的进程间通信机制。
+
+共享内存的最大不足在于，由于多个进程对同一块内存区域具有访问的权限，各个进程之间的同步问题显得尤为突出。必须控制同一时刻只有一个进程对共享内存区域写入数据，否则将造成数据的混乱。这可通过结合使用信号量来解决。
+
+#### 共享内存的创建和打开 shmget
+函数声明：`int shmget(key_t key, int size, int flag) ;`
+
+key：表示所创建或打开的共享内存的键
+size：表示共享内存区域的大小
+flag：表示函数的操作类型，也可用于设置共享内存的访问权限，两者通过逻辑或表示
+
+返回：若成功则为共享内存ID，若出错则为 -1。
+
+#### 共享内存的附加 shmat
+进行地址映射，将共享内存映射到进程虚拟地址空间中。
+
+函数声明：`void *shmat(int shmid, void *addr, int flag) ;
+`
+
+shmid：表示要附加的共享内存段的ID
+addr：虚拟地址
+flag：用于表示函数的操作方式
+
+返回：若成功则为指向共享内存段的指针，若出错则为-1
+
+#### 共享内存的分离 shmdt
+解除物理内存与进程虚拟地址空间的映射关系
+
+函数声明：`int shmdt(void *addr) ;`
+
+addr：是以前调用 shmat 时的返回值。
+
+返回：若成功则为0，若出错则为 -1。
+
+#### 共享内存的控制 shmctl
+对共享内存段执行多种操作。
+
+函数声明：`int shmctl(int shmid, int cmd, struct shmid_ds *buf) ;
+`
+shmid：为共享内存的标识符
+cmd：表示调用该函数希望执行的操作
+
+---
+cmd 的取值和对应操作如下：
+- IPC_STAT：对此段取 shmid_ds 结构，并存放在由 buf 指向的结构体中。
+- IPC_SET：按 buf 指向的结构体中的值设置与此段相关结构体中的下列三个字段：shm_perm.uid、shm_perm.gid以及shm_perm.mode。此命令只能由下列两种进程执行：一种是其有效用户ID等于shm_perm.cuid或shm_perm.uid的进程；另一种是具有超级用户特权的进程。
+- IPC_RMID：从系统中删除该共享内存段。此命令只能由下列两种进程执行：一种是其有效用户ID等于shm_perm.cuid或shm_perm.uid的进程；另一种是具有超级用户特权的进程。
+- SHM_LOCK：锁住共享内存段。此命令只能由超级用户执行。
+- SHM_UNLOCK：解锁共享内存段。此命令只能由超级用户执行。
+
+---
+buf：指向 shmid_ds 结构体的指针
+
+返回：若成功则为0，若出错则为 -1。
+
+### 实验：父进程产生10个子进程，并打印出子进程产生的随机数的和
+```
+/*---------------------------------------------------------------------------------------------------------
+功能：
+    父进程产生10个子进程，并打印出子进程产生的随机数的和。要求用信号机制、信号量以及共享内存实现。
+
+思路：
+    子进程将自己产生的随机数累加到共享内存。当10个子进程都累加完后，用信号机制通知父进程，
+父进程就可以从共享内存中读取数据了。为了避免10个子进程向共享内存中写入数据时发生冲突，
+应使用信号量进行并发控制。	
+---------------------------------------------------------------------------------------------------------*/
+
+#include "stdio.h"
+#include "sys/types.h"
+#include "signal.h"
+#include "sys/ipc.h"
+#include "sys/sem.h"
+#include "sys/shm.h"
+
+//semun 共用体
+union semun
+{
+	int val;
+	struct semid_ds *buf;	//一个由内核维护的记录信号量属性信息的结构体 
+	ushort *array;
+};
+
+
+int semid;//信号量ID
+int shmid;//共享内存ID
+char *shm_virtualaddr;  //共享内存关联到进程后的虚拟地址
+
+// P操作，获取信号量，-1
+void p(int semid)
+{
+	struct sembuf buf = {0, -1, 0};
+	//int semop(int semid, struct sembuf *sops, unsigned nops) ;
+	semop(semid, &buf, 1);	//改变信号量的值
+}
+
+// V操作，释放信号量，+1
+void v(int semid)
+{
+	struct sembuf buf = {0, 1, 0};
+	semop(semid, &buf, 1);
+}
+
+void sigusr1_handler(int n)
+{
+	printf("count = %d, total = %d\\n", *(int *)shm_virtualaddr, *(int *)(shm_virtualaddr+4));  //打印进程编号（不是进程ID）和随机数和
+	
+	//删除信号量
+	if(semctl(semid, IPC_RMID, 0) == -1)  
+		printf("remove semaphore fail\\n");
+	else
+		printf("remove semaphore ok\\n");
+	
+	shmdt(shm_virtualaddr);  //解除共享内存的关联
+
+	//删除共享内存
+	if(shmctl(shmid, IPC_RMID, 0) == -1)  
+		printf("remove shared-memory fail\\n");
+	else
+		printf("remove shared-memory ok\\n");
+
+	exit(0);
+}
+
+int main()
+{
+	signal(SIGUSR1, sigusr1_handler);  //用户定义的信号，用于捕获 SIGUSR1 信号执行处理函数 sigusr1_handler
+
+	//int semget(key_t key,int nsems,int semflg)
+	//key：所创建或打开的信号量集合的键，nsems：创建的信号量集合中信号量的个数，semflg：调用函数的操作类型，也可用于设置信号量集合的访问权限
+	//成功：返回信号量ID，失败：-1
+	semid = semget(IPC_PRIVATE, 1, 0666);	//创建并初始化信号量
+
+	if(semid == -1)	//信号量创建失败
+	{
+		printf("create semaphore fail\\n");
+		return 0;
+	}
+	else{	 //返回信号量ID
+		printf("create semaphore ok\\n");
+	}
+
+	//semun 共用体
+	union semun x;
+	x.val = 1;  //信号量初值应为多少？为1
+
+	//int semctl(int semid, int semnum, int cmd, [union semun arg]) ;
+	//semid：信号量集合，semnum：用于指明某个特定信号量，cmd：表示调用该函数希望执行的命令，arg：是一个 semun 共用体，
+	semctl(semid, 0, SETVAL, x);	//初始化信号量为 1
+	
+	//int shmget(key_t key, int size, int flag);
+	//key：表示所创建或打开的共享内存的键，size：表示共享内存区域的大小，flag：表示函数的操作类型，也可用于设置共享内存的访问权限
+	//若成功则为共享内存ID，若出错则为 -1
+	shmid = shmget(IPC_PRIVATE, 8, 0666);  //创建并关联到共享内存，共享内存一共 8 字节，前 4 字节存放 count，后 4 字节存放 total
+	if(shmid == -1)	
+	{
+		printf("create shared-memory fail\\n");
+		return 0;
+	}
+	else{	//返回共享内存ID
+		printf("create shared-memory ok\\n");
+	}
+
+	//void *shmat(int shmid, void *addr, int flag) ;
+	//shmid：表示要附加的共享内存段的ID，addr：虚拟地址，flag：用于表示函数的操作方式
+	//成功则为指向共享内存段的指针，若出错则为-1
+	shm_virtualaddr = shmat(shmid, 0, 0);//共享内存的附加，地址映射，addr 为 0，此共享内存段附加到由内核选择的第一个可用地址上
+
+	*(int *)shm_virtualaddr = 0;  //初始化进程编号，将指针转成int*，然后取该指针指向地址的值
+	*(int *)(shm_virtualaddr + 4) = 0;  //初始化随机数和
+
+	//flag 是否是子进程
+	char is_child = 0;
+	int i;
+	//循环创建 10 个进程
+	for(i=0; i<10; i++)
+	{
+		pid_t pid = fork(); 
+		if(pid == 0)	//子进程
+		{
+			is_child = 1;  //设置子进程中 is_child 为 1
+			break;  //退出循环
+		}
+	}
+
+	//子进程
+	if(is_child)
+	{
+		p(semid);  // P操作，获取信号量（-1）
+
+		srand(time(NULL) + i);	//设置随机种子数
+		int num = rand()%10;	//取 0-9 随机数
+
+		(*(int *)shm_virtualaddr)++;  //进程编号自增
+		*(int *)(shm_virtualaddr + 4) += num;  //随机数相加
+
+		printf("child%d: %d\\n", i, num);
+
+		v(semid);  //V操作，释放信号量（+1）
+
+		if(*(int *)shm_virtualaddr == 10)  //if(i==10)最后一个子进程，善后操作
+			kill(getppid(), SIGUSR1);  //向父进程发送 SIGUSER1 信号 
+	}
+	else
+	{
+		while(1)
+			pause();//挂起，等待信号唤醒
+	}
+
+	return 0;
+}
+/*========================================================================
+create semaphore ok
+create shared-memory ok
+child0: 8
+child1: 8
+child5: 9
+child4: 0
+child6: 2
+child3: 9
+child7: 6
+child8: 4
+child9: 1
+child2: 9
+count = 10, total = 56
+remove semaphore ok
+remove shared-memory ok
+========================================================================*/
+```
+## socket 编程接口
+### 套接口概念
+套接口实际就是网络进程的 PID（Process ID）。
+
+网络通信，归根到底就是进程间的通信。套接口的描述符称为套接字，即 socket。有的资料中也叫套接口句柄。
+### 阻塞模式和非阻塞模式（同步和异步）
+阻塞模式：指调用了套接字的读、写函数后，函数不会立即返回，线程此时被置为等待状态，直到读、写操作完成为止。
+
+非阻塞模式：指调用了套接字的读、写函数后，函数立即返回，不用等到读、写操作完成。
+
+无论在 Windows 中还是 UNIX/LINUX 中，套接字被创建后默认都是阻塞模式的。
+
+### getsockname/getpeername
+getsockname 函数：用于获取与某个套接字关联的本地协议地址
+getpeername 函数：用于获取与某个套接字关联的外地协议地址
+*函数定义*
+```
+#include<sys/socket.h>
+int getsockname(int sockfd, struct sockaddr *localaddr, socklen_t *addrlen);
+int getpeername(int sockfd, struct sockaddr *peeraddr, socklen_t *addrlen);
+```
+
+### 字节序转换
+计算机在内存中的数据存储方式有两种：一种是小端字节序，即内存低地址存储数据低字节，高地址存储数据高字节；另一种是大端字节序，即内存低地址存储数据高字节，而高地址存储数据低字节。
+
+网络字节序使用的是大端字节序，而主机字节序可能是小端字节序，也可能是大端字节序。所有套接字函数中涉及 IP 地址和端口号时都用网络字节序，因此要用到主机字节序和网络字节序之间相互转换功能的函数。
+
+#### 返回网络字节序 htons/htonl
+`u_short htons(u_short hostshort);`
+
+`u_long htonl(u_long hostlong);`
+
+#### 返回主机字节序 ntohs/ntohl
+`u_short ntohs(u_short netshort);`
+
+`u_long ntohl(u_long netlong);`
+
+一般情况下，使用 htons 和 ntohs 转换 端口号，使用 htonl 和 ntohl 转换 IP 地址。
+### 地址转换函数
+在 TCP/IP 网络上，使用 ASCII 地址，即使用以“．”隔开的四个十进制的数表示。
+在套接口地址中则是使用 32 位的网络字节序的二进制数值。
+要实现两者之间的转换，就要用到以下两个函数：
+
+`unsigned long inet_addr(const char FAR* cp);`
+
+成功：返回 32 位二进制的网络字节序地址
+出错：返回 INADDR_NONE。
+
+`char FAR* inet_ntoa(struct in_addr in);`
+
+成功：返回字符串的指针
+失败：返回 NULL
+
+### 流套接字编程模型
+服务器端：创建套接字——将本地地址绑定到套接字——进入监听模式并准备接受连接。
+客户端：创建套接字——请求连接。
+
+双方建立连接后就可以开始数据通信了，双方都可以进行数据的发送和接收。
+
+最后，通信完毕，任意一方都可关闭套接字。
+### 数据报套接字编程模型
+服务器端：创建套接字——将本地地址绑定到套接字——直接进行数据的接收。
+客户端：创建套接字——直接进行数据的发送。
+
+通信完毕，任意一方都可关闭套接字。
+
+### sockaddr 和 sockaddr_in 结构体
+通常，把网络应用程序中所用到的网络地址和端口号信息放在一个结构体中，这就是**套接口地址结构体**。
+
+每个协议族都定义了它自己的套接口地址结构体，套接口地址结构体都以 `sockaddr_` 开头，并以每个协议族名中的两个字母作为结尾，例如`sockaddr_in`表示 IPv4 协议族的套接口地址结构体。
+
+除此之外，还有一个通用套接口地址结构体，它以`sockaddr` 表示。通用套接口地址结构体 sockaddr 与具体协议族无关，形式为：
+```
+struct sockaddr
+{
+	unit8_t	sa_len;
+	sa_family_t	sa_family;	//协议族名
+	char	sa_data[14];
+}
+```
+
+IPv4 套接口地址结构体 `sockaddr_in` 的形式如下：
+```
+struct sockaddr_in
+{
+	unit8	sin_len;	//数据长度成员，固定长度为16字节，一般不用设置它；
+	sa_family_t	sin_family;	//协议族名，IPv4 为 AF_INET；
+	in_port_t sin_port;	//TCP 或 UDP 协议的端口号，16 位端口号，网络字节序
+	struct in_addr sin_addr;
+	char	sin_zero[8];	//备用的域名，未使用
+};
+struct in_addr
+{
+	in_addr_t s_addr;	//32 位 IP 地址，网络字节序
+};
+```
+在对套接口进行操作的函数中，如果需要套接口地址参数，都是以通用套接口地址结构体表示的，例如连接函数 connect：
+
+`int connect(int sockfd,const struct sockaddr *serv_addr,int addrlen);`
+
+因此需要将**指向特定协议的套接口地址结构体的指针**转换成**指向通用套接口地址结构体的指针**，即使用`(struct sockaddr *)`进行类型转换。否则编译时会出现警告信息。
+
+### 套接口函数
+#### 总结步骤
+>一个服务器进程中系统调用的顺序通常如下
+
+socket();
+bind();
+listen();
+accept();
+>而客户端进程的调用则比较简单
+
+socket();
+connect();
+#### 创建套接字 socket
+
+`int socket(int family,int type,int protocol);`
+
+family：指明协议族
+type：指明套接口类型
+protocol：一般为 0
+
+成功：返回值为非负描述字
+失败：返回值为负值
+
+>参数 family 的取值范围
+
+AF_LOCAL：UNIX 协议族
+AF_ROUTE：路由套接口
+AF_INET：IPv4 协议
+AF_INET6：IPV6 协议
+AF_KEY：密钥套接口
+
+>参数 type 的取值范围
+
+SOCK_STREAM：TCP 套接口
+SOCK_DGRAM：UDP 套接口
+SOCK_PACKET：支持数据链路访问
+SOCK_RAM：原始套接口
+
+#### 绑定套接口 bind
+`int bind(int sockfd,const struct sockaddr *myaddr,socklen_t addrlen);`
+
+sockfd：套接字
+myaddr：是一个指向特定协议地址结构体的指针
+addrlen：是地址结构体的长度。
+
+成功：返回 0
+失败：返回 -1
+
+这个调用不是必须执行的。尤其是在客户端，很少使用这个系统调用。用 socket() 得到套接口后可以直接调用函数 connect() 或者 listen()，这时内核会自动给套接口分配一个地址和端口号，这是常用的方式。
+
+只有在希望进程使用某个特定的网络地址和端口时，才会使用函数 bind()。
+
+#### 连接 connect
+`int connect(int sockfd,const struct sockaddr *serv_addr,int addrlen);`
+
+sockfd：套接口描述字
+serv_addr：目的端口和IP地址的套接口
+addrlen：目的套接口的长度
+
+成功：返回 0
+失败：返回 -l
+
+#### 监听 listen
+`int listen(int sockfd,int backlog);`
+
+sockfd：套接字
+backlog：规定内核为此套接口排队的最大选择个数
+
+成功：返回 0
+失败：返回 -1
+
+#### 接受连接 accept (阻塞函数)
+`int accept(int sockfd,struct sockaddr *cliaddr,socklen_t *addrlen);`
+
+cliaddr：远程客户的套接口地址
+addrlen：套接口地址长度
+sockfd：监听套接字，它由函数 socket() 生成
+如果不需要客户的套接口地址，可将第二个和第三个参数设置为空指针
+
+成功：返回非负描述字，返回值即为新建立的连接的套接口描述字(客户套接字)
+失败：返回 -1
+
+>客户套接和监听套接字的区别：
+
+监听套接字只有一个，而且一直存在；而每一个连接都有自己的客户套接字，专用于服务器与该连接对应的远程客户进行通信。当连接断开时就关闭该客户套接字。
+
+>accept()是一个阻塞函数
+
+即调用它的线程将被操作系统置于阻塞状态，直到有远程客户向该IP地址的该端口发起connect()调用为止。
+
+#### 关闭 close
+`int close(int sockfd);`
+
+成功：返回 0
+失败：返回 -1
+
+#### 发送 send/sendto (阻塞函数)
+面向连接的套接口（TCP）:
+
+`int send(int sockfd,const void *buffer,int length,int flags);`
+
+无连接的套接口（UDP）:
+
+`int sendto(int sockfd,const void *message,int length,int flags,const struct sock_addr *dest_addr,int dest_len);`
+
+#### 接收 recv/recvfrom (阻塞函数)
+面向连接的套接口（TCP）:
+
+`int recv(int sockfd,void *buffer,int length,int flags);`
+
+无连接的套接口（UDP）:
+
+`int recvfrom(int sockfd,void *message,int length,int flags,const struct sock_addr *send_addr,int *send_len);`
+
+因为发送和接收函数进行一次传输的字节数可能比要求的数量少，所以需要多次调用这些函数以便发送或接收指定的字节数。所以，套**接口的数据传输通常都由一个循环结构来实现。**
+
+>Mysend 方法
+
+```
+int Mysend(SOCKET s, const char *buf, int len, int flags)
+{
+	if(buf == NULL)
+		return 0;
+	int iSendCount = 0:
+	int iLength = len:
+	while (iLength > 0)
+	{
+		int n = send(s, buf* iSendCount, iLength, flags);
+		if(n == SOCKET_ERROR)
+			return 0:
+		iLength -= n:
+		iSendCount += n:
+	}
+	return iSendCount
+}
+```
+
+>Myrecv 方法
+
+```
+int Myrecv(SOCKET s, char *buf, int len, int flags)
+{
+	if(buf == NULL)
+		return 0;
+	int iRecvCount = 0;
+	int iLength = len;
+	while (iLength > 0)
+	{
+		int nRev = recv(s, buf + iRecvCount, iLength, flags);
+		if(nReU == SOCKET_ERROR)
+			return 0:
+		iLength -= nRev;
+		iRecuCount += nRev;
+	}
+	return iRecvCount;
+}
+```
+## 多线程
+### 线程函数的原型
+#### Windows
+`DWOED ThreadProc(LPVOID lpParameter);`
+### 创建新线程
+#### Windows - CreateThread
+Win32 API 函数 ：CreateThread()
+```
+HANDLE CreateThread(
+	LPSECURITY_ATTRIBUTES lpsa,
+	DWORD cbStack,
+	LPTHREAD_START_ROUTINE lpstartAddr, //指向线程函数的指针，那个函数将做为一个新的线程而运行
+	LPVOID lpvThreadParam,	//传给线程函数的参数
+	DWORD fdwCreate,
+	LPDWORD lpIDThread
+);
+```
+#### Unix - pthread_create
+```
+#include  <pthread.h>
+int  pthread_create（
+	pthread_t  *thread,	//待传入线程的线程ID指针
+	pthread_attr_t  *attr,	//带创建线程的属性，通常为NULL，表示使用默认属性
+	void  *（*start_routine）（void  *）,	//函数指针，待创建线程的执行函数
+	void  *arg	//要传给线程执行函数的参数
+）
+```
+### 一个线程等待另一个线程结束的方法
+#### Unix - pthread_join
+```
+#include  <pthread.h>
+int pthread_join(
+	pthread_t thread,
+	void **retval
+);
+```
+### Linux 中编译多线程程序的方法
+由于 pthread 库不是 Linux 系统默认的库，所以多线程的程序在编译时需要告诉编译器将这个库链接进来，编译命令应这样输入：`gcc xxx.c -lpthread`
+
+### 线程的并发（同步）问题
+属于同一个进程的所有线程可以共享全局数据和主线程中尚在生存期内的数据，如果没有并发控制，就会产生异常。
+
+并发控制的方法有多种，只要求掌握使用信号量来进行并发控制。
+
+Windows 中主要函数有：
+```
+CreateSemaphore()
+WaitForSingleObject()
+ReleaseSemaphore()
+CloseHandle()
+```
+### 实验：结合网络编程和多线程技术实现父进程产生10个子进程，并打印出子进程产生的随机数的和，要求能跨平台执行(Windows,Linux)
+```
+/*------------------------------------------------------------------------------------------------
+任务：
+    10个子进程求和问题。用套接字进行父子进程间数据的通信。
+思路：
+    父进程做服务器，完成网络的初始化工作后就进入等待连接状态。子进程做客户端，连接到服务器后就发送自己的随机数。父进程接收到随机数后进行累加。要注意的是，由于accept()和recv()都是阻塞函数，所以服务器要用单独的线程来调用这两个函数，所以服务器将产生10个线程来分别为10个子进程服务。另外，10 个线程都要修改全局变量total，所以要进行并发控制。
+-------------------------------------------------------------------------------*/
+
+//=======================================================================================
+//    跨平台程序设计，针对平台打开对应的头文件，根据宏 WINDOWS_VERSION 进行判断 
+//=======================================================================================
+
+///*------------------------ Windows 的头文件 ----------------------------
+#include "stdafx.h"
+#include <stdio.h>
+#include <time.h>
+#include <Winsock2.h>
+#pragma comment(lib, "ws2_32.lib")
+#define WINDOWS_VERSION //宏定义，表示当前为 windows 版本
+//----------------------------------------------------------------------*/
+
+/*------------------------- Linux 的头文件 -----------------------------
+#include <sys/types.h>
+#include <sys/ipc.h>
+#include <sys/sem.h>
+#include <pthread.h>
+#include <sys/socket.h>
+#include <netdb.h> 
+#include <netinet/in.h> 
+#include <arpa/inet.h>  //inet_ntoa()函数的头文件
+-----------------------------------------------------------------------*/
+
+//=========================================
+//            	全局变量
+//=========================================
+
+//-------------------------- 判断平台 -------------------------
+#ifdef WINDOWS_VERSION //windows 平台
+	HANDLE  g_hSem;    //信号量的句柄
+	HANDLE  g_hThread[10];  //10个线程的句柄
+#else //Linux 平台
+	union send_num_to_parent //共用体，作为初始化信号量的值传入 semctl 函数
+	{
+		int val;
+		struct semid_ds *buf;
+		ushort *array;
+	};
+	int   semid;    //信号量的ID
+	pthread_t thread_id[10];  //10个线程的ID
+#endif
+	int  total;      //和
+	int  listen_sock;    //用于监听的套接字
+	short port;      //端口
+//----------------------------------------------------
+
+/**
+ * 发送
+ */
+int mysend(int sock, char *buf, int len, int flags)
+{
+	int sent = 0, remain = len;
+	while(remain > 0)
+	{
+		//int send(int sockfd,const void *buffer,int length,int flags);
+		int n = send(sock, buf + sent, remain, flags);	//返回实际发送的字节数
+		if(n == -1)  //出错的最大可能是对方关闭了套接字
+			break;
+		remain -= n;
+		sent += n;
+	}
+	return sent;
+}
+
+/**
+ * 接收一个整数(阻塞函数)
+ */
+int myrecv(int sock, char *buf, int len, int flags)
+{
+	int received = 0, remain = len;
+	while(remain > 0)
+	{
+		//int recv(int sockfd,void *buffer,int length,int flags);
+		//返回：0是对方调用close()，-1是对方直接退出
+		int n = recv(sock, buf + received, remain, flags);
+		if(n == 0 || n == -1)  
+			break;
+		remain -= n;
+		received += n;
+	}
+	return received;
+}
+
+/**
+ * Linux：子进程(客户端)发送随机数给父进程(服务端)
+ * 
+ * @param num 进程编号
+ */
+void send_num_to_parent(int num)
+{
+	int sock = socket(AF_INET, SOCK_STREAM, 0);
+
+	//下面4行进行地址结构体的赋值。注意IP地址和端口号都要转换成网络字节序
+	struct sockaddr_in server_addr;
+	server_addr.sin_family  = AF_INET;
+	server_addr.sin_addr.s_addr = inet_addr("127.0.0.1");  //将字符串表示的IP地址转换成网络字节序整数
+	server_addr.sin_port  = htons(port);
+ 
+ 	//int connect(int sockfd,const struct sockaddr *serv_addr,int addrlen);
+ 	//sockfd：套接口描述字，serv_addr：目的端口和IP地址的套接口，addrlen：目的套接口的长度
+	connect(sock, (struct sockaddr *)&server_addr, sizeof(struct sockaddr));  //connect()是阻塞函数，直到3次握手完成为止，或是超时为止
+
+	mysend(sock, (char *)&num, 4, 0);
+
+#ifdef WINDOWS_VERSION
+	closesocket(sock);
+#else
+	close(sock);
+#endif
+}
+
+#ifndef WINDOWS_VERSION
+void p(int semid)
+{
+	struct sembuf buf = {0, -1, 0};
+	semop(semid, &buf, 1);
+}
+
+void v(int semid)
+{
+	struct sembuf buf = {0, 1, 0};
+	semop(semid, &buf, 1);
+}
+#endif
+
+
+#ifdef WINDOWS_VERSION
+	DWORD WINAPI thread_function(void *arg) 
+#else
+	/**
+	 * 线程函数
+	 * 处理 accept，并创建下一个线程
+	 */
+	void *thread_function(void *arg)
+#endif
+	{ 
+		int index = (int)arg;	//序号
+
+		//准备接受连接请求
+		struct sockaddr_in peer_addr;//套接口地址结构体
+		int size = sizeof(struct sockaddr_in);
+		//int accept(int sockfd,struct sockaddr *cliaddr,socklen_t *addrlen);
+		//sockfd：监听套接字，它由函数 socket() 生成，cliaddr：远程客户的套接口地址，addrlen：套接口地址长度
+		//成功：返回非负描述字，返回值即为新建立的连接的套接口描述字(客户套接字)，失败：返回 -1
+		int comm_sock = accept(listen_sock, (struct sockaddr *)&peer_addr, &size);  //accept()是阻塞函数，直到有客户端向本地址发起连接请求。注意返回值就是对应客户端的套接字，将来的数据收发都在这个套接字上进行
+		printf("parent : 线程%d接受一个连接请求\\n", index);
+ 
+		//accept 完毕，创建下一个线程
+		if(index < 9)
+#ifdef WINDOWS_VERSION
+			g_hThread[index + 1] = CreateThread(NULL, 0, (LPTHREAD_START_ROUTINE)thread_function, (void *)(index + 1), 0, NULL);
+#else
+			pthread_create(&thread_id[index + 1], NULL, (void *)thread_function, (void *)(index + 1));
+#endif
+
+		//自己，服务端
+		int num;
+		myrecv(comm_sock, (char *)&num, 4, 0);	//接收一个整数
+		printf("parent : 线程%d接收到一个整数%d\\n", index, num);
+
+//累加到全局变量。由于 10 个线程可能形成竞争，所以必须进行并发控制
+#ifdef WINDOWS_VERSION
+		WaitForSingleObject(g_hSem, INFINITE);//p操作
+		total += num;
+		ReleaseSemaphore(g_hSem, 1, NULL);//v操作
+		closesocket(comm_sock);
+		// ExitThread(0);
+		return 0;//线程结束
+#else
+		p(semid);
+		total += num;
+		v(semid);
+		//int close(int sockfd);
+		//成功：返回 0，失败：返回 -1
+		close(comm_sock);
+		pthread_exit(NULL);
+#endif
+	}
+
+/**
+ * 父进程(服务器)
+ * 初始化网络环境，完成服务器的准备工作 [accept 函数会阻塞线程，所以此处不处理，之后新开线程处理]
+ */
+void init_socket()
+{
+	//int socket(int family,int type,int protocol);
+	//family：指明协议族-IPv4 协议，type：指明套接口类型-TCP 套接口，protocol：一般为 0
+	//成功：返回值为非负描述字，失败：返回值为负值
+	listen_sock = socket(AF_INET, SOCK_STREAM, 0);	//创建流式套接字，用于监听子进程发出的连接请求
+
+	//下面 4 行进行地址结构体的赋值。注意 IP 地址和端口号都要转换成网络字节序
+	struct sockaddr_in server_addr;
+	server_addr.sin_family  = AF_INET; //IP_V4
+	//htonl：将主机的无符号长整形数转换为网络字节顺序
+	server_addr.sin_addr.s_addr = htonl(INADDR_ANY);  //INADDR_ANY 表示请操作系统自动选一个可用的本机 IP
+
+	//随机产生一个端口号，但要大于1024才行
+	srand(time(NULL));  
+	port = rand()%10000;
+	while(port < 1024)
+		port = rand()%10000;
+
+	//htons：将主机的无符号短整形数转换为网络字节顺序
+	server_addr.sin_port = htons(port);
+
+	//int bind(int sockfd,const struct sockaddr *myaddr,socklen_t addrlen);
+	//sockfd：套接字，myaddr：是一个指向特定协议地址结构体的指针，addrlen：是地址结构体的长度。
+	//成功：返回 0，失败：返回 -1
+	bind(listen_sock, (struct sockaddr *)&server_addr, sizeof(struct sockaddr));//将套接字绑定到指定的地址 //16
+
+	//int listen(int sockfd,int backlog);
+	//sockfd：套接字，backlog：规定内核为此套接口排队的最大选择个数
+	//成功：返回 0，失败：返回 -1
+	listen(listen_sock, 5);//将套接字置于监听状态
+
+	printf("parent : 服务器开始监听连接请求\\n");
+}
+
+/**
+ * 子线程(客户端)：生成随机数，发给父进程(服务器)	
+ * @param i 线程编号	
+ */
+void do_child(int i)
+{
+	srand(time(NULL) + i);
+	int num = rand()%10;
+
+	printf("child%d: %d\\n", i, num);
+
+	send_num_to_parent(num);
+}
+
+/**
+ * 主函数
+ *
+ * @param  argc 命令行输入的参数个数
+ * @param  argv 字符二维数组
+ */
+int main(int argc, char* argv[])
+{
+//下面 4 行：进行 Windows 网络环境的初始化。UNIX 中不需要，因为 UNIX 内置了 TCP/IP 
+#ifdef WINDOWS_VERSION
+	WORD wVersionRequested;
+	WSADATA wsaData;
+	wVersionRequested = MAKEWORD(2, 2);
+	WSAStartup(wVersionRequested, &wsaData);
+#endif
+
+	// Windows 中的父进程，Linux 中的父、子进程
+	if(argc == 1)  
+	{
+		total = 0;	//初始化 total 为 0 
+
+//创建并初始化信号量，用于控制 10 个线程对 total 的并发修改
+#ifdef WINDOWS_VERSION
+		//1 个信号量，初始为 1
+		g_hSem = CreateSemaphore(NULL, 1, 1, NULL);
+#else
+		semid = semget(IPC_PRIVATE, 1, 0);	//创建信号量
+		union semun x;
+		x.val = 1;
+		semctl(semid, 0, SETVAL, x);	//信号量赋初值 1
+#endif
+  
+		//初始化网络环境，完成服务器的准备工作
+		init_socket();
+
+		//创建用于接受连接请求的第一个线程，将来由第一个去创建第二个，第二个创建第三个，以此类推。[任何时刻只能有一个线程在调用 accept ]
+		//要保存线程的句柄或ID，因为后面主线程要等待 10 个子线程结束。
+#ifdef WINDOWS_VERSION	//线程函数原型不同，需区分平台
+		//3p：指向线程函数的指针，4p：线程函数的参数(需强转为空指针)，[告诉线程你是第几个线程]
+		g_hThread[0] = CreateThread(NULL, 0, (LPTHREAD_START_ROUTINE)thread_function, (void *)0, 0, NULL);
+#else
+		//int pthread_create(pthread_t  *thread,pthread_attr_t  *attr,void  *(*start_routine)(void  *),void  *arg)
+		//	pthread_t  *thread,	//待传入线程的线程ID指针
+		//	pthread_attr_t  *attr,	//带创建线程的属性，通常为NULL，表示使用默认属性
+		//	void  *（*start_routine）（void  *）,	//函数指针，待创建线程的执行函数
+		//	void  *arg	//要传给线程执行函数的参数
+		pthread_create(&thread_id[0], NULL, (void *)thread_function, (void *)0);
+#endif
+
+//服务器已准备就绪(线程，信号量)，可以创建 10 个子进程了
+#ifdef WINDOWS_VERSION
+		STARTUPINFO si;
+		PROCESS_INFORMATION pi;
+		int i;
+		for(i=0; i<10; i++)
+		{
+			//处理命令行字符串
+			char *p = GetCommandLine();
+			char strCmdLine[256];
+			strcpy(strCmdLine, p);
+			sprintf(strCmdLine + strlen(strCmdLine), " -%d -%d", port, i);
+
+			ZeroMemory( &si, sizeof(si) );
+			si.cb = sizeof(si);
+			ZeroMemory( &pi, sizeof(pi) );
+			CreateProcess(NULL, strCmdLine, NULL, NULL, false, 0, NULL, NULL, &si, &pi);
+		}
+		//等待 10 个线程结束
+		for(i=0; i<10; i++)
+			WaitForSingleObject(g_hThread[i], INFINITE);
+#else
+		char is_child = 0;
+		int i;
+		for(i=0; i<10; i++)
+		{
+			pid_t pid = fork();
+			if(pid == 0)
+			{
+				is_child = 1;
+				break;
+			}
+		}
+		if(is_child)
+		{
+			do_child(i);
+			return 0;
+		}
+		else
+		{
+			//等待 10 个线程结束
+			for(i=0; i<10; i++)
+				pthread_join(thread_id[i], NULL);
+		}
+#endif
+		printf("parent : all threads ended, total=%d\\n", total);
+
+//删除信号量
+#ifdef WINDOWS_VERSION
+		CloseHandle(g_hSem);
+#else
+		semctl(semid, IPC_RMID, 0);
+#endif
+	}
+	else if(argc == 3)  //Windows中的子进程，命令行格式为:filename -端口号 -[0-9] 
+	{
+#ifdef WINDOWS_VERSION
+		char *p = GetCommandLine();
+		//下面 2 行从命令行中解析出端口号
+		p = strchr(p, \'-\');
+		sscanf(p+1, "%d", &port);
+
+		//下面 3 行从命令行中解析出子进程的序号
+		p = strchr(p+1, \'-\');
+		int index;
+		sscanf(p+1, "%d", &index);
+		do_child(index);
+#endif
+	}
+ else
+	printf("启动命令不正确\\n");
+	return 0;
+}
+```
+---
+parent : 服务器开始监听连接请求
+child0: 1
+parent : 线程0接受一个连接请求
+parent : 线程0接收到一个整数1
+child1: 4
+parent : 线程1接受一个连接请求
+parent : 线程1接收到一个整数4
+child2: 7
+parent : 线程2接受一个连接请求
+parent : 线程2接收到一个整数7
+child3: 0
+parent : 线程3接受一个连接请求
+parent : 线程3接收到一个整数0
+child5: 7
+child4: 4
+parent : 线程4接受一个连接请求
+child6: 0
+child7: 3
+child8: 7
+parent : 线程4接收到一个整数7
+child9: 0
+parent : 线程5接受一个连接请求
+parent : 线程5接收到一个整数4
+parent : 线程6接受一个连接请求
+parent : 线程6接收到一个整数0
+parent : 线程7接受一个连接请求
+parent : 线程7接收到一个整数3
+parent : 线程8接受一个连接请求
+parent : 线程8接收到一个整数7
+parent : 线程9接受一个连接请求
+parent : 线程9接收到一个整数0
+parent : all threads ended, total=33
+
+---
+
+
+
+
+
+
+',
+  'groups' => 'Linux',
+  'showsel' => '1',
+  'showse2' => '1',
+  'id' => '212',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->updateNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001416s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001928s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 212 LIMIT 1 [ RunTime:0.000836s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `note` WHERE  `id` = 212 LIMIT 1 [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001021s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `groups` WHERE  `groups` = 'Linux' LIMIT 1 [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000407s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `id`=212,`p_id`=2,`title`='Linux - C 编程\r',`content`='# Linux - C 编程\r\n[TOC]\r\n## 进程\r\n### 孤儿进程 和 僵尸进程\r\nLinux 系统中有两种特殊的进程：孤儿进程和僵尸进程。\r\n\r\n父进程应负责子进程的回收工作，但父子进程是异步运行的，父进程不知道什么时候接收子进程，父进程甚至会在子进程结束之前结束。若父进程在子进程退出之前退出，子进程就会变成孤儿进程，此时子进程会被进程 init 收养，之后 init 会代替其原本的父进程完成状态收集工作。\r\n\r\n当进程调用了 exit() 函数后，该进程并不是马上消失，而是留下一个称为僵尸进程的数据结构。僵尸进程是 Linux 系统中的另一种特殊进程，它几乎放弃进程退出前占用的所有内存，既没有可执行代码也不能被调度，只在进程列表中保留一个位置，记载进程的退出状态等信息供父进程收集。若父进程中没有回收子进程的代码，子进程将会一直处于僵尸态。\r\n\r\n### 进程标识符\r\n下列函数返回这些标识符，其返回值类型 pid_t，uid_t，gid_t 等都是宏定义，实质是 `unsigned int`\r\n```\r\n//头文件\r\n#include <sys/types.h>\r\n#include <unistd.h>\r\n\r\n//返回:调用进程的 进程ID\r\npid_t getpid(void)	\r\n\r\n//返回:调用进程的 父进程ID\r\npid_t getppid(void);\r\n\r\n//返回:调用进程的 实际用户ID\r\nuid_t getuid(void)\r\n\r\n//返回:调用进程的 有效用户ID\r\nuid_t geteuid(void)\r\n\r\n//返回:调用进程的 实际组ID\r\ngid_t getgid (void)\r\n\r\n//返回:调用进程的 有效组ID\r\ngid_t getegid(void)\r\n```\r\n### 进程同步\r\nLinux 提供了 wait() 函数和 waitpid() 函数来获取进程状态，实现进程同步。这两个函数用于父、子进程之间的同步，即确保子进程一定先于父进程执行并终止。\r\n```\r\n#include <sys/types.h>\r\n#include <sys/wait.h>\r\npid_t wait(int *status) ;\r\npid_t waitpid(pid_t pid , int * status, int options) ;\r\n//两个函数返回：若成功则为 进程ID，若出错则为 -1。\r\n```\r\n### 实验：fork() 函数的使用\r\nfork() 函数:\r\n创建成功，父进程返回子进程的 id ，子进程返回 0\r\n创建失败，父进程返回 -1\r\n>使用 fork() 函数创建一个进程，进程创建成功后使父进程和子进程分别执行不同的功能\r\n\r\n```\r\n/*---------------------------------------------------\r\n使用 fork() 函数创建一个进程，进程创建成功后使父进程和子进程分别执行不同的功能\r\n-----------------------------------------------------*/\r\n#include <stdio.h>\r\n#include <stdlib.h>\r\n#include <unistd.h>\r\nint main()\r\n{\r\n	//调用fork()函数创建子进程\r\n	pid_t pid = fork();\r\n	if (pid == -1)	//创建失败\r\n	{\r\n		perror(\"fork error\");\r\n		exit(1);	//退出进程，指定返回值1\r\n	}\r\n	else if (pid > 0)	//创建成功 - 父进程\r\n	{\r\n		printf(\"父进程,pid=%d,ppid=%d\\n\", getpid(), getppid());\r\n	}\r\n	else if (pid == 0)	//创建成功 - 子进程\r\n	{\r\n		printf(\"子进程,pid=%d,ppid=%d\\n\", getpid(), getppid());\r\n	}\r\n	printf(\"........finish..........\\n\");\r\n	return 0;\r\n}\r\n\r\n/*========================================================================\r\n父进程,pid=3720,ppid=3514\r\n........finish..........\r\n子进程,pid=3721,ppid=2012\r\n........finish..........\r\n========================================================================*/\r\n\r\n```\r\n\r\n- 多次执行文件 test_fork会发现这种情况: child process 后输出的 ppid 不等于 parent process 的 pid,而等于1。这是什么原因?\r\n答：父进程先于子进程终止,子进程变为“孤儿进程”,后由进程 init 接收。\r\n\r\n>使用 fork() 函数在循环中创建 5 个子进程，使子进程分别打印各自的编号和 pid\r\n\r\n```\r\n/*---------------------------------------------------\r\n使用 fork() 函数在循环中创建 5 个子进程，使子进程分别打印各自的编号和 pid\r\n-----------------------------------------------------*/\r\n#include <stdio.h>\r\n#include <stdlib.h>\r\n#include <unistd.h>\r\n\r\nint main()\r\n{\r\n	pid_t pid;\r\n	int i;\r\n	//循环创建进程\r\n	for (i = 0; i<5; i++){				\r\n		if ((pid = fork()) == 0)	//若当前进程为子进程，便跳出循环\r\n			break;\r\n	}\r\n	if (pid == -1){\r\n		perror(\"fork error\");\r\n		exit(1);\r\n	}\r\n	else if (pid>0){	//父进程\r\n		//sleep(5);	//父进程等待所有子进程执行结束后再执行\r\n		printf(\"parent process:pid=%d\\n\", getpid());\r\n	}\r\n	else if (pid == 0){		//子进程\r\n		//sleep(i);	//每个子进程分别沉睡不同的时间\r\n		printf(\"I am child=%d,pid=%d\\n\", i + 1, getpid());\r\n	}\r\n	return 0;\r\n}\r\n\r\n/*========================================================================\r\n>不 sleep 的输出：\r\nzhangliren@ubuntu:~/Documents$ ./a.out \r\nI am child=2,pid=3814\r\nparent process:pid=3812\r\nI am child=1,pid=3813\r\nI am child=4,pid=3816\r\nzhangliren@ubuntu:~/Documents$ I am child=5,pid=3817\r\nI am child=3,pid=3815\r\n|(终端提示符)\r\n----------------------------------------------------------\r\n>sleep() 后的输出：\r\nI am child=1,pid=3843\r\nI am child=2,pid=3844\r\nI am child=3,pid=3845\r\nI am child=4,pid=3846\r\nI am child=5,pid=3847\r\nparent process:pid=3842\r\n========================================================================*/\r\n```\r\n\r\n- 观察输出结果,会发现输出结果有以下问题\r\n（1）子进程的编号不是递增的\r\n（2）终端提示符后面仍有子进程信息打印,而命令提示符在最后一行的开头闪烁\r\n这是为什么?\r\n\r\n答：（1）父进程先于子进程终止。在 Linux 系统中,子进程应由父进程回收,但是当子进程被创建后,它与父进程及其他进程共同竟争系统资源,所以父子进程执行的顺序是不确定的,终止的先后顺序也是不确定的。此处创建了 5 个子进程,这 5 个子进程与父进程共同竞争资源。6 个进程使用 CPU 的顺序不确定,因此子进程的编号不是递增关系,父进程在子进程尚未全部终止前便终止。\r\n（2）父进程是一个前台进程。当它终止退出后,会释放命令提示符,输出当前工作路径及端提示符[ thelma@ localhost~],但此时尚有子进程仍在执行,终端仍有信息输出,因此命令提示符会出现在输出结果最后一行的开头。\r\n\r\n## 信号和信号处理\r\n### 信号的概念\r\n信号的本质是软件中断。很多比较重要的应用程序都需处理信号。信号是异步事件的典型实例，即产生信号的事件对进程而言是随机出现的。进程不能只是测试一个变量(例如errno)来判别是否发生了一个信号，而是必须告诉内核「在此信号发生时，请执行指定操作」。\r\n\r\n可以要求系统在某个信号出现时按照下列三种方式中的一种进行操作：\r\n1. 忽略此信号。大多数信号都可使用这种方式进行处理，但有两种信号却决不能被忽略。它们是：SIGKILL 和 SIGSTOP。这两种信号不能被忽略的原因是：它们向超级用户提供一种使进程终止或停止的可靠方法。\r\n2. 捕捉信号。为了做到这一点要通知内核在某种信号发生时，调用一个用户函数。在用户函数中，可执行用户希望对这种事件进行的处理。\r\n3. 执行系统默认动作。每一种信号都有系统默认动作。注意，对大多数信号的系统默认动作是终止该进程。\r\n\r\n### 常见函数\r\n#### kill\r\n给指定进程发送信号\r\n\r\n函数声明：`int kill(pid_t,int sig)`\r\npid：接收信号的进程ID\r\nsig：要发送的信号编号\r\n#### raise\r\n发送指定信号给当前进程自身\r\n\r\n函数声明：`int raise(int sig)`\r\n\r\n#### pause\r\n暂停进程，接收到任何信号后恢复\r\n\r\n函数声明：`int pause()`\r\n\r\n#### alarm\r\n计时器，驱使内核在指定秒数后发送 SIGALRM 信号到调用该函数的进程，进程收到该信号后默认终止运行。\r\n\r\n函数声明：`unsigned int alarm(unsigned int seconds)`\r\n\r\n#### signal\r\n捕获信号后，执行指定函数\r\n\r\n函数声明：\r\n`typedef void (* sighandler_t)(int);`\r\n`sighandler_t signal(int signum,sighandler_t handler);`\r\n\r\nsignum：信号编号\r\nhandler：自定义信号处理函数的函数指针\r\n\r\n### 实验：李纳斯的第一个程序\r\n```\r\n/*---------------------------------------------------------------------------------------------------------\r\n李纳斯的第一个程序：两个进程，一个向屏幕输出 A，一个向屏幕输出 B，两进程轮换输出，中间间隔 1 秒钟。如此反复，直到用户按下 ctl + c 结束两个进程（ctl + c 就是向当前正在运行的所有进程发送SIGINT信号）。\r\n---------------------------------------------------------------------------------------------------------*/\r\n#include \"stdio.h\"\r\n#include \"sys/types.h\"\r\n#include \"signal.h\"\r\n\r\npid_t pid;\r\n\r\n//自定义信号处理函数。\r\n//父进程打印 AAA，子进程打印 BBB\r\nvoid sigusr1_handler(int n)\r\n{\r\n	if(pid > 0)\r\n		printf(\"AAAA\\n\");\r\n	else\r\n		printf(\"BBBB\\n\");\r\n\r\n	alarm(1);//计时器，1s 后发送 SIGALRM 信号到进程\r\n}\r\n\r\nvoid sigalrm_handler(int n)\r\n{\r\n	if(pid > 0){	//父进程\r\n		kill(pid, SIGUSR1); //发送 SIGUSR1 信号给 pid 进程\r\n	}\r\n	else{	//子进程\r\n		kill(getppid(), SIGUSR1);//发送 SIGUSR1 信号给 父进程\r\n	}\r\n}\r\n\r\nint main()\r\n{\r\n	//在fork()之前设置的信号处理函数会被子进程继承\r\n	signal(SIGALRM, sigalrm_handler);//捕获 SIGALRM 信号，执行 sigalrm_handler\r\n	signal(SIGUSR1, sigusr1_handler);//用户定义的信号，用于捕获 SIGUSR1 信号执行处理函数 sigusr1_handler\r\n\r\n	pid = fork();\r\n	if (pid > 0)	//父进程\r\n		raise(SIGUSR1);	//发送 SIGUSR1 信号给当前进程\r\n\r\n	while(1)\r\n		pause();	//进程挂起，等待信号唤醒\r\n\r\n	return 0;\r\n}\r\n```\r\n## 进程间通信\r\n### 信号量\r\n#### 信号量的概念\r\n信号量是一个计数器，用于多进程对共享数据对象的存取。为了获得共享资源，进程需要执行下列操作：\r\n1. 测试控制该资源的信号量。\r\n1. 若此信号量的值为正，则进程可以使用该资源。进程将信号量值减 1（P 操作），表示它使用了一个资源单位。若此信号量的值为 0，则进程进入睡眠状态，直至信号量值大于 0。若进程被唤醒后，它返回至第 1 步。当进程不再使用由一个信息量控制的共享资源时，该信号量值增 1（V 操作）。如果有进程正在睡眠等待此信号量，则唤醒它们中的一个。\r\n\r\n这两个过程也叫做 p、v 操作。 p、v操作是原子操作。为此，信号量通常是在内核中实现的。\r\n\r\n常用的信号量形式是让它控制单个资源，所以其初始值为 1。但是，一般而言，信号量的初值可以是任一正值，该值说明有多少个共享资源单位可供共享应用。\r\n\r\n#### 信号量的创建与打开 semget\r\n函数声明：`int semget(key_t key,int nsems,int semflg)`\r\n\r\nkey：所创建或打开的信号量集合的键\r\nnsems：创建的信号量集合中信号量的个数，此参数只在创建一个新的信号量集合时有效\r\nsemflg：调用函数的操作类型，也可用于设置信号量集合的访问权限，两者通过逻辑或表示\r\n\r\n返回：\r\n- 成功：返回信号量ID\r\n- 失败：-1，并设置 errno\r\n\r\n>调用函数 semget 的作用由参数 key 和 flag 决定，相应约定如下：\r\n\r\n- 当 key 为 IPC_PRIVATE 时，创建一个新的信号量集合。此时参数 flag 的取值对函数的操作不起仟何作用。\r\n- 当 key 不为 IPC_PRIVATE，且 flag 设置了 IPC_CREAT 位，而没有设置 IPC_EXCL 位，则执行操作由 key 值决定：如果 key 为内核中某个已存在的信号量集合的键，则执行打开这个键的操作；反之，则执行创建信号量集合的操作。\r\n- 当 key 不为 IPC_PRIVATE，且 flag 中同时设置了 IPC_CREAT 位和 IPC_EXCL 位，则执行创建信号量集合的操作。参数 key 的取值应与内核中已存在的任何信号量集合的键值都不相同，否则函数调用失败。\r\n\r\n#### 对信号量的控制 semctl\r\n\r\n函数声明：`int semctl(int semid, int semnum, int cmd, [union semun arg]) ;`\r\n\r\nsemid：为信号量集合的标识符。\r\nsemnum：用于指明某个特定信号量。\r\ncmd：表示调用该函数希望执行的命令\r\ncmd 的常用设置：\r\n- SETVAL：表示 semctl() 的功能为初始化信号量的值，信号量值通过可选参数传入，在使用信号量前应先对信号量值进行设置\r\n- IPC_RMID：表示 semctl() 的功能为从系统中删除指定信号量\r\n\r\narg：是一个 semun 共用体，该共用体中各个成员的具体含义和使用情况与参数 cmd 的取值有关。该共用体的定义如下：\r\n```\r\nunion semen{\r\n	int val;	//cmd 为 SETVAL 时，用于指定信号量值\r\n	struct semid_ds *buf;	//cmd 为 IPC_STAT 时或 IPC_SET 时生效\r\n	unsigned short *array;	//cmd 为 GETALL 或 SETALL 时生效\r\n	struct seminfo *_buf;	//cmd 为 GETALL 或 SETALL 时生效\r\n};\r\n```\r\n\r\n该共用体中的 struct semid_ds 是一个由内核维护的记录信号量属性信息的结构体，该结构体的定义如下：\r\n```\r\nushort semid_ds{\r\n	struct ipc_perm sem_perm;	//所有者和标致权限\r\n	time_t sem_otime;	//最后操作时间\r\n	time_t sem_ctime;	//最后更改时间\r\n	unsigned short sem_nsems;	//信号集中的信号数量\r\n}\r\n```\r\n\r\n返回：由参数 cmd 决定。对于除 GETALL 以外的所有 GET 命令，都返回相应值，通常为非负数。否则返回 -1。\r\n#### 对信号量的操作——semop\r\n改变信号量的值\r\n\r\n函数声明：`int semop(int semid, struct sembuf *sops, unsigned nops) ; `\r\n\r\nsemid：为信号量集合的ID\r\nsemoparray：是一个 struct sembuf 类型的数组指针，该数组中的每个元素设置了要对信号量集中的哪个型号做哪种操作，struct sembuf 结构体定义如下：\r\n```\r\nstruct sembuf{\r\n	short sem_num;	//信号量在信号集中的编号\r\n	short sem_op;	//信号量操作,-1 P操作，+1 V操作\r\n	short sem_flag;	//标志位\r\n};\r\n```\r\nnops：参数 sops 所指数组中元素的个数\r\n\r\n返回：若成功则为 0，若出错则为 -1。\r\n\r\n### 共享内存\r\n#### 共享内存的概念\r\n共享内存是进程问通信的一种最基本、最快速的机制。共享内存是两个或多个进程共享同一块内存区域，并通过该内存区域实现数据交换的进程问通信机制。通常是由一个进程开辟一块共享内存区域，然后允许多个进程对此区域进行访问。由于不需使用中间介质，而是数据由内存直接映射到进程空间，因此共享内存是最快速的进程间通信机制。\r\n\r\n共享内存的最大不足在于，由于多个进程对同一块内存区域具有访问的权限，各个进程之间的同步问题显得尤为突出。必须控制同一时刻只有一个进程对共享内存区域写入数据，否则将造成数据的混乱。这可通过结合使用信号量来解决。\r\n\r\n#### 共享内存的创建和打开 shmget\r\n函数声明：`int shmget(key_t key, int size, int flag) ;`\r\n\r\nkey：表示所创建或打开的共享内存的键\r\nsize：表示共享内存区域的大小\r\nflag：表示函数的操作类型，也可用于设置共享内存的访问权限，两者通过逻辑或表示\r\n\r\n返回：若成功则为共享内存ID，若出错则为 -1。\r\n\r\n#### 共享内存的附加 shmat\r\n进行地址映射，将共享内存映射到进程虚拟地址空间中。\r\n\r\n函数声明：`void *shmat(int shmid, void *addr, int flag) ;\r\n`\r\n\r\nshmid：表示要附加的共享内存段的ID\r\naddr：虚拟地址\r\nflag：用于表示函数的操作方式\r\n\r\n返回：若成功则为指向共享内存段的指针，若出错则为-1\r\n\r\n#### 共享内存的分离 shmdt\r\n解除物理内存与进程虚拟地址空间的映射关系\r\n\r\n函数声明：`int shmdt(void *addr) ;`\r\n\r\naddr：是以前调用 shmat 时的返回值。\r\n\r\n返回：若成功则为0，若出错则为 -1。\r\n\r\n#### 共享内存的控制 shmctl\r\n对共享内存段执行多种操作。\r\n\r\n函数声明：`int shmctl(int shmid, int cmd, struct shmid_ds *buf) ;\r\n`\r\nshmid：为共享内存的标识符\r\ncmd：表示调用该函数希望执行的操作\r\n\r\n---\r\ncmd 的取值和对应操作如下：\r\n- IPC_STAT：对此段取 shmid_ds 结构，并存放在由 buf 指向的结构体中。\r\n- IPC_SET：按 buf 指向的结构体中的值设置与此段相关结构体中的下列三个字段：shm_perm.uid、shm_perm.gid以及shm_perm.mode。此命令只能由下列两种进程执行：一种是其有效用户ID等于shm_perm.cuid或shm_perm.uid的进程；另一种是具有超级用户特权的进程。\r\n- IPC_RMID：从系统中删除该共享内存段。此命令只能由下列两种进程执行：一种是其有效用户ID等于shm_perm.cuid或shm_perm.uid的进程；另一种是具有超级用户特权的进程。\r\n- SHM_LOCK：锁住共享内存段。此命令只能由超级用户执行。\r\n- SHM_UNLOCK：解锁共享内存段。此命令只能由超级用户执行。\r\n\r\n---\r\nbuf：指向 shmid_ds 结构体的指针\r\n\r\n返回：若成功则为0，若出错则为 -1。\r\n\r\n### 实验：父进程产生10个子进程，并打印出子进程产生的随机数的和\r\n```\r\n/*---------------------------------------------------------------------------------------------------------\r\n功能：\r\n    父进程产生10个子进程，并打印出子进程产生的随机数的和。要求用信号机制、信号量以及共享内存实现。\r\n\r\n思路：\r\n    子进程将自己产生的随机数累加到共享内存。当10个子进程都累加完后，用信号机制通知父进程，\r\n父进程就可以从共享内存中读取数据了。为了避免10个子进程向共享内存中写入数据时发生冲突，\r\n应使用信号量进行并发控制。	\r\n---------------------------------------------------------------------------------------------------------*/\r\n\r\n#include \"stdio.h\"\r\n#include \"sys/types.h\"\r\n#include \"signal.h\"\r\n#include \"sys/ipc.h\"\r\n#include \"sys/sem.h\"\r\n#include \"sys/shm.h\"\r\n\r\n//semun 共用体\r\nunion semun\r\n{\r\n	int val;\r\n	struct semid_ds *buf;	//一个由内核维护的记录信号量属性信息的结构体 \r\n	ushort *array;\r\n};\r\n\r\n\r\nint semid;//信号量ID\r\nint shmid;//共享内存ID\r\nchar *shm_virtualaddr;  //共享内存关联到进程后的虚拟地址\r\n\r\n// P操作，获取信号量，-1\r\nvoid p(int semid)\r\n{\r\n	struct sembuf buf = {0, -1, 0};\r\n	//int semop(int semid, struct sembuf *sops, unsigned nops) ;\r\n	semop(semid, &buf, 1);	//改变信号量的值\r\n}\r\n\r\n// V操作，释放信号量，+1\r\nvoid v(int semid)\r\n{\r\n	struct sembuf buf = {0, 1, 0};\r\n	semop(semid, &buf, 1);\r\n}\r\n\r\nvoid sigusr1_handler(int n)\r\n{\r\n	printf(\"count = %d, total = %d\\n\", *(int *)shm_virtualaddr, *(int *)(shm_virtualaddr+4));  //打印进程编号（不是进程ID）和随机数和\r\n	\r\n	//删除信号量\r\n	if(semctl(semid, IPC_RMID, 0) == -1)  \r\n		printf(\"remove semaphore fail\\n\");\r\n	else\r\n		printf(\"remove semaphore ok\\n\");\r\n	\r\n	shmdt(shm_virtualaddr);  //解除共享内存的关联\r\n\r\n	//删除共享内存\r\n	if(shmctl(shmid, IPC_RMID, 0) == -1)  \r\n		printf(\"remove shared-memory fail\\n\");\r\n	else\r\n		printf(\"remove shared-memory ok\\n\");\r\n\r\n	exit(0);\r\n}\r\n\r\nint main()\r\n{\r\n	signal(SIGUSR1, sigusr1_handler);  //用户定义的信号，用于捕获 SIGUSR1 信号执行处理函数 sigusr1_handler\r\n\r\n	//int semget(key_t key,int nsems,int semflg)\r\n	//key：所创建或打开的信号量集合的键，nsems：创建的信号量集合中信号量的个数，semflg：调用函数的操作类型，也可用于设置信号量集合的访问权限\r\n	//成功：返回信号量ID，失败：-1\r\n	semid = semget(IPC_PRIVATE, 1, 0666);	//创建并初始化信号量\r\n\r\n	if(semid == -1)	//信号量创建失败\r\n	{\r\n		printf(\"create semaphore fail\\n\");\r\n		return 0;\r\n	}\r\n	else{	 //返回信号量ID\r\n		printf(\"create semaphore ok\\n\");\r\n	}\r\n\r\n	//semun 共用体\r\n	union semun x;\r\n	x.val = 1;  //信号量初值应为多少？为1\r\n\r\n	//int semctl(int semid, int semnum, int cmd, [union semun arg]) ;\r\n	//semid：信号量集合，semnum：用于指明某个特定信号量，cmd：表示调用该函数希望执行的命令，arg：是一个 semun 共用体，\r\n	semctl(semid, 0, SETVAL, x);	//初始化信号量为 1\r\n	\r\n	//int shmget(key_t key, int size, int flag);\r\n	//key：表示所创建或打开的共享内存的键，size：表示共享内存区域的大小，flag：表示函数的操作类型，也可用于设置共享内存的访问权限\r\n	//若成功则为共享内存ID，若出错则为 -1\r\n	shmid = shmget(IPC_PRIVATE, 8, 0666);  //创建并关联到共享内存，共享内存一共 8 字节，前 4 字节存放 count，后 4 字节存放 total\r\n	if(shmid == -1)	\r\n	{\r\n		printf(\"create shared-memory fail\\n\");\r\n		return 0;\r\n	}\r\n	else{	//返回共享内存ID\r\n		printf(\"create shared-memory ok\\n\");\r\n	}\r\n\r\n	//void *shmat(int shmid, void *addr, int flag) ;\r\n	//shmid：表示要附加的共享内存段的ID，addr：虚拟地址，flag：用于表示函数的操作方式\r\n	//成功则为指向共享内存段的指针，若出错则为-1\r\n	shm_virtualaddr = shmat(shmid, 0, 0);//共享内存的附加，地址映射，addr 为 0，此共享内存段附加到由内核选择的第一个可用地址上\r\n\r\n	*(int *)shm_virtualaddr = 0;  //初始化进程编号，将指针转成int*，然后取该指针指向地址的值\r\n	*(int *)(shm_virtualaddr + 4) = 0;  //初始化随机数和\r\n\r\n	//flag 是否是子进程\r\n	char is_child = 0;\r\n	int i;\r\n	//循环创建 10 个进程\r\n	for(i=0; i<10; i++)\r\n	{\r\n		pid_t pid = fork(); \r\n		if(pid == 0)	//子进程\r\n		{\r\n			is_child = 1;  //设置子进程中 is_child 为 1\r\n			break;  //退出循环\r\n		}\r\n	}\r\n\r\n	//子进程\r\n	if(is_child)\r\n	{\r\n		p(semid);  // P操作，获取信号量（-1）\r\n\r\n		srand(time(NULL) + i);	//设置随机种子数\r\n		int num = rand()%10;	//取 0-9 随机数\r\n\r\n		(*(int *)shm_virtualaddr)++;  //进程编号自增\r\n		*(int *)(shm_virtualaddr + 4) += num;  //随机数相加\r\n\r\n		printf(\"child%d: %d\\n\", i, num);\r\n\r\n		v(semid);  //V操作，释放信号量（+1）\r\n\r\n		if(*(int *)shm_virtualaddr == 10)  //if(i==10)最后一个子进程，善后操作\r\n			kill(getppid(), SIGUSR1);  //向父进程发送 SIGUSER1 信号 \r\n	}\r\n	else\r\n	{\r\n		while(1)\r\n			pause();//挂起，等待信号唤醒\r\n	}\r\n\r\n	return 0;\r\n}\r\n/*========================================================================\r\ncreate semaphore ok\r\ncreate shared-memory ok\r\nchild0: 8\r\nchild1: 8\r\nchild5: 9\r\nchild4: 0\r\nchild6: 2\r\nchild3: 9\r\nchild7: 6\r\nchild8: 4\r\nchild9: 1\r\nchild2: 9\r\ncount = 10, total = 56\r\nremove semaphore ok\r\nremove shared-memory ok\r\n========================================================================*/\r\n```\r\n## socket 编程接口\r\n### 套接口概念\r\n套接口实际就是网络进程的 PID（Process ID）。\r\n\r\n网络通信，归根到底就是进程间的通信。套接口的描述符称为套接字，即 socket。有的资料中也叫套接口句柄。\r\n### 阻塞模式和非阻塞模式（同步和异步）\r\n阻塞模式：指调用了套接字的读、写函数后，函数不会立即返回，线程此时被置为等待状态，直到读、写操作完成为止。\r\n\r\n非阻塞模式：指调用了套接字的读、写函数后，函数立即返回，不用等到读、写操作完成。\r\n\r\n无论在 Windows 中还是 UNIX/LINUX 中，套接字被创建后默认都是阻塞模式的。\r\n\r\n### getsockname/getpeername\r\ngetsockname 函数：用于获取与某个套接字关联的本地协议地址\r\ngetpeername 函数：用于获取与某个套接字关联的外地协议地址\r\n*函数定义*\r\n```\r\n#include<sys/socket.h>\r\nint getsockname(int sockfd, struct sockaddr *localaddr, socklen_t *addrlen);\r\nint getpeername(int sockfd, struct sockaddr *peeraddr, socklen_t *addrlen);\r\n```\r\n\r\n### 字节序转换\r\n计算机在内存中的数据存储方式有两种：一种是小端字节序，即内存低地址存储数据低字节，高地址存储数据高字节；另一种是大端字节序，即内存低地址存储数据高字节，而高地址存储数据低字节。\r\n\r\n网络字节序使用的是大端字节序，而主机字节序可能是小端字节序，也可能是大端字节序。所有套接字函数中涉及 IP 地址和端口号时都用网络字节序，因此要用到主机字节序和网络字节序之间相互转换功能的函数。\r\n\r\n#### 返回网络字节序 htons/htonl\r\n`u_short htons(u_short hostshort);`\r\n\r\n`u_long htonl(u_long hostlong);`\r\n\r\n#### 返回主机字节序 ntohs/ntohl\r\n`u_short ntohs(u_short netshort);`\r\n\r\n`u_long ntohl(u_long netlong);`\r\n\r\n一般情况下，使用 htons 和 ntohs 转换 端口号，使用 htonl 和 ntohl 转换 IP 地址。\r\n### 地址转换函数\r\n在 TCP/IP 网络上，使用 ASCII 地址，即使用以“．”隔开的四个十进制的数表示。\r\n在套接口地址中则是使用 32 位的网络字节序的二进制数值。\r\n要实现两者之间的转换，就要用到以下两个函数：\r\n\r\n`unsigned long inet_addr(const char FAR* cp);`\r\n\r\n成功：返回 32 位二进制的网络字节序地址\r\n出错：返回 INADDR_NONE。\r\n\r\n`char FAR* inet_ntoa(struct in_addr in);`\r\n\r\n成功：返回字符串的指针\r\n失败：返回 NULL\r\n\r\n### 流套接字编程模型\r\n服务器端：创建套接字——将本地地址绑定到套接字——进入监听模式并准备接受连接。\r\n客户端：创建套接字——请求连接。\r\n\r\n双方建立连接后就可以开始数据通信了，双方都可以进行数据的发送和接收。\r\n\r\n最后，通信完毕，任意一方都可关闭套接字。\r\n### 数据报套接字编程模型\r\n服务器端：创建套接字——将本地地址绑定到套接字——直接进行数据的接收。\r\n客户端：创建套接字——直接进行数据的发送。\r\n\r\n通信完毕，任意一方都可关闭套接字。\r\n\r\n### sockaddr 和 sockaddr_in 结构体\r\n通常，把网络应用程序中所用到的网络地址和端口号信息放在一个结构体中，这就是**套接口地址结构体**。\r\n\r\n每个协议族都定义了它自己的套接口地址结构体，套接口地址结构体都以 `sockaddr_` 开头，并以每个协议族名中的两个字母作为结尾，例如`sockaddr_in`表示 IPv4 协议族的套接口地址结构体。\r\n\r\n除此之外，还有一个通用套接口地址结构体，它以`sockaddr` 表示。通用套接口地址结构体 sockaddr 与具体协议族无关，形式为：\r\n```\r\nstruct sockaddr\r\n{\r\n	unit8_t	sa_len;\r\n	sa_family_t	sa_family;	//协议族名\r\n	char	sa_data[14];\r\n}\r\n```\r\n\r\nIPv4 套接口地址结构体 `sockaddr_in` 的形式如下：\r\n```\r\nstruct sockaddr_in\r\n{\r\n	unit8	sin_len;	//数据长度成员，固定长度为16字节，一般不用设置它；\r\n	sa_family_t	sin_family;	//协议族名，IPv4 为 AF_INET；\r\n	in_port_t sin_port;	//TCP 或 UDP 协议的端口号，16 位端口号，网络字节序\r\n	struct in_addr sin_addr;\r\n	char	sin_zero[8];	//备用的域名，未使用\r\n};\r\nstruct in_addr\r\n{\r\n	in_addr_t s_addr;	//32 位 IP 地址，网络字节序\r\n};\r\n```\r\n在对套接口进行操作的函数中，如果需要套接口地址参数，都是以通用套接口地址结构体表示的，例如连接函数 connect：\r\n\r\n`int connect(int sockfd,const struct sockaddr *serv_addr,int addrlen);`\r\n\r\n因此需要将**指向特定协议的套接口地址结构体的指针**转换成**指向通用套接口地址结构体的指针**，即使用`(struct sockaddr *)`进行类型转换。否则编译时会出现警告信息。\r\n\r\n### 套接口函数\r\n#### 总结步骤\r\n>一个服务器进程中系统调用的顺序通常如下\r\n\r\nsocket();\r\nbind();\r\nlisten();\r\naccept();\r\n>而客户端进程的调用则比较简单\r\n\r\nsocket();\r\nconnect();\r\n#### 创建套接字 socket\r\n\r\n`int socket(int family,int type,int protocol);`\r\n\r\nfamily：指明协议族\r\ntype：指明套接口类型\r\nprotocol：一般为 0\r\n\r\n成功：返回值为非负描述字\r\n失败：返回值为负值\r\n\r\n>参数 family 的取值范围\r\n\r\nAF_LOCAL：UNIX 协议族\r\nAF_ROUTE：路由套接口\r\nAF_INET：IPv4 协议\r\nAF_INET6：IPV6 协议\r\nAF_KEY：密钥套接口\r\n\r\n>参数 type 的取值范围\r\n\r\nSOCK_STREAM：TCP 套接口\r\nSOCK_DGRAM：UDP 套接口\r\nSOCK_PACKET：支持数据链路访问\r\nSOCK_RAM：原始套接口\r\n\r\n#### 绑定套接口 bind\r\n`int bind(int sockfd,const struct sockaddr *myaddr,socklen_t addrlen);`\r\n\r\nsockfd：套接字\r\nmyaddr：是一个指向特定协议地址结构体的指针\r\naddrlen：是地址结构体的长度。\r\n\r\n成功：返回 0\r\n失败：返回 -1\r\n\r\n这个调用不是必须执行的。尤其是在客户端，很少使用这个系统调用。用 socket() 得到套接口后可以直接调用函数 connect() 或者 listen()，这时内核会自动给套接口分配一个地址和端口号，这是常用的方式。\r\n\r\n只有在希望进程使用某个特定的网络地址和端口时，才会使用函数 bind()。\r\n\r\n#### 连接 connect\r\n`int connect(int sockfd,const struct sockaddr *serv_addr,int addrlen);`\r\n\r\nsockfd：套接口描述字\r\nserv_addr：目的端口和IP地址的套接口\r\naddrlen：目的套接口的长度\r\n\r\n成功：返回 0\r\n失败：返回 -l\r\n\r\n#### 监听 listen\r\n`int listen(int sockfd,int backlog);`\r\n\r\nsockfd：套接字\r\nbacklog：规定内核为此套接口排队的最大选择个数\r\n\r\n成功：返回 0\r\n失败：返回 -1\r\n\r\n#### 接受连接 accept (阻塞函数)\r\n`int accept(int sockfd,struct sockaddr *cliaddr,socklen_t *addrlen);`\r\n\r\ncliaddr：远程客户的套接口地址\r\naddrlen：套接口地址长度\r\nsockfd：监听套接字，它由函数 socket() 生成\r\n如果不需要客户的套接口地址，可将第二个和第三个参数设置为空指针\r\n\r\n成功：返回非负描述字，返回值即为新建立的连接的套接口描述字(客户套接字)\r\n失败：返回 -1\r\n\r\n>客户套接和监听套接字的区别：\r\n\r\n监听套接字只有一个，而且一直存在；而每一个连接都有自己的客户套接字，专用于服务器与该连接对应的远程客户进行通信。当连接断开时就关闭该客户套接字。\r\n\r\n>accept()是一个阻塞函数\r\n\r\n即调用它的线程将被操作系统置于阻塞状态，直到有远程客户向该IP地址的该端口发起connect()调用为止。\r\n\r\n#### 关闭 close\r\n`int close(int sockfd);`\r\n\r\n成功：返回 0\r\n失败：返回 -1\r\n\r\n#### 发送 send/sendto (阻塞函数)\r\n面向连接的套接口（TCP）:\r\n\r\n`int send(int sockfd,const void *buffer,int length,int flags);`\r\n\r\n无连接的套接口（UDP）:\r\n\r\n`int sendto(int sockfd,const void *message,int length,int flags,const struct sock_addr *dest_addr,int dest_len);`\r\n\r\n#### 接收 recv/recvfrom (阻塞函数)\r\n面向连接的套接口（TCP）:\r\n\r\n`int recv(int sockfd,void *buffer,int length,int flags);`\r\n\r\n无连接的套接口（UDP）:\r\n\r\n`int recvfrom(int sockfd,void *message,int length,int flags,const struct sock_addr *send_addr,int *send_len);`\r\n\r\n因为发送和接收函数进行一次传输的字节数可能比要求的数量少，所以需要多次调用这些函数以便发送或接收指定的字节数。所以，套**接口的数据传输通常都由一个循环结构来实现。**\r\n\r\n>Mysend 方法\r\n\r\n```\r\nint Mysend(SOCKET s, const char *buf, int len, int flags)\r\n{\r\n	if(buf == NULL)\r\n		return 0;\r\n	int iSendCount = 0:\r\n	int iLength = len:\r\n	while (iLength > 0)\r\n	{\r\n		int n = send(s, buf* iSendCount, iLength, flags);\r\n		if(n == SOCKET_ERROR)\r\n			return 0:\r\n		iLength -= n:\r\n		iSendCount += n:\r\n	}\r\n	return iSendCount\r\n}\r\n```\r\n\r\n>Myrecv 方法\r\n\r\n```\r\nint Myrecv(SOCKET s, char *buf, int len, int flags)\r\n{\r\n	if(buf == NULL)\r\n		return 0;\r\n	int iRecvCount = 0;\r\n	int iLength = len;\r\n	while (iLength > 0)\r\n	{\r\n		int nRev = recv(s, buf + iRecvCount, iLength, flags);\r\n		if(nReU == SOCKET_ERROR)\r\n			return 0:\r\n		iLength -= nRev;\r\n		iRecuCount += nRev;\r\n	}\r\n	return iRecvCount;\r\n}\r\n```\r\n## 多线程\r\n### 线程函数的原型\r\n#### Windows\r\n`DWOED ThreadProc(LPVOID lpParameter);`\r\n### 创建新线程\r\n#### Windows - CreateThread\r\nWin32 API 函数 ：CreateThread()\r\n```\r\nHANDLE CreateThread(\r\n	LPSECURITY_ATTRIBUTES lpsa,\r\n	DWORD cbStack,\r\n	LPTHREAD_START_ROUTINE lpstartAddr, //指向线程函数的指针，那个函数将做为一个新的线程而运行\r\n	LPVOID lpvThreadParam,	//传给线程函数的参数\r\n	DWORD fdwCreate,\r\n	LPDWORD lpIDThread\r\n);\r\n```\r\n#### Unix - pthread_create\r\n```\r\n#include  <pthread.h>\r\nint  pthread_create（\r\n	pthread_t  *thread,	//待传入线程的线程ID指针\r\n	pthread_attr_t  *attr,	//带创建线程的属性，通常为NULL，表示使用默认属性\r\n	void  *（*start_routine）（void  *）,	//函数指针，待创建线程的执行函数\r\n	void  *arg	//要传给线程执行函数的参数\r\n）\r\n```\r\n### 一个线程等待另一个线程结束的方法\r\n#### Unix - pthread_join\r\n```\r\n#include  <pthread.h>\r\nint pthread_join(\r\n	pthread_t thread,\r\n	void **retval\r\n);\r\n```\r\n### Linux 中编译多线程程序的方法\r\n由于 pthread 库不是 Linux 系统默认的库，所以多线程的程序在编译时需要告诉编译器将这个库链接进来，编译命令应这样输入：`gcc xxx.c -lpthread`\r\n\r\n### 线程的并发（同步）问题\r\n属于同一个进程的所有线程可以共享全局数据和主线程中尚在生存期内的数据，如果没有并发控制，就会产生异常。\r\n\r\n并发控制的方法有多种，只要求掌握使用信号量来进行并发控制。\r\n\r\nWindows 中主要函数有：\r\n```\r\nCreateSemaphore()\r\nWaitForSingleObject()\r\nReleaseSemaphore()\r\nCloseHandle()\r\n```\r\n### 实验：结合网络编程和多线程技术实现父进程产生10个子进程，并打印出子进程产生的随机数的和，要求能跨平台执行(Windows,Linux)\r\n```\r\n/*------------------------------------------------------------------------------------------------\r\n任务：\r\n    10个子进程求和问题。用套接字进行父子进程间数据的通信。\r\n思路：\r\n    父进程做服务器，完成网络的初始化工作后就进入等待连接状态。子进程做客户端，连接到服务器后就发送自己的随机数。父进程接收到随机数后进行累加。要注意的是，由于accept()和recv()都是阻塞函数，所以服务器要用单独的线程来调用这两个函数，所以服务器将产生10个线程来分别为10个子进程服务。另外，10 个线程都要修改全局变量total，所以要进行并发控制。\r\n-------------------------------------------------------------------------------*/\r\n\r\n//=======================================================================================\r\n//    跨平台程序设计，针对平台打开对应的头文件，根据宏 WINDOWS_VERSION 进行判断 \r\n//=======================================================================================\r\n\r\n///*------------------------ Windows 的头文件 ----------------------------\r\n#include \"stdafx.h\"\r\n#include <stdio.h>\r\n#include <time.h>\r\n#include <Winsock2.h>\r\n#pragma comment(lib, \"ws2_32.lib\")\r\n#define WINDOWS_VERSION //宏定义，表示当前为 windows 版本\r\n//----------------------------------------------------------------------*/\r\n\r\n/*------------------------- Linux 的头文件 -----------------------------\r\n#include <sys/types.h>\r\n#include <sys/ipc.h>\r\n#include <sys/sem.h>\r\n#include <pthread.h>\r\n#include <sys/socket.h>\r\n#include <netdb.h> \r\n#include <netinet/in.h> \r\n#include <arpa/inet.h>  //inet_ntoa()函数的头文件\r\n-----------------------------------------------------------------------*/\r\n\r\n//=========================================\r\n//            	全局变量\r\n//=========================================\r\n\r\n//-------------------------- 判断平台 -------------------------\r\n#ifdef WINDOWS_VERSION //windows 平台\r\n	HANDLE  g_hSem;    //信号量的句柄\r\n	HANDLE  g_hThread[10];  //10个线程的句柄\r\n#else //Linux 平台\r\n	union send_num_to_parent //共用体，作为初始化信号量的值传入 semctl 函数\r\n	{\r\n		int val;\r\n		struct semid_ds *buf;\r\n		ushort *array;\r\n	};\r\n	int   semid;    //信号量的ID\r\n	pthread_t thread_id[10];  //10个线程的ID\r\n#endif\r\n	int  total;      //和\r\n	int  listen_sock;    //用于监听的套接字\r\n	short port;      //端口\r\n//----------------------------------------------------\r\n\r\n/**\r\n * 发送\r\n */\r\nint mysend(int sock, char *buf, int len, int flags)\r\n{\r\n	int sent = 0, remain = len;\r\n	while(remain > 0)\r\n	{\r\n		//int send(int sockfd,const void *buffer,int length,int flags);\r\n		int n = send(sock, buf + sent, remain, flags);	//返回实际发送的字节数\r\n		if(n == -1)  //出错的最大可能是对方关闭了套接字\r\n			break;\r\n		remain -= n;\r\n		sent += n;\r\n	}\r\n	return sent;\r\n}\r\n\r\n/**\r\n * 接收一个整数(阻塞函数)\r\n */\r\nint myrecv(int sock, char *buf, int len, int flags)\r\n{\r\n	int received = 0, remain = len;\r\n	while(remain > 0)\r\n	{\r\n		//int recv(int sockfd,void *buffer,int length,int flags);\r\n		//返回：0是对方调用close()，-1是对方直接退出\r\n		int n = recv(sock, buf + received, remain, flags);\r\n		if(n == 0 || n == -1)  \r\n			break;\r\n		remain -= n;\r\n		received += n;\r\n	}\r\n	return received;\r\n}\r\n\r\n/**\r\n * Linux：子进程(客户端)发送随机数给父进程(服务端)\r\n * \r\n * @param num 进程编号\r\n */\r\nvoid send_num_to_parent(int num)\r\n{\r\n	int sock = socket(AF_INET, SOCK_STREAM, 0);\r\n\r\n	//下面4行进行地址结构体的赋值。注意IP地址和端口号都要转换成网络字节序\r\n	struct sockaddr_in server_addr;\r\n	server_addr.sin_family  = AF_INET;\r\n	server_addr.sin_addr.s_addr = inet_addr(\"127.0.0.1\");  //将字符串表示的IP地址转换成网络字节序整数\r\n	server_addr.sin_port  = htons(port);\r\n \r\n 	//int connect(int sockfd,const struct sockaddr *serv_addr,int addrlen);\r\n 	//sockfd：套接口描述字，serv_addr：目的端口和IP地址的套接口，addrlen：目的套接口的长度\r\n	connect(sock, (struct sockaddr *)&server_addr, sizeof(struct sockaddr));  //connect()是阻塞函数，直到3次握手完成为止，或是超时为止\r\n\r\n	mysend(sock, (char *)&num, 4, 0);\r\n\r\n#ifdef WINDOWS_VERSION\r\n	closesocket(sock);\r\n#else\r\n	close(sock);\r\n#endif\r\n}\r\n\r\n#ifndef WINDOWS_VERSION\r\nvoid p(int semid)\r\n{\r\n	struct sembuf buf = {0, -1, 0};\r\n	semop(semid, &buf, 1);\r\n}\r\n\r\nvoid v(int semid)\r\n{\r\n	struct sembuf buf = {0, 1, 0};\r\n	semop(semid, &buf, 1);\r\n}\r\n#endif\r\n\r\n\r\n#ifdef WINDOWS_VERSION\r\n	DWORD WINAPI thread_function(void *arg) \r\n#else\r\n	/**\r\n	 * 线程函数\r\n	 * 处理 accept，并创建下一个线程\r\n	 */\r\n	void *thread_function(void *arg)\r\n#endif\r\n	{ \r\n		int index = (int)arg;	//序号\r\n\r\n		//准备接受连接请求\r\n		struct sockaddr_in peer_addr;//套接口地址结构体\r\n		int size = sizeof(struct sockaddr_in);\r\n		//int accept(int sockfd,struct sockaddr *cliaddr,socklen_t *addrlen);\r\n		//sockfd：监听套接字，它由函数 socket() 生成，cliaddr：远程客户的套接口地址，addrlen：套接口地址长度\r\n		//成功：返回非负描述字，返回值即为新建立的连接的套接口描述字(客户套接字)，失败：返回 -1\r\n		int comm_sock = accept(listen_sock, (struct sockaddr *)&peer_addr, &size);  //accept()是阻塞函数，直到有客户端向本地址发起连接请求。注意返回值就是对应客户端的套接字，将来的数据收发都在这个套接字上进行\r\n		printf(\"parent : 线程%d接受一个连接请求\\n\", index);\r\n \r\n		//accept 完毕，创建下一个线程\r\n		if(index < 9)\r\n#ifdef WINDOWS_VERSION\r\n			g_hThread[index + 1] = CreateThread(NULL, 0, (LPTHREAD_START_ROUTINE)thread_function, (void *)(index + 1), 0, NULL);\r\n#else\r\n			pthread_create(&thread_id[index + 1], NULL, (void *)thread_function, (void *)(index + 1));\r\n#endif\r\n\r\n		//自己，服务端\r\n		int num;\r\n		myrecv(comm_sock, (char *)&num, 4, 0);	//接收一个整数\r\n		printf(\"parent : 线程%d接收到一个整数%d\\n\", index, num);\r\n\r\n//累加到全局变量。由于 10 个线程可能形成竞争，所以必须进行并发控制\r\n#ifdef WINDOWS_VERSION\r\n		WaitForSingleObject(g_hSem, INFINITE);//p操作\r\n		total += num;\r\n		ReleaseSemaphore(g_hSem, 1, NULL);//v操作\r\n		closesocket(comm_sock);\r\n		// ExitThread(0);\r\n		return 0;//线程结束\r\n#else\r\n		p(semid);\r\n		total += num;\r\n		v(semid);\r\n		//int close(int sockfd);\r\n		//成功：返回 0，失败：返回 -1\r\n		close(comm_sock);\r\n		pthread_exit(NULL);\r\n#endif\r\n	}\r\n\r\n/**\r\n * 父进程(服务器)\r\n * 初始化网络环境，完成服务器的准备工作 [accept 函数会阻塞线程，所以此处不处理，之后新开线程处理]\r\n */\r\nvoid init_socket()\r\n{\r\n	//int socket(int family,int type,int protocol);\r\n	//family：指明协议族-IPv4 协议，type：指明套接口类型-TCP 套接口，protocol：一般为 0\r\n	//成功：返回值为非负描述字，失败：返回值为负值\r\n	listen_sock = socket(AF_INET, SOCK_STREAM, 0);	//创建流式套接字，用于监听子进程发出的连接请求\r\n\r\n	//下面 4 行进行地址结构体的赋值。注意 IP 地址和端口号都要转换成网络字节序\r\n	struct sockaddr_in server_addr;\r\n	server_addr.sin_family  = AF_INET; //IP_V4\r\n	//htonl：将主机的无符号长整形数转换为网络字节顺序\r\n	server_addr.sin_addr.s_addr = htonl(INADDR_ANY);  //INADDR_ANY 表示请操作系统自动选一个可用的本机 IP\r\n\r\n	//随机产生一个端口号，但要大于1024才行\r\n	srand(time(NULL));  \r\n	port = rand()%10000;\r\n	while(port < 1024)\r\n		port = rand()%10000;\r\n\r\n	//htons：将主机的无符号短整形数转换为网络字节顺序\r\n	server_addr.sin_port = htons(port);\r\n\r\n	//int bind(int sockfd,const struct sockaddr *myaddr,socklen_t addrlen);\r\n	//sockfd：套接字，myaddr：是一个指向特定协议地址结构体的指针，addrlen：是地址结构体的长度。\r\n	//成功：返回 0，失败：返回 -1\r\n	bind(listen_sock, (struct sockaddr *)&server_addr, sizeof(struct sockaddr));//将套接字绑定到指定的地址 //16\r\n\r\n	//int listen(int sockfd,int backlog);\r\n	//sockfd：套接字，backlog：规定内核为此套接口排队的最大选择个数\r\n	//成功：返回 0，失败：返回 -1\r\n	listen(listen_sock, 5);//将套接字置于监听状态\r\n\r\n	printf(\"parent : 服务器开始监听连接请求\\n\");\r\n}\r\n\r\n/**\r\n * 子线程(客户端)：生成随机数，发给父进程(服务器)	\r\n * @param i 线程编号	\r\n */\r\nvoid do_child(int i)\r\n{\r\n	srand(time(NULL) + i);\r\n	int num = rand()%10;\r\n\r\n	printf(\"child%d: %d\\n\", i, num);\r\n\r\n	send_num_to_parent(num);\r\n}\r\n\r\n/**\r\n * 主函数\r\n *\r\n * @param  argc 命令行输入的参数个数\r\n * @param  argv 字符二维数组\r\n */\r\nint main(int argc, char* argv[])\r\n{\r\n//下面 4 行：进行 Windows 网络环境的初始化。UNIX 中不需要，因为 UNIX 内置了 TCP/IP \r\n#ifdef WINDOWS_VERSION\r\n	WORD wVersionRequested;\r\n	WSADATA wsaData;\r\n	wVersionRequested = MAKEWORD(2, 2);\r\n	WSAStartup(wVersionRequested, &wsaData);\r\n#endif\r\n\r\n	// Windows 中的父进程，Linux 中的父、子进程\r\n	if(argc == 1)  \r\n	{\r\n		total = 0;	//初始化 total 为 0 \r\n\r\n//创建并初始化信号量，用于控制 10 个线程对 total 的并发修改\r\n#ifdef WINDOWS_VERSION\r\n		//1 个信号量，初始为 1\r\n		g_hSem = CreateSemaphore(NULL, 1, 1, NULL);\r\n#else\r\n		semid = semget(IPC_PRIVATE, 1, 0);	//创建信号量\r\n		union semun x;\r\n		x.val = 1;\r\n		semctl(semid, 0, SETVAL, x);	//信号量赋初值 1\r\n#endif\r\n  \r\n		//初始化网络环境，完成服务器的准备工作\r\n		init_socket();\r\n\r\n		//创建用于接受连接请求的第一个线程，将来由第一个去创建第二个，第二个创建第三个，以此类推。[任何时刻只能有一个线程在调用 accept ]\r\n		//要保存线程的句柄或ID，因为后面主线程要等待 10 个子线程结束。\r\n#ifdef WINDOWS_VERSION	//线程函数原型不同，需区分平台\r\n		//3p：指向线程函数的指针，4p：线程函数的参数(需强转为空指针)，[告诉线程你是第几个线程]\r\n		g_hThread[0] = CreateThread(NULL, 0, (LPTHREAD_START_ROUTINE)thread_function, (void *)0, 0, NULL);\r\n#else\r\n		//int pthread_create(pthread_t  *thread,pthread_attr_t  *attr,void  *(*start_routine)(void  *),void  *arg)\r\n		//	pthread_t  *thread,	//待传入线程的线程ID指针\r\n		//	pthread_attr_t  *attr,	//带创建线程的属性，通常为NULL，表示使用默认属性\r\n		//	void  *（*start_routine）（void  *）,	//函数指针，待创建线程的执行函数\r\n		//	void  *arg	//要传给线程执行函数的参数\r\n		pthread_create(&thread_id[0], NULL, (void *)thread_function, (void *)0);\r\n#endif\r\n\r\n//服务器已准备就绪(线程，信号量)，可以创建 10 个子进程了\r\n#ifdef WINDOWS_VERSION\r\n		STARTUPINFO si;\r\n		PROCESS_INFORMATION pi;\r\n		int i;\r\n		for(i=0; i<10; i++)\r\n		{\r\n			//处理命令行字符串\r\n			char *p = GetCommandLine();\r\n			char strCmdLine[256];\r\n			strcpy(strCmdLine, p);\r\n			sprintf(strCmdLine + strlen(strCmdLine), \" -%d -%d\", port, i);\r\n\r\n			ZeroMemory( &si, sizeof(si) );\r\n			si.cb = sizeof(si);\r\n			ZeroMemory( &pi, sizeof(pi) );\r\n			CreateProcess(NULL, strCmdLine, NULL, NULL, false, 0, NULL, NULL, &si, &pi);\r\n		}\r\n		//等待 10 个线程结束\r\n		for(i=0; i<10; i++)\r\n			WaitForSingleObject(g_hThread[i], INFINITE);\r\n#else\r\n		char is_child = 0;\r\n		int i;\r\n		for(i=0; i<10; i++)\r\n		{\r\n			pid_t pid = fork();\r\n			if(pid == 0)\r\n			{\r\n				is_child = 1;\r\n				break;\r\n			}\r\n		}\r\n		if(is_child)\r\n		{\r\n			do_child(i);\r\n			return 0;\r\n		}\r\n		else\r\n		{\r\n			//等待 10 个线程结束\r\n			for(i=0; i<10; i++)\r\n				pthread_join(thread_id[i], NULL);\r\n		}\r\n#endif\r\n		printf(\"parent : all threads ended, total=%d\\n\", total);\r\n\r\n//删除信号量\r\n#ifdef WINDOWS_VERSION\r\n		CloseHandle(g_hSem);\r\n#else\r\n		semctl(semid, IPC_RMID, 0);\r\n#endif\r\n	}\r\n	else if(argc == 3)  //Windows中的子进程，命令行格式为:filename -端口号 -[0-9] \r\n	{\r\n#ifdef WINDOWS_VERSION\r\n		char *p = GetCommandLine();\r\n		//下面 2 行从命令行中解析出端口号\r\n		p = strchr(p, \'-\');\r\n		sscanf(p+1, \"%d\", &port);\r\n\r\n		//下面 3 行从命令行中解析出子进程的序号\r\n		p = strchr(p+1, \'-\');\r\n		int index;\r\n		sscanf(p+1, \"%d\", &index);\r\n		do_child(index);\r\n#endif\r\n	}\r\n else\r\n	printf(\"启动命令不正确\\n\");\r\n	return 0;\r\n}\r\n```\r\n---\r\nparent : 服务器开始监听连接请求\r\nchild0: 1\r\nparent : 线程0接受一个连接请求\r\nparent : 线程0接收到一个整数1\r\nchild1: 4\r\nparent : 线程1接受一个连接请求\r\nparent : 线程1接收到一个整数4\r\nchild2: 7\r\nparent : 线程2接受一个连接请求\r\nparent : 线程2接收到一个整数7\r\nchild3: 0\r\nparent : 线程3接受一个连接请求\r\nparent : 线程3接收到一个整数0\r\nchild5: 7\r\nchild4: 4\r\nparent : 线程4接受一个连接请求\r\nchild6: 0\r\nchild7: 3\r\nchild8: 7\r\nparent : 线程4接收到一个整数7\r\nchild9: 0\r\nparent : 线程5接受一个连接请求\r\nparent : 线程5接收到一个整数4\r\nparent : 线程6接受一个连接请求\r\nparent : 线程6接收到一个整数0\r\nparent : 线程7接受一个连接请求\r\nparent : 线程7接收到一个整数3\r\nparent : 线程8接受一个连接请求\r\nparent : 线程8接收到一个整数7\r\nparent : 线程9接受一个连接请求\r\nparent : 线程9接收到一个整数0\r\nparent : all threads ended, total=33\r\n\r\n---\r\n\r\n\r\n\r\n\r\n\r\n\r\n',`groups`='Linux',`is_show`=1,`publish`=1,`summary`='Linux 编程基础，包含进程，信号，进程间通信，网络编程等基础知识'  WHERE  `id` = 212 [ RunTime:0.001915s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Linux' LIMIT 1 [ RunTime:0.001191s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=11  WHERE  `groups` = 'Linux' [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Linux' LIMIT 1 [ RunTime:0.000942s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=11  WHERE  `groups` = 'Linux' [ RunTime:0.000444s ]
+---------------------------------------------------------------
+[ 2018-11-12T22:25:43+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/212.html
+[ info ] qingrang.top/daily/admin/note/shownote/id/212.html [运行时间：0.059394s][吞吐率：16.84req/s] [内存消耗：2,062.16kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editNote/id/212',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416; PHPSESSID=pe91v2lpjnp3ftccd0qlg2pq87',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '212',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000606s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001370s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 212 LIMIT 1 [ RunTime:0.000684s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000861s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000334s ]
+---------------------------------------------------------------
+[ 2018-11-12T22:29:57+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/login/index.html
+[ info ] qingrang.top/daily/admin/login/index.html [运行时间：0.040703s][吞吐率：24.57req/s] [内存消耗：1,339.90kb] [文件加载：47]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /var/www/html/daily/application/admin/controller/Login.php ]
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-12T22:30:07+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/login/index.html
+[ info ] qingrang.top/daily/admin/login/index.html [运行时间：0.057136s][吞吐率：17.50req/s] [内存消耗：1,922.46kb] [文件加载：54]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '8',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'pwd' => 'shao',
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /var/www/html/daily/application/admin/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000524s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.001207s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000327s ]
+---------------------------------------------------------------
+[ 2018-11-12T22:30:08+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note
+[ info ] qingrang.top/daily/admin/note [运行时间：0.076026s][吞吐率：13.15req/s] [内存消耗：2,384.73kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416; PHPSESSID=k7jlgbe0vr5fik3chm5ebmuvq4',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/notelst.html [ array (
+  0 => 'stickList',
+  1 => 'hide',
+  2 => 'list',
+  3 => 'list_new',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+  10 => 'default_num',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000511s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001585s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal' ORDER BY id desc LIMIT 5 [ RunTime:0.000690s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001066s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000536s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000954s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.001079s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000237s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001135s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000666s ]
+---------------------------------------------------------------
+[ 2018-11-12T22:30:11+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/editnote/id/233.html
+[ info ] qingrang.top/daily/admin/note/editnote/id/233.html [运行时间：0.079941s][吞吐率：12.51req/s] [内存消耗：2,075.48kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'editnote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416; PHPSESSID=k7jlgbe0vr5fik3chm5ebmuvq4',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '233',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->editNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/editnote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000572s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.002019s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 233 LIMIT 1 [ RunTime:0.000779s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001454s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000321s ]
+---------------------------------------------------------------
+[ 2018-11-12T22:39:07+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/updatenote/id/233.html
+[ info ] qingrang.top/daily/admin/note/updatenote/id/233.html [运行时间：0.072158s][吞吐率：13.86req/s] [内存消耗：2,273.24kb] [文件加载：58]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'updatenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '85432',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/233.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416; PHPSESSID=k7jlgbe0vr5fik3chm5ebmuvq4',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'summary' => '',
+  'content' => '# 中国史纲
+[TOC]
+## 中国历史的时空坐标
+时间和空间加在一块,才是完整的历史。
+### 四个时间坐标点
+中国历史发生过几次重要的转型,这些转型推动着中国历史向前的发展。
+
+1.第一个转型,是**商周之变**,就是从商朝到周朝的转型。
+
+这次转型之后,我们开始有了“中国”这个概念,中华文明当中最初的普世主义理想开始出现了。
+
+2.第二个转型,**周秦之变**,就是从周朝到秦朝的转型。
+
+这次转型,让中原从分封割据的局面进入到大一统的局面,中国历史也开始超越于中原之上,中原与草原的相互塑造和对抗开始成为中国历史的大脉络。
+
+3.第三个转型,**唐宋之变**,就是从唐朝到宋朝的转型。
+
+这次转型,让中国的社会结构从豪族社会进入到平民社会,此后中国历史再无长期的分裂,大一统开始成为一个不可逆的历史过程。在先秦之后,中国的文化在宋朝迎来了又一次大爆发,有些西方学者甚至称这是中国的文艺复兴。这次文化爆发,不仅决定了此后将近一千年的中国文化气质,也决定了日本、朝鲜、越南等其他儒教国家的文化气质。
+
+4.第四个转型,就是**清朝末期开始的古今之变**,中国开始从古代社会向现代社会进行艰难转型。
+
+这个过程带来了一系列轰轰烈烈的历史过程,转型过程直到今天仍在继续,还未完成。
+
+### 五个空间坐标点
+草原、中原、海洋、西域、高原。
+
+这几个大的空间,彼此之间有着极为深刻的相互依赖相互塑造的关系,以至于脱离开一方就完全解释不了另一方,所以它们加在一块构成一个体系。
+
+## 中国的概念和中华文明的普世主义理想【商周】【中原】
+### 历史上第一次出现「中国」
+周朝的第二位君主周成王,兴建了东都洛阳城,当时有个叫做「何」的贵族,这人铸了一件青铜器纪念这个事儿,1963年这个青铜器在陕西宝鸡被发现,今天称其为「何尊」，「何尊」的底部铸了一百多个字,里面提到,周武王说要"宅兹中国”,就是说要“住在中国”,这是"中国"这个词的最早来源。
+
+什么叫中国？**达到了文明最高水准的地方,就是文明意义上的中心,古人就管这种地方叫做「中国」。**
+### 中华文明的普世主义理想：究竟天命是降于周人呢,还是天命降于周王
+商朝是由“商人"。他们认为天命降于商人。为了让天能够永远地保佑自己,商人会经常地进行大规模的祭祀活动,祭祀当中会大量用到活人做祭品。
+
+这些被献祭的人从哪来呢?
+
+从对外战争掠夺的羌人而来。所谓的羌人就是生活在商王朝西部的、除了商朝人以外的所有人。
+
+商人的这种天命观,肯定会受到羌人的抵抗。其中,周人是最主要的一支抵抗力量,他们逐渐组织了很多苦不堪言的羌人群体来反抗商朝，反抗的时候,在周人中间有过一个观念层面的争论,究竟天命是降于周人呢,还是天命降于周王?争论的结果是,天命降于周王。
+
+这个观念变化太重要了。初看上去,这似乎是把天命的载体变得狭隘了,实际上是把它变得普世了。
+
+为什么这么说呢?如果天命是降于周人,那就和此前降于商人的路数差不多,周人的岁月要想静好,就得时刻压制住所有不是周人的群体。这样的话,周人和商人征战,谁胜谁败就不好说了。因为,对其他羌人群体来说,打完这一仗,十有八九只不过换了个地方拿我们献祭,凭啥要跟你混啊?而**如果天命是降于周王,则周王便是天下的共主,他不仅仅要为周人主持正义,而是要为全天下人主持正义,这是一种真正的普世主义观念**。
+
+### 什么是封建社会
+推翻了商朝之后,周朝又是如何具体建立它的统治方式呢?那就是,分封制。周天子向下分封了他的大量亲戚和重臣,意图依靠他们形成的藩属诸侯国,来拱卫周王。这样一种政治统治形式就被称作“封建”,这种社会叫做封建社会。
+
+封建“这个词最初出自《左传》,里面有句话叫做“封建亲戚,以藩屏周”,就是说分封亲信出去建立诸侯国,作为周朝王室领地的屏障。**只有这种封土建邦、分封割据的状态,才叫做封建。**
+
+封建社会的一大特征是,最高统治者是没有权力干涉诸侯国内部事务的,诸侯们确实是最高统治者的封臣,但某种意义上也像是个合伙人,都有比较强的独立性。
+
+周朝的时候,诸侯都承认周天子是最高权威,但周天子并不能管诸侯国内部的事情。周朝在这个过程中建立了封建社会,但周天子又逐渐衰落了。在周天子衰落之后,历史的主角就变成了那些诸侯。诸侯们彼此不断竞争,最终终结了中国的封建社会。
+
+## 封建社会的终结【春秋末期、战国初期】【中原】
+到了西周后期,周天子的影响力越来越差,最终被迫迁都洛阳,中国历史进入到东周。
+
+东周又分成了舂秋战国两个时期,**春秋末期出现了一些重要的技术发展,它带来了新的经济和人力资源,打破了过去的社会均衡,封建社会当中的贵族秩序崩塌了，封建社会也在春秋战国时代走上末日。**
+
+### 战争的逻辑的变化
+春秋之前的的战争十分注重礼仪性(战争都是贵族在参与，这就导致了参与人数并不多，他们认为战争是一件高贵的事，他们的战争可能就是比谁的正步踢得好)。但到了春秋中后期,随着楚国(楚国是个土生政权,并不是周天子分封的诸侯国，它的文化和中原有很大区别,也不大在乎中原的礼仪之类的东西,在当时的中原诸侯看来它就是个蛮夷之邦。)的加入，战争变成以砍死人为目的了。也正是由于这个战争逻辑的变化,才把中国引向了大一统。
+
+### 两个技术变迁
+诸侯分封次级诸侯，随着次级诸侯势力的增大，诸侯和次级诸侯的关系同周天子和诸侯的关系一样。在春秋末期、战国初期,出现了两个重要的技术变迁,让诸侯力量的扩大有了可能。正是因为这两次技术变革,打破了君主和封臣之间的力量均衡,周厉王当初搞不定自己下级的事,现在诸侯可以做到了,也就是诸侯能够搞定这些次级诸侯。
+
+这两个技术变迁,一个是铁器和牛耕的农业生产技术,一个是竹简这种知识传播技术。
+
+>铁器和牛耕 - 农业生产技术
+
+铁器与牛耕的出现,提升了平民的劳动效率。过去,他们的耕种效率很低,只能在贵族控制的公田、又叫井田上种地,没有能力再去开垦自己的私田了;但是,铁器和牛耕让生产效率大大提升了,平民有余力去开垦自己的私田,甚至索性就从贵族控制的井田上跑路了。此时君主、贵族、平民三者之间的一种复杂博弈关系就出现了。注意,这儿所说的君主,指的就是周天子封的诸侯,贵族指的就是诸侯所封的次级诸侯,这会儿的历史已经没周天子什么事儿了。
+
+君主向耕种私田的平民提供保护,平民向君主交税。平民从井田上越跑越多,贵族所控制的井田制就逐渐瓦解了,贵族的力量也逐渐削弱了。君主开始获得相对于贵族的优势。
+
+>竹简 - 知识传播技术
+
+ 知识传播的成本急剧下降,一般的贵族子弟、甚至运气好的普通百姓,都有机会学习文字获得知识了。由于多年的人口膨胀,这个时候出现了很多有文化、却无法获得一块封地的贵族子弟,他们就变成游士,到处寻找把自己卖个好价钱的机会。
+
+君主们早就想养一群可控的自己人了。什么样的人最好用呢?
+
+第一,他们要在本国没有根基,没资本对抗君主;
+第二,他们的地位尊荣都取决于君主的赏赐,就有动力与君主相配合。
+
+从别国跑来的游士完全符合这两点要求。君主与游士拍即合,游士成为依附于君主的私人人事班底。这个人事班底,后来就发展为官僚制。
+
+官僚和贵族的区别在于,本质上来说,官僚没有独立性,他们是职业经理人,其地位取决于君主的意志;贵族有独立性,他们是准合伙人,君主有大事必须和他们商量着来。游士的出现,终于让君主们可以全方位碾压贵族封臣,诸侯国也就从君主与贵族共治的结构,转向君主说了算的官僚制结构。
+
+### 变法
+
+这个过程在历史上被叫作什么呢?
+
+变法! 没错,魏国的李悝变法、秦国的商鞅变法等等,就是这样展开的。
+
+来自其他国家的游士,成了各诸侯国的新贵,他们压制住所在国的大贵族,把君主的意志贯彻下去。随着各种变法的展开,中国历史就进入到了战国时代。
+
+对君主来说,这回有办法把平民也动员起来了。你们虽然不是贵族血统,但你们可以立军功。只要你有办法从战场上拎回更多的人头,你也有机会上升到比贵族还高的地位。这种激励可不得了,战争的规模和频次急剧上升,大规模的灭国之战很容易就爆发了。灭国之战都到什么量级呢?比如很多人推崇的战神白起,一场战役就会坑杀赵国的40万降兵,这都在变法之后成为可能，变法这个事情也有传染性,谁最先变法,谁的战争效率就大幅上升;其他国家如果不跟上,就只能等着挨打。
+
+**随着各国陆续变法,各诸侯国内部的旧贵族阶层被一扫而空**。变法之后,君主能决定军功的标准,也就能决定官僚新贵们的地位高低,**君主对国家的控制力就变得更强**,再没有能够约束君主的力量,**分封割据的封建社会也就逐渐走上了终结之日**,战争逻辑的变化,影响还不止于此,当战争规模扩大到了诸侯国承受不起的时候,中国也就开始走向大一统。
+
+## 诸子百家的三大流派【春秋后期】【中原】
+春秋后期,天下大乱,礼崩乐坏。人们突然发现赖以理解世界的坐标系没有了,世界的意义丧失了。而这种时候,就是思想大爆发的时候。
+
+诸子百家,根据他们对待传统不同的态度,可以分为三类:一类是力挺传统（**克己复礼**）,代表就是儒家;一类是抛弃传统（**以法代礼**）,代表就是法家;还有一类是不在乎传统（出世，**无为而治**）,代表就是道家。
+
+### 儒家
+孔子认为复古的路径是“克己复礼”,就是要克制自己的各种冲动,依照传统留下来的"礼"的要求来做事。这样就能达到儒家的最高理想,“仁”。
+
+>如果你理解孔子是儒家的开创者,莫不如把他理解为此前巫师传统的集大成者。
+
+儒家是从商周两朝的巫师系统发展出来的,巫师就是古代沟通天意与人事的神职人员，这种工作主要通过占卜和祭祀来完成。祭祀这属于最高的“礼”,而巫师们就是“礼”的具体操作者与记录者。
+
+到了礼崩乐坏的时候,如果要想复古,第步肯定得先说清楚这个“古”究竟是什么。巫师系统有这方面的很多记录,当然是最合适的解说人选,他们由此就逐渐发展为儒家。
+
+### 法家
+
+儒家强调恢复“礼”,“礼”来自传统,贵族是“礼"的载体;法家强调创建“法”,“法”出自君主意志,官僚是法的执行者。
+
+>法家常在别国成事
+
+根据君主、贵族、官僚的博弈关系,各诸侯国的君主们肯定不会愿意接受儒家,而更愿意接受法所以孔子孟子都曾周游列国,都没得到过重用,反倒是法家的人占据各种高位。有趣的是,法家的鼓吹者往往在本国是不受欢迎的,无论是商鞅还是李斯,都是在别国建功立业。韩非虽然在别国没有能够建立功业,但在本国也从没获得过机会。原因在于,君主需要官僚在本国没有根基,才能听使唤;倘若是出身本国的法家,他总会有各种根基,这种人又太懂得法术势,很容易成为君主忌惮的对象。脱离了家乡的游士,如漂泊浮萍,孤身人,荣辱富贵都依赖于君主,君主最喜欢了。所以,法家只能在别国成事。
+
+### 道家
+
+顺其自然,让世界、让百姓自由自主地活动,事情自然就好了,这就叫“无为而治”。
+
+道家认为,正是各种入世的念头才把事情搞糟了,倘若不再追求转瞬即逝的现世成就,天地一下子就宽了。
+
+## 周秦之变【周-秦-汉】【中原】
+
+周秦之变对中国的思想史还带来个自然延伸的影响,就是我们在历史上看到的,从秦皇到汉武,帝国的官方思想经历了**从法家到道家再到儒家**的转换过程。
+
+### 周秦之变的“法家逻辑”
+百家争鸣的诸多学说,哪一种更注重提升战争效率,它就会获得诸侯们在政治上的更多支持。从中胜出的就是法家。但你用法家就能够征服天下,却不能仅仅用法家来治理天下。
+
+### 汉高祖的“无为而治”
+为什么汉高祖会选择道家呢?最根本的原因在于力量均衡。
+
+刘邦起家之前是个平民百姓,征服天下只能靠团结足够多的人。刘邦能够吸引一群重要将领和谋士追随自己,不是因为自己有力量,而是因为有威信。刘邦和这些人近乎是合伙人的关系,并没有压倒性力量来钳制他们,反倒会被这些兄弟给制衡住。这么一来,皇帝想要专制也不可能,**无为而治只是面对强大合伙人时的无奈之举。**
+
+### 汉武帝的“独尊儒术”
+“阳儒阴法",又称“**外儒内法**"。什么意思呢?从观念层面来看,是儒家在主导,儒生解读着天意,君主也不敢完全违背儒家的教导而行事。儒家表面上的迂腐,却为君主划出了大致的行动边界;但在具体的制度设计上,却还是法家逻辑。这样一来,**对君主来说,治理的效率有了,安抚民心的口径也有了。**
+
+## 汉人王朝为何无法统治长城以北【汉】【中原】
+这个问题,其底层是由儒家文化以及儒家文化的地理依赖性决定的。
+
+### 究竟什么是汉人
+**只要是接受儒家文化,并按儒家文化的指导生活的人,在古代就被视作汉人。**
+
+### 儒家文化的地理依赖性
+儒家文化光有个体心灵的皈依远远不够,个体还必须生活在一种特定的人际关系结构当中才行。
+
+比如,“三从四德三纲五常"等等这些规矩,都是对某种人际关系的规定,脱离开人际关系根本就没法展开。把你一个人扔荒岛上,还让你三从四德,你肯定做不到。
+
+儒家文化所要求的这种特定的人际关系,首先就要求有比较稳定的家庭组织,而稳定的家庭组织,前提是你得是定居的。
+
+定居的前提是农耕,而农耕有一个最硬性的约束条件,就是年降水量。东亚大陆上,如果一个地方年降水量少于400毫米的话,靠农耕是活不下去的。
+
+那么,东亚大陆的400毫米等降雨线在哪儿呢?
+
+这条400毫米等降雨线,差不多和长城重合。长城再往北,年降水量就不足400毫米了。也就是说,儒家帝国在农耕地区的扩张极限,就是400毫米等降雨线。于是在这里,儒家帝国修建了长城。长城再往北就是游牧地区了。
+
+在古代社会,由于农耕对降雨量的要求,使得你要是越过了长城以北,还想活得下去的话,就必须游牧化,否则是死路一条。而一旦游牧化之后,就意味着中原式的人际关系结构、家庭结构等等都没有基础了,无法再按照儒家的方式来生活了。
+
+**儒家文化有一种地理依赖性。因为自然生态原因,儒家越不过去长城以北、嘉峪关以西。儒家文化只能在中原地区展开。**
+
+### 中原和草原的继承逻辑区别
+![中原和草原的继承逻辑区别](https://daily-1252869435.cos.ap-chengdu.myqcloud.com/dFAEllbB47.png)*中原和草原的继承逻辑区别*
+
+官僚制帝国有个很重要的特征,就是君主和官僚,在功能上是有分工的。君主的首要功能,是象征正当性。所以,君主的能力只排在第二位,第一重要的是君位继承的稳定性。嫡长子资格是最容易达成这种共识的。所以,中原的继承原则就稳定在嫡长子继承制上了。
+
+## 草原征服型王朝为何能一统天下【+】【草原】
+中原的统一的农耕帝国,促使草原出现了统一的游牧帝国。游牧帝国又反过来用军事压力改变中原帝国,并且能在中原帝国衰败时输入秩序,重建社会,建立同时统治中原和草原的庞大帝国。
+
+这类帝国,必须能熟练运用中原和草原两套游戏规则。也就是说,它必须是一个胡汉二元帝国。
+
+![草原王朝演化逻辑](https://daily-1252869435.cos.ap-chengdu.myqcloud.com/2018-11-09-22-52-43.png)*草原王朝演化逻辑*
+
+### 游牧帝国是如何建立的
+如果中原没有统一,中原各诸侯国会竞相和草原部落进行贸易,因为它们需要草原上的马。草原马,是战争的利器。如此一来,诸侯国之间竞争起来,草原无论是买还是卖,都能有个不错的价格,小部落们也就没有任何欲望想要联合起来。因为一旦联合了,贸易利润肯定会被盟主剥去一层,还不如不联合呢。
+
+但是一旦中原统一,就不再有各个诸侯国的竞争,统一的大帝国垄断了中原市场,帝国就可以用政治手段去干涉贸易,要么压低价格,要么干脆断绝贸易。
+
+这样一来,草原上的那么多小部落,他们仍然需要那些必需品,却没法正常地买来了,那就只有抢。要从中原帝国手里抢东西,小部落根本不是对手,那就必须联合成为一个大的部落联盟才行。于是,强大的游牧帝国出现了。
+
+联合起来的草原帝国,其人口仍远远少于中原帝国,但却比中原帝国更有战斗力。
+
+这个所谓的游牧帝国,事实上是一个庞大的部落联盟。联盟的大可汗通过垄断战利品的分配权,形成一个由战争衍生出来的中央财政。草原的中央财政和中原那种靠税收的财政体制很不一样,它主要是靠战争战利品形成的财政。
+
+### 草原的周期性继承危机
+草原可汗是必须经常出去打仗的,你不能带头抢东西回来,就没人愿意跟你了。由于对可汗战斗力的要求,意味着可汗的继承人绝不能是小孩。但是草原上战事频繁,可汘的寿命有很大不确定性,当大可汗去世的时候,他的儿子很有可能还未成年。
+
+所以在草原上,一般来说,继承制不是中原式的父终子及,而是兄终弟及,也就是哥哥死了弟弟来继位。
+
+中原有句古语叫做“胡虏无百年之运”,为什么草原帝国没有超过一百年的国运呢?
+
+就是因为开国那一代可汗,他的兄弟几个加一块儿也活不过一百年。等到这一代全都去世之后,第二代一定会分裂。
+
+### 草原力量注入中原
+就中原来说,要面对的则是周期性的衰败危机。
+
+在历史上有多次,中原是通过草原力量的注入,来重建秩序的。
+
+---
+
+东北是中原与草原的过渡带,但凡在东北能站得住脚的人,南北这两种治理模式他必须全懂。所以在入关后,他就可以建立起一个二元帝国。
+
+所谓二元帝国,就是在长城以南,以中原儒家的方式来完成统治,统治者的身份是皇帝;而在长城以北,则按草原游牧的方式来完成统治,统治者的身份是大可汗。
+### 二元帝国的治理逻辑
+纯粹的中原人无法理解草原,纯粹的草原人也无法理解中原。
+
+而东北则是中原与草原的过渡带,它北边靠着呼伦贝尔大草原,南边靠着辽东的农耕地区。但凡在东北能站得住脚的人,南北这两种治理模式他必须全懂。所以在入关后,他就可以建立起一个二元帝国。
+
+所谓二元帝国,就是,在长城以南,能以中原儒家的方式来完成统治,统治者的身份是皇帝;在长城以北,则按草原游牧的方式来完成统治,统治者的身份是大可汗。
+
+
+## 中国是如何走向豪族社会的【汉】【中原】
+汉武帝的黩武政策,改变了汉朝社会结构,对社会的控制力由中央政府转移到了豪族手中。经过王莽篡位之后,豪族领袖刘秀干掉王莽,建立了东汉,最终形成了豪族和皇帝合作共治的局面。豪族社会维持了差不多一千年,一直到唐宋的转折期,豪族社会才结束。
+### 豪族是怎么来的呢?
+第一个来源是,战国时期贵族的后代,几百年来留下的世家大族盘根错节,还是很有势力的;
+第二个来源是,文景之治的几十年,社会很自由,发展起来的很多大商人;
+第三个来源是,地方的大侠、豪强,他们乐于去结交更多的人,愿意去庇护走投无路的人。
+### 汉武帝:促使豪族兴起
+汉武帝的爷爷和老爸,共同开创了中国古代历史上第一个著名的盛世“文景之治”,经过几十年,民间发展得非常富裕。到了汉武帝,帝国终于有了本钱与匈奴掰掰手腕。
+
+汉武帝与匈奴的战争,断断续续地打了四十四年。匈奴方面自然是被打得妻离子散、苦不堪言,但是中原人民日子也并不好过。因为这些战争太费钱了,国库里的钱如流水一般花出去,钱不够用了,朝廷就不得不对百姓收更多的税。一次两次地增税,百姓还能忍受。但是长此以往,谁
+也受不了啊,所以很多百姓就只好拋弃家园成为流民,那些没有成为流民的百姓,也都受不了。他们另想一辙,把土地扔了,自家的户口也不要了,投到地方豪族的门下接受保护,让官府从此找不着我,也就不用交税。
+
+于史书记载,到武帝末年,天下的户口减少了一半,这当然不是战争打死了一半的人,而是跑掉了一半。
+
+到了这个时候,朝廷就压制不了地方豪族了。豪族越来越强,中央政府能收的税越来越少,朝廷的日子就不好过了。
+### 地方官僚与豪族结盟
+在朝廷还比较有钱的时候,还有些办法控制地方郡守。一旦朝廷没钱了,郡守们就会琢磨如何扩大自己的势力。与豪族结盟,共同对抗朝廷,就是个不错的办法,监守自盗的戏码就上演了。
+
+地方官僚和豪族联起手,大汉帝国的社会结构就开始发生深刻变化了。
+### 王莽:抑制豪族
+武帝之后的汉朝历史,恶性循环在不断加深。豪族越发展,朝廷越衰弱,朝廷越衰弱,豪族就越肆无忌惮，朝廷上几乎所有人都束手无策,最终一位看上去谦逊有礼、志向高远的人,众望所归,夺取了大权。这就是王莽。王莽先是成为帝国重臣,不久就篡位成为皇帝。
+
+他上台之后做了很多改革政策,宣布了土地都属于国有的,民间不可以自行买卖,奴婢也不可以私自买卖,盐、铁这两种最重要的民用物资、山川林泽、铸造货币的权力,等等这一切,全都被收归国有。此外,还设置了一些国家储备机构,用来调节物价。
+
+王莽这些政策的核心目标都是要抑制豪族,重新恢复帝国朝廷的统治能力。但是这种努力在当时是不可能成功的。原因很简单,你想要控制豪族,豪族会老老实实地等着你来控制他吗?除非你手上掌握的资源对豪族具有碾压性优势,否则豪族反抗起来绝对够你头疼的。王莽能掌握的资源从哪里来呢?只能来自社会上的税收。可是社会已经被豪族控制了,你到哪里去获取能碾压豪族的资源呢?要想真的干掉豪族,除非是有了新的技术进步。在豪族的控制之外,形成了新的经
+济资源,皇帝可以在这里收到税,用这个来养活自己能控制的军队,才能干掉豪族,否则皇帝只能接受与豪族共治这样个事实。
+### 刘秀:与豪族共治
+豪族们起来反抗,很快就推翻了王莽的政权;刘秀作为这些豪族的领袖,建立了东汉政权。就凭刘秀的这些支持力量,东汉也注定只能是个皇帝与豪族合作共治的朝代。
+
+东汉从西汉继承的是个豪族社会,刘秀身边的巨头们,能够从社会中直接获取支持,皇帝也就没机会消灭这些巨头了。
+
+于是,刘秀直接就选择了在洛阳定都,这里没有军事地理优势,但这里是豪族们的大本营。这相当于刘秀明白地告诉了豪族,咱们都是一家人了。
+
+
+
+
+
+
+
+## 为何后汉皇帝“亲小人、远贤臣”【后汉】【中原】
+“贤臣”其实是世家大族,“小人"就是外戚、宦官,他们是皇帝中央集权的工具。
+
+后汉皇帝“亲小人,远贤臣”的背后其实是皇权和世家大族的权力斗争。皇帝通过宦官之手,跟世家大族进行PK。
+
+### 贤臣是谁
+贤臣就是儒家化了的豪族。
+
+有文化的豪族对社会有组织力,让皇上收税变得困难，皇上不大容易动得了他,还会引经据典地批评皇上,说你昏庸。
+
+他们从东汉的时候逐渐发展起来,直到隋唐的历史上,被称为门阀士族,经常也简称为士族。
+
+士族一代代发展壮大,逐渐成为世家大族,他们垄断了知识和地位,垄断了社会上的舆论。
+
+这些人就是所谓“贤臣”,他们差不多把持了朝廷和地方的各种重要职位。世家大族彼此间还联姻通婚,形成了庞大的关系网络,对皇帝有着相当强的制约能力。
+### 小人是谁
+皇上要找来支持自己的人,来对抗世家大族。但问题是,世家大族把持着官僚体系,也控制着舆论,这些皇帝的支持者就肯定会被指责为“小人”了。这与他们实际上的人品、官品怎么样关系
+不大。皇帝的行为,在世家大族嘴里,也肯定是"亲小人、远贤臣”了。
+
+皇上到哪去找自己人呢?
+
+到民间去找?就像前面说的,知识都被世家大族垄断,民间没什么可用之才。到朝廷上找?朝廷上放眼望去,都是彼此串通气的世家大族,也不行。
+
+皇上还得保证这些人能站在自己一边。对皇帝来说,什么才能确保这些人支持自己尼?忠诚这东西是不敢指望了,能指望的是,他们的身份地位都完全依赖于皇帝这些人即便是出于自私,也得站在皇帝一边了。
+
+那是什么人啊?只有两种,宦官,也就是太监,还有外戚,也就是皇后的家族。
+
+宦官和外戚还彼此看不顺眼。宦官完全被世家大族们所瞧不起,外戚有不少也是出身世家大族的,但一旦与皇上结了亲,马上就会有压过其他世家大族一头的感觉,会借此不断扩大自己的势力范围,这又与其他的世家大族之间会发生矛盾。
+
+于是,皇帝、外戚、宦官、世家大族组成的官僚,彼此之间形成了复杂的关系。
+
+### 皇帝、外戚、宦官、世家大族的博弈关系
+皇帝通过扶植宦官和外戚,跟这些世家大族进行PK,世家大族面对皇帝的这些对抗举措,便会进一步强化自己的”天下为己任”的形象,获得道德制高点,宦官和外戚就进一步被还原为“小人”。
+
+### 东汉的瓦解
+皇权与世家大族的这种冲突过程,会极大地败坏帝国的治理水准。
+
+正赶上东汉末年进入了一个小冰期,连年天灾,民变四起。朝堂上各种勾心斗角,民间的疾苦实际上没人真的去管。在这种情况下,老百姓求告无门,只好想法自己组织起来,寻找活路。各种民间信仰,就是组织的工具,因此而获得了越来越大的影响力。
+
+汉朝的儒学讲究天人感应认为天灾必定是皇帝失德,上天降下灾祸,皇帝被迫多次颁发罪己诏。皇上天天都在罪己的话,人们对朝廷的敬畏就会动摇了。民间信仰趁机说,自己才是天命所在,于是,到公元184年爆发了黄巾大起义,动摇天下。朝廷彻底没辙了,只能寄希望于世家大族与地方豪强兴兵勤王。但豪强们各怀鬼胎,逐鹿中原的诱惑迅速地让这些“贤臣"的种子都变成了乱世的枭雄。
+
+
+
+
+
+
+
+
+
+
+## 诸葛亮的士族绞杀行动【三国】
+天下三分，最终三国归晋的故事,其实就是士族寒族冲突,最终士族大获全胜的历史。
+
+但是,经过了这两百多年的发展,士族的水准逐渐败坏了,他们实际上没有能力治理天下。晋朝虽然统一了天下,很快就带来了更大的混乱。
+
+
+
+
+
+',
+  'groups' => 'Default',
+  'showsel' => '1',
+  'showse2' => '1',
+  'id' => '233',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->updateNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000763s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001504s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 233 LIMIT 1 [ RunTime:0.000686s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `note` WHERE  `id` = 233 LIMIT 1 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000947s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `groups` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SELECT `id` FROM `groups` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000297s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `id`=233,`p_id`=1,`title`='中国史纲\r',`content`='# 中国史纲\r\n[TOC]\r\n## 中国历史的时空坐标\r\n时间和空间加在一块,才是完整的历史。\r\n### 四个时间坐标点\r\n中国历史发生过几次重要的转型,这些转型推动着中国历史向前的发展。\r\n\r\n1.第一个转型,是**商周之变**,就是从商朝到周朝的转型。\r\n\r\n这次转型之后,我们开始有了“中国”这个概念,中华文明当中最初的普世主义理想开始出现了。\r\n\r\n2.第二个转型,**周秦之变**,就是从周朝到秦朝的转型。\r\n\r\n这次转型,让中原从分封割据的局面进入到大一统的局面,中国历史也开始超越于中原之上,中原与草原的相互塑造和对抗开始成为中国历史的大脉络。\r\n\r\n3.第三个转型,**唐宋之变**,就是从唐朝到宋朝的转型。\r\n\r\n这次转型,让中国的社会结构从豪族社会进入到平民社会,此后中国历史再无长期的分裂,大一统开始成为一个不可逆的历史过程。在先秦之后,中国的文化在宋朝迎来了又一次大爆发,有些西方学者甚至称这是中国的文艺复兴。这次文化爆发,不仅决定了此后将近一千年的中国文化气质,也决定了日本、朝鲜、越南等其他儒教国家的文化气质。\r\n\r\n4.第四个转型,就是**清朝末期开始的古今之变**,中国开始从古代社会向现代社会进行艰难转型。\r\n\r\n这个过程带来了一系列轰轰烈烈的历史过程,转型过程直到今天仍在继续,还未完成。\r\n\r\n### 五个空间坐标点\r\n草原、中原、海洋、西域、高原。\r\n\r\n这几个大的空间,彼此之间有着极为深刻的相互依赖相互塑造的关系,以至于脱离开一方就完全解释不了另一方,所以它们加在一块构成一个体系。\r\n\r\n## 中国的概念和中华文明的普世主义理想【商周】【中原】\r\n### 历史上第一次出现「中国」\r\n周朝的第二位君主周成王,兴建了东都洛阳城,当时有个叫做「何」的贵族,这人铸了一件青铜器纪念这个事儿,1963年这个青铜器在陕西宝鸡被发现,今天称其为「何尊」，「何尊」的底部铸了一百多个字,里面提到,周武王说要\"宅兹中国”,就是说要“住在中国”,这是\"中国\"这个词的最早来源。\r\n\r\n什么叫中国？**达到了文明最高水准的地方,就是文明意义上的中心,古人就管这种地方叫做「中国」。**\r\n### 中华文明的普世主义理想：究竟天命是降于周人呢,还是天命降于周王\r\n商朝是由“商人\"。他们认为天命降于商人。为了让天能够永远地保佑自己,商人会经常地进行大规模的祭祀活动,祭祀当中会大量用到活人做祭品。\r\n\r\n这些被献祭的人从哪来呢?\r\n\r\n从对外战争掠夺的羌人而来。所谓的羌人就是生活在商王朝西部的、除了商朝人以外的所有人。\r\n\r\n商人的这种天命观,肯定会受到羌人的抵抗。其中,周人是最主要的一支抵抗力量,他们逐渐组织了很多苦不堪言的羌人群体来反抗商朝，反抗的时候,在周人中间有过一个观念层面的争论,究竟天命是降于周人呢,还是天命降于周王?争论的结果是,天命降于周王。\r\n\r\n这个观念变化太重要了。初看上去,这似乎是把天命的载体变得狭隘了,实际上是把它变得普世了。\r\n\r\n为什么这么说呢?如果天命是降于周人,那就和此前降于商人的路数差不多,周人的岁月要想静好,就得时刻压制住所有不是周人的群体。这样的话,周人和商人征战,谁胜谁败就不好说了。因为,对其他羌人群体来说,打完这一仗,十有八九只不过换了个地方拿我们献祭,凭啥要跟你混啊?而**如果天命是降于周王,则周王便是天下的共主,他不仅仅要为周人主持正义,而是要为全天下人主持正义,这是一种真正的普世主义观念**。\r\n\r\n### 什么是封建社会\r\n推翻了商朝之后,周朝又是如何具体建立它的统治方式呢?那就是,分封制。周天子向下分封了他的大量亲戚和重臣,意图依靠他们形成的藩属诸侯国,来拱卫周王。这样一种政治统治形式就被称作“封建”,这种社会叫做封建社会。\r\n\r\n封建“这个词最初出自《左传》,里面有句话叫做“封建亲戚,以藩屏周”,就是说分封亲信出去建立诸侯国,作为周朝王室领地的屏障。**只有这种封土建邦、分封割据的状态,才叫做封建。**\r\n\r\n封建社会的一大特征是,最高统治者是没有权力干涉诸侯国内部事务的,诸侯们确实是最高统治者的封臣,但某种意义上也像是个合伙人,都有比较强的独立性。\r\n\r\n周朝的时候,诸侯都承认周天子是最高权威,但周天子并不能管诸侯国内部的事情。周朝在这个过程中建立了封建社会,但周天子又逐渐衰落了。在周天子衰落之后,历史的主角就变成了那些诸侯。诸侯们彼此不断竞争,最终终结了中国的封建社会。\r\n\r\n## 封建社会的终结【春秋末期、战国初期】【中原】\r\n到了西周后期,周天子的影响力越来越差,最终被迫迁都洛阳,中国历史进入到东周。\r\n\r\n东周又分成了舂秋战国两个时期,**春秋末期出现了一些重要的技术发展,它带来了新的经济和人力资源,打破了过去的社会均衡,封建社会当中的贵族秩序崩塌了，封建社会也在春秋战国时代走上末日。**\r\n\r\n### 战争的逻辑的变化\r\n春秋之前的的战争十分注重礼仪性(战争都是贵族在参与，这就导致了参与人数并不多，他们认为战争是一件高贵的事，他们的战争可能就是比谁的正步踢得好)。但到了春秋中后期,随着楚国(楚国是个土生政权,并不是周天子分封的诸侯国，它的文化和中原有很大区别,也不大在乎中原的礼仪之类的东西,在当时的中原诸侯看来它就是个蛮夷之邦。)的加入，战争变成以砍死人为目的了。也正是由于这个战争逻辑的变化,才把中国引向了大一统。\r\n\r\n### 两个技术变迁\r\n诸侯分封次级诸侯，随着次级诸侯势力的增大，诸侯和次级诸侯的关系同周天子和诸侯的关系一样。在春秋末期、战国初期,出现了两个重要的技术变迁,让诸侯力量的扩大有了可能。正是因为这两次技术变革,打破了君主和封臣之间的力量均衡,周厉王当初搞不定自己下级的事,现在诸侯可以做到了,也就是诸侯能够搞定这些次级诸侯。\r\n\r\n这两个技术变迁,一个是铁器和牛耕的农业生产技术,一个是竹简这种知识传播技术。\r\n\r\n>铁器和牛耕 - 农业生产技术\r\n\r\n铁器与牛耕的出现,提升了平民的劳动效率。过去,他们的耕种效率很低,只能在贵族控制的公田、又叫井田上种地,没有能力再去开垦自己的私田了;但是,铁器和牛耕让生产效率大大提升了,平民有余力去开垦自己的私田,甚至索性就从贵族控制的井田上跑路了。此时君主、贵族、平民三者之间的一种复杂博弈关系就出现了。注意,这儿所说的君主,指的就是周天子封的诸侯,贵族指的就是诸侯所封的次级诸侯,这会儿的历史已经没周天子什么事儿了。\r\n\r\n君主向耕种私田的平民提供保护,平民向君主交税。平民从井田上越跑越多,贵族所控制的井田制就逐渐瓦解了,贵族的力量也逐渐削弱了。君主开始获得相对于贵族的优势。\r\n\r\n>竹简 - 知识传播技术\r\n\r\n 知识传播的成本急剧下降,一般的贵族子弟、甚至运气好的普通百姓,都有机会学习文字获得知识了。由于多年的人口膨胀,这个时候出现了很多有文化、却无法获得一块封地的贵族子弟,他们就变成游士,到处寻找把自己卖个好价钱的机会。\r\n\r\n君主们早就想养一群可控的自己人了。什么样的人最好用呢?\r\n\r\n第一,他们要在本国没有根基,没资本对抗君主;\r\n第二,他们的地位尊荣都取决于君主的赏赐,就有动力与君主相配合。\r\n\r\n从别国跑来的游士完全符合这两点要求。君主与游士拍即合,游士成为依附于君主的私人人事班底。这个人事班底,后来就发展为官僚制。\r\n\r\n官僚和贵族的区别在于,本质上来说,官僚没有独立性,他们是职业经理人,其地位取决于君主的意志;贵族有独立性,他们是准合伙人,君主有大事必须和他们商量着来。游士的出现,终于让君主们可以全方位碾压贵族封臣,诸侯国也就从君主与贵族共治的结构,转向君主说了算的官僚制结构。\r\n\r\n### 变法\r\n\r\n这个过程在历史上被叫作什么呢?\r\n\r\n变法! 没错,魏国的李悝变法、秦国的商鞅变法等等,就是这样展开的。\r\n\r\n来自其他国家的游士,成了各诸侯国的新贵,他们压制住所在国的大贵族,把君主的意志贯彻下去。随着各种变法的展开,中国历史就进入到了战国时代。\r\n\r\n对君主来说,这回有办法把平民也动员起来了。你们虽然不是贵族血统,但你们可以立军功。只要你有办法从战场上拎回更多的人头,你也有机会上升到比贵族还高的地位。这种激励可不得了,战争的规模和频次急剧上升,大规模的灭国之战很容易就爆发了。灭国之战都到什么量级呢?比如很多人推崇的战神白起,一场战役就会坑杀赵国的40万降兵,这都在变法之后成为可能，变法这个事情也有传染性,谁最先变法,谁的战争效率就大幅上升;其他国家如果不跟上,就只能等着挨打。\r\n\r\n**随着各国陆续变法,各诸侯国内部的旧贵族阶层被一扫而空**。变法之后,君主能决定军功的标准,也就能决定官僚新贵们的地位高低,**君主对国家的控制力就变得更强**,再没有能够约束君主的力量,**分封割据的封建社会也就逐渐走上了终结之日**,战争逻辑的变化,影响还不止于此,当战争规模扩大到了诸侯国承受不起的时候,中国也就开始走向大一统。\r\n\r\n## 诸子百家的三大流派【春秋后期】【中原】\r\n春秋后期,天下大乱,礼崩乐坏。人们突然发现赖以理解世界的坐标系没有了,世界的意义丧失了。而这种时候,就是思想大爆发的时候。\r\n\r\n诸子百家,根据他们对待传统不同的态度,可以分为三类:一类是力挺传统（**克己复礼**）,代表就是儒家;一类是抛弃传统（**以法代礼**）,代表就是法家;还有一类是不在乎传统（出世，**无为而治**）,代表就是道家。\r\n\r\n### 儒家\r\n孔子认为复古的路径是“克己复礼”,就是要克制自己的各种冲动,依照传统留下来的\"礼\"的要求来做事。这样就能达到儒家的最高理想,“仁”。\r\n\r\n>如果你理解孔子是儒家的开创者,莫不如把他理解为此前巫师传统的集大成者。\r\n\r\n儒家是从商周两朝的巫师系统发展出来的,巫师就是古代沟通天意与人事的神职人员，这种工作主要通过占卜和祭祀来完成。祭祀这属于最高的“礼”,而巫师们就是“礼”的具体操作者与记录者。\r\n\r\n到了礼崩乐坏的时候,如果要想复古,第步肯定得先说清楚这个“古”究竟是什么。巫师系统有这方面的很多记录,当然是最合适的解说人选,他们由此就逐渐发展为儒家。\r\n\r\n### 法家\r\n\r\n儒家强调恢复“礼”,“礼”来自传统,贵族是“礼\"的载体;法家强调创建“法”,“法”出自君主意志,官僚是法的执行者。\r\n\r\n>法家常在别国成事\r\n\r\n根据君主、贵族、官僚的博弈关系,各诸侯国的君主们肯定不会愿意接受儒家,而更愿意接受法所以孔子孟子都曾周游列国,都没得到过重用,反倒是法家的人占据各种高位。有趣的是,法家的鼓吹者往往在本国是不受欢迎的,无论是商鞅还是李斯,都是在别国建功立业。韩非虽然在别国没有能够建立功业,但在本国也从没获得过机会。原因在于,君主需要官僚在本国没有根基,才能听使唤;倘若是出身本国的法家,他总会有各种根基,这种人又太懂得法术势,很容易成为君主忌惮的对象。脱离了家乡的游士,如漂泊浮萍,孤身人,荣辱富贵都依赖于君主,君主最喜欢了。所以,法家只能在别国成事。\r\n\r\n### 道家\r\n\r\n顺其自然,让世界、让百姓自由自主地活动,事情自然就好了,这就叫“无为而治”。\r\n\r\n道家认为,正是各种入世的念头才把事情搞糟了,倘若不再追求转瞬即逝的现世成就,天地一下子就宽了。\r\n\r\n## 周秦之变【周-秦-汉】【中原】\r\n\r\n周秦之变对中国的思想史还带来个自然延伸的影响,就是我们在历史上看到的,从秦皇到汉武,帝国的官方思想经历了**从法家到道家再到儒家**的转换过程。\r\n\r\n### 周秦之变的“法家逻辑”\r\n百家争鸣的诸多学说,哪一种更注重提升战争效率,它就会获得诸侯们在政治上的更多支持。从中胜出的就是法家。但你用法家就能够征服天下,却不能仅仅用法家来治理天下。\r\n\r\n### 汉高祖的“无为而治”\r\n为什么汉高祖会选择道家呢?最根本的原因在于力量均衡。\r\n\r\n刘邦起家之前是个平民百姓,征服天下只能靠团结足够多的人。刘邦能够吸引一群重要将领和谋士追随自己,不是因为自己有力量,而是因为有威信。刘邦和这些人近乎是合伙人的关系,并没有压倒性力量来钳制他们,反倒会被这些兄弟给制衡住。这么一来,皇帝想要专制也不可能,**无为而治只是面对强大合伙人时的无奈之举。**\r\n\r\n### 汉武帝的“独尊儒术”\r\n“阳儒阴法\",又称“**外儒内法**\"。什么意思呢?从观念层面来看,是儒家在主导,儒生解读着天意,君主也不敢完全违背儒家的教导而行事。儒家表面上的迂腐,却为君主划出了大致的行动边界;但在具体的制度设计上,却还是法家逻辑。这样一来,**对君主来说,治理的效率有了,安抚民心的口径也有了。**\r\n\r\n## 汉人王朝为何无法统治长城以北【汉】【中原】\r\n这个问题,其底层是由儒家文化以及儒家文化的地理依赖性决定的。\r\n\r\n### 究竟什么是汉人\r\n**只要是接受儒家文化,并按儒家文化的指导生活的人,在古代就被视作汉人。**\r\n\r\n### 儒家文化的地理依赖性\r\n儒家文化光有个体心灵的皈依远远不够,个体还必须生活在一种特定的人际关系结构当中才行。\r\n\r\n比如,“三从四德三纲五常\"等等这些规矩,都是对某种人际关系的规定,脱离开人际关系根本就没法展开。把你一个人扔荒岛上,还让你三从四德,你肯定做不到。\r\n\r\n儒家文化所要求的这种特定的人际关系,首先就要求有比较稳定的家庭组织,而稳定的家庭组织,前提是你得是定居的。\r\n\r\n定居的前提是农耕,而农耕有一个最硬性的约束条件,就是年降水量。东亚大陆上,如果一个地方年降水量少于400毫米的话,靠农耕是活不下去的。\r\n\r\n那么,东亚大陆的400毫米等降雨线在哪儿呢?\r\n\r\n这条400毫米等降雨线,差不多和长城重合。长城再往北,年降水量就不足400毫米了。也就是说,儒家帝国在农耕地区的扩张极限,就是400毫米等降雨线。于是在这里,儒家帝国修建了长城。长城再往北就是游牧地区了。\r\n\r\n在古代社会,由于农耕对降雨量的要求,使得你要是越过了长城以北,还想活得下去的话,就必须游牧化,否则是死路一条。而一旦游牧化之后,就意味着中原式的人际关系结构、家庭结构等等都没有基础了,无法再按照儒家的方式来生活了。\r\n\r\n**儒家文化有一种地理依赖性。因为自然生态原因,儒家越不过去长城以北、嘉峪关以西。儒家文化只能在中原地区展开。**\r\n\r\n### 中原和草原的继承逻辑区别\r\n![中原和草原的继承逻辑区别](https://daily-1252869435.cos.ap-chengdu.myqcloud.com/dFAEllbB47.png)*中原和草原的继承逻辑区别*\r\n\r\n官僚制帝国有个很重要的特征,就是君主和官僚,在功能上是有分工的。君主的首要功能,是象征正当性。所以,君主的能力只排在第二位,第一重要的是君位继承的稳定性。嫡长子资格是最容易达成这种共识的。所以,中原的继承原则就稳定在嫡长子继承制上了。\r\n\r\n## 草原征服型王朝为何能一统天下【+】【草原】\r\n中原的统一的农耕帝国,促使草原出现了统一的游牧帝国。游牧帝国又反过来用军事压力改变中原帝国,并且能在中原帝国衰败时输入秩序,重建社会,建立同时统治中原和草原的庞大帝国。\r\n\r\n这类帝国,必须能熟练运用中原和草原两套游戏规则。也就是说,它必须是一个胡汉二元帝国。\r\n\r\n![草原王朝演化逻辑](https://daily-1252869435.cos.ap-chengdu.myqcloud.com/2018-11-09-22-52-43.png)*草原王朝演化逻辑*\r\n\r\n### 游牧帝国是如何建立的\r\n如果中原没有统一,中原各诸侯国会竞相和草原部落进行贸易,因为它们需要草原上的马。草原马,是战争的利器。如此一来,诸侯国之间竞争起来,草原无论是买还是卖,都能有个不错的价格,小部落们也就没有任何欲望想要联合起来。因为一旦联合了,贸易利润肯定会被盟主剥去一层,还不如不联合呢。\r\n\r\n但是一旦中原统一,就不再有各个诸侯国的竞争,统一的大帝国垄断了中原市场,帝国就可以用政治手段去干涉贸易,要么压低价格,要么干脆断绝贸易。\r\n\r\n这样一来,草原上的那么多小部落,他们仍然需要那些必需品,却没法正常地买来了,那就只有抢。要从中原帝国手里抢东西,小部落根本不是对手,那就必须联合成为一个大的部落联盟才行。于是,强大的游牧帝国出现了。\r\n\r\n联合起来的草原帝国,其人口仍远远少于中原帝国,但却比中原帝国更有战斗力。\r\n\r\n这个所谓的游牧帝国,事实上是一个庞大的部落联盟。联盟的大可汗通过垄断战利品的分配权,形成一个由战争衍生出来的中央财政。草原的中央财政和中原那种靠税收的财政体制很不一样,它主要是靠战争战利品形成的财政。\r\n\r\n### 草原的周期性继承危机\r\n草原可汗是必须经常出去打仗的,你不能带头抢东西回来,就没人愿意跟你了。由于对可汗战斗力的要求,意味着可汗的继承人绝不能是小孩。但是草原上战事频繁,可汘的寿命有很大不确定性,当大可汗去世的时候,他的儿子很有可能还未成年。\r\n\r\n所以在草原上,一般来说,继承制不是中原式的父终子及,而是兄终弟及,也就是哥哥死了弟弟来继位。\r\n\r\n中原有句古语叫做“胡虏无百年之运”,为什么草原帝国没有超过一百年的国运呢?\r\n\r\n就是因为开国那一代可汗,他的兄弟几个加一块儿也活不过一百年。等到这一代全都去世之后,第二代一定会分裂。\r\n\r\n### 草原力量注入中原\r\n就中原来说,要面对的则是周期性的衰败危机。\r\n\r\n在历史上有多次,中原是通过草原力量的注入,来重建秩序的。\r\n\r\n---\r\n\r\n东北是中原与草原的过渡带,但凡在东北能站得住脚的人,南北这两种治理模式他必须全懂。所以在入关后,他就可以建立起一个二元帝国。\r\n\r\n所谓二元帝国,就是在长城以南,以中原儒家的方式来完成统治,统治者的身份是皇帝;而在长城以北,则按草原游牧的方式来完成统治,统治者的身份是大可汗。\r\n### 二元帝国的治理逻辑\r\n纯粹的中原人无法理解草原,纯粹的草原人也无法理解中原。\r\n\r\n而东北则是中原与草原的过渡带,它北边靠着呼伦贝尔大草原,南边靠着辽东的农耕地区。但凡在东北能站得住脚的人,南北这两种治理模式他必须全懂。所以在入关后,他就可以建立起一个二元帝国。\r\n\r\n所谓二元帝国,就是,在长城以南,能以中原儒家的方式来完成统治,统治者的身份是皇帝;在长城以北,则按草原游牧的方式来完成统治,统治者的身份是大可汗。\r\n\r\n\r\n## 中国是如何走向豪族社会的【汉】【中原】\r\n汉武帝的黩武政策,改变了汉朝社会结构,对社会的控制力由中央政府转移到了豪族手中。经过王莽篡位之后,豪族领袖刘秀干掉王莽,建立了东汉,最终形成了豪族和皇帝合作共治的局面。豪族社会维持了差不多一千年,一直到唐宋的转折期,豪族社会才结束。\r\n### 豪族是怎么来的呢?\r\n第一个来源是,战国时期贵族的后代,几百年来留下的世家大族盘根错节,还是很有势力的;\r\n第二个来源是,文景之治的几十年,社会很自由,发展起来的很多大商人;\r\n第三个来源是,地方的大侠、豪强,他们乐于去结交更多的人,愿意去庇护走投无路的人。\r\n### 汉武帝:促使豪族兴起\r\n汉武帝的爷爷和老爸,共同开创了中国古代历史上第一个著名的盛世“文景之治”,经过几十年,民间发展得非常富裕。到了汉武帝,帝国终于有了本钱与匈奴掰掰手腕。\r\n\r\n汉武帝与匈奴的战争,断断续续地打了四十四年。匈奴方面自然是被打得妻离子散、苦不堪言,但是中原人民日子也并不好过。因为这些战争太费钱了,国库里的钱如流水一般花出去,钱不够用了,朝廷就不得不对百姓收更多的税。一次两次地增税,百姓还能忍受。但是长此以往,谁\r\n也受不了啊,所以很多百姓就只好拋弃家园成为流民,那些没有成为流民的百姓,也都受不了。他们另想一辙,把土地扔了,自家的户口也不要了,投到地方豪族的门下接受保护,让官府从此找不着我,也就不用交税。\r\n\r\n于史书记载,到武帝末年,天下的户口减少了一半,这当然不是战争打死了一半的人,而是跑掉了一半。\r\n\r\n到了这个时候,朝廷就压制不了地方豪族了。豪族越来越强,中央政府能收的税越来越少,朝廷的日子就不好过了。\r\n### 地方官僚与豪族结盟\r\n在朝廷还比较有钱的时候,还有些办法控制地方郡守。一旦朝廷没钱了,郡守们就会琢磨如何扩大自己的势力。与豪族结盟,共同对抗朝廷,就是个不错的办法,监守自盗的戏码就上演了。\r\n\r\n地方官僚和豪族联起手,大汉帝国的社会结构就开始发生深刻变化了。\r\n### 王莽:抑制豪族\r\n武帝之后的汉朝历史,恶性循环在不断加深。豪族越发展,朝廷越衰弱,朝廷越衰弱,豪族就越肆无忌惮，朝廷上几乎所有人都束手无策,最终一位看上去谦逊有礼、志向高远的人,众望所归,夺取了大权。这就是王莽。王莽先是成为帝国重臣,不久就篡位成为皇帝。\r\n\r\n他上台之后做了很多改革政策,宣布了土地都属于国有的,民间不可以自行买卖,奴婢也不可以私自买卖,盐、铁这两种最重要的民用物资、山川林泽、铸造货币的权力,等等这一切,全都被收归国有。此外,还设置了一些国家储备机构,用来调节物价。\r\n\r\n王莽这些政策的核心目标都是要抑制豪族,重新恢复帝国朝廷的统治能力。但是这种努力在当时是不可能成功的。原因很简单,你想要控制豪族,豪族会老老实实地等着你来控制他吗?除非你手上掌握的资源对豪族具有碾压性优势,否则豪族反抗起来绝对够你头疼的。王莽能掌握的资源从哪里来呢?只能来自社会上的税收。可是社会已经被豪族控制了,你到哪里去获取能碾压豪族的资源呢?要想真的干掉豪族,除非是有了新的技术进步。在豪族的控制之外,形成了新的经\r\n济资源,皇帝可以在这里收到税,用这个来养活自己能控制的军队,才能干掉豪族,否则皇帝只能接受与豪族共治这样个事实。\r\n### 刘秀:与豪族共治\r\n豪族们起来反抗,很快就推翻了王莽的政权;刘秀作为这些豪族的领袖,建立了东汉政权。就凭刘秀的这些支持力量,东汉也注定只能是个皇帝与豪族合作共治的朝代。\r\n\r\n东汉从西汉继承的是个豪族社会,刘秀身边的巨头们,能够从社会中直接获取支持,皇帝也就没机会消灭这些巨头了。\r\n\r\n于是,刘秀直接就选择了在洛阳定都,这里没有军事地理优势,但这里是豪族们的大本营。这相当于刘秀明白地告诉了豪族,咱们都是一家人了。\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n## 为何后汉皇帝“亲小人、远贤臣”【后汉】【中原】\r\n“贤臣”其实是世家大族,“小人\"就是外戚、宦官,他们是皇帝中央集权的工具。\r\n\r\n后汉皇帝“亲小人,远贤臣”的背后其实是皇权和世家大族的权力斗争。皇帝通过宦官之手,跟世家大族进行PK。\r\n\r\n### 贤臣是谁\r\n贤臣就是儒家化了的豪族。\r\n\r\n有文化的豪族对社会有组织力,让皇上收税变得困难，皇上不大容易动得了他,还会引经据典地批评皇上,说你昏庸。\r\n\r\n他们从东汉的时候逐渐发展起来,直到隋唐的历史上,被称为门阀士族,经常也简称为士族。\r\n\r\n士族一代代发展壮大,逐渐成为世家大族,他们垄断了知识和地位,垄断了社会上的舆论。\r\n\r\n这些人就是所谓“贤臣”,他们差不多把持了朝廷和地方的各种重要职位。世家大族彼此间还联姻通婚,形成了庞大的关系网络,对皇帝有着相当强的制约能力。\r\n### 小人是谁\r\n皇上要找来支持自己的人,来对抗世家大族。但问题是,世家大族把持着官僚体系,也控制着舆论,这些皇帝的支持者就肯定会被指责为“小人”了。这与他们实际上的人品、官品怎么样关系\r\n不大。皇帝的行为,在世家大族嘴里,也肯定是\"亲小人、远贤臣”了。\r\n\r\n皇上到哪去找自己人呢?\r\n\r\n到民间去找?就像前面说的,知识都被世家大族垄断,民间没什么可用之才。到朝廷上找?朝廷上放眼望去,都是彼此串通气的世家大族,也不行。\r\n\r\n皇上还得保证这些人能站在自己一边。对皇帝来说,什么才能确保这些人支持自己尼?忠诚这东西是不敢指望了,能指望的是,他们的身份地位都完全依赖于皇帝这些人即便是出于自私,也得站在皇帝一边了。\r\n\r\n那是什么人啊?只有两种,宦官,也就是太监,还有外戚,也就是皇后的家族。\r\n\r\n宦官和外戚还彼此看不顺眼。宦官完全被世家大族们所瞧不起,外戚有不少也是出身世家大族的,但一旦与皇上结了亲,马上就会有压过其他世家大族一头的感觉,会借此不断扩大自己的势力范围,这又与其他的世家大族之间会发生矛盾。\r\n\r\n于是,皇帝、外戚、宦官、世家大族组成的官僚,彼此之间形成了复杂的关系。\r\n\r\n### 皇帝、外戚、宦官、世家大族的博弈关系\r\n皇帝通过扶植宦官和外戚,跟这些世家大族进行PK,世家大族面对皇帝的这些对抗举措,便会进一步强化自己的”天下为己任”的形象,获得道德制高点,宦官和外戚就进一步被还原为“小人”。\r\n\r\n### 东汉的瓦解\r\n皇权与世家大族的这种冲突过程,会极大地败坏帝国的治理水准。\r\n\r\n正赶上东汉末年进入了一个小冰期,连年天灾,民变四起。朝堂上各种勾心斗角,民间的疾苦实际上没人真的去管。在这种情况下,老百姓求告无门,只好想法自己组织起来,寻找活路。各种民间信仰,就是组织的工具,因此而获得了越来越大的影响力。\r\n\r\n汉朝的儒学讲究天人感应认为天灾必定是皇帝失德,上天降下灾祸,皇帝被迫多次颁发罪己诏。皇上天天都在罪己的话,人们对朝廷的敬畏就会动摇了。民间信仰趁机说,自己才是天命所在,于是,到公元184年爆发了黄巾大起义,动摇天下。朝廷彻底没辙了,只能寄希望于世家大族与地方豪强兴兵勤王。但豪强们各怀鬼胎,逐鹿中原的诱惑迅速地让这些“贤臣\"的种子都变成了乱世的枭雄。\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n## 诸葛亮的士族绞杀行动【三国】\r\n天下三分，最终三国归晋的故事,其实就是士族寒族冲突,最终士族大获全胜的历史。\r\n\r\n但是,经过了这两百多年的发展,士族的水准逐渐败坏了,他们实际上没有能力治理天下。晋朝虽然统一了天下,很快就带来了更大的混乱。\r\n\r\n\r\n\r\n\r\n\r\n',`groups`='Default',`is_show`=1,`publish`=1,`summary`=''  WHERE  `id` = 233 [ RunTime:0.001478s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.001271s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=13  WHERE  `groups` = 'Default' [ RunTime:0.000455s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.001249s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=13  WHERE  `groups` = 'Default' [ RunTime:0.000661s ]
+---------------------------------------------------------------
+[ 2018-11-12T22:39:08+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/233.html
+[ info ] qingrang.top/daily/admin/note/shownote/id/233.html [运行时间：0.056955s][吞吐率：17.56req/s] [内存消耗：2,023.78kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/233.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416; PHPSESSID=k7jlgbe0vr5fik3chm5ebmuvq4',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '233',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000552s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001546s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 233 LIMIT 1 [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000811s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000345s ]
+---------------------------------------------------------------
+[ 2018-11-12T22:39:25+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/editnote/id/233.html
+[ info ] qingrang.top/daily/admin/note/editnote/id/233.html [运行时间：0.061933s][吞吐率：16.15req/s] [内存消耗：2,075.41kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'editnote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416; PHPSESSID=k7jlgbe0vr5fik3chm5ebmuvq4',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '233',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->editNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/editnote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000640s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001541s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 233 LIMIT 1 [ RunTime:0.000822s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001026s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000325s ]
+---------------------------------------------------------------
+[ 2018-11-12T22:39:54+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/updatenote/id/233.html
+[ info ] qingrang.top/daily/admin/note/updatenote/id/233.html [运行时间：0.082955s][吞吐率：12.05req/s] [内存消耗：2,273.05kb] [文件加载：58]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'updatenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '85414',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/233.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416; PHPSESSID=k7jlgbe0vr5fik3chm5ebmuvq4',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'summary' => '',
+  'content' => '# 中国史纲
+[TOC]
+## 中国历史的时空坐标
+时间和空间加在一块,才是完整的历史。
+### 四个时间坐标点
+中国历史发生过几次重要的转型,这些转型推动着中国历史向前的发展。
+
+1.第一个转型,是**商周之变**,就是从商朝到周朝的转型。
+
+这次转型之后,我们开始有了“中国”这个概念,中华文明当中最初的普世主义理想开始出现了。
+
+2.第二个转型,**周秦之变**,就是从周朝到秦朝的转型。
+
+这次转型,让中原从分封割据的局面进入到大一统的局面,中国历史也开始超越于中原之上,中原与草原的相互塑造和对抗开始成为中国历史的大脉络。
+
+3.第三个转型,**唐宋之变**,就是从唐朝到宋朝的转型。
+
+这次转型,让中国的社会结构从豪族社会进入到平民社会,此后中国历史再无长期的分裂,大一统开始成为一个不可逆的历史过程。在先秦之后,中国的文化在宋朝迎来了又一次大爆发,有些西方学者甚至称这是中国的文艺复兴。这次文化爆发,不仅决定了此后将近一千年的中国文化气质,也决定了日本、朝鲜、越南等其他儒教国家的文化气质。
+
+4.第四个转型,就是**清朝末期开始的古今之变**,中国开始从古代社会向现代社会进行艰难转型。
+
+这个过程带来了一系列轰轰烈烈的历史过程,转型过程直到今天仍在继续,还未完成。
+
+### 五个空间坐标点
+草原、中原、海洋、西域、高原。
+
+这几个大的空间,彼此之间有着极为深刻的相互依赖相互塑造的关系,以至于脱离开一方就完全解释不了另一方,所以它们加在一块构成一个体系。
+
+## 中国的概念和中华文明的普世主义理想【商周】【中原】
+### 历史上第一次出现「中国」
+周朝的第二位君主周成王,兴建了东都洛阳城,当时有个叫做「何」的贵族,这人铸了一件青铜器纪念这个事儿,1963年这个青铜器在陕西宝鸡被发现,今天称其为「何尊」，「何尊」的底部铸了一百多个字,里面提到,周武王说要"宅兹中国”,就是说要“住在中国”,这是"中国"这个词的最早来源。
+
+什么叫中国？**达到了文明最高水准的地方,就是文明意义上的中心,古人就管这种地方叫做「中国」。**
+### 中华文明的普世主义理想：究竟天命是降于周人呢,还是天命降于周王
+商朝是由“商人"。他们认为天命降于商人。为了让天能够永远地保佑自己,商人会经常地进行大规模的祭祀活动,祭祀当中会大量用到活人做祭品。
+
+这些被献祭的人从哪来呢?
+
+从对外战争掠夺的羌人而来。所谓的羌人就是生活在商王朝西部的、除了商朝人以外的所有人。
+
+商人的这种天命观,肯定会受到羌人的抵抗。其中,周人是最主要的一支抵抗力量,他们逐渐组织了很多苦不堪言的羌人群体来反抗商朝，反抗的时候,在周人中间有过一个观念层面的争论,究竟天命是降于周人呢,还是天命降于周王?争论的结果是,天命降于周王。
+
+这个观念变化太重要了。初看上去,这似乎是把天命的载体变得狭隘了,实际上是把它变得普世了。
+
+为什么这么说呢?如果天命是降于周人,那就和此前降于商人的路数差不多,周人的岁月要想静好,就得时刻压制住所有不是周人的群体。这样的话,周人和商人征战,谁胜谁败就不好说了。因为,对其他羌人群体来说,打完这一仗,十有八九只不过换了个地方拿我们献祭,凭啥要跟你混啊?而**如果天命是降于周王,则周王便是天下的共主,他不仅仅要为周人主持正义,而是要为全天下人主持正义,这是一种真正的普世主义观念**。
+
+### 什么是封建社会
+推翻了商朝之后,周朝又是如何具体建立它的统治方式呢?那就是,分封制。周天子向下分封了他的大量亲戚和重臣,意图依靠他们形成的藩属诸侯国,来拱卫周王。这样一种政治统治形式就被称作“封建”,这种社会叫做封建社会。
+
+封建“这个词最初出自《左传》,里面有句话叫做“封建亲戚,以藩屏周”,就是说分封亲信出去建立诸侯国,作为周朝王室领地的屏障。**只有这种封土建邦、分封割据的状态,才叫做封建。**
+
+封建社会的一大特征是,最高统治者是没有权力干涉诸侯国内部事务的,诸侯们确实是最高统治者的封臣,但某种意义上也像是个合伙人,都有比较强的独立性。
+
+周朝的时候,诸侯都承认周天子是最高权威,但周天子并不能管诸侯国内部的事情。周朝在这个过程中建立了封建社会,但周天子又逐渐衰落了。在周天子衰落之后,历史的主角就变成了那些诸侯。诸侯们彼此不断竞争,最终终结了中国的封建社会。
+
+## 封建社会的终结【春秋末期、战国初期】【中原】
+到了西周后期,周天子的影响力越来越差,最终被迫迁都洛阳,中国历史进入到东周。
+
+东周又分成了舂秋战国两个时期,**春秋末期出现了一些重要的技术发展,它带来了新的经济和人力资源,打破了过去的社会均衡,封建社会当中的贵族秩序崩塌了，封建社会也在春秋战国时代走上末日。**
+
+### 战争的逻辑的变化
+春秋之前的的战争十分注重礼仪性(战争都是贵族在参与，这就导致了参与人数并不多，他们认为战争是一件高贵的事，他们的战争可能就是比谁的正步踢得好)。但到了春秋中后期,随着楚国(楚国是个土生政权,并不是周天子分封的诸侯国，它的文化和中原有很大区别,也不大在乎中原的礼仪之类的东西,在当时的中原诸侯看来它就是个蛮夷之邦。)的加入，战争变成以砍死人为目的了。也正是由于这个战争逻辑的变化,才把中国引向了大一统。
+
+### 两个技术变迁
+诸侯分封次级诸侯，随着次级诸侯势力的增大，诸侯和次级诸侯的关系同周天子和诸侯的关系一样。在春秋末期、战国初期,出现了两个重要的技术变迁,让诸侯力量的扩大有了可能。正是因为这两次技术变革,打破了君主和封臣之间的力量均衡,周厉王当初搞不定自己下级的事,现在诸侯可以做到了,也就是诸侯能够搞定这些次级诸侯。
+
+这两个技术变迁,一个是铁器和牛耕的农业生产技术,一个是竹简这种知识传播技术。
+
+>铁器和牛耕 - 农业生产技术
+
+铁器与牛耕的出现,提升了平民的劳动效率。过去,他们的耕种效率很低,只能在贵族控制的公田、又叫井田上种地,没有能力再去开垦自己的私田了;但是,铁器和牛耕让生产效率大大提升了,平民有余力去开垦自己的私田,甚至索性就从贵族控制的井田上跑路了。此时君主、贵族、平民三者之间的一种复杂博弈关系就出现了。注意,这儿所说的君主,指的就是周天子封的诸侯,贵族指的就是诸侯所封的次级诸侯,这会儿的历史已经没周天子什么事儿了。
+
+君主向耕种私田的平民提供保护,平民向君主交税。平民从井田上越跑越多,贵族所控制的井田制就逐渐瓦解了,贵族的力量也逐渐削弱了。君主开始获得相对于贵族的优势。
+
+>竹简 - 知识传播技术
+
+ 知识传播的成本急剧下降,一般的贵族子弟、甚至运气好的普通百姓,都有机会学习文字获得知识了。由于多年的人口膨胀,这个时候出现了很多有文化、却无法获得一块封地的贵族子弟,他们就变成游士,到处寻找把自己卖个好价钱的机会。
+
+君主们早就想养一群可控的自己人了。什么样的人最好用呢?
+
+第一,他们要在本国没有根基,没资本对抗君主;
+第二,他们的地位尊荣都取决于君主的赏赐,就有动力与君主相配合。
+
+从别国跑来的游士完全符合这两点要求。君主与游士拍即合,游士成为依附于君主的私人人事班底。这个人事班底,后来就发展为官僚制。
+
+官僚和贵族的区别在于,本质上来说,官僚没有独立性,他们是职业经理人,其地位取决于君主的意志;贵族有独立性,他们是准合伙人,君主有大事必须和他们商量着来。游士的出现,终于让君主们可以全方位碾压贵族封臣,诸侯国也就从君主与贵族共治的结构,转向君主说了算的官僚制结构。
+
+### 变法
+
+这个过程在历史上被叫作什么呢?
+
+变法! 没错,魏国的李悝变法、秦国的商鞅变法等等,就是这样展开的。
+
+来自其他国家的游士,成了各诸侯国的新贵,他们压制住所在国的大贵族,把君主的意志贯彻下去。随着各种变法的展开,中国历史就进入到了战国时代。
+
+对君主来说,这回有办法把平民也动员起来了。你们虽然不是贵族血统,但你们可以立军功。只要你有办法从战场上拎回更多的人头,你也有机会上升到比贵族还高的地位。这种激励可不得了,战争的规模和频次急剧上升,大规模的灭国之战很容易就爆发了。灭国之战都到什么量级呢?比如很多人推崇的战神白起,一场战役就会坑杀赵国的40万降兵,这都在变法之后成为可能，变法这个事情也有传染性,谁最先变法,谁的战争效率就大幅上升;其他国家如果不跟上,就只能等着挨打。
+
+**随着各国陆续变法,各诸侯国内部的旧贵族阶层被一扫而空**。变法之后,君主能决定军功的标准,也就能决定官僚新贵们的地位高低,**君主对国家的控制力就变得更强**,再没有能够约束君主的力量,**分封割据的封建社会也就逐渐走上了终结之日**,战争逻辑的变化,影响还不止于此,当战争规模扩大到了诸侯国承受不起的时候,中国也就开始走向大一统。
+
+## 诸子百家的三大流派【春秋后期】【中原】
+春秋后期,天下大乱,礼崩乐坏。人们突然发现赖以理解世界的坐标系没有了,世界的意义丧失了。而这种时候,就是思想大爆发的时候。
+
+诸子百家,根据他们对待传统不同的态度,可以分为三类:一类是力挺传统（**克己复礼**）,代表就是儒家;一类是抛弃传统（**以法代礼**）,代表就是法家;还有一类是不在乎传统（出世，**无为而治**）,代表就是道家。
+
+### 儒家
+孔子认为复古的路径是“克己复礼”,就是要克制自己的各种冲动,依照传统留下来的"礼"的要求来做事。这样就能达到儒家的最高理想,“仁”。
+
+>如果你理解孔子是儒家的开创者,莫不如把他理解为此前巫师传统的集大成者。
+
+儒家是从商周两朝的巫师系统发展出来的,巫师就是古代沟通天意与人事的神职人员，这种工作主要通过占卜和祭祀来完成。祭祀这属于最高的“礼”,而巫师们就是“礼”的具体操作者与记录者。
+
+到了礼崩乐坏的时候,如果要想复古,第步肯定得先说清楚这个“古”究竟是什么。巫师系统有这方面的很多记录,当然是最合适的解说人选,他们由此就逐渐发展为儒家。
+
+### 法家
+
+儒家强调恢复“礼”,“礼”来自传统,贵族是“礼"的载体;法家强调创建“法”,“法”出自君主意志,官僚是法的执行者。
+
+>法家常在别国成事
+
+根据君主、贵族、官僚的博弈关系,各诸侯国的君主们肯定不会愿意接受儒家,而更愿意接受法所以孔子孟子都曾周游列国,都没得到过重用,反倒是法家的人占据各种高位。有趣的是,法家的鼓吹者往往在本国是不受欢迎的,无论是商鞅还是李斯,都是在别国建功立业。韩非虽然在别国没有能够建立功业,但在本国也从没获得过机会。原因在于,君主需要官僚在本国没有根基,才能听使唤;倘若是出身本国的法家,他总会有各种根基,这种人又太懂得法术势,很容易成为君主忌惮的对象。脱离了家乡的游士,如漂泊浮萍,孤身人,荣辱富贵都依赖于君主,君主最喜欢了。所以,法家只能在别国成事。
+
+### 道家
+
+顺其自然,让世界、让百姓自由自主地活动,事情自然就好了,这就叫“无为而治”。
+
+道家认为,正是各种入世的念头才把事情搞糟了,倘若不再追求转瞬即逝的现世成就,天地一下子就宽了。
+
+## 周秦之变【周-秦-汉】【中原】
+
+周秦之变对中国的思想史还带来个自然延伸的影响,就是我们在历史上看到的,从秦皇到汉武,帝国的官方思想经历了**从法家到道家再到儒家**的转换过程。
+
+### 周秦之变的“法家逻辑”
+百家争鸣的诸多学说,哪一种更注重提升战争效率,它就会获得诸侯们在政治上的更多支持。从中胜出的就是法家。但你用法家就能够征服天下,却不能仅仅用法家来治理天下。
+
+### 汉高祖的“无为而治”
+为什么汉高祖会选择道家呢?最根本的原因在于力量均衡。
+
+刘邦起家之前是个平民百姓,征服天下只能靠团结足够多的人。刘邦能够吸引一群重要将领和谋士追随自己,不是因为自己有力量,而是因为有威信。刘邦和这些人近乎是合伙人的关系,并没有压倒性力量来钳制他们,反倒会被这些兄弟给制衡住。这么一来,皇帝想要专制也不可能,**无为而治只是面对强大合伙人时的无奈之举。**
+
+### 汉武帝的“独尊儒术”
+“阳儒阴法",又称“**外儒内法**"。什么意思呢?从观念层面来看,是儒家在主导,儒生解读着天意,君主也不敢完全违背儒家的教导而行事。儒家表面上的迂腐,却为君主划出了大致的行动边界;但在具体的制度设计上,却还是法家逻辑。这样一来,**对君主来说,治理的效率有了,安抚民心的口径也有了。**
+
+## 汉人王朝为何无法统治长城以北【汉】【中原】
+这个问题,其底层是由儒家文化以及儒家文化的地理依赖性决定的。
+
+### 究竟什么是汉人
+**只要是接受儒家文化,并按儒家文化的指导生活的人,在古代就被视作汉人。**
+
+### 儒家文化的地理依赖性
+儒家文化光有个体心灵的皈依远远不够,个体还必须生活在一种特定的人际关系结构当中才行。
+
+比如,“三从四德三纲五常"等等这些规矩,都是对某种人际关系的规定,脱离开人际关系根本就没法展开。把你一个人扔荒岛上,还让你三从四德,你肯定做不到。
+
+儒家文化所要求的这种特定的人际关系,首先就要求有比较稳定的家庭组织,而稳定的家庭组织,前提是你得是定居的。
+
+定居的前提是农耕,而农耕有一个最硬性的约束条件,就是年降水量。东亚大陆上,如果一个地方年降水量少于400毫米的话,靠农耕是活不下去的。
+
+那么,东亚大陆的400毫米等降雨线在哪儿呢?
+
+这条400毫米等降雨线,差不多和长城重合。长城再往北,年降水量就不足400毫米了。也就是说,儒家帝国在农耕地区的扩张极限,就是400毫米等降雨线。于是在这里,儒家帝国修建了长城。长城再往北就是游牧地区了。
+
+在古代社会,由于农耕对降雨量的要求,使得你要是越过了长城以北,还想活得下去的话,就必须游牧化,否则是死路一条。而一旦游牧化之后,就意味着中原式的人际关系结构、家庭结构等等都没有基础了,无法再按照儒家的方式来生活了。
+
+**儒家文化有一种地理依赖性。因为自然生态原因,儒家越不过去长城以北、嘉峪关以西。儒家文化只能在中原地区展开。**
+
+### 中原和草原的继承逻辑区别
+![中原和草原的继承逻辑区别](https://daily-1252869435.cos.ap-chengdu.myqcloud.com/dFAEllbB47.png)*中原和草原的继承逻辑区别*
+
+官僚制帝国有个很重要的特征,就是君主和官僚,在功能上是有分工的。君主的首要功能,是象征正当性。所以,君主的能力只排在第二位,第一重要的是君位继承的稳定性。嫡长子资格是最容易达成这种共识的。所以,中原的继承原则就稳定在嫡长子继承制上了。
+
+## 草原征服型王朝为何能一统天下【+】【草原】
+中原的统一的农耕帝国,促使草原出现了统一的游牧帝国。游牧帝国又反过来用军事压力改变中原帝国,并且能在中原帝国衰败时输入秩序,重建社会,建立同时统治中原和草原的庞大帝国。
+
+这类帝国,必须能熟练运用中原和草原两套游戏规则。也就是说,它必须是一个胡汉二元帝国。
+
+![草原王朝演化逻辑](https://daily-1252869435.cos.ap-chengdu.myqcloud.com/2018-11-09-22-52-43.png)*草原王朝演化逻辑*
+
+### 游牧帝国是如何建立的
+如果中原没有统一,中原各诸侯国会竞相和草原部落进行贸易,因为它们需要草原上的马。草原马,是战争的利器。如此一来,诸侯国之间竞争起来,草原无论是买还是卖,都能有个不错的价格,小部落们也就没有任何欲望想要联合起来。因为一旦联合了,贸易利润肯定会被盟主剥去一层,还不如不联合呢。
+
+但是一旦中原统一,就不再有各个诸侯国的竞争,统一的大帝国垄断了中原市场,帝国就可以用政治手段去干涉贸易,要么压低价格,要么干脆断绝贸易。
+
+这样一来,草原上的那么多小部落,他们仍然需要那些必需品,却没法正常地买来了,那就只有抢。要从中原帝国手里抢东西,小部落根本不是对手,那就必须联合成为一个大的部落联盟才行。于是,强大的游牧帝国出现了。
+
+联合起来的草原帝国,其人口仍远远少于中原帝国,但却比中原帝国更有战斗力。
+
+这个所谓的游牧帝国,事实上是一个庞大的部落联盟。联盟的大可汗通过垄断战利品的分配权,形成一个由战争衍生出来的中央财政。草原的中央财政和中原那种靠税收的财政体制很不一样,它主要是靠战争战利品形成的财政。
+
+### 草原的周期性继承危机
+草原可汗是必须经常出去打仗的,你不能带头抢东西回来,就没人愿意跟你了。由于对可汗战斗力的要求,意味着可汗的继承人绝不能是小孩。但是草原上战事频繁,可汘的寿命有很大不确定性,当大可汗去世的时候,他的儿子很有可能还未成年。
+
+所以在草原上,一般来说,继承制不是中原式的父终子及,而是兄终弟及,也就是哥哥死了弟弟来继位。
+
+中原有句古语叫做“胡虏无百年之运”,为什么草原帝国没有超过一百年的国运呢?
+
+就是因为开国那一代可汗,他的兄弟几个加一块儿也活不过一百年。等到这一代全都去世之后,第二代一定会分裂。
+
+### 草原力量注入中原
+就中原来说,要面对的则是周期性的衰败危机。
+
+在历史上有多次,中原是通过草原力量的注入,来重建秩序的。
+
+---
+
+东北是中原与草原的过渡带,但凡在东北能站得住脚的人,南北这两种治理模式他必须全懂。所以在入关后,他就可以建立起一个二元帝国。
+
+所谓二元帝国,就是在长城以南,以中原儒家的方式来完成统治,统治者的身份是皇帝;而在长城以北,则按草原游牧的方式来完成统治,统治者的身份是大可汗。
+### 二元帝国的治理逻辑
+纯粹的中原人无法理解草原,纯粹的草原人也无法理解中原。
+
+而东北则是中原与草原的过渡带,它北边靠着呼伦贝尔大草原,南边靠着辽东的农耕地区。但凡在东北能站得住脚的人,南北这两种治理模式他必须全懂。所以在入关后,他就可以建立起一个二元帝国。
+
+所谓二元帝国,就是,在长城以南,能以中原儒家的方式来完成统治,统治者的身份是皇帝;在长城以北,则按草原游牧的方式来完成统治,统治者的身份是大可汗。
+
+
+## 中国是如何走向豪族社会的【汉】【中原】
+汉武帝的黩武政策,改变了汉朝社会结构,对社会的控制力由中央政府转移到了豪族手中。经过王莽篡位之后,豪族领袖刘秀干掉王莽,建立了东汉,最终形成了豪族和皇帝合作共治的局面。豪族社会维持了差不多一千年,一直到唐宋的转折期,豪族社会才结束。
+### 豪族是怎么来的呢?
+第一个来源是,战国时期贵族的后代,几百年来留下的世家大族盘根错节,还是很有势力的;
+第二个来源是,文景之治的几十年,社会很自由,发展起来的很多大商人;
+第三个来源是,地方的大侠、豪强,他们乐于去结交更多的人,愿意去庇护走投无路的人。
+### 汉武帝:促使豪族兴起
+汉武帝的爷爷和老爸,共同开创了中国古代历史上第一个著名的盛世“文景之治”,经过几十年,民间发展得非常富裕。到了汉武帝,帝国终于有了本钱与匈奴掰掰手腕。
+
+汉武帝与匈奴的战争,断断续续地打了四十四年。匈奴方面自然是被打得妻离子散、苦不堪言,但是中原人民日子也并不好过。因为这些战争太费钱了,国库里的钱如流水一般花出去,钱不够用了,朝廷就不得不对百姓收更多的税。一次两次地增税,百姓还能忍受。但是长此以往,谁
+也受不了啊,所以很多百姓就只好拋弃家园成为流民,那些没有成为流民的百姓,也都受不了。他们另想一辙,把土地扔了,自家的户口也不要了,投到地方豪族的门下接受保护,让官府从此找不着我,也就不用交税。
+
+于史书记载,到武帝末年,天下的户口减少了一半,这当然不是战争打死了一半的人,而是跑掉了一半。
+
+到了这个时候,朝廷就压制不了地方豪族了。豪族越来越强,中央政府能收的税越来越少,朝廷的日子就不好过了。
+### 地方官僚与豪族结盟
+在朝廷还比较有钱的时候,还有些办法控制地方郡守。一旦朝廷没钱了,郡守们就会琢磨如何扩大自己的势力。与豪族结盟,共同对抗朝廷,就是个不错的办法,监守自盗的戏码就上演了。
+
+地方官僚和豪族联起手,大汉帝国的社会结构就开始发生深刻变化了。
+### 王莽:抑制豪族
+武帝之后的汉朝历史,恶性循环在不断加深。豪族越发展,朝廷越衰弱,朝廷越衰弱,豪族就越肆无忌惮，朝廷上几乎所有人都束手无策,最终一位看上去谦逊有礼、志向高远的人,众望所归,夺取了大权。这就是王莽。王莽先是成为帝国重臣,不久就篡位成为皇帝。
+
+他上台之后做了很多改革政策,宣布了土地都属于国有的,民间不可以自行买卖,奴婢也不可以私自买卖,盐、铁这两种最重要的民用物资、山川林泽、铸造货币的权力,等等这一切,全都被收归国有。此外,还设置了一些国家储备机构,用来调节物价。
+
+王莽这些政策的核心目标都是要抑制豪族,重新恢复帝国朝廷的统治能力。但是这种努力在当时是不可能成功的。原因很简单,你想要控制豪族,豪族会老老实实地等着你来控制他吗?除非你手上掌握的资源对豪族具有碾压性优势,否则豪族反抗起来绝对够你头疼的。王莽能掌握的资源从哪里来呢?只能来自社会上的税收。可是社会已经被豪族控制了,你到哪里去获取能碾压豪族的资源呢?要想真的干掉豪族,除非是有了新的技术进步。在豪族的控制之外,形成了新的经
+济资源,皇帝可以在这里收到税,用这个来养活自己能控制的军队,才能干掉豪族,否则皇帝只能接受与豪族共治这样个事实。
+### 刘秀:与豪族共治
+豪族们起来反抗,很快就推翻了王莽的政权;刘秀作为这些豪族的领袖,建立了东汉政权。就凭刘秀的这些支持力量,东汉也注定只能是个皇帝与豪族合作共治的朝代。
+
+东汉从西汉继承的是个豪族社会,刘秀身边的巨头们,能够从社会中直接获取支持,皇帝也就没机会消灭这些巨头了。
+
+于是,刘秀直接就选择了在洛阳定都,这里没有军事地理优势,但这里是豪族们的大本营。这相当于刘秀明白地告诉了豪族,咱们都是一家人了。
+
+
+
+
+
+
+
+## 为何后汉皇帝“亲小人、远贤臣”【后汉】【中原】
+“贤臣”其实是世家大族,“小人"就是外戚、宦官,他们是皇帝中央集权的工具。
+
+后汉皇帝“亲小人,远贤臣”的背后其实是皇权和世家大族的权力斗争。皇帝通过宦官之手,跟世家大族进行PK。
+
+### 贤臣是谁
+贤臣就是儒家化了的豪族。
+
+有文化的豪族对社会有组织力,让皇上收税变得困难，皇上不大容易动得了他,还会引经据典地批评皇上,说你昏庸。
+
+他们从东汉的时候逐渐发展起来,直到隋唐的历史上,被称为门阀士族,经常也简称为士族。
+
+士族一代代发展壮大,逐渐成为世家大族,他们垄断了知识和地位,垄断了社会上的舆论。
+
+这些人就是所谓“贤臣”,他们差不多把持了朝廷和地方的各种重要职位。世家大族彼此间还联姻通婚,形成了庞大的关系网络,对皇帝有着相当强的制约能力。
+### 小人是谁
+皇上要找来支持自己的人,来对抗世家大族。但问题是,世家大族把持着官僚体系,也控制着舆论,这些皇帝的支持者就肯定会被指责为“小人”了。这与他们实际上的人品、官品怎么样关系
+不大。皇帝的行为,在世家大族嘴里,也肯定是"亲小人、远贤臣”了。
+
+皇上到哪去找自己人呢?
+
+到民间去找?就像前面说的,知识都被世家大族垄断,民间没什么可用之才。到朝廷上找?朝廷上放眼望去,都是彼此串通气的世家大族,也不行。
+
+皇上还得保证这些人能站在自己一边。对皇帝来说,什么才能确保这些人支持自己尼?忠诚这东西是不敢指望了,能指望的是,他们的身份地位都完全依赖于皇帝这些人即便是出于自私,也得站在皇帝一边了。
+
+那是什么人啊?只有两种,宦官,也就是太监,还有外戚,也就是皇后的家族。
+
+宦官和外戚还彼此看不顺眼。宦官完全被世家大族们所瞧不起,外戚有不少也是出身世家大族的,但一旦与皇上结了亲,马上就会有压过其他世家大族一头的感觉,会借此不断扩大自己的势力范围,这又与其他的世家大族之间会发生矛盾。
+
+于是,皇帝、外戚、宦官、世家大族组成的官僚,彼此之间形成了复杂的关系。
+
+### 皇帝、外戚、宦官、世家大族的博弈关系
+皇帝通过扶植宦官和外戚,跟这些世家大族进行PK,世家大族面对皇帝的这些对抗举措,便会进一步强化自己的”天下为己任”的形象,获得道德制高点,宦官和外戚就进一步被还原为“小人”。
+
+### 东汉的瓦解
+皇权与世家大族的这种冲突过程,会极大地败坏帝国的治理水准。
+
+正赶上东汉末年进入了一个小冰期,连年天灾,民变四起。朝堂上各种勾心斗角,民间的疾苦实际上没人真的去管。在这种情况下,老百姓求告无门,只好想法自己组织起来,寻找活路。各种民间信仰,就是组织的工具,因此而获得了越来越大的影响力。
+
+汉朝的儒学讲究天人感应认为天灾必定是皇帝失德,上天降下灾祸,皇帝被迫多次颁发罪己诏。皇上天天都在罪己的话,人们对朝廷的敬畏就会动摇了。民间信仰趁机说,自己才是天命所在,于是,到公元184年爆发了黄巾大起义,动摇天下。朝廷彻底没辙了,只能寄希望于世家大族与地方豪强兴兵勤王。但豪强们各怀鬼胎,逐鹿中原的诱惑迅速地让这些“贤臣"的种子都变成了乱世的枭雄。
+
+## 诸葛亮的士族绞杀行动【三国】【中原】
+天下三分，最终三国归晋的故事,其实就是士族寒族冲突,最终士族大获全胜的历史。
+
+但是,经过了这两百多年的发展,士族的水准逐渐败坏了,他们实际上没有能力治理天下。晋朝虽然统一了天下,很快就带来了更大的混乱。
+
+
+
+
+
+',
+  'groups' => 'Default',
+  'showsel' => '1',
+  'showse2' => '1',
+  'id' => '233',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->updateNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000548s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001278s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 233 LIMIT 1 [ RunTime:0.000649s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `note` WHERE  `id` = 233 LIMIT 1 [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000899s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `groups` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000268s ]
+[ sql ] [ SQL ] SELECT `id` FROM `groups` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000333s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `id`=233,`p_id`=1,`title`='中国史纲\r',`content`='# 中国史纲\r\n[TOC]\r\n## 中国历史的时空坐标\r\n时间和空间加在一块,才是完整的历史。\r\n### 四个时间坐标点\r\n中国历史发生过几次重要的转型,这些转型推动着中国历史向前的发展。\r\n\r\n1.第一个转型,是**商周之变**,就是从商朝到周朝的转型。\r\n\r\n这次转型之后,我们开始有了“中国”这个概念,中华文明当中最初的普世主义理想开始出现了。\r\n\r\n2.第二个转型,**周秦之变**,就是从周朝到秦朝的转型。\r\n\r\n这次转型,让中原从分封割据的局面进入到大一统的局面,中国历史也开始超越于中原之上,中原与草原的相互塑造和对抗开始成为中国历史的大脉络。\r\n\r\n3.第三个转型,**唐宋之变**,就是从唐朝到宋朝的转型。\r\n\r\n这次转型,让中国的社会结构从豪族社会进入到平民社会,此后中国历史再无长期的分裂,大一统开始成为一个不可逆的历史过程。在先秦之后,中国的文化在宋朝迎来了又一次大爆发,有些西方学者甚至称这是中国的文艺复兴。这次文化爆发,不仅决定了此后将近一千年的中国文化气质,也决定了日本、朝鲜、越南等其他儒教国家的文化气质。\r\n\r\n4.第四个转型,就是**清朝末期开始的古今之变**,中国开始从古代社会向现代社会进行艰难转型。\r\n\r\n这个过程带来了一系列轰轰烈烈的历史过程,转型过程直到今天仍在继续,还未完成。\r\n\r\n### 五个空间坐标点\r\n草原、中原、海洋、西域、高原。\r\n\r\n这几个大的空间,彼此之间有着极为深刻的相互依赖相互塑造的关系,以至于脱离开一方就完全解释不了另一方,所以它们加在一块构成一个体系。\r\n\r\n## 中国的概念和中华文明的普世主义理想【商周】【中原】\r\n### 历史上第一次出现「中国」\r\n周朝的第二位君主周成王,兴建了东都洛阳城,当时有个叫做「何」的贵族,这人铸了一件青铜器纪念这个事儿,1963年这个青铜器在陕西宝鸡被发现,今天称其为「何尊」，「何尊」的底部铸了一百多个字,里面提到,周武王说要\"宅兹中国”,就是说要“住在中国”,这是\"中国\"这个词的最早来源。\r\n\r\n什么叫中国？**达到了文明最高水准的地方,就是文明意义上的中心,古人就管这种地方叫做「中国」。**\r\n### 中华文明的普世主义理想：究竟天命是降于周人呢,还是天命降于周王\r\n商朝是由“商人\"。他们认为天命降于商人。为了让天能够永远地保佑自己,商人会经常地进行大规模的祭祀活动,祭祀当中会大量用到活人做祭品。\r\n\r\n这些被献祭的人从哪来呢?\r\n\r\n从对外战争掠夺的羌人而来。所谓的羌人就是生活在商王朝西部的、除了商朝人以外的所有人。\r\n\r\n商人的这种天命观,肯定会受到羌人的抵抗。其中,周人是最主要的一支抵抗力量,他们逐渐组织了很多苦不堪言的羌人群体来反抗商朝，反抗的时候,在周人中间有过一个观念层面的争论,究竟天命是降于周人呢,还是天命降于周王?争论的结果是,天命降于周王。\r\n\r\n这个观念变化太重要了。初看上去,这似乎是把天命的载体变得狭隘了,实际上是把它变得普世了。\r\n\r\n为什么这么说呢?如果天命是降于周人,那就和此前降于商人的路数差不多,周人的岁月要想静好,就得时刻压制住所有不是周人的群体。这样的话,周人和商人征战,谁胜谁败就不好说了。因为,对其他羌人群体来说,打完这一仗,十有八九只不过换了个地方拿我们献祭,凭啥要跟你混啊?而**如果天命是降于周王,则周王便是天下的共主,他不仅仅要为周人主持正义,而是要为全天下人主持正义,这是一种真正的普世主义观念**。\r\n\r\n### 什么是封建社会\r\n推翻了商朝之后,周朝又是如何具体建立它的统治方式呢?那就是,分封制。周天子向下分封了他的大量亲戚和重臣,意图依靠他们形成的藩属诸侯国,来拱卫周王。这样一种政治统治形式就被称作“封建”,这种社会叫做封建社会。\r\n\r\n封建“这个词最初出自《左传》,里面有句话叫做“封建亲戚,以藩屏周”,就是说分封亲信出去建立诸侯国,作为周朝王室领地的屏障。**只有这种封土建邦、分封割据的状态,才叫做封建。**\r\n\r\n封建社会的一大特征是,最高统治者是没有权力干涉诸侯国内部事务的,诸侯们确实是最高统治者的封臣,但某种意义上也像是个合伙人,都有比较强的独立性。\r\n\r\n周朝的时候,诸侯都承认周天子是最高权威,但周天子并不能管诸侯国内部的事情。周朝在这个过程中建立了封建社会,但周天子又逐渐衰落了。在周天子衰落之后,历史的主角就变成了那些诸侯。诸侯们彼此不断竞争,最终终结了中国的封建社会。\r\n\r\n## 封建社会的终结【春秋末期、战国初期】【中原】\r\n到了西周后期,周天子的影响力越来越差,最终被迫迁都洛阳,中国历史进入到东周。\r\n\r\n东周又分成了舂秋战国两个时期,**春秋末期出现了一些重要的技术发展,它带来了新的经济和人力资源,打破了过去的社会均衡,封建社会当中的贵族秩序崩塌了，封建社会也在春秋战国时代走上末日。**\r\n\r\n### 战争的逻辑的变化\r\n春秋之前的的战争十分注重礼仪性(战争都是贵族在参与，这就导致了参与人数并不多，他们认为战争是一件高贵的事，他们的战争可能就是比谁的正步踢得好)。但到了春秋中后期,随着楚国(楚国是个土生政权,并不是周天子分封的诸侯国，它的文化和中原有很大区别,也不大在乎中原的礼仪之类的东西,在当时的中原诸侯看来它就是个蛮夷之邦。)的加入，战争变成以砍死人为目的了。也正是由于这个战争逻辑的变化,才把中国引向了大一统。\r\n\r\n### 两个技术变迁\r\n诸侯分封次级诸侯，随着次级诸侯势力的增大，诸侯和次级诸侯的关系同周天子和诸侯的关系一样。在春秋末期、战国初期,出现了两个重要的技术变迁,让诸侯力量的扩大有了可能。正是因为这两次技术变革,打破了君主和封臣之间的力量均衡,周厉王当初搞不定自己下级的事,现在诸侯可以做到了,也就是诸侯能够搞定这些次级诸侯。\r\n\r\n这两个技术变迁,一个是铁器和牛耕的农业生产技术,一个是竹简这种知识传播技术。\r\n\r\n>铁器和牛耕 - 农业生产技术\r\n\r\n铁器与牛耕的出现,提升了平民的劳动效率。过去,他们的耕种效率很低,只能在贵族控制的公田、又叫井田上种地,没有能力再去开垦自己的私田了;但是,铁器和牛耕让生产效率大大提升了,平民有余力去开垦自己的私田,甚至索性就从贵族控制的井田上跑路了。此时君主、贵族、平民三者之间的一种复杂博弈关系就出现了。注意,这儿所说的君主,指的就是周天子封的诸侯,贵族指的就是诸侯所封的次级诸侯,这会儿的历史已经没周天子什么事儿了。\r\n\r\n君主向耕种私田的平民提供保护,平民向君主交税。平民从井田上越跑越多,贵族所控制的井田制就逐渐瓦解了,贵族的力量也逐渐削弱了。君主开始获得相对于贵族的优势。\r\n\r\n>竹简 - 知识传播技术\r\n\r\n 知识传播的成本急剧下降,一般的贵族子弟、甚至运气好的普通百姓,都有机会学习文字获得知识了。由于多年的人口膨胀,这个时候出现了很多有文化、却无法获得一块封地的贵族子弟,他们就变成游士,到处寻找把自己卖个好价钱的机会。\r\n\r\n君主们早就想养一群可控的自己人了。什么样的人最好用呢?\r\n\r\n第一,他们要在本国没有根基,没资本对抗君主;\r\n第二,他们的地位尊荣都取决于君主的赏赐,就有动力与君主相配合。\r\n\r\n从别国跑来的游士完全符合这两点要求。君主与游士拍即合,游士成为依附于君主的私人人事班底。这个人事班底,后来就发展为官僚制。\r\n\r\n官僚和贵族的区别在于,本质上来说,官僚没有独立性,他们是职业经理人,其地位取决于君主的意志;贵族有独立性,他们是准合伙人,君主有大事必须和他们商量着来。游士的出现,终于让君主们可以全方位碾压贵族封臣,诸侯国也就从君主与贵族共治的结构,转向君主说了算的官僚制结构。\r\n\r\n### 变法\r\n\r\n这个过程在历史上被叫作什么呢?\r\n\r\n变法! 没错,魏国的李悝变法、秦国的商鞅变法等等,就是这样展开的。\r\n\r\n来自其他国家的游士,成了各诸侯国的新贵,他们压制住所在国的大贵族,把君主的意志贯彻下去。随着各种变法的展开,中国历史就进入到了战国时代。\r\n\r\n对君主来说,这回有办法把平民也动员起来了。你们虽然不是贵族血统,但你们可以立军功。只要你有办法从战场上拎回更多的人头,你也有机会上升到比贵族还高的地位。这种激励可不得了,战争的规模和频次急剧上升,大规模的灭国之战很容易就爆发了。灭国之战都到什么量级呢?比如很多人推崇的战神白起,一场战役就会坑杀赵国的40万降兵,这都在变法之后成为可能，变法这个事情也有传染性,谁最先变法,谁的战争效率就大幅上升;其他国家如果不跟上,就只能等着挨打。\r\n\r\n**随着各国陆续变法,各诸侯国内部的旧贵族阶层被一扫而空**。变法之后,君主能决定军功的标准,也就能决定官僚新贵们的地位高低,**君主对国家的控制力就变得更强**,再没有能够约束君主的力量,**分封割据的封建社会也就逐渐走上了终结之日**,战争逻辑的变化,影响还不止于此,当战争规模扩大到了诸侯国承受不起的时候,中国也就开始走向大一统。\r\n\r\n## 诸子百家的三大流派【春秋后期】【中原】\r\n春秋后期,天下大乱,礼崩乐坏。人们突然发现赖以理解世界的坐标系没有了,世界的意义丧失了。而这种时候,就是思想大爆发的时候。\r\n\r\n诸子百家,根据他们对待传统不同的态度,可以分为三类:一类是力挺传统（**克己复礼**）,代表就是儒家;一类是抛弃传统（**以法代礼**）,代表就是法家;还有一类是不在乎传统（出世，**无为而治**）,代表就是道家。\r\n\r\n### 儒家\r\n孔子认为复古的路径是“克己复礼”,就是要克制自己的各种冲动,依照传统留下来的\"礼\"的要求来做事。这样就能达到儒家的最高理想,“仁”。\r\n\r\n>如果你理解孔子是儒家的开创者,莫不如把他理解为此前巫师传统的集大成者。\r\n\r\n儒家是从商周两朝的巫师系统发展出来的,巫师就是古代沟通天意与人事的神职人员，这种工作主要通过占卜和祭祀来完成。祭祀这属于最高的“礼”,而巫师们就是“礼”的具体操作者与记录者。\r\n\r\n到了礼崩乐坏的时候,如果要想复古,第步肯定得先说清楚这个“古”究竟是什么。巫师系统有这方面的很多记录,当然是最合适的解说人选,他们由此就逐渐发展为儒家。\r\n\r\n### 法家\r\n\r\n儒家强调恢复“礼”,“礼”来自传统,贵族是“礼\"的载体;法家强调创建“法”,“法”出自君主意志,官僚是法的执行者。\r\n\r\n>法家常在别国成事\r\n\r\n根据君主、贵族、官僚的博弈关系,各诸侯国的君主们肯定不会愿意接受儒家,而更愿意接受法所以孔子孟子都曾周游列国,都没得到过重用,反倒是法家的人占据各种高位。有趣的是,法家的鼓吹者往往在本国是不受欢迎的,无论是商鞅还是李斯,都是在别国建功立业。韩非虽然在别国没有能够建立功业,但在本国也从没获得过机会。原因在于,君主需要官僚在本国没有根基,才能听使唤;倘若是出身本国的法家,他总会有各种根基,这种人又太懂得法术势,很容易成为君主忌惮的对象。脱离了家乡的游士,如漂泊浮萍,孤身人,荣辱富贵都依赖于君主,君主最喜欢了。所以,法家只能在别国成事。\r\n\r\n### 道家\r\n\r\n顺其自然,让世界、让百姓自由自主地活动,事情自然就好了,这就叫“无为而治”。\r\n\r\n道家认为,正是各种入世的念头才把事情搞糟了,倘若不再追求转瞬即逝的现世成就,天地一下子就宽了。\r\n\r\n## 周秦之变【周-秦-汉】【中原】\r\n\r\n周秦之变对中国的思想史还带来个自然延伸的影响,就是我们在历史上看到的,从秦皇到汉武,帝国的官方思想经历了**从法家到道家再到儒家**的转换过程。\r\n\r\n### 周秦之变的“法家逻辑”\r\n百家争鸣的诸多学说,哪一种更注重提升战争效率,它就会获得诸侯们在政治上的更多支持。从中胜出的就是法家。但你用法家就能够征服天下,却不能仅仅用法家来治理天下。\r\n\r\n### 汉高祖的“无为而治”\r\n为什么汉高祖会选择道家呢?最根本的原因在于力量均衡。\r\n\r\n刘邦起家之前是个平民百姓,征服天下只能靠团结足够多的人。刘邦能够吸引一群重要将领和谋士追随自己,不是因为自己有力量,而是因为有威信。刘邦和这些人近乎是合伙人的关系,并没有压倒性力量来钳制他们,反倒会被这些兄弟给制衡住。这么一来,皇帝想要专制也不可能,**无为而治只是面对强大合伙人时的无奈之举。**\r\n\r\n### 汉武帝的“独尊儒术”\r\n“阳儒阴法\",又称“**外儒内法**\"。什么意思呢?从观念层面来看,是儒家在主导,儒生解读着天意,君主也不敢完全违背儒家的教导而行事。儒家表面上的迂腐,却为君主划出了大致的行动边界;但在具体的制度设计上,却还是法家逻辑。这样一来,**对君主来说,治理的效率有了,安抚民心的口径也有了。**\r\n\r\n## 汉人王朝为何无法统治长城以北【汉】【中原】\r\n这个问题,其底层是由儒家文化以及儒家文化的地理依赖性决定的。\r\n\r\n### 究竟什么是汉人\r\n**只要是接受儒家文化,并按儒家文化的指导生活的人,在古代就被视作汉人。**\r\n\r\n### 儒家文化的地理依赖性\r\n儒家文化光有个体心灵的皈依远远不够,个体还必须生活在一种特定的人际关系结构当中才行。\r\n\r\n比如,“三从四德三纲五常\"等等这些规矩,都是对某种人际关系的规定,脱离开人际关系根本就没法展开。把你一个人扔荒岛上,还让你三从四德,你肯定做不到。\r\n\r\n儒家文化所要求的这种特定的人际关系,首先就要求有比较稳定的家庭组织,而稳定的家庭组织,前提是你得是定居的。\r\n\r\n定居的前提是农耕,而农耕有一个最硬性的约束条件,就是年降水量。东亚大陆上,如果一个地方年降水量少于400毫米的话,靠农耕是活不下去的。\r\n\r\n那么,东亚大陆的400毫米等降雨线在哪儿呢?\r\n\r\n这条400毫米等降雨线,差不多和长城重合。长城再往北,年降水量就不足400毫米了。也就是说,儒家帝国在农耕地区的扩张极限,就是400毫米等降雨线。于是在这里,儒家帝国修建了长城。长城再往北就是游牧地区了。\r\n\r\n在古代社会,由于农耕对降雨量的要求,使得你要是越过了长城以北,还想活得下去的话,就必须游牧化,否则是死路一条。而一旦游牧化之后,就意味着中原式的人际关系结构、家庭结构等等都没有基础了,无法再按照儒家的方式来生活了。\r\n\r\n**儒家文化有一种地理依赖性。因为自然生态原因,儒家越不过去长城以北、嘉峪关以西。儒家文化只能在中原地区展开。**\r\n\r\n### 中原和草原的继承逻辑区别\r\n![中原和草原的继承逻辑区别](https://daily-1252869435.cos.ap-chengdu.myqcloud.com/dFAEllbB47.png)*中原和草原的继承逻辑区别*\r\n\r\n官僚制帝国有个很重要的特征,就是君主和官僚,在功能上是有分工的。君主的首要功能,是象征正当性。所以,君主的能力只排在第二位,第一重要的是君位继承的稳定性。嫡长子资格是最容易达成这种共识的。所以,中原的继承原则就稳定在嫡长子继承制上了。\r\n\r\n## 草原征服型王朝为何能一统天下【+】【草原】\r\n中原的统一的农耕帝国,促使草原出现了统一的游牧帝国。游牧帝国又反过来用军事压力改变中原帝国,并且能在中原帝国衰败时输入秩序,重建社会,建立同时统治中原和草原的庞大帝国。\r\n\r\n这类帝国,必须能熟练运用中原和草原两套游戏规则。也就是说,它必须是一个胡汉二元帝国。\r\n\r\n![草原王朝演化逻辑](https://daily-1252869435.cos.ap-chengdu.myqcloud.com/2018-11-09-22-52-43.png)*草原王朝演化逻辑*\r\n\r\n### 游牧帝国是如何建立的\r\n如果中原没有统一,中原各诸侯国会竞相和草原部落进行贸易,因为它们需要草原上的马。草原马,是战争的利器。如此一来,诸侯国之间竞争起来,草原无论是买还是卖,都能有个不错的价格,小部落们也就没有任何欲望想要联合起来。因为一旦联合了,贸易利润肯定会被盟主剥去一层,还不如不联合呢。\r\n\r\n但是一旦中原统一,就不再有各个诸侯国的竞争,统一的大帝国垄断了中原市场,帝国就可以用政治手段去干涉贸易,要么压低价格,要么干脆断绝贸易。\r\n\r\n这样一来,草原上的那么多小部落,他们仍然需要那些必需品,却没法正常地买来了,那就只有抢。要从中原帝国手里抢东西,小部落根本不是对手,那就必须联合成为一个大的部落联盟才行。于是,强大的游牧帝国出现了。\r\n\r\n联合起来的草原帝国,其人口仍远远少于中原帝国,但却比中原帝国更有战斗力。\r\n\r\n这个所谓的游牧帝国,事实上是一个庞大的部落联盟。联盟的大可汗通过垄断战利品的分配权,形成一个由战争衍生出来的中央财政。草原的中央财政和中原那种靠税收的财政体制很不一样,它主要是靠战争战利品形成的财政。\r\n\r\n### 草原的周期性继承危机\r\n草原可汗是必须经常出去打仗的,你不能带头抢东西回来,就没人愿意跟你了。由于对可汗战斗力的要求,意味着可汗的继承人绝不能是小孩。但是草原上战事频繁,可汘的寿命有很大不确定性,当大可汗去世的时候,他的儿子很有可能还未成年。\r\n\r\n所以在草原上,一般来说,继承制不是中原式的父终子及,而是兄终弟及,也就是哥哥死了弟弟来继位。\r\n\r\n中原有句古语叫做“胡虏无百年之运”,为什么草原帝国没有超过一百年的国运呢?\r\n\r\n就是因为开国那一代可汗,他的兄弟几个加一块儿也活不过一百年。等到这一代全都去世之后,第二代一定会分裂。\r\n\r\n### 草原力量注入中原\r\n就中原来说,要面对的则是周期性的衰败危机。\r\n\r\n在历史上有多次,中原是通过草原力量的注入,来重建秩序的。\r\n\r\n---\r\n\r\n东北是中原与草原的过渡带,但凡在东北能站得住脚的人,南北这两种治理模式他必须全懂。所以在入关后,他就可以建立起一个二元帝国。\r\n\r\n所谓二元帝国,就是在长城以南,以中原儒家的方式来完成统治,统治者的身份是皇帝;而在长城以北,则按草原游牧的方式来完成统治,统治者的身份是大可汗。\r\n### 二元帝国的治理逻辑\r\n纯粹的中原人无法理解草原,纯粹的草原人也无法理解中原。\r\n\r\n而东北则是中原与草原的过渡带,它北边靠着呼伦贝尔大草原,南边靠着辽东的农耕地区。但凡在东北能站得住脚的人,南北这两种治理模式他必须全懂。所以在入关后,他就可以建立起一个二元帝国。\r\n\r\n所谓二元帝国,就是,在长城以南,能以中原儒家的方式来完成统治,统治者的身份是皇帝;在长城以北,则按草原游牧的方式来完成统治,统治者的身份是大可汗。\r\n\r\n\r\n## 中国是如何走向豪族社会的【汉】【中原】\r\n汉武帝的黩武政策,改变了汉朝社会结构,对社会的控制力由中央政府转移到了豪族手中。经过王莽篡位之后,豪族领袖刘秀干掉王莽,建立了东汉,最终形成了豪族和皇帝合作共治的局面。豪族社会维持了差不多一千年,一直到唐宋的转折期,豪族社会才结束。\r\n### 豪族是怎么来的呢?\r\n第一个来源是,战国时期贵族的后代,几百年来留下的世家大族盘根错节,还是很有势力的;\r\n第二个来源是,文景之治的几十年,社会很自由,发展起来的很多大商人;\r\n第三个来源是,地方的大侠、豪强,他们乐于去结交更多的人,愿意去庇护走投无路的人。\r\n### 汉武帝:促使豪族兴起\r\n汉武帝的爷爷和老爸,共同开创了中国古代历史上第一个著名的盛世“文景之治”,经过几十年,民间发展得非常富裕。到了汉武帝,帝国终于有了本钱与匈奴掰掰手腕。\r\n\r\n汉武帝与匈奴的战争,断断续续地打了四十四年。匈奴方面自然是被打得妻离子散、苦不堪言,但是中原人民日子也并不好过。因为这些战争太费钱了,国库里的钱如流水一般花出去,钱不够用了,朝廷就不得不对百姓收更多的税。一次两次地增税,百姓还能忍受。但是长此以往,谁\r\n也受不了啊,所以很多百姓就只好拋弃家园成为流民,那些没有成为流民的百姓,也都受不了。他们另想一辙,把土地扔了,自家的户口也不要了,投到地方豪族的门下接受保护,让官府从此找不着我,也就不用交税。\r\n\r\n于史书记载,到武帝末年,天下的户口减少了一半,这当然不是战争打死了一半的人,而是跑掉了一半。\r\n\r\n到了这个时候,朝廷就压制不了地方豪族了。豪族越来越强,中央政府能收的税越来越少,朝廷的日子就不好过了。\r\n### 地方官僚与豪族结盟\r\n在朝廷还比较有钱的时候,还有些办法控制地方郡守。一旦朝廷没钱了,郡守们就会琢磨如何扩大自己的势力。与豪族结盟,共同对抗朝廷,就是个不错的办法,监守自盗的戏码就上演了。\r\n\r\n地方官僚和豪族联起手,大汉帝国的社会结构就开始发生深刻变化了。\r\n### 王莽:抑制豪族\r\n武帝之后的汉朝历史,恶性循环在不断加深。豪族越发展,朝廷越衰弱,朝廷越衰弱,豪族就越肆无忌惮，朝廷上几乎所有人都束手无策,最终一位看上去谦逊有礼、志向高远的人,众望所归,夺取了大权。这就是王莽。王莽先是成为帝国重臣,不久就篡位成为皇帝。\r\n\r\n他上台之后做了很多改革政策,宣布了土地都属于国有的,民间不可以自行买卖,奴婢也不可以私自买卖,盐、铁这两种最重要的民用物资、山川林泽、铸造货币的权力,等等这一切,全都被收归国有。此外,还设置了一些国家储备机构,用来调节物价。\r\n\r\n王莽这些政策的核心目标都是要抑制豪族,重新恢复帝国朝廷的统治能力。但是这种努力在当时是不可能成功的。原因很简单,你想要控制豪族,豪族会老老实实地等着你来控制他吗?除非你手上掌握的资源对豪族具有碾压性优势,否则豪族反抗起来绝对够你头疼的。王莽能掌握的资源从哪里来呢?只能来自社会上的税收。可是社会已经被豪族控制了,你到哪里去获取能碾压豪族的资源呢?要想真的干掉豪族,除非是有了新的技术进步。在豪族的控制之外,形成了新的经\r\n济资源,皇帝可以在这里收到税,用这个来养活自己能控制的军队,才能干掉豪族,否则皇帝只能接受与豪族共治这样个事实。\r\n### 刘秀:与豪族共治\r\n豪族们起来反抗,很快就推翻了王莽的政权;刘秀作为这些豪族的领袖,建立了东汉政权。就凭刘秀的这些支持力量,东汉也注定只能是个皇帝与豪族合作共治的朝代。\r\n\r\n东汉从西汉继承的是个豪族社会,刘秀身边的巨头们,能够从社会中直接获取支持,皇帝也就没机会消灭这些巨头了。\r\n\r\n于是,刘秀直接就选择了在洛阳定都,这里没有军事地理优势,但这里是豪族们的大本营。这相当于刘秀明白地告诉了豪族,咱们都是一家人了。\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n## 为何后汉皇帝“亲小人、远贤臣”【后汉】【中原】\r\n“贤臣”其实是世家大族,“小人\"就是外戚、宦官,他们是皇帝中央集权的工具。\r\n\r\n后汉皇帝“亲小人,远贤臣”的背后其实是皇权和世家大族的权力斗争。皇帝通过宦官之手,跟世家大族进行PK。\r\n\r\n### 贤臣是谁\r\n贤臣就是儒家化了的豪族。\r\n\r\n有文化的豪族对社会有组织力,让皇上收税变得困难，皇上不大容易动得了他,还会引经据典地批评皇上,说你昏庸。\r\n\r\n他们从东汉的时候逐渐发展起来,直到隋唐的历史上,被称为门阀士族,经常也简称为士族。\r\n\r\n士族一代代发展壮大,逐渐成为世家大族,他们垄断了知识和地位,垄断了社会上的舆论。\r\n\r\n这些人就是所谓“贤臣”,他们差不多把持了朝廷和地方的各种重要职位。世家大族彼此间还联姻通婚,形成了庞大的关系网络,对皇帝有着相当强的制约能力。\r\n### 小人是谁\r\n皇上要找来支持自己的人,来对抗世家大族。但问题是,世家大族把持着官僚体系,也控制着舆论,这些皇帝的支持者就肯定会被指责为“小人”了。这与他们实际上的人品、官品怎么样关系\r\n不大。皇帝的行为,在世家大族嘴里,也肯定是\"亲小人、远贤臣”了。\r\n\r\n皇上到哪去找自己人呢?\r\n\r\n到民间去找?就像前面说的,知识都被世家大族垄断,民间没什么可用之才。到朝廷上找?朝廷上放眼望去,都是彼此串通气的世家大族,也不行。\r\n\r\n皇上还得保证这些人能站在自己一边。对皇帝来说,什么才能确保这些人支持自己尼?忠诚这东西是不敢指望了,能指望的是,他们的身份地位都完全依赖于皇帝这些人即便是出于自私,也得站在皇帝一边了。\r\n\r\n那是什么人啊?只有两种,宦官,也就是太监,还有外戚,也就是皇后的家族。\r\n\r\n宦官和外戚还彼此看不顺眼。宦官完全被世家大族们所瞧不起,外戚有不少也是出身世家大族的,但一旦与皇上结了亲,马上就会有压过其他世家大族一头的感觉,会借此不断扩大自己的势力范围,这又与其他的世家大族之间会发生矛盾。\r\n\r\n于是,皇帝、外戚、宦官、世家大族组成的官僚,彼此之间形成了复杂的关系。\r\n\r\n### 皇帝、外戚、宦官、世家大族的博弈关系\r\n皇帝通过扶植宦官和外戚,跟这些世家大族进行PK,世家大族面对皇帝的这些对抗举措,便会进一步强化自己的”天下为己任”的形象,获得道德制高点,宦官和外戚就进一步被还原为“小人”。\r\n\r\n### 东汉的瓦解\r\n皇权与世家大族的这种冲突过程,会极大地败坏帝国的治理水准。\r\n\r\n正赶上东汉末年进入了一个小冰期,连年天灾,民变四起。朝堂上各种勾心斗角,民间的疾苦实际上没人真的去管。在这种情况下,老百姓求告无门,只好想法自己组织起来,寻找活路。各种民间信仰,就是组织的工具,因此而获得了越来越大的影响力。\r\n\r\n汉朝的儒学讲究天人感应认为天灾必定是皇帝失德,上天降下灾祸,皇帝被迫多次颁发罪己诏。皇上天天都在罪己的话,人们对朝廷的敬畏就会动摇了。民间信仰趁机说,自己才是天命所在,于是,到公元184年爆发了黄巾大起义,动摇天下。朝廷彻底没辙了,只能寄希望于世家大族与地方豪强兴兵勤王。但豪强们各怀鬼胎,逐鹿中原的诱惑迅速地让这些“贤臣\"的种子都变成了乱世的枭雄。\r\n\r\n## 诸葛亮的士族绞杀行动【三国】【中原】\r\n天下三分，最终三国归晋的故事,其实就是士族寒族冲突,最终士族大获全胜的历史。\r\n\r\n但是,经过了这两百多年的发展,士族的水准逐渐败坏了,他们实际上没有能力治理天下。晋朝虽然统一了天下,很快就带来了更大的混乱。\r\n\r\n\r\n\r\n\r\n\r\n',`groups`='Default',`is_show`=1,`publish`=1,`summary`=''  WHERE  `id` = 233 [ RunTime:0.001210s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.001032s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=13  WHERE  `groups` = 'Default' [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.001334s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=13  WHERE  `groups` = 'Default' [ RunTime:0.000353s ]
+---------------------------------------------------------------
+[ 2018-11-12T22:39:55+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/233.html
+[ info ] qingrang.top/daily/admin/note/shownote/id/233.html [运行时间：0.053872s][吞吐率：18.56req/s] [内存消耗：2,023.78kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/233.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1540982738,1541082864,1541122974,1541171416; PHPSESSID=k7jlgbe0vr5fik3chm5ebmuvq4',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '233',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000634s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001422s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 233 LIMIT 1 [ RunTime:0.000580s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001025s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000350s ]

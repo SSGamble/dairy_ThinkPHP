@@ -1,0 +1,3070 @@
+---------------------------------------------------------------
+[ 2018-11-20T18:35:47+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note
+[ info ] qingrang.top/daily/admin/note [运行时间：0.069286s][吞吐率：14.43req/s] [内存消耗：1,429.10kb] [文件加载：49]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1541082864,1541122974,1541171416,1542098176',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /var/www/html/daily/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T18:35:54+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/login/index.html
+[ info ] qingrang.top/daily/admin/login/index.html [运行时间：0.037621s][吞吐率：26.58req/s] [内存消耗：1,339.90kb] [文件加载：47]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1541082864,1541122974,1541171416,1542098176',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /var/www/html/daily/application/admin/controller/Login.php ]
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/login/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-11-20T18:36:00+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/login/index.html
+[ info ] qingrang.top/daily/admin/login/index.html [运行时间：0.064614s][吞吐率：15.48req/s] [内存消耗：1,922.41kb] [文件加载：54]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '8',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1541082864,1541122974,1541171416,1542098176',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'pwd' => 'shao',
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /var/www/html/daily/application/admin/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001518s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.002571s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000611s ]
+---------------------------------------------------------------
+[ 2018-11-20T18:36:01+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note
+[ info ] qingrang.top/daily/admin/note [运行时间：0.081677s][吞吐率：12.24req/s] [内存消耗：2,286.68kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1541082864,1541122974,1541171416,1542098176; PHPSESSID=trq99s8nsqkkfq503j4teoj742',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/notelst.html [ array (
+  0 => 'stickList',
+  1 => 'hide',
+  2 => 'list',
+  3 => 'list_new',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+  10 => 'default_num',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000722s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001620s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.003626s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal'  AND `is_show` <> 1 ORDER BY gmt_modified desc LIMIT 5 [ RunTime:0.002651s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001093s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000588s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000952s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.001340s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001066s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000672s ]
+---------------------------------------------------------------
+[ 2018-11-20T19:03:14+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/newedit.html
+[ info ] qingrang.top/daily/admin/note/newedit.html [运行时间：0.070157s][吞吐率：14.25req/s] [内存消耗：2,021.65kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'newedit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1541082864,1541122974,1541171416,1542098176; PHPSESSID=trq99s8nsqkkfq503j4teoj742',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->newEdit[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/newedit.html [ array (
+  0 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000650s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001334s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000350s ]
+---------------------------------------------------------------
+[ 2018-11-20T19:07:42+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/newedit.html
+[ info ] qingrang.top/daily/admin/note/newedit.html [运行时间：0.061503s][吞吐率：16.26req/s] [内存消耗：2,021.81kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'newedit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1541082864,1541122974,1541171416,1542098176; PHPSESSID=trq99s8nsqkkfq503j4teoj742',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->newEdit[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/newedit.html [ array (
+  0 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001168s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.002220s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000413s ]
+---------------------------------------------------------------
+[ 2018-11-20T19:58:03+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note
+[ info ] qingrang.top/daily/admin/note [运行时间：0.076827s][吞吐率：13.02req/s] [内存消耗：2,286.19kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1541082864,1541122974,1541171416,1542098176; PHPSESSID=trq99s8nsqkkfq503j4teoj742',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/notelst.html [ array (
+  0 => 'stickList',
+  1 => 'hide',
+  2 => 'list',
+  3 => 'list_new',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+  10 => 'default_num',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000540s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001545s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.002893s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal'  AND `is_show` <> 1 ORDER BY gmt_modified desc LIMIT 5 [ RunTime:0.002565s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001211s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000487s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000948s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000488s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000475s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.002044s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001401s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000663s ]
+---------------------------------------------------------------
+[ 2018-11-20T19:59:27+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/ashownote1.html
+[ info ] qingrang.top/daily/admin/note/ashownote1.html [运行时间：0.055175s][吞吐率：18.12req/s] [内存消耗：2,221.96kb] [文件加载：53]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'ashownote1',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '11',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://qingrang.top/daily/admin/note',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1541082864,1541122974,1541171416,1542098176; PHPSESSID=trq99s8nsqkkfq503j4teoj742',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'groupsID' => '20',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->aShowNote1[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000574s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001467s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `p_id` = 20  AND `id` > 2 ORDER BY date desc [ RunTime:0.002580s ]
+---------------------------------------------------------------
+[ 2018-11-20T20:30:54+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note
+[ info ] qingrang.top/daily/admin/note [运行时间：0.074588s][吞吐率：13.41req/s] [内存消耗：2,285.85kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1541082864,1541122974,1541171416,1542098176; PHPSESSID=trq99s8nsqkkfq503j4teoj742',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/notelst.html [ array (
+  0 => 'stickList',
+  1 => 'hide',
+  2 => 'list',
+  3 => 'list_new',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+  10 => 'default_num',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000685s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001543s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.002195s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal'  AND `is_show` <> 1 ORDER BY gmt_modified desc LIMIT 5 [ RunTime:0.002394s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.000916s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000890s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000427s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.001302s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000610s ]
+---------------------------------------------------------------
+[ 2018-11-20T20:33:11+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/editnote/id/250.html
+[ info ] qingrang.top/daily/admin/note/editnote/id/250.html [运行时间：0.061151s][吞吐率：16.35req/s] [内存消耗：2,068.04kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'editnote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1541082864,1541122974,1541171416,1542098176; PHPSESSID=trq99s8nsqkkfq503j4teoj742',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '250',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->editNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/editnote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000725s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001691s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 250 LIMIT 1 [ RunTime:0.000680s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000981s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000326s ]
+---------------------------------------------------------------
+[ 2018-11-20T20:40:33+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/savenote.html
+[ info ] qingrang.top/daily/admin/note/savenote.html [运行时间：0.053487s][吞吐率：18.70req/s] [内存消耗：2,205.30kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'savenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '46712',
+  'accept' => 'text/plain, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/250.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1541082864,1541122974,1541171416,1542098176; PHPSESSID=trq99s8nsqkkfq503j4teoj742',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'ogroup' => 'Default',
+  'context' => '# Spring(二) - AOP（面向切面）
+[TOC]
+
+Spring 是一个基于 **IOC** 和 **AOP** 的结构 J2EE 系统的框架。
+## AOP 简介
+### 概念
+AOP（Aspect Orient Programming），面向切面编程，是面向对象编程 OOP 的一种补充。面向对象编程是从静态角度考虑程序的结构，而面向切面编程是从动态角度考虑程序运行过程。
+
+AOP 底层，就是采用动态代理模式实现的。采用了两种代理： JDK 的动态代理，与 CGLIB 的动态代理。
+
+面向切面编程，就是将交叉业务逻辑封装成切面，利用 AOP 容器的功能将切面织入到主业务逻辑中。所谓交叉业务逻辑是指，通用的、与主业务逻辑无关的代码，如安全检查、事务、日志等。
+
+若不使用 AOP，则会出现代码纠缠，即交叉业务逻辑与主业务逻辑混合在一起。这样，会使主业务逻辑变的混杂不清。
+
+例如，转账，在真正转账业务逻辑前后，需要权限控制、日志记录、加载事务、结束事务等交叉业务逻辑，而这些业务逻辑与主业务逻辑间并无直接关系。但，它们的代码量所占比重能达到总代码量的一半甚至还多。它们的存在，不仅产生了大量的“冗余”代码，还大大干扰了主业务逻辑---转账。
+
+### 利用 JDK 动态代理实现 AOP 编程
+*ISomeService.java - 主业务接口*
+```
+public interface ISomeService {
+	// 目标方法
+	void doFirst();
+	// 目标方法
+	void doSecond();
+}
+```
+*SomeServiceImpl.java - 目标类*
+```
+public class SomeServiceImpl implements ISomeService {
+
+	@Override
+	public void doFirst() {
+		System.out.println("执行doFirst()方法");
+	}
+
+	@Override
+	public void doSecond() {
+		System.out.println("执行doSecond()方法");
+	}
+}
+```
+*SystemService.java - 交叉业务逻辑*
+```
+public class SystemService {
+	public static void doLog() {
+		System.out.println("执行日志代码");
+	}
+
+	public static void doTx() {
+		System.out.println("执行事务代码");
+	}
+}
+```
+*MyTest.java*
+```
+@Test
+public void MyTest(){
+	final ISomeService target = new SomeServiceImpl();
+	// 自动生成一个动态代理对象
+	ISomeService service = (ISomeService) Proxy.newProxyInstance(
+			target.getClass().getClassLoader(), // 目标类的类加载器
+			target.getClass().getInterfaces(),  // 目标类实现的接口数组
+			new InvocationHandler() { //业务增强逻辑
+				// 具体加强的代码逻辑
+				@Override
+				public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+					SystemService.doTx(); // 织入
+					Object result = method.invoke(target, args); // 执行目标方法
+					SystemService.doLog(); // 织入
+					return result;
+				}
+			});
+	service.doFirst();
+	System.out.println("==============");
+	service.doSecond();
+}
+```
+*输出信息*
+```
+执行事务代码
+执行doFirst()方法
+执行日志代码
+==============
+执行事务代码
+执行doSecond()方法
+执行日志代码
+```
+## AOP 编程术语
+### 切面（Aspect）
+切面泛指交叉业务逻辑。上例中的事务处理、日志处理就可以理解为切面。常用的切面有通知与顾问。实际就是对主业务逻辑的一种增强。
+### 织入（Weaving）
+织入是指将切面代码插入到目标对象的过程。上例中 MyInvocationHandler 类中的 invoke() 方法完成的工作，就可以称为织入。
+### 连接点（JoinPoint）
+连接点指可以被切面织入的方法。通常业务接口中的方法均为连接点。
+### 切入点（Pointcut）
+切入点指切面具体织入的方法。在 StudentServiceImpl 类中，若 doSome()将被增强，而doOther()不被增强，则 doSome()为切入点，而 doOther()仅为连接点。被标记为 final 的方法是不能作为连接点与切入点的。因为最终的是不能被修改，不能被增强的。
+### 目标对象（Target）
+目标对象指将要被增强的对象。即包含主业务逻辑的类的对象。上例中的 StudentServiceImpl 的对象若被增强，则该类称为目标类，该类对象称为目标对象。当然，不被增强，也就无所谓目标不目标了。
+### 通知（Advice）
+通知是切面的一种实现，可以完成简单织入功能（织入功能就是在这里完成的）。换个角度来说，通知定义了增强码切入到目标代码的时间点，是目标方法执行之前执行，还是之后执行等。通知类型不同，切入时间不同。
+
+**切入点定义切入的位置，通知定义切入的时间。**
+### 顾问（Advisor）
+顾问是切面的另一种实现，能够将通知以更为复杂的方式织入到目标对象中，是将通知包装为更复杂切面的装配器。
+
+
+
+
+
+
+## 通知 Advice
+通知（Advice），切面的一种实现，可以完成简单织入功能（织入功能就是在这里完成的）。
+
+常用通知有：前置通知、后置通知、环绕通知、异常处理通知。
+### 前置通知 MethodBeforeAdvice
+定义前置通知，需要实现 MethodBeforeAdvice 接口。该接口中有一个方法 before()，会在目标方法执行之前执行。 前置通知的特点：
+- 在目标方法执行之前先执行。
+- 不改变目标方法的执行流程，前置通知代码不能阻止目标方法执行。
+- 不改变目标方法执行的结果。
+
+*ISomeService.java - 主业务接口*
+```
+public interface ISomeService {
+	// 目标方法
+	void doFirst();
+	// 目标方法
+	void doSecond();
+}
+```
+*SomeServiceImpl.java - 目标类*
+```
+public class SomeServiceImpl implements ISomeService {
+
+	@Override
+	public void doFirst() {
+		System.out.println("执行doFirst()方法");
+	}
+
+	@Override
+	public void doSecond() {
+		System.out.println("执行doSecond()方法");
+	}
+}
+```
+*MyMethodBeforeAdvice.java - 前置通知*
+```
+public class MyMethodBeforeAdvice implements MethodBeforeAdvice {
+
+	// 当前方法在目标方法执行之前执行，method:目标方法，args:目标方法的参数列表，target:目标对象
+	@Override
+	public void before(Method method, Object[] args, Object target) throws Throwable {
+		// 对于目标方法的增强代码就应该写在这里
+		System.out.println("执行前置通知方法");
+	}
+}
+```
+*applicationContext.mxl*
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 注册目标对象 -->
+    <bean id="someService" class="top.qingrang.aop01.SomeServiceImpl"/>
+
+    <!-- 注册切面：通知 -->
+    <bean id="myAdvice" class="top.qingrang.aop01.MyMethodBeforeAdvice"/>
+
+    <!-- 生成代理对象 -->
+    <bean id="serviceProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+    	<!-- 指定目标对象，随便用哪个 -->
+    	<!-- <property name="targetName" value="someService"/> -->
+    	<property name="target" ref="someService"/>
+		
+    	<!-- 指定切面 -->
+    	<property name="interceptorNames" value="myAdvice"/>
+    </bean>
+</beans>
+```
+
+### 后置通知 AfterReturningAdvice
+定义后置通知，需要实现接口 AfterReturningAdvice。该接口中有一个方法 afterReturning()，会在目标方法执行之后执行。后置通知的特点：
+- 在目标方法执行之后执行。
+- 不改变目标方法的执行流程，后置通知代码不能阻止目标方法执行。
+- 不改变目标方法执行的结果。
+
+*SomeServiceImpl.java - 目标类*
+```
+public class SomeServiceImpl implements ISomeService {
+
+	@Override
+	public void doFirst() {
+		System.out.println("执行doFirst()方法");
+	}
+
+	@Override
+	public String doSecond() {
+		System.out.println("执行doSecond()方法");
+		return "abcde";
+	}
+}
+```
+*MyAfterReturningAdvice.java - 后置通知*
+```
+// 后置通知：可以获取到目标方法的返回结果，但无法改变目标方法的结果
+public class MyAfterReturningAdvice implements AfterReturningAdvice {
+	// 在目标方法执行之后执行，returnValue：目标方法的返回值
+	@Override
+	public void afterReturning(Object returnValue, Method method, Object[] args, Object target) throws Throwable {
+		System.out.println("执行后置通知方法  returnValue = " + returnValue);
+		if (returnValue != null) {
+			returnValue = ((String) returnValue).toUpperCase();
+			System.out.println("修改过的结果  returnValue = " + returnValue);
+		}
+	}
+}
+```
+### 环绕通知 MethodInterceptor
+定义环绕通知(在目标方法执行之前之后都会执行)，需要实现 MethodInterceptor 接口。环绕通知，也叫方法拦截器，可以在目标方法调用之前及之后做处理，可以改变目标方法的返回值，也可以改变程序执行流程。
+
+*MyMethodInterceptor.java*
+```
+// 环绕通知：可以修改目标方法的返回结果
+public class MyMethodInterceptor implements MethodInterceptor {
+	@Override
+	public Object invoke(MethodInvocation invocation) throws Throwable {
+		System.out.println("执行环绕通知：目标方法执行之前");
+		// 执行目标方法
+		Object result = invocation.proceed();
+		System.out.println("执行环绕通知：目标方法执行之后");
+		if(result != null) {
+			result = ((String)result).toUpperCase();
+		}
+		return result;
+	}
+}
+```
+
+
+
+
+
+### 异常通知 ThrowsAdvice
+定义异常通知，需要实现 ThrowsAdvice 接口。该接口的主要作用是，在目标方法抛出异常后，根据异常的不同做出相应的处理。当该接口处理完异常后，会简单地将异常再次抛出给目标方法。
+
+不过，这个接口较为特殊，从形式上看，该接口中没有必须要实现的方法。但，这个接口却确实有必须要实现的方法 `afterThrowing()`。这个方法重载了四种形式。由于使用时，一般只使用其中一种，若要都定义到接口中，则势必要使程序员在使用时必须要实现这四个方法。这是很麻烦的。所以就将该接口定义为了标识接口（没有方法的接口）。这四个方法在打开 `ThrowsAdvice` 源码后，上侧的注释部分可以看到：
+![afterThrowing()](https://daily-1252869435.cos.ap-chengdu.myqcloud.com/2018-11-19-10-59-26.png)
+不过，在这四种形式中，常用的形式如下： `public void afterThrowing(自定义的异常类 e)` 这里的参数 e 为，与具体业务相关的用户自定义的异常类对象。容器会根据异常类型的不同，自动选择不同的该方法执行。这些方法的执行是在目标方法执行结束后执行的。其它参数则与前面两个通知中方法的参数意义相同。
+#### 普通异常
+*SomeServiceImpl.java - 目标类*
+```
+@Override
+public void doFirst() {
+	System.out.println("执行doFirst()方法" + 3 / 0);
+}
+```
+*MyThrowsAdvice.java - 异常通知*
+```
+public class MyThrowsAdvice implements ThrowsAdvice {
+	// 当目标方法抛出与指定类型的异常具有 is-a 关系的异常时，执行当前方法
+	public void afterThrowing(Exception ex) {
+		System.out.println("执行异常通知方法");
+	}
+}
+```
+*输出信息*
+```
+执行异常通知方法
+java.lang.ArithmeticException: / by zero
+	...
+```
+#### 自定义异常
+异常分两种：
+- 运行时异常，不进行处理，也可以通过编译。
+若一个类继承自 RunTimeException，则该异常就是运行时异常
+- 编译时异常(受查异常,Checked Exception)，不进行处理，将无法通过编译。
+若一个类继承自 Exception，则该异常就是受查异常
+
+*UserException.java*
+```
+public class UserException extends Exception {
+	public UserException() {
+		super();
+	}
+
+	public UserException(String message) {
+		super(message);
+	}
+}
+```
+*UsernameException.java*
+```
+public class UsernameException extends UserException {
+	public UsernameException() {
+		super();
+	}
+
+	public UsernameException(String message) {
+		super(message);
+	}
+}
+```
+*PasswordException.java*
+```
+public class PasswordException extends UserException {
+	public PasswordException() {
+		super();
+	}
+
+	public PasswordException(String message) {
+		super(message);
+	}
+}
+```
+*MyThrowsAdvice.java - 异常通知*
+```
+public class MyThrowsAdvice implements ThrowsAdvice {
+	// 当目标方法抛出 UsernameException 异常时，执行当前方法
+	public void afterThrowing(UsernameException ex) {
+		System.out.println("发生用户名异常 ex = " + ex.getMessage());
+	}
+	
+	// 当目标方法抛出 PasswordException 异常时，执行当前方法
+	public void afterThrowing(PasswordException ex) {
+		System.out.println("发生密码异常 ex = " + ex.getMessage());
+	}
+	
+	// 当目标方法抛出其它异常时，执行当前方法
+	public void afterThrowing(Exception ex) {
+		System.out.println("发生异常 ex = " + ex.getMessage());
+	}
+}
+```
+*MyTest.java*
+```
+@Test
+public void test01() throws UserException {
+	String resource = "top/qingrang/aop05/applicationContext.xml";
+	ApplicationContext ac = new ClassPathXmlApplicationContext(resource);
+	ISomeService service = (ISomeService) ac.getBean("serviceProxy");
+	service.login("beijing", "222");
+}
+```
+
+
+
+
+
+### 同时使用多种通知
+*applicationContext.mxl*
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 注册目标对象 -->
+    <bean id="someService" class="top.qingrang.aop06.SomeServiceImpl"/>
+
+    <!-- 注册切面：通知 -->
+    <bean id="myBeforeAdvice" class="top.qingrang.aop06.MyMethodBeforeAdvice"/>
+    <bean id="myAfterAdvice" class="top.qingrang.aop06.MyAfterReturningAdvice"/>
+
+    <!-- 生成代理对象 -->
+    <bean id="serviceProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+    	<property name="target" ref="someService"/>
+        <!-- 注入多种通知 -->
+    	<property name="interceptorNames" value="myBeforeAdvice,myAfterAdvice"/>
+    	<!-- <property name="interceptorNames">
+    		<array>
+    			<value>myBeforeAdvice</value>
+    			<value>myAfterAdvice</value>
+    		</array>
+    	</property> -->
+    </bean>
+
+</beans>
+```
+
+
+### 无接口的 CGLIB 代理生成
+若不存在接口，则 ProxyFactoryBean 会自动采用 CGLIB 方式生成动态代理。
+*SomeService.java - 目标类*
+```
+public class SomeService {
+	public void doFirst() {
+		System.out.println("执行doFirst()方法");
+	}
+
+	public String doSecond() {
+		System.out.println("执行doSecond()方法");
+		return "abcde";
+	}
+}
+```
+*MyAfterReturningAdvice.java - 后置通知*
+```
+public class MyAfterReturningAdvice implements AfterReturningAdvice {
+	// 在目标方法执行之后执行，returnValue：目标方法的返回值
+	@Override
+	public void afterReturning(Object returnValue, Method method, Object[] args, Object target) throws Throwable {
+		System.out.println("执行后置通知方法  returnValue = " + returnValue);
+		if (returnValue != null) {
+			returnValue = ((String) returnValue).toUpperCase();
+			System.out.println("修改过的结果  returnValue = " + returnValue);
+		}
+	}
+}
+```
+*applicationContext.mxl*
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 注册目标对象 -->
+    <bean id="someService" class="top.qingrang.aop07.SomeService"/>
+    
+    <!-- 注册切面：通知 -->
+    <bean id="myAdvice" class="top.qingrang.aop07.MyAfterReturningAdvice"/>
+    
+    <!-- 生成代理对象 -->
+    <bean id="serviceProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+    	<property name="target" ref="someService"/>
+    	<property name="interceptorNames" value="myAdvice"/>
+    </bean>
+
+</beans>
+```
+*MyTest.java*
+```
+@Test
+public void test01() {
+	String resource = "top/qingrang/aop07/applicationContext.xml";
+	ApplicationContext ac = new ClassPathXmlApplicationContext(resource);
+	SomeService service = (SomeService) ac.getBean("serviceProxy");
+	service.doFirst();
+	System.out.println("==================");
+	String result = service.doSecond();
+	System.out.println(result);
+}
+```
+### 有接口的 CGLIB 代理生成 - proxyTargetClass 属性
+若存在接口，但又需要使用 CGLIB 生成代理对象，此时，只需要在配置文件中增加一个 proxyTargetClass 属性设置，用于指定强制使用 CGLIB 代理机制。
+
+![CGLIB 代理](https://daily-1252869435.cos.ap-chengdu.myqcloud.com/2018-11-19-12-44-48.png)
+也可指定 optimize（优化）的值为 true，强制使用 CGLIB 代理机制。
+![optimize（优化）](https://daily-1252869435.cos.ap-chengdu.myqcloud.com/2018-11-19-12-45-22.png)
+查看后台运行情况，可以看到代理生成使用的是 CGLIB 代理机制。
+![后台运行情况](https://daily-1252869435.cos.ap-chengdu.myqcloud.com/2018-11-19-12-45-57.png)
+
+
+## 顾问 Advisor
+通知（Advice）是 Spring 提供的一种切面（Aspect）。但其功能过于简单：只能将切面织入到目标类的所有目标方法中， 无法完成将切面织入到指定目标方法中。
+
+顾问（Advisor）是 Spring 提供的另一种切面。其可以完成更为复杂的切面织入功能。`PointcutAdvisor(切入点顾问)` 是顾问的一种， 可以指定具体的切入点。 顾问将通知进行了包装，会根据不同的通知类型，在不同的时间点，将切面织入到不同的切入点。
+
+PointcutAdvisor 接口有两个较为常用的实现类：
+- NameMatchMethodPointcutAdvisor 名称匹配方法切入点顾问
+- RegexpMethodPointcutAdvisor 正则表达式匹配方法切入点顾问
+
+### 名称匹配方法切入点顾问
+NameMatchMethodPointcutAdvisor，即名称匹配方法切入点顾问。容器可根据配置文件中指定的方法名来设置切入点。
+
+`<property name="mappedNames"/>`
+
+*ISomeService.java*
+```
+public interface ISomeService {
+	// 目标方法
+	void doFirst();
+	// 目标方法
+	String doSecond();
+	// 目标方法
+	void doThird();
+}
+```
+*SomeServiceImpl.java*
+```
+public class SomeServiceImpl implements ISomeService {
+	@Override
+	public void doFirst() {
+		System.out.println("执行doFirst()方法");
+	}
+
+	@Override
+	public String doSecond() {
+		System.out.println("执行doSecond()方法");
+		return "abcde";
+	}
+
+	@Override
+	public void doThird() {
+		System.out.println("执行doThird()方法");
+	}
+}
+```
+*MyAfterReturningAdvice.java*
+```
+public class MyAfterReturningAdvice implements AfterReturningAdvice {
+	// 在目标方法执行之后执行，returnValue：目标方法的返回值
+	@Override
+	public void afterReturning(Object returnValue, Method method, Object[] args, Object target) throws Throwable {
+		System.out.println("执行后置通知方法  returnValue = " + returnValue);
+	}
+}
+```
+*applicationContext.mxl*
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 注册目标对象 -->
+    <bean id="someService" class="top.qingrang.aop09.SomeServiceImpl"/>
+    
+    <!-- 注册切面：通知 -->
+    <bean id="myAdvice" class="top.qingrang.aop09.MyAfterReturningAdvice"/>
+    
+    <!-- 注册切面：顾问 -->
+    <bean id="myAdvisor" class="org.springframework.aop.support.NameMatchMethodPointcutAdvisor">
+    	<property name="advice" ref="myAdvice"/>
+    	<!-- 指定切入点：这里匹配的对象是简单方法名 -->
+    	<!-- <property name="mappedName" value="doFirst"/> -->
+    	 <property name="mappedNames" value="doFirst,doSecond"/>
+        <!-- 使用通配符 -->
+    	<!--<property name="mappedNames" value="*ir*"/>-->
+    </bean>
+    
+    <!-- 生成代理对象 -->
+    <bean id="serviceProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+    	<property name="target" ref="someService"/>
+    	<property name="interceptorNames" value="myAdvisor"/>
+    </bean>
+
+</beans>
+```
+*Test.java - 测试*
+```
+@Test
+public void test01() {
+	// 创建容器对象，加载Spring配置文件
+	String resource = "top/qingrang/aop09/applicationContext.xml";
+	ApplicationContext ac = new ClassPathXmlApplicationContext(resource);
+	ISomeService service = (ISomeService) ac.getBean("serviceProxy");
+	service.doFirst();
+	System.out.println("==================");
+	service.doSecond();
+	System.out.println("==================");
+	service.doThird();
+}
+```
+*输出信息*
+```
+执行doFirst()方法
+执行后置通知方法  returnValue = null
+==================
+执行doSecond()方法
+执行后置通知方法  returnValue = abcde
+==================
+执行doThird()方法
+```
+### 正则表达式方法切入点顾问
+RegexpMethodPointcutAdvisor，即正则表达式方法顾问。容器可根据正则表达式来设置切入点。注意，与正则表达式进行匹配的对象是接口中的方法名，而非目标类（接口的实现类）的方法名。
+
+`<property name="pattern"/>`
+
+这里的正则表达式常用的运算符有三个，如下表：
+
+|运算符|意义|
+|-|-|
+|.|表示任意单个字符|
+|+|表示前一个字符出现一次或多次|
+|*|表示前一个字符出现零次或多次|
+
+*applicationContext.mxl*
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 注册目标对象 -->
+    <bean id="someService" class="top.qingrang.aop10.SomeServiceImpl"/>
+
+    <!-- 注册切面：通知 -->
+    <bean id="myAdvice" class="top.qingrang.aop10.MyAfterReturningAdvice"/>
+
+    <!-- 注册切面：顾问 -->
+    <bean id="myAdvisor" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+    	<property name="advice" ref="myAdvice"/>
+    	<!-- 这里的正则表达式匹配的对象是「全限定性方法名」 -->
+        <!-- 全限定性方法名：com.bjpowernode.aop10.ISomeService.doFirst -->
+    	<!-- <property name="pattern" value=".*doFirst"/> -->
+    	<!-- <property name="patterns" value=".*doFirst,.*doSecond"/> -->
+    	<!-- <property name="pattern" value=".*doFirst|.*doSecond"/> -->
+    	<property name="pattern" value=".*S.*"/>
+    </bean>
+
+    <!-- 生成代理对象 -->
+    <bean id="serviceProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+    	<property name="target" ref="someService"/>
+    	<property name="interceptorNames" value="myAdvisor"/>
+    </bean>
+
+</beans>
+```
+
+
+
+
+
+
+
+
+
+
+
+
+',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->saveNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000551s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001455s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `title`='Spring(二) - AOP（面向切面）',`content`='# Spring(二) - AOP（面向切面）\n[TOC]\n\nSpring 是一个基于 **IOC** 和 **AOP** 的结构 J2EE 系统的框架。\n## AOP 简介\n### 概念\nAOP（Aspect Orient Programming），面向切面编程，是面向对象编程 OOP 的一种补充。面向对象编程是从静态角度考虑程序的结构，而面向切面编程是从动态角度考虑程序运行过程。\n\nAOP 底层，就是采用动态代理模式实现的。采用了两种代理： JDK 的动态代理，与 CGLIB 的动态代理。\n\n面向切面编程，就是将交叉业务逻辑封装成切面，利用 AOP 容器的功能将切面织入到主业务逻辑中。所谓交叉业务逻辑是指，通用的、与主业务逻辑无关的代码，如安全检查、事务、日志等。\n\n若不使用 AOP，则会出现代码纠缠，即交叉业务逻辑与主业务逻辑混合在一起。这样，会使主业务逻辑变的混杂不清。\n\n例如，转账，在真正转账业务逻辑前后，需要权限控制、日志记录、加载事务、结束事务等交叉业务逻辑，而这些业务逻辑与主业务逻辑间并无直接关系。但，它们的代码量所占比重能达到总代码量的一半甚至还多。它们的存在，不仅产生了大量的“冗余”代码，还大大干扰了主业务逻辑---转账。\n\n### 利用 JDK 动态代理实现 AOP 编程\n*ISomeService.java - 主业务接口*\n```\npublic interface ISomeService {\n	// 目标方法\n	void doFirst();\n	// 目标方法\n	void doSecond();\n}\n```\n*SomeServiceImpl.java - 目标类*\n```\npublic class SomeServiceImpl implements ISomeService {\n\n	@Override\n	public void doFirst() {\n		System.out.println(\"执行doFirst()方法\");\n	}\n\n	@Override\n	public void doSecond() {\n		System.out.println(\"执行doSecond()方法\");\n	}\n}\n```\n*SystemService.java - 交叉业务逻辑*\n```\npublic class SystemService {\n	public static void doLog() {\n		System.out.println(\"执行日志代码\");\n	}\n\n	public static void doTx() {\n		System.out.println(\"执行事务代码\");\n	}\n}\n```\n*MyTest.java*\n```\n@Test\npublic void MyTest(){\n	final ISomeService target = new SomeServiceImpl();\n	// 自动生成一个动态代理对象\n	ISomeService service = (ISomeService) Proxy.newProxyInstance(\n			target.getClass().getClassLoader(), // 目标类的类加载器\n			target.getClass().getInterfaces(),  // 目标类实现的接口数组\n			new InvocationHandler() { //业务增强逻辑\n				// 具体加强的代码逻辑\n				@Override\n				public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {\n					SystemService.doTx(); // 织入\n					Object result = method.invoke(target, args); // 执行目标方法\n					SystemService.doLog(); // 织入\n					return result;\n				}\n			});\n	service.doFirst();\n	System.out.println(\"==============\");\n	service.doSecond();\n}\n```\n*输出信息*\n```\n执行事务代码\n执行doFirst()方法\n执行日志代码\n==============\n执行事务代码\n执行doSecond()方法\n执行日志代码\n```\n## AOP 编程术语\n### 切面（Aspect）\n切面泛指交叉业务逻辑。上例中的事务处理、日志处理就可以理解为切面。常用的切面有通知与顾问。实际就是对主业务逻辑的一种增强。\n### 织入（Weaving）\n织入是指将切面代码插入到目标对象的过程。上例中 MyInvocationHandler 类中的 invoke() 方法完成的工作，就可以称为织入。\n### 连接点（JoinPoint）\n连接点指可以被切面织入的方法。通常业务接口中的方法均为连接点。\n### 切入点（Pointcut）\n切入点指切面具体织入的方法。在 StudentServiceImpl 类中，若 doSome()将被增强，而doOther()不被增强，则 doSome()为切入点，而 doOther()仅为连接点。被标记为 final 的方法是不能作为连接点与切入点的。因为最终的是不能被修改，不能被增强的。\n### 目标对象（Target）\n目标对象指将要被增强的对象。即包含主业务逻辑的类的对象。上例中的 StudentServiceImpl 的对象若被增强，则该类称为目标类，该类对象称为目标对象。当然，不被增强，也就无所谓目标不目标了。\n### 通知（Advice）\n通知是切面的一种实现，可以完成简单织入功能（织入功能就是在这里完成的）。换个角度来说，通知定义了增强码切入到目标代码的时间点，是目标方法执行之前执行，还是之后执行等。通知类型不同，切入时间不同。\n\n**切入点定义切入的位置，通知定义切入的时间。**\n### 顾问（Advisor）\n顾问是切面的另一种实现，能够将通知以更为复杂的方式织入到目标对象中，是将通知包装为更复杂切面的装配器。\n\n\n\n\n\n\n## 通知 Advice\n通知（Advice），切面的一种实现，可以完成简单织入功能（织入功能就是在这里完成的）。\n\n常用通知有：前置通知、后置通知、环绕通知、异常处理通知。\n### 前置通知 MethodBeforeAdvice\n定义前置通知，需要实现 MethodBeforeAdvice 接口。该接口中有一个方法 before()，会在目标方法执行之前执行。 前置通知的特点：\n- 在目标方法执行之前先执行。\n- 不改变目标方法的执行流程，前置通知代码不能阻止目标方法执行。\n- 不改变目标方法执行的结果。\n\n*ISomeService.java - 主业务接口*\n```\npublic interface ISomeService {\n	// 目标方法\n	void doFirst();\n	// 目标方法\n	void doSecond();\n}\n```\n*SomeServiceImpl.java - 目标类*\n```\npublic class SomeServiceImpl implements ISomeService {\n\n	@Override\n	public void doFirst() {\n		System.out.println(\"执行doFirst()方法\");\n	}\n\n	@Override\n	public void doSecond() {\n		System.out.println(\"执行doSecond()方法\");\n	}\n}\n```\n*MyMethodBeforeAdvice.java - 前置通知*\n```\npublic class MyMethodBeforeAdvice implements MethodBeforeAdvice {\n\n	// 当前方法在目标方法执行之前执行，method:目标方法，args:目标方法的参数列表，target:目标对象\n	@Override\n	public void before(Method method, Object[] args, Object target) throws Throwable {\n		// 对于目标方法的增强代码就应该写在这里\n		System.out.println(\"执行前置通知方法\");\n	}\n}\n```\n*applicationContext.mxl*\n```\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<beans xmlns=\"http://www.springframework.org/schema/beans\"\n    xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n    xsi:schemaLocation=\"\n        http://www.springframework.org/schema/beans \n        http://www.springframework.org/schema/beans/spring-beans.xsd\">\n\n    <!-- 注册目标对象 -->\n    <bean id=\"someService\" class=\"top.qingrang.aop01.SomeServiceImpl\"/>\n\n    <!-- 注册切面：通知 -->\n    <bean id=\"myAdvice\" class=\"top.qingrang.aop01.MyMethodBeforeAdvice\"/>\n\n    <!-- 生成代理对象 -->\n    <bean id=\"serviceProxy\" class=\"org.springframework.aop.framework.ProxyFactoryBean\">\n    	<!-- 指定目标对象，随便用哪个 -->\n    	<!-- <property name=\"targetName\" value=\"someService\"/> -->\n    	<property name=\"target\" ref=\"someService\"/>\n		\n    	<!-- 指定切面 -->\n    	<property name=\"interceptorNames\" value=\"myAdvice\"/>\n    </bean>\n</beans>\n```\n\n### 后置通知 AfterReturningAdvice\n定义后置通知，需要实现接口 AfterReturningAdvice。该接口中有一个方法 afterReturning()，会在目标方法执行之后执行。后置通知的特点：\n- 在目标方法执行之后执行。\n- 不改变目标方法的执行流程，后置通知代码不能阻止目标方法执行。\n- 不改变目标方法执行的结果。\n\n*SomeServiceImpl.java - 目标类*\n```\npublic class SomeServiceImpl implements ISomeService {\n\n	@Override\n	public void doFirst() {\n		System.out.println(\"执行doFirst()方法\");\n	}\n\n	@Override\n	public String doSecond() {\n		System.out.println(\"执行doSecond()方法\");\n		return \"abcde\";\n	}\n}\n```\n*MyAfterReturningAdvice.java - 后置通知*\n```\n// 后置通知：可以获取到目标方法的返回结果，但无法改变目标方法的结果\npublic class MyAfterReturningAdvice implements AfterReturningAdvice {\n	// 在目标方法执行之后执行，returnValue：目标方法的返回值\n	@Override\n	public void afterReturning(Object returnValue, Method method, Object[] args, Object target) throws Throwable {\n		System.out.println(\"执行后置通知方法  returnValue = \" + returnValue);\n		if (returnValue != null) {\n			returnValue = ((String) returnValue).toUpperCase();\n			System.out.println(\"修改过的结果  returnValue = \" + returnValue);\n		}\n	}\n}\n```\n### 环绕通知 MethodInterceptor\n定义环绕通知(在目标方法执行之前之后都会执行)，需要实现 MethodInterceptor 接口。环绕通知，也叫方法拦截器，可以在目标方法调用之前及之后做处理，可以改变目标方法的返回值，也可以改变程序执行流程。\n\n*MyMethodInterceptor.java*\n```\n// 环绕通知：可以修改目标方法的返回结果\npublic class MyMethodInterceptor implements MethodInterceptor {\n	@Override\n	public Object invoke(MethodInvocation invocation) throws Throwable {\n		System.out.println(\"执行环绕通知：目标方法执行之前\");\n		// 执行目标方法\n		Object result = invocation.proceed();\n		System.out.println(\"执行环绕通知：目标方法执行之后\");\n		if(result != null) {\n			result = ((String)result).toUpperCase();\n		}\n		return result;\n	}\n}\n```\n\n\n\n\n\n### 异常通知 ThrowsAdvice\n定义异常通知，需要实现 ThrowsAdvice 接口。该接口的主要作用是，在目标方法抛出异常后，根据异常的不同做出相应的处理。当该接口处理完异常后，会简单地将异常再次抛出给目标方法。\n\n不过，这个接口较为特殊，从形式上看，该接口中没有必须要实现的方法。但，这个接口却确实有必须要实现的方法 `afterThrowing()`。这个方法重载了四种形式。由于使用时，一般只使用其中一种，若要都定义到接口中，则势必要使程序员在使用时必须要实现这四个方法。这是很麻烦的。所以就将该接口定义为了标识接口（没有方法的接口）。这四个方法在打开 `ThrowsAdvice` 源码后，上侧的注释部分可以看到：\n![afterThrowing()](https://daily-1252869435.cos.ap-chengdu.myqcloud.com/2018-11-19-10-59-26.png)\n不过，在这四种形式中，常用的形式如下： `public void afterThrowing(自定义的异常类 e)` 这里的参数 e 为，与具体业务相关的用户自定义的异常类对象。容器会根据异常类型的不同，自动选择不同的该方法执行。这些方法的执行是在目标方法执行结束后执行的。其它参数则与前面两个通知中方法的参数意义相同。\n#### 普通异常\n*SomeServiceImpl.java - 目标类*\n```\n@Override\npublic void doFirst() {\n	System.out.println(\"执行doFirst()方法\" + 3 / 0);\n}\n```\n*MyThrowsAdvice.java - 异常通知*\n```\npublic class MyThrowsAdvice implements ThrowsAdvice {\n	// 当目标方法抛出与指定类型的异常具有 is-a 关系的异常时，执行当前方法\n	public void afterThrowing(Exception ex) {\n		System.out.println(\"执行异常通知方法\");\n	}\n}\n```\n*输出信息*\n```\n执行异常通知方法\njava.lang.ArithmeticException: / by zero\n	...\n```\n#### 自定义异常\n异常分两种：\n- 运行时异常，不进行处理，也可以通过编译。\n若一个类继承自 RunTimeException，则该异常就是运行时异常\n- 编译时异常(受查异常,Checked Exception)，不进行处理，将无法通过编译。\n若一个类继承自 Exception，则该异常就是受查异常\n\n*UserException.java*\n```\npublic class UserException extends Exception {\n	public UserException() {\n		super();\n	}\n\n	public UserException(String message) {\n		super(message);\n	}\n}\n```\n*UsernameException.java*\n```\npublic class UsernameException extends UserException {\n	public UsernameException() {\n		super();\n	}\n\n	public UsernameException(String message) {\n		super(message);\n	}\n}\n```\n*PasswordException.java*\n```\npublic class PasswordException extends UserException {\n	public PasswordException() {\n		super();\n	}\n\n	public PasswordException(String message) {\n		super(message);\n	}\n}\n```\n*MyThrowsAdvice.java - 异常通知*\n```\npublic class MyThrowsAdvice implements ThrowsAdvice {\n	// 当目标方法抛出 UsernameException 异常时，执行当前方法\n	public void afterThrowing(UsernameException ex) {\n		System.out.println(\"发生用户名异常 ex = \" + ex.getMessage());\n	}\n	\n	// 当目标方法抛出 PasswordException 异常时，执行当前方法\n	public void afterThrowing(PasswordException ex) {\n		System.out.println(\"发生密码异常 ex = \" + ex.getMessage());\n	}\n	\n	// 当目标方法抛出其它异常时，执行当前方法\n	public void afterThrowing(Exception ex) {\n		System.out.println(\"发生异常 ex = \" + ex.getMessage());\n	}\n}\n```\n*MyTest.java*\n```\n@Test\npublic void test01() throws UserException {\n	String resource = \"top/qingrang/aop05/applicationContext.xml\";\n	ApplicationContext ac = new ClassPathXmlApplicationContext(resource);\n	ISomeService service = (ISomeService) ac.getBean(\"serviceProxy\");\n	service.login(\"beijing\", \"222\");\n}\n```\n\n\n\n\n\n### 同时使用多种通知\n*applicationContext.mxl*\n```\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<beans xmlns=\"http://www.springframework.org/schema/beans\"\n    xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n    xsi:schemaLocation=\"\n        http://www.springframework.org/schema/beans \n        http://www.springframework.org/schema/beans/spring-beans.xsd\">\n\n    <!-- 注册目标对象 -->\n    <bean id=\"someService\" class=\"top.qingrang.aop06.SomeServiceImpl\"/>\n\n    <!-- 注册切面：通知 -->\n    <bean id=\"myBeforeAdvice\" class=\"top.qingrang.aop06.MyMethodBeforeAdvice\"/>\n    <bean id=\"myAfterAdvice\" class=\"top.qingrang.aop06.MyAfterReturningAdvice\"/>\n\n    <!-- 生成代理对象 -->\n    <bean id=\"serviceProxy\" class=\"org.springframework.aop.framework.ProxyFactoryBean\">\n    	<property name=\"target\" ref=\"someService\"/>\n        <!-- 注入多种通知 -->\n    	<property name=\"interceptorNames\" value=\"myBeforeAdvice,myAfterAdvice\"/>\n    	<!-- <property name=\"interceptorNames\">\n    		<array>\n    			<value>myBeforeAdvice</value>\n    			<value>myAfterAdvice</value>\n    		</array>\n    	</property> -->\n    </bean>\n\n</beans>\n```\n\n\n### 无接口的 CGLIB 代理生成\n若不存在接口，则 ProxyFactoryBean 会自动采用 CGLIB 方式生成动态代理。\n*SomeService.java - 目标类*\n```\npublic class SomeService {\n	public void doFirst() {\n		System.out.println(\"执行doFirst()方法\");\n	}\n\n	public String doSecond() {\n		System.out.println(\"执行doSecond()方法\");\n		return \"abcde\";\n	}\n}\n```\n*MyAfterReturningAdvice.java - 后置通知*\n```\npublic class MyAfterReturningAdvice implements AfterReturningAdvice {\n	// 在目标方法执行之后执行，returnValue：目标方法的返回值\n	@Override\n	public void afterReturning(Object returnValue, Method method, Object[] args, Object target) throws Throwable {\n		System.out.println(\"执行后置通知方法  returnValue = \" + returnValue);\n		if (returnValue != null) {\n			returnValue = ((String) returnValue).toUpperCase();\n			System.out.println(\"修改过的结果  returnValue = \" + returnValue);\n		}\n	}\n}\n```\n*applicationContext.mxl*\n```\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<beans xmlns=\"http://www.springframework.org/schema/beans\"\n    xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n    xsi:schemaLocation=\"\n        http://www.springframework.org/schema/beans \n        http://www.springframework.org/schema/beans/spring-beans.xsd\">\n\n    <!-- 注册目标对象 -->\n    <bean id=\"someService\" class=\"top.qingrang.aop07.SomeService\"/>\n    \n    <!-- 注册切面：通知 -->\n    <bean id=\"myAdvice\" class=\"top.qingrang.aop07.MyAfterReturningAdvice\"/>\n    \n    <!-- 生成代理对象 -->\n    <bean id=\"serviceProxy\" class=\"org.springframework.aop.framework.ProxyFactoryBean\">\n    	<property name=\"target\" ref=\"someService\"/>\n    	<property name=\"interceptorNames\" value=\"myAdvice\"/>\n    </bean>\n\n</beans>\n```\n*MyTest.java*\n```\n@Test\npublic void test01() {\n	String resource = \"top/qingrang/aop07/applicationContext.xml\";\n	ApplicationContext ac = new ClassPathXmlApplicationContext(resource);\n	SomeService service = (SomeService) ac.getBean(\"serviceProxy\");\n	service.doFirst();\n	System.out.println(\"==================\");\n	String result = service.doSecond();\n	System.out.println(result);\n}\n```\n### 有接口的 CGLIB 代理生成 - proxyTargetClass 属性\n若存在接口，但又需要使用 CGLIB 生成代理对象，此时，只需要在配置文件中增加一个 proxyTargetClass 属性设置，用于指定强制使用 CGLIB 代理机制。\n\n![CGLIB 代理](https://daily-1252869435.cos.ap-chengdu.myqcloud.com/2018-11-19-12-44-48.png)\n也可指定 optimize（优化）的值为 true，强制使用 CGLIB 代理机制。\n![optimize（优化）](https://daily-1252869435.cos.ap-chengdu.myqcloud.com/2018-11-19-12-45-22.png)\n查看后台运行情况，可以看到代理生成使用的是 CGLIB 代理机制。\n![后台运行情况](https://daily-1252869435.cos.ap-chengdu.myqcloud.com/2018-11-19-12-45-57.png)\n\n\n## 顾问 Advisor\n通知（Advice）是 Spring 提供的一种切面（Aspect）。但其功能过于简单：只能将切面织入到目标类的所有目标方法中， 无法完成将切面织入到指定目标方法中。\n\n顾问（Advisor）是 Spring 提供的另一种切面。其可以完成更为复杂的切面织入功能。`PointcutAdvisor(切入点顾问)` 是顾问的一种， 可以指定具体的切入点。 顾问将通知进行了包装，会根据不同的通知类型，在不同的时间点，将切面织入到不同的切入点。\n\nPointcutAdvisor 接口有两个较为常用的实现类：\n- NameMatchMethodPointcutAdvisor 名称匹配方法切入点顾问\n- RegexpMethodPointcutAdvisor 正则表达式匹配方法切入点顾问\n\n### 名称匹配方法切入点顾问\nNameMatchMethodPointcutAdvisor，即名称匹配方法切入点顾问。容器可根据配置文件中指定的方法名来设置切入点。\n\n`<property name=\"mappedNames\"/>`\n\n*ISomeService.java*\n```\npublic interface ISomeService {\n	// 目标方法\n	void doFirst();\n	// 目标方法\n	String doSecond();\n	// 目标方法\n	void doThird();\n}\n```\n*SomeServiceImpl.java*\n```\npublic class SomeServiceImpl implements ISomeService {\n	@Override\n	public void doFirst() {\n		System.out.println(\"执行doFirst()方法\");\n	}\n\n	@Override\n	public String doSecond() {\n		System.out.println(\"执行doSecond()方法\");\n		return \"abcde\";\n	}\n\n	@Override\n	public void doThird() {\n		System.out.println(\"执行doThird()方法\");\n	}\n}\n```\n*MyAfterReturningAdvice.java*\n```\npublic class MyAfterReturningAdvice implements AfterReturningAdvice {\n	// 在目标方法执行之后执行，returnValue：目标方法的返回值\n	@Override\n	public void afterReturning(Object returnValue, Method method, Object[] args, Object target) throws Throwable {\n		System.out.println(\"执行后置通知方法  returnValue = \" + returnValue);\n	}\n}\n```\n*applicationContext.mxl*\n```\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<beans xmlns=\"http://www.springframework.org/schema/beans\"\n    xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n    xsi:schemaLocation=\"\n        http://www.springframework.org/schema/beans \n        http://www.springframework.org/schema/beans/spring-beans.xsd\">\n\n    <!-- 注册目标对象 -->\n    <bean id=\"someService\" class=\"top.qingrang.aop09.SomeServiceImpl\"/>\n    \n    <!-- 注册切面：通知 -->\n    <bean id=\"myAdvice\" class=\"top.qingrang.aop09.MyAfterReturningAdvice\"/>\n    \n    <!-- 注册切面：顾问 -->\n    <bean id=\"myAdvisor\" class=\"org.springframework.aop.support.NameMatchMethodPointcutAdvisor\">\n    	<property name=\"advice\" ref=\"myAdvice\"/>\n    	<!-- 指定切入点：这里匹配的对象是简单方法名 -->\n    	<!-- <property name=\"mappedName\" value=\"doFirst\"/> -->\n    	 <property name=\"mappedNames\" value=\"doFirst,doSecond\"/>\n        <!-- 使用通配符 -->\n    	<!--<property name=\"mappedNames\" value=\"*ir*\"/>-->\n    </bean>\n    \n    <!-- 生成代理对象 -->\n    <bean id=\"serviceProxy\" class=\"org.springframework.aop.framework.ProxyFactoryBean\">\n    	<property name=\"target\" ref=\"someService\"/>\n    	<property name=\"interceptorNames\" value=\"myAdvisor\"/>\n    </bean>\n\n</beans>\n```\n*Test.java - 测试*\n```\n@Test\npublic void test01() {\n	// 创建容器对象，加载Spring配置文件\n	String resource = \"top/qingrang/aop09/applicationContext.xml\";\n	ApplicationContext ac = new ClassPathXmlApplicationContext(resource);\n	ISomeService service = (ISomeService) ac.getBean(\"serviceProxy\");\n	service.doFirst();\n	System.out.println(\"==================\");\n	service.doSecond();\n	System.out.println(\"==================\");\n	service.doThird();\n}\n```\n*输出信息*\n```\n执行doFirst()方法\n执行后置通知方法  returnValue = null\n==================\n执行doSecond()方法\n执行后置通知方法  returnValue = abcde\n==================\n执行doThird()方法\n```\n### 正则表达式方法切入点顾问\nRegexpMethodPointcutAdvisor，即正则表达式方法顾问。容器可根据正则表达式来设置切入点。注意，与正则表达式进行匹配的对象是接口中的方法名，而非目标类（接口的实现类）的方法名。\n\n`<property name=\"pattern\"/>`\n\n这里的正则表达式常用的运算符有三个，如下表：\n\n|运算符|意义|\n|-|-|\n|.|表示任意单个字符|\n|+|表示前一个字符出现一次或多次|\n|*|表示前一个字符出现零次或多次|\n\n*applicationContext.mxl*\n```\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<beans xmlns=\"http://www.springframework.org/schema/beans\"\n    xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n    xsi:schemaLocation=\"\n        http://www.springframework.org/schema/beans \n        http://www.springframework.org/schema/beans/spring-beans.xsd\">\n\n    <!-- 注册目标对象 -->\n    <bean id=\"someService\" class=\"top.qingrang.aop10.SomeServiceImpl\"/>\n\n    <!-- 注册切面：通知 -->\n    <bean id=\"myAdvice\" class=\"top.qingrang.aop10.MyAfterReturningAdvice\"/>\n\n    <!-- 注册切面：顾问 -->\n    <bean id=\"myAdvisor\" class=\"org.springframework.aop.support.RegexpMethodPointcutAdvisor\">\n    	<property name=\"advice\" ref=\"myAdvice\"/>\n    	<!-- 这里的正则表达式匹配的对象是「全限定性方法名」 -->\n        <!-- 全限定性方法名：com.bjpowernode.aop10.ISomeService.doFirst -->\n    	<!-- <property name=\"pattern\" value=\".*doFirst\"/> -->\n    	<!-- <property name=\"patterns\" value=\".*doFirst,.*doSecond\"/> -->\n    	<!-- <property name=\"pattern\" value=\".*doFirst|.*doSecond\"/> -->\n    	<property name=\"pattern\" value=\".*S.*\"/>\n    </bean>\n\n    <!-- 生成代理对象 -->\n    <bean id=\"serviceProxy\" class=\"org.springframework.aop.framework.ProxyFactoryBean\">\n    	<property name=\"target\" ref=\"someService\"/>\n    	<property name=\"interceptorNames\" value=\"myAdvisor\"/>\n    </bean>\n\n</beans>\n```\n\n\n\n\n\n\n\n\n\n\n\n\n',`groups`='Default',`p_id`=1  WHERE  `id` = 1 [ RunTime:0.001142s ]
+---------------------------------------------------------------
+[ 2018-11-20T20:40:38+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/savenote.html
+[ info ] qingrang.top/daily/admin/note/savenote.html [运行时间：0.060373s][吞吐率：16.56req/s] [内存消耗：2,205.27kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'savenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '46712',
+  'accept' => 'text/plain, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/250.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1541082864,1541122974,1541171416,1542098176; PHPSESSID=trq99s8nsqkkfq503j4teoj742',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'ogroup' => 'Default',
+  'context' => '# Spring(二) - AOP（面向切面）
+[TOC]
+
+Spring 是一个基于 **IOC** 和 **AOP** 的结构 J2EE 系统的框架。
+## AOP 简介
+### 概念
+AOP（Aspect Orient Programming），面向切面编程，是面向对象编程 OOP 的一种补充。面向对象编程是从静态角度考虑程序的结构，而面向切面编程是从动态角度考虑程序运行过程。
+
+AOP 底层，就是采用动态代理模式实现的。采用了两种代理： JDK 的动态代理，与 CGLIB 的动态代理。
+
+面向切面编程，就是将交叉业务逻辑封装成切面，利用 AOP 容器的功能将切面织入到主业务逻辑中。所谓交叉业务逻辑是指，通用的、与主业务逻辑无关的代码，如安全检查、事务、日志等。
+
+若不使用 AOP，则会出现代码纠缠，即交叉业务逻辑与主业务逻辑混合在一起。这样，会使主业务逻辑变的混杂不清。
+
+例如，转账，在真正转账业务逻辑前后，需要权限控制、日志记录、加载事务、结束事务等交叉业务逻辑，而这些业务逻辑与主业务逻辑间并无直接关系。但，它们的代码量所占比重能达到总代码量的一半甚至还多。它们的存在，不仅产生了大量的“冗余”代码，还大大干扰了主业务逻辑---转账。
+
+### 利用 JDK 动态代理实现 AOP 编程
+*ISomeService.java - 主业务接口*
+```
+public interface ISomeService {
+	// 目标方法
+	void doFirst();
+	// 目标方法
+	void doSecond();
+}
+```
+*SomeServiceImpl.java - 目标类*
+```
+public class SomeServiceImpl implements ISomeService {
+
+	@Override
+	public void doFirst() {
+		System.out.println("执行doFirst()方法");
+	}
+
+	@Override
+	public void doSecond() {
+		System.out.println("执行doSecond()方法");
+	}
+}
+```
+*SystemService.java - 交叉业务逻辑*
+```
+public class SystemService {
+	public static void doLog() {
+		System.out.println("执行日志代码");
+	}
+
+	public static void doTx() {
+		System.out.println("执行事务代码");
+	}
+}
+```
+*MyTest.java*
+```
+@Test
+public void MyTest(){
+	final ISomeService target = new SomeServiceImpl();
+	// 自动生成一个动态代理对象
+	ISomeService service = (ISomeService) Proxy.newProxyInstance(
+			target.getClass().getClassLoader(), // 目标类的类加载器
+			target.getClass().getInterfaces(),  // 目标类实现的接口数组
+			new InvocationHandler() { //业务增强逻辑
+				// 具体加强的代码逻辑
+				@Override
+				public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+					SystemService.doTx(); // 织入
+					Object result = method.invoke(target, args); // 执行目标方法
+					SystemService.doLog(); // 织入
+					return result;
+				}
+			});
+	service.doFirst();
+	System.out.println("==============");
+	service.doSecond();
+}
+```
+*输出信息*
+```
+执行事务代码
+执行doFirst()方法
+执行日志代码
+==============
+执行事务代码
+执行doSecond()方法
+执行日志代码
+```
+## AOP 编程术语
+### 切面（Aspect）
+切面泛指交叉业务逻辑。上例中的事务处理、日志处理就可以理解为切面。常用的切面有通知与顾问。实际就是对主业务逻辑的一种增强。
+### 织入（Weaving）
+织入是指将切面代码插入到目标对象的过程。上例中 MyInvocationHandler 类中的 invoke() 方法完成的工作，就可以称为织入。
+### 连接点（JoinPoint）
+连接点指可以被切面织入的方法。通常业务接口中的方法均为连接点。
+### 切入点（Pointcut）
+切入点指切面具体织入的方法。在 StudentServiceImpl 类中，若 doSome()将被增强，而doOther()不被增强，则 doSome()为切入点，而 doOther()仅为连接点。被标记为 final 的方法是不能作为连接点与切入点的。因为最终的是不能被修改，不能被增强的。
+### 目标对象（Target）
+目标对象指将要被增强的对象。即包含主业务逻辑的类的对象。上例中的 StudentServiceImpl 的对象若被增强，则该类称为目标类，该类对象称为目标对象。当然，不被增强，也就无所谓目标不目标了。
+### 通知（Advice）
+通知是切面的一种实现，可以完成简单织入功能（织入功能就是在这里完成的）。换个角度来说，通知定义了增强码切入到目标代码的时间点，是目标方法执行之前执行，还是之后执行等。通知类型不同，切入时间不同。
+
+**切入点定义切入的位置，通知定义切入的时间。**
+### 顾问（Advisor）
+顾问是切面的另一种实现，能够将通知以更为复杂的方式织入到目标对象中，是将通知包装为更复杂切面的装配器。
+
+
+
+
+
+
+## 通知 Advice
+通知（Advice），切面的一种实现，可以完成简单织入功能（织入功能就是在这里完成的）。
+
+常用通知有：前置通知、后置通知、环绕通知、异常处理通知。
+### 前置通知 MethodBeforeAdvice
+定义前置通知，需要实现 MethodBeforeAdvice 接口。该接口中有一个方法 before()，会在目标方法执行之前执行。 前置通知的特点：
+- 在目标方法执行之前先执行。
+- 不改变目标方法的执行流程，前置通知代码不能阻止目标方法执行。
+- 不改变目标方法执行的结果。
+
+*ISomeService.java - 主业务接口*
+```
+public interface ISomeService {
+	// 目标方法
+	void doFirst();
+	// 目标方法
+	void doSecond();
+}
+```
+*SomeServiceImpl.java - 目标类*
+```
+public class SomeServiceImpl implements ISomeService {
+
+	@Override
+	public void doFirst() {
+		System.out.println("执行doFirst()方法");
+	}
+
+	@Override
+	public void doSecond() {
+		System.out.println("执行doSecond()方法");
+	}
+}
+```
+*MyMethodBeforeAdvice.java - 前置通知*
+```
+public class MyMethodBeforeAdvice implements MethodBeforeAdvice {
+
+	// 当前方法在目标方法执行之前执行，method:目标方法，args:目标方法的参数列表，target:目标对象
+	@Override
+	public void before(Method method, Object[] args, Object target) throws Throwable {
+		// 对于目标方法的增强代码就应该写在这里
+		System.out.println("执行前置通知方法");
+	}
+}
+```
+*applicationContext.mxl*
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 注册目标对象 -->
+    <bean id="someService" class="top.qingrang.aop01.SomeServiceImpl"/>
+
+    <!-- 注册切面：通知 -->
+    <bean id="myAdvice" class="top.qingrang.aop01.MyMethodBeforeAdvice"/>
+
+    <!-- 生成代理对象 -->
+    <bean id="serviceProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+    	<!-- 指定目标对象，随便用哪个 -->
+    	<!-- <property name="targetName" value="someService"/> -->
+    	<property name="target" ref="someService"/>
+		
+    	<!-- 指定切面 -->
+    	<property name="interceptorNames" value="myAdvice"/>
+    </bean>
+</beans>
+```
+
+### 后置通知 AfterReturningAdvice
+定义后置通知，需要实现接口 AfterReturningAdvice。该接口中有一个方法 afterReturning()，会在目标方法执行之后执行。后置通知的特点：
+- 在目标方法执行之后执行。
+- 不改变目标方法的执行流程，后置通知代码不能阻止目标方法执行。
+- 不改变目标方法执行的结果。
+
+*SomeServiceImpl.java - 目标类*
+```
+public class SomeServiceImpl implements ISomeService {
+
+	@Override
+	public void doFirst() {
+		System.out.println("执行doFirst()方法");
+	}
+
+	@Override
+	public String doSecond() {
+		System.out.println("执行doSecond()方法");
+		return "abcde";
+	}
+}
+```
+*MyAfterReturningAdvice.java - 后置通知*
+```
+// 后置通知：可以获取到目标方法的返回结果，但无法改变目标方法的结果
+public class MyAfterReturningAdvice implements AfterReturningAdvice {
+	// 在目标方法执行之后执行，returnValue：目标方法的返回值
+	@Override
+	public void afterReturning(Object returnValue, Method method, Object[] args, Object target) throws Throwable {
+		System.out.println("执行后置通知方法  returnValue = " + returnValue);
+		if (returnValue != null) {
+			returnValue = ((String) returnValue).toUpperCase();
+			System.out.println("修改过的结果  returnValue = " + returnValue);
+		}
+	}
+}
+```
+### 环绕通知 MethodInterceptor
+定义环绕通知(在目标方法执行之前之后都会执行)，需要实现 MethodInterceptor 接口。环绕通知，也叫方法拦截器，可以在目标方法调用之前及之后做处理，可以改变目标方法的返回值，也可以改变程序执行流程。
+
+*MyMethodInterceptor.java*
+```
+// 环绕通知：可以修改目标方法的返回结果
+public class MyMethodInterceptor implements MethodInterceptor {
+	@Override
+	public Object invoke(MethodInvocation invocation) throws Throwable {
+		System.out.println("执行环绕通知：目标方法执行之前");
+		// 执行目标方法
+		Object result = invocation.proceed();
+		System.out.println("执行环绕通知：目标方法执行之后");
+		if(result != null) {
+			result = ((String)result).toUpperCase();
+		}
+		return result;
+	}
+}
+```
+
+
+
+
+
+### 异常通知 ThrowsAdvice
+定义异常通知，需要实现 ThrowsAdvice 接口。该接口的主要作用是，在目标方法抛出异常后，根据异常的不同做出相应的处理。当该接口处理完异常后，会简单地将异常再次抛出给目标方法。
+
+不过，这个接口较为特殊，从形式上看，该接口中没有必须要实现的方法。但，这个接口却确实有必须要实现的方法 `afterThrowing()`。这个方法重载了四种形式。由于使用时，一般只使用其中一种，若要都定义到接口中，则势必要使程序员在使用时必须要实现这四个方法。这是很麻烦的。所以就将该接口定义为了标识接口（没有方法的接口）。这四个方法在打开 `ThrowsAdvice` 源码后，上侧的注释部分可以看到：
+![afterThrowing()](https://daily-1252869435.cos.ap-chengdu.myqcloud.com/2018-11-19-10-59-26.png)
+不过，在这四种形式中，常用的形式如下： `public void afterThrowing(自定义的异常类 e)` 这里的参数 e 为，与具体业务相关的用户自定义的异常类对象。容器会根据异常类型的不同，自动选择不同的该方法执行。这些方法的执行是在目标方法执行结束后执行的。其它参数则与前面两个通知中方法的参数意义相同。
+#### 普通异常
+*SomeServiceImpl.java - 目标类*
+```
+@Override
+public void doFirst() {
+	System.out.println("执行doFirst()方法" + 3 / 0);
+}
+```
+*MyThrowsAdvice.java - 异常通知*
+```
+public class MyThrowsAdvice implements ThrowsAdvice {
+	// 当目标方法抛出与指定类型的异常具有 is-a 关系的异常时，执行当前方法
+	public void afterThrowing(Exception ex) {
+		System.out.println("执行异常通知方法");
+	}
+}
+```
+*输出信息*
+```
+执行异常通知方法
+java.lang.ArithmeticException: / by zero
+	...
+```
+#### 自定义异常
+异常分两种：
+- 运行时异常，不进行处理，也可以通过编译。
+若一个类继承自 RunTimeException，则该异常就是运行时异常
+- 编译时异常(受查异常,Checked Exception)，不进行处理，将无法通过编译。
+若一个类继承自 Exception，则该异常就是受查异常
+
+*UserException.java*
+```
+public class UserException extends Exception {
+	public UserException() {
+		super();
+	}
+
+	public UserException(String message) {
+		super(message);
+	}
+}
+```
+*UsernameException.java*
+```
+public class UsernameException extends UserException {
+	public UsernameException() {
+		super();
+	}
+
+	public UsernameException(String message) {
+		super(message);
+	}
+}
+```
+*PasswordException.java*
+```
+public class PasswordException extends UserException {
+	public PasswordException() {
+		super();
+	}
+
+	public PasswordException(String message) {
+		super(message);
+	}
+}
+```
+*MyThrowsAdvice.java - 异常通知*
+```
+public class MyThrowsAdvice implements ThrowsAdvice {
+	// 当目标方法抛出 UsernameException 异常时，执行当前方法
+	public void afterThrowing(UsernameException ex) {
+		System.out.println("发生用户名异常 ex = " + ex.getMessage());
+	}
+	
+	// 当目标方法抛出 PasswordException 异常时，执行当前方法
+	public void afterThrowing(PasswordException ex) {
+		System.out.println("发生密码异常 ex = " + ex.getMessage());
+	}
+	
+	// 当目标方法抛出其它异常时，执行当前方法
+	public void afterThrowing(Exception ex) {
+		System.out.println("发生异常 ex = " + ex.getMessage());
+	}
+}
+```
+*MyTest.java*
+```
+@Test
+public void test01() throws UserException {
+	String resource = "top/qingrang/aop05/applicationContext.xml";
+	ApplicationContext ac = new ClassPathXmlApplicationContext(resource);
+	ISomeService service = (ISomeService) ac.getBean("serviceProxy");
+	service.login("beijing", "222");
+}
+```
+
+
+
+
+
+### 同时使用多种通知
+*applicationContext.mxl*
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 注册目标对象 -->
+    <bean id="someService" class="top.qingrang.aop06.SomeServiceImpl"/>
+
+    <!-- 注册切面：通知 -->
+    <bean id="myBeforeAdvice" class="top.qingrang.aop06.MyMethodBeforeAdvice"/>
+    <bean id="myAfterAdvice" class="top.qingrang.aop06.MyAfterReturningAdvice"/>
+
+    <!-- 生成代理对象 -->
+    <bean id="serviceProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+    	<property name="target" ref="someService"/>
+        <!-- 注入多种通知 -->
+    	<property name="interceptorNames" value="myBeforeAdvice,myAfterAdvice"/>
+    	<!-- <property name="interceptorNames">
+    		<array>
+    			<value>myBeforeAdvice</value>
+    			<value>myAfterAdvice</value>
+    		</array>
+    	</property> -->
+    </bean>
+
+</beans>
+```
+
+
+### 无接口的 CGLIB 代理生成
+若不存在接口，则 ProxyFactoryBean 会自动采用 CGLIB 方式生成动态代理。
+*SomeService.java - 目标类*
+```
+public class SomeService {
+	public void doFirst() {
+		System.out.println("执行doFirst()方法");
+	}
+
+	public String doSecond() {
+		System.out.println("执行doSecond()方法");
+		return "abcde";
+	}
+}
+```
+*MyAfterReturningAdvice.java - 后置通知*
+```
+public class MyAfterReturningAdvice implements AfterReturningAdvice {
+	// 在目标方法执行之后执行，returnValue：目标方法的返回值
+	@Override
+	public void afterReturning(Object returnValue, Method method, Object[] args, Object target) throws Throwable {
+		System.out.println("执行后置通知方法  returnValue = " + returnValue);
+		if (returnValue != null) {
+			returnValue = ((String) returnValue).toUpperCase();
+			System.out.println("修改过的结果  returnValue = " + returnValue);
+		}
+	}
+}
+```
+*applicationContext.mxl*
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 注册目标对象 -->
+    <bean id="someService" class="top.qingrang.aop07.SomeService"/>
+    
+    <!-- 注册切面：通知 -->
+    <bean id="myAdvice" class="top.qingrang.aop07.MyAfterReturningAdvice"/>
+    
+    <!-- 生成代理对象 -->
+    <bean id="serviceProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+    	<property name="target" ref="someService"/>
+    	<property name="interceptorNames" value="myAdvice"/>
+    </bean>
+
+</beans>
+```
+*MyTest.java*
+```
+@Test
+public void test01() {
+	String resource = "top/qingrang/aop07/applicationContext.xml";
+	ApplicationContext ac = new ClassPathXmlApplicationContext(resource);
+	SomeService service = (SomeService) ac.getBean("serviceProxy");
+	service.doFirst();
+	System.out.println("==================");
+	String result = service.doSecond();
+	System.out.println(result);
+}
+```
+### 有接口的 CGLIB 代理生成 - proxyTargetClass 属性
+若存在接口，但又需要使用 CGLIB 生成代理对象，此时，只需要在配置文件中增加一个 proxyTargetClass 属性设置，用于指定强制使用 CGLIB 代理机制。
+
+![CGLIB 代理](https://daily-1252869435.cos.ap-chengdu.myqcloud.com/2018-11-19-12-44-48.png)
+也可指定 optimize（优化）的值为 true，强制使用 CGLIB 代理机制。
+![optimize（优化）](https://daily-1252869435.cos.ap-chengdu.myqcloud.com/2018-11-19-12-45-22.png)
+查看后台运行情况，可以看到代理生成使用的是 CGLIB 代理机制。
+![后台运行情况](https://daily-1252869435.cos.ap-chengdu.myqcloud.com/2018-11-19-12-45-57.png)
+
+
+## 顾问 Advisor
+通知（Advice）是 Spring 提供的一种切面（Aspect）。但其功能过于简单：只能将切面织入到目标类的所有目标方法中， 无法完成将切面织入到指定目标方法中。
+
+顾问（Advisor）是 Spring 提供的另一种切面。其可以完成更为复杂的切面织入功能。`PointcutAdvisor(切入点顾问)` 是顾问的一种， 可以指定具体的切入点。 顾问将通知进行了包装，会根据不同的通知类型，在不同的时间点，将切面织入到不同的切入点。
+
+PointcutAdvisor 接口有两个较为常用的实现类：
+- NameMatchMethodPointcutAdvisor 名称匹配方法切入点顾问
+- RegexpMethodPointcutAdvisor 正则表达式匹配方法切入点顾问
+
+### 名称匹配方法切入点顾问
+NameMatchMethodPointcutAdvisor，即名称匹配方法切入点顾问。容器可根据配置文件中指定的方法名来设置切入点。
+
+`<property name="mappedNames"/>`
+
+*ISomeService.java*
+```
+public interface ISomeService {
+	// 目标方法
+	void doFirst();
+	// 目标方法
+	String doSecond();
+	// 目标方法
+	void doThird();
+}
+```
+*SomeServiceImpl.java*
+```
+public class SomeServiceImpl implements ISomeService {
+	@Override
+	public void doFirst() {
+		System.out.println("执行doFirst()方法");
+	}
+
+	@Override
+	public String doSecond() {
+		System.out.println("执行doSecond()方法");
+		return "abcde";
+	}
+
+	@Override
+	public void doThird() {
+		System.out.println("执行doThird()方法");
+	}
+}
+```
+*MyAfterReturningAdvice.java*
+```
+public class MyAfterReturningAdvice implements AfterReturningAdvice {
+	// 在目标方法执行之后执行，returnValue：目标方法的返回值
+	@Override
+	public void afterReturning(Object returnValue, Method method, Object[] args, Object target) throws Throwable {
+		System.out.println("执行后置通知方法  returnValue = " + returnValue);
+	}
+}
+```
+*applicationContext.mxl*
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 注册目标对象 -->
+    <bean id="someService" class="top.qingrang.aop09.SomeServiceImpl"/>
+    
+    <!-- 注册切面：通知 -->
+    <bean id="myAdvice" class="top.qingrang.aop09.MyAfterReturningAdvice"/>
+    
+    <!-- 注册切面：顾问 -->
+    <bean id="myAdvisor" class="org.springframework.aop.support.NameMatchMethodPointcutAdvisor">
+    	<property name="advice" ref="myAdvice"/>
+    	<!-- 指定切入点：这里匹配的对象是简单方法名 -->
+    	<!-- <property name="mappedName" value="doFirst"/> -->
+    	 <property name="mappedNames" value="doFirst,doSecond"/>
+        <!-- 使用通配符 -->
+    	<!--<property name="mappedNames" value="*ir*"/>-->
+    </bean>
+    
+    <!-- 生成代理对象 -->
+    <bean id="serviceProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+    	<property name="target" ref="someService"/>
+    	<property name="interceptorNames" value="myAdvisor"/>
+    </bean>
+
+</beans>
+```
+*Test.java - 测试*
+```
+@Test
+public void test01() {
+	// 创建容器对象，加载Spring配置文件
+	String resource = "top/qingrang/aop09/applicationContext.xml";
+	ApplicationContext ac = new ClassPathXmlApplicationContext(resource);
+	ISomeService service = (ISomeService) ac.getBean("serviceProxy");
+	service.doFirst();
+	System.out.println("==================");
+	service.doSecond();
+	System.out.println("==================");
+	service.doThird();
+}
+```
+*输出信息*
+```
+执行doFirst()方法
+执行后置通知方法  returnValue = null
+==================
+执行doSecond()方法
+执行后置通知方法  returnValue = abcde
+==================
+执行doThird()方法
+```
+### 正则表达式方法切入点顾问
+RegexpMethodPointcutAdvisor，即正则表达式方法顾问。容器可根据正则表达式来设置切入点。注意，与正则表达式进行匹配的对象是接口中的方法名，而非目标类（接口的实现类）的方法名。
+
+`<property name="pattern"/>`
+
+这里的正则表达式常用的运算符有三个，如下表：
+
+|运算符|意义|
+|-|-|
+|.|表示任意单个字符|
+|+|表示前一个字符出现一次或多次|
+|*|表示前一个字符出现零次或多次|
+
+*applicationContext.mxl*
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 注册目标对象 -->
+    <bean id="someService" class="top.qingrang.aop10.SomeServiceImpl"/>
+
+    <!-- 注册切面：通知 -->
+    <bean id="myAdvice" class="top.qingrang.aop10.MyAfterReturningAdvice"/>
+
+    <!-- 注册切面：顾问 -->
+    <bean id="myAdvisor" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+    	<property name="advice" ref="myAdvice"/>
+    	<!-- 这里的正则表达式匹配的对象是「全限定性方法名」 -->
+        <!-- 全限定性方法名：com.bjpowernode.aop10.ISomeService.doFirst -->
+    	<!-- <property name="pattern" value=".*doFirst"/> -->
+    	<!-- <property name="patterns" value=".*doFirst,.*doSecond"/> -->
+    	<!-- <property name="pattern" value=".*doFirst|.*doSecond"/> -->
+    	<property name="pattern" value=".*S.*"/>
+    </bean>
+
+    <!-- 生成代理对象 -->
+    <bean id="serviceProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+    	<property name="target" ref="someService"/>
+    	<property name="interceptorNames" value="myAdvisor"/>
+    </bean>
+
+</beans>
+```
+
+
+
+
+
+
+
+
+
+
+
+
+',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->saveNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000648s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001351s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `title`='Spring(二) - AOP（面向切面）',`content`='# Spring(二) - AOP（面向切面）\n[TOC]\n\nSpring 是一个基于 **IOC** 和 **AOP** 的结构 J2EE 系统的框架。\n## AOP 简介\n### 概念\nAOP（Aspect Orient Programming），面向切面编程，是面向对象编程 OOP 的一种补充。面向对象编程是从静态角度考虑程序的结构，而面向切面编程是从动态角度考虑程序运行过程。\n\nAOP 底层，就是采用动态代理模式实现的。采用了两种代理： JDK 的动态代理，与 CGLIB 的动态代理。\n\n面向切面编程，就是将交叉业务逻辑封装成切面，利用 AOP 容器的功能将切面织入到主业务逻辑中。所谓交叉业务逻辑是指，通用的、与主业务逻辑无关的代码，如安全检查、事务、日志等。\n\n若不使用 AOP，则会出现代码纠缠，即交叉业务逻辑与主业务逻辑混合在一起。这样，会使主业务逻辑变的混杂不清。\n\n例如，转账，在真正转账业务逻辑前后，需要权限控制、日志记录、加载事务、结束事务等交叉业务逻辑，而这些业务逻辑与主业务逻辑间并无直接关系。但，它们的代码量所占比重能达到总代码量的一半甚至还多。它们的存在，不仅产生了大量的“冗余”代码，还大大干扰了主业务逻辑---转账。\n\n### 利用 JDK 动态代理实现 AOP 编程\n*ISomeService.java - 主业务接口*\n```\npublic interface ISomeService {\n	// 目标方法\n	void doFirst();\n	// 目标方法\n	void doSecond();\n}\n```\n*SomeServiceImpl.java - 目标类*\n```\npublic class SomeServiceImpl implements ISomeService {\n\n	@Override\n	public void doFirst() {\n		System.out.println(\"执行doFirst()方法\");\n	}\n\n	@Override\n	public void doSecond() {\n		System.out.println(\"执行doSecond()方法\");\n	}\n}\n```\n*SystemService.java - 交叉业务逻辑*\n```\npublic class SystemService {\n	public static void doLog() {\n		System.out.println(\"执行日志代码\");\n	}\n\n	public static void doTx() {\n		System.out.println(\"执行事务代码\");\n	}\n}\n```\n*MyTest.java*\n```\n@Test\npublic void MyTest(){\n	final ISomeService target = new SomeServiceImpl();\n	// 自动生成一个动态代理对象\n	ISomeService service = (ISomeService) Proxy.newProxyInstance(\n			target.getClass().getClassLoader(), // 目标类的类加载器\n			target.getClass().getInterfaces(),  // 目标类实现的接口数组\n			new InvocationHandler() { //业务增强逻辑\n				// 具体加强的代码逻辑\n				@Override\n				public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {\n					SystemService.doTx(); // 织入\n					Object result = method.invoke(target, args); // 执行目标方法\n					SystemService.doLog(); // 织入\n					return result;\n				}\n			});\n	service.doFirst();\n	System.out.println(\"==============\");\n	service.doSecond();\n}\n```\n*输出信息*\n```\n执行事务代码\n执行doFirst()方法\n执行日志代码\n==============\n执行事务代码\n执行doSecond()方法\n执行日志代码\n```\n## AOP 编程术语\n### 切面（Aspect）\n切面泛指交叉业务逻辑。上例中的事务处理、日志处理就可以理解为切面。常用的切面有通知与顾问。实际就是对主业务逻辑的一种增强。\n### 织入（Weaving）\n织入是指将切面代码插入到目标对象的过程。上例中 MyInvocationHandler 类中的 invoke() 方法完成的工作，就可以称为织入。\n### 连接点（JoinPoint）\n连接点指可以被切面织入的方法。通常业务接口中的方法均为连接点。\n### 切入点（Pointcut）\n切入点指切面具体织入的方法。在 StudentServiceImpl 类中，若 doSome()将被增强，而doOther()不被增强，则 doSome()为切入点，而 doOther()仅为连接点。被标记为 final 的方法是不能作为连接点与切入点的。因为最终的是不能被修改，不能被增强的。\n### 目标对象（Target）\n目标对象指将要被增强的对象。即包含主业务逻辑的类的对象。上例中的 StudentServiceImpl 的对象若被增强，则该类称为目标类，该类对象称为目标对象。当然，不被增强，也就无所谓目标不目标了。\n### 通知（Advice）\n通知是切面的一种实现，可以完成简单织入功能（织入功能就是在这里完成的）。换个角度来说，通知定义了增强码切入到目标代码的时间点，是目标方法执行之前执行，还是之后执行等。通知类型不同，切入时间不同。\n\n**切入点定义切入的位置，通知定义切入的时间。**\n### 顾问（Advisor）\n顾问是切面的另一种实现，能够将通知以更为复杂的方式织入到目标对象中，是将通知包装为更复杂切面的装配器。\n\n\n\n\n\n\n## 通知 Advice\n通知（Advice），切面的一种实现，可以完成简单织入功能（织入功能就是在这里完成的）。\n\n常用通知有：前置通知、后置通知、环绕通知、异常处理通知。\n### 前置通知 MethodBeforeAdvice\n定义前置通知，需要实现 MethodBeforeAdvice 接口。该接口中有一个方法 before()，会在目标方法执行之前执行。 前置通知的特点：\n- 在目标方法执行之前先执行。\n- 不改变目标方法的执行流程，前置通知代码不能阻止目标方法执行。\n- 不改变目标方法执行的结果。\n\n*ISomeService.java - 主业务接口*\n```\npublic interface ISomeService {\n	// 目标方法\n	void doFirst();\n	// 目标方法\n	void doSecond();\n}\n```\n*SomeServiceImpl.java - 目标类*\n```\npublic class SomeServiceImpl implements ISomeService {\n\n	@Override\n	public void doFirst() {\n		System.out.println(\"执行doFirst()方法\");\n	}\n\n	@Override\n	public void doSecond() {\n		System.out.println(\"执行doSecond()方法\");\n	}\n}\n```\n*MyMethodBeforeAdvice.java - 前置通知*\n```\npublic class MyMethodBeforeAdvice implements MethodBeforeAdvice {\n\n	// 当前方法在目标方法执行之前执行，method:目标方法，args:目标方法的参数列表，target:目标对象\n	@Override\n	public void before(Method method, Object[] args, Object target) throws Throwable {\n		// 对于目标方法的增强代码就应该写在这里\n		System.out.println(\"执行前置通知方法\");\n	}\n}\n```\n*applicationContext.mxl*\n```\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<beans xmlns=\"http://www.springframework.org/schema/beans\"\n    xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n    xsi:schemaLocation=\"\n        http://www.springframework.org/schema/beans \n        http://www.springframework.org/schema/beans/spring-beans.xsd\">\n\n    <!-- 注册目标对象 -->\n    <bean id=\"someService\" class=\"top.qingrang.aop01.SomeServiceImpl\"/>\n\n    <!-- 注册切面：通知 -->\n    <bean id=\"myAdvice\" class=\"top.qingrang.aop01.MyMethodBeforeAdvice\"/>\n\n    <!-- 生成代理对象 -->\n    <bean id=\"serviceProxy\" class=\"org.springframework.aop.framework.ProxyFactoryBean\">\n    	<!-- 指定目标对象，随便用哪个 -->\n    	<!-- <property name=\"targetName\" value=\"someService\"/> -->\n    	<property name=\"target\" ref=\"someService\"/>\n		\n    	<!-- 指定切面 -->\n    	<property name=\"interceptorNames\" value=\"myAdvice\"/>\n    </bean>\n</beans>\n```\n\n### 后置通知 AfterReturningAdvice\n定义后置通知，需要实现接口 AfterReturningAdvice。该接口中有一个方法 afterReturning()，会在目标方法执行之后执行。后置通知的特点：\n- 在目标方法执行之后执行。\n- 不改变目标方法的执行流程，后置通知代码不能阻止目标方法执行。\n- 不改变目标方法执行的结果。\n\n*SomeServiceImpl.java - 目标类*\n```\npublic class SomeServiceImpl implements ISomeService {\n\n	@Override\n	public void doFirst() {\n		System.out.println(\"执行doFirst()方法\");\n	}\n\n	@Override\n	public String doSecond() {\n		System.out.println(\"执行doSecond()方法\");\n		return \"abcde\";\n	}\n}\n```\n*MyAfterReturningAdvice.java - 后置通知*\n```\n// 后置通知：可以获取到目标方法的返回结果，但无法改变目标方法的结果\npublic class MyAfterReturningAdvice implements AfterReturningAdvice {\n	// 在目标方法执行之后执行，returnValue：目标方法的返回值\n	@Override\n	public void afterReturning(Object returnValue, Method method, Object[] args, Object target) throws Throwable {\n		System.out.println(\"执行后置通知方法  returnValue = \" + returnValue);\n		if (returnValue != null) {\n			returnValue = ((String) returnValue).toUpperCase();\n			System.out.println(\"修改过的结果  returnValue = \" + returnValue);\n		}\n	}\n}\n```\n### 环绕通知 MethodInterceptor\n定义环绕通知(在目标方法执行之前之后都会执行)，需要实现 MethodInterceptor 接口。环绕通知，也叫方法拦截器，可以在目标方法调用之前及之后做处理，可以改变目标方法的返回值，也可以改变程序执行流程。\n\n*MyMethodInterceptor.java*\n```\n// 环绕通知：可以修改目标方法的返回结果\npublic class MyMethodInterceptor implements MethodInterceptor {\n	@Override\n	public Object invoke(MethodInvocation invocation) throws Throwable {\n		System.out.println(\"执行环绕通知：目标方法执行之前\");\n		// 执行目标方法\n		Object result = invocation.proceed();\n		System.out.println(\"执行环绕通知：目标方法执行之后\");\n		if(result != null) {\n			result = ((String)result).toUpperCase();\n		}\n		return result;\n	}\n}\n```\n\n\n\n\n\n### 异常通知 ThrowsAdvice\n定义异常通知，需要实现 ThrowsAdvice 接口。该接口的主要作用是，在目标方法抛出异常后，根据异常的不同做出相应的处理。当该接口处理完异常后，会简单地将异常再次抛出给目标方法。\n\n不过，这个接口较为特殊，从形式上看，该接口中没有必须要实现的方法。但，这个接口却确实有必须要实现的方法 `afterThrowing()`。这个方法重载了四种形式。由于使用时，一般只使用其中一种，若要都定义到接口中，则势必要使程序员在使用时必须要实现这四个方法。这是很麻烦的。所以就将该接口定义为了标识接口（没有方法的接口）。这四个方法在打开 `ThrowsAdvice` 源码后，上侧的注释部分可以看到：\n![afterThrowing()](https://daily-1252869435.cos.ap-chengdu.myqcloud.com/2018-11-19-10-59-26.png)\n不过，在这四种形式中，常用的形式如下： `public void afterThrowing(自定义的异常类 e)` 这里的参数 e 为，与具体业务相关的用户自定义的异常类对象。容器会根据异常类型的不同，自动选择不同的该方法执行。这些方法的执行是在目标方法执行结束后执行的。其它参数则与前面两个通知中方法的参数意义相同。\n#### 普通异常\n*SomeServiceImpl.java - 目标类*\n```\n@Override\npublic void doFirst() {\n	System.out.println(\"执行doFirst()方法\" + 3 / 0);\n}\n```\n*MyThrowsAdvice.java - 异常通知*\n```\npublic class MyThrowsAdvice implements ThrowsAdvice {\n	// 当目标方法抛出与指定类型的异常具有 is-a 关系的异常时，执行当前方法\n	public void afterThrowing(Exception ex) {\n		System.out.println(\"执行异常通知方法\");\n	}\n}\n```\n*输出信息*\n```\n执行异常通知方法\njava.lang.ArithmeticException: / by zero\n	...\n```\n#### 自定义异常\n异常分两种：\n- 运行时异常，不进行处理，也可以通过编译。\n若一个类继承自 RunTimeException，则该异常就是运行时异常\n- 编译时异常(受查异常,Checked Exception)，不进行处理，将无法通过编译。\n若一个类继承自 Exception，则该异常就是受查异常\n\n*UserException.java*\n```\npublic class UserException extends Exception {\n	public UserException() {\n		super();\n	}\n\n	public UserException(String message) {\n		super(message);\n	}\n}\n```\n*UsernameException.java*\n```\npublic class UsernameException extends UserException {\n	public UsernameException() {\n		super();\n	}\n\n	public UsernameException(String message) {\n		super(message);\n	}\n}\n```\n*PasswordException.java*\n```\npublic class PasswordException extends UserException {\n	public PasswordException() {\n		super();\n	}\n\n	public PasswordException(String message) {\n		super(message);\n	}\n}\n```\n*MyThrowsAdvice.java - 异常通知*\n```\npublic class MyThrowsAdvice implements ThrowsAdvice {\n	// 当目标方法抛出 UsernameException 异常时，执行当前方法\n	public void afterThrowing(UsernameException ex) {\n		System.out.println(\"发生用户名异常 ex = \" + ex.getMessage());\n	}\n	\n	// 当目标方法抛出 PasswordException 异常时，执行当前方法\n	public void afterThrowing(PasswordException ex) {\n		System.out.println(\"发生密码异常 ex = \" + ex.getMessage());\n	}\n	\n	// 当目标方法抛出其它异常时，执行当前方法\n	public void afterThrowing(Exception ex) {\n		System.out.println(\"发生异常 ex = \" + ex.getMessage());\n	}\n}\n```\n*MyTest.java*\n```\n@Test\npublic void test01() throws UserException {\n	String resource = \"top/qingrang/aop05/applicationContext.xml\";\n	ApplicationContext ac = new ClassPathXmlApplicationContext(resource);\n	ISomeService service = (ISomeService) ac.getBean(\"serviceProxy\");\n	service.login(\"beijing\", \"222\");\n}\n```\n\n\n\n\n\n### 同时使用多种通知\n*applicationContext.mxl*\n```\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<beans xmlns=\"http://www.springframework.org/schema/beans\"\n    xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n    xsi:schemaLocation=\"\n        http://www.springframework.org/schema/beans \n        http://www.springframework.org/schema/beans/spring-beans.xsd\">\n\n    <!-- 注册目标对象 -->\n    <bean id=\"someService\" class=\"top.qingrang.aop06.SomeServiceImpl\"/>\n\n    <!-- 注册切面：通知 -->\n    <bean id=\"myBeforeAdvice\" class=\"top.qingrang.aop06.MyMethodBeforeAdvice\"/>\n    <bean id=\"myAfterAdvice\" class=\"top.qingrang.aop06.MyAfterReturningAdvice\"/>\n\n    <!-- 生成代理对象 -->\n    <bean id=\"serviceProxy\" class=\"org.springframework.aop.framework.ProxyFactoryBean\">\n    	<property name=\"target\" ref=\"someService\"/>\n        <!-- 注入多种通知 -->\n    	<property name=\"interceptorNames\" value=\"myBeforeAdvice,myAfterAdvice\"/>\n    	<!-- <property name=\"interceptorNames\">\n    		<array>\n    			<value>myBeforeAdvice</value>\n    			<value>myAfterAdvice</value>\n    		</array>\n    	</property> -->\n    </bean>\n\n</beans>\n```\n\n\n### 无接口的 CGLIB 代理生成\n若不存在接口，则 ProxyFactoryBean 会自动采用 CGLIB 方式生成动态代理。\n*SomeService.java - 目标类*\n```\npublic class SomeService {\n	public void doFirst() {\n		System.out.println(\"执行doFirst()方法\");\n	}\n\n	public String doSecond() {\n		System.out.println(\"执行doSecond()方法\");\n		return \"abcde\";\n	}\n}\n```\n*MyAfterReturningAdvice.java - 后置通知*\n```\npublic class MyAfterReturningAdvice implements AfterReturningAdvice {\n	// 在目标方法执行之后执行，returnValue：目标方法的返回值\n	@Override\n	public void afterReturning(Object returnValue, Method method, Object[] args, Object target) throws Throwable {\n		System.out.println(\"执行后置通知方法  returnValue = \" + returnValue);\n		if (returnValue != null) {\n			returnValue = ((String) returnValue).toUpperCase();\n			System.out.println(\"修改过的结果  returnValue = \" + returnValue);\n		}\n	}\n}\n```\n*applicationContext.mxl*\n```\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<beans xmlns=\"http://www.springframework.org/schema/beans\"\n    xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n    xsi:schemaLocation=\"\n        http://www.springframework.org/schema/beans \n        http://www.springframework.org/schema/beans/spring-beans.xsd\">\n\n    <!-- 注册目标对象 -->\n    <bean id=\"someService\" class=\"top.qingrang.aop07.SomeService\"/>\n    \n    <!-- 注册切面：通知 -->\n    <bean id=\"myAdvice\" class=\"top.qingrang.aop07.MyAfterReturningAdvice\"/>\n    \n    <!-- 生成代理对象 -->\n    <bean id=\"serviceProxy\" class=\"org.springframework.aop.framework.ProxyFactoryBean\">\n    	<property name=\"target\" ref=\"someService\"/>\n    	<property name=\"interceptorNames\" value=\"myAdvice\"/>\n    </bean>\n\n</beans>\n```\n*MyTest.java*\n```\n@Test\npublic void test01() {\n	String resource = \"top/qingrang/aop07/applicationContext.xml\";\n	ApplicationContext ac = new ClassPathXmlApplicationContext(resource);\n	SomeService service = (SomeService) ac.getBean(\"serviceProxy\");\n	service.doFirst();\n	System.out.println(\"==================\");\n	String result = service.doSecond();\n	System.out.println(result);\n}\n```\n### 有接口的 CGLIB 代理生成 - proxyTargetClass 属性\n若存在接口，但又需要使用 CGLIB 生成代理对象，此时，只需要在配置文件中增加一个 proxyTargetClass 属性设置，用于指定强制使用 CGLIB 代理机制。\n\n![CGLIB 代理](https://daily-1252869435.cos.ap-chengdu.myqcloud.com/2018-11-19-12-44-48.png)\n也可指定 optimize（优化）的值为 true，强制使用 CGLIB 代理机制。\n![optimize（优化）](https://daily-1252869435.cos.ap-chengdu.myqcloud.com/2018-11-19-12-45-22.png)\n查看后台运行情况，可以看到代理生成使用的是 CGLIB 代理机制。\n![后台运行情况](https://daily-1252869435.cos.ap-chengdu.myqcloud.com/2018-11-19-12-45-57.png)\n\n\n## 顾问 Advisor\n通知（Advice）是 Spring 提供的一种切面（Aspect）。但其功能过于简单：只能将切面织入到目标类的所有目标方法中， 无法完成将切面织入到指定目标方法中。\n\n顾问（Advisor）是 Spring 提供的另一种切面。其可以完成更为复杂的切面织入功能。`PointcutAdvisor(切入点顾问)` 是顾问的一种， 可以指定具体的切入点。 顾问将通知进行了包装，会根据不同的通知类型，在不同的时间点，将切面织入到不同的切入点。\n\nPointcutAdvisor 接口有两个较为常用的实现类：\n- NameMatchMethodPointcutAdvisor 名称匹配方法切入点顾问\n- RegexpMethodPointcutAdvisor 正则表达式匹配方法切入点顾问\n\n### 名称匹配方法切入点顾问\nNameMatchMethodPointcutAdvisor，即名称匹配方法切入点顾问。容器可根据配置文件中指定的方法名来设置切入点。\n\n`<property name=\"mappedNames\"/>`\n\n*ISomeService.java*\n```\npublic interface ISomeService {\n	// 目标方法\n	void doFirst();\n	// 目标方法\n	String doSecond();\n	// 目标方法\n	void doThird();\n}\n```\n*SomeServiceImpl.java*\n```\npublic class SomeServiceImpl implements ISomeService {\n	@Override\n	public void doFirst() {\n		System.out.println(\"执行doFirst()方法\");\n	}\n\n	@Override\n	public String doSecond() {\n		System.out.println(\"执行doSecond()方法\");\n		return \"abcde\";\n	}\n\n	@Override\n	public void doThird() {\n		System.out.println(\"执行doThird()方法\");\n	}\n}\n```\n*MyAfterReturningAdvice.java*\n```\npublic class MyAfterReturningAdvice implements AfterReturningAdvice {\n	// 在目标方法执行之后执行，returnValue：目标方法的返回值\n	@Override\n	public void afterReturning(Object returnValue, Method method, Object[] args, Object target) throws Throwable {\n		System.out.println(\"执行后置通知方法  returnValue = \" + returnValue);\n	}\n}\n```\n*applicationContext.mxl*\n```\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<beans xmlns=\"http://www.springframework.org/schema/beans\"\n    xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n    xsi:schemaLocation=\"\n        http://www.springframework.org/schema/beans \n        http://www.springframework.org/schema/beans/spring-beans.xsd\">\n\n    <!-- 注册目标对象 -->\n    <bean id=\"someService\" class=\"top.qingrang.aop09.SomeServiceImpl\"/>\n    \n    <!-- 注册切面：通知 -->\n    <bean id=\"myAdvice\" class=\"top.qingrang.aop09.MyAfterReturningAdvice\"/>\n    \n    <!-- 注册切面：顾问 -->\n    <bean id=\"myAdvisor\" class=\"org.springframework.aop.support.NameMatchMethodPointcutAdvisor\">\n    	<property name=\"advice\" ref=\"myAdvice\"/>\n    	<!-- 指定切入点：这里匹配的对象是简单方法名 -->\n    	<!-- <property name=\"mappedName\" value=\"doFirst\"/> -->\n    	 <property name=\"mappedNames\" value=\"doFirst,doSecond\"/>\n        <!-- 使用通配符 -->\n    	<!--<property name=\"mappedNames\" value=\"*ir*\"/>-->\n    </bean>\n    \n    <!-- 生成代理对象 -->\n    <bean id=\"serviceProxy\" class=\"org.springframework.aop.framework.ProxyFactoryBean\">\n    	<property name=\"target\" ref=\"someService\"/>\n    	<property name=\"interceptorNames\" value=\"myAdvisor\"/>\n    </bean>\n\n</beans>\n```\n*Test.java - 测试*\n```\n@Test\npublic void test01() {\n	// 创建容器对象，加载Spring配置文件\n	String resource = \"top/qingrang/aop09/applicationContext.xml\";\n	ApplicationContext ac = new ClassPathXmlApplicationContext(resource);\n	ISomeService service = (ISomeService) ac.getBean(\"serviceProxy\");\n	service.doFirst();\n	System.out.println(\"==================\");\n	service.doSecond();\n	System.out.println(\"==================\");\n	service.doThird();\n}\n```\n*输出信息*\n```\n执行doFirst()方法\n执行后置通知方法  returnValue = null\n==================\n执行doSecond()方法\n执行后置通知方法  returnValue = abcde\n==================\n执行doThird()方法\n```\n### 正则表达式方法切入点顾问\nRegexpMethodPointcutAdvisor，即正则表达式方法顾问。容器可根据正则表达式来设置切入点。注意，与正则表达式进行匹配的对象是接口中的方法名，而非目标类（接口的实现类）的方法名。\n\n`<property name=\"pattern\"/>`\n\n这里的正则表达式常用的运算符有三个，如下表：\n\n|运算符|意义|\n|-|-|\n|.|表示任意单个字符|\n|+|表示前一个字符出现一次或多次|\n|*|表示前一个字符出现零次或多次|\n\n*applicationContext.mxl*\n```\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<beans xmlns=\"http://www.springframework.org/schema/beans\"\n    xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n    xsi:schemaLocation=\"\n        http://www.springframework.org/schema/beans \n        http://www.springframework.org/schema/beans/spring-beans.xsd\">\n\n    <!-- 注册目标对象 -->\n    <bean id=\"someService\" class=\"top.qingrang.aop10.SomeServiceImpl\"/>\n\n    <!-- 注册切面：通知 -->\n    <bean id=\"myAdvice\" class=\"top.qingrang.aop10.MyAfterReturningAdvice\"/>\n\n    <!-- 注册切面：顾问 -->\n    <bean id=\"myAdvisor\" class=\"org.springframework.aop.support.RegexpMethodPointcutAdvisor\">\n    	<property name=\"advice\" ref=\"myAdvice\"/>\n    	<!-- 这里的正则表达式匹配的对象是「全限定性方法名」 -->\n        <!-- 全限定性方法名：com.bjpowernode.aop10.ISomeService.doFirst -->\n    	<!-- <property name=\"pattern\" value=\".*doFirst\"/> -->\n    	<!-- <property name=\"patterns\" value=\".*doFirst,.*doSecond\"/> -->\n    	<!-- <property name=\"pattern\" value=\".*doFirst|.*doSecond\"/> -->\n    	<property name=\"pattern\" value=\".*S.*\"/>\n    </bean>\n\n    <!-- 生成代理对象 -->\n    <bean id=\"serviceProxy\" class=\"org.springframework.aop.framework.ProxyFactoryBean\">\n    	<property name=\"target\" ref=\"someService\"/>\n    	<property name=\"interceptorNames\" value=\"myAdvisor\"/>\n    </bean>\n\n</beans>\n```\n\n\n\n\n\n\n\n\n\n\n\n\n',`groups`='Default',`p_id`=1  WHERE  `id` = 1 [ RunTime:0.001108s ]
+---------------------------------------------------------------
+[ 2018-11-20T20:43:13+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/ashownote2.html
+[ info ] qingrang.top/daily/admin/note/ashownote2.html [运行时间：0.063805s][吞吐率：15.67req/s] [内存消耗：2,162.96kb] [文件加载：52]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'ashownote2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '19',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://qingrang.top/daily/admin/note',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1541082864,1541122974,1541171416,1542098176; PHPSESSID=trq99s8nsqkkfq503j4teoj742',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'groupname' => 'Algorithm',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->aShowNote2[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000770s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001409s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` = 'Algorithm' ORDER BY date desc [ RunTime:0.001687s ]
+---------------------------------------------------------------
+[ 2018-11-20T20:43:22+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/210
+[ info ] qingrang.top/daily/admin/note/shownote/id/210 [运行时间：0.061755s][吞吐率：16.19req/s] [内存消耗：1,992.36kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1541082864,1541122974,1541171416,1542098176; PHPSESSID=trq99s8nsqkkfq503j4teoj742',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '210',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000520s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001474s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 210 LIMIT 1 [ RunTime:0.000581s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001110s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000340s ]
+---------------------------------------------------------------
+[ 2018-11-20T20:43:32+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/229
+[ info ] qingrang.top/daily/admin/note/shownote/id/229 [运行时间：0.053581s][吞吐率：18.66req/s] [内存消耗：1,985.17kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1541082864,1541122974,1541171416,1542098176; PHPSESSID=trq99s8nsqkkfq503j4teoj742',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '229',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000506s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001520s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 229 LIMIT 1 [ RunTime:0.000513s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001006s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000292s ]
+---------------------------------------------------------------
+[ 2018-11-20T20:43:44+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/229
+[ info ] qingrang.top/daily/admin/note/shownote/id/229 [运行时间：0.056239s][吞吐率：17.78req/s] [内存消耗：1,985.17kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1541082864,1541122974,1541171416,1542098176; PHPSESSID=trq99s8nsqkkfq503j4teoj742',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '229',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000648s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001415s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 229 LIMIT 1 [ RunTime:0.000600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000827s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000313s ]
+---------------------------------------------------------------
+[ 2018-11-20T20:43:45+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/newedit.html
+[ info ] qingrang.top/daily/admin/note/newedit.html [运行时间：0.060766s][吞吐率：16.46req/s] [内存消耗：2,021.65kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'newedit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1541082864,1541122974,1541171416,1542098176; PHPSESSID=trq99s8nsqkkfq503j4teoj742',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->newEdit[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/newedit.html [ array (
+  0 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000539s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001303s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000360s ]
+---------------------------------------------------------------
+[ 2018-11-20T22:52:32+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/addnote.html
+[ info ] qingrang.top/daily/admin/note/addnote.html [运行时间：0.067060s][吞吐率：14.91req/s] [内存消耗：2,069.83kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'addnote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '41858',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/newedit.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1541082864,1541122974,1541171416,1542098176; PHPSESSID=trq99s8nsqkkfq503j4teoj742',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'groups' => 'Algorithm',
+  'content' => '# 数据结构与算法之美 - 链表
+[TOC]
+## 链表的分类
+三种最常见的链表结构，它们分别是：**单链表、双向链表、双向循环链表和循环链表**。
+### 单链表
+![mark](https://daily-1252869435.cos.ap-chengdu.myqcloud.com/2018-11-20-20-58-48.png)
+单链表的插入与删除：
+![mark](https://daily-1252869435.cos.ap-chengdu.myqcloud.com/2018-11-20-21-08-46.png)
+### 循环链表
+![mark](https://daily-1252869435.cos.ap-chengdu.myqcloud.com/2018-11-20-21-09-24.png)
+### 双向链表
+![mark](https://daily-1252869435.cos.ap-chengdu.myqcloud.com/2018-11-20-21-09-47.png)
+### 双向循环链表
+![mark](https://daily-1252869435.cos.ap-chengdu.myqcloud.com/2018-11-20-21-11-02.png)
+
+## 数组和链表的区别
+数组需要一块连续的内存空间来存储，对内存的要求比较高。如果我们申请一个 100MB 大小的数组，当内存中没有连续的、足够大的存储空间时，即便内存的剩余总可用空间大于 100MB，仍然会申请失败。
+
+链表并不需要一块连续的内存空间，它通过 “指针” 将一组零散的内存块串联起来使用，所以如果我们申请的是 100MB 大小的链表，根本不会有问题。
+
+![数组和链表的内存分布](https://daily-1252869435.cos.ap-chengdu.myqcloud.com/2018-11-20-20-57-42.png)*数组和链表的内存分布*
+
+![链表 VS 数组性能大比拼](https://daily-1252869435.cos.ap-chengdu.myqcloud.com/2018-11-20-21-13-35.png)*链表 VS 数组性能大比拼*
+
+数组简单易用，在实现上使用的是连续的内存空间，可以借助 CPU 的缓存机制，预读数组中的数据，所以访问效率更高。而链表在内存中并不是连续存储，所以对 CPU 缓存不友好，没办法有效预读。
+
+数组的缺点是大小固定，一经声明就要占用整块连续内存空间。如果声明的数组过大，系统可能没有足够的连续内存空间分配给它，导致 “内存不足（out of memory）”。如果声明的数组过小，则可能出现不够用的情况。这时只能再申请一个更大的内存空间，把原数组拷贝进去，非常费时。链表本身没有大小的限制，天然地支持动态扩容，我觉得这也是它与数组最大的区别。
+
+>这里的 CPU 缓存机制指的是什么？为什么就数组更好了？
+
+1. CPU 在从内存读取数据的时候，会先把读取到的数据加载到 CPU 的缓存中。而 CPU 每次从内存读取数据并不是只读取那个特定要访问的地址，而是读取一个数据块并保存到 CPU 缓存中，然后下次访问内存数据的时候就会先从 CPU 缓存开始查找，如果找到就不需要再从内存中取。这样就实现了比内存访问速度更快的机制，也就是 CPU 缓存存在的意义: 为了弥补内存访问速度过慢与 CPU 执行速度快之间的差异而引入。
+
+1. 对于数组来说，存储空间是连续的，所以在加载某个下标的时候可以把以后的几个下标元素也加载到 CPU 缓存这样执行速度会快于存储空间不连续的链表存储。
+
+## 如何用链表来实现 LRU 缓存淘汰策略呢？
+### 什么是缓存
+**缓存是一种提高数据读取性能的技术**，在硬件设计、软件开发中都有着非常广泛的应用，比如常见的 CPU 缓存、数据库缓存、浏览器缓存等等。
+
+缓存实际上就是利用了空间换时间的设计思想。如果我们把数据存储在硬盘上，会比较节省内存，但每次查找数据都要询问一次硬盘，会比较慢。但如果我们通过缓存技术，事先将数据加载在内存中，虽然会比较耗费内存空间，但是每次数据查询的速度就大大提高了。
+
+### 缓存淘汰策略
+缓存的大小有限，当缓存被用满时，哪些数据应该被清理出去，哪些数据应该被保留？这就需要缓存淘汰策略来决定。常见的策略有三种：先进先出策略 FIFO（First In，First Out）、最少使用策略 LFU（Least Frequently Used）、最近最少使用策略 LRU（Least Recently Used）。
+
+### 链表实现 LRU 缓存淘汰算法
+我们维护一个有序单链表，越靠近链表尾部的结点是越早之前访问的。当有一个新的数据被访问时，我们从链表头开始顺序遍历链表。
+
+1. 如果此数据之前已经被缓存在链表中了，我们遍历得到这个数据对应的结点，并将其从原来的位置删除，然后再插入到链表的头部。
+2. 如果此数据没有在缓存链表中，又可以分为两种情况：
+	- 如果此时缓存未满，则将此结点直接插入到链表的头部；
+	- 如果此时缓存已满，则链表尾结点删除，将新的数据结点插入链表的头部。
+
+这样我们就用链表实现了一个 LRU 缓存。
+
+因为不管缓存有没有满，我们都需要遍历一遍链表，所以这种基于链表的实现思路，缓存访问的时间复杂度为 O(n)。
+
+### 数组实现 LRU 缓存淘汰策略
+方式一：首位置保存最新访问数据，末尾位置优先清理
+
+当访问的数据未存在于缓存的数组中时，直接将数据插入数组第一个元素位置，此时数组所有元素需要向后移动 1 个位置，时间复杂度为 O(n)；当访问的数据存在于缓存的数组中时，查找到数据并将其插入数组的第一个位置，此时亦需移动数组元素，时间复杂度为 O(n)。缓存用满时，则清理掉末尾的数据，时间复杂度为 O(1)。
+
+方式二：首位置优先清理，末尾位置保存最新访问数据
+
+当访问的数据未存在于缓存的数组中时，直接将数据添加进数组作为当前最有一个元素时间复杂度为 O(1)；当访问的数据存在于缓存的数组中时，查找到数据并将其插入当前数组最后一个元素的位置，此时亦需移动数组元素，时间复杂度为 O(n)。缓存用满时，则清理掉数组首位置的元素，且剩余数组元素需整体前移一位，时间复杂度为 O(n)。（优化：清理的时候可以考虑一次性清理一定数量，从而降低清理次数，提高性能。）
+
+## 设计思想
+时空替换思想：“用空间换时间” 与 “用时间换空间”。
+
+当内存空间充足的时候，如果我们更加追求代码的执行速度，我们就可以选择空间复杂度相对较高，时间复杂度小相对较低的算法和数据结构，缓存就是空间换时间的例子。如果内存比较紧缺，比如代码跑在手机或者单片机上，这时，就要反过来用时间换空间的思路。
+
+## 链表习题
+如果字符串是通过单链表来存储的，如何判断该字符串是一个回文串？相应的时间空间复杂度又是多少？
+
+
+
+',
+  'test-editormd-html-code' => '<h1 id="h1--"><a name="数据结构与算法之美 - 链表" class="reference-link"></a><span class="header-link octicon octicon-link"></span>数据结构与算法之美 - 链表</h1><div class="markdown-toc editormd-markdown-toc">[TOC]</div><h2 id="h2-u94FEu8868u7684u5206u7C7B"><a name="链表的分类" class="reference-link"></a><span class="header-link octicon octicon-link"></span>链表的分类</h2><p>三种最常见的链表结构，它们分别是：<strong>单链表、双向链表、双向循环链表和循环链表</strong>。</p>
+<h3 id="h3-u5355u94FEu8868"><a name="单链表" class="reference-link"></a><span class="header-link octicon octicon-link"></span>单链表</h3><p><img src="https://daily-1252869435.cos.ap-chengdu.myqcloud.com/2018-11-20-20-58-48.png" alt="mark"><br>单链表的插入与删除：<br><img src="https://daily-1252869435.cos.ap-chengdu.myqcloud.com/2018-11-20-21-08-46.png" alt="mark"></p>
+<h3 id="h3-u5FAAu73AFu94FEu8868"><a name="循环链表" class="reference-link"></a><span class="header-link octicon octicon-link"></span>循环链表</h3><p><img src="https://daily-1252869435.cos.ap-chengdu.myqcloud.com/2018-11-20-21-09-24.png" alt="mark"></p>
+<h3 id="h3-u53CCu5411u94FEu8868"><a name="双向链表" class="reference-link"></a><span class="header-link octicon octicon-link"></span>双向链表</h3><p><img src="https://daily-1252869435.cos.ap-chengdu.myqcloud.com/2018-11-20-21-09-47.png" alt="mark"></p>
+<h3 id="h3-u53CCu5411u5FAAu73AFu94FEu8868"><a name="双向循环链表" class="reference-link"></a><span class="header-link octicon octicon-link"></span>双向循环链表</h3><p><img src="https://daily-1252869435.cos.ap-chengdu.myqcloud.com/2018-11-20-21-11-02.png" alt="mark"></p>
+<h2 id="h2-u6570u7EC4u548Cu94FEu8868u7684u533Au522B"><a name="数组和链表的区别" class="reference-link"></a><span class="header-link octicon octicon-link"></span>数组和链表的区别</h2><p>数组需要一块连续的内存空间来存储，对内存的要求比较高。如果我们申请一个 100MB 大小的数组，当内存中没有连续的、足够大的存储空间时，即便内存的剩余总可用空间大于 100MB，仍然会申请失败。</p>
+<p>链表并不需要一块连续的内存空间，它通过 “指针” 将一组零散的内存块串联起来使用，所以如果我们申请的是 100MB 大小的链表，根本不会有问题。</p>
+<p><img src="https://daily-1252869435.cos.ap-chengdu.myqcloud.com/2018-11-20-20-57-42.png" alt="数组和链表的内存分布"><em>数组和链表的内存分布</em></p>
+<p><img src="https://daily-1252869435.cos.ap-chengdu.myqcloud.com/2018-11-20-21-13-35.png" alt="链表 VS 数组性能大比拼"><em>链表 VS 数组性能大比拼</em></p>
+<p>数组简单易用，在实现上使用的是连续的内存空间，可以借助 CPU 的缓存机制，预读数组中的数据，所以访问效率更高。而链表在内存中并不是连续存储，所以对 CPU 缓存不友好，没办法有效预读。</p>
+<p>数组的缺点是大小固定，一经声明就要占用整块连续内存空间。如果声明的数组过大，系统可能没有足够的连续内存空间分配给它，导致 “内存不足（out of memory）”。如果声明的数组过小，则可能出现不够用的情况。这时只能再申请一个更大的内存空间，把原数组拷贝进去，非常费时。链表本身没有大小的限制，天然地支持动态扩容，我觉得这也是它与数组最大的区别。</p>
+<blockquote>
+<p>这里的 CPU 缓存机制指的是什么？为什么就数组更好了？</p>
+</blockquote>
+<ol>
+<li><p>CPU 在从内存读取数据的时候，会先把读取到的数据加载到 CPU 的缓存中。而 CPU 每次从内存读取数据并不是只读取那个特定要访问的地址，而是读取一个数据块并保存到 CPU 缓存中，然后下次访问内存数据的时候就会先从 CPU 缓存开始查找，如果找到就不需要再从内存中取。这样就实现了比内存访问速度更快的机制，也就是 CPU 缓存存在的意义: 为了弥补内存访问速度过慢与 CPU 执行速度快之间的差异而引入。</p>
+</li><li><p>对于数组来说，存储空间是连续的，所以在加载某个下标的时候可以把以后的几个下标元素也加载到 CPU 缓存这样执行速度会快于存储空间不连续的链表存储。</p>
+</li></ol>
+<h2 id="h2--lru-"><a name="如何用链表来实现 LRU 缓存淘汰策略呢？" class="reference-link"></a><span class="header-link octicon octicon-link"></span>如何用链表来实现 LRU 缓存淘汰策略呢？</h2><h3 id="h3-u4EC0u4E48u662Fu7F13u5B58"><a name="什么是缓存" class="reference-link"></a><span class="header-link octicon octicon-link"></span>什么是缓存</h3><p><strong>缓存是一种提高数据读取性能的技术</strong>，在硬件设计、软件开发中都有着非常广泛的应用，比如常见的 CPU 缓存、数据库缓存、浏览器缓存等等。</p>
+<p>缓存实际上就是利用了空间换时间的设计思想。如果我们把数据存储在硬盘上，会比较节省内存，但每次查找数据都要询问一次硬盘，会比较慢。但如果我们通过缓存技术，事先将数据加载在内存中，虽然会比较耗费内存空间，但是每次数据查询的速度就大大提高了。</p>
+<h3 id="h3-u7F13u5B58u6DD8u6C70u7B56u7565"><a name="缓存淘汰策略" class="reference-link"></a><span class="header-link octicon octicon-link"></span>缓存淘汰策略</h3><p>缓存的大小有限，当缓存被用满时，哪些数据应该被清理出去，哪些数据应该被保留？这就需要缓存淘汰策略来决定。常见的策略有三种：先进先出策略 FIFO（First In，First Out）、最少使用策略 LFU（Least Frequently Used）、最近最少使用策略 LRU（Least Recently Used）。</p>
+<h3 id="h3--lru-"><a name="链表实现 LRU 缓存淘汰算法" class="reference-link"></a><span class="header-link octicon octicon-link"></span>链表实现 LRU 缓存淘汰算法</h3><p>我们维护一个有序单链表，越靠近链表尾部的结点是越早之前访问的。当有一个新的数据被访问时，我们从链表头开始顺序遍历链表。</p>
+<ol>
+<li>如果此数据之前已经被缓存在链表中了，我们遍历得到这个数据对应的结点，并将其从原来的位置删除，然后再插入到链表的头部。</li><li>如果此数据没有在缓存链表中，又可以分为两种情况：<ul>
+<li>如果此时缓存未满，则将此结点直接插入到链表的头部；</li><li>如果此时缓存已满，则链表尾结点删除，将新的数据结点插入链表的头部。</li></ul>
+</li></ol>
+<p>这样我们就用链表实现了一个 LRU 缓存。</p>
+<p>因为不管缓存有没有满，我们都需要遍历一遍链表，所以这种基于链表的实现思路，缓存访问的时间复杂度为 O(n)。</p>
+<h3 id="h3--lru-"><a name="数组实现 LRU 缓存淘汰策略" class="reference-link"></a><span class="header-link octicon octicon-link"></span>数组实现 LRU 缓存淘汰策略</h3><p>方式一：首位置保存最新访问数据，末尾位置优先清理</p>
+<p>当访问的数据未存在于缓存的数组中时，直接将数据插入数组第一个元素位置，此时数组所有元素需要向后移动 1 个位置，时间复杂度为 O(n)；当访问的数据存在于缓存的数组中时，查找到数据并将其插入数组的第一个位置，此时亦需移动数组元素，时间复杂度为 O(n)。缓存用满时，则清理掉末尾的数据，时间复杂度为 O(1)。</p>
+<p>方式二：首位置优先清理，末尾位置保存最新访问数据</p>
+<p>当访问的数据未存在于缓存的数组中时，直接将数据添加进数组作为当前最有一个元素时间复杂度为 O(1)；当访问的数据存在于缓存的数组中时，查找到数据并将其插入当前数组最后一个元素的位置，此时亦需移动数组元素，时间复杂度为 O(n)。缓存用满时，则清理掉数组首位置的元素，且剩余数组元素需整体前移一位，时间复杂度为 O(n)。（优化：清理的时候可以考虑一次性清理一定数量，从而降低清理次数，提高性能。）</p>
+<h2 id="h2-u8BBEu8BA1u601Du60F3"><a name="设计思想" class="reference-link"></a><span class="header-link octicon octicon-link"></span>设计思想</h2><p>时空替换思想：“用空间换时间” 与 “用时间换空间”。</p>
+<p>当内存空间充足的时候，如果我们更加追求代码的执行速度，我们就可以选择空间复杂度相对较高，时间复杂度小相对较低的算法和数据结构，缓存就是空间换时间的例子。如果内存比较紧缺，比如代码跑在手机或者单片机上，这时，就要反过来用时间换空间的思路。</p>
+<h2 id="h2-u94FEu8868u4E60u9898"><a name="链表习题" class="reference-link"></a><span class="header-link octicon octicon-link"></span>链表习题</h2><p>如果字符串是通过单链表来存储的，如何判断该字符串是一个回文串？相应的时间空间复杂度又是多少？</p>
+',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->addNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001034s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001549s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `groups` WHERE  `groups` = 'Algorithm' LIMIT 1 [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001630s ]
+[ sql ] [ SQL ] INSERT INTO `note` (`title` , `content` , `groups` , `p_id` , `date` , `gmt_modified`) VALUES ('数据结构与算法之美 - 链表\r' , '# 数据结构与算法之美 - 链表\r\n[TOC]\r\n## 链表的分类\r\n三种最常见的链表结构，它们分别是：**单链表、双向链表、双向循环链表和循环链表**。\r\n### 单链表\r\n![mark](https://daily-1252869435.cos.ap-chengdu.myqcloud.com/2018-11-20-20-58-48.png)\r\n单链表的插入与删除：\r\n![mark](https://daily-1252869435.cos.ap-chengdu.myqcloud.com/2018-11-20-21-08-46.png)\r\n### 循环链表\r\n![mark](https://daily-1252869435.cos.ap-chengdu.myqcloud.com/2018-11-20-21-09-24.png)\r\n### 双向链表\r\n![mark](https://daily-1252869435.cos.ap-chengdu.myqcloud.com/2018-11-20-21-09-47.png)\r\n### 双向循环链表\r\n![mark](https://daily-1252869435.cos.ap-chengdu.myqcloud.com/2018-11-20-21-11-02.png)\r\n\r\n## 数组和链表的区别\r\n数组需要一块连续的内存空间来存储，对内存的要求比较高。如果我们申请一个 100MB 大小的数组，当内存中没有连续的、足够大的存储空间时，即便内存的剩余总可用空间大于 100MB，仍然会申请失败。\r\n\r\n链表并不需要一块连续的内存空间，它通过 “指针” 将一组零散的内存块串联起来使用，所以如果我们申请的是 100MB 大小的链表，根本不会有问题。\r\n\r\n![数组和链表的内存分布](https://daily-1252869435.cos.ap-chengdu.myqcloud.com/2018-11-20-20-57-42.png)*数组和链表的内存分布*\r\n\r\n![链表 VS 数组性能大比拼](https://daily-1252869435.cos.ap-chengdu.myqcloud.com/2018-11-20-21-13-35.png)*链表 VS 数组性能大比拼*\r\n\r\n数组简单易用，在实现上使用的是连续的内存空间，可以借助 CPU 的缓存机制，预读数组中的数据，所以访问效率更高。而链表在内存中并不是连续存储，所以对 CPU 缓存不友好，没办法有效预读。\r\n\r\n数组的缺点是大小固定，一经声明就要占用整块连续内存空间。如果声明的数组过大，系统可能没有足够的连续内存空间分配给它，导致 “内存不足（out of memory）”。如果声明的数组过小，则可能出现不够用的情况。这时只能再申请一个更大的内存空间，把原数组拷贝进去，非常费时。链表本身没有大小的限制，天然地支持动态扩容，我觉得这也是它与数组最大的区别。\r\n\r\n>这里的 CPU 缓存机制指的是什么？为什么就数组更好了？\r\n\r\n1. CPU 在从内存读取数据的时候，会先把读取到的数据加载到 CPU 的缓存中。而 CPU 每次从内存读取数据并不是只读取那个特定要访问的地址，而是读取一个数据块并保存到 CPU 缓存中，然后下次访问内存数据的时候就会先从 CPU 缓存开始查找，如果找到就不需要再从内存中取。这样就实现了比内存访问速度更快的机制，也就是 CPU 缓存存在的意义: 为了弥补内存访问速度过慢与 CPU 执行速度快之间的差异而引入。\r\n\r\n1. 对于数组来说，存储空间是连续的，所以在加载某个下标的时候可以把以后的几个下标元素也加载到 CPU 缓存这样执行速度会快于存储空间不连续的链表存储。\r\n\r\n## 如何用链表来实现 LRU 缓存淘汰策略呢？\r\n### 什么是缓存\r\n**缓存是一种提高数据读取性能的技术**，在硬件设计、软件开发中都有着非常广泛的应用，比如常见的 CPU 缓存、数据库缓存、浏览器缓存等等。\r\n\r\n缓存实际上就是利用了空间换时间的设计思想。如果我们把数据存储在硬盘上，会比较节省内存，但每次查找数据都要询问一次硬盘，会比较慢。但如果我们通过缓存技术，事先将数据加载在内存中，虽然会比较耗费内存空间，但是每次数据查询的速度就大大提高了。\r\n\r\n### 缓存淘汰策略\r\n缓存的大小有限，当缓存被用满时，哪些数据应该被清理出去，哪些数据应该被保留？这就需要缓存淘汰策略来决定。常见的策略有三种：先进先出策略 FIFO（First In，First Out）、最少使用策略 LFU（Least Frequently Used）、最近最少使用策略 LRU（Least Recently Used）。\r\n\r\n### 链表实现 LRU 缓存淘汰算法\r\n我们维护一个有序单链表，越靠近链表尾部的结点是越早之前访问的。当有一个新的数据被访问时，我们从链表头开始顺序遍历链表。\r\n\r\n1. 如果此数据之前已经被缓存在链表中了，我们遍历得到这个数据对应的结点，并将其从原来的位置删除，然后再插入到链表的头部。\r\n2. 如果此数据没有在缓存链表中，又可以分为两种情况：\r\n	- 如果此时缓存未满，则将此结点直接插入到链表的头部；\r\n	- 如果此时缓存已满，则链表尾结点删除，将新的数据结点插入链表的头部。\r\n\r\n这样我们就用链表实现了一个 LRU 缓存。\r\n\r\n因为不管缓存有没有满，我们都需要遍历一遍链表，所以这种基于链表的实现思路，缓存访问的时间复杂度为 O(n)。\r\n\r\n### 数组实现 LRU 缓存淘汰策略\r\n方式一：首位置保存最新访问数据，末尾位置优先清理\r\n\r\n当访问的数据未存在于缓存的数组中时，直接将数据插入数组第一个元素位置，此时数组所有元素需要向后移动 1 个位置，时间复杂度为 O(n)；当访问的数据存在于缓存的数组中时，查找到数据并将其插入数组的第一个位置，此时亦需移动数组元素，时间复杂度为 O(n)。缓存用满时，则清理掉末尾的数据，时间复杂度为 O(1)。\r\n\r\n方式二：首位置优先清理，末尾位置保存最新访问数据\r\n\r\n当访问的数据未存在于缓存的数组中时，直接将数据添加进数组作为当前最有一个元素时间复杂度为 O(1)；当访问的数据存在于缓存的数组中时，查找到数据并将其插入当前数组最后一个元素的位置，此时亦需移动数组元素，时间复杂度为 O(n)。缓存用满时，则清理掉数组首位置的元素，且剩余数组元素需整体前移一位，时间复杂度为 O(n)。（优化：清理的时候可以考虑一次性清理一定数量，从而降低清理次数，提高性能。）\r\n\r\n## 设计思想\r\n时空替换思想：“用空间换时间” 与 “用时间换空间”。\r\n\r\n当内存空间充足的时候，如果我们更加追求代码的执行速度，我们就可以选择空间复杂度相对较高，时间复杂度小相对较低的算法和数据结构，缓存就是空间换时间的例子。如果内存比较紧缺，比如代码跑在手机或者单片机上，这时，就要反过来用时间换空间的思路。\r\n\r\n## 链表习题\r\n如果字符串是通过单链表来存储的，如何判断该字符串是一个回文串？相应的时间空间复杂度又是多少？\r\n\r\n\r\n\r\n' , 'Algorithm' , 2 , '2018-11-20' , '2018-11-20') [ RunTime:0.000795s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Algorithm' LIMIT 1 [ RunTime:0.003257s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=3  WHERE  `groups` = 'Algorithm' [ RunTime:0.000661s ]
+---------------------------------------------------------------
+[ 2018-11-20T22:52:33+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note
+[ info ] qingrang.top/daily/admin/note [运行时间：0.079183s][吞吐率：12.63req/s] [内存消耗：2,278.71kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/newedit.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1541082864,1541122974,1541171416,1542098176; PHPSESSID=trq99s8nsqkkfq503j4teoj742',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/notelst.html [ array (
+  0 => 'stickList',
+  1 => 'hide',
+  2 => 'list',
+  3 => 'list_new',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+  10 => 'default_num',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000664s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001446s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal'  AND `is_show` = 1 ORDER BY date desc,id desc [ RunTime:0.002034s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Personal'  AND `is_show` <> 1 ORDER BY gmt_modified desc LIMIT 5 [ RunTime:0.002583s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.001092s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` < 5 [ RunTime:0.000513s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000876s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0  AND `id` <> 2 ORDER BY `groups` [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `groups` [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.001319s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000246s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.001111s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000674s ]
+---------------------------------------------------------------
+[ 2018-11-20T22:52:40+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/252.html
+[ info ] qingrang.top/daily/admin/note/shownote/id/252.html [运行时间：0.051206s][吞吐率：19.53req/s] [内存消耗：1,987.36kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1541082864,1541122974,1541171416,1542098176; PHPSESSID=trq99s8nsqkkfq503j4teoj742',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '252',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000602s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001520s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 252 LIMIT 1 [ RunTime:0.000509s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000895s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000283s ]
+---------------------------------------------------------------
+[ 2018-11-20T22:53:05+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/updatenote/id/250.html
+[ info ] qingrang.top/daily/admin/note/updatenote/id/250.html [运行时间：0.073601s][吞吐率：13.59req/s] [内存消耗：2,216.10kb] [文件加载：58]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'updatenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '49338',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/250.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1541082864,1541122974,1541171416,1542098176; PHPSESSID=trq99s8nsqkkfq503j4teoj742',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'summary' => '',
+  'content' => '# Spring(二) - AOP（面向切面）
+[TOC]
+
+Spring 是一个基于 **IOC** 和 **AOP** 的结构 J2EE 系统的框架。
+## AOP 简介
+### 概念
+AOP（Aspect Orient Programming），面向切面编程，是面向对象编程 OOP 的一种补充。面向对象编程是从静态角度考虑程序的结构，而面向切面编程是从动态角度考虑程序运行过程。
+
+AOP 底层，就是采用动态代理模式实现的。采用了两种代理： JDK 的动态代理，与 CGLIB 的动态代理。
+
+面向切面编程，就是将交叉业务逻辑封装成切面，利用 AOP 容器的功能将切面织入到主业务逻辑中。所谓交叉业务逻辑是指，通用的、与主业务逻辑无关的代码，如安全检查、事务、日志等。
+
+若不使用 AOP，则会出现代码纠缠，即交叉业务逻辑与主业务逻辑混合在一起。这样，会使主业务逻辑变的混杂不清。
+
+例如，转账，在真正转账业务逻辑前后，需要权限控制、日志记录、加载事务、结束事务等交叉业务逻辑，而这些业务逻辑与主业务逻辑间并无直接关系。但，它们的代码量所占比重能达到总代码量的一半甚至还多。它们的存在，不仅产生了大量的“冗余”代码，还大大干扰了主业务逻辑---转账。
+
+### 利用 JDK 动态代理实现 AOP 编程
+*ISomeService.java - 主业务接口*
+```
+public interface ISomeService {
+	// 目标方法
+	void doFirst();
+	// 目标方法
+	void doSecond();
+}
+```
+*SomeServiceImpl.java - 目标类*
+```
+public class SomeServiceImpl implements ISomeService {
+
+	@Override
+	public void doFirst() {
+		System.out.println("执行doFirst()方法");
+	}
+
+	@Override
+	public void doSecond() {
+		System.out.println("执行doSecond()方法");
+	}
+}
+```
+*SystemService.java - 交叉业务逻辑*
+```
+public class SystemService {
+	public static void doLog() {
+		System.out.println("执行日志代码");
+	}
+
+	public static void doTx() {
+		System.out.println("执行事务代码");
+	}
+}
+```
+*MyTest.java*
+```
+@Test
+public void MyTest(){
+	final ISomeService target = new SomeServiceImpl();
+	// 自动生成一个动态代理对象
+	ISomeService service = (ISomeService) Proxy.newProxyInstance(
+			target.getClass().getClassLoader(), // 目标类的类加载器
+			target.getClass().getInterfaces(),  // 目标类实现的接口数组
+			new InvocationHandler() { //业务增强逻辑
+				// 具体加强的代码逻辑
+				@Override
+				public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+					SystemService.doTx(); // 织入
+					Object result = method.invoke(target, args); // 执行目标方法
+					SystemService.doLog(); // 织入
+					return result;
+				}
+			});
+	service.doFirst();
+	System.out.println("==============");
+	service.doSecond();
+}
+```
+*输出信息*
+```
+执行事务代码
+执行doFirst()方法
+执行日志代码
+==============
+执行事务代码
+执行doSecond()方法
+执行日志代码
+```
+## AOP 编程术语
+### 切面（Aspect）
+切面泛指交叉业务逻辑。上例中的事务处理、日志处理就可以理解为切面。常用的切面有通知与顾问。实际就是对主业务逻辑的一种增强。
+### 织入（Weaving）
+织入是指将切面代码插入到目标对象的过程。上例中 MyInvocationHandler 类中的 invoke() 方法完成的工作，就可以称为织入。
+### 连接点（JoinPoint）
+连接点指可以被切面织入的方法。通常业务接口中的方法均为连接点。
+### 切入点（Pointcut）
+切入点指切面具体织入的方法。在 StudentServiceImpl 类中，若 doSome()将被增强，而doOther()不被增强，则 doSome()为切入点，而 doOther()仅为连接点。被标记为 final 的方法是不能作为连接点与切入点的。因为最终的是不能被修改，不能被增强的。
+### 目标对象（Target）
+目标对象指将要被增强的对象。即包含主业务逻辑的类的对象。上例中的 StudentServiceImpl 的对象若被增强，则该类称为目标类，该类对象称为目标对象。当然，不被增强，也就无所谓目标不目标了。
+### 通知（Advice）
+通知是切面的一种实现，可以完成简单织入功能（织入功能就是在这里完成的）。换个角度来说，通知定义了增强码切入到目标代码的时间点，是目标方法执行之前执行，还是之后执行等。通知类型不同，切入时间不同。
+
+**切入点定义切入的位置，通知定义切入的时间。**
+### 顾问（Advisor）
+顾问是切面的另一种实现，能够将通知以更为复杂的方式织入到目标对象中，是将通知包装为更复杂切面的装配器。
+
+
+
+
+
+
+## 通知 Advice
+通知（Advice），切面的一种实现，可以完成简单织入功能（织入功能就是在这里完成的）。
+
+常用通知有：前置通知、后置通知、环绕通知、异常处理通知。
+### 前置通知 MethodBeforeAdvice
+定义前置通知，需要实现 MethodBeforeAdvice 接口。该接口中有一个方法 before()，会在目标方法执行之前执行。 前置通知的特点：
+- 在目标方法执行之前先执行。
+- 不改变目标方法的执行流程，前置通知代码不能阻止目标方法执行。
+- 不改变目标方法执行的结果。
+
+*ISomeService.java - 主业务接口*
+```
+public interface ISomeService {
+	// 目标方法
+	void doFirst();
+	// 目标方法
+	void doSecond();
+}
+```
+*SomeServiceImpl.java - 目标类*
+```
+public class SomeServiceImpl implements ISomeService {
+
+	@Override
+	public void doFirst() {
+		System.out.println("执行doFirst()方法");
+	}
+
+	@Override
+	public void doSecond() {
+		System.out.println("执行doSecond()方法");
+	}
+}
+```
+*MyMethodBeforeAdvice.java - 前置通知*
+```
+public class MyMethodBeforeAdvice implements MethodBeforeAdvice {
+
+	// 当前方法在目标方法执行之前执行，method:目标方法，args:目标方法的参数列表，target:目标对象
+	@Override
+	public void before(Method method, Object[] args, Object target) throws Throwable {
+		// 对于目标方法的增强代码就应该写在这里
+		System.out.println("执行前置通知方法");
+	}
+}
+```
+*applicationContext.mxl*
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 注册目标对象 -->
+    <bean id="someService" class="top.qingrang.aop01.SomeServiceImpl"/>
+
+    <!-- 注册切面：通知 -->
+    <bean id="myAdvice" class="top.qingrang.aop01.MyMethodBeforeAdvice"/>
+
+    <!-- 生成代理对象 -->
+    <bean id="serviceProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+    	<!-- 指定目标对象，随便用哪个 -->
+    	<!-- <property name="targetName" value="someService"/> -->
+    	<property name="target" ref="someService"/>
+		
+    	<!-- 指定切面 -->
+    	<property name="interceptorNames" value="myAdvice"/>
+    </bean>
+</beans>
+```
+
+### 后置通知 AfterReturningAdvice
+定义后置通知，需要实现接口 AfterReturningAdvice。该接口中有一个方法 afterReturning()，会在目标方法执行之后执行。后置通知的特点：
+- 在目标方法执行之后执行。
+- 不改变目标方法的执行流程，后置通知代码不能阻止目标方法执行。
+- 不改变目标方法执行的结果。
+
+*SomeServiceImpl.java - 目标类*
+```
+public class SomeServiceImpl implements ISomeService {
+
+	@Override
+	public void doFirst() {
+		System.out.println("执行doFirst()方法");
+	}
+
+	@Override
+	public String doSecond() {
+		System.out.println("执行doSecond()方法");
+		return "abcde";
+	}
+}
+```
+*MyAfterReturningAdvice.java - 后置通知*
+```
+// 后置通知：可以获取到目标方法的返回结果，但无法改变目标方法的结果
+public class MyAfterReturningAdvice implements AfterReturningAdvice {
+	// 在目标方法执行之后执行，returnValue：目标方法的返回值
+	@Override
+	public void afterReturning(Object returnValue, Method method, Object[] args, Object target) throws Throwable {
+		System.out.println("执行后置通知方法  returnValue = " + returnValue);
+		if (returnValue != null) {
+			returnValue = ((String) returnValue).toUpperCase();
+			System.out.println("修改过的结果  returnValue = " + returnValue);
+		}
+	}
+}
+```
+### 环绕通知 MethodInterceptor
+定义环绕通知(在目标方法执行之前之后都会执行)，需要实现 MethodInterceptor 接口。环绕通知，也叫方法拦截器，可以在目标方法调用之前及之后做处理，可以改变目标方法的返回值，也可以改变程序执行流程。
+
+*MyMethodInterceptor.java*
+```
+// 环绕通知：可以修改目标方法的返回结果
+public class MyMethodInterceptor implements MethodInterceptor {
+	@Override
+	public Object invoke(MethodInvocation invocation) throws Throwable {
+		System.out.println("执行环绕通知：目标方法执行之前");
+		// 执行目标方法
+		Object result = invocation.proceed();
+		System.out.println("执行环绕通知：目标方法执行之后");
+		if(result != null) {
+			result = ((String)result).toUpperCase();
+		}
+		return result;
+	}
+}
+```
+
+
+
+
+
+### 异常通知 ThrowsAdvice
+定义异常通知，需要实现 ThrowsAdvice 接口。该接口的主要作用是，在目标方法抛出异常后，根据异常的不同做出相应的处理。当该接口处理完异常后，会简单地将异常再次抛出给目标方法。
+
+不过，这个接口较为特殊，从形式上看，该接口中没有必须要实现的方法。但，这个接口却确实有必须要实现的方法 `afterThrowing()`。这个方法重载了四种形式。由于使用时，一般只使用其中一种，若要都定义到接口中，则势必要使程序员在使用时必须要实现这四个方法。这是很麻烦的。所以就将该接口定义为了标识接口（没有方法的接口）。这四个方法在打开 `ThrowsAdvice` 源码后，上侧的注释部分可以看到：
+![afterThrowing()](https://daily-1252869435.cos.ap-chengdu.myqcloud.com/2018-11-19-10-59-26.png)
+不过，在这四种形式中，常用的形式如下： `public void afterThrowing(自定义的异常类 e)` 这里的参数 e 为，与具体业务相关的用户自定义的异常类对象。容器会根据异常类型的不同，自动选择不同的该方法执行。这些方法的执行是在目标方法执行结束后执行的。其它参数则与前面两个通知中方法的参数意义相同。
+#### 普通异常
+*SomeServiceImpl.java - 目标类*
+```
+@Override
+public void doFirst() {
+	System.out.println("执行doFirst()方法" + 3 / 0);
+}
+```
+*MyThrowsAdvice.java - 异常通知*
+```
+public class MyThrowsAdvice implements ThrowsAdvice {
+	// 当目标方法抛出与指定类型的异常具有 is-a 关系的异常时，执行当前方法
+	public void afterThrowing(Exception ex) {
+		System.out.println("执行异常通知方法");
+	}
+}
+```
+*输出信息*
+```
+执行异常通知方法
+java.lang.ArithmeticException: / by zero
+	...
+```
+#### 自定义异常
+异常分两种：
+- 运行时异常，不进行处理，也可以通过编译。
+若一个类继承自 RunTimeException，则该异常就是运行时异常
+- 编译时异常(受查异常,Checked Exception)，不进行处理，将无法通过编译。
+若一个类继承自 Exception，则该异常就是受查异常
+
+*UserException.java*
+```
+public class UserException extends Exception {
+	public UserException() {
+		super();
+	}
+
+	public UserException(String message) {
+		super(message);
+	}
+}
+```
+*UsernameException.java*
+```
+public class UsernameException extends UserException {
+	public UsernameException() {
+		super();
+	}
+
+	public UsernameException(String message) {
+		super(message);
+	}
+}
+```
+*PasswordException.java*
+```
+public class PasswordException extends UserException {
+	public PasswordException() {
+		super();
+	}
+
+	public PasswordException(String message) {
+		super(message);
+	}
+}
+```
+*MyThrowsAdvice.java - 异常通知*
+```
+public class MyThrowsAdvice implements ThrowsAdvice {
+	// 当目标方法抛出 UsernameException 异常时，执行当前方法
+	public void afterThrowing(UsernameException ex) {
+		System.out.println("发生用户名异常 ex = " + ex.getMessage());
+	}
+	
+	// 当目标方法抛出 PasswordException 异常时，执行当前方法
+	public void afterThrowing(PasswordException ex) {
+		System.out.println("发生密码异常 ex = " + ex.getMessage());
+	}
+	
+	// 当目标方法抛出其它异常时，执行当前方法
+	public void afterThrowing(Exception ex) {
+		System.out.println("发生异常 ex = " + ex.getMessage());
+	}
+}
+```
+*MyTest.java*
+```
+@Test
+public void test01() throws UserException {
+	String resource = "top/qingrang/aop05/applicationContext.xml";
+	ApplicationContext ac = new ClassPathXmlApplicationContext(resource);
+	ISomeService service = (ISomeService) ac.getBean("serviceProxy");
+	service.login("beijing", "222");
+}
+```
+
+
+
+
+
+### 同时使用多种通知
+*applicationContext.mxl*
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 注册目标对象 -->
+    <bean id="someService" class="top.qingrang.aop06.SomeServiceImpl"/>
+
+    <!-- 注册切面：通知 -->
+    <bean id="myBeforeAdvice" class="top.qingrang.aop06.MyMethodBeforeAdvice"/>
+    <bean id="myAfterAdvice" class="top.qingrang.aop06.MyAfterReturningAdvice"/>
+
+    <!-- 生成代理对象 -->
+    <bean id="serviceProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+    	<property name="target" ref="someService"/>
+        <!-- 注入多种通知 -->
+    	<property name="interceptorNames" value="myBeforeAdvice,myAfterAdvice"/>
+    	<!-- <property name="interceptorNames">
+    		<array>
+    			<value>myBeforeAdvice</value>
+    			<value>myAfterAdvice</value>
+    		</array>
+    	</property> -->
+    </bean>
+
+</beans>
+```
+
+
+### 无接口的 CGLIB 代理生成
+若不存在接口，则 ProxyFactoryBean 会自动采用 CGLIB 方式生成动态代理。
+*SomeService.java - 目标类*
+```
+public class SomeService {
+	public void doFirst() {
+		System.out.println("执行doFirst()方法");
+	}
+
+	public String doSecond() {
+		System.out.println("执行doSecond()方法");
+		return "abcde";
+	}
+}
+```
+*MyAfterReturningAdvice.java - 后置通知*
+```
+public class MyAfterReturningAdvice implements AfterReturningAdvice {
+	// 在目标方法执行之后执行，returnValue：目标方法的返回值
+	@Override
+	public void afterReturning(Object returnValue, Method method, Object[] args, Object target) throws Throwable {
+		System.out.println("执行后置通知方法  returnValue = " + returnValue);
+		if (returnValue != null) {
+			returnValue = ((String) returnValue).toUpperCase();
+			System.out.println("修改过的结果  returnValue = " + returnValue);
+		}
+	}
+}
+```
+*applicationContext.mxl*
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 注册目标对象 -->
+    <bean id="someService" class="top.qingrang.aop07.SomeService"/>
+    
+    <!-- 注册切面：通知 -->
+    <bean id="myAdvice" class="top.qingrang.aop07.MyAfterReturningAdvice"/>
+    
+    <!-- 生成代理对象 -->
+    <bean id="serviceProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+    	<property name="target" ref="someService"/>
+    	<property name="interceptorNames" value="myAdvice"/>
+    </bean>
+
+</beans>
+```
+*MyTest.java*
+```
+@Test
+public void test01() {
+	String resource = "top/qingrang/aop07/applicationContext.xml";
+	ApplicationContext ac = new ClassPathXmlApplicationContext(resource);
+	SomeService service = (SomeService) ac.getBean("serviceProxy");
+	service.doFirst();
+	System.out.println("==================");
+	String result = service.doSecond();
+	System.out.println(result);
+}
+```
+### 有接口的 CGLIB 代理生成 - proxyTargetClass 属性
+若存在接口，但又需要使用 CGLIB 生成代理对象，此时，只需要在配置文件中增加一个 proxyTargetClass 属性设置，用于指定强制使用 CGLIB 代理机制。
+
+![CGLIB 代理](https://daily-1252869435.cos.ap-chengdu.myqcloud.com/2018-11-19-12-44-48.png)
+也可指定 optimize（优化）的值为 true，强制使用 CGLIB 代理机制。
+![optimize（优化）](https://daily-1252869435.cos.ap-chengdu.myqcloud.com/2018-11-19-12-45-22.png)
+查看后台运行情况，可以看到代理生成使用的是 CGLIB 代理机制。
+![后台运行情况](https://daily-1252869435.cos.ap-chengdu.myqcloud.com/2018-11-19-12-45-57.png)
+
+
+## 顾问 Advisor
+通知（Advice）是 Spring 提供的一种切面（Aspect）。但其功能过于简单：只能将切面织入到目标类的所有目标方法中， 无法完成将切面织入到指定目标方法中。
+
+顾问（Advisor）是 Spring 提供的另一种切面。其可以完成更为复杂的切面织入功能。`PointcutAdvisor(切入点顾问)` 是顾问的一种， 可以指定具体的切入点。 顾问将通知进行了包装，会根据不同的通知类型，在不同的时间点，将切面织入到不同的切入点。
+
+PointcutAdvisor 接口有两个较为常用的实现类：
+- NameMatchMethodPointcutAdvisor 名称匹配方法切入点顾问
+- RegexpMethodPointcutAdvisor 正则表达式匹配方法切入点顾问
+
+### 名称匹配方法切入点顾问
+NameMatchMethodPointcutAdvisor，即名称匹配方法切入点顾问。容器可根据配置文件中指定的方法名来设置切入点。
+
+`<property name="mappedNames"/>`
+
+*ISomeService.java*
+```
+public interface ISomeService {
+	// 目标方法
+	void doFirst();
+	// 目标方法
+	String doSecond();
+	// 目标方法
+	void doThird();
+}
+```
+*SomeServiceImpl.java*
+```
+public class SomeServiceImpl implements ISomeService {
+	@Override
+	public void doFirst() {
+		System.out.println("执行doFirst()方法");
+	}
+
+	@Override
+	public String doSecond() {
+		System.out.println("执行doSecond()方法");
+		return "abcde";
+	}
+
+	@Override
+	public void doThird() {
+		System.out.println("执行doThird()方法");
+	}
+}
+```
+*MyAfterReturningAdvice.java*
+```
+public class MyAfterReturningAdvice implements AfterReturningAdvice {
+	// 在目标方法执行之后执行，returnValue：目标方法的返回值
+	@Override
+	public void afterReturning(Object returnValue, Method method, Object[] args, Object target) throws Throwable {
+		System.out.println("执行后置通知方法  returnValue = " + returnValue);
+	}
+}
+```
+*applicationContext.mxl*
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 注册目标对象 -->
+    <bean id="someService" class="top.qingrang.aop09.SomeServiceImpl"/>
+    
+    <!-- 注册切面：通知 -->
+    <bean id="myAdvice" class="top.qingrang.aop09.MyAfterReturningAdvice"/>
+    
+    <!-- 注册切面：顾问 -->
+    <bean id="myAdvisor" class="org.springframework.aop.support.NameMatchMethodPointcutAdvisor">
+    	<property name="advice" ref="myAdvice"/>
+    	<!-- 指定切入点：这里匹配的对象是简单方法名 -->
+    	<!-- <property name="mappedName" value="doFirst"/> -->
+    	 <property name="mappedNames" value="doFirst,doSecond"/>
+        <!-- 使用通配符 -->
+    	<!--<property name="mappedNames" value="*ir*"/>-->
+    </bean>
+    
+    <!-- 生成代理对象 -->
+    <bean id="serviceProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+    	<property name="target" ref="someService"/>
+    	<property name="interceptorNames" value="myAdvisor"/>
+    </bean>
+
+</beans>
+```
+*Test.java - 测试*
+```
+@Test
+public void test01() {
+	// 创建容器对象，加载Spring配置文件
+	String resource = "top/qingrang/aop09/applicationContext.xml";
+	ApplicationContext ac = new ClassPathXmlApplicationContext(resource);
+	ISomeService service = (ISomeService) ac.getBean("serviceProxy");
+	service.doFirst();
+	System.out.println("==================");
+	service.doSecond();
+	System.out.println("==================");
+	service.doThird();
+}
+```
+*输出信息*
+```
+执行doFirst()方法
+执行后置通知方法  returnValue = null
+==================
+执行doSecond()方法
+执行后置通知方法  returnValue = abcde
+==================
+执行doThird()方法
+```
+### 正则表达式方法切入点顾问
+RegexpMethodPointcutAdvisor，即正则表达式方法顾问。容器可根据正则表达式来设置切入点。注意，与正则表达式进行匹配的对象是接口中的方法名，而非目标类（接口的实现类）的方法名。
+
+`<property name="pattern"/>`
+
+这里的正则表达式常用的运算符有三个，如下表：
+
+|运算符|意义|
+|-|-|
+|.|表示任意单个字符|
+|+|表示前一个字符出现一次或多次|
+|*|表示前一个字符出现零次或多次|
+
+*applicationContext.mxl*
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 注册目标对象 -->
+    <bean id="someService" class="top.qingrang.aop10.SomeServiceImpl"/>
+
+    <!-- 注册切面：通知 -->
+    <bean id="myAdvice" class="top.qingrang.aop10.MyAfterReturningAdvice"/>
+
+    <!-- 注册切面：顾问 -->
+    <bean id="myAdvisor" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+    	<property name="advice" ref="myAdvice"/>
+    	<!-- 这里的正则表达式匹配的对象是「全限定性方法名」 -->
+        <!-- 全限定性方法名：com.bjpowernode.aop10.ISomeService.doFirst -->
+    	<!-- <property name="pattern" value=".*doFirst"/> -->
+    	<!-- <property name="patterns" value=".*doFirst,.*doSecond"/> -->
+    	<!-- <property name="pattern" value=".*doFirst|.*doSecond"/> -->
+    	<property name="pattern" value=".*S.*"/>
+    </bean>
+
+    <!-- 生成代理对象 -->
+    <bean id="serviceProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+    	<property name="target" ref="someService"/>
+    	<property name="interceptorNames" value="myAdvisor"/>
+    </bean>
+
+</beans>
+```
+
+
+
+
+
+
+
+
+
+
+
+
+',
+  'groups' => 'Java',
+  'showsel' => '1',
+  'showse2' => '1',
+  'id' => '250',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->updateNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000728s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001389s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 250 LIMIT 1 [ RunTime:0.000889s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `note` WHERE  `id` = 250 LIMIT 1 [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000978s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `groups` WHERE  `groups` = 'Java' LIMIT 1 [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000370s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `id`=250,`p_id`=2,`title`='Spring(二) - AOP（面向切面）\r',`content`='# Spring(二) - AOP（面向切面）\r\n[TOC]\r\n\r\nSpring 是一个基于 **IOC** 和 **AOP** 的结构 J2EE 系统的框架。\r\n## AOP 简介\r\n### 概念\r\nAOP（Aspect Orient Programming），面向切面编程，是面向对象编程 OOP 的一种补充。面向对象编程是从静态角度考虑程序的结构，而面向切面编程是从动态角度考虑程序运行过程。\r\n\r\nAOP 底层，就是采用动态代理模式实现的。采用了两种代理： JDK 的动态代理，与 CGLIB 的动态代理。\r\n\r\n面向切面编程，就是将交叉业务逻辑封装成切面，利用 AOP 容器的功能将切面织入到主业务逻辑中。所谓交叉业务逻辑是指，通用的、与主业务逻辑无关的代码，如安全检查、事务、日志等。\r\n\r\n若不使用 AOP，则会出现代码纠缠，即交叉业务逻辑与主业务逻辑混合在一起。这样，会使主业务逻辑变的混杂不清。\r\n\r\n例如，转账，在真正转账业务逻辑前后，需要权限控制、日志记录、加载事务、结束事务等交叉业务逻辑，而这些业务逻辑与主业务逻辑间并无直接关系。但，它们的代码量所占比重能达到总代码量的一半甚至还多。它们的存在，不仅产生了大量的“冗余”代码，还大大干扰了主业务逻辑---转账。\r\n\r\n### 利用 JDK 动态代理实现 AOP 编程\r\n*ISomeService.java - 主业务接口*\r\n```\r\npublic interface ISomeService {\r\n	// 目标方法\r\n	void doFirst();\r\n	// 目标方法\r\n	void doSecond();\r\n}\r\n```\r\n*SomeServiceImpl.java - 目标类*\r\n```\r\npublic class SomeServiceImpl implements ISomeService {\r\n\r\n	@Override\r\n	public void doFirst() {\r\n		System.out.println(\"执行doFirst()方法\");\r\n	}\r\n\r\n	@Override\r\n	public void doSecond() {\r\n		System.out.println(\"执行doSecond()方法\");\r\n	}\r\n}\r\n```\r\n*SystemService.java - 交叉业务逻辑*\r\n```\r\npublic class SystemService {\r\n	public static void doLog() {\r\n		System.out.println(\"执行日志代码\");\r\n	}\r\n\r\n	public static void doTx() {\r\n		System.out.println(\"执行事务代码\");\r\n	}\r\n}\r\n```\r\n*MyTest.java*\r\n```\r\n@Test\r\npublic void MyTest(){\r\n	final ISomeService target = new SomeServiceImpl();\r\n	// 自动生成一个动态代理对象\r\n	ISomeService service = (ISomeService) Proxy.newProxyInstance(\r\n			target.getClass().getClassLoader(), // 目标类的类加载器\r\n			target.getClass().getInterfaces(),  // 目标类实现的接口数组\r\n			new InvocationHandler() { //业务增强逻辑\r\n				// 具体加强的代码逻辑\r\n				@Override\r\n				public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {\r\n					SystemService.doTx(); // 织入\r\n					Object result = method.invoke(target, args); // 执行目标方法\r\n					SystemService.doLog(); // 织入\r\n					return result;\r\n				}\r\n			});\r\n	service.doFirst();\r\n	System.out.println(\"==============\");\r\n	service.doSecond();\r\n}\r\n```\r\n*输出信息*\r\n```\r\n执行事务代码\r\n执行doFirst()方法\r\n执行日志代码\r\n==============\r\n执行事务代码\r\n执行doSecond()方法\r\n执行日志代码\r\n```\r\n## AOP 编程术语\r\n### 切面（Aspect）\r\n切面泛指交叉业务逻辑。上例中的事务处理、日志处理就可以理解为切面。常用的切面有通知与顾问。实际就是对主业务逻辑的一种增强。\r\n### 织入（Weaving）\r\n织入是指将切面代码插入到目标对象的过程。上例中 MyInvocationHandler 类中的 invoke() 方法完成的工作，就可以称为织入。\r\n### 连接点（JoinPoint）\r\n连接点指可以被切面织入的方法。通常业务接口中的方法均为连接点。\r\n### 切入点（Pointcut）\r\n切入点指切面具体织入的方法。在 StudentServiceImpl 类中，若 doSome()将被增强，而doOther()不被增强，则 doSome()为切入点，而 doOther()仅为连接点。被标记为 final 的方法是不能作为连接点与切入点的。因为最终的是不能被修改，不能被增强的。\r\n### 目标对象（Target）\r\n目标对象指将要被增强的对象。即包含主业务逻辑的类的对象。上例中的 StudentServiceImpl 的对象若被增强，则该类称为目标类，该类对象称为目标对象。当然，不被增强，也就无所谓目标不目标了。\r\n### 通知（Advice）\r\n通知是切面的一种实现，可以完成简单织入功能（织入功能就是在这里完成的）。换个角度来说，通知定义了增强码切入到目标代码的时间点，是目标方法执行之前执行，还是之后执行等。通知类型不同，切入时间不同。\r\n\r\n**切入点定义切入的位置，通知定义切入的时间。**\r\n### 顾问（Advisor）\r\n顾问是切面的另一种实现，能够将通知以更为复杂的方式织入到目标对象中，是将通知包装为更复杂切面的装配器。\r\n\r\n\r\n\r\n\r\n\r\n\r\n## 通知 Advice\r\n通知（Advice），切面的一种实现，可以完成简单织入功能（织入功能就是在这里完成的）。\r\n\r\n常用通知有：前置通知、后置通知、环绕通知、异常处理通知。\r\n### 前置通知 MethodBeforeAdvice\r\n定义前置通知，需要实现 MethodBeforeAdvice 接口。该接口中有一个方法 before()，会在目标方法执行之前执行。 前置通知的特点：\r\n- 在目标方法执行之前先执行。\r\n- 不改变目标方法的执行流程，前置通知代码不能阻止目标方法执行。\r\n- 不改变目标方法执行的结果。\r\n\r\n*ISomeService.java - 主业务接口*\r\n```\r\npublic interface ISomeService {\r\n	// 目标方法\r\n	void doFirst();\r\n	// 目标方法\r\n	void doSecond();\r\n}\r\n```\r\n*SomeServiceImpl.java - 目标类*\r\n```\r\npublic class SomeServiceImpl implements ISomeService {\r\n\r\n	@Override\r\n	public void doFirst() {\r\n		System.out.println(\"执行doFirst()方法\");\r\n	}\r\n\r\n	@Override\r\n	public void doSecond() {\r\n		System.out.println(\"执行doSecond()方法\");\r\n	}\r\n}\r\n```\r\n*MyMethodBeforeAdvice.java - 前置通知*\r\n```\r\npublic class MyMethodBeforeAdvice implements MethodBeforeAdvice {\r\n\r\n	// 当前方法在目标方法执行之前执行，method:目标方法，args:目标方法的参数列表，target:目标对象\r\n	@Override\r\n	public void before(Method method, Object[] args, Object target) throws Throwable {\r\n		// 对于目标方法的增强代码就应该写在这里\r\n		System.out.println(\"执行前置通知方法\");\r\n	}\r\n}\r\n```\r\n*applicationContext.mxl*\r\n```\r\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<beans xmlns=\"http://www.springframework.org/schema/beans\"\r\n    xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n    xsi:schemaLocation=\"\r\n        http://www.springframework.org/schema/beans \r\n        http://www.springframework.org/schema/beans/spring-beans.xsd\">\r\n\r\n    <!-- 注册目标对象 -->\r\n    <bean id=\"someService\" class=\"top.qingrang.aop01.SomeServiceImpl\"/>\r\n\r\n    <!-- 注册切面：通知 -->\r\n    <bean id=\"myAdvice\" class=\"top.qingrang.aop01.MyMethodBeforeAdvice\"/>\r\n\r\n    <!-- 生成代理对象 -->\r\n    <bean id=\"serviceProxy\" class=\"org.springframework.aop.framework.ProxyFactoryBean\">\r\n    	<!-- 指定目标对象，随便用哪个 -->\r\n    	<!-- <property name=\"targetName\" value=\"someService\"/> -->\r\n    	<property name=\"target\" ref=\"someService\"/>\r\n		\r\n    	<!-- 指定切面 -->\r\n    	<property name=\"interceptorNames\" value=\"myAdvice\"/>\r\n    </bean>\r\n</beans>\r\n```\r\n\r\n### 后置通知 AfterReturningAdvice\r\n定义后置通知，需要实现接口 AfterReturningAdvice。该接口中有一个方法 afterReturning()，会在目标方法执行之后执行。后置通知的特点：\r\n- 在目标方法执行之后执行。\r\n- 不改变目标方法的执行流程，后置通知代码不能阻止目标方法执行。\r\n- 不改变目标方法执行的结果。\r\n\r\n*SomeServiceImpl.java - 目标类*\r\n```\r\npublic class SomeServiceImpl implements ISomeService {\r\n\r\n	@Override\r\n	public void doFirst() {\r\n		System.out.println(\"执行doFirst()方法\");\r\n	}\r\n\r\n	@Override\r\n	public String doSecond() {\r\n		System.out.println(\"执行doSecond()方法\");\r\n		return \"abcde\";\r\n	}\r\n}\r\n```\r\n*MyAfterReturningAdvice.java - 后置通知*\r\n```\r\n// 后置通知：可以获取到目标方法的返回结果，但无法改变目标方法的结果\r\npublic class MyAfterReturningAdvice implements AfterReturningAdvice {\r\n	// 在目标方法执行之后执行，returnValue：目标方法的返回值\r\n	@Override\r\n	public void afterReturning(Object returnValue, Method method, Object[] args, Object target) throws Throwable {\r\n		System.out.println(\"执行后置通知方法  returnValue = \" + returnValue);\r\n		if (returnValue != null) {\r\n			returnValue = ((String) returnValue).toUpperCase();\r\n			System.out.println(\"修改过的结果  returnValue = \" + returnValue);\r\n		}\r\n	}\r\n}\r\n```\r\n### 环绕通知 MethodInterceptor\r\n定义环绕通知(在目标方法执行之前之后都会执行)，需要实现 MethodInterceptor 接口。环绕通知，也叫方法拦截器，可以在目标方法调用之前及之后做处理，可以改变目标方法的返回值，也可以改变程序执行流程。\r\n\r\n*MyMethodInterceptor.java*\r\n```\r\n// 环绕通知：可以修改目标方法的返回结果\r\npublic class MyMethodInterceptor implements MethodInterceptor {\r\n	@Override\r\n	public Object invoke(MethodInvocation invocation) throws Throwable {\r\n		System.out.println(\"执行环绕通知：目标方法执行之前\");\r\n		// 执行目标方法\r\n		Object result = invocation.proceed();\r\n		System.out.println(\"执行环绕通知：目标方法执行之后\");\r\n		if(result != null) {\r\n			result = ((String)result).toUpperCase();\r\n		}\r\n		return result;\r\n	}\r\n}\r\n```\r\n\r\n\r\n\r\n\r\n\r\n### 异常通知 ThrowsAdvice\r\n定义异常通知，需要实现 ThrowsAdvice 接口。该接口的主要作用是，在目标方法抛出异常后，根据异常的不同做出相应的处理。当该接口处理完异常后，会简单地将异常再次抛出给目标方法。\r\n\r\n不过，这个接口较为特殊，从形式上看，该接口中没有必须要实现的方法。但，这个接口却确实有必须要实现的方法 `afterThrowing()`。这个方法重载了四种形式。由于使用时，一般只使用其中一种，若要都定义到接口中，则势必要使程序员在使用时必须要实现这四个方法。这是很麻烦的。所以就将该接口定义为了标识接口（没有方法的接口）。这四个方法在打开 `ThrowsAdvice` 源码后，上侧的注释部分可以看到：\r\n![afterThrowing()](https://daily-1252869435.cos.ap-chengdu.myqcloud.com/2018-11-19-10-59-26.png)\r\n不过，在这四种形式中，常用的形式如下： `public void afterThrowing(自定义的异常类 e)` 这里的参数 e 为，与具体业务相关的用户自定义的异常类对象。容器会根据异常类型的不同，自动选择不同的该方法执行。这些方法的执行是在目标方法执行结束后执行的。其它参数则与前面两个通知中方法的参数意义相同。\r\n#### 普通异常\r\n*SomeServiceImpl.java - 目标类*\r\n```\r\n@Override\r\npublic void doFirst() {\r\n	System.out.println(\"执行doFirst()方法\" + 3 / 0);\r\n}\r\n```\r\n*MyThrowsAdvice.java - 异常通知*\r\n```\r\npublic class MyThrowsAdvice implements ThrowsAdvice {\r\n	// 当目标方法抛出与指定类型的异常具有 is-a 关系的异常时，执行当前方法\r\n	public void afterThrowing(Exception ex) {\r\n		System.out.println(\"执行异常通知方法\");\r\n	}\r\n}\r\n```\r\n*输出信息*\r\n```\r\n执行异常通知方法\r\njava.lang.ArithmeticException: / by zero\r\n	...\r\n```\r\n#### 自定义异常\r\n异常分两种：\r\n- 运行时异常，不进行处理，也可以通过编译。\r\n若一个类继承自 RunTimeException，则该异常就是运行时异常\r\n- 编译时异常(受查异常,Checked Exception)，不进行处理，将无法通过编译。\r\n若一个类继承自 Exception，则该异常就是受查异常\r\n\r\n*UserException.java*\r\n```\r\npublic class UserException extends Exception {\r\n	public UserException() {\r\n		super();\r\n	}\r\n\r\n	public UserException(String message) {\r\n		super(message);\r\n	}\r\n}\r\n```\r\n*UsernameException.java*\r\n```\r\npublic class UsernameException extends UserException {\r\n	public UsernameException() {\r\n		super();\r\n	}\r\n\r\n	public UsernameException(String message) {\r\n		super(message);\r\n	}\r\n}\r\n```\r\n*PasswordException.java*\r\n```\r\npublic class PasswordException extends UserException {\r\n	public PasswordException() {\r\n		super();\r\n	}\r\n\r\n	public PasswordException(String message) {\r\n		super(message);\r\n	}\r\n}\r\n```\r\n*MyThrowsAdvice.java - 异常通知*\r\n```\r\npublic class MyThrowsAdvice implements ThrowsAdvice {\r\n	// 当目标方法抛出 UsernameException 异常时，执行当前方法\r\n	public void afterThrowing(UsernameException ex) {\r\n		System.out.println(\"发生用户名异常 ex = \" + ex.getMessage());\r\n	}\r\n	\r\n	// 当目标方法抛出 PasswordException 异常时，执行当前方法\r\n	public void afterThrowing(PasswordException ex) {\r\n		System.out.println(\"发生密码异常 ex = \" + ex.getMessage());\r\n	}\r\n	\r\n	// 当目标方法抛出其它异常时，执行当前方法\r\n	public void afterThrowing(Exception ex) {\r\n		System.out.println(\"发生异常 ex = \" + ex.getMessage());\r\n	}\r\n}\r\n```\r\n*MyTest.java*\r\n```\r\n@Test\r\npublic void test01() throws UserException {\r\n	String resource = \"top/qingrang/aop05/applicationContext.xml\";\r\n	ApplicationContext ac = new ClassPathXmlApplicationContext(resource);\r\n	ISomeService service = (ISomeService) ac.getBean(\"serviceProxy\");\r\n	service.login(\"beijing\", \"222\");\r\n}\r\n```\r\n\r\n\r\n\r\n\r\n\r\n### 同时使用多种通知\r\n*applicationContext.mxl*\r\n```\r\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<beans xmlns=\"http://www.springframework.org/schema/beans\"\r\n    xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n    xsi:schemaLocation=\"\r\n        http://www.springframework.org/schema/beans \r\n        http://www.springframework.org/schema/beans/spring-beans.xsd\">\r\n\r\n    <!-- 注册目标对象 -->\r\n    <bean id=\"someService\" class=\"top.qingrang.aop06.SomeServiceImpl\"/>\r\n\r\n    <!-- 注册切面：通知 -->\r\n    <bean id=\"myBeforeAdvice\" class=\"top.qingrang.aop06.MyMethodBeforeAdvice\"/>\r\n    <bean id=\"myAfterAdvice\" class=\"top.qingrang.aop06.MyAfterReturningAdvice\"/>\r\n\r\n    <!-- 生成代理对象 -->\r\n    <bean id=\"serviceProxy\" class=\"org.springframework.aop.framework.ProxyFactoryBean\">\r\n    	<property name=\"target\" ref=\"someService\"/>\r\n        <!-- 注入多种通知 -->\r\n    	<property name=\"interceptorNames\" value=\"myBeforeAdvice,myAfterAdvice\"/>\r\n    	<!-- <property name=\"interceptorNames\">\r\n    		<array>\r\n    			<value>myBeforeAdvice</value>\r\n    			<value>myAfterAdvice</value>\r\n    		</array>\r\n    	</property> -->\r\n    </bean>\r\n\r\n</beans>\r\n```\r\n\r\n\r\n### 无接口的 CGLIB 代理生成\r\n若不存在接口，则 ProxyFactoryBean 会自动采用 CGLIB 方式生成动态代理。\r\n*SomeService.java - 目标类*\r\n```\r\npublic class SomeService {\r\n	public void doFirst() {\r\n		System.out.println(\"执行doFirst()方法\");\r\n	}\r\n\r\n	public String doSecond() {\r\n		System.out.println(\"执行doSecond()方法\");\r\n		return \"abcde\";\r\n	}\r\n}\r\n```\r\n*MyAfterReturningAdvice.java - 后置通知*\r\n```\r\npublic class MyAfterReturningAdvice implements AfterReturningAdvice {\r\n	// 在目标方法执行之后执行，returnValue：目标方法的返回值\r\n	@Override\r\n	public void afterReturning(Object returnValue, Method method, Object[] args, Object target) throws Throwable {\r\n		System.out.println(\"执行后置通知方法  returnValue = \" + returnValue);\r\n		if (returnValue != null) {\r\n			returnValue = ((String) returnValue).toUpperCase();\r\n			System.out.println(\"修改过的结果  returnValue = \" + returnValue);\r\n		}\r\n	}\r\n}\r\n```\r\n*applicationContext.mxl*\r\n```\r\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<beans xmlns=\"http://www.springframework.org/schema/beans\"\r\n    xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n    xsi:schemaLocation=\"\r\n        http://www.springframework.org/schema/beans \r\n        http://www.springframework.org/schema/beans/spring-beans.xsd\">\r\n\r\n    <!-- 注册目标对象 -->\r\n    <bean id=\"someService\" class=\"top.qingrang.aop07.SomeService\"/>\r\n    \r\n    <!-- 注册切面：通知 -->\r\n    <bean id=\"myAdvice\" class=\"top.qingrang.aop07.MyAfterReturningAdvice\"/>\r\n    \r\n    <!-- 生成代理对象 -->\r\n    <bean id=\"serviceProxy\" class=\"org.springframework.aop.framework.ProxyFactoryBean\">\r\n    	<property name=\"target\" ref=\"someService\"/>\r\n    	<property name=\"interceptorNames\" value=\"myAdvice\"/>\r\n    </bean>\r\n\r\n</beans>\r\n```\r\n*MyTest.java*\r\n```\r\n@Test\r\npublic void test01() {\r\n	String resource = \"top/qingrang/aop07/applicationContext.xml\";\r\n	ApplicationContext ac = new ClassPathXmlApplicationContext(resource);\r\n	SomeService service = (SomeService) ac.getBean(\"serviceProxy\");\r\n	service.doFirst();\r\n	System.out.println(\"==================\");\r\n	String result = service.doSecond();\r\n	System.out.println(result);\r\n}\r\n```\r\n### 有接口的 CGLIB 代理生成 - proxyTargetClass 属性\r\n若存在接口，但又需要使用 CGLIB 生成代理对象，此时，只需要在配置文件中增加一个 proxyTargetClass 属性设置，用于指定强制使用 CGLIB 代理机制。\r\n\r\n![CGLIB 代理](https://daily-1252869435.cos.ap-chengdu.myqcloud.com/2018-11-19-12-44-48.png)\r\n也可指定 optimize（优化）的值为 true，强制使用 CGLIB 代理机制。\r\n![optimize（优化）](https://daily-1252869435.cos.ap-chengdu.myqcloud.com/2018-11-19-12-45-22.png)\r\n查看后台运行情况，可以看到代理生成使用的是 CGLIB 代理机制。\r\n![后台运行情况](https://daily-1252869435.cos.ap-chengdu.myqcloud.com/2018-11-19-12-45-57.png)\r\n\r\n\r\n## 顾问 Advisor\r\n通知（Advice）是 Spring 提供的一种切面（Aspect）。但其功能过于简单：只能将切面织入到目标类的所有目标方法中， 无法完成将切面织入到指定目标方法中。\r\n\r\n顾问（Advisor）是 Spring 提供的另一种切面。其可以完成更为复杂的切面织入功能。`PointcutAdvisor(切入点顾问)` 是顾问的一种， 可以指定具体的切入点。 顾问将通知进行了包装，会根据不同的通知类型，在不同的时间点，将切面织入到不同的切入点。\r\n\r\nPointcutAdvisor 接口有两个较为常用的实现类：\r\n- NameMatchMethodPointcutAdvisor 名称匹配方法切入点顾问\r\n- RegexpMethodPointcutAdvisor 正则表达式匹配方法切入点顾问\r\n\r\n### 名称匹配方法切入点顾问\r\nNameMatchMethodPointcutAdvisor，即名称匹配方法切入点顾问。容器可根据配置文件中指定的方法名来设置切入点。\r\n\r\n`<property name=\"mappedNames\"/>`\r\n\r\n*ISomeService.java*\r\n```\r\npublic interface ISomeService {\r\n	// 目标方法\r\n	void doFirst();\r\n	// 目标方法\r\n	String doSecond();\r\n	// 目标方法\r\n	void doThird();\r\n}\r\n```\r\n*SomeServiceImpl.java*\r\n```\r\npublic class SomeServiceImpl implements ISomeService {\r\n	@Override\r\n	public void doFirst() {\r\n		System.out.println(\"执行doFirst()方法\");\r\n	}\r\n\r\n	@Override\r\n	public String doSecond() {\r\n		System.out.println(\"执行doSecond()方法\");\r\n		return \"abcde\";\r\n	}\r\n\r\n	@Override\r\n	public void doThird() {\r\n		System.out.println(\"执行doThird()方法\");\r\n	}\r\n}\r\n```\r\n*MyAfterReturningAdvice.java*\r\n```\r\npublic class MyAfterReturningAdvice implements AfterReturningAdvice {\r\n	// 在目标方法执行之后执行，returnValue：目标方法的返回值\r\n	@Override\r\n	public void afterReturning(Object returnValue, Method method, Object[] args, Object target) throws Throwable {\r\n		System.out.println(\"执行后置通知方法  returnValue = \" + returnValue);\r\n	}\r\n}\r\n```\r\n*applicationContext.mxl*\r\n```\r\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<beans xmlns=\"http://www.springframework.org/schema/beans\"\r\n    xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n    xsi:schemaLocation=\"\r\n        http://www.springframework.org/schema/beans \r\n        http://www.springframework.org/schema/beans/spring-beans.xsd\">\r\n\r\n    <!-- 注册目标对象 -->\r\n    <bean id=\"someService\" class=\"top.qingrang.aop09.SomeServiceImpl\"/>\r\n    \r\n    <!-- 注册切面：通知 -->\r\n    <bean id=\"myAdvice\" class=\"top.qingrang.aop09.MyAfterReturningAdvice\"/>\r\n    \r\n    <!-- 注册切面：顾问 -->\r\n    <bean id=\"myAdvisor\" class=\"org.springframework.aop.support.NameMatchMethodPointcutAdvisor\">\r\n    	<property name=\"advice\" ref=\"myAdvice\"/>\r\n    	<!-- 指定切入点：这里匹配的对象是简单方法名 -->\r\n    	<!-- <property name=\"mappedName\" value=\"doFirst\"/> -->\r\n    	 <property name=\"mappedNames\" value=\"doFirst,doSecond\"/>\r\n        <!-- 使用通配符 -->\r\n    	<!--<property name=\"mappedNames\" value=\"*ir*\"/>-->\r\n    </bean>\r\n    \r\n    <!-- 生成代理对象 -->\r\n    <bean id=\"serviceProxy\" class=\"org.springframework.aop.framework.ProxyFactoryBean\">\r\n    	<property name=\"target\" ref=\"someService\"/>\r\n    	<property name=\"interceptorNames\" value=\"myAdvisor\"/>\r\n    </bean>\r\n\r\n</beans>\r\n```\r\n*Test.java - 测试*\r\n```\r\n@Test\r\npublic void test01() {\r\n	// 创建容器对象，加载Spring配置文件\r\n	String resource = \"top/qingrang/aop09/applicationContext.xml\";\r\n	ApplicationContext ac = new ClassPathXmlApplicationContext(resource);\r\n	ISomeService service = (ISomeService) ac.getBean(\"serviceProxy\");\r\n	service.doFirst();\r\n	System.out.println(\"==================\");\r\n	service.doSecond();\r\n	System.out.println(\"==================\");\r\n	service.doThird();\r\n}\r\n```\r\n*输出信息*\r\n```\r\n执行doFirst()方法\r\n执行后置通知方法  returnValue = null\r\n==================\r\n执行doSecond()方法\r\n执行后置通知方法  returnValue = abcde\r\n==================\r\n执行doThird()方法\r\n```\r\n### 正则表达式方法切入点顾问\r\nRegexpMethodPointcutAdvisor，即正则表达式方法顾问。容器可根据正则表达式来设置切入点。注意，与正则表达式进行匹配的对象是接口中的方法名，而非目标类（接口的实现类）的方法名。\r\n\r\n`<property name=\"pattern\"/>`\r\n\r\n这里的正则表达式常用的运算符有三个，如下表：\r\n\r\n|运算符|意义|\r\n|-|-|\r\n|.|表示任意单个字符|\r\n|+|表示前一个字符出现一次或多次|\r\n|*|表示前一个字符出现零次或多次|\r\n\r\n*applicationContext.mxl*\r\n```\r\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<beans xmlns=\"http://www.springframework.org/schema/beans\"\r\n    xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n    xsi:schemaLocation=\"\r\n        http://www.springframework.org/schema/beans \r\n        http://www.springframework.org/schema/beans/spring-beans.xsd\">\r\n\r\n    <!-- 注册目标对象 -->\r\n    <bean id=\"someService\" class=\"top.qingrang.aop10.SomeServiceImpl\"/>\r\n\r\n    <!-- 注册切面：通知 -->\r\n    <bean id=\"myAdvice\" class=\"top.qingrang.aop10.MyAfterReturningAdvice\"/>\r\n\r\n    <!-- 注册切面：顾问 -->\r\n    <bean id=\"myAdvisor\" class=\"org.springframework.aop.support.RegexpMethodPointcutAdvisor\">\r\n    	<property name=\"advice\" ref=\"myAdvice\"/>\r\n    	<!-- 这里的正则表达式匹配的对象是「全限定性方法名」 -->\r\n        <!-- 全限定性方法名：com.bjpowernode.aop10.ISomeService.doFirst -->\r\n    	<!-- <property name=\"pattern\" value=\".*doFirst\"/> -->\r\n    	<!-- <property name=\"patterns\" value=\".*doFirst,.*doSecond\"/> -->\r\n    	<!-- <property name=\"pattern\" value=\".*doFirst|.*doSecond\"/> -->\r\n    	<property name=\"pattern\" value=\".*S.*\"/>\r\n    </bean>\r\n\r\n    <!-- 生成代理对象 -->\r\n    <bean id=\"serviceProxy\" class=\"org.springframework.aop.framework.ProxyFactoryBean\">\r\n    	<property name=\"target\" ref=\"someService\"/>\r\n    	<property name=\"interceptorNames\" value=\"myAdvisor\"/>\r\n    </bean>\r\n\r\n</beans>\r\n```\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n',`groups`='Java',`is_show`=1,`publish`=1,`summary`='',`gmt_modified`='2018-11-20'  WHERE  `id` = 250 [ RunTime:0.001327s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Java' LIMIT 1 [ RunTime:0.001973s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=21  WHERE  `groups` = 'Java' [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Java' LIMIT 1 [ RunTime:0.001228s ]
+[ sql ] [ SQL ] UPDATE `groups`  SET `g_count`=21  WHERE  `groups` = 'Java' [ RunTime:0.000356s ]
+---------------------------------------------------------------
+[ 2018-11-20T22:53:09+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/250.html
+[ info ] qingrang.top/daily/admin/note/shownote/id/250.html [运行时间：0.057034s][吞吐率：17.53req/s] [内存消耗：2,019.97kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/250.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,la;q=0.8,en;q=0.7,lb;q=0.6',
+  'cookie' => 'Hm_lvt_1769181352e9adc950166aada465644e=1541082864,1541122974,1541171416,1542098176; PHPSESSID=trq99s8nsqkkfq503j4teoj742',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '250',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000548s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001226s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 250 LIMIT 1 [ RunTime:0.000631s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000966s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000276s ]

@@ -1,0 +1,1298 @@
+---------------------------------------------------------------
+[ 2018-07-18T09:27:54+08:00 ] 127.0.0.1 127.0.0.1 GET /daily/
+[ info ] 127.0.0.1:9096/daily/ [运行时间：0.563731s][吞吐率：1.77req/s] [内存消耗：4,013.56kb] [文件加载：57]
+[ info ] [ LANG ] G:\PHP\daily\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=1320009278.460295; UM_distinctid=164038792b0164-0378992cc88f78-47e1137-1fa400-164038792b260a; CNZZDATA1261472815=974110255-1529066955-%7C1529066955',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'host' => '127.0.0.1:9096',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ G:\PHP\daily\application\admin\controller\Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\PHP\daily/application/admin\view\note\notelst.html [ array (
+  0 => 'autoSave',
+  1 => 'phoneSave',
+  2 => 'hide',
+  3 => 'list',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.193180s ] mysql:host=127.0.0.1;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.074826s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.034550s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.037755s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000759s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000900s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.029483s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0 ORDER BY `g_order` [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `g_order` [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.001050s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.018394s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.006270s ]
+---------------------------------------------------------------
+[ 2018-07-18T09:27:55+08:00 ] 127.0.0.1 127.0.0.1 GET /daily/
+[ info ] 127.0.0.1:9096/daily/ [运行时间：0.147331s][吞吐率：6.79req/s] [内存消耗：3,330.25kb] [文件加载：55]
+[ info ] [ LANG ] G:\PHP\daily\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=1320009278.460295; UM_distinctid=164038792b0164-0378992cc88f78-47e1137-1fa400-164038792b260a; CNZZDATA1261472815=974110255-1529066955-%7C1529066955',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'host' => '127.0.0.1:9096',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ G:\PHP\daily\application\admin\controller\Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\PHP\daily/application/admin\view\note\notelst.html [ array (
+  0 => 'autoSave',
+  1 => 'phoneSave',
+  2 => 'hide',
+  3 => 'list',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000598s ] mysql:host=127.0.0.1;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.009166s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.004291s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.011906s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000520s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.008745s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0 ORDER BY `g_order` [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000608s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `g_order` [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.013254s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.006456s ]
+---------------------------------------------------------------
+[ 2018-07-18T09:30:05+08:00 ] 127.0.0.1 127.0.0.1 GET /daily/
+[ info ] 127.0.0.1:9096/daily/ [运行时间：0.125459s][吞吐率：7.97req/s] [内存消耗：4,013.87kb] [文件加载：57]
+[ info ] [ LANG ] G:\PHP\daily\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=1320009278.460295; UM_distinctid=164038792b0164-0378992cc88f78-47e1137-1fa400-164038792b260a; CNZZDATA1261472815=974110255-1529066955-%7C1529066955',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'host' => '127.0.0.1:9096',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ G:\PHP\daily\application\admin\controller\Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\PHP\daily/application/admin\view\note\notelst.html [ array (
+  0 => 'autoSave',
+  1 => 'phoneSave',
+  2 => 'hide',
+  3 => 'list',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000596s ] mysql:host=127.0.0.1;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.010803s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.002518s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.009291s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000257s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000207s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000209s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.006734s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000241s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0 ORDER BY `g_order` [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000167s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `g_order` [ RunTime:0.000178s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000124s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.008152s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.003633s ]
+---------------------------------------------------------------
+[ 2018-07-18T09:31:10+08:00 ] 127.0.0.1 127.0.0.1 GET /daily/
+[ info ] 127.0.0.1:9096/daily/ [运行时间：0.135907s][吞吐率：7.36req/s] [内存消耗：1,554.39kb] [文件加载：51]
+[ info ] [ LANG ] G:\PHP\daily\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=1320009278.460295; UM_distinctid=164038792b0164-0378992cc88f78-47e1137-1fa400-164038792b260a; CNZZDATA1261472815=974110255-1529066955-%7C1529066955',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'host' => '127.0.0.1:9096',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] G:\PHP\daily\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-18T09:31:12+08:00 ] 127.0.0.1 127.0.0.1 GET /daily/admin/login/index.html
+[ info ] 127.0.0.1:9096/daily/admin/login/index.html [运行时间：0.105180s][吞吐率：9.51req/s] [内存消耗：1,362.48kb] [文件加载：48]
+[ info ] [ LANG ] G:\PHP\daily\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=1320009278.460295; UM_distinctid=164038792b0164-0378992cc88f78-47e1137-1fa400-164038792b260a; CNZZDATA1261472815=974110255-1529066955-%7C1529066955; PHPSESSID=0elrfv059ksfr8pna9tjdtvbc1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9096/daily/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'host' => '127.0.0.1:9096',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-18T09:31:41+08:00 ] 127.0.0.1 127.0.0.1 GET /daily/admin/login/index.html
+[ info ] 127.0.0.1:9096/daily/admin/login/index.html [运行时间：0.035057s][吞吐率：28.53req/s] [内存消耗：1,362.48kb] [文件加载：48]
+[ info ] [ LANG ] G:\PHP\daily\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=1320009278.460295; UM_distinctid=164038792b0164-0378992cc88f78-47e1137-1fa400-164038792b260a; CNZZDATA1261472815=974110255-1529066955-%7C1529066955; PHPSESSID=0elrfv059ksfr8pna9tjdtvbc1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9096/daily/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'host' => '127.0.0.1:9096',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-07-18T09:31:42+08:00 ] 127.0.0.1 127.0.0.1 GET /daily/
+[ info ] 127.0.0.1:9096/daily/ [运行时间：0.104158s][吞吐率：9.60req/s] [内存消耗：3,330.74kb] [文件加载：55]
+[ info ] [ LANG ] G:\PHP\daily\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=1320009278.460295; UM_distinctid=164038792b0164-0378992cc88f78-47e1137-1fa400-164038792b260a; CNZZDATA1261472815=974110255-1529066955-%7C1529066955; PHPSESSID=0elrfv059ksfr8pna9tjdtvbc1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'host' => '127.0.0.1:9096',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ G:\PHP\daily\application\admin\controller\Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\PHP\daily/application/admin\view\note\notelst.html [ array (
+  0 => 'autoSave',
+  1 => 'phoneSave',
+  2 => 'hide',
+  3 => 'list',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000532s ] mysql:host=127.0.0.1;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.006725s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.004220s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.006458s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000193s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.008389s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000214s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0 ORDER BY `g_order` [ RunTime:0.000216s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000174s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `g_order` [ RunTime:0.000185s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000130s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.006623s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.005211s ]
+---------------------------------------------------------------
+[ 2018-07-18T09:31:51+08:00 ] 127.0.0.1 127.0.0.1 POST /daily/admin/note/asearch.html
+[ info ] 127.0.0.1:9096/daily/admin/note/asearch.html [运行时间：0.091363s][吞吐率：10.95req/s] [内存消耗：1,929.85kb] [文件加载：50]
+[ info ] [ LANG ] G:\PHP\daily\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'asearch',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=1320009278.460295; UM_distinctid=164038792b0164-0378992cc88f78-47e1137-1fa400-164038792b260a; CNZZDATA1261472815=974110255-1529066955-%7C1529066955; PHPSESSID=0elrfv059ksfr8pna9tjdtvbc1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9096/daily/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://127.0.0.1:9096',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '7',
+  'host' => '127.0.0.1:9096',
+)
+[ info ] [ PARAM ] array (
+  'key' => '565',
+)
+[ info ] [ RUN ] app\admin\controller\Note->aSearch[ G:\PHP\daily\application\admin\controller\Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000658s ] mysql:host=127.0.0.1;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.008297s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  ( `title` LIKE '%565%' OR `content` LIKE '%565%' ) ORDER BY id desc [ RunTime:0.046840s ]
+---------------------------------------------------------------
+[ 2018-07-18T09:31:59+08:00 ] 127.0.0.1 127.0.0.1 GET /daily/
+[ info ] 127.0.0.1:9096/daily/ [运行时间：0.110851s][吞吐率：9.02req/s] [内存消耗：3,330.74kb] [文件加载：55]
+[ info ] [ LANG ] G:\PHP\daily\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=1320009278.460295; UM_distinctid=164038792b0164-0378992cc88f78-47e1137-1fa400-164038792b260a; CNZZDATA1261472815=974110255-1529066955-%7C1529066955; PHPSESSID=0elrfv059ksfr8pna9tjdtvbc1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'host' => '127.0.0.1:9096',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ G:\PHP\daily\application\admin\controller\Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\PHP\daily/application/admin\view\note\notelst.html [ array (
+  0 => 'autoSave',
+  1 => 'phoneSave',
+  2 => 'hide',
+  3 => 'list',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000529s ] mysql:host=127.0.0.1;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.009563s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.004432s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.007204s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000208s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000179s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000175s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.008651s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000255s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0 ORDER BY `g_order` [ RunTime:0.000305s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000215s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `g_order` [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000181s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.007525s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.005148s ]
+---------------------------------------------------------------
+[ 2018-07-18T09:32:02+08:00 ] 127.0.0.1 127.0.0.1 POST /daily/admin/note/ashownote2.html
+[ info ] 127.0.0.1:9096/daily/admin/note/ashownote2.html [运行时间：0.069818s][吞吐率：14.32req/s] [内存消耗：2,031.81kb] [文件加载：50]
+[ info ] [ LANG ] G:\PHP\daily\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'ashownote2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=1320009278.460295; UM_distinctid=164038792b0164-0378992cc88f78-47e1137-1fa400-164038792b260a; CNZZDATA1261472815=974110255-1529066955-%7C1529066955; PHPSESSID=0elrfv059ksfr8pna9tjdtvbc1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9096/daily/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://127.0.0.1:9096',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '15',
+  'host' => '127.0.0.1:9096',
+)
+[ info ] [ PARAM ] array (
+  'groupname' => 'Linux',
+)
+[ info ] [ RUN ] app\admin\controller\Note->aShowNote2[ G:\PHP\daily\application\admin\controller\Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000568s ] mysql:host=127.0.0.1;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.011445s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` = 'Linux' ORDER BY id desc [ RunTime:0.000499s ]
+---------------------------------------------------------------
+[ 2018-07-18T10:24:45+08:00 ] 127.0.0.1 127.0.0.1 GET /daily/
+[ info ] 127.0.0.1:9096/daily/ [运行时间：0.174736s][吞吐率：5.72req/s] [内存消耗：4,014.05kb] [文件加载：57]
+[ info ] [ LANG ] G:\PHP\daily\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=1320009278.460295; UM_distinctid=164038792b0164-0378992cc88f78-47e1137-1fa400-164038792b260a; CNZZDATA1261472815=974110255-1529066955-%7C1529066955; PHPSESSID=0elrfv059ksfr8pna9tjdtvbc1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'host' => '127.0.0.1:9096',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ G:\PHP\daily\application\admin\controller\Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\PHP\daily/application/admin\view\note\notelst.html [ array (
+  0 => 'autoSave',
+  1 => 'phoneSave',
+  2 => 'hide',
+  3 => 'list',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003220s ] mysql:host=127.0.0.1;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.014002s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.003925s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.010808s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000252s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000228s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.011317s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0 ORDER BY `g_order` [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `g_order` [ RunTime:0.000308s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000180s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.010400s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.004295s ]
+---------------------------------------------------------------
+[ 2018-07-18T10:27:49+08:00 ] 127.0.0.1 127.0.0.1 GET /daily/
+[ info ] 127.0.0.1:9096/daily/ [运行时间：0.243590s][吞吐率：4.11req/s] [内存消耗：3,000.05kb] [文件加载：61]
+[ info ] [ LANG ] G:\PHP\daily\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=1320009278.460295; UM_distinctid=164038792b0164-0378992cc88f78-47e1137-1fa400-164038792b260a; CNZZDATA1261472815=974110255-1529066955-%7C1529066955; PHPSESSID=0elrfv059ksfr8pna9tjdtvbc1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'host' => '127.0.0.1:9096',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ G:\PHP\daily\application\admin\controller\Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\PHP\daily/application/admin\view\note\notelst.html [ array (
+  0 => 'autoSave',
+  1 => 'phoneSave',
+  2 => 'hide',
+  3 => 'list',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000616s ] mysql:host=127.0.0.1;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.011752s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.003448s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.007940s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000259s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.008294s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0 ORDER BY `g_order` [ RunTime:0.000237s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000209s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `g_order` [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `groups` WHERE  `parent_id` = 2 LIMIT 1 [ RunTime:0.000225s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000145s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.010388s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.004163s ]
+[ error ] [8]未定义数组索引: group2num[G:\PHP\daily\runtime\temp\d6280399debca6c3a6b9bf3c0a05d454.php:395]
+---------------------------------------------------------------
+[ 2018-07-18T10:55:54+08:00 ] 127.0.0.1 127.0.0.1 GET /daily/
+[ info ] 127.0.0.1:9096/daily/ [运行时间：0.131075s][吞吐率：7.63req/s] [内存消耗：4,015.94kb] [文件加载：57]
+[ info ] [ LANG ] G:\PHP\daily\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=1320009278.460295; UM_distinctid=164038792b0164-0378992cc88f78-47e1137-1fa400-164038792b260a; CNZZDATA1261472815=974110255-1529066955-%7C1529066955; PHPSESSID=0elrfv059ksfr8pna9tjdtvbc1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'host' => '127.0.0.1:9096',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ G:\PHP\daily\application\admin\controller\Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\PHP\daily/application/admin\view\note\notelst.html [ array (
+  0 => 'autoSave',
+  1 => 'phoneSave',
+  2 => 'hide',
+  3 => 'list',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'groups2num',
+  9 => 'count',
+  10 => 'year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002374s ] mysql:host=127.0.0.1;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.007477s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.003646s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.008504s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000216s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000215s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.009319s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0 ORDER BY `g_order` [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000186s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `g_order` [ RunTime:0.000210s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `groups` WHERE  `parent_id` = 2 LIMIT 1 [ RunTime:0.000192s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000138s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.007231s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.004813s ]
+---------------------------------------------------------------
+[ 2018-07-18T10:56:16+08:00 ] 127.0.0.1 127.0.0.1 GET /daily/
+[ info ] 127.0.0.1:9096/daily/ [运行时间：0.158325s][吞吐率：6.32req/s] [内存消耗：3,000.42kb] [文件加载：61]
+[ info ] [ LANG ] G:\PHP\daily\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=1320009278.460295; UM_distinctid=164038792b0164-0378992cc88f78-47e1137-1fa400-164038792b260a; CNZZDATA1261472815=974110255-1529066955-%7C1529066955; PHPSESSID=0elrfv059ksfr8pna9tjdtvbc1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'host' => '127.0.0.1:9096',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ G:\PHP\daily\application\admin\controller\Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\PHP\daily/application/admin\view\note\notelst.html [ array (
+  0 => 'autoSave',
+  1 => 'phoneSave',
+  2 => 'hide',
+  3 => 'list',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'groups2num',
+  9 => 'count',
+  10 => 'year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000546s ] mysql:host=127.0.0.1;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.007852s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.002546s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.006817s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000239s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000183s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.007723s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000256s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0 ORDER BY `g_order` [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000190s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `g_order` [ RunTime:0.000202s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `groups` WHERE  `parent_id` = 2 LIMIT 1 [ RunTime:0.000186s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000151s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.007148s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.004214s ]
+[ error ] [8]未定义变量: group2num[G:\PHP\daily\runtime\temp\d6280399debca6c3a6b9bf3c0a05d454.php:395]
+---------------------------------------------------------------
+[ 2018-07-18T10:56:51+08:00 ] 127.0.0.1 127.0.0.1 GET /daily/
+[ info ] 127.0.0.1:9096/daily/ [运行时间：0.168703s][吞吐率：5.93req/s] [内存消耗：3,000.43kb] [文件加载：61]
+[ info ] [ LANG ] G:\PHP\daily\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=1320009278.460295; UM_distinctid=164038792b0164-0378992cc88f78-47e1137-1fa400-164038792b260a; CNZZDATA1261472815=974110255-1529066955-%7C1529066955; PHPSESSID=0elrfv059ksfr8pna9tjdtvbc1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'host' => '127.0.0.1:9096',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ G:\PHP\daily\application\admin\controller\Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\PHP\daily/application/admin\view\note\notelst.html [ array (
+  0 => 'autoSave',
+  1 => 'phoneSave',
+  2 => 'hide',
+  3 => 'list',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'groups2num',
+  9 => 'count',
+  10 => 'year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000613s ] mysql:host=127.0.0.1;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.010513s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.004281s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.008501s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000290s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000227s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.007172s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000241s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0 ORDER BY `g_order` [ RunTime:0.000233s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `g_order` [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `groups` WHERE  `parent_id` = 2 LIMIT 1 [ RunTime:0.000229s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000168s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.008508s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.003982s ]
+[ error ] [8]未定义变量: group2num[G:\PHP\daily\runtime\temp\d6280399debca6c3a6b9bf3c0a05d454.php:394]
+---------------------------------------------------------------
+[ 2018-07-18T10:57:41+08:00 ] 127.0.0.1 127.0.0.1 GET /daily/
+[ info ] 127.0.0.1:9096/daily/ [运行时间：0.161088s][吞吐率：6.21req/s] [内存消耗：4,015.99kb] [文件加载：57]
+[ info ] [ LANG ] G:\PHP\daily\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=1320009278.460295; UM_distinctid=164038792b0164-0378992cc88f78-47e1137-1fa400-164038792b260a; CNZZDATA1261472815=974110255-1529066955-%7C1529066955; PHPSESSID=0elrfv059ksfr8pna9tjdtvbc1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'host' => '127.0.0.1:9096',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ G:\PHP\daily\application\admin\controller\Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\PHP\daily/application/admin\view\note\notelst.html [ array (
+  0 => 'autoSave',
+  1 => 'phoneSave',
+  2 => 'hide',
+  3 => 'list',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'groups2num',
+  9 => 'count',
+  10 => 'year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001491s ] mysql:host=127.0.0.1;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.012342s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.005199s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.009811s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000686s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.009276s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0 ORDER BY `g_order` [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `g_order` [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `groups` WHERE  `parent_id` = 2 LIMIT 1 [ RunTime:0.000289s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000149s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.011169s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.006028s ]
+---------------------------------------------------------------
+[ 2018-07-18T10:57:55+08:00 ] 127.0.0.1 127.0.0.1 GET /daily/
+[ info ] 127.0.0.1:9096/daily/ [运行时间：0.166752s][吞吐率：6.00req/s] [内存消耗：4,016.05kb] [文件加载：57]
+[ info ] [ LANG ] G:\PHP\daily\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=1320009278.460295; UM_distinctid=164038792b0164-0378992cc88f78-47e1137-1fa400-164038792b260a; CNZZDATA1261472815=974110255-1529066955-%7C1529066955; PHPSESSID=0elrfv059ksfr8pna9tjdtvbc1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'host' => '127.0.0.1:9096',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ G:\PHP\daily\application\admin\controller\Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\PHP\daily/application/admin\view\note\notelst.html [ array (
+  0 => 'autoSave',
+  1 => 'phoneSave',
+  2 => 'hide',
+  3 => 'list',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'groups2num',
+  9 => 'count',
+  10 => 'year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000724s ] mysql:host=127.0.0.1;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.013311s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.004183s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.010286s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000250s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000220s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000287s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.010482s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0 ORDER BY `g_order` [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000263s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `g_order` [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `groups` WHERE  `parent_id` = 2 LIMIT 1 [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000219s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.011511s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.004983s ]
+---------------------------------------------------------------
+[ 2018-07-18T11:00:58+08:00 ] 127.0.0.1 127.0.0.1 POST /daily/admin/note/ashownote2.html
+[ info ] 127.0.0.1:9096/daily/admin/note/ashownote2.html [运行时间：0.089119s][吞吐率：11.22req/s] [内存消耗：2,032.53kb] [文件加载：50]
+[ info ] [ LANG ] G:\PHP\daily\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'ashownote2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=1320009278.460295; UM_distinctid=164038792b0164-0378992cc88f78-47e1137-1fa400-164038792b260a; CNZZDATA1261472815=974110255-1529066955-%7C1529066955; PHPSESSID=0elrfv059ksfr8pna9tjdtvbc1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9096/daily/',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://127.0.0.1:9096',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '15',
+  'host' => '127.0.0.1:9096',
+)
+[ info ] [ PARAM ] array (
+  'groupname' => 'Linux',
+)
+[ info ] [ RUN ] app\admin\controller\Note->aShowNote2[ G:\PHP\daily\application\admin\controller\Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000971s ] mysql:host=127.0.0.1;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.012609s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` = 'Linux' ORDER BY id desc [ RunTime:0.000916s ]
+---------------------------------------------------------------
+[ 2018-07-18T11:36:18+08:00 ] 127.0.0.1 127.0.0.1 GET /daily/
+[ info ] 127.0.0.1:9096/daily/ [运行时间：0.118636s][吞吐率：8.43req/s] [内存消耗：4,015.64kb] [文件加载：57]
+[ info ] [ LANG ] G:\PHP\daily\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=1320009278.460295; UM_distinctid=164038792b0164-0378992cc88f78-47e1137-1fa400-164038792b260a; CNZZDATA1261472815=974110255-1529066955-%7C1529066955; PHPSESSID=0elrfv059ksfr8pna9tjdtvbc1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'host' => '127.0.0.1:9096',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ G:\PHP\daily\application\admin\controller\Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\PHP\daily/application/admin\view\note\notelst.html [ array (
+  0 => 'autoSave',
+  1 => 'phoneSave',
+  2 => 'hide',
+  3 => 'list',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'groups2num',
+  9 => 'count',
+  10 => 'year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001739s ] mysql:host=127.0.0.1;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.007922s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.002730s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.007328s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000239s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000241s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.007690s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0 ORDER BY `g_order` [ RunTime:0.000273s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000222s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `g_order` [ RunTime:0.000275s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `groups` WHERE  `parent_id` = 2 LIMIT 1 [ RunTime:0.000242s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000144s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.008803s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.004654s ]
+---------------------------------------------------------------
+[ 2018-07-18T18:03:22+08:00 ] 127.0.0.1 127.0.0.1 GET /daily/
+[ info ] 127.0.0.1:9096/daily/ [运行时间：0.124345s][吞吐率：8.04req/s] [内存消耗：3,332.66kb] [文件加载：55]
+[ info ] [ LANG ] G:\PHP\daily\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=1320009278.460295; UM_distinctid=164038792b0164-0378992cc88f78-47e1137-1fa400-164038792b260a; CNZZDATA1261472815=974110255-1529066955-%7C1529066955; PHPSESSID=0elrfv059ksfr8pna9tjdtvbc1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'host' => '127.0.0.1:9096',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ G:\PHP\daily\application\admin\controller\Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\PHP\daily/application/admin\view\note\notelst.html [ array (
+  0 => 'autoSave',
+  1 => 'phoneSave',
+  2 => 'hide',
+  3 => 'list',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'groups2num',
+  9 => 'count',
+  10 => 'year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011775s ] mysql:host=127.0.0.1;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.010930s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.003231s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.007667s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000246s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000185s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.007605s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0 ORDER BY `g_order` [ RunTime:0.000204s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000148s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `g_order` [ RunTime:0.000164s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `groups` WHERE  `parent_id` = 2 LIMIT 1 [ RunTime:0.000191s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000110s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.007968s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.003752s ]
+---------------------------------------------------------------
+[ 2018-07-18T18:08:18+08:00 ] 127.0.0.1 127.0.0.1 GET /daily/
+[ info ] 127.0.0.1:9096/daily/ [运行时间：0.179476s][吞吐率：5.57req/s] [内存消耗：2,057.12kb] [文件加载：57]
+[ info ] [ LANG ] G:\PHP\daily\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=1320009278.460295; UM_distinctid=164038792b0164-0378992cc88f78-47e1137-1fa400-164038792b260a; CNZZDATA1261472815=974110255-1529066955-%7C1529066955; PHPSESSID=0elrfv059ksfr8pna9tjdtvbc1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'host' => '127.0.0.1:9096',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ G:\PHP\daily\application\admin\controller\Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019551s ] mysql:host=127.0.0.1;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.009779s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.003145s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.007622s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000248s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000255s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.007558s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0 ORDER BY `g_order` [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000240s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `g_order` [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'default' LIMIT 1 [ RunTime:0.000422s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'parent_id' in 'where clause'[G:\PHP\daily\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-07-18T18:08:35+08:00 ] 127.0.0.1 127.0.0.1 GET /daily/
+[ info ] 127.0.0.1:9096/daily/ [运行时间：0.164147s][吞吐率：6.09req/s] [内存消耗：4,015.95kb] [文件加载：57]
+[ info ] [ LANG ] G:\PHP\daily\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=1320009278.460295; UM_distinctid=164038792b0164-0378992cc88f78-47e1137-1fa400-164038792b260a; CNZZDATA1261472815=974110255-1529066955-%7C1529066955; PHPSESSID=0elrfv059ksfr8pna9tjdtvbc1',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'host' => '127.0.0.1:9096',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ G:\PHP\daily\application\admin\controller\Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\PHP\daily/application/admin\view\note\notelst.html [ array (
+  0 => 'autoSave',
+  1 => 'phoneSave',
+  2 => 'hide',
+  3 => 'list',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'default_num',
+  9 => 'count',
+  10 => 'year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012011s ] mysql:host=127.0.0.1;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.010434s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.002863s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.009122s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000289s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000228s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.008285s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000250s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0 ORDER BY `g_order` [ RunTime:0.000244s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000200s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `g_order` [ RunTime:0.000248s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'default' LIMIT 1 [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000165s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.007169s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.004253s ]
+---------------------------------------------------------------
+[ 2018-07-18T20:23:10+08:00 ] 127.0.0.1 127.0.0.1 GET /daily/
+[ info ] 127.0.0.1:9096/daily/ [运行时间：0.366825s][吞吐率：2.73req/s] [内存消耗：3,362.61kb] [文件加载：55]
+[ info ] [ LANG ] G:\PHP\daily\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=1320009278.460295; UM_distinctid=164038792b0164-0378992cc88f78-47e1137-1fa400-164038792b260a; CNZZDATA1261472815=974110255-1529066955-%7C1529066955',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'host' => '127.0.0.1:9096',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ G:\PHP\daily\application\admin\controller\Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\PHP\daily/application/admin\view\note\notelst.html [ array (
+  0 => 'autoSave',
+  1 => 'phoneSave',
+  2 => 'hide',
+  3 => 'list',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+  10 => 'default_num',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.030571s ] mysql:host=127.0.0.1;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.040768s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.049197s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.054543s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000459s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.039240s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0 ORDER BY `g_order` [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `g_order` [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000648s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'CS' LIMIT 1 [ RunTime:0.000560s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Mess' LIMIT 1 [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Think' LIMIT 1 [ RunTime:0.000529s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Person' LIMIT 1 [ RunTime:0.000510s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'FilmReview' LIMIT 1 [ RunTime:0.000526s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Android' LIMIT 1 [ RunTime:0.000527s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'PHP' LIMIT 1 [ RunTime:0.000538s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'BookReview' LIMIT 1 [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Essay' LIMIT 1 [ RunTime:0.000526s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'English' LIMIT 1 [ RunTime:0.000536s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'C#' LIMIT 1 [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Java' LIMIT 1 [ RunTime:0.000555s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Linux' LIMIT 1 [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Unity3D' LIMIT 1 [ RunTime:0.000559s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'VR_AR' LIMIT 1 [ RunTime:0.000541s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'DesignPattern' LIMIT 1 [ RunTime:0.000556s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Internet' LIMIT 1 [ RunTime:0.000885s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Basics' LIMIT 1 [ RunTime:0.000616s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'JS' LIMIT 1 [ RunTime:0.000532s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'AJAX' LIMIT 1 [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.039571s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.004671s ]
+---------------------------------------------------------------
+[ 2018-07-18T20:27:37+08:00 ] 127.0.0.1 127.0.0.1 GET /daily/
+[ info ] 127.0.0.1:9096/daily/ [运行时间：0.131083s][吞吐率：7.63req/s] [内存消耗：3,332.25kb] [文件加载：55]
+[ info ] [ LANG ] G:\PHP\daily\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=1320009278.460295; UM_distinctid=164038792b0164-0378992cc88f78-47e1137-1fa400-164038792b260a; CNZZDATA1261472815=974110255-1529066955-%7C1529066955',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'host' => '127.0.0.1:9096',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ G:\PHP\daily\application\admin\controller\Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] G:\PHP\daily/application/admin\view\note\notelst.html [ array (
+  0 => 'autoSave',
+  1 => 'phoneSave',
+  2 => 'hide',
+  3 => 'list',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+  10 => 'default_num',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000693s ] mysql:host=127.0.0.1;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.011435s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.003482s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.009628s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000257s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000210s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000214s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.006771s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0 ORDER BY `g_order` [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `g_order` [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` WHERE  `groups` = 'Default' LIMIT 1 [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000155s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.006588s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.003552s ]
+---------------------------------------------------------------
+[ 2018-07-18T20:27:44+08:00 ] 127.0.0.1 127.0.0.1 POST /daily/admin/note/ashownote2.html
+[ info ] 127.0.0.1:9096/daily/admin/note/ashownote2.html [运行时间：0.047852s][吞吐率：20.90req/s] [内存消耗：1,911.91kb] [文件加载：50]
+[ info ] [ LANG ] G:\PHP\daily\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'ashownote2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=1320009278.460295; UM_distinctid=164038792b0164-0378992cc88f78-47e1137-1fa400-164038792b260a; CNZZDATA1261472815=974110255-1529066955-%7C1529066955',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:9096/daily/',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://127.0.0.1:9096',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '15',
+  'host' => '127.0.0.1:9096',
+)
+[ info ] [ PARAM ] array (
+  'groupname' => 'VR_AR',
+)
+[ info ] [ RUN ] app\admin\controller\Note->aShowNote2[ G:\PHP\daily\application\admin\controller\Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000618s ] mysql:host=127.0.0.1;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.009549s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` = 'VR_AR' ORDER BY id desc [ RunTime:0.000570s ]

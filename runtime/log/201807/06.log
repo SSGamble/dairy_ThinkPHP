@@ -1,0 +1,3068 @@
+---------------------------------------------------------------
+[ 2018-07-06T06:58:22+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ info ] qingrang.top/daily/ [运行时间：0.118812s][吞吐率：8.42req/s] [内存消耗：3,232.61kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/notelst.html [ array (
+  0 => 'autoSave',
+  1 => 'phoneSave',
+  2 => 'hide',
+  3 => 'list',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000942s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.003298s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.004368s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.000898s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000954s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000253s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0 ORDER BY `g_order` [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000260s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `g_order` [ RunTime:0.000283s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.000960s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000625s ]
+---------------------------------------------------------------
+[ 2018-07-06T06:58:36+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/ashownote2.html
+[ info ] qingrang.top/daily/admin/note/ashownote2.html [运行时间：0.063582s][吞吐率：15.73req/s] [内存消耗：2,474.07kb] [文件加载：50]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'ashownote2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '17',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'groupname' => 'Android',
+)
+[ info ] [ RUN ] app\admin\controller\Note->aShowNote2[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000659s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001624s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` = 'Android' ORDER BY id desc [ RunTime:0.001977s ]
+---------------------------------------------------------------
+[ 2018-07-06T06:58:42+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/142
+[ info ] qingrang.top/daily/admin/note/shownote/id/142 [运行时间：0.052522s][吞吐率：19.04req/s] [内存消耗：1,984.58kb] [文件加载：54]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '142',
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000775s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001382s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 142 LIMIT 1 [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000785s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000293s ]
+---------------------------------------------------------------
+[ 2018-07-06T07:20:29+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/ashownote2.html
+[ info ] qingrang.top/daily/admin/note/ashownote2.html [运行时间：0.056217s][吞吐率：17.79req/s] [内存消耗：2,474.14kb] [文件加载：50]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'ashownote2',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '17',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'groupname' => 'Android',
+)
+[ info ] [ RUN ] app\admin\controller\Note->aShowNote2[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001409s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001842s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` = 'Android' ORDER BY id desc [ RunTime:0.001963s ]
+---------------------------------------------------------------
+[ 2018-07-06T07:20:37+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/asearch.html
+[ info ] qingrang.top/daily/admin/note/asearch.html [运行时间：0.050931s][吞吐率：19.63req/s] [内存消耗：2,079.79kb] [文件加载：50]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'asearch',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '40',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'key' => '带护具库',
+)
+[ info ] [ RUN ] app\admin\controller\Note->aSearch[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000618s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001286s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  ( `title` LIKE '%带护具库%' OR `content` LIKE '%带护具库%' ) ORDER BY id desc [ RunTime:0.004755s ]
+---------------------------------------------------------------
+[ 2018-07-06T07:20:45+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/asearch.html
+[ info ] qingrang.top/daily/admin/note/asearch.html [运行时间：0.062179s][吞吐率：16.08req/s] [内存消耗：2,160.37kb] [文件加载：50]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'asearch',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '31',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'key' => '数据库',
+)
+[ info ] [ RUN ] app\admin\controller\Note->aSearch[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000809s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001695s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  ( `title` LIKE '%数据库%' OR `content` LIKE '%数据库%' ) ORDER BY id desc [ RunTime:0.006383s ]
+---------------------------------------------------------------
+[ 2018-07-06T07:20:50+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/38
+[ info ] qingrang.top/daily/admin/note/shownote/id/38 [运行时间：0.050729s][吞吐率：19.71req/s] [内存消耗：1,975.17kb] [文件加载：54]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '38',
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000531s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001877s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 38 LIMIT 1 [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000797s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000286s ]
+---------------------------------------------------------------
+[ 2018-07-06T08:21:48+08:00 ] 74.120.168.12 118.121.119.178 POST /daily/admin/api/synTemp?content=https%3A%2F%2Fpan.baidu.com%2Fwap%2Finit%3Fsurl%3DLPzZTlQqbcjX-WZbdaGLuQ%0A*%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D*%0A
+[ info ] qingrang.top/daily/admin/api/synTemp?content=https%3A%2F%2Fpan.baidu.com%2Fwap%2Finit%3Fsurl%3DLPzZTlQqbcjX-WZbdaGLuQ%0A*%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D*%0A [运行时间：0.046220s][吞吐率：21.64req/s] [内存消耗：1,982.56kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'api',
+    2 => 'synTemp',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'application/json,application/xml,application/xhtml+xml,text/html;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh',
+  'connection' => 'keep-alive',
+  'content-type' => 'application/json; charset=utf-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; U; Android 7.0; zh-cn; MI 5 Build/NRD90M) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
+  'content-length' => '17',
+  'host' => 'qingrang.top',
+)
+[ info ] [ PARAM ] array (
+  'content' => 'https://pan.baidu.com/wap/init?surl=LPzZTlQqbcjX-WZbdaGLuQ
+*=============*
+',
+  'type' => 'json',
+)
+[ info ] [ RUN ] app\admin\controller\Api->synTemp[ /var/www/html/daily/application/admin/controller/Api.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000578s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001166s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `content`='https://pan.baidu.com/wap/init?surl=LPzZTlQqbcjX-WZbdaGLuQ\n*=============*\n'  WHERE  `id` = 2 [ RunTime:0.000517s ]
+---------------------------------------------------------------
+[ 2018-07-06T08:21:53+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/
+[ info ] qingrang.top/daily/ [运行时间：0.094689s][吞吐率：10.56req/s] [内存消耗：3,232.97kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Note->notelst[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/notelst.html [ array (
+  0 => 'autoSave',
+  1 => 'phoneSave',
+  2 => 'hide',
+  3 => 'list',
+  4 => 'groups',
+  5 => 'groups0',
+  6 => 'groups1',
+  7 => 'groups2',
+  8 => 'count',
+  9 => 'year',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000439s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001813s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `groups` <> 'Essay' ORDER BY id desc [ RunTime:0.002596s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `config` [ RunTime:0.000952s ]
+[ sql ] [ SQL ] SELECT * FROM `config` WHERE  `name` = 'hide' LIMIT 1 [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000271s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000747s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000235s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 0 ORDER BY `g_order` [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `parent_id` = 1 [ RunTime:0.000290s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` WHERE  `parent_id` = 2 ORDER BY `g_order` [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `note` LIMIT 1 [ RunTime:0.000224s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `yearlist` [ RunTime:0.000813s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `year` FROM `yearlist` ORDER BY year desc [ RunTime:0.000602s ]
+---------------------------------------------------------------
+[ 2018-07-06T08:21:57+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/2.html
+[ info ] qingrang.top/daily/admin/note/shownote/id/2.html [运行时间：0.043140s][吞吐率：23.18req/s] [内存消耗：1,972.81kb] [文件加载：54]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000426s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001163s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000787s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000240s ]
+---------------------------------------------------------------
+[ 2018-07-06T09:53:13+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/editnote/id/142
+[ info ] qingrang.top/daily/admin/note/editnote/id/142 [运行时间：0.054305s][吞吐率：18.41req/s] [内存消耗：2,048.46kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'editnote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '142',
+)
+[ info ] [ RUN ] app\admin\controller\Note->editNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/editnote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000870s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001712s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 142 LIMIT 1 [ RunTime:0.000737s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000814s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000302s ]
+---------------------------------------------------------------
+[ 2018-07-06T09:53:44+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/savenote.html
+[ info ] qingrang.top/daily/admin/note/savenote.html [运行时间：0.052026s][吞吐率：19.22req/s] [内存消耗：2,100.90kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'savenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '16723',
+  'accept' => 'text/plain, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/142',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'ogroup' => 'Default',
+  'context' => '# Android 桌面部件 Widget
+[TOC]
+## 效果图
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180102/m38J604bL9.gif)
+## 源码
+https://github.com/SSGamble/WidgetDemo
+## 参考博客
+https://www.jianshu.com/p/1eec51bf74be?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation
+## 1. 声明 Widget 的属性
+在 res 新建 xml 文件夹，创建一个 my_app_widget_info.xml 的文件。
+如果 res 下没有 xml 文件，则先创建。
+*my_app_widget_info.xml*
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+	android:initialKeyguardLayout="@layout/my_app_widget"
+	android:initialLayout="@layout/my_app_widget"
+	android:minHeight="40dp"
+	android:minWidth="40dp"
+	android:previewImage="@drawable/example_appwidget_preview"
+	android:resizeMode="horizontal|vertical"
+	android:updatePeriodMillis="86400000"
+	android:widgetCategory="home_screen">
+</appwidget-provider>
+
+android:minWidth : 最小宽度
+    android:minHeight ： 最小高度
+    android:updatePeriodMillis ： 更新widget的时间间隔(ms)，"86400000"为1个小时，值小于30分钟时，会被设置为30分钟。可以用 service、AlarmManager、Timer 控制。
+    android:previewImage ： 预览图片，拖动小部件到桌面时有个预览图
+    android:initialLayout ： 加载到桌面时对应的布局文件
+    android:resizeMode ： 拉伸的方向。horizontal表示可以水平拉伸，vertical表示可以竖直拉伸
+    android:widgetCategory ： 被显示的位置。home_screen：将widget添加到桌面，keyguard：widget可以被添加到锁屏界面。
+    android:initialKeyguardLayout ： 加载到锁屏界面时对应的布局文件
+```
+| 格数  | dp  |
+| ------------ | ------------ |
+|  1 | 40  |
+|  2 |  110 |
+|  3 |  180 |
+|  4 |  250 |
+| n | 70*n-30 |
+## 2. 创建 layout 布局文件
+>Widget主界面布局
+
+*layout_item.xml*
+```xml
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+
+    <ImageView
+        android:id="@+id/del"
+        android:background="@mipmap/ic_launcher"
+        android:layout_alignParentRight="true"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
+```
+>列表子项布局
+
+*activity_main.xml*
+```xml
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+
+    <ImageView
+        android:id="@+id/del"
+        android:background="@mipmap/ic_launcher"
+        android:layout_alignParentRight="true"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
+```
+## 3. 创建 MyAppWidget.java
+```java
+package com.test.widgetdemo;
+
+import android.app.PendingIntent;
+import android.appwidget.AppWidgetManager;
+import android.appwidget.AppWidgetProvider;
+import android.content.ComponentName;
+import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Bundle;
+import android.text.TextUtils;
+import android.util.Log;
+import android.widget.RemoteViews;
+
+import static android.R.attr.action;
+import static android.R.attr.cacheColorHint;
+import static android.content.ContentValues.TAG;
+
+/**
+ * ====================== AppWidget ========================
+ * @author SGamble
+ */
+public class MyAppWidget extends AppWidgetProvider {
+
+    private static final String TAG = "MyWidget";
+    RemoteViews remoteViews;
+
+    /**
+     * package
+     */
+    static ComponentName getComponentName(Context context) {
+        return new ComponentName(context, MyAppWidget.class);
+    }
+
+    @Override
+    public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
+        Log.e(TAG, "onUpdate");
+
+        //设置 ListView
+        setListView(context, appWidgetManager, appWidgetIds);
+        //获取 RemoteViews
+        remoteViews = new RemoteViews(context.getPackageName(), R.layout.my_app_widget);
+        //绑定id - 按钮点击事件
+        remoteViews.setOnClickPendingIntent(R.id.btn_jump, getJumpPendingIntent(context)); //跳转到主界面
+        //发送 del.com 的广播
+        sendDelIntentBroadcast(context);
+        //更新widget
+        appWidgetManager.updateAppWidget(appWidgetIds, remoteViews);
+    }
+
+    /**
+     * 设置 ListView
+     * @author Gamble
+     */
+    private void setListView(Context context, AppWidgetManager awm, int[] appWidgetIds) {
+        for (int appWidgetId : appWidgetIds) {
+            Intent intent = new Intent(context, MyWidgetService.class);
+            intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, appWidgetId);
+            intent.setData(Uri.parse(intent.toUri(Intent.URI_INTENT_SCHEME)));
+            RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.my_app_widget);
+            views.setRemoteAdapter(R.id.listView1, intent);
+            awm.updateAppWidget(appWidgetId, views); //设置适配器
+            awm.notifyAppWidgetViewDataChanged(appWidgetId, R.id.listView1); //通知数据更新
+        }
+    }
+
+    /**
+     * 发送 del.com 的广播
+     * @author Gamble
+     */
+    private void sendDelIntentBroadcast(Context context) {
+        Intent intent = new Intent("del.com");
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 220, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+        remoteViews.setPendingIntentTemplate(R.id.listView1, pendingIntent);
+    }
+
+    /**
+     * 点击按钮跳转到指定 Activity
+     * @author Gamble
+     */
+    private PendingIntent getJumpPendingIntent(Context context) {
+        Intent skipIntent = new Intent(context, MainActivity.class);
+        PendingIntent pi = PendingIntent.getActivity(context, 200, skipIntent, PendingIntent.FLAG_CANCEL_CURRENT);
+        return pi;
+    }
+
+    /**
+     * 接收到任意广播时触发
+     *  -- 广播需要在 清单 文件中设置响应
+     *      <intent-filter>
+     *          <action android:name="add.com"/>
+     *      </intent-filter>
+     * @author Gamble
+     */
+    @Override
+    public void onReceive(Context context, Intent intent) {
+        super.onReceive(context, intent);
+        switch (intent.getAction()){
+            case "add.com":
+                Log.e(TAG, "接收到MainActivity传递过来的广播 - 添加操作");
+                break;
+            case "del.com": //删除
+                delEvent(context,intent);
+                break;
+        }
+        updateListView(context,intent); //更新操作
+    }
+
+    /**
+     * 删除点击的事项
+     * @author Gamble
+     */
+    private void delEvent(Context context,Intent intent) {
+        Bundle extras = intent.getExtras();
+        int position = extras.getInt("key");
+        Data.del(position);
+    }
+
+    /**
+     * 更新操作
+     *  - ListView中数据发生改变
+     * @author Gamble
+     */
+    private void updateListView(Context context,Intent intent) {
+        RemoteViews remoteViews = new RemoteViews(context.getPackageName(), R.layout.my_app_widget);
+        final AppWidgetManager mgr = AppWidgetManager.getInstance(context);
+        final ComponentName cn = new ComponentName(context, MyAppWidget.class);
+        mgr.notifyAppWidgetViewDataChanged(mgr.getAppWidgetIds(cn), R.id.listView1);
+        mgr.updateAppWidget(cn, remoteViews);
+    }
+}
+```
+## 4.创建 MyWidgetService.java
+```java
+package com.test.widgetdemo;
+
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+import android.util.Log;
+import android.widget.RemoteViews;
+import android.widget.RemoteViewsService;
+import java.util.List;
+import static com.test.widgetdemo.Data.getLst;
+
+/**
+ * ====================== WidgetService ========================
+ *
+ * @author SGamble
+ */
+public class MyWidgetService extends RemoteViewsService {
+
+    @Override
+    public RemoteViewsFactory onGetViewFactory(Intent intent) {
+        return new MyWidgetFactory(getApplicationContext(), intent);
+    }
+
+    public static class MyWidgetFactory implements RemoteViewsFactory {
+        private Context mContext;
+        private List<String> lst; //列表数据
+
+        public MyWidgetFactory(Context context, Intent intent) {
+            mContext = context;
+            lst = getLst(); //获取列表
+        }
+
+        @Override
+        public RemoteViews getViewAt(int position) {
+            if (position < 0 || position >= getCount()) {
+                return null;
+            }
+            RemoteViews views = new RemoteViews(mContext.getPackageName(), R.layout.layout_item);
+            views.setTextViewText(R.id.textView1, lst.get(position));//设置 ListView 的显示
+            views.setOnClickFillInIntent(R.id.del, delIntent(position));//ListView - item 点击事件
+            return views;
+        }
+
+        /**
+         * 删除Intent
+         * @author Gamble
+         */
+        private Intent delIntent(int position) {
+            Bundle extras = new Bundle();
+            extras.putInt("key", position); //传递数据 - item - position
+            Intent delIntent = new Intent();
+            delIntent.setAction("del.com"); //设置意图
+            delIntent.putExtras(extras); //放入需要传递的数据
+            return delIntent;
+        }
+
+        @Override
+        public int getCount() {
+            return lst.size();
+        }
+
+        @Override
+        public long getItemId(int position) {
+            return position;
+        }
+
+        /**
+         * 在调用getViewAt的过程中，显示一个LoadingView。
+         * 如果return null，那么将会有一个默认的loadingView
+         * @author Gamble
+         */
+        @Override
+        public RemoteViews getLoadingView() {
+            return null;
+        }
+
+        @Override
+        public int getViewTypeCount() {
+            return 1;
+        }
+
+        @Override
+        public boolean hasStableIds() {
+            return true;
+        }
+
+        @Override
+        public void onCreate() { }
+
+        @Override
+        public void onDataSetChanged() { }
+
+        @Override
+        public void onDestroy() { }
+    }
+}
+```
+## 6.跳转后的界面操作
+```java
+Button btn = (Button)findViewById(R.id.btn_add);
+btn.setOnClickListener(new View.OnClickListener() {
+	@Override
+	public void onClick(View v) {
+		EditText et = (EditText)findViewById(R.id.et);
+		Data.addLst(et.getText().toString()); //数据添加
+		//添加待办事项 - Intent
+		Intent intent = new Intent("add.com");
+		sendBroadcast(intent); //发送 add.com 的广播
+		finish();
+	}
+});
+```
+',
+)
+[ info ] [ RUN ] app\admin\controller\Note->saveNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000729s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001455s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `title`='Android 桌面部件 Widget',`content`='# Android 桌面部件 Widget\n[TOC]\n## 效果图\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180102/m38J604bL9.gif)\n## 源码\nhttps://github.com/SSGamble/WidgetDemo\n## 参考博客\nhttps://www.jianshu.com/p/1eec51bf74be?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation\n## 1. 声明 Widget 的属性\n在 res 新建 xml 文件夹，创建一个 my_app_widget_info.xml 的文件。\n如果 res 下没有 xml 文件，则先创建。\n*my_app_widget_info.xml*\n```xml\n<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<appwidget-provider xmlns:android=\"http://schemas.android.com/apk/res/android\"\n	android:initialKeyguardLayout=\"@layout/my_app_widget\"\n	android:initialLayout=\"@layout/my_app_widget\"\n	android:minHeight=\"40dp\"\n	android:minWidth=\"40dp\"\n	android:previewImage=\"@drawable/example_appwidget_preview\"\n	android:resizeMode=\"horizontal|vertical\"\n	android:updatePeriodMillis=\"86400000\"\n	android:widgetCategory=\"home_screen\">\n</appwidget-provider>\n\nandroid:minWidth : 最小宽度\n    android:minHeight ： 最小高度\n    android:updatePeriodMillis ： 更新widget的时间间隔(ms)，\"86400000\"为1个小时，值小于30分钟时，会被设置为30分钟。可以用 service、AlarmManager、Timer 控制。\n    android:previewImage ： 预览图片，拖动小部件到桌面时有个预览图\n    android:initialLayout ： 加载到桌面时对应的布局文件\n    android:resizeMode ： 拉伸的方向。horizontal表示可以水平拉伸，vertical表示可以竖直拉伸\n    android:widgetCategory ： 被显示的位置。home_screen：将widget添加到桌面，keyguard：widget可以被添加到锁屏界面。\n    android:initialKeyguardLayout ： 加载到锁屏界面时对应的布局文件\n```\n| 格数  | dp  |\n| ------------ | ------------ |\n|  1 | 40  |\n|  2 |  110 |\n|  3 |  180 |\n|  4 |  250 |\n| n | 70*n-30 |\n## 2. 创建 layout 布局文件\n>Widget主界面布局\n\n*layout_item.xml*\n```xml\n<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"wrap_content\"\n    android:orientation=\"vertical\" >\n\n    <TextView\n        android:id=\"@+id/textView1\"\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"wrap_content\"\n        android:text=\"Medium Text\"\n        android:textAppearance=\"?android:attr/textAppearanceMedium\" />\n\n    <TextView\n        android:id=\"@+id/textView2\"\n        android:layout_below=\"@+id/textView1\"\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"wrap_content\"\n        android:text=\"TextView\" />\n\n\n    <ImageView\n        android:id=\"@+id/del\"\n        android:background=\"@mipmap/ic_launcher\"\n        android:layout_alignParentRight=\"true\"\n        android:textSize=\"20sp\"\n        android:layout_width=\"wrap_content\"\n        android:layout_height=\"wrap_content\"/>\n\n</RelativeLayout>\n```\n>列表子项布局\n\n*activity_main.xml*\n```xml\n<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"wrap_content\"\n    android:orientation=\"vertical\" >\n\n    <TextView\n        android:id=\"@+id/textView1\"\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"wrap_content\"\n        android:text=\"Medium Text\"\n        android:textAppearance=\"?android:attr/textAppearanceMedium\" />\n\n    <TextView\n        android:id=\"@+id/textView2\"\n        android:layout_below=\"@+id/textView1\"\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"wrap_content\"\n        android:text=\"TextView\" />\n\n\n    <ImageView\n        android:id=\"@+id/del\"\n        android:background=\"@mipmap/ic_launcher\"\n        android:layout_alignParentRight=\"true\"\n        android:textSize=\"20sp\"\n        android:layout_width=\"wrap_content\"\n        android:layout_height=\"wrap_content\"/>\n\n</RelativeLayout>\n```\n## 3. 创建 MyAppWidget.java\n```java\npackage com.test.widgetdemo;\n\nimport android.app.PendingIntent;\nimport android.appwidget.AppWidgetManager;\nimport android.appwidget.AppWidgetProvider;\nimport android.content.ComponentName;\nimport android.content.Context;\nimport android.content.Intent;\nimport android.net.Uri;\nimport android.os.Bundle;\nimport android.text.TextUtils;\nimport android.util.Log;\nimport android.widget.RemoteViews;\n\nimport static android.R.attr.action;\nimport static android.R.attr.cacheColorHint;\nimport static android.content.ContentValues.TAG;\n\n/**\n * ====================== AppWidget ========================\n * @author SGamble\n */\npublic class MyAppWidget extends AppWidgetProvider {\n\n    private static final String TAG = \"MyWidget\";\n    RemoteViews remoteViews;\n\n    /**\n     * package\n     */\n    static ComponentName getComponentName(Context context) {\n        return new ComponentName(context, MyAppWidget.class);\n    }\n\n    @Override\n    public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {\n        Log.e(TAG, \"onUpdate\");\n\n        //设置 ListView\n        setListView(context, appWidgetManager, appWidgetIds);\n        //获取 RemoteViews\n        remoteViews = new RemoteViews(context.getPackageName(), R.layout.my_app_widget);\n        //绑定id - 按钮点击事件\n        remoteViews.setOnClickPendingIntent(R.id.btn_jump, getJumpPendingIntent(context)); //跳转到主界面\n        //发送 del.com 的广播\n        sendDelIntentBroadcast(context);\n        //更新widget\n        appWidgetManager.updateAppWidget(appWidgetIds, remoteViews);\n    }\n\n    /**\n     * 设置 ListView\n     * @author Gamble\n     */\n    private void setListView(Context context, AppWidgetManager awm, int[] appWidgetIds) {\n        for (int appWidgetId : appWidgetIds) {\n            Intent intent = new Intent(context, MyWidgetService.class);\n            intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, appWidgetId);\n            intent.setData(Uri.parse(intent.toUri(Intent.URI_INTENT_SCHEME)));\n            RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.my_app_widget);\n            views.setRemoteAdapter(R.id.listView1, intent);\n            awm.updateAppWidget(appWidgetId, views); //设置适配器\n            awm.notifyAppWidgetViewDataChanged(appWidgetId, R.id.listView1); //通知数据更新\n        }\n    }\n\n    /**\n     * 发送 del.com 的广播\n     * @author Gamble\n     */\n    private void sendDelIntentBroadcast(Context context) {\n        Intent intent = new Intent(\"del.com\");\n        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 220, intent, PendingIntent.FLAG_UPDATE_CURRENT);\n        remoteViews.setPendingIntentTemplate(R.id.listView1, pendingIntent);\n    }\n\n    /**\n     * 点击按钮跳转到指定 Activity\n     * @author Gamble\n     */\n    private PendingIntent getJumpPendingIntent(Context context) {\n        Intent skipIntent = new Intent(context, MainActivity.class);\n        PendingIntent pi = PendingIntent.getActivity(context, 200, skipIntent, PendingIntent.FLAG_CANCEL_CURRENT);\n        return pi;\n    }\n\n    /**\n     * 接收到任意广播时触发\n     *  -- 广播需要在 清单 文件中设置响应\n     *      <intent-filter>\n     *          <action android:name=\"add.com\"/>\n     *      </intent-filter>\n     * @author Gamble\n     */\n    @Override\n    public void onReceive(Context context, Intent intent) {\n        super.onReceive(context, intent);\n        switch (intent.getAction()){\n            case \"add.com\":\n                Log.e(TAG, \"接收到MainActivity传递过来的广播 - 添加操作\");\n                break;\n            case \"del.com\": //删除\n                delEvent(context,intent);\n                break;\n        }\n        updateListView(context,intent); //更新操作\n    }\n\n    /**\n     * 删除点击的事项\n     * @author Gamble\n     */\n    private void delEvent(Context context,Intent intent) {\n        Bundle extras = intent.getExtras();\n        int position = extras.getInt(\"key\");\n        Data.del(position);\n    }\n\n    /**\n     * 更新操作\n     *  - ListView中数据发生改变\n     * @author Gamble\n     */\n    private void updateListView(Context context,Intent intent) {\n        RemoteViews remoteViews = new RemoteViews(context.getPackageName(), R.layout.my_app_widget);\n        final AppWidgetManager mgr = AppWidgetManager.getInstance(context);\n        final ComponentName cn = new ComponentName(context, MyAppWidget.class);\n        mgr.notifyAppWidgetViewDataChanged(mgr.getAppWidgetIds(cn), R.id.listView1);\n        mgr.updateAppWidget(cn, remoteViews);\n    }\n}\n```\n## 4.创建 MyWidgetService.java\n```java\npackage com.test.widgetdemo;\n\nimport android.content.Context;\nimport android.content.Intent;\nimport android.os.Bundle;\nimport android.util.Log;\nimport android.widget.RemoteViews;\nimport android.widget.RemoteViewsService;\nimport java.util.List;\nimport static com.test.widgetdemo.Data.getLst;\n\n/**\n * ====================== WidgetService ========================\n *\n * @author SGamble\n */\npublic class MyWidgetService extends RemoteViewsService {\n\n    @Override\n    public RemoteViewsFactory onGetViewFactory(Intent intent) {\n        return new MyWidgetFactory(getApplicationContext(), intent);\n    }\n\n    public static class MyWidgetFactory implements RemoteViewsFactory {\n        private Context mContext;\n        private List<String> lst; //列表数据\n\n        public MyWidgetFactory(Context context, Intent intent) {\n            mContext = context;\n            lst = getLst(); //获取列表\n        }\n\n        @Override\n        public RemoteViews getViewAt(int position) {\n            if (position < 0 || position >= getCount()) {\n                return null;\n            }\n            RemoteViews views = new RemoteViews(mContext.getPackageName(), R.layout.layout_item);\n            views.setTextViewText(R.id.textView1, lst.get(position));//设置 ListView 的显示\n            views.setOnClickFillInIntent(R.id.del, delIntent(position));//ListView - item 点击事件\n            return views;\n        }\n\n        /**\n         * 删除Intent\n         * @author Gamble\n         */\n        private Intent delIntent(int position) {\n            Bundle extras = new Bundle();\n            extras.putInt(\"key\", position); //传递数据 - item - position\n            Intent delIntent = new Intent();\n            delIntent.setAction(\"del.com\"); //设置意图\n            delIntent.putExtras(extras); //放入需要传递的数据\n            return delIntent;\n        }\n\n        @Override\n        public int getCount() {\n            return lst.size();\n        }\n\n        @Override\n        public long getItemId(int position) {\n            return position;\n        }\n\n        /**\n         * 在调用getViewAt的过程中，显示一个LoadingView。\n         * 如果return null，那么将会有一个默认的loadingView\n         * @author Gamble\n         */\n        @Override\n        public RemoteViews getLoadingView() {\n            return null;\n        }\n\n        @Override\n        public int getViewTypeCount() {\n            return 1;\n        }\n\n        @Override\n        public boolean hasStableIds() {\n            return true;\n        }\n\n        @Override\n        public void onCreate() { }\n\n        @Override\n        public void onDataSetChanged() { }\n\n        @Override\n        public void onDestroy() { }\n    }\n}\n```\n## 6.跳转后的界面操作\n```java\nButton btn = (Button)findViewById(R.id.btn_add);\nbtn.setOnClickListener(new View.OnClickListener() {\n	@Override\n	public void onClick(View v) {\n		EditText et = (EditText)findViewById(R.id.et);\n		Data.addLst(et.getText().toString()); //数据添加\n		//添加待办事项 - Intent\n		Intent intent = new Intent(\"add.com\");\n		sendBroadcast(intent); //发送 add.com 的广播\n		finish();\n	}\n});\n```\n',`groups`='Default',`p_id`=1  WHERE  `id` = 1 [ RunTime:0.001005s ]
+---------------------------------------------------------------
+[ 2018-07-06T09:53:45+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/savenote.html
+[ info ] qingrang.top/daily/admin/note/savenote.html [运行时间：0.049709s][吞吐率：20.12req/s] [内存消耗：2,100.87kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'savenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '16723',
+  'accept' => 'text/plain, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/142',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'ogroup' => 'Default',
+  'context' => '# Android 桌面部件 Widget
+[TOC]
+## 效果图
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180102/m38J604bL9.gif)
+## 源码
+https://github.com/SSGamble/WidgetDemo
+## 参考博客
+https://www.jianshu.com/p/1eec51bf74be?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation
+## 1. 声明 Widget 的属性
+在 res 新建 xml 文件夹，创建一个 my_app_widget_info.xml 的文件。
+如果 res 下没有 xml 文件，则先创建。
+*my_app_widget_info.xml*
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+	android:initialKeyguardLayout="@layout/my_app_widget"
+	android:initialLayout="@layout/my_app_widget"
+	android:minHeight="40dp"
+	android:minWidth="40dp"
+	android:previewImage="@drawable/example_appwidget_preview"
+	android:resizeMode="horizontal|vertical"
+	android:updatePeriodMillis="86400000"
+	android:widgetCategory="home_screen">
+</appwidget-provider>
+
+android:minWidth : 最小宽度
+    android:minHeight ： 最小高度
+    android:updatePeriodMillis ： 更新widget的时间间隔(ms)，"86400000"为1个小时，值小于30分钟时，会被设置为30分钟。可以用 service、AlarmManager、Timer 控制。
+    android:previewImage ： 预览图片，拖动小部件到桌面时有个预览图
+    android:initialLayout ： 加载到桌面时对应的布局文件
+    android:resizeMode ： 拉伸的方向。horizontal表示可以水平拉伸，vertical表示可以竖直拉伸
+    android:widgetCategory ： 被显示的位置。home_screen：将widget添加到桌面，keyguard：widget可以被添加到锁屏界面。
+    android:initialKeyguardLayout ： 加载到锁屏界面时对应的布局文件
+```
+| 格数  | dp  |
+| ------------ | ------------ |
+|  1 | 40  |
+|  2 |  110 |
+|  3 |  180 |
+|  4 |  250 |
+| n | 70*n-30 |
+## 2. 创建 layout 布局文件
+>Widget主界面布局
+
+*layout_item.xml*
+```xml
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+
+    <ImageView
+        android:id="@+id/del"
+        android:background="@mipmap/ic_launcher"
+        android:layout_alignParentRight="true"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
+```
+>列表子项布局
+
+*activity_main.xml*
+```xml
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+
+    <ImageView
+        android:id="@+id/del"
+        android:background="@mipmap/ic_launcher"
+        android:layout_alignParentRight="true"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
+```
+## 3. 创建 MyAppWidget.java
+```java
+package com.test.widgetdemo;
+
+import android.app.PendingIntent;
+import android.appwidget.AppWidgetManager;
+import android.appwidget.AppWidgetProvider;
+import android.content.ComponentName;
+import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Bundle;
+import android.text.TextUtils;
+import android.util.Log;
+import android.widget.RemoteViews;
+
+import static android.R.attr.action;
+import static android.R.attr.cacheColorHint;
+import static android.content.ContentValues.TAG;
+
+/**
+ * ====================== AppWidget ========================
+ * @author SGamble
+ */
+public class MyAppWidget extends AppWidgetProvider {
+
+    private static final String TAG = "MyWidget";
+    RemoteViews remoteViews;
+
+    /**
+     * package
+     */
+    static ComponentName getComponentName(Context context) {
+        return new ComponentName(context, MyAppWidget.class);
+    }
+
+    @Override
+    public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
+        Log.e(TAG, "onUpdate");
+
+        //设置 ListView
+        setListView(context, appWidgetManager, appWidgetIds);
+        //获取 RemoteViews
+        remoteViews = new RemoteViews(context.getPackageName(), R.layout.my_app_widget);
+        //绑定id - 按钮点击事件
+        remoteViews.setOnClickPendingIntent(R.id.btn_jump, getJumpPendingIntent(context)); //跳转到主界面
+        //发送 del.com 的广播
+        sendDelIntentBroadcast(context);
+        //更新widget
+        appWidgetManager.updateAppWidget(appWidgetIds, remoteViews);
+    }
+
+    /**
+     * 设置 ListView
+     * @author Gamble
+     */
+    private void setListView(Context context, AppWidgetManager awm, int[] appWidgetIds) {
+        for (int appWidgetId : appWidgetIds) {
+            Intent intent = new Intent(context, MyWidgetService.class);
+            intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, appWidgetId);
+            intent.setData(Uri.parse(intent.toUri(Intent.URI_INTENT_SCHEME)));
+            RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.my_app_widget);
+            views.setRemoteAdapter(R.id.listView1, intent);
+            awm.updateAppWidget(appWidgetId, views); //设置适配器
+            awm.notifyAppWidgetViewDataChanged(appWidgetId, R.id.listView1); //通知数据更新
+        }
+    }
+
+    /**
+     * 发送 del.com 的广播
+     * @author Gamble
+     */
+    private void sendDelIntentBroadcast(Context context) {
+        Intent intent = new Intent("del.com");
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 220, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+        remoteViews.setPendingIntentTemplate(R.id.listView1, pendingIntent);
+    }
+
+    /**
+     * 点击按钮跳转到指定 Activity
+     * @author Gamble
+     */
+    private PendingIntent getJumpPendingIntent(Context context) {
+        Intent skipIntent = new Intent(context, MainActivity.class);
+        PendingIntent pi = PendingIntent.getActivity(context, 200, skipIntent, PendingIntent.FLAG_CANCEL_CURRENT);
+        return pi;
+    }
+
+    /**
+     * 接收到任意广播时触发
+     *  -- 广播需要在 清单 文件中设置响应
+     *      <intent-filter>
+     *          <action android:name="add.com"/>
+     *      </intent-filter>
+     * @author Gamble
+     */
+    @Override
+    public void onReceive(Context context, Intent intent) {
+        super.onReceive(context, intent);
+        switch (intent.getAction()){
+            case "add.com":
+                Log.e(TAG, "接收到MainActivity传递过来的广播 - 添加操作");
+                break;
+            case "del.com": //删除
+                delEvent(context,intent);
+                break;
+        }
+        updateListView(context,intent); //更新操作
+    }
+
+    /**
+     * 删除点击的事项
+     * @author Gamble
+     */
+    private void delEvent(Context context,Intent intent) {
+        Bundle extras = intent.getExtras();
+        int position = extras.getInt("key");
+        Data.del(position);
+    }
+
+    /**
+     * 更新操作
+     *  - ListView中数据发生改变
+     * @author Gamble
+     */
+    private void updateListView(Context context,Intent intent) {
+        RemoteViews remoteViews = new RemoteViews(context.getPackageName(), R.layout.my_app_widget);
+        final AppWidgetManager mgr = AppWidgetManager.getInstance(context);
+        final ComponentName cn = new ComponentName(context, MyAppWidget.class);
+        mgr.notifyAppWidgetViewDataChanged(mgr.getAppWidgetIds(cn), R.id.listView1);
+        mgr.updateAppWidget(cn, remoteViews);
+    }
+}
+```
+## 4.创建 MyWidgetService.java
+```java
+package com.test.widgetdemo;
+
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+import android.util.Log;
+import android.widget.RemoteViews;
+import android.widget.RemoteViewsService;
+import java.util.List;
+import static com.test.widgetdemo.Data.getLst;
+
+/**
+ * ====================== WidgetService ========================
+ *
+ * @author SGamble
+ */
+public class MyWidgetService extends RemoteViewsService {
+
+    @Override
+    public RemoteViewsFactory onGetViewFactory(Intent intent) {
+        return new MyWidgetFactory(getApplicationContext(), intent);
+    }
+
+    public static class MyWidgetFactory implements RemoteViewsFactory {
+        private Context mContext;
+        private List<String> lst; //列表数据
+
+        public MyWidgetFactory(Context context, Intent intent) {
+            mContext = context;
+            lst = getLst(); //获取列表
+        }
+
+        @Override
+        public RemoteViews getViewAt(int position) {
+            if (position < 0 || position >= getCount()) {
+                return null;
+            }
+            RemoteViews views = new RemoteViews(mContext.getPackageName(), R.layout.layout_item);
+            views.setTextViewText(R.id.textView1, lst.get(position));//设置 ListView 的显示
+            views.setOnClickFillInIntent(R.id.del, delIntent(position));//ListView - item 点击事件
+            return views;
+        }
+
+        /**
+         * 删除Intent
+         * @author Gamble
+         */
+        private Intent delIntent(int position) {
+            Bundle extras = new Bundle();
+            extras.putInt("key", position); //传递数据 - item - position
+            Intent delIntent = new Intent();
+            delIntent.setAction("del.com"); //设置意图
+            delIntent.putExtras(extras); //放入需要传递的数据
+            return delIntent;
+        }
+
+        @Override
+        public int getCount() {
+            return lst.size();
+        }
+
+        @Override
+        public long getItemId(int position) {
+            return position;
+        }
+
+        /**
+         * 在调用getViewAt的过程中，显示一个LoadingView。
+         * 如果return null，那么将会有一个默认的loadingView
+         * @author Gamble
+         */
+        @Override
+        public RemoteViews getLoadingView() {
+            return null;
+        }
+
+        @Override
+        public int getViewTypeCount() {
+            return 1;
+        }
+
+        @Override
+        public boolean hasStableIds() {
+            return true;
+        }
+
+        @Override
+        public void onCreate() { }
+
+        @Override
+        public void onDataSetChanged() { }
+
+        @Override
+        public void onDestroy() { }
+    }
+}
+```
+## 6.跳转后的界面操作
+```java
+Button btn = (Button)findViewById(R.id.btn_add);
+btn.setOnClickListener(new View.OnClickListener() {
+	@Override
+	public void onClick(View v) {
+		EditText et = (EditText)findViewById(R.id.et);
+		Data.addLst(et.getText().toString()); //数据添加
+		//添加待办事项 - Intent
+		Intent intent = new Intent("add.com");
+		sendBroadcast(intent); //发送 add.com 的广播
+		finish();
+	}
+});
+```
+',
+)
+[ info ] [ RUN ] app\admin\controller\Note->saveNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000534s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001199s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `title`='Android 桌面部件 Widget',`content`='# Android 桌面部件 Widget\n[TOC]\n## 效果图\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180102/m38J604bL9.gif)\n## 源码\nhttps://github.com/SSGamble/WidgetDemo\n## 参考博客\nhttps://www.jianshu.com/p/1eec51bf74be?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation\n## 1. 声明 Widget 的属性\n在 res 新建 xml 文件夹，创建一个 my_app_widget_info.xml 的文件。\n如果 res 下没有 xml 文件，则先创建。\n*my_app_widget_info.xml*\n```xml\n<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<appwidget-provider xmlns:android=\"http://schemas.android.com/apk/res/android\"\n	android:initialKeyguardLayout=\"@layout/my_app_widget\"\n	android:initialLayout=\"@layout/my_app_widget\"\n	android:minHeight=\"40dp\"\n	android:minWidth=\"40dp\"\n	android:previewImage=\"@drawable/example_appwidget_preview\"\n	android:resizeMode=\"horizontal|vertical\"\n	android:updatePeriodMillis=\"86400000\"\n	android:widgetCategory=\"home_screen\">\n</appwidget-provider>\n\nandroid:minWidth : 最小宽度\n    android:minHeight ： 最小高度\n    android:updatePeriodMillis ： 更新widget的时间间隔(ms)，\"86400000\"为1个小时，值小于30分钟时，会被设置为30分钟。可以用 service、AlarmManager、Timer 控制。\n    android:previewImage ： 预览图片，拖动小部件到桌面时有个预览图\n    android:initialLayout ： 加载到桌面时对应的布局文件\n    android:resizeMode ： 拉伸的方向。horizontal表示可以水平拉伸，vertical表示可以竖直拉伸\n    android:widgetCategory ： 被显示的位置。home_screen：将widget添加到桌面，keyguard：widget可以被添加到锁屏界面。\n    android:initialKeyguardLayout ： 加载到锁屏界面时对应的布局文件\n```\n| 格数  | dp  |\n| ------------ | ------------ |\n|  1 | 40  |\n|  2 |  110 |\n|  3 |  180 |\n|  4 |  250 |\n| n | 70*n-30 |\n## 2. 创建 layout 布局文件\n>Widget主界面布局\n\n*layout_item.xml*\n```xml\n<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"wrap_content\"\n    android:orientation=\"vertical\" >\n\n    <TextView\n        android:id=\"@+id/textView1\"\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"wrap_content\"\n        android:text=\"Medium Text\"\n        android:textAppearance=\"?android:attr/textAppearanceMedium\" />\n\n    <TextView\n        android:id=\"@+id/textView2\"\n        android:layout_below=\"@+id/textView1\"\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"wrap_content\"\n        android:text=\"TextView\" />\n\n\n    <ImageView\n        android:id=\"@+id/del\"\n        android:background=\"@mipmap/ic_launcher\"\n        android:layout_alignParentRight=\"true\"\n        android:textSize=\"20sp\"\n        android:layout_width=\"wrap_content\"\n        android:layout_height=\"wrap_content\"/>\n\n</RelativeLayout>\n```\n>列表子项布局\n\n*activity_main.xml*\n```xml\n<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"wrap_content\"\n    android:orientation=\"vertical\" >\n\n    <TextView\n        android:id=\"@+id/textView1\"\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"wrap_content\"\n        android:text=\"Medium Text\"\n        android:textAppearance=\"?android:attr/textAppearanceMedium\" />\n\n    <TextView\n        android:id=\"@+id/textView2\"\n        android:layout_below=\"@+id/textView1\"\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"wrap_content\"\n        android:text=\"TextView\" />\n\n\n    <ImageView\n        android:id=\"@+id/del\"\n        android:background=\"@mipmap/ic_launcher\"\n        android:layout_alignParentRight=\"true\"\n        android:textSize=\"20sp\"\n        android:layout_width=\"wrap_content\"\n        android:layout_height=\"wrap_content\"/>\n\n</RelativeLayout>\n```\n## 3. 创建 MyAppWidget.java\n```java\npackage com.test.widgetdemo;\n\nimport android.app.PendingIntent;\nimport android.appwidget.AppWidgetManager;\nimport android.appwidget.AppWidgetProvider;\nimport android.content.ComponentName;\nimport android.content.Context;\nimport android.content.Intent;\nimport android.net.Uri;\nimport android.os.Bundle;\nimport android.text.TextUtils;\nimport android.util.Log;\nimport android.widget.RemoteViews;\n\nimport static android.R.attr.action;\nimport static android.R.attr.cacheColorHint;\nimport static android.content.ContentValues.TAG;\n\n/**\n * ====================== AppWidget ========================\n * @author SGamble\n */\npublic class MyAppWidget extends AppWidgetProvider {\n\n    private static final String TAG = \"MyWidget\";\n    RemoteViews remoteViews;\n\n    /**\n     * package\n     */\n    static ComponentName getComponentName(Context context) {\n        return new ComponentName(context, MyAppWidget.class);\n    }\n\n    @Override\n    public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {\n        Log.e(TAG, \"onUpdate\");\n\n        //设置 ListView\n        setListView(context, appWidgetManager, appWidgetIds);\n        //获取 RemoteViews\n        remoteViews = new RemoteViews(context.getPackageName(), R.layout.my_app_widget);\n        //绑定id - 按钮点击事件\n        remoteViews.setOnClickPendingIntent(R.id.btn_jump, getJumpPendingIntent(context)); //跳转到主界面\n        //发送 del.com 的广播\n        sendDelIntentBroadcast(context);\n        //更新widget\n        appWidgetManager.updateAppWidget(appWidgetIds, remoteViews);\n    }\n\n    /**\n     * 设置 ListView\n     * @author Gamble\n     */\n    private void setListView(Context context, AppWidgetManager awm, int[] appWidgetIds) {\n        for (int appWidgetId : appWidgetIds) {\n            Intent intent = new Intent(context, MyWidgetService.class);\n            intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, appWidgetId);\n            intent.setData(Uri.parse(intent.toUri(Intent.URI_INTENT_SCHEME)));\n            RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.my_app_widget);\n            views.setRemoteAdapter(R.id.listView1, intent);\n            awm.updateAppWidget(appWidgetId, views); //设置适配器\n            awm.notifyAppWidgetViewDataChanged(appWidgetId, R.id.listView1); //通知数据更新\n        }\n    }\n\n    /**\n     * 发送 del.com 的广播\n     * @author Gamble\n     */\n    private void sendDelIntentBroadcast(Context context) {\n        Intent intent = new Intent(\"del.com\");\n        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 220, intent, PendingIntent.FLAG_UPDATE_CURRENT);\n        remoteViews.setPendingIntentTemplate(R.id.listView1, pendingIntent);\n    }\n\n    /**\n     * 点击按钮跳转到指定 Activity\n     * @author Gamble\n     */\n    private PendingIntent getJumpPendingIntent(Context context) {\n        Intent skipIntent = new Intent(context, MainActivity.class);\n        PendingIntent pi = PendingIntent.getActivity(context, 200, skipIntent, PendingIntent.FLAG_CANCEL_CURRENT);\n        return pi;\n    }\n\n    /**\n     * 接收到任意广播时触发\n     *  -- 广播需要在 清单 文件中设置响应\n     *      <intent-filter>\n     *          <action android:name=\"add.com\"/>\n     *      </intent-filter>\n     * @author Gamble\n     */\n    @Override\n    public void onReceive(Context context, Intent intent) {\n        super.onReceive(context, intent);\n        switch (intent.getAction()){\n            case \"add.com\":\n                Log.e(TAG, \"接收到MainActivity传递过来的广播 - 添加操作\");\n                break;\n            case \"del.com\": //删除\n                delEvent(context,intent);\n                break;\n        }\n        updateListView(context,intent); //更新操作\n    }\n\n    /**\n     * 删除点击的事项\n     * @author Gamble\n     */\n    private void delEvent(Context context,Intent intent) {\n        Bundle extras = intent.getExtras();\n        int position = extras.getInt(\"key\");\n        Data.del(position);\n    }\n\n    /**\n     * 更新操作\n     *  - ListView中数据发生改变\n     * @author Gamble\n     */\n    private void updateListView(Context context,Intent intent) {\n        RemoteViews remoteViews = new RemoteViews(context.getPackageName(), R.layout.my_app_widget);\n        final AppWidgetManager mgr = AppWidgetManager.getInstance(context);\n        final ComponentName cn = new ComponentName(context, MyAppWidget.class);\n        mgr.notifyAppWidgetViewDataChanged(mgr.getAppWidgetIds(cn), R.id.listView1);\n        mgr.updateAppWidget(cn, remoteViews);\n    }\n}\n```\n## 4.创建 MyWidgetService.java\n```java\npackage com.test.widgetdemo;\n\nimport android.content.Context;\nimport android.content.Intent;\nimport android.os.Bundle;\nimport android.util.Log;\nimport android.widget.RemoteViews;\nimport android.widget.RemoteViewsService;\nimport java.util.List;\nimport static com.test.widgetdemo.Data.getLst;\n\n/**\n * ====================== WidgetService ========================\n *\n * @author SGamble\n */\npublic class MyWidgetService extends RemoteViewsService {\n\n    @Override\n    public RemoteViewsFactory onGetViewFactory(Intent intent) {\n        return new MyWidgetFactory(getApplicationContext(), intent);\n    }\n\n    public static class MyWidgetFactory implements RemoteViewsFactory {\n        private Context mContext;\n        private List<String> lst; //列表数据\n\n        public MyWidgetFactory(Context context, Intent intent) {\n            mContext = context;\n            lst = getLst(); //获取列表\n        }\n\n        @Override\n        public RemoteViews getViewAt(int position) {\n            if (position < 0 || position >= getCount()) {\n                return null;\n            }\n            RemoteViews views = new RemoteViews(mContext.getPackageName(), R.layout.layout_item);\n            views.setTextViewText(R.id.textView1, lst.get(position));//设置 ListView 的显示\n            views.setOnClickFillInIntent(R.id.del, delIntent(position));//ListView - item 点击事件\n            return views;\n        }\n\n        /**\n         * 删除Intent\n         * @author Gamble\n         */\n        private Intent delIntent(int position) {\n            Bundle extras = new Bundle();\n            extras.putInt(\"key\", position); //传递数据 - item - position\n            Intent delIntent = new Intent();\n            delIntent.setAction(\"del.com\"); //设置意图\n            delIntent.putExtras(extras); //放入需要传递的数据\n            return delIntent;\n        }\n\n        @Override\n        public int getCount() {\n            return lst.size();\n        }\n\n        @Override\n        public long getItemId(int position) {\n            return position;\n        }\n\n        /**\n         * 在调用getViewAt的过程中，显示一个LoadingView。\n         * 如果return null，那么将会有一个默认的loadingView\n         * @author Gamble\n         */\n        @Override\n        public RemoteViews getLoadingView() {\n            return null;\n        }\n\n        @Override\n        public int getViewTypeCount() {\n            return 1;\n        }\n\n        @Override\n        public boolean hasStableIds() {\n            return true;\n        }\n\n        @Override\n        public void onCreate() { }\n\n        @Override\n        public void onDataSetChanged() { }\n\n        @Override\n        public void onDestroy() { }\n    }\n}\n```\n## 6.跳转后的界面操作\n```java\nButton btn = (Button)findViewById(R.id.btn_add);\nbtn.setOnClickListener(new View.OnClickListener() {\n	@Override\n	public void onClick(View v) {\n		EditText et = (EditText)findViewById(R.id.et);\n		Data.addLst(et.getText().toString()); //数据添加\n		//添加待办事项 - Intent\n		Intent intent = new Intent(\"add.com\");\n		sendBroadcast(intent); //发送 add.com 的广播\n		finish();\n	}\n});\n```\n',`groups`='Default',`p_id`=1  WHERE  `id` = 1 [ RunTime:0.000739s ]
+---------------------------------------------------------------
+[ 2018-07-06T09:54:49+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/savenote.html
+[ info ] qingrang.top/daily/admin/note/savenote.html [运行时间：0.054128s][吞吐率：18.47req/s] [内存消耗：2,105.68kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'savenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '17592',
+  'accept' => 'text/plain, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/142',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'ogroup' => 'Default',
+  'context' => '# Android 桌面部件 Widget
+[TOC]
+## 效果图
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180102/m38J604bL9.gif)
+## 源码
+https://github.com/SSGamble/WidgetDemo
+## 参考博客
+https://www.jianshu.com/p/1eec51bf74be?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation
+## 1. 声明 Widget 的属性
+在 res 新建 xml 文件夹，创建一个 my_app_widget_info.xml 的文件。
+如果 res 下没有 xml 文件，则先创建。
+*my_app_widget_info.xml*
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+	android:initialKeyguardLayout="@layout/my_app_widget"
+	android:initialLayout="@layout/my_app_widget"
+	android:minHeight="40dp"
+	android:minWidth="40dp"
+	android:previewImage="@drawable/example_appwidget_preview"
+	android:resizeMode="horizontal|vertical"
+	android:updatePeriodMillis="86400000"
+	android:widgetCategory="home_screen">
+</appwidget-provider>
+
+android:minWidth : 最小宽度
+    android:minHeight ： 最小高度
+    android:updatePeriodMillis ： 更新widget的时间间隔(ms)，"86400000"为1个小时，值小于30分钟时，会被设置为30分钟。可以用 service、AlarmManager、Timer 控制。
+    android:previewImage ： 预览图片，拖动小部件到桌面时有个预览图
+    android:initialLayout ： 加载到桌面时对应的布局文件
+    android:resizeMode ： 拉伸的方向。horizontal表示可以水平拉伸，vertical表示可以竖直拉伸
+    android:widgetCategory ： 被显示的位置。home_screen：将widget添加到桌面，keyguard：widget可以被添加到锁屏界面。
+    android:initialKeyguardLayout ： 加载到锁屏界面时对应的布局文件
+```
+| 格数  | dp  |
+| ------------ | ------------ |
+|  1 | 40  |
+|  2 |  110 |
+|  3 |  180 |
+|  4 |  250 |
+| n | 70*n-30 |
+## 2. 创建 layout 布局文件
+>Widget主界面布局
+
+*my_app_widget.xml*
+```
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/widget_margin">
+
+    <Button
+        android:id="@+id/btn_jump"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jump" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_below="@+id/btn_jump"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+
+</RelativeLayout>
+```
+
+*layout_item.xml*
+```xml
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+
+    <ImageView
+        android:id="@+id/del"
+        android:background="@mipmap/ic_launcher"
+        android:layout_alignParentRight="true"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
+```
+>列表子项布局
+
+*activity_main.xml*
+```xml
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+
+    <ImageView
+        android:id="@+id/del"
+        android:background="@mipmap/ic_launcher"
+        android:layout_alignParentRight="true"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
+```
+## 3. 创建 MyAppWidget.java
+```java
+package com.test.widgetdemo;
+
+import android.app.PendingIntent;
+import android.appwidget.AppWidgetManager;
+import android.appwidget.AppWidgetProvider;
+import android.content.ComponentName;
+import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Bundle;
+import android.text.TextUtils;
+import android.util.Log;
+import android.widget.RemoteViews;
+
+import static android.R.attr.action;
+import static android.R.attr.cacheColorHint;
+import static android.content.ContentValues.TAG;
+
+/**
+ * ====================== AppWidget ========================
+ * @author SGamble
+ */
+public class MyAppWidget extends AppWidgetProvider {
+
+    private static final String TAG = "MyWidget";
+    RemoteViews remoteViews;
+
+    /**
+     * package
+     */
+    static ComponentName getComponentName(Context context) {
+        return new ComponentName(context, MyAppWidget.class);
+    }
+
+    @Override
+    public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
+        Log.e(TAG, "onUpdate");
+
+        //设置 ListView
+        setListView(context, appWidgetManager, appWidgetIds);
+        //获取 RemoteViews
+        remoteViews = new RemoteViews(context.getPackageName(), R.layout.my_app_widget);
+        //绑定id - 按钮点击事件
+        remoteViews.setOnClickPendingIntent(R.id.btn_jump, getJumpPendingIntent(context)); //跳转到主界面
+        //发送 del.com 的广播
+        sendDelIntentBroadcast(context);
+        //更新widget
+        appWidgetManager.updateAppWidget(appWidgetIds, remoteViews);
+    }
+
+    /**
+     * 设置 ListView
+     * @author Gamble
+     */
+    private void setListView(Context context, AppWidgetManager awm, int[] appWidgetIds) {
+        for (int appWidgetId : appWidgetIds) {
+            Intent intent = new Intent(context, MyWidgetService.class);
+            intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, appWidgetId);
+            intent.setData(Uri.parse(intent.toUri(Intent.URI_INTENT_SCHEME)));
+            RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.my_app_widget);
+            views.setRemoteAdapter(R.id.listView1, intent);
+            awm.updateAppWidget(appWidgetId, views); //设置适配器
+            awm.notifyAppWidgetViewDataChanged(appWidgetId, R.id.listView1); //通知数据更新
+        }
+    }
+
+    /**
+     * 发送 del.com 的广播
+     * @author Gamble
+     */
+    private void sendDelIntentBroadcast(Context context) {
+        Intent intent = new Intent("del.com");
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 220, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+        remoteViews.setPendingIntentTemplate(R.id.listView1, pendingIntent);
+    }
+
+    /**
+     * 点击按钮跳转到指定 Activity
+     * @author Gamble
+     */
+    private PendingIntent getJumpPendingIntent(Context context) {
+        Intent skipIntent = new Intent(context, MainActivity.class);
+        PendingIntent pi = PendingIntent.getActivity(context, 200, skipIntent, PendingIntent.FLAG_CANCEL_CURRENT);
+        return pi;
+    }
+
+    /**
+     * 接收到任意广播时触发
+     *  -- 广播需要在 清单 文件中设置响应
+     *      <intent-filter>
+     *          <action android:name="add.com"/>
+     *      </intent-filter>
+     * @author Gamble
+     */
+    @Override
+    public void onReceive(Context context, Intent intent) {
+        super.onReceive(context, intent);
+        switch (intent.getAction()){
+            case "add.com":
+                Log.e(TAG, "接收到MainActivity传递过来的广播 - 添加操作");
+                break;
+            case "del.com": //删除
+                delEvent(context,intent);
+                break;
+        }
+        updateListView(context,intent); //更新操作
+    }
+
+    /**
+     * 删除点击的事项
+     * @author Gamble
+     */
+    private void delEvent(Context context,Intent intent) {
+        Bundle extras = intent.getExtras();
+        int position = extras.getInt("key");
+        Data.del(position);
+    }
+
+    /**
+     * 更新操作
+     *  - ListView中数据发生改变
+     * @author Gamble
+     */
+    private void updateListView(Context context,Intent intent) {
+        RemoteViews remoteViews = new RemoteViews(context.getPackageName(), R.layout.my_app_widget);
+        final AppWidgetManager mgr = AppWidgetManager.getInstance(context);
+        final ComponentName cn = new ComponentName(context, MyAppWidget.class);
+        mgr.notifyAppWidgetViewDataChanged(mgr.getAppWidgetIds(cn), R.id.listView1);
+        mgr.updateAppWidget(cn, remoteViews);
+    }
+}
+```
+## 4.创建 MyWidgetService.java
+```java
+package com.test.widgetdemo;
+
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+import android.util.Log;
+import android.widget.RemoteViews;
+import android.widget.RemoteViewsService;
+import java.util.List;
+import static com.test.widgetdemo.Data.getLst;
+
+/**
+ * ====================== WidgetService ========================
+ *
+ * @author SGamble
+ */
+public class MyWidgetService extends RemoteViewsService {
+
+    @Override
+    public RemoteViewsFactory onGetViewFactory(Intent intent) {
+        return new MyWidgetFactory(getApplicationContext(), intent);
+    }
+
+    public static class MyWidgetFactory implements RemoteViewsFactory {
+        private Context mContext;
+        private List<String> lst; //列表数据
+
+        public MyWidgetFactory(Context context, Intent intent) {
+            mContext = context;
+            lst = getLst(); //获取列表
+        }
+
+        @Override
+        public RemoteViews getViewAt(int position) {
+            if (position < 0 || position >= getCount()) {
+                return null;
+            }
+            RemoteViews views = new RemoteViews(mContext.getPackageName(), R.layout.layout_item);
+            views.setTextViewText(R.id.textView1, lst.get(position));//设置 ListView 的显示
+            views.setOnClickFillInIntent(R.id.del, delIntent(position));//ListView - item 点击事件
+            return views;
+        }
+
+        /**
+         * 删除Intent
+         * @author Gamble
+         */
+        private Intent delIntent(int position) {
+            Bundle extras = new Bundle();
+            extras.putInt("key", position); //传递数据 - item - position
+            Intent delIntent = new Intent();
+            delIntent.setAction("del.com"); //设置意图
+            delIntent.putExtras(extras); //放入需要传递的数据
+            return delIntent;
+        }
+
+        @Override
+        public int getCount() {
+            return lst.size();
+        }
+
+        @Override
+        public long getItemId(int position) {
+            return position;
+        }
+
+        /**
+         * 在调用getViewAt的过程中，显示一个LoadingView。
+         * 如果return null，那么将会有一个默认的loadingView
+         * @author Gamble
+         */
+        @Override
+        public RemoteViews getLoadingView() {
+            return null;
+        }
+
+        @Override
+        public int getViewTypeCount() {
+            return 1;
+        }
+
+        @Override
+        public boolean hasStableIds() {
+            return true;
+        }
+
+        @Override
+        public void onCreate() { }
+
+        @Override
+        public void onDataSetChanged() { }
+
+        @Override
+        public void onDestroy() { }
+    }
+}
+```
+## 6.跳转后的界面操作
+```java
+Button btn = (Button)findViewById(R.id.btn_add);
+btn.setOnClickListener(new View.OnClickListener() {
+	@Override
+	public void onClick(View v) {
+		EditText et = (EditText)findViewById(R.id.et);
+		Data.addLst(et.getText().toString()); //数据添加
+		//添加待办事项 - Intent
+		Intent intent = new Intent("add.com");
+		sendBroadcast(intent); //发送 add.com 的广播
+		finish();
+	}
+});
+```
+',
+)
+[ info ] [ RUN ] app\admin\controller\Note->saveNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000578s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001148s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `title`='Android 桌面部件 Widget',`content`='# Android 桌面部件 Widget\n[TOC]\n## 效果图\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180102/m38J604bL9.gif)\n## 源码\nhttps://github.com/SSGamble/WidgetDemo\n## 参考博客\nhttps://www.jianshu.com/p/1eec51bf74be?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation\n## 1. 声明 Widget 的属性\n在 res 新建 xml 文件夹，创建一个 my_app_widget_info.xml 的文件。\n如果 res 下没有 xml 文件，则先创建。\n*my_app_widget_info.xml*\n```xml\n<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<appwidget-provider xmlns:android=\"http://schemas.android.com/apk/res/android\"\n	android:initialKeyguardLayout=\"@layout/my_app_widget\"\n	android:initialLayout=\"@layout/my_app_widget\"\n	android:minHeight=\"40dp\"\n	android:minWidth=\"40dp\"\n	android:previewImage=\"@drawable/example_appwidget_preview\"\n	android:resizeMode=\"horizontal|vertical\"\n	android:updatePeriodMillis=\"86400000\"\n	android:widgetCategory=\"home_screen\">\n</appwidget-provider>\n\nandroid:minWidth : 最小宽度\n    android:minHeight ： 最小高度\n    android:updatePeriodMillis ： 更新widget的时间间隔(ms)，\"86400000\"为1个小时，值小于30分钟时，会被设置为30分钟。可以用 service、AlarmManager、Timer 控制。\n    android:previewImage ： 预览图片，拖动小部件到桌面时有个预览图\n    android:initialLayout ： 加载到桌面时对应的布局文件\n    android:resizeMode ： 拉伸的方向。horizontal表示可以水平拉伸，vertical表示可以竖直拉伸\n    android:widgetCategory ： 被显示的位置。home_screen：将widget添加到桌面，keyguard：widget可以被添加到锁屏界面。\n    android:initialKeyguardLayout ： 加载到锁屏界面时对应的布局文件\n```\n| 格数  | dp  |\n| ------------ | ------------ |\n|  1 | 40  |\n|  2 |  110 |\n|  3 |  180 |\n|  4 |  250 |\n| n | 70*n-30 |\n## 2. 创建 layout 布局文件\n>Widget主界面布局\n\n*my_app_widget.xml*\n```\n<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n                android:layout_width=\"match_parent\"\n                android:layout_height=\"match_parent\"\n                android:padding=\"@dimen/widget_margin\">\n\n    <Button\n        android:id=\"@+id/btn_jump\"\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"wrap_content\"\n        android:text=\"Jump\" />\n\n    <ListView\n        android:id=\"@+id/listView1\"\n        android:layout_below=\"@+id/btn_jump\"\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"match_parent\" >\n    </ListView>\n\n</RelativeLayout>\n```\n\n*layout_item.xml*\n```xml\n<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"wrap_content\"\n    android:orientation=\"vertical\" >\n\n    <TextView\n        android:id=\"@+id/textView1\"\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"wrap_content\"\n        android:text=\"Medium Text\"\n        android:textAppearance=\"?android:attr/textAppearanceMedium\" />\n\n    <TextView\n        android:id=\"@+id/textView2\"\n        android:layout_below=\"@+id/textView1\"\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"wrap_content\"\n        android:text=\"TextView\" />\n\n\n    <ImageView\n        android:id=\"@+id/del\"\n        android:background=\"@mipmap/ic_launcher\"\n        android:layout_alignParentRight=\"true\"\n        android:textSize=\"20sp\"\n        android:layout_width=\"wrap_content\"\n        android:layout_height=\"wrap_content\"/>\n\n</RelativeLayout>\n```\n>列表子项布局\n\n*activity_main.xml*\n```xml\n<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"wrap_content\"\n    android:orientation=\"vertical\" >\n\n    <TextView\n        android:id=\"@+id/textView1\"\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"wrap_content\"\n        android:text=\"Medium Text\"\n        android:textAppearance=\"?android:attr/textAppearanceMedium\" />\n\n    <TextView\n        android:id=\"@+id/textView2\"\n        android:layout_below=\"@+id/textView1\"\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"wrap_content\"\n        android:text=\"TextView\" />\n\n\n    <ImageView\n        android:id=\"@+id/del\"\n        android:background=\"@mipmap/ic_launcher\"\n        android:layout_alignParentRight=\"true\"\n        android:textSize=\"20sp\"\n        android:layout_width=\"wrap_content\"\n        android:layout_height=\"wrap_content\"/>\n\n</RelativeLayout>\n```\n## 3. 创建 MyAppWidget.java\n```java\npackage com.test.widgetdemo;\n\nimport android.app.PendingIntent;\nimport android.appwidget.AppWidgetManager;\nimport android.appwidget.AppWidgetProvider;\nimport android.content.ComponentName;\nimport android.content.Context;\nimport android.content.Intent;\nimport android.net.Uri;\nimport android.os.Bundle;\nimport android.text.TextUtils;\nimport android.util.Log;\nimport android.widget.RemoteViews;\n\nimport static android.R.attr.action;\nimport static android.R.attr.cacheColorHint;\nimport static android.content.ContentValues.TAG;\n\n/**\n * ====================== AppWidget ========================\n * @author SGamble\n */\npublic class MyAppWidget extends AppWidgetProvider {\n\n    private static final String TAG = \"MyWidget\";\n    RemoteViews remoteViews;\n\n    /**\n     * package\n     */\n    static ComponentName getComponentName(Context context) {\n        return new ComponentName(context, MyAppWidget.class);\n    }\n\n    @Override\n    public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {\n        Log.e(TAG, \"onUpdate\");\n\n        //设置 ListView\n        setListView(context, appWidgetManager, appWidgetIds);\n        //获取 RemoteViews\n        remoteViews = new RemoteViews(context.getPackageName(), R.layout.my_app_widget);\n        //绑定id - 按钮点击事件\n        remoteViews.setOnClickPendingIntent(R.id.btn_jump, getJumpPendingIntent(context)); //跳转到主界面\n        //发送 del.com 的广播\n        sendDelIntentBroadcast(context);\n        //更新widget\n        appWidgetManager.updateAppWidget(appWidgetIds, remoteViews);\n    }\n\n    /**\n     * 设置 ListView\n     * @author Gamble\n     */\n    private void setListView(Context context, AppWidgetManager awm, int[] appWidgetIds) {\n        for (int appWidgetId : appWidgetIds) {\n            Intent intent = new Intent(context, MyWidgetService.class);\n            intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, appWidgetId);\n            intent.setData(Uri.parse(intent.toUri(Intent.URI_INTENT_SCHEME)));\n            RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.my_app_widget);\n            views.setRemoteAdapter(R.id.listView1, intent);\n            awm.updateAppWidget(appWidgetId, views); //设置适配器\n            awm.notifyAppWidgetViewDataChanged(appWidgetId, R.id.listView1); //通知数据更新\n        }\n    }\n\n    /**\n     * 发送 del.com 的广播\n     * @author Gamble\n     */\n    private void sendDelIntentBroadcast(Context context) {\n        Intent intent = new Intent(\"del.com\");\n        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 220, intent, PendingIntent.FLAG_UPDATE_CURRENT);\n        remoteViews.setPendingIntentTemplate(R.id.listView1, pendingIntent);\n    }\n\n    /**\n     * 点击按钮跳转到指定 Activity\n     * @author Gamble\n     */\n    private PendingIntent getJumpPendingIntent(Context context) {\n        Intent skipIntent = new Intent(context, MainActivity.class);\n        PendingIntent pi = PendingIntent.getActivity(context, 200, skipIntent, PendingIntent.FLAG_CANCEL_CURRENT);\n        return pi;\n    }\n\n    /**\n     * 接收到任意广播时触发\n     *  -- 广播需要在 清单 文件中设置响应\n     *      <intent-filter>\n     *          <action android:name=\"add.com\"/>\n     *      </intent-filter>\n     * @author Gamble\n     */\n    @Override\n    public void onReceive(Context context, Intent intent) {\n        super.onReceive(context, intent);\n        switch (intent.getAction()){\n            case \"add.com\":\n                Log.e(TAG, \"接收到MainActivity传递过来的广播 - 添加操作\");\n                break;\n            case \"del.com\": //删除\n                delEvent(context,intent);\n                break;\n        }\n        updateListView(context,intent); //更新操作\n    }\n\n    /**\n     * 删除点击的事项\n     * @author Gamble\n     */\n    private void delEvent(Context context,Intent intent) {\n        Bundle extras = intent.getExtras();\n        int position = extras.getInt(\"key\");\n        Data.del(position);\n    }\n\n    /**\n     * 更新操作\n     *  - ListView中数据发生改变\n     * @author Gamble\n     */\n    private void updateListView(Context context,Intent intent) {\n        RemoteViews remoteViews = new RemoteViews(context.getPackageName(), R.layout.my_app_widget);\n        final AppWidgetManager mgr = AppWidgetManager.getInstance(context);\n        final ComponentName cn = new ComponentName(context, MyAppWidget.class);\n        mgr.notifyAppWidgetViewDataChanged(mgr.getAppWidgetIds(cn), R.id.listView1);\n        mgr.updateAppWidget(cn, remoteViews);\n    }\n}\n```\n## 4.创建 MyWidgetService.java\n```java\npackage com.test.widgetdemo;\n\nimport android.content.Context;\nimport android.content.Intent;\nimport android.os.Bundle;\nimport android.util.Log;\nimport android.widget.RemoteViews;\nimport android.widget.RemoteViewsService;\nimport java.util.List;\nimport static com.test.widgetdemo.Data.getLst;\n\n/**\n * ====================== WidgetService ========================\n *\n * @author SGamble\n */\npublic class MyWidgetService extends RemoteViewsService {\n\n    @Override\n    public RemoteViewsFactory onGetViewFactory(Intent intent) {\n        return new MyWidgetFactory(getApplicationContext(), intent);\n    }\n\n    public static class MyWidgetFactory implements RemoteViewsFactory {\n        private Context mContext;\n        private List<String> lst; //列表数据\n\n        public MyWidgetFactory(Context context, Intent intent) {\n            mContext = context;\n            lst = getLst(); //获取列表\n        }\n\n        @Override\n        public RemoteViews getViewAt(int position) {\n            if (position < 0 || position >= getCount()) {\n                return null;\n            }\n            RemoteViews views = new RemoteViews(mContext.getPackageName(), R.layout.layout_item);\n            views.setTextViewText(R.id.textView1, lst.get(position));//设置 ListView 的显示\n            views.setOnClickFillInIntent(R.id.del, delIntent(position));//ListView - item 点击事件\n            return views;\n        }\n\n        /**\n         * 删除Intent\n         * @author Gamble\n         */\n        private Intent delIntent(int position) {\n            Bundle extras = new Bundle();\n            extras.putInt(\"key\", position); //传递数据 - item - position\n            Intent delIntent = new Intent();\n            delIntent.setAction(\"del.com\"); //设置意图\n            delIntent.putExtras(extras); //放入需要传递的数据\n            return delIntent;\n        }\n\n        @Override\n        public int getCount() {\n            return lst.size();\n        }\n\n        @Override\n        public long getItemId(int position) {\n            return position;\n        }\n\n        /**\n         * 在调用getViewAt的过程中，显示一个LoadingView。\n         * 如果return null，那么将会有一个默认的loadingView\n         * @author Gamble\n         */\n        @Override\n        public RemoteViews getLoadingView() {\n            return null;\n        }\n\n        @Override\n        public int getViewTypeCount() {\n            return 1;\n        }\n\n        @Override\n        public boolean hasStableIds() {\n            return true;\n        }\n\n        @Override\n        public void onCreate() { }\n\n        @Override\n        public void onDataSetChanged() { }\n\n        @Override\n        public void onDestroy() { }\n    }\n}\n```\n## 6.跳转后的界面操作\n```java\nButton btn = (Button)findViewById(R.id.btn_add);\nbtn.setOnClickListener(new View.OnClickListener() {\n	@Override\n	public void onClick(View v) {\n		EditText et = (EditText)findViewById(R.id.et);\n		Data.addLst(et.getText().toString()); //数据添加\n		//添加待办事项 - Intent\n		Intent intent = new Intent(\"add.com\");\n		sendBroadcast(intent); //发送 add.com 的广播\n		finish();\n	}\n});\n```\n',`groups`='Default',`p_id`=1  WHERE  `id` = 1 [ RunTime:0.000850s ]
+---------------------------------------------------------------
+[ 2018-07-06T09:55:04+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/updatenote/id/142.html
+[ info ] qingrang.top/daily/admin/note/updatenote/id/142.html [运行时间：0.050336s][吞吐率：19.87req/s] [内存消耗：2,107.95kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'updatenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '19109',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/142',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'content' => '# Android 桌面部件 Widget
+[TOC]
+## 效果图
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180102/m38J604bL9.gif)
+## 源码
+https://github.com/SSGamble/WidgetDemo
+## 参考博客
+https://www.jianshu.com/p/1eec51bf74be?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation
+## 1. 声明 Widget 的属性
+在 res 新建 xml 文件夹，创建一个 my_app_widget_info.xml 的文件。
+如果 res 下没有 xml 文件，则先创建。
+*my_app_widget_info.xml*
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+	android:initialKeyguardLayout="@layout/my_app_widget"
+	android:initialLayout="@layout/my_app_widget"
+	android:minHeight="40dp"
+	android:minWidth="40dp"
+	android:previewImage="@drawable/example_appwidget_preview"
+	android:resizeMode="horizontal|vertical"
+	android:updatePeriodMillis="86400000"
+	android:widgetCategory="home_screen">
+</appwidget-provider>
+
+android:minWidth : 最小宽度
+    android:minHeight ： 最小高度
+    android:updatePeriodMillis ： 更新widget的时间间隔(ms)，"86400000"为1个小时，值小于30分钟时，会被设置为30分钟。可以用 service、AlarmManager、Timer 控制。
+    android:previewImage ： 预览图片，拖动小部件到桌面时有个预览图
+    android:initialLayout ： 加载到桌面时对应的布局文件
+    android:resizeMode ： 拉伸的方向。horizontal表示可以水平拉伸，vertical表示可以竖直拉伸
+    android:widgetCategory ： 被显示的位置。home_screen：将widget添加到桌面，keyguard：widget可以被添加到锁屏界面。
+    android:initialKeyguardLayout ： 加载到锁屏界面时对应的布局文件
+```
+| 格数  | dp  |
+| ------------ | ------------ |
+|  1 | 40  |
+|  2 |  110 |
+|  3 |  180 |
+|  4 |  250 |
+| n | 70*n-30 |
+## 2. 创建 layout 布局文件
+>Widget主界面布局
+
+*my_app_widget.xml*
+```
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/widget_margin">
+
+    <Button
+        android:id="@+id/btn_jump"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jump" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_below="@+id/btn_jump"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+
+</RelativeLayout>
+```
+
+*layout_item.xml*
+```xml
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+
+    <ImageView
+        android:id="@+id/del"
+        android:background="@mipmap/ic_launcher"
+        android:layout_alignParentRight="true"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
+```
+>列表子项布局
+
+*activity_main.xml*
+```xml
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+
+    <ImageView
+        android:id="@+id/del"
+        android:background="@mipmap/ic_launcher"
+        android:layout_alignParentRight="true"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
+```
+## 3. 创建 MyAppWidget.java
+```java
+package com.test.widgetdemo;
+
+import android.app.PendingIntent;
+import android.appwidget.AppWidgetManager;
+import android.appwidget.AppWidgetProvider;
+import android.content.ComponentName;
+import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Bundle;
+import android.text.TextUtils;
+import android.util.Log;
+import android.widget.RemoteViews;
+
+import static android.R.attr.action;
+import static android.R.attr.cacheColorHint;
+import static android.content.ContentValues.TAG;
+
+/**
+ * ====================== AppWidget ========================
+ * @author SGamble
+ */
+public class MyAppWidget extends AppWidgetProvider {
+
+    private static final String TAG = "MyWidget";
+    RemoteViews remoteViews;
+
+    /**
+     * package
+     */
+    static ComponentName getComponentName(Context context) {
+        return new ComponentName(context, MyAppWidget.class);
+    }
+
+    @Override
+    public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
+        Log.e(TAG, "onUpdate");
+
+        //设置 ListView
+        setListView(context, appWidgetManager, appWidgetIds);
+        //获取 RemoteViews
+        remoteViews = new RemoteViews(context.getPackageName(), R.layout.my_app_widget);
+        //绑定id - 按钮点击事件
+        remoteViews.setOnClickPendingIntent(R.id.btn_jump, getJumpPendingIntent(context)); //跳转到主界面
+        //发送 del.com 的广播
+        sendDelIntentBroadcast(context);
+        //更新widget
+        appWidgetManager.updateAppWidget(appWidgetIds, remoteViews);
+    }
+
+    /**
+     * 设置 ListView
+     * @author Gamble
+     */
+    private void setListView(Context context, AppWidgetManager awm, int[] appWidgetIds) {
+        for (int appWidgetId : appWidgetIds) {
+            Intent intent = new Intent(context, MyWidgetService.class);
+            intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, appWidgetId);
+            intent.setData(Uri.parse(intent.toUri(Intent.URI_INTENT_SCHEME)));
+            RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.my_app_widget);
+            views.setRemoteAdapter(R.id.listView1, intent);
+            awm.updateAppWidget(appWidgetId, views); //设置适配器
+            awm.notifyAppWidgetViewDataChanged(appWidgetId, R.id.listView1); //通知数据更新
+        }
+    }
+
+    /**
+     * 发送 del.com 的广播
+     * @author Gamble
+     */
+    private void sendDelIntentBroadcast(Context context) {
+        Intent intent = new Intent("del.com");
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 220, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+        remoteViews.setPendingIntentTemplate(R.id.listView1, pendingIntent);
+    }
+
+    /**
+     * 点击按钮跳转到指定 Activity
+     * @author Gamble
+     */
+    private PendingIntent getJumpPendingIntent(Context context) {
+        Intent skipIntent = new Intent(context, MainActivity.class);
+        PendingIntent pi = PendingIntent.getActivity(context, 200, skipIntent, PendingIntent.FLAG_CANCEL_CURRENT);
+        return pi;
+    }
+
+    /**
+     * 接收到任意广播时触发
+     *  -- 广播需要在 清单 文件中设置响应
+     *      <intent-filter>
+     *          <action android:name="add.com"/>
+     *      </intent-filter>
+     * @author Gamble
+     */
+    @Override
+    public void onReceive(Context context, Intent intent) {
+        super.onReceive(context, intent);
+        switch (intent.getAction()){
+            case "add.com":
+                Log.e(TAG, "接收到MainActivity传递过来的广播 - 添加操作");
+                break;
+            case "del.com": //删除
+                delEvent(context,intent);
+                break;
+        }
+        updateListView(context,intent); //更新操作
+    }
+
+    /**
+     * 删除点击的事项
+     * @author Gamble
+     */
+    private void delEvent(Context context,Intent intent) {
+        Bundle extras = intent.getExtras();
+        int position = extras.getInt("key");
+        Data.del(position);
+    }
+
+    /**
+     * 更新操作
+     *  - ListView中数据发生改变
+     * @author Gamble
+     */
+    private void updateListView(Context context,Intent intent) {
+        RemoteViews remoteViews = new RemoteViews(context.getPackageName(), R.layout.my_app_widget);
+        final AppWidgetManager mgr = AppWidgetManager.getInstance(context);
+        final ComponentName cn = new ComponentName(context, MyAppWidget.class);
+        mgr.notifyAppWidgetViewDataChanged(mgr.getAppWidgetIds(cn), R.id.listView1);
+        mgr.updateAppWidget(cn, remoteViews);
+    }
+}
+```
+## 4.创建 MyWidgetService.java
+```java
+package com.test.widgetdemo;
+
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+import android.util.Log;
+import android.widget.RemoteViews;
+import android.widget.RemoteViewsService;
+import java.util.List;
+import static com.test.widgetdemo.Data.getLst;
+
+/**
+ * ====================== WidgetService ========================
+ *
+ * @author SGamble
+ */
+public class MyWidgetService extends RemoteViewsService {
+
+    @Override
+    public RemoteViewsFactory onGetViewFactory(Intent intent) {
+        return new MyWidgetFactory(getApplicationContext(), intent);
+    }
+
+    public static class MyWidgetFactory implements RemoteViewsFactory {
+        private Context mContext;
+        private List<String> lst; //列表数据
+
+        public MyWidgetFactory(Context context, Intent intent) {
+            mContext = context;
+            lst = getLst(); //获取列表
+        }
+
+        @Override
+        public RemoteViews getViewAt(int position) {
+            if (position < 0 || position >= getCount()) {
+                return null;
+            }
+            RemoteViews views = new RemoteViews(mContext.getPackageName(), R.layout.layout_item);
+            views.setTextViewText(R.id.textView1, lst.get(position));//设置 ListView 的显示
+            views.setOnClickFillInIntent(R.id.del, delIntent(position));//ListView - item 点击事件
+            return views;
+        }
+
+        /**
+         * 删除Intent
+         * @author Gamble
+         */
+        private Intent delIntent(int position) {
+            Bundle extras = new Bundle();
+            extras.putInt("key", position); //传递数据 - item - position
+            Intent delIntent = new Intent();
+            delIntent.setAction("del.com"); //设置意图
+            delIntent.putExtras(extras); //放入需要传递的数据
+            return delIntent;
+        }
+
+        @Override
+        public int getCount() {
+            return lst.size();
+        }
+
+        @Override
+        public long getItemId(int position) {
+            return position;
+        }
+
+        /**
+         * 在调用getViewAt的过程中，显示一个LoadingView。
+         * 如果return null，那么将会有一个默认的loadingView
+         * @author Gamble
+         */
+        @Override
+        public RemoteViews getLoadingView() {
+            return null;
+        }
+
+        @Override
+        public int getViewTypeCount() {
+            return 1;
+        }
+
+        @Override
+        public boolean hasStableIds() {
+            return true;
+        }
+
+        @Override
+        public void onCreate() { }
+
+        @Override
+        public void onDataSetChanged() { }
+
+        @Override
+        public void onDestroy() { }
+    }
+}
+```
+## 6.跳转后的界面操作
+```java
+Button btn = (Button)findViewById(R.id.btn_add);
+btn.setOnClickListener(new View.OnClickListener() {
+	@Override
+	public void onClick(View v) {
+		EditText et = (EditText)findViewById(R.id.et);
+		Data.addLst(et.getText().toString()); //数据添加
+		//添加待办事项 - Intent
+		Intent intent = new Intent("add.com");
+		sendBroadcast(intent); //发送 add.com 的广播
+		finish();
+	}
+});
+```
+',
+  'groups' => 'Android',
+  'id' => '142',
+)
+[ info ] [ RUN ] app\admin\controller\Note->updateNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000561s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001208s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 142 LIMIT 1 [ RunTime:0.000489s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000775s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `groups` WHERE  `groups` = 'Android' LIMIT 1 [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000286s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `id`=142,`p_id`=2,`title`='Android 桌面部件 Widget\r',`content`='# Android 桌面部件 Widget\r\n[TOC]\r\n## 效果图\r\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180102/m38J604bL9.gif)\r\n## 源码\r\nhttps://github.com/SSGamble/WidgetDemo\r\n## 参考博客\r\nhttps://www.jianshu.com/p/1eec51bf74be?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation\r\n## 1. 声明 Widget 的属性\r\n在 res 新建 xml 文件夹，创建一个 my_app_widget_info.xml 的文件。\r\n如果 res 下没有 xml 文件，则先创建。\r\n*my_app_widget_info.xml*\r\n```xml\r\n<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<appwidget-provider xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n	android:initialKeyguardLayout=\"@layout/my_app_widget\"\r\n	android:initialLayout=\"@layout/my_app_widget\"\r\n	android:minHeight=\"40dp\"\r\n	android:minWidth=\"40dp\"\r\n	android:previewImage=\"@drawable/example_appwidget_preview\"\r\n	android:resizeMode=\"horizontal|vertical\"\r\n	android:updatePeriodMillis=\"86400000\"\r\n	android:widgetCategory=\"home_screen\">\r\n</appwidget-provider>\r\n\r\nandroid:minWidth : 最小宽度\r\n    android:minHeight ： 最小高度\r\n    android:updatePeriodMillis ： 更新widget的时间间隔(ms)，\"86400000\"为1个小时，值小于30分钟时，会被设置为30分钟。可以用 service、AlarmManager、Timer 控制。\r\n    android:previewImage ： 预览图片，拖动小部件到桌面时有个预览图\r\n    android:initialLayout ： 加载到桌面时对应的布局文件\r\n    android:resizeMode ： 拉伸的方向。horizontal表示可以水平拉伸，vertical表示可以竖直拉伸\r\n    android:widgetCategory ： 被显示的位置。home_screen：将widget添加到桌面，keyguard：widget可以被添加到锁屏界面。\r\n    android:initialKeyguardLayout ： 加载到锁屏界面时对应的布局文件\r\n```\r\n| 格数  | dp  |\r\n| ------------ | ------------ |\r\n|  1 | 40  |\r\n|  2 |  110 |\r\n|  3 |  180 |\r\n|  4 |  250 |\r\n| n | 70*n-30 |\r\n## 2. 创建 layout 布局文件\r\n>Widget主界面布局\r\n\r\n*my_app_widget.xml*\r\n```\r\n<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n                android:layout_width=\"match_parent\"\r\n                android:layout_height=\"match_parent\"\r\n                android:padding=\"@dimen/widget_margin\">\r\n\r\n    <Button\r\n        android:id=\"@+id/btn_jump\"\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:text=\"Jump\" />\r\n\r\n    <ListView\r\n        android:id=\"@+id/listView1\"\r\n        android:layout_below=\"@+id/btn_jump\"\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"match_parent\" >\r\n    </ListView>\r\n\r\n</RelativeLayout>\r\n```\r\n\r\n*layout_item.xml*\r\n```xml\r\n<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"wrap_content\"\r\n    android:orientation=\"vertical\" >\r\n\r\n    <TextView\r\n        android:id=\"@+id/textView1\"\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:text=\"Medium Text\"\r\n        android:textAppearance=\"?android:attr/textAppearanceMedium\" />\r\n\r\n    <TextView\r\n        android:id=\"@+id/textView2\"\r\n        android:layout_below=\"@+id/textView1\"\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:text=\"TextView\" />\r\n\r\n\r\n    <ImageView\r\n        android:id=\"@+id/del\"\r\n        android:background=\"@mipmap/ic_launcher\"\r\n        android:layout_alignParentRight=\"true\"\r\n        android:textSize=\"20sp\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"/>\r\n\r\n</RelativeLayout>\r\n```\r\n>列表子项布局\r\n\r\n*activity_main.xml*\r\n```xml\r\n<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"wrap_content\"\r\n    android:orientation=\"vertical\" >\r\n\r\n    <TextView\r\n        android:id=\"@+id/textView1\"\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:text=\"Medium Text\"\r\n        android:textAppearance=\"?android:attr/textAppearanceMedium\" />\r\n\r\n    <TextView\r\n        android:id=\"@+id/textView2\"\r\n        android:layout_below=\"@+id/textView1\"\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:text=\"TextView\" />\r\n\r\n\r\n    <ImageView\r\n        android:id=\"@+id/del\"\r\n        android:background=\"@mipmap/ic_launcher\"\r\n        android:layout_alignParentRight=\"true\"\r\n        android:textSize=\"20sp\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"/>\r\n\r\n</RelativeLayout>\r\n```\r\n## 3. 创建 MyAppWidget.java\r\n```java\r\npackage com.test.widgetdemo;\r\n\r\nimport android.app.PendingIntent;\r\nimport android.appwidget.AppWidgetManager;\r\nimport android.appwidget.AppWidgetProvider;\r\nimport android.content.ComponentName;\r\nimport android.content.Context;\r\nimport android.content.Intent;\r\nimport android.net.Uri;\r\nimport android.os.Bundle;\r\nimport android.text.TextUtils;\r\nimport android.util.Log;\r\nimport android.widget.RemoteViews;\r\n\r\nimport static android.R.attr.action;\r\nimport static android.R.attr.cacheColorHint;\r\nimport static android.content.ContentValues.TAG;\r\n\r\n/**\r\n * ====================== AppWidget ========================\r\n * @author SGamble\r\n */\r\npublic class MyAppWidget extends AppWidgetProvider {\r\n\r\n    private static final String TAG = \"MyWidget\";\r\n    RemoteViews remoteViews;\r\n\r\n    /**\r\n     * package\r\n     */\r\n    static ComponentName getComponentName(Context context) {\r\n        return new ComponentName(context, MyAppWidget.class);\r\n    }\r\n\r\n    @Override\r\n    public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {\r\n        Log.e(TAG, \"onUpdate\");\r\n\r\n        //设置 ListView\r\n        setListView(context, appWidgetManager, appWidgetIds);\r\n        //获取 RemoteViews\r\n        remoteViews = new RemoteViews(context.getPackageName(), R.layout.my_app_widget);\r\n        //绑定id - 按钮点击事件\r\n        remoteViews.setOnClickPendingIntent(R.id.btn_jump, getJumpPendingIntent(context)); //跳转到主界面\r\n        //发送 del.com 的广播\r\n        sendDelIntentBroadcast(context);\r\n        //更新widget\r\n        appWidgetManager.updateAppWidget(appWidgetIds, remoteViews);\r\n    }\r\n\r\n    /**\r\n     * 设置 ListView\r\n     * @author Gamble\r\n     */\r\n    private void setListView(Context context, AppWidgetManager awm, int[] appWidgetIds) {\r\n        for (int appWidgetId : appWidgetIds) {\r\n            Intent intent = new Intent(context, MyWidgetService.class);\r\n            intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, appWidgetId);\r\n            intent.setData(Uri.parse(intent.toUri(Intent.URI_INTENT_SCHEME)));\r\n            RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.my_app_widget);\r\n            views.setRemoteAdapter(R.id.listView1, intent);\r\n            awm.updateAppWidget(appWidgetId, views); //设置适配器\r\n            awm.notifyAppWidgetViewDataChanged(appWidgetId, R.id.listView1); //通知数据更新\r\n        }\r\n    }\r\n\r\n    /**\r\n     * 发送 del.com 的广播\r\n     * @author Gamble\r\n     */\r\n    private void sendDelIntentBroadcast(Context context) {\r\n        Intent intent = new Intent(\"del.com\");\r\n        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 220, intent, PendingIntent.FLAG_UPDATE_CURRENT);\r\n        remoteViews.setPendingIntentTemplate(R.id.listView1, pendingIntent);\r\n    }\r\n\r\n    /**\r\n     * 点击按钮跳转到指定 Activity\r\n     * @author Gamble\r\n     */\r\n    private PendingIntent getJumpPendingIntent(Context context) {\r\n        Intent skipIntent = new Intent(context, MainActivity.class);\r\n        PendingIntent pi = PendingIntent.getActivity(context, 200, skipIntent, PendingIntent.FLAG_CANCEL_CURRENT);\r\n        return pi;\r\n    }\r\n\r\n    /**\r\n     * 接收到任意广播时触发\r\n     *  -- 广播需要在 清单 文件中设置响应\r\n     *      <intent-filter>\r\n     *          <action android:name=\"add.com\"/>\r\n     *      </intent-filter>\r\n     * @author Gamble\r\n     */\r\n    @Override\r\n    public void onReceive(Context context, Intent intent) {\r\n        super.onReceive(context, intent);\r\n        switch (intent.getAction()){\r\n            case \"add.com\":\r\n                Log.e(TAG, \"接收到MainActivity传递过来的广播 - 添加操作\");\r\n                break;\r\n            case \"del.com\": //删除\r\n                delEvent(context,intent);\r\n                break;\r\n        }\r\n        updateListView(context,intent); //更新操作\r\n    }\r\n\r\n    /**\r\n     * 删除点击的事项\r\n     * @author Gamble\r\n     */\r\n    private void delEvent(Context context,Intent intent) {\r\n        Bundle extras = intent.getExtras();\r\n        int position = extras.getInt(\"key\");\r\n        Data.del(position);\r\n    }\r\n\r\n    /**\r\n     * 更新操作\r\n     *  - ListView中数据发生改变\r\n     * @author Gamble\r\n     */\r\n    private void updateListView(Context context,Intent intent) {\r\n        RemoteViews remoteViews = new RemoteViews(context.getPackageName(), R.layout.my_app_widget);\r\n        final AppWidgetManager mgr = AppWidgetManager.getInstance(context);\r\n        final ComponentName cn = new ComponentName(context, MyAppWidget.class);\r\n        mgr.notifyAppWidgetViewDataChanged(mgr.getAppWidgetIds(cn), R.id.listView1);\r\n        mgr.updateAppWidget(cn, remoteViews);\r\n    }\r\n}\r\n```\r\n## 4.创建 MyWidgetService.java\r\n```java\r\npackage com.test.widgetdemo;\r\n\r\nimport android.content.Context;\r\nimport android.content.Intent;\r\nimport android.os.Bundle;\r\nimport android.util.Log;\r\nimport android.widget.RemoteViews;\r\nimport android.widget.RemoteViewsService;\r\nimport java.util.List;\r\nimport static com.test.widgetdemo.Data.getLst;\r\n\r\n/**\r\n * ====================== WidgetService ========================\r\n *\r\n * @author SGamble\r\n */\r\npublic class MyWidgetService extends RemoteViewsService {\r\n\r\n    @Override\r\n    public RemoteViewsFactory onGetViewFactory(Intent intent) {\r\n        return new MyWidgetFactory(getApplicationContext(), intent);\r\n    }\r\n\r\n    public static class MyWidgetFactory implements RemoteViewsFactory {\r\n        private Context mContext;\r\n        private List<String> lst; //列表数据\r\n\r\n        public MyWidgetFactory(Context context, Intent intent) {\r\n            mContext = context;\r\n            lst = getLst(); //获取列表\r\n        }\r\n\r\n        @Override\r\n        public RemoteViews getViewAt(int position) {\r\n            if (position < 0 || position >= getCount()) {\r\n                return null;\r\n            }\r\n            RemoteViews views = new RemoteViews(mContext.getPackageName(), R.layout.layout_item);\r\n            views.setTextViewText(R.id.textView1, lst.get(position));//设置 ListView 的显示\r\n            views.setOnClickFillInIntent(R.id.del, delIntent(position));//ListView - item 点击事件\r\n            return views;\r\n        }\r\n\r\n        /**\r\n         * 删除Intent\r\n         * @author Gamble\r\n         */\r\n        private Intent delIntent(int position) {\r\n            Bundle extras = new Bundle();\r\n            extras.putInt(\"key\", position); //传递数据 - item - position\r\n            Intent delIntent = new Intent();\r\n            delIntent.setAction(\"del.com\"); //设置意图\r\n            delIntent.putExtras(extras); //放入需要传递的数据\r\n            return delIntent;\r\n        }\r\n\r\n        @Override\r\n        public int getCount() {\r\n            return lst.size();\r\n        }\r\n\r\n        @Override\r\n        public long getItemId(int position) {\r\n            return position;\r\n        }\r\n\r\n        /**\r\n         * 在调用getViewAt的过程中，显示一个LoadingView。\r\n         * 如果return null，那么将会有一个默认的loadingView\r\n         * @author Gamble\r\n         */\r\n        @Override\r\n        public RemoteViews getLoadingView() {\r\n            return null;\r\n        }\r\n\r\n        @Override\r\n        public int getViewTypeCount() {\r\n            return 1;\r\n        }\r\n\r\n        @Override\r\n        public boolean hasStableIds() {\r\n            return true;\r\n        }\r\n\r\n        @Override\r\n        public void onCreate() { }\r\n\r\n        @Override\r\n        public void onDataSetChanged() { }\r\n\r\n        @Override\r\n        public void onDestroy() { }\r\n    }\r\n}\r\n```\r\n## 6.跳转后的界面操作\r\n```java\r\nButton btn = (Button)findViewById(R.id.btn_add);\r\nbtn.setOnClickListener(new View.OnClickListener() {\r\n	@Override\r\n	public void onClick(View v) {\r\n		EditText et = (EditText)findViewById(R.id.et);\r\n		Data.addLst(et.getText().toString()); //数据添加\r\n		//添加待办事项 - Intent\r\n		Intent intent = new Intent(\"add.com\");\r\n		sendBroadcast(intent); //发送 add.com 的广播\r\n		finish();\r\n	}\r\n});\r\n```\r\n',`groups`='Android'  WHERE  `id` = 142 [ RunTime:0.000665s ]
+---------------------------------------------------------------
+[ 2018-07-06T09:55:05+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/142.html
+[ info ] qingrang.top/daily/admin/note/shownote/id/142.html [运行时间：0.048319s][吞吐率：20.70req/s] [内存消耗：1,985.56kb] [文件加载：54]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/142',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '142',
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000424s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001440s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 142 LIMIT 1 [ RunTime:0.000428s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000760s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000278s ]
+---------------------------------------------------------------
+[ 2018-07-06T09:56:25+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/editnote/id/142.html
+[ info ] qingrang.top/daily/admin/note/editnote/id/142.html [运行时间：0.048267s][吞吐率：20.72req/s] [内存消耗：2,049.19kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'editnote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '142',
+)
+[ info ] [ RUN ] app\admin\controller\Note->editNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/editnote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000461s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001333s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 142 LIMIT 1 [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.001011s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000254s ]
+---------------------------------------------------------------
+[ 2018-07-06T09:58:06+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/savenote.html
+[ info ] qingrang.top/daily/admin/note/savenote.html [运行时间：0.050417s][吞吐率：19.83req/s] [内存消耗：2,106.02kb] [文件加载：55]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'savenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '17665',
+  'accept' => 'text/plain, */*; q=0.01',
+  'origin' => 'http://qingrang.top',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/142.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'ogroup' => 'Default',
+  'context' => '# Android 桌面部件 Widget
+[TOC]
+## 效果图
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180102/m38J604bL9.gif)
+## 源码
+https://github.com/SSGamble/WidgetDemo
+## 参考博客
+https://www.jianshu.com/p/1eec51bf74be?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation
+## 1. 声明 Widget 的属性
+在 res 新建 xml 文件夹，创建一个 my_app_widget_info.xml 的文件。
+如果 res 下没有 xml 文件，则先创建。
+*my_app_widget_info.xml*
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+	android:initialKeyguardLayout="@layout/my_app_widget"
+	android:initialLayout="@layout/my_app_widget"
+	android:minHeight="40dp"
+	android:minWidth="40dp"
+	android:previewImage="@drawable/example_appwidget_preview"
+	android:resizeMode="horizontal|vertical"
+	android:updatePeriodMillis="86400000"
+	android:widgetCategory="home_screen">
+</appwidget-provider>
+
+android:minWidth : 最小宽度
+    android:minHeight ： 最小高度
+    android:updatePeriodMillis ： 更新widget的时间间隔(ms)，"86400000"为1个小时，值小于30分钟时，会被设置为30分钟。可以用 service、AlarmManager、Timer 控制。
+    android:previewImage ： 预览图片，拖动小部件到桌面时有个预览图
+    android:initialLayout ： 加载到桌面时对应的布局文件
+    android:resizeMode ： 拉伸的方向。horizontal表示可以水平拉伸，vertical表示可以竖直拉伸
+    android:widgetCategory ： 被显示的位置。home_screen：将widget添加到桌面，keyguard：widget可以被添加到锁屏界面。
+    android:initialKeyguardLayout ： 加载到锁屏界面时对应的布局文件
+```
+| 格数  | dp  |
+| ------------ | ------------ |
+|  1 | 40  |
+|  2 |  110 |
+|  3 |  180 |
+|  4 |  250 |
+| n | 70*n-30 |
+## 2. 创建 layout 布局文件
+>Widget主界面布局
+
+*my_app_widget.xml*
+```
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/widget_margin">
+
+    <Button
+        android:id="@+id/btn_jump"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jump" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_below="@+id/btn_jump"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+
+</RelativeLayout>
+```
+
+>列表子项布局
+
+*layout_item.xml*
+```xml
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+
+    <ImageView
+        android:id="@+id/del"
+        android:background="@mipmap/ic_launcher"
+        android:layout_alignParentRight="true"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
+```
+>跳转后的主界面布局
+
+*activity_main.xml*
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.test.widgetdemo.MainActivity">
+
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_below="@+id/et"
+        android:text="Add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
+```
+## 3. 创建 MyAppWidget.java
+```java
+package com.test.widgetdemo;
+
+import android.app.PendingIntent;
+import android.appwidget.AppWidgetManager;
+import android.appwidget.AppWidgetProvider;
+import android.content.ComponentName;
+import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Bundle;
+import android.text.TextUtils;
+import android.util.Log;
+import android.widget.RemoteViews;
+
+import static android.R.attr.action;
+import static android.R.attr.cacheColorHint;
+import static android.content.ContentValues.TAG;
+
+/**
+ * ====================== AppWidget ========================
+ * @author SGamble
+ */
+public class MyAppWidget extends AppWidgetProvider {
+
+    private static final String TAG = "MyWidget";
+    RemoteViews remoteViews;
+
+    /**
+     * package
+     */
+    static ComponentName getComponentName(Context context) {
+        return new ComponentName(context, MyAppWidget.class);
+    }
+
+    @Override
+    public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
+        Log.e(TAG, "onUpdate");
+
+        //设置 ListView
+        setListView(context, appWidgetManager, appWidgetIds);
+        //获取 RemoteViews
+        remoteViews = new RemoteViews(context.getPackageName(), R.layout.my_app_widget);
+        //绑定id - 按钮点击事件
+        remoteViews.setOnClickPendingIntent(R.id.btn_jump, getJumpPendingIntent(context)); //跳转到主界面
+        //发送 del.com 的广播
+        sendDelIntentBroadcast(context);
+        //更新widget
+        appWidgetManager.updateAppWidget(appWidgetIds, remoteViews);
+    }
+
+    /**
+     * 设置 ListView
+     * @author Gamble
+     */
+    private void setListView(Context context, AppWidgetManager awm, int[] appWidgetIds) {
+        for (int appWidgetId : appWidgetIds) {
+            Intent intent = new Intent(context, MyWidgetService.class);
+            intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, appWidgetId);
+            intent.setData(Uri.parse(intent.toUri(Intent.URI_INTENT_SCHEME)));
+            RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.my_app_widget);
+            views.setRemoteAdapter(R.id.listView1, intent);
+            awm.updateAppWidget(appWidgetId, views); //设置适配器
+            awm.notifyAppWidgetViewDataChanged(appWidgetId, R.id.listView1); //通知数据更新
+        }
+    }
+
+    /**
+     * 发送 del.com 的广播
+     * @author Gamble
+     */
+    private void sendDelIntentBroadcast(Context context) {
+        Intent intent = new Intent("del.com");
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 220, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+        remoteViews.setPendingIntentTemplate(R.id.listView1, pendingIntent);
+    }
+
+    /**
+     * 点击按钮跳转到指定 Activity
+     * @author Gamble
+     */
+    private PendingIntent getJumpPendingIntent(Context context) {
+        Intent skipIntent = new Intent(context, MainActivity.class);
+        PendingIntent pi = PendingIntent.getActivity(context, 200, skipIntent, PendingIntent.FLAG_CANCEL_CURRENT);
+        return pi;
+    }
+
+    /**
+     * 接收到任意广播时触发
+     *  -- 广播需要在 清单 文件中设置响应
+     *      <intent-filter>
+     *          <action android:name="add.com"/>
+     *      </intent-filter>
+     * @author Gamble
+     */
+    @Override
+    public void onReceive(Context context, Intent intent) {
+        super.onReceive(context, intent);
+        switch (intent.getAction()){
+            case "add.com":
+                Log.e(TAG, "接收到MainActivity传递过来的广播 - 添加操作");
+                break;
+            case "del.com": //删除
+                delEvent(context,intent);
+                break;
+        }
+        updateListView(context,intent); //更新操作
+    }
+
+    /**
+     * 删除点击的事项
+     * @author Gamble
+     */
+    private void delEvent(Context context,Intent intent) {
+        Bundle extras = intent.getExtras();
+        int position = extras.getInt("key");
+        Data.del(position);
+    }
+
+    /**
+     * 更新操作
+     *  - ListView中数据发生改变
+     * @author Gamble
+     */
+    private void updateListView(Context context,Intent intent) {
+        RemoteViews remoteViews = new RemoteViews(context.getPackageName(), R.layout.my_app_widget);
+        final AppWidgetManager mgr = AppWidgetManager.getInstance(context);
+        final ComponentName cn = new ComponentName(context, MyAppWidget.class);
+        mgr.notifyAppWidgetViewDataChanged(mgr.getAppWidgetIds(cn), R.id.listView1);
+        mgr.updateAppWidget(cn, remoteViews);
+    }
+}
+```
+## 4.创建 MyWidgetService.java
+```java
+package com.test.widgetdemo;
+
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+import android.util.Log;
+import android.widget.RemoteViews;
+import android.widget.RemoteViewsService;
+import java.util.List;
+import static com.test.widgetdemo.Data.getLst;
+
+/**
+ * ====================== WidgetService ========================
+ *
+ * @author SGamble
+ */
+public class MyWidgetService extends RemoteViewsService {
+
+    @Override
+    public RemoteViewsFactory onGetViewFactory(Intent intent) {
+        return new MyWidgetFactory(getApplicationContext(), intent);
+    }
+
+    public static class MyWidgetFactory implements RemoteViewsFactory {
+        private Context mContext;
+        private List<String> lst; //列表数据
+
+        public MyWidgetFactory(Context context, Intent intent) {
+            mContext = context;
+            lst = getLst(); //获取列表
+        }
+
+        @Override
+        public RemoteViews getViewAt(int position) {
+            if (position < 0 || position >= getCount()) {
+                return null;
+            }
+            RemoteViews views = new RemoteViews(mContext.getPackageName(), R.layout.layout_item);
+            views.setTextViewText(R.id.textView1, lst.get(position));//设置 ListView 的显示
+            views.setOnClickFillInIntent(R.id.del, delIntent(position));//ListView - item 点击事件
+            return views;
+        }
+
+        /**
+         * 删除Intent
+         * @author Gamble
+         */
+        private Intent delIntent(int position) {
+            Bundle extras = new Bundle();
+            extras.putInt("key", position); //传递数据 - item - position
+            Intent delIntent = new Intent();
+            delIntent.setAction("del.com"); //设置意图
+            delIntent.putExtras(extras); //放入需要传递的数据
+            return delIntent;
+        }
+
+        @Override
+        public int getCount() {
+            return lst.size();
+        }
+
+        @Override
+        public long getItemId(int position) {
+            return position;
+        }
+
+        /**
+         * 在调用getViewAt的过程中，显示一个LoadingView。
+         * 如果return null，那么将会有一个默认的loadingView
+         * @author Gamble
+         */
+        @Override
+        public RemoteViews getLoadingView() {
+            return null;
+        }
+
+        @Override
+        public int getViewTypeCount() {
+            return 1;
+        }
+
+        @Override
+        public boolean hasStableIds() {
+            return true;
+        }
+
+        @Override
+        public void onCreate() { }
+
+        @Override
+        public void onDataSetChanged() { }
+
+        @Override
+        public void onDestroy() { }
+    }
+}
+```
+## 6.跳转后的界面操作
+```java
+Button btn = (Button)findViewById(R.id.btn_add);
+btn.setOnClickListener(new View.OnClickListener() {
+	@Override
+	public void onClick(View v) {
+		EditText et = (EditText)findViewById(R.id.et);
+		Data.addLst(et.getText().toString()); //数据添加
+		//添加待办事项 - Intent
+		Intent intent = new Intent("add.com");
+		sendBroadcast(intent); //发送 add.com 的广播
+		finish();
+	}
+});
+```
+',
+)
+[ info ] [ RUN ] app\admin\controller\Note->saveNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000500s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001108s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `title`='Android 桌面部件 Widget',`content`='# Android 桌面部件 Widget\n[TOC]\n## 效果图\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180102/m38J604bL9.gif)\n## 源码\nhttps://github.com/SSGamble/WidgetDemo\n## 参考博客\nhttps://www.jianshu.com/p/1eec51bf74be?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation\n## 1. 声明 Widget 的属性\n在 res 新建 xml 文件夹，创建一个 my_app_widget_info.xml 的文件。\n如果 res 下没有 xml 文件，则先创建。\n*my_app_widget_info.xml*\n```xml\n<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<appwidget-provider xmlns:android=\"http://schemas.android.com/apk/res/android\"\n	android:initialKeyguardLayout=\"@layout/my_app_widget\"\n	android:initialLayout=\"@layout/my_app_widget\"\n	android:minHeight=\"40dp\"\n	android:minWidth=\"40dp\"\n	android:previewImage=\"@drawable/example_appwidget_preview\"\n	android:resizeMode=\"horizontal|vertical\"\n	android:updatePeriodMillis=\"86400000\"\n	android:widgetCategory=\"home_screen\">\n</appwidget-provider>\n\nandroid:minWidth : 最小宽度\n    android:minHeight ： 最小高度\n    android:updatePeriodMillis ： 更新widget的时间间隔(ms)，\"86400000\"为1个小时，值小于30分钟时，会被设置为30分钟。可以用 service、AlarmManager、Timer 控制。\n    android:previewImage ： 预览图片，拖动小部件到桌面时有个预览图\n    android:initialLayout ： 加载到桌面时对应的布局文件\n    android:resizeMode ： 拉伸的方向。horizontal表示可以水平拉伸，vertical表示可以竖直拉伸\n    android:widgetCategory ： 被显示的位置。home_screen：将widget添加到桌面，keyguard：widget可以被添加到锁屏界面。\n    android:initialKeyguardLayout ： 加载到锁屏界面时对应的布局文件\n```\n| 格数  | dp  |\n| ------------ | ------------ |\n|  1 | 40  |\n|  2 |  110 |\n|  3 |  180 |\n|  4 |  250 |\n| n | 70*n-30 |\n## 2. 创建 layout 布局文件\n>Widget主界面布局\n\n*my_app_widget.xml*\n```\n<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n                android:layout_width=\"match_parent\"\n                android:layout_height=\"match_parent\"\n                android:padding=\"@dimen/widget_margin\">\n\n    <Button\n        android:id=\"@+id/btn_jump\"\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"wrap_content\"\n        android:text=\"Jump\" />\n\n    <ListView\n        android:id=\"@+id/listView1\"\n        android:layout_below=\"@+id/btn_jump\"\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"match_parent\" >\n    </ListView>\n\n</RelativeLayout>\n```\n\n>列表子项布局\n\n*layout_item.xml*\n```xml\n<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"wrap_content\"\n    android:orientation=\"vertical\" >\n\n    <TextView\n        android:id=\"@+id/textView1\"\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"wrap_content\"\n        android:text=\"Medium Text\"\n        android:textAppearance=\"?android:attr/textAppearanceMedium\" />\n\n    <TextView\n        android:id=\"@+id/textView2\"\n        android:layout_below=\"@+id/textView1\"\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"wrap_content\"\n        android:text=\"TextView\" />\n\n\n    <ImageView\n        android:id=\"@+id/del\"\n        android:background=\"@mipmap/ic_launcher\"\n        android:layout_alignParentRight=\"true\"\n        android:textSize=\"20sp\"\n        android:layout_width=\"wrap_content\"\n        android:layout_height=\"wrap_content\"/>\n\n</RelativeLayout>\n```\n>跳转后的主界面布局\n\n*activity_main.xml*\n```xml\n<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<RelativeLayout\n    xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    xmlns:tools=\"http://schemas.android.com/tools\"\n    android:id=\"@+id/activity_main\"\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"match_parent\"\n    android:paddingBottom=\"@dimen/activity_vertical_margin\"\n    android:paddingLeft=\"@dimen/activity_horizontal_margin\"\n    android:paddingRight=\"@dimen/activity_horizontal_margin\"\n    android:paddingTop=\"@dimen/activity_vertical_margin\"\n    tools:context=\"com.test.widgetdemo.MainActivity\">\n\n    <EditText\n        android:id=\"@+id/et\"\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"50dp\"/>\n    <Button\n        android:id=\"@+id/btn_add\"\n        android:layout_below=\"@+id/et\"\n        android:text=\"Add\"\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"wrap_content\"/>\n</RelativeLayout>\n```\n## 3. 创建 MyAppWidget.java\n```java\npackage com.test.widgetdemo;\n\nimport android.app.PendingIntent;\nimport android.appwidget.AppWidgetManager;\nimport android.appwidget.AppWidgetProvider;\nimport android.content.ComponentName;\nimport android.content.Context;\nimport android.content.Intent;\nimport android.net.Uri;\nimport android.os.Bundle;\nimport android.text.TextUtils;\nimport android.util.Log;\nimport android.widget.RemoteViews;\n\nimport static android.R.attr.action;\nimport static android.R.attr.cacheColorHint;\nimport static android.content.ContentValues.TAG;\n\n/**\n * ====================== AppWidget ========================\n * @author SGamble\n */\npublic class MyAppWidget extends AppWidgetProvider {\n\n    private static final String TAG = \"MyWidget\";\n    RemoteViews remoteViews;\n\n    /**\n     * package\n     */\n    static ComponentName getComponentName(Context context) {\n        return new ComponentName(context, MyAppWidget.class);\n    }\n\n    @Override\n    public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {\n        Log.e(TAG, \"onUpdate\");\n\n        //设置 ListView\n        setListView(context, appWidgetManager, appWidgetIds);\n        //获取 RemoteViews\n        remoteViews = new RemoteViews(context.getPackageName(), R.layout.my_app_widget);\n        //绑定id - 按钮点击事件\n        remoteViews.setOnClickPendingIntent(R.id.btn_jump, getJumpPendingIntent(context)); //跳转到主界面\n        //发送 del.com 的广播\n        sendDelIntentBroadcast(context);\n        //更新widget\n        appWidgetManager.updateAppWidget(appWidgetIds, remoteViews);\n    }\n\n    /**\n     * 设置 ListView\n     * @author Gamble\n     */\n    private void setListView(Context context, AppWidgetManager awm, int[] appWidgetIds) {\n        for (int appWidgetId : appWidgetIds) {\n            Intent intent = new Intent(context, MyWidgetService.class);\n            intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, appWidgetId);\n            intent.setData(Uri.parse(intent.toUri(Intent.URI_INTENT_SCHEME)));\n            RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.my_app_widget);\n            views.setRemoteAdapter(R.id.listView1, intent);\n            awm.updateAppWidget(appWidgetId, views); //设置适配器\n            awm.notifyAppWidgetViewDataChanged(appWidgetId, R.id.listView1); //通知数据更新\n        }\n    }\n\n    /**\n     * 发送 del.com 的广播\n     * @author Gamble\n     */\n    private void sendDelIntentBroadcast(Context context) {\n        Intent intent = new Intent(\"del.com\");\n        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 220, intent, PendingIntent.FLAG_UPDATE_CURRENT);\n        remoteViews.setPendingIntentTemplate(R.id.listView1, pendingIntent);\n    }\n\n    /**\n     * 点击按钮跳转到指定 Activity\n     * @author Gamble\n     */\n    private PendingIntent getJumpPendingIntent(Context context) {\n        Intent skipIntent = new Intent(context, MainActivity.class);\n        PendingIntent pi = PendingIntent.getActivity(context, 200, skipIntent, PendingIntent.FLAG_CANCEL_CURRENT);\n        return pi;\n    }\n\n    /**\n     * 接收到任意广播时触发\n     *  -- 广播需要在 清单 文件中设置响应\n     *      <intent-filter>\n     *          <action android:name=\"add.com\"/>\n     *      </intent-filter>\n     * @author Gamble\n     */\n    @Override\n    public void onReceive(Context context, Intent intent) {\n        super.onReceive(context, intent);\n        switch (intent.getAction()){\n            case \"add.com\":\n                Log.e(TAG, \"接收到MainActivity传递过来的广播 - 添加操作\");\n                break;\n            case \"del.com\": //删除\n                delEvent(context,intent);\n                break;\n        }\n        updateListView(context,intent); //更新操作\n    }\n\n    /**\n     * 删除点击的事项\n     * @author Gamble\n     */\n    private void delEvent(Context context,Intent intent) {\n        Bundle extras = intent.getExtras();\n        int position = extras.getInt(\"key\");\n        Data.del(position);\n    }\n\n    /**\n     * 更新操作\n     *  - ListView中数据发生改变\n     * @author Gamble\n     */\n    private void updateListView(Context context,Intent intent) {\n        RemoteViews remoteViews = new RemoteViews(context.getPackageName(), R.layout.my_app_widget);\n        final AppWidgetManager mgr = AppWidgetManager.getInstance(context);\n        final ComponentName cn = new ComponentName(context, MyAppWidget.class);\n        mgr.notifyAppWidgetViewDataChanged(mgr.getAppWidgetIds(cn), R.id.listView1);\n        mgr.updateAppWidget(cn, remoteViews);\n    }\n}\n```\n## 4.创建 MyWidgetService.java\n```java\npackage com.test.widgetdemo;\n\nimport android.content.Context;\nimport android.content.Intent;\nimport android.os.Bundle;\nimport android.util.Log;\nimport android.widget.RemoteViews;\nimport android.widget.RemoteViewsService;\nimport java.util.List;\nimport static com.test.widgetdemo.Data.getLst;\n\n/**\n * ====================== WidgetService ========================\n *\n * @author SGamble\n */\npublic class MyWidgetService extends RemoteViewsService {\n\n    @Override\n    public RemoteViewsFactory onGetViewFactory(Intent intent) {\n        return new MyWidgetFactory(getApplicationContext(), intent);\n    }\n\n    public static class MyWidgetFactory implements RemoteViewsFactory {\n        private Context mContext;\n        private List<String> lst; //列表数据\n\n        public MyWidgetFactory(Context context, Intent intent) {\n            mContext = context;\n            lst = getLst(); //获取列表\n        }\n\n        @Override\n        public RemoteViews getViewAt(int position) {\n            if (position < 0 || position >= getCount()) {\n                return null;\n            }\n            RemoteViews views = new RemoteViews(mContext.getPackageName(), R.layout.layout_item);\n            views.setTextViewText(R.id.textView1, lst.get(position));//设置 ListView 的显示\n            views.setOnClickFillInIntent(R.id.del, delIntent(position));//ListView - item 点击事件\n            return views;\n        }\n\n        /**\n         * 删除Intent\n         * @author Gamble\n         */\n        private Intent delIntent(int position) {\n            Bundle extras = new Bundle();\n            extras.putInt(\"key\", position); //传递数据 - item - position\n            Intent delIntent = new Intent();\n            delIntent.setAction(\"del.com\"); //设置意图\n            delIntent.putExtras(extras); //放入需要传递的数据\n            return delIntent;\n        }\n\n        @Override\n        public int getCount() {\n            return lst.size();\n        }\n\n        @Override\n        public long getItemId(int position) {\n            return position;\n        }\n\n        /**\n         * 在调用getViewAt的过程中，显示一个LoadingView。\n         * 如果return null，那么将会有一个默认的loadingView\n         * @author Gamble\n         */\n        @Override\n        public RemoteViews getLoadingView() {\n            return null;\n        }\n\n        @Override\n        public int getViewTypeCount() {\n            return 1;\n        }\n\n        @Override\n        public boolean hasStableIds() {\n            return true;\n        }\n\n        @Override\n        public void onCreate() { }\n\n        @Override\n        public void onDataSetChanged() { }\n\n        @Override\n        public void onDestroy() { }\n    }\n}\n```\n## 6.跳转后的界面操作\n```java\nButton btn = (Button)findViewById(R.id.btn_add);\nbtn.setOnClickListener(new View.OnClickListener() {\n	@Override\n	public void onClick(View v) {\n		EditText et = (EditText)findViewById(R.id.et);\n		Data.addLst(et.getText().toString()); //数据添加\n		//添加待办事项 - Intent\n		Intent intent = new Intent(\"add.com\");\n		sendBroadcast(intent); //发送 add.com 的广播\n		finish();\n	}\n});\n```\n',`groups`='Default',`p_id`=1  WHERE  `id` = 1 [ RunTime:0.000761s ]
+---------------------------------------------------------------
+[ 2018-07-06T09:59:01+08:00 ] 74.120.168.12 74.120.168.12 POST /daily/admin/note/updatenote/id/142.html
+[ info ] qingrang.top/daily/admin/note/updatenote/id/142.html [运行时间：0.054152s][吞吐率：18.47req/s] [内存消耗：2,107.69kb] [文件加载：56]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'updatenote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'content-length' => '19173',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://qingrang.top',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/142.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'content' => '# Android 桌面部件 Widget
+[TOC]
+## 效果图
+![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180102/m38J604bL9.gif)
+## 源码
+https://github.com/SSGamble/WidgetDemo
+## 参考博客
+https://www.jianshu.com/p/1eec51bf74be?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation
+## 1. 声明 Widget 的属性
+在 res 新建 xml 文件夹，创建一个 my_app_widget_info.xml 的文件。
+如果 res 下没有 xml 文件，则先创建。
+*my_app_widget_info.xml*
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+	android:initialKeyguardLayout="@layout/my_app_widget"
+	android:initialLayout="@layout/my_app_widget"
+	android:minHeight="40dp"
+	android:minWidth="40dp"
+	android:previewImage="@drawable/example_appwidget_preview"
+	android:resizeMode="horizontal|vertical"
+	android:updatePeriodMillis="86400000"
+	android:widgetCategory="home_screen">
+</appwidget-provider>
+
+android:minWidth : 最小宽度
+    android:minHeight ： 最小高度
+    android:updatePeriodMillis ： 更新widget的时间间隔(ms)，"86400000"为1个小时，值小于30分钟时，会被设置为30分钟。可以用 service、AlarmManager、Timer 控制。
+    android:previewImage ： 预览图片，拖动小部件到桌面时有个预览图
+    android:initialLayout ： 加载到桌面时对应的布局文件
+    android:resizeMode ： 拉伸的方向。horizontal表示可以水平拉伸，vertical表示可以竖直拉伸
+    android:widgetCategory ： 被显示的位置。home_screen：将widget添加到桌面，keyguard：widget可以被添加到锁屏界面。
+    android:initialKeyguardLayout ： 加载到锁屏界面时对应的布局文件
+```
+| 格数  | dp  |
+| ------------ | ------------ |
+|  1 | 40  |
+|  2 |  110 |
+|  3 |  180 |
+|  4 |  250 |
+| n | 70*n-30 |
+## 2. 创建 layout 布局文件
+>Widget主界面布局
+
+*my_app_widget.xml*
+```
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/widget_margin">
+
+    <Button
+        android:id="@+id/btn_jump"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jump" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_below="@+id/btn_jump"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </ListView>
+
+</RelativeLayout>
+```
+
+>列表子项布局
+
+*layout_item.xml*
+```xml
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+
+    <ImageView
+        android:id="@+id/del"
+        android:background="@mipmap/ic_launcher"
+        android:layout_alignParentRight="true"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
+```
+>跳转后的主界面布局
+
+*activity_main.xml*
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.test.widgetdemo.MainActivity">
+
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_below="@+id/et"
+        android:text="Add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
+```
+## 3. 创建 MyAppWidget.java
+```java
+package com.test.widgetdemo;
+
+import android.app.PendingIntent;
+import android.appwidget.AppWidgetManager;
+import android.appwidget.AppWidgetProvider;
+import android.content.ComponentName;
+import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Bundle;
+import android.text.TextUtils;
+import android.util.Log;
+import android.widget.RemoteViews;
+
+import static android.R.attr.action;
+import static android.R.attr.cacheColorHint;
+import static android.content.ContentValues.TAG;
+
+/**
+ * ====================== AppWidget ========================
+ * @author SGamble
+ */
+public class MyAppWidget extends AppWidgetProvider {
+
+    private static final String TAG = "MyWidget";
+    RemoteViews remoteViews;
+
+    /**
+     * package
+     */
+    static ComponentName getComponentName(Context context) {
+        return new ComponentName(context, MyAppWidget.class);
+    }
+
+    @Override
+    public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
+        Log.e(TAG, "onUpdate");
+
+        //设置 ListView
+        setListView(context, appWidgetManager, appWidgetIds);
+        //获取 RemoteViews
+        remoteViews = new RemoteViews(context.getPackageName(), R.layout.my_app_widget);
+        //绑定id - 按钮点击事件
+        remoteViews.setOnClickPendingIntent(R.id.btn_jump, getJumpPendingIntent(context)); //跳转到主界面
+        //发送 del.com 的广播
+        sendDelIntentBroadcast(context);
+        //更新widget
+        appWidgetManager.updateAppWidget(appWidgetIds, remoteViews);
+    }
+
+    /**
+     * 设置 ListView
+     * @author Gamble
+     */
+    private void setListView(Context context, AppWidgetManager awm, int[] appWidgetIds) {
+        for (int appWidgetId : appWidgetIds) {
+            Intent intent = new Intent(context, MyWidgetService.class);
+            intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, appWidgetId);
+            intent.setData(Uri.parse(intent.toUri(Intent.URI_INTENT_SCHEME)));
+            RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.my_app_widget);
+            views.setRemoteAdapter(R.id.listView1, intent);
+            awm.updateAppWidget(appWidgetId, views); //设置适配器
+            awm.notifyAppWidgetViewDataChanged(appWidgetId, R.id.listView1); //通知数据更新
+        }
+    }
+
+    /**
+     * 发送 del.com 的广播
+     * @author Gamble
+     */
+    private void sendDelIntentBroadcast(Context context) {
+        Intent intent = new Intent("del.com");
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 220, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+        remoteViews.setPendingIntentTemplate(R.id.listView1, pendingIntent);
+    }
+
+    /**
+     * 点击按钮跳转到指定 Activity
+     * @author Gamble
+     */
+    private PendingIntent getJumpPendingIntent(Context context) {
+        Intent skipIntent = new Intent(context, MainActivity.class);
+        PendingIntent pi = PendingIntent.getActivity(context, 200, skipIntent, PendingIntent.FLAG_CANCEL_CURRENT);
+        return pi;
+    }
+
+    /**
+     * 接收到任意广播时触发
+     *  -- 广播需要在 清单 文件中设置响应
+     *      <intent-filter>
+     *          <action android:name="add.com"/>
+     *      </intent-filter>
+     * @author Gamble
+     */
+    @Override
+    public void onReceive(Context context, Intent intent) {
+        super.onReceive(context, intent);
+        switch (intent.getAction()){
+            case "add.com":
+                Log.e(TAG, "接收到MainActivity传递过来的广播 - 添加操作");
+                break;
+            case "del.com": //删除
+                delEvent(context,intent);
+                break;
+        }
+        updateListView(context,intent); //更新操作
+    }
+
+    /**
+     * 删除点击的事项
+     * @author Gamble
+     */
+    private void delEvent(Context context,Intent intent) {
+        Bundle extras = intent.getExtras();
+        int position = extras.getInt("key");
+        Data.del(position);
+    }
+
+    /**
+     * 更新操作
+     *  - ListView中数据发生改变
+     * @author Gamble
+     */
+    private void updateListView(Context context,Intent intent) {
+        RemoteViews remoteViews = new RemoteViews(context.getPackageName(), R.layout.my_app_widget);
+        final AppWidgetManager mgr = AppWidgetManager.getInstance(context);
+        final ComponentName cn = new ComponentName(context, MyAppWidget.class);
+        mgr.notifyAppWidgetViewDataChanged(mgr.getAppWidgetIds(cn), R.id.listView1);
+        mgr.updateAppWidget(cn, remoteViews);
+    }
+}
+```
+## 4.创建 MyWidgetService.java
+```java
+package com.test.widgetdemo;
+
+import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
+import android.util.Log;
+import android.widget.RemoteViews;
+import android.widget.RemoteViewsService;
+import java.util.List;
+import static com.test.widgetdemo.Data.getLst;
+
+/**
+ * ====================== WidgetService ========================
+ *
+ * @author SGamble
+ */
+public class MyWidgetService extends RemoteViewsService {
+
+    @Override
+    public RemoteViewsFactory onGetViewFactory(Intent intent) {
+        return new MyWidgetFactory(getApplicationContext(), intent);
+    }
+
+    public static class MyWidgetFactory implements RemoteViewsFactory {
+        private Context mContext;
+        private List<String> lst; //列表数据
+
+        public MyWidgetFactory(Context context, Intent intent) {
+            mContext = context;
+            lst = getLst(); //获取列表
+        }
+
+        @Override
+        public RemoteViews getViewAt(int position) {
+            if (position < 0 || position >= getCount()) {
+                return null;
+            }
+            RemoteViews views = new RemoteViews(mContext.getPackageName(), R.layout.layout_item);
+            views.setTextViewText(R.id.textView1, lst.get(position));//设置 ListView 的显示
+            views.setOnClickFillInIntent(R.id.del, delIntent(position));//ListView - item 点击事件
+            return views;
+        }
+
+        /**
+         * 删除Intent
+         * @author Gamble
+         */
+        private Intent delIntent(int position) {
+            Bundle extras = new Bundle();
+            extras.putInt("key", position); //传递数据 - item - position
+            Intent delIntent = new Intent();
+            delIntent.setAction("del.com"); //设置意图
+            delIntent.putExtras(extras); //放入需要传递的数据
+            return delIntent;
+        }
+
+        @Override
+        public int getCount() {
+            return lst.size();
+        }
+
+        @Override
+        public long getItemId(int position) {
+            return position;
+        }
+
+        /**
+         * 在调用getViewAt的过程中，显示一个LoadingView。
+         * 如果return null，那么将会有一个默认的loadingView
+         * @author Gamble
+         */
+        @Override
+        public RemoteViews getLoadingView() {
+            return null;
+        }
+
+        @Override
+        public int getViewTypeCount() {
+            return 1;
+        }
+
+        @Override
+        public boolean hasStableIds() {
+            return true;
+        }
+
+        @Override
+        public void onCreate() { }
+
+        @Override
+        public void onDataSetChanged() { }
+
+        @Override
+        public void onDestroy() { }
+    }
+}
+```
+## 6.跳转后的界面操作
+```java
+Button btn = (Button)findViewById(R.id.btn_add);
+btn.setOnClickListener(new View.OnClickListener() {
+	@Override
+	public void onClick(View v) {
+		EditText et = (EditText)findViewById(R.id.et);
+		Data.addLst(et.getText().toString()); //数据添加
+		//添加待办事项 - Intent
+		Intent intent = new Intent("add.com");
+		sendBroadcast(intent); //发送 add.com 的广播
+		finish();
+	}
+});
+```
+',
+  'groups' => 'Android',
+  'id' => '142',
+)
+[ info ] [ RUN ] app\admin\controller\Note->updateNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000486s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001201s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 142 LIMIT 1 [ RunTime:0.000482s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000755s ]
+[ sql ] [ SQL ] SELECT `parent_id` FROM `groups` WHERE  `groups` = 'Android' LIMIT 1 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT `groups` FROM `groups` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000307s ]
+[ sql ] [ SQL ] UPDATE `note`  SET `id`=142,`p_id`=2,`title`='Android 桌面部件 Widget\r',`content`='# Android 桌面部件 Widget\r\n[TOC]\r\n## 效果图\r\n![mark](http://p0tymq1rr.bkt.clouddn.com/daily/180102/m38J604bL9.gif)\r\n## 源码\r\nhttps://github.com/SSGamble/WidgetDemo\r\n## 参考博客\r\nhttps://www.jianshu.com/p/1eec51bf74be?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation\r\n## 1. 声明 Widget 的属性\r\n在 res 新建 xml 文件夹，创建一个 my_app_widget_info.xml 的文件。\r\n如果 res 下没有 xml 文件，则先创建。\r\n*my_app_widget_info.xml*\r\n```xml\r\n<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<appwidget-provider xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n	android:initialKeyguardLayout=\"@layout/my_app_widget\"\r\n	android:initialLayout=\"@layout/my_app_widget\"\r\n	android:minHeight=\"40dp\"\r\n	android:minWidth=\"40dp\"\r\n	android:previewImage=\"@drawable/example_appwidget_preview\"\r\n	android:resizeMode=\"horizontal|vertical\"\r\n	android:updatePeriodMillis=\"86400000\"\r\n	android:widgetCategory=\"home_screen\">\r\n</appwidget-provider>\r\n\r\nandroid:minWidth : 最小宽度\r\n    android:minHeight ： 最小高度\r\n    android:updatePeriodMillis ： 更新widget的时间间隔(ms)，\"86400000\"为1个小时，值小于30分钟时，会被设置为30分钟。可以用 service、AlarmManager、Timer 控制。\r\n    android:previewImage ： 预览图片，拖动小部件到桌面时有个预览图\r\n    android:initialLayout ： 加载到桌面时对应的布局文件\r\n    android:resizeMode ： 拉伸的方向。horizontal表示可以水平拉伸，vertical表示可以竖直拉伸\r\n    android:widgetCategory ： 被显示的位置。home_screen：将widget添加到桌面，keyguard：widget可以被添加到锁屏界面。\r\n    android:initialKeyguardLayout ： 加载到锁屏界面时对应的布局文件\r\n```\r\n| 格数  | dp  |\r\n| ------------ | ------------ |\r\n|  1 | 40  |\r\n|  2 |  110 |\r\n|  3 |  180 |\r\n|  4 |  250 |\r\n| n | 70*n-30 |\r\n## 2. 创建 layout 布局文件\r\n>Widget主界面布局\r\n\r\n*my_app_widget.xml*\r\n```\r\n<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n                android:layout_width=\"match_parent\"\r\n                android:layout_height=\"match_parent\"\r\n                android:padding=\"@dimen/widget_margin\">\r\n\r\n    <Button\r\n        android:id=\"@+id/btn_jump\"\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:text=\"Jump\" />\r\n\r\n    <ListView\r\n        android:id=\"@+id/listView1\"\r\n        android:layout_below=\"@+id/btn_jump\"\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"match_parent\" >\r\n    </ListView>\r\n\r\n</RelativeLayout>\r\n```\r\n\r\n>列表子项布局\r\n\r\n*layout_item.xml*\r\n```xml\r\n<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"wrap_content\"\r\n    android:orientation=\"vertical\" >\r\n\r\n    <TextView\r\n        android:id=\"@+id/textView1\"\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:text=\"Medium Text\"\r\n        android:textAppearance=\"?android:attr/textAppearanceMedium\" />\r\n\r\n    <TextView\r\n        android:id=\"@+id/textView2\"\r\n        android:layout_below=\"@+id/textView1\"\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:text=\"TextView\" />\r\n\r\n\r\n    <ImageView\r\n        android:id=\"@+id/del\"\r\n        android:background=\"@mipmap/ic_launcher\"\r\n        android:layout_alignParentRight=\"true\"\r\n        android:textSize=\"20sp\"\r\n        android:layout_width=\"wrap_content\"\r\n        android:layout_height=\"wrap_content\"/>\r\n\r\n</RelativeLayout>\r\n```\r\n>跳转后的主界面布局\r\n\r\n*activity_main.xml*\r\n```xml\r\n<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<RelativeLayout\r\n    xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:id=\"@+id/activity_main\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    android:paddingBottom=\"@dimen/activity_vertical_margin\"\r\n    android:paddingLeft=\"@dimen/activity_horizontal_margin\"\r\n    android:paddingRight=\"@dimen/activity_horizontal_margin\"\r\n    android:paddingTop=\"@dimen/activity_vertical_margin\"\r\n    tools:context=\"com.test.widgetdemo.MainActivity\">\r\n\r\n    <EditText\r\n        android:id=\"@+id/et\"\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"50dp\"/>\r\n    <Button\r\n        android:id=\"@+id/btn_add\"\r\n        android:layout_below=\"@+id/et\"\r\n        android:text=\"Add\"\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"wrap_content\"/>\r\n</RelativeLayout>\r\n```\r\n## 3. 创建 MyAppWidget.java\r\n```java\r\npackage com.test.widgetdemo;\r\n\r\nimport android.app.PendingIntent;\r\nimport android.appwidget.AppWidgetManager;\r\nimport android.appwidget.AppWidgetProvider;\r\nimport android.content.ComponentName;\r\nimport android.content.Context;\r\nimport android.content.Intent;\r\nimport android.net.Uri;\r\nimport android.os.Bundle;\r\nimport android.text.TextUtils;\r\nimport android.util.Log;\r\nimport android.widget.RemoteViews;\r\n\r\nimport static android.R.attr.action;\r\nimport static android.R.attr.cacheColorHint;\r\nimport static android.content.ContentValues.TAG;\r\n\r\n/**\r\n * ====================== AppWidget ========================\r\n * @author SGamble\r\n */\r\npublic class MyAppWidget extends AppWidgetProvider {\r\n\r\n    private static final String TAG = \"MyWidget\";\r\n    RemoteViews remoteViews;\r\n\r\n    /**\r\n     * package\r\n     */\r\n    static ComponentName getComponentName(Context context) {\r\n        return new ComponentName(context, MyAppWidget.class);\r\n    }\r\n\r\n    @Override\r\n    public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {\r\n        Log.e(TAG, \"onUpdate\");\r\n\r\n        //设置 ListView\r\n        setListView(context, appWidgetManager, appWidgetIds);\r\n        //获取 RemoteViews\r\n        remoteViews = new RemoteViews(context.getPackageName(), R.layout.my_app_widget);\r\n        //绑定id - 按钮点击事件\r\n        remoteViews.setOnClickPendingIntent(R.id.btn_jump, getJumpPendingIntent(context)); //跳转到主界面\r\n        //发送 del.com 的广播\r\n        sendDelIntentBroadcast(context);\r\n        //更新widget\r\n        appWidgetManager.updateAppWidget(appWidgetIds, remoteViews);\r\n    }\r\n\r\n    /**\r\n     * 设置 ListView\r\n     * @author Gamble\r\n     */\r\n    private void setListView(Context context, AppWidgetManager awm, int[] appWidgetIds) {\r\n        for (int appWidgetId : appWidgetIds) {\r\n            Intent intent = new Intent(context, MyWidgetService.class);\r\n            intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_ID, appWidgetId);\r\n            intent.setData(Uri.parse(intent.toUri(Intent.URI_INTENT_SCHEME)));\r\n            RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.my_app_widget);\r\n            views.setRemoteAdapter(R.id.listView1, intent);\r\n            awm.updateAppWidget(appWidgetId, views); //设置适配器\r\n            awm.notifyAppWidgetViewDataChanged(appWidgetId, R.id.listView1); //通知数据更新\r\n        }\r\n    }\r\n\r\n    /**\r\n     * 发送 del.com 的广播\r\n     * @author Gamble\r\n     */\r\n    private void sendDelIntentBroadcast(Context context) {\r\n        Intent intent = new Intent(\"del.com\");\r\n        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 220, intent, PendingIntent.FLAG_UPDATE_CURRENT);\r\n        remoteViews.setPendingIntentTemplate(R.id.listView1, pendingIntent);\r\n    }\r\n\r\n    /**\r\n     * 点击按钮跳转到指定 Activity\r\n     * @author Gamble\r\n     */\r\n    private PendingIntent getJumpPendingIntent(Context context) {\r\n        Intent skipIntent = new Intent(context, MainActivity.class);\r\n        PendingIntent pi = PendingIntent.getActivity(context, 200, skipIntent, PendingIntent.FLAG_CANCEL_CURRENT);\r\n        return pi;\r\n    }\r\n\r\n    /**\r\n     * 接收到任意广播时触发\r\n     *  -- 广播需要在 清单 文件中设置响应\r\n     *      <intent-filter>\r\n     *          <action android:name=\"add.com\"/>\r\n     *      </intent-filter>\r\n     * @author Gamble\r\n     */\r\n    @Override\r\n    public void onReceive(Context context, Intent intent) {\r\n        super.onReceive(context, intent);\r\n        switch (intent.getAction()){\r\n            case \"add.com\":\r\n                Log.e(TAG, \"接收到MainActivity传递过来的广播 - 添加操作\");\r\n                break;\r\n            case \"del.com\": //删除\r\n                delEvent(context,intent);\r\n                break;\r\n        }\r\n        updateListView(context,intent); //更新操作\r\n    }\r\n\r\n    /**\r\n     * 删除点击的事项\r\n     * @author Gamble\r\n     */\r\n    private void delEvent(Context context,Intent intent) {\r\n        Bundle extras = intent.getExtras();\r\n        int position = extras.getInt(\"key\");\r\n        Data.del(position);\r\n    }\r\n\r\n    /**\r\n     * 更新操作\r\n     *  - ListView中数据发生改变\r\n     * @author Gamble\r\n     */\r\n    private void updateListView(Context context,Intent intent) {\r\n        RemoteViews remoteViews = new RemoteViews(context.getPackageName(), R.layout.my_app_widget);\r\n        final AppWidgetManager mgr = AppWidgetManager.getInstance(context);\r\n        final ComponentName cn = new ComponentName(context, MyAppWidget.class);\r\n        mgr.notifyAppWidgetViewDataChanged(mgr.getAppWidgetIds(cn), R.id.listView1);\r\n        mgr.updateAppWidget(cn, remoteViews);\r\n    }\r\n}\r\n```\r\n## 4.创建 MyWidgetService.java\r\n```java\r\npackage com.test.widgetdemo;\r\n\r\nimport android.content.Context;\r\nimport android.content.Intent;\r\nimport android.os.Bundle;\r\nimport android.util.Log;\r\nimport android.widget.RemoteViews;\r\nimport android.widget.RemoteViewsService;\r\nimport java.util.List;\r\nimport static com.test.widgetdemo.Data.getLst;\r\n\r\n/**\r\n * ====================== WidgetService ========================\r\n *\r\n * @author SGamble\r\n */\r\npublic class MyWidgetService extends RemoteViewsService {\r\n\r\n    @Override\r\n    public RemoteViewsFactory onGetViewFactory(Intent intent) {\r\n        return new MyWidgetFactory(getApplicationContext(), intent);\r\n    }\r\n\r\n    public static class MyWidgetFactory implements RemoteViewsFactory {\r\n        private Context mContext;\r\n        private List<String> lst; //列表数据\r\n\r\n        public MyWidgetFactory(Context context, Intent intent) {\r\n            mContext = context;\r\n            lst = getLst(); //获取列表\r\n        }\r\n\r\n        @Override\r\n        public RemoteViews getViewAt(int position) {\r\n            if (position < 0 || position >= getCount()) {\r\n                return null;\r\n            }\r\n            RemoteViews views = new RemoteViews(mContext.getPackageName(), R.layout.layout_item);\r\n            views.setTextViewText(R.id.textView1, lst.get(position));//设置 ListView 的显示\r\n            views.setOnClickFillInIntent(R.id.del, delIntent(position));//ListView - item 点击事件\r\n            return views;\r\n        }\r\n\r\n        /**\r\n         * 删除Intent\r\n         * @author Gamble\r\n         */\r\n        private Intent delIntent(int position) {\r\n            Bundle extras = new Bundle();\r\n            extras.putInt(\"key\", position); //传递数据 - item - position\r\n            Intent delIntent = new Intent();\r\n            delIntent.setAction(\"del.com\"); //设置意图\r\n            delIntent.putExtras(extras); //放入需要传递的数据\r\n            return delIntent;\r\n        }\r\n\r\n        @Override\r\n        public int getCount() {\r\n            return lst.size();\r\n        }\r\n\r\n        @Override\r\n        public long getItemId(int position) {\r\n            return position;\r\n        }\r\n\r\n        /**\r\n         * 在调用getViewAt的过程中，显示一个LoadingView。\r\n         * 如果return null，那么将会有一个默认的loadingView\r\n         * @author Gamble\r\n         */\r\n        @Override\r\n        public RemoteViews getLoadingView() {\r\n            return null;\r\n        }\r\n\r\n        @Override\r\n        public int getViewTypeCount() {\r\n            return 1;\r\n        }\r\n\r\n        @Override\r\n        public boolean hasStableIds() {\r\n            return true;\r\n        }\r\n\r\n        @Override\r\n        public void onCreate() { }\r\n\r\n        @Override\r\n        public void onDataSetChanged() { }\r\n\r\n        @Override\r\n        public void onDestroy() { }\r\n    }\r\n}\r\n```\r\n## 6.跳转后的界面操作\r\n```java\r\nButton btn = (Button)findViewById(R.id.btn_add);\r\nbtn.setOnClickListener(new View.OnClickListener() {\r\n	@Override\r\n	public void onClick(View v) {\r\n		EditText et = (EditText)findViewById(R.id.et);\r\n		Data.addLst(et.getText().toString()); //数据添加\r\n		//添加待办事项 - Intent\r\n		Intent intent = new Intent(\"add.com\");\r\n		sendBroadcast(intent); //发送 add.com 的广播\r\n		finish();\r\n	}\r\n});\r\n```\r\n',`groups`='Android'  WHERE  `id` = 142 [ RunTime:0.000664s ]
+---------------------------------------------------------------
+[ 2018-07-06T09:59:05+08:00 ] 74.120.168.12 74.120.168.12 GET /daily/admin/note/shownote/id/142.html
+[ info ] qingrang.top/daily/admin/note/shownote/id/142.html [运行时间：0.046460s][吞吐率：21.52req/s] [内存消耗：1,985.65kb] [文件加载：54]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'note',
+    2 => 'shownote',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'qingrang.top',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://qingrang.top/daily/admin/note/editnote/id/142.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'OUTFOX_SEARCH_USER_ID_NCOO=300956949.4398302',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+  'id' => '142',
+)
+[ info ] [ RUN ] app\admin\controller\Note->showNote[ /var/www/html/daily/application/admin/controller/Note.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /var/www/html/daily/application/admin/view/note/shownote.html [ array (
+  0 => 'note',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000419s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `note` [ RunTime:0.001376s ]
+[ sql ] [ SQL ] SELECT * FROM `note` WHERE  `id` = 142 LIMIT 1 [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `groups` [ RunTime:0.000945s ]
+[ sql ] [ SQL ] SELECT * FROM `groups` [ RunTime:0.000280s ]
+---------------------------------------------------------------
+[ 2018-07-06T10:02:07+08:00 ] 74.120.168.12 118.121.119.178 GET /daily/admin/api/synAndroid
+[ info ] qingrang.top/daily/admin/api/synAndroid [运行时间：0.046737s][吞吐率：21.40req/s] [内存消耗：2,246.36kb] [文件加载：52]
+[ info ] [ LANG ] /var/www/html/daily/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'api',
+    2 => 'synAndroid',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'application/json,application/xml,application/xhtml+xml,text/html;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh',
+  'connection' => 'keep-alive',
+  'content-type' => 'application/x-www-form-urlencoded; charset=utf-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; U; Android 7.0; zh-cn; MI 5 Build/NRD90M) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30',
+  'host' => 'qingrang.top',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Api->synAndroid[ /var/www/html/daily/application/admin/controller/Api.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000468s ] mysql:host=74.120.168.12;dbname=diary;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dailylist` [ RunTime:0.001098s ]
+[ sql ] [ SQL ] SELECT * FROM `dailylist` ORDER BY `id` [ RunTime:0.001068s ]
